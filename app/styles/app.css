@@ -34,6 +34,7 @@ Global Elements
 ----------------- */
 .box {
   background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
   padding: 15px;
   width: 100%;
   float: left;
@@ -68,6 +69,22 @@ Title Box
 .title .box {
   border: 0px;
 }
+.title h1 {
+  color: #FFFFFF;
+  text-shadow: 3px 3px #000000;
+  font-size: 48px;
+  float: left;
+}
+.title p.lead {
+  font-size: 21px;
+  margin: 10px 0px 5px 0px;
+  clear: both;
+  float: left;
+}
+.title p.lead span {
+  font-size: 17px;
+  font-style: italic;
+}
 /* -----------------
 Introduction Box
 ----------------- */
@@ -90,7 +107,7 @@ Skills/Expertise Box
 CV Box
 ----------------- */
 .cv {
-  margin-top: -20px;
+  margin-top: -30px;
 }
 .cv .box {
   border-bottom: 5px solid #dd686d;
@@ -125,9 +142,6 @@ Workflow Box
 /* -----------------
 About Box
 ----------------- */
-.about .box {
-  border-bottom: 5px solid #a165c1;
-}
 /* -----------------
 Contact Box
 ----------------- */
