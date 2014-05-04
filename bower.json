@@ -4,7 +4,8 @@
   "dependencies": {
     "bootstrap": "*",
     "modernizr": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "jquery-ui": "~1.10.4"
   },
   "devDependencies": {}
 }
