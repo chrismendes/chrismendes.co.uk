@@ -1,0 +1,112 @@
+/* -----------------
+Global Structure
+----------------- */
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+body {
+  background: url('../images/bg/pattern.jpg') 0px 0px no-repeat fixed;
+  padding: 100px 0px;
+}
+.main .row {
+  margin-bottom: 28px;
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0px;
+}
+.navbar .navbar-nav li a {
+  color: #FFFFFF;
+}
+.navbar .navbar-nav li a:hover {
+  color: #cccccc;
+}
+.navbar .navbar-nav li a del {
+  color: #bfbfbf;
+}
+/* -----------------
+Global Elements
+----------------- */
+.box {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  width: 100%;
+  float: left;
+}
+/* -----------------
+Global Typeface
+----------------- */
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  margin: 0px 0px 10px 0px;
+}
+/* -----------------
+Mixins
+----------------- */
+/* -----------------
+Miscellaneous
+----------------- */
+/* Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* -----------------
+Title Box
+----------------- */
+.title .box {
+  border: 0px;
+}
+/* -----------------
+Introduction Box
+----------------- */
+.intro .box {
+  border: 0px;
+}
+.intro p + p {
+  margin-bottom: 0px;
+}
+/* -----------------
+Skills/Expertise Box
+----------------- */
+.skills {
+  margin-top: -20px;
+}
+/* -----------------
+CV Box
+----------------- */
+.cv {
+  margin-top: -20px;
+}
+/* -----------------
+Portfolio Box
+----------------- */
+/* -----------------
+Achievements Box
+----------------- */
+/* -----------------
+Learning Box
+----------------- */
+.learning {
+  margin-top: -20px;
+}
+/* -----------------
+Workflow Box
+----------------- */
+/* -----------------
+About Box
+----------------- */
+/* -----------------
+Contact Box
+----------------- */
+.contact {
+  margin-top: -20px;
+}
