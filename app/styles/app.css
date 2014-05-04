@@ -34,19 +34,27 @@ Global Elements
 ----------------- */
 .box {
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
   padding: 15px;
   width: 100%;
   float: left;
 }
 /* -----------------
+Font Definitions
+----------------- */
+@font-face {
+  font-family: 'PTSarif';
+  src: url('../fonts/PTSarif-Bold.otf');
+}
+/* -----------------
 Global Typeface
 ----------------- */
 h1 {
-  margin: 0px;
-  padding: 0px;
+  font-family: 'PTSarif';
+  font-size: 36px;
 }
 h3 {
+  font-family: 'PTSarif';
+  font-size: 24px;
   margin: 0px 0px 10px 0px;
 }
 /* -----------------
@@ -83,13 +91,21 @@ Title Box
 }
 .title h1 {
   color: #FFFFFF;
-  text-shadow: 3px 3px #000000;
-  font-size: 48px;
+  font-size: 60px;
+  text-shadow: 2px 2px #000000;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+.title h2 {
+  font-size: 24px;
+  margin: 30px 0px 0px 20px;
+  padding: 0px;
   float: left;
 }
 .title p.lead {
   font-size: 21px;
-  margin: 10px 0px 5px 0px;
+  margin: 5px 0px 5px 0px;
   clear: both;
   float: left;
 }
@@ -195,8 +211,14 @@ Workflow Box
 About Box
 ----------------- */
 .about .box {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffff99;
   background-image: url('../images/icons/about.png');
   background-position: 96% 8%;
+}
+.about .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 Contact Box
