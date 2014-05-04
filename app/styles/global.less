@@ -33,6 +33,15 @@ body {
 
 
 /* -----------------
+Colours
+----------------- */
+@yellow: #FFFF99;
+@red: #DD686D;
+@green: #00CC99;
+@purple: #A165C1;
+
+
+/* -----------------
 Global Elements
 ----------------- */
 .box {
@@ -40,6 +49,9 @@ Global Elements
 	padding: 15px;
 	width: 100%;
 	float: left;
+}
+.box-border(@colour) {
+	border-bottom: 5px solid @colour;
 }
 
 

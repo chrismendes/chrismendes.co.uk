@@ -27,6 +27,9 @@ body {
   color: #bfbfbf;
 }
 /* -----------------
+Colours
+----------------- */
+/* -----------------
 Global Elements
 ----------------- */
 .box {
@@ -80,33 +83,57 @@ Skills/Expertise Box
 .skills {
   margin-top: -20px;
 }
+.skills .box {
+  border-bottom: 5px solid #00cc99;
+}
 /* -----------------
 CV Box
 ----------------- */
 .cv {
   margin-top: -20px;
 }
+.cv .box {
+  border-bottom: 5px solid #dd686d;
+}
 /* -----------------
 Portfolio Box
 ----------------- */
+.portfolio .box {
+  border-bottom: 5px solid #dd686d;
+}
 /* -----------------
 Achievements Box
 ----------------- */
+.achievements .box {
+  border-bottom: 5px solid #dd686d;
+}
 /* -----------------
 Learning Box
 ----------------- */
 .learning {
   margin-top: -20px;
 }
+.learning .box {
+  border-bottom: 5px solid #00cc99;
+}
 /* -----------------
 Workflow Box
 ----------------- */
+.workflow .box {
+  border-bottom: 5px solid #00cc99;
+}
 /* -----------------
 About Box
 ----------------- */
+.about .box {
+  border-bottom: 5px solid #a165c1;
+}
 /* -----------------
 Contact Box
 ----------------- */
 .contact {
   margin-top: -20px;
+}
+.contact .box {
+  border-bottom: 5px solid #ffff99;
 }
