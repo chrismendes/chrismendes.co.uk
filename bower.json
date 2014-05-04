@@ -1,0 +1,10 @@
+{
+  "name": "ChrisMendes.co.uk",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "*",
+    "modernizr": "*",
+    "jquery": "*"
+  },
+  "devDependencies": {}
+}

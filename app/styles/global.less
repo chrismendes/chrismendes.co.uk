@@ -1,0 +1,83 @@
+/* -----------------
+Global Structure
+----------------- */
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+body {
+	background: url('../images/bg/pattern.jpg') 0px 0px no-repeat fixed;
+	padding: 100px 0px;
+}
+.main {
+	.row {
+		margin-bottom: 28px;
+	}
+}
+
+.navbar {
+	.bgopacity(#000000, 30%);
+	border: 0px;
+	.navbar-nav {
+		li a {
+			color: #FFFFFF;
+			&:hover {
+				color: darken(#FFFFFF, 20%);
+			}
+			del {
+				color: darken(#FFFFFF, 25%);
+			}
+		}
+	}
+}
+
+
+/* -----------------
+Global Elements
+----------------- */
+.box {
+	.bgopacity(#FFFFFF, 30%);
+	padding: 15px;
+	width: 100%;
+	float: left;
+}
+
+
+/* -----------------
+Global Typeface
+----------------- */
+h1 {
+	margin: 0px;
+	padding: 0px;
+}
+h3 {
+	margin: 0px 0px 10px 0px;
+}
+
+
+/* -----------------
+Mixins
+----------------- */
+.opacity(@opacity) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  filter: ~"alpha(opacity=@{opperc})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+}
+.bgopacity(@colourHex, @opacity) {
+  background: hsla(hue(@colourHex), saturation(@colourHex), lightness(@colourHex), @opacity);
+}
+
+
+/* -----------------
+Miscellaneous
+----------------- */
+/* Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
