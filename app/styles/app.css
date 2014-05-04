@@ -14,7 +14,7 @@ body {
   margin-bottom: 28px;
 }
 .navbar {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
 }
 .navbar .navbar-nav li a {
@@ -33,7 +33,7 @@ Colours
 Global Elements
 ----------------- */
 .box {
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
   padding: 15px;
   width: 100%;
@@ -64,6 +64,18 @@ Miscellaneous
   box-sizing: border-box;
 }
 /* -----------------
+Box Element
+----------------- */
+.box {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 97% 9%;
+}
+.box.hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: -5px;
+}
+/* -----------------
 Title Box
 ----------------- */
 .title .box {
@@ -90,6 +102,7 @@ Introduction Box
 ----------------- */
 .intro .box {
   border: 0px;
+  cursor: inherit;
 }
 .intro p + p {
   margin-bottom: 0px;
@@ -101,7 +114,13 @@ Skills/Expertise Box
   margin-top: -20px;
 }
 .skills .box {
-  border-bottom: 5px solid #00cc99;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #00cc99;
+  background-image: url('../images/icons/skills.png');
+}
+.skills .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 CV Box
@@ -110,19 +129,39 @@ CV Box
   margin-top: -30px;
 }
 .cv .box {
-  border-bottom: 5px solid #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+  background-image: url('../images/icons/cv.png');
+  background-position: 95% 8%;
+}
+.cv .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 Portfolio Box
 ----------------- */
 .portfolio .box {
-  border-bottom: 5px solid #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+  background-image: url('../images/icons/portfolio.png');
+  background-position: 95% 8%;
+}
+.portfolio .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 Achievements Box
 ----------------- */
 .achievements .box {
-  border-bottom: 5px solid #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+  background-image: url('../images/icons/achievements.png');
+}
+.achievements .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 Learning Box
@@ -131,17 +170,34 @@ Learning Box
   margin-top: -20px;
 }
 .learning .box {
-  border-bottom: 5px solid #00cc99;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #00cc99;
+  background-image: url('../images/icons/learning.png');
+  background-position: 93% 8%;
+}
+.learning .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 Workflow Box
 ----------------- */
 .workflow .box {
-  border-bottom: 5px solid #00cc99;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #00cc99;
+  background-image: url('../images/icons/workflow.png');
+}
+.workflow .box.hover {
+  border-bottom-width: 10px;
 }
 /* -----------------
 About Box
 ----------------- */
+.about .box {
+  background-image: url('../images/icons/about.png');
+  background-position: 96% 8%;
+}
 /* -----------------
 Contact Box
 ----------------- */
@@ -149,5 +205,12 @@ Contact Box
   margin-top: -20px;
 }
 .contact .box {
-  border-bottom: 5px solid #ffff99;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffff99;
+  background-image: url('../images/icons/contact.png');
+  background-position: 95% 8%;
+}
+.contact .box.hover {
+  border-bottom-width: 10px;
 }

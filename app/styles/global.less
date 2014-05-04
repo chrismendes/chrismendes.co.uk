@@ -52,7 +52,12 @@ Global Elements
 	float: left;
 }
 .box-border(@colour) {
-	border-bottom: 5px solid @colour;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+	border-bottom-color: @colour;
+	&.hover {
+		border-bottom-width: 10px;
+	}
 }
 
 
@@ -81,7 +86,7 @@ Mixins
   -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
 }
 .bgopacity(@colourHex, @opacity) {
-  background: hsla(hue(@colourHex), saturation(@colourHex), lightness(@colourHex), @opacity);
+  background-color: hsla(hue(@colourHex), saturation(@colourHex), lightness(@colourHex), @opacity);
 }
 
 
