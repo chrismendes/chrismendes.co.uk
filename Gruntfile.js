@@ -65,7 +65,10 @@ module.exports = function (grunt) {
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             less: {
-                files: '<%= config.app %>/styles/*',
+                files: [
+                    '<%= config.app %>/styles/*',
+                    '<%= config.app %>/styles/pages/*',
+                ],
                 tasks: ['less'],
                 options: {
                     spawn: false

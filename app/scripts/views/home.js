@@ -10,7 +10,8 @@ App.Views.Home = Backbone.View.extend({
 
 	events: {
 		'mouseenter .box': 					'onBoxHover',
-		'mouseleave .box': 					'onBoxHoverOut'
+		'mouseleave .box': 					'onBoxHoverOut',
+		'click .box': 							'exitBoxes'
 	},
 
 	initialize: function() {
@@ -23,12 +24,27 @@ App.Views.Home = Backbone.View.extend({
 	},
 
 	onBoxHover: function(e) {
-		var element = (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
-		element.addClass('hover', 100);
+		this.identifyBox(e).addClass('hover', 100);
 	},
 	onBoxHoverOut: function(e) {
-		var element = (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
-		element.removeClass('hover', 100);
+		this.identifyBox(e).removeClass('hover', 100);
+	},
+
+	exitBoxes: function(e) {
+		var boxClicked = this.identifyBox(e);
+		boxClicked.removeClass('hover', 100);
+		$('.box').each(function() {
+			$(this).parent().css('height', $(this).parent().height());
+		})
+		$('.box').not(boxClicked).fadeOut(200, function() {
+			boxClicked.fadeOut(200, function() {
+				Router.navigate(boxClicked.attr('data-href'), true);
+			});
+		});
+	},
+
+	identifyBox: function(e) {
+		return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
 	}
 
 });

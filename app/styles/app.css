@@ -9,9 +9,13 @@ body {
 body {
   background: url('../images/bg/pattern.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
+  overflow-y: scroll;
 }
 body.slideup {
   padding: 40px 0px;
+}
+body.slideup #header {
+  padding-bottom: 30px;
 }
 #main .row {
   margin-top: 28px;
@@ -36,10 +40,13 @@ Colours
 Global Elements
 ----------------- */
 .box {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
   width: 100%;
   float: left;
+}
+.box a:hover {
+  text-decoration: none;
 }
 /* -----------------
 Font Definitions
@@ -54,11 +61,54 @@ Global Typeface
 h1 {
   font-family: 'Times New Roman';
   font-size: 36px;
+  color: #FFFFFF;
 }
 h3 {
   font-family: 'Times New Roman';
   font-size: 24px;
   margin: 0px 0px 10px 0px;
+}
+/* -----------------
+Header
+----------------- */
+#header {
+  min-height: 156px;
+}
+#header .title h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px #000000;
+  margin: 0px;
+  padding: 0px;
+  float: left;
+}
+#header .title p {
+  font-size: 15px;
+  clear: both;
+}
+#header .title p.lead {
+  font-size: 21px;
+  margin: 5px 0px 5px 0px;
+}
+#header .intro .box {
+  border: 0px;
+  cursor: inherit;
+}
+#header .intro p + p {
+  margin-bottom: 0px;
+}
+/* -----------------
+Child Page Template
+----------------- */
+article {
+  width: 100%;
+  min-height: 400px;
+  padding: 40px;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  float: left;
+}
+article .row {
+  margin-top: 0px;
 }
 /* -----------------
 Mixins
@@ -81,176 +131,138 @@ Box Element
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: 97% 9%;
-}
-.box.hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-top: -5px;
-}
-/* -----------------
-Title Box
------------------ */
-.title .box {
-  border: 0px;
-}
-.title h1 {
-  color: #FFFFFF;
-  font-size: 60px;
-  text-shadow: 2px 2px #000000;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-}
-.title h2 {
-  font-size: 24px;
-  margin: 30px 0px 0px 20px;
-  padding: 0px;
-  float: left;
-}
-.title p.lead {
-  font-size: 21px;
-  margin: 5px 0px 5px 0px;
-  clear: both;
-  float: left;
-}
-.title p.lead span {
-  font-size: 17px;
-  font-style: italic;
-}
-/* -----------------
-Introduction Box
------------------ */
-.intro .box {
-  border: 0px;
-  cursor: inherit;
-}
-.intro p + p {
-  margin-bottom: 0px;
-}
-/* -----------------
+  /* -----------------
 Skills/Expertise Box
 ----------------- */
-.skills {
-  margin-top: -20px;
+  /* -----------------
+CV Box
+----------------- */
+  /* -----------------
+Portfolio Box
+----------------- */
+  /* -----------------
+Achievements Box
+----------------- */
+  /* -----------------
+Learning Box
+----------------- */
+  /* -----------------
+Workflow Box
+----------------- */
+  /* -----------------
+About Box
+----------------- */
+  /* -----------------
+Contact Box
+----------------- */
 }
-.skills .box {
+.box.hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: -5px;
+}
+.box.skills {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/skills.png');
+  margin-top: -20px;
 }
-.skills .box.hover {
+.box.skills.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-CV Box
------------------ */
-.cv {
-  margin-top: -30px;
+.box.skills.hover {
+  margin-top: -25px;
 }
-.cv .box {
+.box.cv {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/cv.png');
   background-position: 95% 8%;
+  margin-top: -30px;
 }
-.cv .box.hover {
+.box.cv.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-Portfolio Box
------------------ */
-.portfolio .box {
+.box.cv.hover {
+  margin-top: -35px;
+}
+.box.portfolio {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/portfolio.png');
   background-position: 95% 8%;
 }
-.portfolio .box.hover {
+.box.portfolio.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-Achievements Box
------------------ */
-.achievements .box {
+.box.achievements {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/achievements.png');
 }
-.achievements .box.hover {
+.box.achievements.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-Learning Box
------------------ */
-.learning {
-  margin-top: -20px;
-}
-.learning .box {
+.box.learning {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/learning.png');
   background-position: 93% 8%;
+  margin-top: -20px;
 }
-.learning .box.hover {
+.box.learning.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-Workflow Box
------------------ */
-.workflow .box {
+.box.learning.hover {
+  margin-top: -25px;
+}
+.box.workflow {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/workflow.png');
 }
-.workflow .box.hover {
+.box.workflow.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-About Box
------------------ */
-.about .box {
+.box.about {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffff99;
   background-image: url('../images/icons/about.png');
   background-position: 96% 8%;
 }
-.about .box.hover {
+.box.about.hover {
   border-bottom-width: 10px;
 }
-/* -----------------
-Contact Box
------------------ */
-.contact {
-  margin-top: -20px;
-}
-.contact .box {
+.box.contact {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffff99;
   background-image: url('../images/icons/contact.png');
   background-position: 95% 8%;
+  margin-top: -20px;
 }
-.contact .box.hover {
+.box.contact.hover {
   border-bottom-width: 10px;
 }
+.box.contact.hover {
+  margin-top: -25px;
+}
 #page-cv {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  height: 0px;
+  overflow: hidden;
   /* -----------------
 CV Article
 ----------------- */
-}
-#page-cv article {
-  width: 100%;
-  padding: 40px;
-  min-height: 400px;
-  background-color: rgba(255, 255, 255, 0.8);
-  float: left;
-}
-#page-cv article .row {
-  margin-top: 0px;
 }
