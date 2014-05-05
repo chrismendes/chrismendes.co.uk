@@ -5,7 +5,7 @@ var App = App || {};
 // -------
 App.Views.Home = Backbone.View.extend({
 
-	el: '.main',
+	el: '#main',
 	template: App.Helpers.template('template-home'),
 
 	events: {
