@@ -17,15 +17,35 @@ body.slideup {
 body.slideup #header {
   padding-bottom: 10px;
 }
-.navbar {
+footer .navbar {
   background-color: rgba(0, 0, 0, 0.3);
   border: 0px;
 }
-.navbar .navbar-nav li a {
-  color: #FFFFFF;
+footer .navbar .navbar-nav li {
+  margin-right: 20px;
 }
-.navbar .navbar-nav li a:hover {
+footer .navbar .navbar-nav li a {
+  color: #FFFFFF;
+  padding-left: 0px;
+}
+footer .navbar .navbar-nav li a:hover {
   color: #cccccc;
+}
+footer .navbar .navbar-nav li span {
+  color: #FFFFFF;
+  margin-top: 15px;
+  display: block;
+}
+footer .navbar .navbar-nav.pull-right li {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+footer .navbar .navbar-nav.pull-right li a {
+  padding-right: 0px;
+  padding-left: 15px;
+}
+footer .navbar .col-md-6 {
+  padding: 0px;
 }
 /* -----------------
 Colours
