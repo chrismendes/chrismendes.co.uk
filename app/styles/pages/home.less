@@ -1,105 +1,111 @@
 #page-home {
+
 	.row {
 		margin-top: 28px;
 	}
 
-/* -----------------
-Box Element
------------------ */
-.box {
-	cursor: pointer;
-	background-repeat: no-repeat;
-	background-position: 97% 9%;
-	&.hover {
-		.bgopacity(#FFFFFF, 80%);
-		margin-top: -5px;
+	h3 {
+		font-size: 24px;
+		margin: 0px 0px 10px 0px;
 	}
 
-/* -----------------
-Skills/Expertise Box
------------------ */
-&.skills {
-	.box-border(@green);
-	background-image: url('../images/icons/skills.png');
-	margin-top: -20px;
-	&.hover {
-		margin-top: -25px;
+	/* -----------------
+	Box Element
+	----------------- */
+	.box {
+		cursor: pointer;
+		background-repeat: no-repeat;
+		background-position: 97% 9%;
+		&.hover {
+			.bgopacity(#FFFFFF, 90%);
+			margin-top: -5px;
+		}
+
+		/* -----------------
+		Skills/Expertise Box
+		----------------- */
+		&.skills {
+			.box-border(@green);
+			background-image: url('../images/icons/skills.png');
+			margin-top: -20px;
+			&.hover {
+				margin-top: -25px;
+			}
+		}
+
+		/* -----------------
+		CV Box
+		----------------- */
+		&.cv {
+			.box-border(@red);
+			background-image: url('../images/icons/cv.png');
+			background-position: 95% 8%;
+			margin-top: -30px;
+			&.hover {
+				margin-top: -35px;
+			}
+		}
+
+		/* -----------------
+		Portfolio Box
+		----------------- */
+		&.portfolio {
+			.box-border(@red);
+			background-image: url('../images/icons/portfolio.png');
+			background-position: 95% 8%;
+		}
+
+		/* -----------------
+		Achievements Box
+		----------------- */
+		&.achievements {
+			.box-border(@red);
+			background-image: url('../images/icons/achievements.png');
+		}
+
+		/* -----------------
+		Learning Box
+		----------------- */
+		&.learning {
+			.box-border(@green);
+			background-image: url('../images/icons/learning.png');
+			background-position: 93% 8%;
+			margin-top: -20px;
+			&.hover {
+				margin-top: -25px;
+			}
+		}
+
+		/* -----------------
+		Workflow Box
+		----------------- */
+		&.workflow {
+			.box-border(@green);
+			background-image: url('../images/icons/workflow.png');
+		}
+
+		/* -----------------
+		About Box
+		----------------- */
+		&.about {
+			.box-border(@yellow);
+			background-image: url('../images/icons/about.png');
+			background-position: 96% 8%;
+		}
+
+		/* -----------------
+		Contact Box
+		----------------- */
+		&.contact {
+			.box-border(@yellow);
+			background-image: url('../images/icons/contact.png');
+			background-position: 95% 8%;
+			margin-top: -20px;
+			&.hover {
+				margin-top: -25px;
+			}
+		}
+
 	}
-}
-
-/* -----------------
-CV Box
------------------ */
-&.cv {
-	.box-border(@red);
-	background-image: url('../images/icons/cv.png');
-	background-position: 95% 8%;
-	margin-top: -30px;
-	&.hover {
-		margin-top: -35px;
-	}
-}
-
-/* -----------------
-Portfolio Box
------------------ */
-&.portfolio {
-	.box-border(@red);
-	background-image: url('../images/icons/portfolio.png');
-	background-position: 95% 8%;
-}
-
-/* -----------------
-Achievements Box
------------------ */
-&.achievements {
-	.box-border(@red);
-	background-image: url('../images/icons/achievements.png');
-}
-
-/* -----------------
-Learning Box
------------------ */
-&.learning {
-	.box-border(@green);
-	background-image: url('../images/icons/learning.png');
-	background-position: 93% 8%;
-	margin-top: -20px;
-	&.hover {
-		margin-top: -25px;
-	}
-}
-
-/* -----------------
-Workflow Box
------------------ */
-&.workflow {
-	.box-border(@green);
-	background-image: url('../images/icons/workflow.png');
-}
-
-/* -----------------
-About Box
------------------ */
-&.about {
-	.box-border(@yellow);
-	background-image: url('../images/icons/about.png');
-	background-position: 96% 8%;
-}
-
-/* -----------------
-Contact Box
------------------ */
-&.contact {
-	.box-border(@yellow);
-	background-image: url('../images/icons/contact.png');
-	background-position: 95% 8%;
-	margin-top: -20px;
-	&.hover {
-		margin-top: -25px;
-	}
-}
-
-}
 
 }

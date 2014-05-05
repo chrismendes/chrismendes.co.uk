@@ -9,7 +9,8 @@ App.Views.CV = Backbone.View.extend({
 	template: App.Helpers.template('template-cv'),
 
 	events: {
-		
+		// 'mouseenter a.info-popup span': 			'showModal',
+		// 'mouseleave a.info-popup': 			'hideModal',
 	},
 
 	initialize: function() {
@@ -25,5 +26,16 @@ App.Views.CV = Backbone.View.extend({
 		// }, 500);
 		return this;
 	},
+
+	showModal: function(e) {
+		var modal = $(e.target).attr('data-target');
+		$(modal).modal({
+			backdrop: false
+		});
+	},
+	hideModal: function(e) {
+		var modal = $(e.target).attr('data-target');
+		$(modal).modal('hide');
+	}
 
 });
