@@ -15,10 +15,7 @@ body.slideup {
   padding: 40px 0px;
 }
 body.slideup #header {
-  padding-bottom: 30px;
-}
-#main .row {
-  margin-top: 28px;
+  padding-bottom: 10px;
 }
 .navbar {
   background-color: rgba(0, 0, 0, 0.3);
@@ -89,6 +86,9 @@ Header
   font-size: 21px;
   margin: 5px 0px 5px 0px;
 }
+#header .intro {
+  display: none;
+}
 #header .intro .box {
   border: 0px;
   cursor: inherit;
@@ -110,6 +110,10 @@ article {
 article .row {
   margin-top: 0px;
 }
+article img.icon {
+  float: right;
+  padding: 0px 0px 40px 40px;
+}
 /* -----------------
 Mixins
 ----------------- */
@@ -124,10 +128,15 @@ Miscellaneous
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* -----------------
+#page-home {
+  /* -----------------
 Box Element
 ----------------- */
-.box {
+}
+#page-home .row {
+  margin-top: 28px;
+}
+#page-home .box {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: 97% 9%;
@@ -156,24 +165,24 @@ About Box
 Contact Box
 ----------------- */
 }
-.box.hover {
+#page-home .box.hover {
   background-color: rgba(255, 255, 255, 0.8);
   margin-top: -5px;
 }
-.box.skills {
+#page-home .box.skills {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/skills.png');
   margin-top: -20px;
 }
-.box.skills.hover {
+#page-home .box.skills.hover {
   border-bottom-width: 10px;
 }
-.box.skills.hover {
+#page-home .box.skills.hover {
   margin-top: -25px;
 }
-.box.cv {
+#page-home .box.cv {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
@@ -181,32 +190,32 @@ Contact Box
   background-position: 95% 8%;
   margin-top: -30px;
 }
-.box.cv.hover {
+#page-home .box.cv.hover {
   border-bottom-width: 10px;
 }
-.box.cv.hover {
+#page-home .box.cv.hover {
   margin-top: -35px;
 }
-.box.portfolio {
+#page-home .box.portfolio {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/portfolio.png');
   background-position: 95% 8%;
 }
-.box.portfolio.hover {
+#page-home .box.portfolio.hover {
   border-bottom-width: 10px;
 }
-.box.achievements {
+#page-home .box.achievements {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/achievements.png');
 }
-.box.achievements.hover {
+#page-home .box.achievements.hover {
   border-bottom-width: 10px;
 }
-.box.learning {
+#page-home .box.learning {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
@@ -214,32 +223,32 @@ Contact Box
   background-position: 93% 8%;
   margin-top: -20px;
 }
-.box.learning.hover {
+#page-home .box.learning.hover {
   border-bottom-width: 10px;
 }
-.box.learning.hover {
+#page-home .box.learning.hover {
   margin-top: -25px;
 }
-.box.workflow {
+#page-home .box.workflow {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/workflow.png');
 }
-.box.workflow.hover {
+#page-home .box.workflow.hover {
   border-bottom-width: 10px;
 }
-.box.about {
+#page-home .box.about {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffff99;
   background-image: url('../images/icons/about.png');
   background-position: 96% 8%;
 }
-.box.about.hover {
+#page-home .box.about.hover {
   border-bottom-width: 10px;
 }
-.box.contact {
+#page-home .box.contact {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffff99;
@@ -247,22 +256,20 @@ Contact Box
   background-position: 95% 8%;
   margin-top: -20px;
 }
-.box.contact.hover {
+#page-home .box.contact.hover {
   border-bottom-width: 10px;
 }
-.box.contact.hover {
+#page-home .box.contact.hover {
   margin-top: -25px;
 }
 #page-cv {
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  -webkit-opacity: 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  height: 0px;
-  overflow: hidden;
   /* -----------------
 CV Article
 ----------------- */
+}
+#page-cv article {
+  border-left: 4px solid #dd686d;
+}
+#page-cv article h3 {
+  margin-top: 30px;
 }

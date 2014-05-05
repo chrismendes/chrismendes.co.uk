@@ -17,14 +17,12 @@ App.Views.CV = Backbone.View.extend({
 	},
 
 	render: function() {
-		var _this = this;
-		$('body').addClass('slideup', 500, 'easeOutQuart', function() {
-			_this.$el.html(_this.template());
-			$('#page-cv').animate({
-				opacity: 1,
-				height: '900px'
-			}, 500);
-		});
+		$('body').addClass('slideup');
+		this.$el.html(this.template());
+		// $('#page-cv').animate({
+		// 	opacity: 1,
+		// 	height: '900px'
+		// }, 500);
 		return this;
 	},
 
