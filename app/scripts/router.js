@@ -6,7 +6,8 @@ var App = App || {};
 App.Router = Backbone.Router.extend({
 
 	routes: {
-		'': 'index'
+		'': 					'index',
+		'cv': 				'showCV'
 	},
 
 	initialize: function() {
@@ -15,7 +16,11 @@ App.Router = Backbone.Router.extend({
 
 	index: function() {
 		new App.Views.Home;
-	}
+	},
+
+	showCV: function() {
+		new App.Views.CV;
+	},
 
 });
 
