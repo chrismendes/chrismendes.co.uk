@@ -315,3 +315,6 @@ CV Article
 #page-cv article section section .row {
   margin-top: 20px;
 }
+#page-cv article section.basic .row {
+  margin-bottom: 5px;
+}
