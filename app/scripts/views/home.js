@@ -19,6 +19,8 @@ App.Views.Home = Backbone.View.extend({
 	},
 
 	render: function() {
+		$('body').removeClass('slideup');
+		$('#header .intro').show();
 		this.$el.html(this.template());
 		return this;
 	},
@@ -38,7 +40,9 @@ App.Views.Home = Backbone.View.extend({
 		})
 		$('.box').not(boxClicked).fadeOut(200, function() {
 			boxClicked.fadeOut(200, function() {
-				Router.navigate(boxClicked.attr('data-href'), true);
+				$('body').addClass('slideup', 500, 'easeOutQuart', function() {
+					Router.navigate(boxClicked.attr('data-href'), true);
+				});
 			});
 		});
 	},
