@@ -10,8 +10,7 @@ App.Views.Home = Backbone.View.extend({
 
 	events: {
 		'mouseenter .box': 					'onBoxHover',
-		'mouseleave .box': 					'onBoxHoverOut',
-		'mouseenter .skills .box': 	'onSkillsHover'
+		'mouseleave .box': 					'onBoxHoverOut'
 	},
 
 	initialize: function() {
@@ -24,19 +23,12 @@ App.Views.Home = Backbone.View.extend({
 	},
 
 	onBoxHover: function(element) {
-		if($(element.target).parent().hasClass('intro')) {
-			return;
-		}
-		$('.box').removeClass('hover', 100);
-		$(element.target).addClass('hover', 100);
+		element = (element.target.tagName != 'DIV') ? $(element.target).parent() : $(element.target);
+		element.addClass('hover', 100);
 	},
 	onBoxHoverOut: function(element) {
-		// element.stopPropagation();
-		$(element.target).removeClass('hover', 100);
-	},
-
-	onSkillsHover: function(element) {
-		
+		element = (element.target.tagName != 'DIV') ? $(element.target).parent() : $(element.target);
+		element.removeClass('hover', 100);
 	}
 
 });
