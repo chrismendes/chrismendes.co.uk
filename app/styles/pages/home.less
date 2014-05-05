@@ -6,143 +6,93 @@ Box Element
 	background-repeat: no-repeat;
 	background-position: 97% 9%;
 	&.hover {
-		.bgopacity(#FFFFFF, 60%);
+		.bgopacity(#FFFFFF, 80%);
 		margin-top: -5px;
 	}
-}
-
-
-/* -----------------
-Title Box
------------------ */
-.title {
-	.box {
-		border: 0px;
-	}
-	h1 {
-		color: #FFFFFF;
-		font-size: 60px;
-		text-shadow: 2px 2px #000000;
-		margin: 0px;
-		padding: 0px;
-		float: left;
-	}
-	h2 {
-		font-size: 24px;
-		margin: 30px 0px 0px 20px;
-		padding: 0px;
-		float: left;
-	}
-	p.lead {
-		font-size: 21px;
-		margin: 5px 0px 5px 0px;
-		clear: both;
-		float: left;
-		span {
-			font-size: 17px;
-			font-style: italic;
-		}
-	}
-}
-
-/* -----------------
-Introduction Box
------------------ */
-.intro {
-	.box {
-		border: 0px;
-		cursor: inherit;
-	}
-	p + p {
-		margin-bottom: 0px;
-	}
-}
 
 /* -----------------
 Skills/Expertise Box
 ----------------- */
-.skills {
+&.skills {
+	.box-border(@green);
+	background-image: url('../images/icons/skills.png');
 	margin-top: -20px;
-	.box {
-		.box-border(@green);
-		background-image: url('../images/icons/skills.png');
+	&.hover {
+		margin-top: -25px;
 	}
 }
 
 /* -----------------
 CV Box
 ----------------- */
-.cv {
+&.cv {
+	.box-border(@red);
+	background-image: url('../images/icons/cv.png');
+	background-position: 95% 8%;
 	margin-top: -30px;
-	.box {
-		.box-border(@red);
-		background-image: url('../images/icons/cv.png');
-		background-position: 95% 8%;
+	&.hover {
+		margin-top: -35px;
 	}
 }
 
 /* -----------------
 Portfolio Box
 ----------------- */
-.portfolio {
-	.box {
-		.box-border(@red);
-		background-image: url('../images/icons/portfolio.png');
-		background-position: 95% 8%;
-	}
+&.portfolio {
+	.box-border(@red);
+	background-image: url('../images/icons/portfolio.png');
+	background-position: 95% 8%;
 }
 
 /* -----------------
 Achievements Box
 ----------------- */
-.achievements {
-	.box {
-		.box-border(@red);
-		background-image: url('../images/icons/achievements.png');
-	}
+&.achievements {
+	.box-border(@red);
+	background-image: url('../images/icons/achievements.png');
 }
 
 /* -----------------
 Learning Box
 ----------------- */
-.learning {
+&.learning {
+	.box-border(@green);
+	background-image: url('../images/icons/learning.png');
+	background-position: 93% 8%;
 	margin-top: -20px;
-	.box {
-		.box-border(@green);
-		background-image: url('../images/icons/learning.png');
-		background-position: 93% 8%;
+	&.hover {
+		margin-top: -25px;
 	}
 }
 
 /* -----------------
 Workflow Box
 ----------------- */
-.workflow {
-	.box {
-		.box-border(@green);
-		background-image: url('../images/icons/workflow.png');
-	}
+&.workflow {
+	.box-border(@green);
+	background-image: url('../images/icons/workflow.png');
 }
 
 /* -----------------
 About Box
 ----------------- */
-.about {
-	.box {
-		.box-border(@yellow);
-		background-image: url('../images/icons/about.png');
-		background-position: 96% 8%;
-	}
+&.about {
+	.box-border(@yellow);
+	background-image: url('../images/icons/about.png');
+	background-position: 96% 8%;
 }
 
 /* -----------------
 Contact Box
 ----------------- */
-.contact {
+&.contact {
+	.box-border(@yellow);
+	background-image: url('../images/icons/contact.png');
+	background-position: 95% 8%;
 	margin-top: -20px;
-	.box {
-		.box-border(@yellow);
-		background-image: url('../images/icons/contact.png');
-		background-position: 95% 8%;
+	&.hover {
+		margin-top: -25px;
 	}
+}
+
 }
