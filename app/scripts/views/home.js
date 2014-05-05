@@ -22,12 +22,12 @@ App.Views.Home = Backbone.View.extend({
 		return this;
 	},
 
-	onBoxHover: function(element) {
-		element = (element.target.tagName != 'DIV') ? $(element.target).parent() : $(element.target);
+	onBoxHover: function(e) {
+		var element = (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
 		element.addClass('hover', 100);
 	},
-	onBoxHoverOut: function(element) {
-		element = (element.target.tagName != 'DIV') ? $(element.target).parent() : $(element.target);
+	onBoxHoverOut: function(e) {
+		var element = (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
 		element.removeClass('hover', 100);
 	}
 
