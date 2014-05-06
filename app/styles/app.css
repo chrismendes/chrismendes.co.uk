@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/pattern.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/pattern-1.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -16,6 +16,15 @@ body.slideup {
 }
 body.slideup #header {
   padding-bottom: 10px;
+}
+.bg-transition {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 footer .navbar {
   background-color: rgba(0, 0, 0, 0.3);
@@ -310,10 +319,19 @@ CV Article
   margin-top: 30px;
 }
 #page-cv article section {
-  margin-bottom: 40px;
+  margin-top: 50px;
+}
+#page-cv article section section {
+  margin-top: 30px;
 }
 #page-cv article section section .row {
   margin-top: 20px;
+}
+#page-cv article section h3 + section {
+  margin-top: 0px;
+}
+#page-cv article section.basic {
+  margin-top: 0px;
 }
 #page-cv article section.basic .row {
   margin-bottom: 5px;
