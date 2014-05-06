@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/pattern-1.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/pattern-8.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -141,7 +141,8 @@ article {
   width: 100%;
   padding: 40px;
   margin-bottom: 100px;
-  background: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 6px 6px 20px #666666;
 }
 article nav.header-links {
   margin-bottom: 20px;
@@ -310,7 +311,9 @@ CV Article
 }
 #page-cv article {
   border-left: 4px solid #dd686d;
-  background: #ffffff url('../images/icons/cv-large.png') 97% 2% no-repeat;
+  background-image: url('../images/icons/cv-large.png');
+  background-position: 97% 2%;
+  background-repeat: no-repeat;
 }
 #page-cv article h2 {
   width: 760px;

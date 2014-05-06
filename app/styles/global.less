@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 body {
-	.bg(1);
+	.bg(8);
 	padding: 100px 0px;
 	overflow-y: scroll;
 	&.slideup {
@@ -177,7 +177,8 @@ article {
 	width: 100%;
 	padding: 40px;
 	margin-bottom: 100px;
-	background: #FFFFFF;
+	.bgopacity(#FFFFFF, 94%);
+	box-shadow: 6px 6px 20px #666666;
 	nav.header-links {
 		margin-bottom: 20px;
 	}
@@ -202,6 +203,11 @@ Mixins
 }
 .bgopacity(@colourHex, @opacity) {
   background-color: hsla(hue(@colourHex), saturation(@colourHex), lightness(@colourHex), @opacity);
+}
+.bgicon(@icon, @position) {
+	background-image: url('../images/icons/@{icon}.png');
+	background-position: @position;
+	background-repeat: no-repeat;
 }
 
 
