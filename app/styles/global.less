@@ -6,17 +6,17 @@ html, body {
 	height: 100%;
 }
 body {
-	.bg(8);
+	.bg('grey');
 	padding: 100px 0px;
 	overflow-y: scroll;
 	&.slideup {
 		padding: 40px 0px;
-		#header {
+		header {
 			padding-bottom: 10px;
 		}
 	}
 }
-.bg-transition {
+#bg-transition {
 	display: none;
 	position: absolute;
 	z-index: -1;
@@ -26,7 +26,16 @@ body {
 	height: 100%;
 }
 .bg(@pattern) {
-	background: url('../images/bg/pattern-@{pattern}.jpg') 0px 0px no-repeat fixed;
+	background: url('../images/bg/@{pattern}.jpg') 0px 0px no-repeat fixed;
+}
+.purple {
+	.bg('purple');
+}
+.gold {
+	.bg('gold');
+}
+.blue {
+	.bg('blue');
 }
 
 footer {
@@ -70,10 +79,10 @@ footer {
 /* -----------------
 Colours
 ----------------- */
-@yellow: #FFFF99;
-@red: #DD686D;
-@green: #00CC99;
-@purple: #A165C1;
+@yellow: 	#FFFF99;
+@red: 		#DD686D;
+@green: 	#00CC99;
+@purple: 	#A165C1;
 
 
 /* -----------------
@@ -81,7 +90,6 @@ Global Elements
 ----------------- */
 .box {
 	.bgopacity(#FFFFFF, 70%);
-	// border-radius: 3px;
 	padding: 15px;
 	width: 100%;
 	float: left;
@@ -120,6 +128,7 @@ Global Typeface
 ----------------- */
 h1 {
 	font-family: 'Times New Roman';
+	// font-family: Verdana;
 	font-size: 36px;
 	color: #FFFFFF;
 }
@@ -128,20 +137,21 @@ h2 {
 	margin: 7px 0px 40px 0px;
 }
 h3 {
-	font-family: 'Times New Roman';
+	// font-family: 'Times New Roman';
+	font-family: Verdana;
 }
 
 
 /* -----------------
 Header
 ----------------- */
-#header {
+header {
 	min-height: 156px;
 	.title {
 		h1 {
 			font-size: 60px;
 			text-shadow: 2px 2px #000000;
-			margin: 0px;
+			margin: 0px 0px 5px 0px;
 			padding: 0px;
 			float: left;
 		}
@@ -177,8 +187,8 @@ article {
 	width: 100%;
 	padding: 40px;
 	margin-bottom: 100px;
-	.bgopacity(#FFFFFF, 94%);
-	box-shadow: 6px 6px 20px #666666;
+	.bgopacity(#FFFFFF, 90%);
+	.boxshadow(6px, 6px, 20px, 0px, #666666);
 	nav.header-links {
 		margin-bottom: 20px;
 	}
@@ -208,6 +218,11 @@ Mixins
 	background-image: url('../images/icons/@{icon}.png');
 	background-position: @position;
 	background-repeat: no-repeat;
+}
+.boxshadow(@posX, @posY, @blur, @spread, @colour) {
+  -moz-box-shadow:    @posX @posY @blur @spread @colour;
+  -webkit-box-shadow: @posX @posY @blur @spread @colour;
+  box-shadow:         @posX @posY @blur @spread @colour;
 }
 
 
