@@ -18,12 +18,8 @@ App.Views.CV = Backbone.View.extend({
 	},
 
 	render: function() {
-		$('body').addClass('slideup');
+		$('body').addClass('gold').addClass('slideup');
 		this.$el.html(this.template());
-		// $('#page-cv').animate({
-		// 	opacity: 1,
-		// 	height: '900px'
-		// }, 500);
 		return this;
 	},
 

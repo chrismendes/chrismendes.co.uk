@@ -11,7 +11,7 @@ App.Views.Home = Backbone.View.extend({
 	events: {
 		'mouseenter .box': 					'onBoxHover',
 		'mouseleave .box': 					'onBoxHoverOut',
-		'click .box': 							'exitBoxes'
+		'click .box': 							'exitPage'
 	},
 
 	initialize: function() {
@@ -32,7 +32,7 @@ App.Views.Home = Backbone.View.extend({
 		this.identifyBox(e).removeClass('hover', 100);
 	},
 
-	exitBoxes: function(e) {
+	exitPage: function(e) {
 		var boxClicked = this.identifyBox(e);
 		boxClicked.removeClass('hover', 100);
 		$('.box').each(function() {
@@ -41,7 +41,8 @@ App.Views.Home = Backbone.View.extend({
 		$('.box').not(boxClicked).fadeOut(200, function() {
 			boxClicked.fadeOut(200, function() {
 				$('body').addClass('slideup', 500, 'easeOutQuart', function() {
-					Router.navigate(boxClicked.attr('data-href'), true);
+					var navigateTo = boxClicked.attr('data-href');
+					App.Helpers.setBackground('gold', navigateTo);
 				});
 			});
 		});
