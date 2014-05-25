@@ -7,6 +7,7 @@ App.Views.CV = Backbone.View.extend({
 
 	el: '#main',
 	template: App.Helpers.template('template-cv'),
+	theme: 'gold',
 
 	events: {
 		'click .back-home': 										'returnToHomepage'
@@ -20,7 +21,7 @@ App.Views.CV = Backbone.View.extend({
 	},
 
 	render: function() {
-		$('body').addClass('gold').addClass('slideup');
+		$('body').addClass(this.theme).addClass('slideup');
 		this.$el.html(this.template());
 		return this;
 	},

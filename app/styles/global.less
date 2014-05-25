@@ -31,6 +31,9 @@ body {
 .teal {
 	.bg('teal');
 }
+.green {
+	.bg('green');
+}
 .purple {
 	.bg('purple');
 }
@@ -39,6 +42,12 @@ body {
 }
 .blue {
 	.bg('blue');
+}
+.grey {
+	.bg('grey');
+}
+.denim {
+	.bg('denimblue');
 }
 
 footer {
@@ -86,6 +95,7 @@ Colours
 @red: 		#DD686D;
 @green: 	#00CC99;
 @purple: 	#A165C1;
+@teal:		#1EC1C1;
 
 
 /* -----------------
@@ -181,21 +191,112 @@ header {
 /* -----------------
 Child Page Template
 ----------------- */
+.subnav {
+	.page-canvas;
+	padding: 10px 40px;
+	margin-bottom: 20px;
+}
 article {
-	width: 100%;
-	padding: 40px;
-	margin-bottom: 100px;
-	.bgopacity(#FFFFFF, 90%);
-	.boxshadow(6px, 6px, 20px, 0px, #666666);
-	nav.header-links {
-		margin-bottom: 20px;
+	.page-canvas;
+	h2 {
+		float: left;
+	}
+	.heading-link {
+		margin: 33px 0px 0px 20px;
+		float: left;
 	}
 	h3 {
 		font-size: 22px;
 		border-bottom: 1px solid #D0D0D0;
 		padding-bottom: 3px;
 	}
+
+	.nav-tabs {
+		width: 790px;
+		margin-bottom: 40px;
+	}
+	.tab-pane {
+		.panel-heading {
+			span {
+				font-size: 12px;
+				font-weight: normal;
+				margin-left: 6px;
+			}
+		}
+		.panel {
+			padding: 0px;
+			margin-bottom: 15px;
+		}
+	}
 }
+.page-canvas {
+	width: 100%;
+	padding: 40px;
+	margin-bottom: 100px;
+	.bgopacity(#FFFFFF, 90%);
+	.boxshadow(6px, 6px, 20px, 0px, #666666);
+}
+
+
+/* -----------------
+Carousel
+----------------- */
+.carousel {
+	.carousel-inner {
+		width: 100%;
+		border: 1px solid #C0C0C0;
+	}
+	.boxshadow(2px, 2px, 10px, 0px, #C0C0C0);
+	.carousel-control {
+		span {
+			margin-top: 0px;
+		}
+		&.left {
+			margin-left: 15px;
+			span {
+				margin-left: -40px;
+			}
+		}
+		&.right {
+			margin-right: 15px;
+			span {
+				margin-right: -40px;
+			}
+		}
+	}
+	.annotation {
+		display: none;
+	}
+}
+.carousel-indicators {
+	list-style: none;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	width: 100%;
+	float: left;
+	clear: both;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	li {
+		float: left;
+		width: 50px !important;
+		height: 8px !important;
+		background: #C0C0C0;
+		margin: 0px 0px 0px 5px !important;
+		border-radius: 0px;
+		cursor: pointer;
+		&:first-child {
+			margin-left: 0px;
+		}
+		&.active {
+			background: @teal;
+		}
+	}
+}
+
+
 
 /* -----------------
 Mixins

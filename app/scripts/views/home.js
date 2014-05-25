@@ -7,6 +7,7 @@ App.Views.Home = Backbone.View.extend({
 
 	el: '#main',
 	template: App.Helpers.template('template-home'),
+	theme: 'teal',
 
 	events: {
 		'mouseenter .box': 					'onBoxHover',
