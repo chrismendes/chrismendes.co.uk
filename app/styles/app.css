@@ -29,6 +29,9 @@ body.slideup header {
 .teal {
   background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
 }
+.green {
+  background: url('../images/bg/green.jpg') 0px 0px no-repeat fixed;
+}
 .purple {
   background: url('../images/bg/purple.jpg') 0px 0px no-repeat fixed;
 }
@@ -37,6 +40,12 @@ body.slideup header {
 }
 .blue {
   background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
+}
+.grey {
+  background: url('../images/bg/grey.jpg') 0px 0px no-repeat fixed;
+}
+.denim {
+  background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
 }
 footer .navbar {
   background-color: rgba(0, 0, 0, 0.3);
@@ -149,6 +158,17 @@ header .intro p + p {
 /* -----------------
 Child Page Template
 ----------------- */
+.subnav {
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 6px 6px 20px 0px #666666;
+  -webkit-box-shadow: 6px 6px 20px 0px #666666;
+  box-shadow: 6px 6px 20px 0px #666666;
+  padding: 10px 40px;
+  margin-bottom: 20px;
+}
 article {
   width: 100%;
   padding: 40px;
@@ -158,13 +178,96 @@ article {
   -webkit-box-shadow: 6px 6px 20px 0px #666666;
   box-shadow: 6px 6px 20px 0px #666666;
 }
-article nav.header-links {
-  margin-bottom: 20px;
+article h2 {
+  float: left;
+}
+article .heading-link {
+  margin: 33px 0px 0px 20px;
+  float: left;
 }
 article h3 {
   font-size: 22px;
   border-bottom: 1px solid #D0D0D0;
   padding-bottom: 3px;
+}
+article .nav-tabs {
+  width: 790px;
+  margin-bottom: 40px;
+}
+article .tab-pane .panel-heading span {
+  font-size: 12px;
+  font-weight: normal;
+  margin-left: 6px;
+}
+article .tab-pane .panel {
+  padding: 0px;
+  margin-bottom: 15px;
+}
+.page-canvas {
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 6px 6px 20px 0px #666666;
+  -webkit-box-shadow: 6px 6px 20px 0px #666666;
+  box-shadow: 6px 6px 20px 0px #666666;
+}
+/* -----------------
+Carousel
+----------------- */
+.carousel {
+  -moz-box-shadow: 2px 2px 10px 0px #c0c0c0;
+  -webkit-box-shadow: 2px 2px 10px 0px #c0c0c0;
+  box-shadow: 2px 2px 10px 0px #c0c0c0;
+}
+.carousel .carousel-inner {
+  width: 100%;
+  border: 1px solid #C0C0C0;
+}
+.carousel .carousel-control span {
+  margin-top: 0px;
+}
+.carousel .carousel-control.left {
+  margin-left: 15px;
+}
+.carousel .carousel-control.left span {
+  margin-left: -40px;
+}
+.carousel .carousel-control.right {
+  margin-right: 15px;
+}
+.carousel .carousel-control.right span {
+  margin-right: -40px;
+}
+.carousel .annotation {
+  display: none;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+.carousel-indicators li {
+  float: left;
+  width: 50px !important;
+  height: 8px !important;
+  background: #C0C0C0;
+  margin: 0px 0px 0px 5px !important;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.carousel-indicators li:first-child {
+  margin-left: 0px;
+}
+.carousel-indicators li.active {
+  background: #1ec1c1;
 }
 /* -----------------
 Mixins
@@ -302,7 +405,7 @@ Miscellaneous
 #page-home .box.learning .icons {
   width: 123px;
   height: 63px;
-  margin: 5px 0px 15px 0px;
+  margin: 5px 0px 20px 0px;
   background-image: url('../images/home/learning.png');
 }
 #page-home .box.workflow {
@@ -344,9 +447,6 @@ My CV
   background-position: 97% 2%;
   background-repeat: no-repeat;
 }
-#page-cv article h2 {
-  width: 760px;
-}
 #page-cv article h3 {
   margin-top: 30px;
 }
@@ -367,6 +467,9 @@ My CV
 }
 #page-cv article section.basic .row {
   margin-bottom: 5px;
+}
+#page-cv .subnav {
+  border-left: 4px solid #dd686d;
 }
 /* -----------------
 My Portfolio
