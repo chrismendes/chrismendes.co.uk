@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/grey.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -25,6 +25,9 @@ body.slideup header {
   left: 0px;
   width: 100%;
   height: 100%;
+}
+.teal {
+  background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
 }
 .purple {
   background: url('../images/bg/purple.jpg') 0px 0px no-repeat fixed;
@@ -159,7 +162,7 @@ article nav.header-links {
   margin-bottom: 20px;
 }
 article h3 {
-  font-size: 27px;
+  font-size: 22px;
   border-bottom: 1px solid #D0D0D0;
   padding-bottom: 3px;
 }
@@ -186,13 +189,16 @@ Miscellaneous
   margin-top: 28px;
 }
 #page-home h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0px 0px 10px 0px;
 }
 #page-home .box {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: 97% 9%;
+  -moz-box-shadow: 2px 2px 4px 0px #777777;
+  -webkit-box-shadow: 2px 2px 4px 0px #777777;
+  box-shadow: 2px 2px 4px 0px #777777;
   /* -----------------
 		Skills/Expertise Box
 		----------------- */
@@ -203,7 +209,7 @@ Miscellaneous
 		Portfolio Box
 		----------------- */
   /* -----------------
-		Achievements Box
+		Current Situation Box
 		----------------- */
   /* -----------------
 		Learning Box
@@ -221,19 +227,20 @@ Miscellaneous
 #page-home .box.hover {
   background-color: rgba(255, 255, 255, 0.9);
   margin-top: -5px;
+  margin-bottom: 5px;
 }
 #page-home .box.skills {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #00cc99;
+  border-bottom-color: #dd686d;
   background-image: url('../images/icons/skills.png');
   margin-top: -20px;
 }
 #page-home .box.skills.hover {
-  border-bottom-width: 10px;
-}
-#page-home .box.skills.hover {
   margin-top: -25px;
+}
+#page-home .box.skills img {
+  margin: 10px 0px 15px 5px;
 }
 #page-home .box.cv {
   border-bottom-width: 5px;
@@ -244,9 +251,6 @@ Miscellaneous
   margin-top: -30px;
 }
 #page-home .box.cv.hover {
-  border-bottom-width: 10px;
-}
-#page-home .box.cv.hover {
   margin-top: -35px;
 }
 #page-home .box.portfolio {
@@ -255,18 +259,19 @@ Miscellaneous
   border-bottom-color: #dd686d;
   background-image: url('../images/icons/portfolio.png');
   background-position: 95% 8%;
+  margin-top: -10px;
 }
 #page-home .box.portfolio.hover {
-  border-bottom-width: 10px;
+  margin-top: -15px;
 }
-#page-home .box.achievements {
+#page-home .box.portfolio img {
+  margin: 10px 0px 10px 10px;
+}
+#page-home .box.situation {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #dd686d;
-  background-image: url('../images/icons/achievements.png');
-}
-#page-home .box.achievements.hover {
-  border-bottom-width: 10px;
+  border-bottom-color: #ffff99;
+  background-image: url('../images/icons/situation.png');
 }
 #page-home .box.learning {
   border-bottom-width: 5px;
@@ -277,9 +282,6 @@ Miscellaneous
   margin-top: -20px;
 }
 #page-home .box.learning.hover {
-  border-bottom-width: 10px;
-}
-#page-home .box.learning.hover {
   margin-top: -25px;
 }
 #page-home .box.workflow {
@@ -288,18 +290,12 @@ Miscellaneous
   border-bottom-color: #00cc99;
   background-image: url('../images/icons/workflow.png');
 }
-#page-home .box.workflow.hover {
-  border-bottom-width: 10px;
-}
 #page-home .box.about {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #ffff99;
+  border-bottom-color: #00cc99;
   background-image: url('../images/icons/about.png');
   background-position: 96% 8%;
-}
-#page-home .box.about.hover {
-  border-bottom-width: 10px;
 }
 #page-home .box.contact {
   border-bottom-width: 5px;
@@ -310,16 +306,11 @@ Miscellaneous
   margin-top: -20px;
 }
 #page-home .box.contact.hover {
-  border-bottom-width: 10px;
-}
-#page-home .box.contact.hover {
   margin-top: -25px;
 }
-#page-cv {
-  /* -----------------
-CV Article
+/* -----------------
+My CV
 ----------------- */
-}
 #page-cv article {
   border-left: 4px solid #dd686d;
   background-image: url('../images/icons/cv-large.png');
@@ -349,4 +340,13 @@ CV Article
 }
 #page-cv article section.basic .row {
   margin-bottom: 5px;
+}
+/* -----------------
+My Portfolio
+----------------- */
+#page-portfolio article {
+  border-left: 4px solid #dd686d;
+  background-image: url('../images/icons/portfolio-large.png');
+  background-position: 97% 25px;
+  background-repeat: no-repeat;
 }

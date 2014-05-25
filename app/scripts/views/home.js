@@ -42,7 +42,9 @@ App.Views.Home = Backbone.View.extend({
 			boxClicked.fadeOut(200, function() {
 				$('body').addClass('slideup', 500, 'easeOutQuart', function() {
 					var navigateTo = boxClicked.attr('data-href');
-					App.Helpers.setBackground('gold', navigateTo);
+					App.Helpers.setBackground('gold', function() {
+						Router.navigate(navigateTo, true);
+					});
 				});
 			});
 		});

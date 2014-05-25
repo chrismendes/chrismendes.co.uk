@@ -5,7 +5,7 @@
 	}
 
 	h3 {
-		font-size: 24px;
+		font-size: 20px;
 		margin: 0px 0px 10px 0px;
 	}
 
@@ -16,20 +16,25 @@
 		cursor: pointer;
 		background-repeat: no-repeat;
 		background-position: 97% 9%;
+		.boxshadow(2px, 2px, 4px, 0px, #777);
 		&.hover {
 			.bgopacity(#FFFFFF, 90%);
 			margin-top: -5px;
+			margin-bottom: 5px;
 		}
 
 		/* -----------------
 		Skills/Expertise Box
 		----------------- */
 		&.skills {
-			.box-border(@green);
+			.box-border(@red);
 			background-image: url('../images/icons/skills.png');
 			margin-top: -20px;
 			&.hover {
 				margin-top: -25px;
+			}
+			img {
+				margin: 10px 0px 15px 5px;
 			}
 		}
 
@@ -53,14 +58,21 @@
 			.box-border(@red);
 			background-image: url('../images/icons/portfolio.png');
 			background-position: 95% 8%;
+			margin-top: -10px;
+			&.hover {
+				margin-top: -15px;
+			}
+			img {
+				margin: 10px 0px 10px 10px;
+			}
 		}
 
 		/* -----------------
-		Achievements Box
+		Current Situation Box
 		----------------- */
-		&.achievements {
-			.box-border(@red);
-			background-image: url('../images/icons/achievements.png');
+		&.situation {
+			.box-border(@yellow);
+			background-image: url('../images/icons/situation.png');
 		}
 
 		/* -----------------
@@ -88,7 +100,7 @@
 		About Box
 		----------------- */
 		&.about {
-			.box-border(@yellow);
+			.box-border(@green);
 			background-image: url('../images/icons/about.png');
 			background-position: 96% 8%;
 		}
