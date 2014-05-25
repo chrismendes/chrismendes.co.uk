@@ -32,6 +32,16 @@
 				background-position: 0px 100%;
 			}
 		}
+		.btn {
+			.opacity(0.2);
+			background: desaturate(hsl(2, 64%, 58%), 50%);
+			border: 1px solid desaturate(hsl(2, 64%, 53%), 100%);
+			&.active {
+				.opacity(0.5);
+				background: #D9534F;
+				border: 1px solid #D43F3A;
+			}
+		}
 
 		/* -----------------
 		Skills/Expertise Box
