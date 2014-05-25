@@ -232,7 +232,7 @@ Miscellaneous
 }
 #page-home .box .icons {
   display: block;
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 #page-home .box .icons.active {
@@ -298,6 +298,12 @@ Miscellaneous
 }
 #page-home .box.learning.hover {
   margin-top: -25px;
+}
+#page-home .box.learning .icons {
+  width: 123px;
+  height: 63px;
+  margin: 5px 0px 15px 0px;
+  background-image: url('../images/home/learning.png');
 }
 #page-home .box.workflow {
   border-bottom-width: 5px;
