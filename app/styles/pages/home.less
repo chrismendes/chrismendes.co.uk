@@ -22,6 +22,14 @@
 			margin-top: -5px;
 			margin-bottom: 5px;
 		}
+		.icons {
+			display: block;
+			background-repeat: none;
+			background-position: 0px 0px;
+			&.active {
+				background-position: 0px 100%;
+			}
+		}
 
 		/* -----------------
 		Skills/Expertise Box
@@ -33,8 +41,11 @@
 			&.hover {
 				margin-top: -25px;
 			}
-			img {
-				margin: 10px 0px 15px 5px;
+			.icons {
+				width: 216px;
+				height: 63px;
+				margin: 15px 0px 15px 5px;
+				background-image: url('../images/home/skills.png');
 			}
 		}
 
@@ -62,8 +73,11 @@
 			&.hover {
 				margin-top: -15px;
 			}
-			img {
-				margin: 10px 0px 10px 10px;
+			.icons {
+				width: 213px;
+				height: 76px;
+				margin: 15px 0px 10px 10px;
+				background-image: url('../images/home/clients.png');
 			}
 		}
 
@@ -94,6 +108,12 @@
 		&.workflow {
 			.box-border(@green);
 			background-image: url('../images/icons/workflow.png');
+			.icons {
+				width: 313px;
+				height: 58px;
+				margin: 15px 0px 15px 10px;
+				background-image: url('../images/home/workflow.png');
+			}
 		}
 
 		/* -----------------
