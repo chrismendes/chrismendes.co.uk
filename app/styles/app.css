@@ -181,6 +181,7 @@ Miscellaneous
   box-sizing: border-box;
 }
 #page-home {
+  display: none;
   /* -----------------
 	Box Element
 	----------------- */

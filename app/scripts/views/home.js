@@ -22,6 +22,7 @@ App.Views.Home = Backbone.View.extend({
 		$('body').removeClass('slideup');
 		$('#header .intro').show();
 		this.$el.html(this.template());
+		$('#page-home').fadeIn();
 		return this;
 	},
 
