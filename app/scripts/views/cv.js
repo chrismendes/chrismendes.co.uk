@@ -9,11 +9,13 @@ App.Views.CV = Backbone.View.extend({
 	template: App.Helpers.template('template-cv'),
 
 	events: {
+		'click .back-home': 										'returnToHomepage'
 		// 'mouseenter a.info-popup span': 			'showModal',
-		// 'mouseleave a.info-popup': 			'hideModal',
+		// 'mouseleave a.info-popup': 						'hideModal',
 	},
 
 	initialize: function() {
+		this.returnToHomepage = App.Helpers.returnToHomepage;
 		this.render();
 	},
 

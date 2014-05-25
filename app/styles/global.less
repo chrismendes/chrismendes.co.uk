@@ -6,7 +6,7 @@ html, body {
 	height: 100%;
 }
 body {
-	.bg('grey');
+	.bg('teal');
 	padding: 100px 0px;
 	overflow-y: scroll;
 	&.slideup {
@@ -27,6 +27,9 @@ body {
 }
 .bg(@pattern) {
 	background: url('../images/bg/@{pattern}.jpg') 0px 0px no-repeat fixed;
+}
+.teal {
+	.bg('teal');
 }
 .purple {
 	.bg('purple');
@@ -101,9 +104,6 @@ Global Elements
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
 	border-bottom-color: @colour;
-	&.hover {
-		border-bottom-width: 10px;
-	}
 }
 a.info-popup {
 	border-bottom: 1px dotted #428bca;
@@ -128,7 +128,6 @@ Global Typeface
 ----------------- */
 h1 {
 	font-family: 'Times New Roman';
-	// font-family: Verdana;
 	font-size: 36px;
 	color: #FFFFFF;
 }
@@ -137,7 +136,6 @@ h2 {
 	margin: 7px 0px 40px 0px;
 }
 h3 {
-	// font-family: 'Times New Roman';
 	font-family: Verdana;
 }
 
@@ -193,7 +191,7 @@ article {
 		margin-bottom: 20px;
 	}
 	h3 {
-		font-size: 27px;
+		font-size: 22px;
 		border-bottom: 1px solid #D0D0D0;
 		padding-bottom: 3px;
 	}

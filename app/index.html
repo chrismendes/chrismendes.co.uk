@@ -56,8 +56,8 @@
                 <div class="col-md-3">
                   <div class="box skills">
                     <h3>Skills & Expertise</h3>
-                    <p>HTML5, CSS/LESS, JavaScript, jQuery, Backbone, PHP, CodeIgniter, Responsive Dev, Git Source Control...</p>
-                    <a href="#">Examine skills ></a>
+                    <img src="images/home/skills.png" width="216" height="63" alt="HTML/CSS/JS/Backbone/Laravel"/>
+                    <a href="#">Examine skill set ></a>
                   </div>
                 </div>
                 <!--
@@ -74,20 +74,20 @@
                 My Portfolio
                 -->
                 <div class="col-md-3">
-                  <div class="box portfolio">
+                  <div class="box portfolio" data-href="portfolio">
                     <h3>My Portfolio</h3>
-                    <p>I have built sites for big companies such as Cisco and Autodesk, as well as many small to medium sized businesses.</p>
+                    <img src="images/home/clients.png" width="213" height="76" alt="Autodesk/Cisco/SAP/DKNY/Virgin Pure"/>
                     <a href="#">Inspect portfolio ></a>
                   </div>
                 </div>
                 <!--
-                Achievements
+                Current Situation
                 -->
                 <div class="col-md-4">
-                  <div class="box achievements">
-                    <h3>Achievements</h3>
-                    <p>The things that I am most proud of so far in my career, whether it be a particular project or going beyond the call of duty for my employer.</p>
-                    <a href="#">Glance at achievements ></a>
+                  <div class="box situation">
+                    <h3>Current Situation</h3>
+                    <p>I keep this section up to date regarding my current contract, and what I am looking for regarding the next.</p>
+                    <a href="#">Get updated ></a>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <nav class="header-links">
-                      <a href="#">< Back to Home Page</a>
+                      <a href="#" class="back-home">< Back to Home Page</a>
                       <span> &nbsp;|&nbsp; </span>
                       <a href="#">Download CV</a>
                     </nav>
@@ -168,7 +168,7 @@
                           <span>ADDRESS:</span>
                         </div>
                         <div class="col-md-4">
-                          <span>Coulsdon, Surrey (CR5 1NH)</span>
+                          <span>Coulsdon, Surrey (CR5)</span>
                         </div>
                         <div class="col-md-3">
                           <span>DATE OF BIRTH:</span>
@@ -435,6 +435,210 @@
               </article>
             </div>
           </script>
+
+          <!--
+          Template - My Portfolio
+          -->
+          <script id="template-portfolio" type="text/template">
+            <div id="page-portfolio">
+              <article>
+                <div class="row">
+                  <div class="col-md-12">
+                    <nav class="header-links">
+                      <a href="#" class="back-home">< Back to Home Page</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2>My Portfolio</h2>
+                  </div>
+                </div>
+                <section class="filter">
+                  <div class="row">
+                    <div class="col-md-12">
+
+                      <!-- Tabs -->
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a href="#all" data-toggle="tab">All Projects</a></li>
+                        <li><a href="#tech" data-toggle="tab">By Tech</a></li>
+                        <li><a href="#client" data-toggle="tab">By Client</a></li>
+                        <li><a href="#employer" data-toggle="tab">By Employer</a></li>
+                      </ul>
+
+                      <!-- Tab panels -->
+                      <div class="tab-content">
+
+                        <!-- Tab: All projects -->
+                        <div class="tab-pane" id="all">
+
+                        </div>
+
+                        <!-- Tab: By tech -->
+                        <div class="tab-pane" id="tech">
+                          <div class="panel-group" id="accordion">
+                            
+                            <!-- Accordian: Full stack development -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech1">
+                                    Full Stack Development
+                                    <span>Front and back</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                  Test 1
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Accordian: Front-end dev -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech2">
+                                    HTML/CSS/JS
+                                    <span>From Photoshop to the Web</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 2
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <!-- Accordian: Responsive dev -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech3">
+                                    Responsive Development
+                                    <span>Building sites for desktops, tablets, and mobiles</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 3
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Accordian: JavaScript frameworks -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech4">
+                                    JavaScript Framework Apps
+                                    <span>Creating Single-Page-Applications (SPAs) with Backbone.js</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 4
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Accordian: Back-end dev -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech5">
+                                    PHP/MySQL
+                                    <span>Back-end Development</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 5
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Accordian: CMS dev -->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#tech6">
+                                    CMS Development
+                                    <span>Intergrating CMS functionality with WordPress and Drupal</span>
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="tech6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 6
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Tab: By client -->
+                        <div class="tab-pane" id="client">
+                          <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#client1">
+                                    Autodesk
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="client1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 1
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#client2">
+                                    Cisco
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="client2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 2
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#client3">
+                                    SAP
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="client3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  Test 3
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane" id="employer">...</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </script>
+
+
         </div>
       </div>
 
@@ -500,6 +704,7 @@
     <script src="scripts/global.js"></script>
     <script src="scripts/views/home.js"></script>
     <script src="scripts/views/cv.js"></script>
+    <script src="scripts/views/portfolio.js"></script>
     <script src="scripts/router.js"></script>
     <!-- endbuild -->
   </body>
