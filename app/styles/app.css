@@ -348,8 +348,8 @@ Miscellaneous
   opacity: 0.2;
   filter: alpha(opacity=20);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
-  background: #a38685;
-  border: 1px solid #878787;
+  background: #70a9a9;
+  border: 1px solid #589393;
 }
 #page-home .box .btn.active {
   -moz-opacity: 0.5;
