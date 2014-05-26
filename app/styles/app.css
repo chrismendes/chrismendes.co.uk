@@ -505,6 +505,9 @@ Miscellaneous
 /* -----------------
 My CV
 ----------------- */
+#page-cv {
+  display: none;
+}
 #page-cv article {
   border-left: 4px solid #dd686d;
   background-image: url('../images/icons/cv-large.png');
@@ -541,6 +544,9 @@ My CV
 /* -----------------
 My Portfolio
 ----------------- */
+#page-portfolio {
+  display: none;
+}
 #page-portfolio article {
   border-left: 4px solid #dd686d;
   background-image: url('../images/icons/portfolio-large.png');

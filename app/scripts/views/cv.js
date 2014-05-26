@@ -23,6 +23,7 @@ App.Views.CV = Backbone.View.extend({
 	render: function() {
 		$('body').addClass(this.theme).addClass('slideup');
 		this.$el.html(this.template());
+		$('#page-cv').fadeIn(200);
 		return this;
 	},
 

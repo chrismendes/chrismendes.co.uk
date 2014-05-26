@@ -22,6 +22,7 @@ App.Views.Portfolio = Backbone.View.extend({
 	render: function() {
 		$('body').addClass(this.theme).addClass('slideup');
 		this.$el.html(this.template());
+		$('#page-portfolio').fadeIn(200);
 		return this;
 	},
 
