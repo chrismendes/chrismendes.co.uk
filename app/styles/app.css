@@ -309,7 +309,7 @@ Miscellaneous
 }
 #page-home .box {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.82);
   background-repeat: no-repeat;
   background-position: 97% 9%;
   -moz-box-shadow: 2px 2px 4px 0px #777777;
