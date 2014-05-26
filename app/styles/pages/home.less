@@ -20,10 +20,14 @@
 		background-repeat: no-repeat;
 		background-position: 97% 9%;
 		.boxshadow(2px, 2px, 4px, 0px, #777);
+		p {
+			.opacity(0.2);
+		}
 		.icons {
 			display: block;
 			background-repeat: no-repeat;
 			background-position: 0px 0px;
+			.opacity(0.2);
 		}
 		.btn {
 			.opacity(0.2);
@@ -31,8 +35,12 @@
 			border: 1px solid hsl(180, 25%, 46%);
 		}
 		&.hover {
+			p {
+				.opacity(1.0);
+			}
 			.icons {
 				background-position: 0px 100%;
+				.opacity(1.0);
 			}
 			.btn {
 				.opacity(0.5);
