@@ -236,6 +236,7 @@ Carousel
 }
 .carousel .carousel-control span {
   margin-top: 0px;
+  color: #FFFFFF;
 }
 .carousel .carousel-control.left {
   margin-left: 15px;
@@ -308,6 +309,7 @@ Miscellaneous
 }
 #page-home .box {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
   background-repeat: no-repeat;
   background-position: 97% 9%;
   -moz-box-shadow: 2px 2px 4px 0px #777777;
@@ -338,18 +340,10 @@ Miscellaneous
 		Contact Box
 		----------------- */
 }
-#page-home .box.hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  margin-top: -5px;
-  margin-bottom: 5px;
-}
 #page-home .box .icons {
   display: block;
   background-repeat: no-repeat;
   background-position: 0px 0px;
-}
-#page-home .box .icons.active {
-  background-position: 0px 100%;
 }
 #page-home .box .btn {
   -moz-opacity: 0.2;
@@ -361,15 +355,23 @@ Miscellaneous
   background: #70a9a9;
   border: 1px solid #589393;
 }
-#page-home .box .btn.active {
+#page-home .box.hover .icons {
+  background-position: 0px 100%;
+}
+#page-home .box.hover .btn {
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  background: #D9534F;
-  border: 1px solid #D43F3A;
+  background: #29a385;
+  border: 1px solid #009973;
+}
+#page-home .box.hover-animate {
+  background-color: #ffffff;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 #page-home .box.skills {
   border-bottom-width: 5px;
@@ -378,7 +380,10 @@ Miscellaneous
   background-image: url('../images/icons/skills.png');
   margin-top: -20px;
 }
-#page-home .box.skills.hover {
+#page-home .box.skills h3 {
+  color: #cb2e34;
+}
+#page-home .box.skills.hover-animate {
   margin-top: -25px;
 }
 #page-home .box.skills .icons {
@@ -395,7 +400,10 @@ Miscellaneous
   background-position: 95% 8%;
   margin-top: -30px;
 }
-#page-home .box.cv.hover {
+#page-home .box.cv h3 {
+  color: #cb2e34;
+}
+#page-home .box.cv.hover-animate {
   margin-top: -35px;
 }
 #page-home .box.portfolio {
@@ -406,7 +414,10 @@ Miscellaneous
   background-position: 95% 8%;
   margin-top: -10px;
 }
-#page-home .box.portfolio.hover {
+#page-home .box.portfolio h3 {
+  color: #cb2e34;
+}
+#page-home .box.portfolio.hover-animate {
   margin-top: -15px;
 }
 #page-home .box.portfolio .icons {
@@ -421,15 +432,21 @@ Miscellaneous
   border-bottom-color: #ffff99;
   background-image: url('../images/icons/situation.png');
 }
+#page-home .box.situation h3 {
+  color: #cccc00;
+}
 #page-home .box.learning {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #00cc99;
+  border-bottom-color: #a165c1;
   background-image: url('../images/icons/learning.png');
   background-position: 93% 8%;
   margin-top: -20px;
 }
-#page-home .box.learning.hover {
+#page-home .box.learning h3 {
+  color: #a165c1;
+}
+#page-home .box.learning.hover-animate {
   margin-top: -25px;
 }
 #page-home .box.learning .icons {
@@ -441,8 +458,11 @@ Miscellaneous
 #page-home .box.workflow {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #00cc99;
+  border-bottom-color: #a165c1;
   background-image: url('../images/icons/workflow.png');
+}
+#page-home .box.workflow h3 {
+  color: #a165c1;
 }
 #page-home .box.workflow .icons {
   width: 313px;
@@ -450,12 +470,23 @@ Miscellaneous
   margin: 15px 0px 15px 10px;
   background-image: url('../images/home/workflow.png');
 }
+#page-home .box.workflow.hover .btn {
+  background: #29a385;
+  border: 1px solid #009973;
+}
 #page-home .box.about {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #00cc99;
+  border-bottom-color: #a165c1;
   background-image: url('../images/icons/about.png');
   background-position: 96% 8%;
+}
+#page-home .box.about h3 {
+  color: #a165c1;
+}
+#page-home .box.about.hover .btn {
+  background: #29a385;
+  border: 1px solid #009973;
 }
 #page-home .box.contact {
   border-bottom-width: 5px;
@@ -465,7 +496,10 @@ Miscellaneous
   background-position: 95% 8%;
   margin-top: -20px;
 }
-#page-home .box.contact.hover {
+#page-home .box.contact h3 {
+  color: #cccc00;
+}
+#page-home .box.contact.hover-animate {
   margin-top: -25px;
 }
 /* -----------------
@@ -512,6 +546,9 @@ My Portfolio
   background-image: url('../images/icons/portfolio-large.png');
   background-position: 97% 25px;
   background-repeat: no-repeat;
+}
+#page-portfolio article a {
+  color: #dd686d;
 }
 #page-portfolio .subnav {
   border-left: 4px solid #dd686d;

@@ -28,12 +28,10 @@ App.Views.Home = Backbone.View.extend({
 	},
 
 	onBoxHover: function(e) {
-		this.identifyBox(e).find('.icons, .btn').addClass('active');
-		this.identifyBox(e).addClass('hover', 100);
+		this.identifyBox(e).addClass('hover').addClass('hover-animate', 100);
 	},
 	onBoxHoverOut: function(e) {
-		this.identifyBox(e).find('.icons, .btn').removeClass('active');
-		this.identifyBox(e).removeClass('hover', 100);
+		this.identifyBox(e).removeClass('hover').removeClass('hover-animate', 100);
 	},
 
 	exitPage: function(e) {
