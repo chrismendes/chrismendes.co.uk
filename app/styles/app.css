@@ -169,6 +169,16 @@ Child Page Template
   padding: 10px 40px;
   margin-bottom: 20px;
 }
+.subnav button.back-home {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  color: #1ec1c1;
+}
+.subnav button.back-home:hover {
+  background: #1ec1c1;
+  color: #FFFFFF;
+  border: 1px solid #D0D0D0;
+}
 article {
   width: 100%;
   padding: 40px;
@@ -470,6 +480,9 @@ My CV
 #page-cv article h3 {
   margin-top: 30px;
 }
+#page-cv article a {
+  color: #dd686d;
+}
 #page-cv article section {
   margin-top: 50px;
 }
@@ -499,4 +512,7 @@ My Portfolio
   background-image: url('../images/icons/portfolio-large.png');
   background-position: 97% 25px;
   background-repeat: no-repeat;
+}
+#page-portfolio .subnav {
+  border-left: 4px solid #dd686d;
 }
