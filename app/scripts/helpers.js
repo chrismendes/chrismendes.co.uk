@@ -10,7 +10,7 @@ App.Helpers.template = function(id) {
 };
 
 // Fade in new background
-App.Helpers.setBackground = function(colour, onComplete) {
+App.Helpers.setBackground = function(colour) {
 	if(_.isUndefined(colour)) {
 		return false;
 	}
@@ -25,18 +25,6 @@ App.Helpers.setBackground = function(colour, onComplete) {
 			$('body').addClass('slideup');
 		}
 		$('#bg-transition').hide();
-		if(!_.isUndefined(onComplete)) {
-			onComplete();
-		}
-	});
-}
-
-// Trigger standard page exit animation to return to home page
-App.Helpers.returnToHomepage = function(e) {
-	e.preventDefault();
-	$('body').removeClass('slideup', 500, 'easeOutQuart', function() {
-		App.Helpers.setBackground('teal', function() {
-			Router.navigate('/', true);
-		});
+		$('body').trigger('backgroundSet');
 	});
 }

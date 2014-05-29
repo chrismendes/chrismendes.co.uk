@@ -1,31 +1,18 @@
 var App = App || {};
 
 // -------
-// Home Page
+// CV Page
 // -------
-App.Views.CV = Backbone.View.extend({
+App.Views.CV = App.Views.BaseView.extend({
 
-	el: '#main',
 	template: App.Helpers.template('template-cv'),
 	theme: 'gold',
+	elPage: '#page-cv',
 
-	events: {
-		'click .back-home': 										'returnToHomepage'
+	events: _.extend(App.Views.BaseView.prototype.events, {
 		// 'mouseenter a.info-popup span': 			'showModal',
 		// 'mouseleave a.info-popup': 						'hideModal',
-	},
-
-	initialize: function() {
-		this.returnToHomepage = App.Helpers.returnToHomepage;
-		this.render();
-	},
-
-	render: function() {
-		$('body').addClass(this.theme).addClass('slideup');
-		this.$el.html(this.template());
-		$('#page-cv').fadeIn(200);
-		return this;
-	},
+	}),
 
 	showModal: function(e) {
 		var modal = $(e.target).attr('data-target');

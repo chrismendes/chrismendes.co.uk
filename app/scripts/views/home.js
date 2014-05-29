@@ -42,11 +42,13 @@ App.Views.Home = Backbone.View.extend({
 		})
 		$('.box').not(boxClicked).fadeOut(200, function() {
 			boxClicked.fadeOut(200, function() {
-				$('body').addClass('slideup', 500, 'easeOutQuart', function() {
+				$('body').addClass('slideup', 500, 'easeOutCubic', function() {
 					var navigateTo = boxClicked.attr('data-href');
-					App.Helpers.setBackground('gold', function() {
+					$('body').unbind('backgroundSet');
+					$('body').on('backgroundSet', function() {
 						Router.navigate(navigateTo, true);
 					});
+					App.Helpers.setBackground('gold');
 				});
 			});
 		});

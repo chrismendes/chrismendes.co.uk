@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -341,31 +341,19 @@ Miscellaneous
 		----------------- */
 }
 #page-home .box p {
-  -moz-opacity: 0.2;
-  -khtml-opacity: 0.2;
-  -webkit-opacity: 0.2;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  -webkit-opacity: 0.7;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
 }
 #page-home .box .icons {
   display: block;
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  -moz-opacity: 0.2;
-  -khtml-opacity: 0.2;
-  -webkit-opacity: 0.2;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
 }
 #page-home .box .btn {
-  -moz-opacity: 0.2;
-  -khtml-opacity: 0.2;
-  -webkit-opacity: 0.2;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
   background: #70a9a9;
   border: 1px solid #589393;
 }
@@ -393,7 +381,7 @@ Miscellaneous
   opacity: 0.5;
   filter: alpha(opacity=50);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  background: #29a385;
+  background: #1EC1C1;
   border: 1px solid #009973;
 }
 #page-home .box.hover-animate {
