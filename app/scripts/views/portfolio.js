@@ -3,27 +3,14 @@ var App = App || {};
 // -------
 // Portfolio Page
 // -------
-App.Views.Portfolio = Backbone.View.extend({
+App.Views.Portfolio = App.Views.BaseView.extend({
 
-	el: '#main',
 	template: App.Helpers.template('template-portfolio'),
 	theme: 'gold',
+	elPage: '#page-portfolio',
 
-	events: {
-		'click .back-home': 					'returnToHomepage'
-	},
-
-	initialize: function() {
-		this.returnToHomepage = App.Helpers.returnToHomepage;
-		this.render();
+	onAfterRender: function() {
 		this.setCarouselAnnotationHook();
-	},
-
-	render: function() {
-		$('body').addClass(this.theme).addClass('slideup');
-		this.$el.html(this.template());
-		$('#page-portfolio').fadeIn(200);
-		return this;
 	},
 
 	setCarouselAnnotationHook: function() {
