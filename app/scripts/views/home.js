@@ -7,7 +7,7 @@ App.Views.Home = Backbone.View.extend({
 
 	el: '#main',
 	template: App.Helpers.template('template-home'),
-	theme: 'teal',
+	theme: 'gold',
 
 	events: {
 		'mouseenter .box': 					'onBoxHover',
@@ -48,7 +48,7 @@ App.Views.Home = Backbone.View.extend({
 					$('body').on('backgroundSet', function() {
 						Router.navigate(navigateTo, true);
 					});
-					App.Helpers.setBackground('gold');
+					App.Helpers.setBackground(boxClicked.data('theme'));
 				});
 			});
 		});
