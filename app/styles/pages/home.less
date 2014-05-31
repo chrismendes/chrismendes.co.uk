@@ -6,62 +6,117 @@
 		margin-top: 28px;
 	}
 
-	h3 {
-		font-size: 20px;
-		margin: 0px 0px 10px 0px;
-	}
-
 	/* -----------------
 	Box Element
 	----------------- */
 	.box {
 		cursor: pointer;
-		.bgopacity(#FFFFFF, 82%);
+		.bgopacity(#FFFFFF, 100%);
 		background-repeat: no-repeat;
-		background-position: 97% 9%;
 		.boxshadow(2px, 2px, 4px, 0px, #777);
+		h3 {
+			color: #fff;
+			font-size: 30px;
+			line-height: 40px;
+			margin: 0px 0px 10px 0px;
+		}
 		p {
-			.opacity(0.7);
+			display: none;
 		}
 		.icons {
-			display: block;
+			display: none;
 			background-repeat: no-repeat;
-			background-position: 0px 0px;
+			background-position: 0px 100%;
 		}
 		.btn {
-			background: hsl(180, 25%, 55%);
-			border: 1px solid hsl(180, 25%, 46%);
-		}
-		&.hover {
-			p {
-				.opacity(1.0);
-			}
-			.icons {
-				background-position: 0px 100%;
-				.opacity(1.0);
-			}
-			.btn {
-				.opacity(0.5);
-				background: #1EC1C1;
-				border: 1px solid darken(@green, 10%)
-			}
+			.opacity(0.8);
 		}
 		&.hover-animate {
-			.bgopacity(#FFFFFF, 100%);
+			background-color: #fff !important;
 			margin-top: -5px;
 			margin-bottom: 5px;
+		}
+		&.hover {
+			h3 {
+				font-size: 20px;
+				line-height: 1.1;
+				width: auto !important;
+			}
+			.icons, p {
+				display: block;
+			}
+		}
+
+		/* -----------------
+		Colour Box: Red
+		----------------- */
+		.box-red {
+			background-color: @red;
+			.box-border(#fff);
+			&.hover-animate {
+				.box-border(@red);
+			}
+			&.hover {
+				h3 {
+					color: @red-dark;
+				}
+			}
+			.btn {
+				color: @red;
+				background: #fff;
+				border: 1px solid @red;
+			}
+		}
+		/* -----------------
+		Colour Box: Teal
+		----------------- */
+		.box-teal {
+			background-color: @teal;
+			.box-border(#fff);
+			&.hover-animate {
+				.box-border(@teal);
+			}
+			&.hover {
+				h3 {
+					color: @teal;
+				}
+			}
+			.btn {
+				color: @teal;
+				background: #fff;
+				border: 1px solid @teal;
+			}
+		}
+		/* -----------------
+		Colour Box: Purple
+		----------------- */
+		.box-purple {
+			background-color: @purple;
+			.box-border(#fff);
+			&.hover-animate {
+				.box-border(@purple);
+			}
+			&.hover {
+				h3 {
+					color: @purple;
+				}
+			}
+			.btn {
+				color: @purple;
+				background: #fff;
+				border: 1px solid @purple;
+			}
 		}
 
 		/* -----------------
 		Skills/Expertise Box
 		----------------- */
 		&.skills {
-			.box-border(@red);
-			background-image: url('../images/icons/skills.png');
+			.box-red;
+			background-image: url('../images/home/skills.png');
+			background-position: 130% -40px;
 			margin-top: -20px;
-			h3 {
-				color: @red-dark;
-			}
+			height: 184px;
 			&.hover-animate {
 				margin-top: -25px;
 			}
@@ -69,7 +124,15 @@
 				width: 216px;
 				height: 63px;
 				margin: 15px 0px 15px 5px;
-				background-image: url('../images/home/skills.png');
+				background-image: url('../images/home/skills-icons.png');
+			}
+			.btn {
+				margin-top: 27px;
+			}
+			&.hover {
+				.btn {
+					margin-top: 0px;
+				}
 			}
 		}
 
@@ -77,15 +140,21 @@
 		CV Box
 		----------------- */
 		&.cv {
-			.box-border(@red);
-			background-image: url('../images/icons/cv.png');
-			background-position: 95% 8%;
+			.box-red;
+			background-image: url('../images/home/cv.png');
+			background-position: 20% -30px;
 			margin-top: -30px;
-			h3 {
-				color: @red-dark;
+			height: 191px;
+			.btn {
+				margin-top: 73px;
 			}
 			&.hover-animate {
 				margin-top: -35px;
+			}
+			&.hover {
+				.btn {
+					margin-top: 0px;
+				}
 			}
 		}
 
@@ -93,21 +162,34 @@
 		Portfolio Box
 		----------------- */
 		&.portfolio {
-			.box-border(@red);
-			background-image: url('../images/icons/portfolio.png');
-			background-position: 95% 8%;
+			.box-red;
+			background-image: url('../images/home/portfolio.png');
+			background-position: 350% 8%;
 			margin-top: -10px;
+			height: 192px;
 			h3 {
-				color: @red-dark;
+				width: 100px;
+			}
+			.btn {
+				margin-top: 34px;
 			}
 			&.hover-animate {
 				margin-top: -15px;
 			}
+			&.hover {
+				.icons {
+					display: block;
+				}
+				.btn {
+					margin-top: 0px;
+				}
+			}
 			.icons {
+				display: none;
 				width: 213px;
 				height: 76px;
 				margin: 15px 0px 10px 10px;
-				background-image: url('../images/home/clients.png');
+				background-image: url('../images/home/clients-icons.png');
 			}
 		}
 
@@ -115,10 +197,23 @@
 		Current Situation Box
 		----------------- */
 		&.situation {
-			.box-border(@yellow);
-			background-image: url('../images/icons/situation.png');
+			.box-red;
+			background-image: url('../images/home/situation.png');
+			background-position: 170px -25px;
+			height: 171px;
 			h3 {
-				color: @yellow-dark;
+				width: 100px;
+			}
+			.btn {
+				margin-top: 12px;
+			}
+			&.hover {
+				.btn {
+					margin-top: 0px;
+				}
+			}
+			&.hover-animate {
+
 			}
 		}
 
@@ -126,21 +221,27 @@
 		Learning Box
 		----------------- */
 		&.learning {
-			.box-border(@purple);
-			background-image: url('../images/icons/learning.png');
-			background-position: 93% 8%;
+			.box-purple;
+			background-image: url('../images/home/learning.png');
+			background-position: -380% 0px;
 			margin-top: -20px;
-			h3 {
-				color: @purple;
-			}
-			&.hover-animate {
-				margin-top: -25px;
-			}
+			height: 254px;
 			.icons {
 				width: 123px;
 				height: 63px;
 				margin: 5px 0px 20px 0px;
-				background-image: url('../images/home/learning.png');
+				background-image: url('../images/home/learning-icons.png');
+			}
+			.btn {
+				margin-top: 135px;
+			}
+			&.hover-animate {
+				margin-top: -25px;
+			}
+			&.hover {
+				.btn {
+					margin-top: 0px;
+				}
 			}
 		}
 
@@ -148,21 +249,22 @@
 		Workflow Box
 		----------------- */
 		&.workflow {
-			.box-border(@purple);
-			background-image: url('../images/icons/workflow.png');
-			h3 {
-				color: @purple;
-			}
+			.box-purple;
+			background-image: url('../images/home/workflow.png');
+			background-position: -250% -30px;
+			height: 179px;
 			.icons {
 				width: 313px;
 				height: 58px;
 				margin: 15px 0px 15px 10px;
-				background-image: url('../images/home/workflow.png');
+				background-image: url('../images/home/workflow-icons.png');
+			}
+			.btn {
+				margin-top: 20px;
 			}
 			&.hover {
 				.btn {
-					background: desaturate(@green, 40%);
-					border: 1px solid darken(@green, 10%)
+					margin-top: 0px;
 				}
 			}
 		}
@@ -171,16 +273,16 @@
 		About Box
 		----------------- */
 		&.about {
-			.box-border(@purple);
-			background-image: url('../images/icons/about.png');
-			background-position: 96% 8%;
-			h3 {
-				color: @purple;
+			.box-purple;
+			height: 151px;
+			background-image: url('../images/home/about.png');
+			background-position: 120px 0px;
+			.btn {
+				margin-top: 33px;
 			}
 			&.hover {
 				.btn {
-					background: desaturate(@green, 40%);
-					border: 1px solid darken(@green, 10%)
+					margin-top: 0px;
 				}
 			}
 		}
@@ -189,15 +291,21 @@
 		Contact Box
 		----------------- */
 		&.contact {
-			.box-border(@yellow);
-			background-image: url('../images/icons/contact.png');
-			background-position: 95% 8%;
-			margin-top: -20px;
-			h3 {
-				color: @yellow-dark;
+			.box-red;
+			background-image: url('../images/home/contact.png');
+			background-position: 150px -50px;
+			margin-top: -10px;
+			height: 151px;
+			.btn {
+				margin-top: 33px;
 			}
 			&.hover-animate {
-				margin-top: -25px;
+				margin-top: -15px;
+			}
+			&.hover {
+				.btn {
+					margin-top: 0px;
+				}
 			}
 		}
 
