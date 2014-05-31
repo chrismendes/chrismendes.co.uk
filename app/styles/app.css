@@ -310,11 +310,17 @@ Miscellaneous
   -moz-box-shadow: 2px 2px 4px 0px #777777;
   -webkit-box-shadow: 2px 2px 4px 0px #777777;
   box-shadow: 2px 2px 4px 0px #777777;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  /* -----------------
+		Colour Box: Blue
+		----------------- */
   /* -----------------
 		Colour Box: Red
 		----------------- */
   /* -----------------
-		Colour Box: Teal
+		Colour Box: Green
 		----------------- */
   /* -----------------
 		Colour Box: Purple
@@ -380,11 +386,24 @@ Miscellaneous
 #page-home .box.hover p {
   display: block;
 }
-#page-home .box .box-red {
-  background-color: #dd686d;
+#page-home .box .box-blue {
+  background-color: #36A7C9;
+}
+#page-home .box .box-blue.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #36a7c9;
+}
+#page-home .box .box-blue.hover h3 {
+  color: #36A7C9;
+}
+#page-home .box .box-blue .btn {
+  color: #36A7C9;
+  background: #fff;
+  border: 1px solid #36A7C9;
+}
+#page-home .box .box-red {
+  background-color: #dd686d;
 }
 #page-home .box .box-red.hover-animate {
   border-bottom-width: 5px;
@@ -392,37 +411,31 @@ Miscellaneous
   border-bottom-color: #dd686d;
 }
 #page-home .box .box-red.hover h3 {
-  color: #cb2e34;
+  color: #dd686d;
 }
 #page-home .box .box-red .btn {
   color: #dd686d;
   background: #fff;
   border: 1px solid #dd686d;
 }
-#page-home .box .box-teal {
-  background-color: #1ec1c1;
+#page-home .box .box-green {
+  background-color: #00cc99;
+}
+#page-home .box .box-green.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  border-bottom-color: #00cc99;
 }
-#page-home .box .box-teal.hover-animate {
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #1ec1c1;
+#page-home .box .box-green.hover h3 {
+  color: #00cc99;
 }
-#page-home .box .box-teal.hover h3 {
-  color: #1ec1c1;
-}
-#page-home .box .box-teal .btn {
-  color: #1ec1c1;
+#page-home .box .box-green .btn {
+  color: #00cc99;
   background: #fff;
-  border: 1px solid #1ec1c1;
+  border: 1px solid #00cc99;
 }
 #page-home .box .box-purple {
   background-color: #a165c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
 }
 #page-home .box .box-purple.hover-animate {
   border-bottom-width: 5px;
@@ -438,10 +451,7 @@ Miscellaneous
   border: 1px solid #a165c1;
 }
 #page-home .box.skills {
-  background-color: #dd686d;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  background-color: #36A7C9;
   background-image: url('../images/home/skills.png');
   background-position: 130% -40px;
   margin-top: -20px;
@@ -450,15 +460,15 @@ Miscellaneous
 #page-home .box.skills.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #dd686d;
+  border-bottom-color: #36a7c9;
 }
 #page-home .box.skills.hover h3 {
-  color: #cb2e34;
+  color: #36A7C9;
 }
 #page-home .box.skills .btn {
-  color: #dd686d;
+  color: #36A7C9;
   background: #fff;
-  border: 1px solid #dd686d;
+  border: 1px solid #36A7C9;
 }
 #page-home .box.skills.hover-animate {
   margin-top: -25px;
@@ -477,9 +487,6 @@ Miscellaneous
 }
 #page-home .box.cv {
   background-color: #dd686d;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
   background-image: url('../images/home/cv.png');
   background-position: 20% -30px;
   margin-top: -30px;
@@ -491,7 +498,7 @@ Miscellaneous
   border-bottom-color: #dd686d;
 }
 #page-home .box.cv.hover h3 {
-  color: #cb2e34;
+  color: #dd686d;
 }
 #page-home .box.cv .btn {
   color: #dd686d;
@@ -509,9 +516,6 @@ Miscellaneous
 }
 #page-home .box.portfolio {
   background-color: #dd686d;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
   background-image: url('../images/home/portfolio.png');
   background-position: 350% 8%;
   margin-top: -10px;
@@ -523,7 +527,7 @@ Miscellaneous
   border-bottom-color: #dd686d;
 }
 #page-home .box.portfolio.hover h3 {
-  color: #cb2e34;
+  color: #dd686d;
 }
 #page-home .box.portfolio .btn {
   color: #dd686d;
@@ -550,10 +554,7 @@ Miscellaneous
   background-image: url('../images/home/clients-icons.png');
 }
 #page-home .box.situation {
-  background-color: #1ec1c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  background-color: #00cc99;
   background-image: url('../images/home/situation.png');
   background-position: 170px -25px;
   height: 171px;
@@ -561,15 +562,15 @@ Miscellaneous
 #page-home .box.situation.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #1ec1c1;
+  border-bottom-color: #00cc99;
 }
 #page-home .box.situation.hover h3 {
-  color: #1ec1c1;
+  color: #00cc99;
 }
 #page-home .box.situation .btn {
-  color: #1ec1c1;
+  color: #00cc99;
   background: #fff;
-  border: 1px solid #1ec1c1;
+  border: 1px solid #00cc99;
 }
 #page-home .box.situation .btn {
   margin-top: 53px;
@@ -578,10 +579,7 @@ Miscellaneous
   margin-top: 0px;
 }
 #page-home .box.learning {
-  background-color: #a165c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  background-color: #36A7C9;
   background-image: url('../images/home/learning.png');
   background-position: -380% 0px;
   margin-top: -20px;
@@ -590,15 +588,15 @@ Miscellaneous
 #page-home .box.learning.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #a165c1;
+  border-bottom-color: #36a7c9;
 }
 #page-home .box.learning.hover h3 {
-  color: #a165c1;
+  color: #36A7C9;
 }
 #page-home .box.learning .btn {
-  color: #a165c1;
+  color: #36A7C9;
   background: #fff;
-  border: 1px solid #a165c1;
+  border: 1px solid #36A7C9;
 }
 #page-home .box.learning .icons {
   width: 123px;
@@ -616,10 +614,7 @@ Miscellaneous
   margin-top: 0px;
 }
 #page-home .box.workflow {
-  background-color: #a165c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  background-color: #36A7C9;
   background-image: url('../images/home/workflow.png');
   background-position: -250% -30px;
   height: 179px;
@@ -627,15 +622,15 @@ Miscellaneous
 #page-home .box.workflow.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #a165c1;
+  border-bottom-color: #36a7c9;
 }
 #page-home .box.workflow.hover h3 {
-  color: #a165c1;
+  color: #36A7C9;
 }
 #page-home .box.workflow .btn {
-  color: #a165c1;
+  color: #36A7C9;
   background: #fff;
-  border: 1px solid #a165c1;
+  border: 1px solid #36A7C9;
 }
 #page-home .box.workflow .icons {
   width: 313px;
@@ -651,9 +646,6 @@ Miscellaneous
 }
 #page-home .box.about {
   background-color: #a165c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
   height: 151px;
   background-image: url('../images/home/about.png');
   background-position: 120px 0px;
@@ -678,10 +670,7 @@ Miscellaneous
   margin-top: 0px;
 }
 #page-home .box.contact {
-  background-color: #1ec1c1;
-  border-bottom-width: 5px;
-  border-bottom-style: solid;
-  border-bottom-color: #ffffff;
+  background-color: #a165c1;
   background-image: url('../images/home/contact.png');
   background-position: 150px -50px;
   margin-top: -10px;
@@ -690,15 +679,15 @@ Miscellaneous
 #page-home .box.contact.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #1ec1c1;
+  border-bottom-color: #a165c1;
 }
 #page-home .box.contact.hover h3 {
-  color: #1ec1c1;
+  color: #a165c1;
 }
 #page-home .box.contact .btn {
-  color: #1ec1c1;
+  color: #a165c1;
   background: #fff;
-  border: 1px solid #1ec1c1;
+  border: 1px solid #a165c1;
 }
 #page-home .box.contact .btn {
   margin-top: 33px;
