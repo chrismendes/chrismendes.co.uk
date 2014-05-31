@@ -14,6 +14,7 @@
 		.bgopacity(#FFFFFF, 100%);
 		background-repeat: no-repeat;
 		.boxshadow(2px, 2px, 4px, 0px, #777);
+		.box-border(#fff);
 		h3 {
 			color: #fff;
 			font-size: 30px;
@@ -48,17 +49,36 @@
 		}
 
 		/* -----------------
+		Colour Box: Blue
+		----------------- */
+		.box-blue {
+			background-color: #36A7C9;
+			&.hover-animate {
+				.box-border(#36A7C9);
+			}
+			&.hover {
+				h3 {
+					color: #36A7C9;
+				}
+			}
+			.btn {
+				color: #36A7C9;
+				background: #fff;
+				border: 1px solid #36A7C9;
+			}
+		}
+
+		/* -----------------
 		Colour Box: Red
 		----------------- */
 		.box-red {
 			background-color: @red;
-			.box-border(#fff);
 			&.hover-animate {
 				.box-border(@red);
 			}
 			&.hover {
 				h3 {
-					color: @red-dark;
+					color: @red;
 				}
 			}
 			.btn {
@@ -68,23 +88,22 @@
 			}
 		}
 		/* -----------------
-		Colour Box: Teal
+		Colour Box: Green
 		----------------- */
-		.box-teal {
-			background-color: @teal;
-			.box-border(#fff);
+		.box-green {
+			background-color: @green;
 			&.hover-animate {
-				.box-border(@teal);
+				.box-border(@green);
 			}
 			&.hover {
 				h3 {
-					color: @teal;
+					color: @green;
 				}
 			}
 			.btn {
-				color: @teal;
+				color: @green;
 				background: #fff;
-				border: 1px solid @teal;
+				border: 1px solid @green;
 			}
 		}
 		/* -----------------
@@ -92,7 +111,6 @@
 		----------------- */
 		.box-purple {
 			background-color: @purple;
-			.box-border(#fff);
 			&.hover-animate {
 				.box-border(@purple);
 			}
@@ -112,7 +130,7 @@
 		Skills/Expertise Box
 		----------------- */
 		&.skills {
-			.box-red;
+			.box-blue;
 			background-image: url('../images/home/skills.png');
 			background-position: 130% -40px;
 			margin-top: -20px;
@@ -194,7 +212,7 @@
 		Current Situation Box
 		----------------- */
 		&.situation {
-			.box-teal;
+			.box-green;
 			background-image: url('../images/home/situation.png');
 			background-position: 170px -25px;
 			height: 171px;
@@ -215,7 +233,7 @@
 		Learning Box
 		----------------- */
 		&.learning {
-			.box-purple;
+			.box-blue;
 			background-image: url('../images/home/learning.png');
 			background-position: -380% 0px;
 			margin-top: -20px;
@@ -243,7 +261,7 @@
 		Workflow Box
 		----------------- */
 		&.workflow {
-			.box-purple;
+			.box-blue;
 			background-image: url('../images/home/workflow.png');
 			background-position: -250% -30px;
 			height: 179px;
@@ -285,7 +303,7 @@
 		Contact Box
 		----------------- */
 		&.contact {
-			.box-teal;
+			.box-purple;
 			background-image: url('../images/home/contact.png');
 			background-position: 150px -50px;
 			margin-top: -10px;
