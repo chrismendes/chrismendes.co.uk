@@ -14,7 +14,7 @@
 		.bgopacity(#FFFFFF, 100%);
 		background-repeat: no-repeat;
 		.boxshadow(2px, 2px, 4px, 0px, #777);
-		.box-border(#fff);
+		.box-border-bottom(#fff);
 		h3 {
 			color: #fff;
 			font-size: 30px;
@@ -52,19 +52,24 @@
 		Colour Box: Blue
 		----------------- */
 		.box-blue {
-			background-color: #36A7C9;
+			background-color: @blue;
 			&.hover-animate {
-				.box-border(#36A7C9);
+				.box-border-top(@blue);
+				border-bottom: 0px;
 			}
 			&.hover {
 				h3 {
-					color: #36A7C9;
+					color: @blue;
+				}
+				.btn {
+					color: #fff;
+					background: @blue;
 				}
 			}
 			.btn {
-				color: #36A7C9;
+				color: @blue;
 				background: #fff;
-				border: 1px solid #36A7C9;
+				border: 1px solid @blue;
 			}
 		}
 
@@ -73,18 +78,24 @@
 		----------------- */
 		.box-red {
 			background-color: @red;
+			.btn {
+				color: @red;
+				background: #fff;
+				border: 1px solid @red;
+			}
 			&.hover-animate {
-				.box-border(@red);
+				.box-border-top(@red);
+				border-bottom: 0px;
 			}
 			&.hover {
 				h3 {
 					color: @red;
 				}
-			}
-			.btn {
-				color: @red;
-				background: #fff;
-				border: 1px solid @red;
+				.btn {
+					color: #fff;
+					background: @red;
+					border: 1px solid @red;
+				}
 			}
 		}
 		/* -----------------
@@ -92,18 +103,67 @@
 		----------------- */
 		.box-green {
 			background-color: @green;
+			.btn {
+				color: @green;
+				background: #fff;
+				border: 1px solid @green;
+			}
 			&.hover-animate {
-				.box-border(@green);
+				.box-border-top(@green);
+				border-bottom: 0px;
 			}
 			&.hover {
 				h3 {
 					color: @green;
 				}
+				.btn {
+					color: #fff;
+					background: @green;
+				}
+			}
+		}
+		/* -----------------
+		Colour Box: Teal
+		----------------- */
+		.box-teal {
+			background-color: @teal;
+			&.hover-animate {
+				.box-border-top(@teal);
+				border-bottom: 0px;
+			}
+			&.hover {
+				h3 {
+					color: @teal;
+				}
 			}
 			.btn {
-				color: @green;
+				color: @teal;
 				background: #fff;
-				border: 1px solid @green;
+				border: 1px solid @teal;
+			}
+		}
+		/* -----------------
+		Colour Box: Gold
+		----------------- */
+		.box-gold {
+			background-color: @gold;
+			.btn {
+				color: @gold;
+				background: #fff;
+				border: 1px solid @gold;
+			}
+			&.hover-animate {
+				.box-border-top(@gold);
+				border-bottom: 0px;
+			}
+			&.hover {
+				h3 {
+					color: @gold;
+				}
+				.btn {
+					color: #fff;
+					background: @gold;
+				}
 			}
 		}
 		/* -----------------
@@ -111,18 +171,23 @@
 		----------------- */
 		.box-purple {
 			background-color: @purple;
+			.btn {
+				color: @purple;
+				background: #fff;
+				border: 1px solid @purple;
+			}
 			&.hover-animate {
-				.box-border(@purple);
+				.box-border-top(@purple);
+				border-bottom: 0px;
 			}
 			&.hover {
 				h3 {
 					color: @purple;
 				}
-			}
-			.btn {
-				color: @purple;
-				background: #fff;
-				border: 1px solid @purple;
+				.btn {
+					color: #fff;
+					background: @purple;
+				}
 			}
 		}
 
@@ -130,13 +195,13 @@
 		Skills/Expertise Box
 		----------------- */
 		&.skills {
-			.box-blue;
+			.box-green;
 			background-image: url('../images/home/skills.png');
 			background-position: 130% -40px;
 			margin-top: -20px;
 			height: 184px;
 			&.hover-animate {
-				margin-top: -25px;
+				margin-top: -30px;
 			}
 			.icons {
 				width: 216px;
@@ -167,7 +232,7 @@
 				margin-top: 73px;
 			}
 			&.hover-animate {
-				margin-top: -35px;
+				margin-top: -40px;
 			}
 			&.hover {
 				.btn {
@@ -189,7 +254,8 @@
 				margin-top: 73px;
 			}
 			&.hover-animate {
-				margin-top: -15px;
+				margin-top: -20px;
+				margin-bottom: 10px;
 			}
 			&.hover {
 				.icons {
@@ -212,7 +278,7 @@
 		Current Situation Box
 		----------------- */
 		&.situation {
-			.box-green;
+			.box-blue;
 			background-image: url('../images/home/situation.png');
 			background-position: 170px -25px;
 			height: 171px;
@@ -225,7 +291,7 @@
 				}
 			}
 			&.hover-animate {
-
+				margin-top: -10px;
 			}
 		}
 
@@ -233,7 +299,7 @@
 		Learning Box
 		----------------- */
 		&.learning {
-			.box-blue;
+			.box-green;
 			background-image: url('../images/home/learning.png');
 			background-position: -380% 0px;
 			margin-top: -20px;
@@ -248,7 +314,7 @@
 				margin-top: 135px;
 			}
 			&.hover-animate {
-				margin-top: -25px;
+				margin-top: -30px;
 			}
 			&.hover {
 				.btn {
@@ -261,7 +327,7 @@
 		Workflow Box
 		----------------- */
 		&.workflow {
-			.box-blue;
+			.box-purple;
 			background-image: url('../images/home/workflow.png');
 			background-position: -250% -30px;
 			height: 179px;
@@ -279,13 +345,16 @@
 					margin-top: 0px;
 				}
 			}
+			&.hover-animate {
+				margin-top: -10px;
+			}
 		}
 
 		/* -----------------
 		About Box
 		----------------- */
 		&.about {
-			.box-purple;
+			.box-gold;
 			height: 151px;
 			background-image: url('../images/home/about.png');
 			background-position: 120px 0px;
@@ -297,13 +366,16 @@
 					margin-top: 0px;
 				}
 			}
+			&.hover-animate {
+				margin-top: -10px;
+			}
 		}
 
 		/* -----------------
 		Contact Box
 		----------------- */
 		&.contact {
-			.box-purple;
+			.box-blue;
 			background-image: url('../images/home/contact.png');
 			background-position: 150px -50px;
 			margin-top: -10px;
@@ -312,7 +384,7 @@
 				margin-top: 33px;
 			}
 			&.hover-animate {
-				margin-top: -15px;
+				margin-top: -20px;
 			}
 			&.hover {
 				.btn {
