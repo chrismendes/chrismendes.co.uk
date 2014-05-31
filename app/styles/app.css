@@ -530,11 +530,8 @@ Miscellaneous
   background: #fff;
   border: 1px solid #dd686d;
 }
-#page-home .box.portfolio h3 {
-  width: 100px;
-}
 #page-home .box.portfolio .btn {
-  margin-top: 34px;
+  margin-top: 73px;
 }
 #page-home .box.portfolio.hover-animate {
   margin-top: -15px;
@@ -574,11 +571,8 @@ Miscellaneous
   background: #fff;
   border: 1px solid #1ec1c1;
 }
-#page-home .box.situation h3 {
-  width: 100px;
-}
 #page-home .box.situation .btn {
-  margin-top: 12px;
+  margin-top: 53px;
 }
 #page-home .box.situation.hover .btn {
   margin-top: 0px;
