@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/silver.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -303,18 +303,22 @@ Miscellaneous
 #page-home .row {
   margin-top: 28px;
 }
-#page-home h3 {
-  font-size: 20px;
-  margin: 0px 0px 10px 0px;
-}
 #page-home .box {
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: 97% 9%;
   -moz-box-shadow: 2px 2px 4px 0px #777777;
   -webkit-box-shadow: 2px 2px 4px 0px #777777;
   box-shadow: 2px 2px 4px 0px #777777;
+  /* -----------------
+		Colour Box: Red
+		----------------- */
+  /* -----------------
+		Colour Box: Teal
+		----------------- */
+  /* -----------------
+		Colour Box: Purple
+		----------------- */
   /* -----------------
 		Skills/Expertise Box
 		----------------- */
@@ -340,64 +344,121 @@ Miscellaneous
 		Contact Box
 		----------------- */
 }
+#page-home .box h3 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0px 0px 10px 0px;
+}
 #page-home .box p {
-  -moz-opacity: 0.7;
-  -khtml-opacity: 0.7;
-  -webkit-opacity: 0.7;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+  display: none;
 }
 #page-home .box .icons {
-  display: block;
+  display: none;
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: 0px 100%;
 }
 #page-home .box .btn {
-  background: #70a9a9;
-  border: 1px solid #589393;
-}
-#page-home .box.hover p {
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-}
-#page-home .box.hover .icons {
-  background-position: 0px 100%;
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-}
-#page-home .box.hover .btn {
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  background: #1EC1C1;
-  border: 1px solid #009973;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
 }
 #page-home .box.hover-animate {
-  background-color: #ffffff;
+  background-color: #fff !important;
   margin-top: -5px;
   margin-bottom: 5px;
 }
-#page-home .box.skills {
+#page-home .box.hover h3 {
+  font-size: 20px;
+  line-height: 1.1;
+  width: auto !important;
+}
+#page-home .box.hover .icons,
+#page-home .box.hover p {
+  display: block;
+}
+#page-home .box .box-red {
+  background-color: #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+#page-home .box .box-red.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
-  background-image: url('../images/icons/skills.png');
-  margin-top: -20px;
 }
-#page-home .box.skills h3 {
+#page-home .box .box-red.hover h3 {
   color: #cb2e34;
+}
+#page-home .box .box-red .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
+}
+#page-home .box .box-teal {
+  background-color: #1ec1c1;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+#page-home .box .box-teal.hover-animate {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #1ec1c1;
+}
+#page-home .box .box-teal.hover h3 {
+  color: #1ec1c1;
+}
+#page-home .box .box-teal .btn {
+  color: #1ec1c1;
+  background: #fff;
+  border: 1px solid #1ec1c1;
+}
+#page-home .box .box-purple {
+  background-color: #a165c1;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+}
+#page-home .box .box-purple.hover-animate {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #a165c1;
+}
+#page-home .box .box-purple.hover h3 {
+  color: #a165c1;
+}
+#page-home .box .box-purple .btn {
+  color: #a165c1;
+  background: #fff;
+  border: 1px solid #a165c1;
+}
+#page-home .box.skills {
+  background-color: #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/skills.png');
+  background-position: 130% -40px;
+  margin-top: -20px;
+  height: 184px;
+}
+#page-home .box.skills.hover-animate {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+}
+#page-home .box.skills.hover h3 {
+  color: #cb2e34;
+}
+#page-home .box.skills .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
 }
 #page-home .box.skills.hover-animate {
   margin-top: -25px;
@@ -406,117 +467,253 @@ Miscellaneous
   width: 216px;
   height: 63px;
   margin: 15px 0px 15px 5px;
-  background-image: url('../images/home/skills.png');
+  background-image: url('../images/home/skills-icons.png');
+}
+#page-home .box.skills .btn {
+  margin-top: 27px;
+}
+#page-home .box.skills.hover .btn {
+  margin-top: 0px;
 }
 #page-home .box.cv {
+  background-color: #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/cv.png');
+  background-position: 20% -30px;
+  margin-top: -30px;
+  height: 191px;
+}
+#page-home .box.cv.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
-  background-image: url('../images/icons/cv.png');
-  background-position: 95% 8%;
-  margin-top: -30px;
 }
-#page-home .box.cv h3 {
+#page-home .box.cv.hover h3 {
   color: #cb2e34;
+}
+#page-home .box.cv .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
+}
+#page-home .box.cv .btn {
+  margin-top: 73px;
 }
 #page-home .box.cv.hover-animate {
   margin-top: -35px;
 }
+#page-home .box.cv.hover .btn {
+  margin-top: 0px;
+}
 #page-home .box.portfolio {
+  background-color: #dd686d;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/portfolio.png');
+  background-position: 350% 8%;
+  margin-top: -10px;
+  height: 192px;
+}
+#page-home .box.portfolio.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #dd686d;
-  background-image: url('../images/icons/portfolio.png');
-  background-position: 95% 8%;
-  margin-top: -10px;
+}
+#page-home .box.portfolio.hover h3 {
+  color: #cb2e34;
+}
+#page-home .box.portfolio .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
 }
 #page-home .box.portfolio h3 {
-  color: #cb2e34;
+  width: 100px;
+}
+#page-home .box.portfolio .btn {
+  margin-top: 34px;
 }
 #page-home .box.portfolio.hover-animate {
   margin-top: -15px;
 }
+#page-home .box.portfolio.hover .icons {
+  display: block;
+}
+#page-home .box.portfolio.hover .btn {
+  margin-top: 0px;
+}
 #page-home .box.portfolio .icons {
+  display: none;
   width: 213px;
   height: 76px;
   margin: 15px 0px 10px 10px;
-  background-image: url('../images/home/clients.png');
+  background-image: url('../images/home/clients-icons.png');
 }
 #page-home .box.situation {
+  background-color: #dd686d;
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #ffff99;
-  background-image: url('../images/icons/situation.png');
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/situation.png');
+  background-position: 170px -25px;
+  height: 171px;
+}
+#page-home .box.situation.hover-animate {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+}
+#page-home .box.situation.hover h3 {
+  color: #cb2e34;
+}
+#page-home .box.situation .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
 }
 #page-home .box.situation h3 {
-  color: #cccc00;
+  width: 100px;
+}
+#page-home .box.situation .btn {
+  margin-top: 12px;
+}
+#page-home .box.situation.hover .btn {
+  margin-top: 0px;
 }
 #page-home .box.learning {
+  background-color: #a165c1;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/learning.png');
+  background-position: -380% 0px;
+  margin-top: -20px;
+  height: 254px;
+}
+#page-home .box.learning.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #a165c1;
-  background-image: url('../images/icons/learning.png');
-  background-position: 93% 8%;
-  margin-top: -20px;
 }
-#page-home .box.learning h3 {
+#page-home .box.learning.hover h3 {
   color: #a165c1;
 }
-#page-home .box.learning.hover-animate {
-  margin-top: -25px;
+#page-home .box.learning .btn {
+  color: #a165c1;
+  background: #fff;
+  border: 1px solid #a165c1;
 }
 #page-home .box.learning .icons {
   width: 123px;
   height: 63px;
   margin: 5px 0px 20px 0px;
-  background-image: url('../images/home/learning.png');
+  background-image: url('../images/home/learning-icons.png');
+}
+#page-home .box.learning .btn {
+  margin-top: 135px;
+}
+#page-home .box.learning.hover-animate {
+  margin-top: -25px;
+}
+#page-home .box.learning.hover .btn {
+  margin-top: 0px;
 }
 #page-home .box.workflow {
+  background-color: #a165c1;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/workflow.png');
+  background-position: -250% -30px;
+  height: 179px;
+}
+#page-home .box.workflow.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #a165c1;
-  background-image: url('../images/icons/workflow.png');
 }
-#page-home .box.workflow h3 {
+#page-home .box.workflow.hover h3 {
   color: #a165c1;
+}
+#page-home .box.workflow .btn {
+  color: #a165c1;
+  background: #fff;
+  border: 1px solid #a165c1;
 }
 #page-home .box.workflow .icons {
   width: 313px;
   height: 58px;
   margin: 15px 0px 15px 10px;
-  background-image: url('../images/home/workflow.png');
+  background-image: url('../images/home/workflow-icons.png');
+}
+#page-home .box.workflow .btn {
+  margin-top: 20px;
 }
 #page-home .box.workflow.hover .btn {
-  background: #29a385;
-  border: 1px solid #009973;
+  margin-top: 0px;
 }
 #page-home .box.about {
+  background-color: #a165c1;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #ffffff;
+  height: 151px;
+  background-image: url('../images/home/about.png');
+  background-position: 120px 0px;
+}
+#page-home .box.about.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #a165c1;
-  background-image: url('../images/icons/about.png');
-  background-position: 96% 8%;
 }
-#page-home .box.about h3 {
+#page-home .box.about.hover h3 {
   color: #a165c1;
 }
+#page-home .box.about .btn {
+  color: #a165c1;
+  background: #fff;
+  border: 1px solid #a165c1;
+}
+#page-home .box.about .btn {
+  margin-top: 33px;
+}
 #page-home .box.about.hover .btn {
-  background: #29a385;
-  border: 1px solid #009973;
+  margin-top: 0px;
 }
 #page-home .box.contact {
+  background-color: #dd686d;
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #ffff99;
-  background-image: url('../images/icons/contact.png');
-  background-position: 95% 8%;
-  margin-top: -20px;
-}
-#page-home .box.contact h3 {
-  color: #cccc00;
+  border-bottom-color: #ffffff;
+  background-image: url('../images/home/contact.png');
+  background-position: 150px -50px;
+  margin-top: -10px;
+  height: 151px;
 }
 #page-home .box.contact.hover-animate {
-  margin-top: -25px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #dd686d;
+}
+#page-home .box.contact.hover h3 {
+  color: #cb2e34;
+}
+#page-home .box.contact .btn {
+  color: #dd686d;
+  background: #fff;
+  border: 1px solid #dd686d;
+}
+#page-home .box.contact .btn {
+  margin-top: 33px;
+}
+#page-home .box.contact.hover-animate {
+  margin-top: -15px;
+}
+#page-home .box.contact.hover .btn {
+  margin-top: 0px;
 }
 /* -----------------
 My CV
