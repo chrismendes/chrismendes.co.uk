@@ -6,7 +6,7 @@ var App = App || {};
 App.Views.Portfolio = App.Views.BaseView.extend({
 
 	template: App.Helpers.template('template-portfolio'),
-	theme: 'gold',
+	theme: 'teal',
 	elPage: '#page-portfolio',
 
 	onAfterRender: function() {

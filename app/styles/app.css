@@ -7,7 +7,7 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/silver.jpg') 0px 0px no-repeat fixed;
+  background: url('../images/bg/gold.jpg') 0px 0px no-repeat fixed;
   padding: 100px 0px;
   overflow-y: scroll;
 }
@@ -553,7 +553,7 @@ Miscellaneous
   background-image: url('../images/home/clients-icons.png');
 }
 #page-home .box.situation {
-  background-color: #dd686d;
+  background-color: #1ec1c1;
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffffff;
@@ -564,15 +564,15 @@ Miscellaneous
 #page-home .box.situation.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #dd686d;
+  border-bottom-color: #1ec1c1;
 }
 #page-home .box.situation.hover h3 {
-  color: #cb2e34;
+  color: #1ec1c1;
 }
 #page-home .box.situation .btn {
-  color: #dd686d;
+  color: #1ec1c1;
   background: #fff;
-  border: 1px solid #dd686d;
+  border: 1px solid #1ec1c1;
 }
 #page-home .box.situation h3 {
   width: 100px;
@@ -684,7 +684,7 @@ Miscellaneous
   margin-top: 0px;
 }
 #page-home .box.contact {
-  background-color: #dd686d;
+  background-color: #1ec1c1;
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: #ffffff;
@@ -696,15 +696,15 @@ Miscellaneous
 #page-home .box.contact.hover-animate {
   border-bottom-width: 5px;
   border-bottom-style: solid;
-  border-bottom-color: #dd686d;
+  border-bottom-color: #1ec1c1;
 }
 #page-home .box.contact.hover h3 {
-  color: #cb2e34;
+  color: #1ec1c1;
 }
 #page-home .box.contact .btn {
-  color: #dd686d;
+  color: #1ec1c1;
   background: #fff;
-  border: 1px solid #dd686d;
+  border: 1px solid #1ec1c1;
 }
 #page-home .box.contact .btn {
   margin-top: 33px;
