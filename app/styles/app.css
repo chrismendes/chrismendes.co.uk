@@ -275,7 +275,7 @@ Carousel
   cursor: pointer;
 }
 .carousel-indicators li:first-child {
-  margin-left: 0px;
+  margin-left: 0px !important;
 }
 .carousel-indicators li.active {
   background: #1ec1c1;
