@@ -149,7 +149,7 @@ header h1 span {
 header p.lead {
   color: #fff;
   font-size: 21px;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px 5px 4px;
   clear: both;
 }
 header p.lead small {
