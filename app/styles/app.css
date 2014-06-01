@@ -128,23 +128,23 @@ header {
   padding: 15px;
   width: 100%;
   float: left;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 header a:hover {
   text-decoration: none;
 }
 header h1 {
-  color: #FBEDCC;
-  text-shadow: 1px 1px #000;
+  color: #fff;
+  text-shadow: 2px 2px #777;
   font-size: 60px;
   margin: 0px 0px 5px 0px;
   padding: 0px;
   float: left;
 }
 header h1 span {
-  color: #fff;
-  text-shadow: 2px 2px #999;
-  font-size: 36px;
+  color: #666;
+  text-shadow: none;
+  font-size: 32px;
 }
 header p.lead {
   color: #fff;
