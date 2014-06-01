@@ -7,8 +7,8 @@ body {
   height: 100%;
 }
 body {
-  background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
-  padding: 100px 0px;
+  background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
+  padding: 60px 0px;
   overflow-y: scroll;
 }
 body.slideup {
@@ -110,9 +110,7 @@ Font Definitions
 Global Typeface
 ----------------- */
 h1 {
-  font-family: 'Times New Roman';
   font-size: 36px;
-  color: #FFFFFF;
 }
 h2 {
   font-size: 46px;
@@ -125,35 +123,36 @@ h3 {
 Header
 ----------------- */
 header {
-  min-height: 156px;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  width: 100%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-header .title h1 {
+header a:hover {
+  text-decoration: none;
+}
+header h1 {
+  color: #666;
   font-size: 60px;
-  text-shadow: 2px 2px #000000;
   margin: 0px 0px 5px 0px;
   padding: 0px;
   float: left;
 }
-header .title p {
-  font-size: 15px;
-  clear: both;
+header h1 span {
+  color: #fff;
+  text-shadow: 2px 2px #999;
+  font-size: 36px;
 }
-header .title p.lead {
+header p.lead {
+  color: #fff;
   font-size: 21px;
   margin: 5px 0px 5px 0px;
+  clear: both;
 }
-header .intro {
-  display: none;
-}
-header .intro .box {
-  border: 0px;
-  cursor: inherit;
-}
-header .intro h3 {
-  margin: 0px 0px 10px 0px;
-}
-header .intro p + p {
-  margin-bottom: 0px;
+header p.lead small {
+  font-size: 15px;
 }
 /* -----------------
 Child Page Template
@@ -637,28 +636,28 @@ Miscellaneous
   background-image: url('../images/home/clients-icons.png');
 }
 #page-home .box.situation {
-  background-color: #36a7c9;
+  background-color: #dcbe5d;
   background-image: url('../images/home/situation.png');
   background-position: 170px -25px;
   height: 171px;
 }
+#page-home .box.situation .btn {
+  color: #dcbe5d;
+  background: #fff;
+  border: 1px solid #dcbe5d;
+}
 #page-home .box.situation.hover-animate {
   border-top-width: 5px;
   border-top-style: solid;
-  border-top-color: #36a7c9;
+  border-top-color: #dcbe5d;
   border-bottom: 0px;
 }
 #page-home .box.situation.hover h3 {
-  color: #36a7c9;
+  color: #dcbe5d;
 }
 #page-home .box.situation.hover .btn {
   color: #fff;
-  background: #36a7c9;
-}
-#page-home .box.situation .btn {
-  color: #36a7c9;
-  background: #fff;
-  border: 1px solid #36a7c9;
+  background: #dcbe5d;
 }
 #page-home .box.situation .btn {
   margin-top: 53px;
@@ -749,28 +748,28 @@ Miscellaneous
   margin-top: -10px;
 }
 #page-home .box.about {
-  background-color: #dcbe5d;
+  background-color: #36a7c9;
   height: 151px;
   background-image: url('../images/home/about.png');
   background-position: 120px 0px;
 }
-#page-home .box.about .btn {
-  color: #dcbe5d;
-  background: #fff;
-  border: 1px solid #dcbe5d;
-}
 #page-home .box.about.hover-animate {
   border-top-width: 5px;
   border-top-style: solid;
-  border-top-color: #dcbe5d;
+  border-top-color: #36a7c9;
   border-bottom: 0px;
 }
 #page-home .box.about.hover h3 {
-  color: #dcbe5d;
+  color: #36a7c9;
 }
 #page-home .box.about.hover .btn {
   color: #fff;
-  background: #dcbe5d;
+  background: #36a7c9;
+}
+#page-home .box.about .btn {
+  color: #36a7c9;
+  background: #fff;
+  border: 1px solid #36a7c9;
 }
 #page-home .box.about .btn {
   margin-top: 33px;
