@@ -6,8 +6,8 @@ html, body {
 	height: 100%;
 }
 body {
-	.bg('denimblue');
-	padding: 100px 0px;
+	.bg('blue');
+	padding: 60px 0px;
 	overflow-y: scroll;
 	&.slideup {
 		padding: 40px 0px;
@@ -148,9 +148,7 @@ Font Definitions
 Global Typeface
 ----------------- */
 h1 {
-	font-family: 'Times New Roman';
 	font-size: 36px;
-	color: #FFFFFF;
 }
 h2 {
 	font-size: 46px;
@@ -165,35 +163,31 @@ h3 {
 Header
 ----------------- */
 header {
-	min-height: 156px;
-	.title {
-		h1 {
-			font-size: 60px;
-			text-shadow: 2px 2px #000000;
-			margin: 0px 0px 5px 0px;
-			padding: 0px;
-			float: left;
-		}
-		p {
-			font-size: 15px;
-			clear: both;
-			&.lead {
-				font-size: 21px;
-				margin: 5px 0px 5px 0px;
-			}
+	margin-bottom: 50px;
+	.box;
+	.bgopacity(#ffffff, 30%);
+	h1 {
+		// color: #fbeccb;
+		color: #666;
+		// text-shadow: 1px 1px #000;
+		font-size: 60px;
+		margin: 0px 0px 5px 0px;
+		padding: 0px;
+		float: left;
+		span {
+			color: #fff;
+			text-shadow: 2px 2px #999;
+			font-size: 36px;
 		}
 	}
-	.intro {
-		display: none;
-		.box {
-			border: 0px;
-			cursor: inherit;
-		}
-		h3 {
-			margin: 0px 0px 10px 0px;
-		}
-		p + p {
-			margin-bottom: 0px;
+	p.lead {
+		color: #fff;
+		// text-shadow: 1px 1px #666;
+		font-size: 21px;
+		margin: 5px 0px 5px 0px;
+		clear: both;
+		small {
+			font-size: 15px;
 		}
 	}
 }
