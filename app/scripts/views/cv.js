@@ -6,7 +6,7 @@ var App = App || {};
 App.Views.CV = App.Views.BaseView.extend({
 
 	template: App.Helpers.template('template-cv'),
-	theme: 'teal',
+	theme: 'gold',
 	elPage: '#page-cv',
 
 	events: _.extend(App.Views.BaseView.prototype.events, {
