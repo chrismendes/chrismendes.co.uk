@@ -5,7 +5,7 @@ define([
     'jqueryui',
     'backbone',
     'views/_base',
-    'common'
+    'common'    
 ], function($, Backbone, BaseView, Common) {
 
     var HomeView = Backbone.View.extend({
@@ -44,14 +44,15 @@ define([
             boxClicked.removeClass('hover', 100);
             $('.box').each(function() {
                 $(this).parent().css('height', $(this).parent().height());
-            })
+            });
             $('.box').not(boxClicked).fadeOut(200, function() {
                 boxClicked.fadeOut(200, function() {
                     $('body').addClass('slideup', 500, 'easeOutCubic', function() {
                         var navigateTo = boxClicked.attr('data-href');
                         $('body').unbind('backgroundSet');
                         $('body').on('backgroundSet', function() {
-                            Router.navigate(navigateTo, true);
+                            $('body').unbind('backgroundSet');
+                            Backbone.trigger('changePage', navigateTo);
                         });
                         Common.setBackground(boxClicked.data('theme'));
                     });

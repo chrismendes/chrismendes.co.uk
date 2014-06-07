@@ -18,6 +18,13 @@ define([
 
         initialize: function() {
             this.index();
+            this.listenTo(Backbone, 'changePage', this.changePage);
+        },
+
+        // Used inside animate onComplete callbacks
+        changePage: function(target) {
+            var routeHandler = this.routes[target];
+            this[routeHandler]();
         },
 
         // Home Page
