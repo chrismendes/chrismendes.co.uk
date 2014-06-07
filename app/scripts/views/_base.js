@@ -1,44 +1,54 @@
-var App = App || {};
-
 // -------
 // Base View
 // -------
-App.Views.BaseView = Backbone.View.extend({
+define([
+    'jquery',
+    'backbone',
+    // 'routers/router',
+    'views/home',
+    'common'
+], function($, Backbone, HomeView, Common) {
 
-	el: '#main',
-	elPage: null,
-	template: null,
-	theme: null,
+    var BaseView = Backbone.View.extend({
 
-	events: {
-		'click .back-home': 'returnToHomepage'
-	},
+    	el: '#main',
+    	elPage: null,
+    	template: null,
+    	theme: null,
 
-	initialize: function() {
-		this.render();
-	},
+    	events: {
+    		'click .back-home': 'returnToHomepage'
+    	},
 
-	render: function() {
-		if(this.elPage !== null) {
-			$('body').addClass(this.theme).addClass('slideup');
-			this.$el.html(this.template());
-			$(this.elPage).fadeIn(200);
-			this.onAfterRender();
-			return this;
-		}
-		return false;
-	},
+    	initialize: function() {
+    		this.render();
+    	},
 
-	onAfterRender: function() {},
+    	render: function() {
+    		if(this.elPage !== null) {
+    			$('body').addClass(this.theme).addClass('slideup');
+    			this.$el.html(this.template());
+    			$(this.elPage).fadeIn(200);
+    			this.onAfterRender();
+    			return this;
+    		}
+    		return false;
+    	},
 
-	returnToHomepage: function() {
-		$('body').unbind('backgroundSet');
-		$('body').on('backgroundSet', function() {
-			Router.navigate('/', true);
-		});
-		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
-			App.Helpers.setBackground(App.Views.Home.prototype.theme);
-		});
-	}
+    	onAfterRender: function() {},
+
+    	returnToHomepage: function() {
+    		$('body').unbind('backgroundSet');
+    		$('body').on('backgroundSet', function() {
+    			Router.navigate('/', true);
+    		});
+    		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
+    			Common.setBackground(HomeView.prototype.theme);
+    		});
+    	}
+
+    });
+
+    return BaseView;
 
 });

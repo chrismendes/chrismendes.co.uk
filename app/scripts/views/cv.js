@@ -1,28 +1,37 @@
-var App = App || {};
-
 // -------
 // CV Page
 // -------
-App.Views.CV = App.Views.BaseView.extend({
+define([
+    'jquery',
+    'backbone',
+    'views/_base',
+    'common'
+], function($, Backbone, BaseView, Common) {
 
-	template: App.Helpers.template('template-cv'),
-	theme: 'gold',
-	elPage: '#page-cv',
+    var CvView = BaseView.extend({
 
-	events: _.extend(App.Views.BaseView.prototype.events, {
-		// 'mouseenter a.info-popup span': 			'showModal',
-		// 'mouseleave a.info-popup': 						'hideModal',
-	}),
+        template: Common.template('template-cv'),
+        theme: 'gold',
+        elPage: '#page-cv',
 
-	showModal: function(e) {
-		var modal = $(e.target).attr('data-target');
-		$(modal).modal({
-			backdrop: false
-		});
-	},
-	hideModal: function(e) {
-		var modal = $(e.target).attr('data-target');
-		$(modal).modal('hide');
-	}
+        // events: _.extend(App.Views.BaseView.prototype.events, {
+            // 'mouseenter a.info-popup span': 'showModal',
+            // 'mouseleave a.info-popup': 'hideModal',
+        // }),
+
+        showModal: function(e) {
+            var modal = $(e.target).attr('data-target');
+            $(modal).modal({
+                backdrop: false
+            });
+        },
+        hideModal: function(e) {
+            var modal = $(e.target).attr('data-target');
+            $(modal).modal('hide');
+        }
+
+    });
+
+    return CvView;
 
 });
