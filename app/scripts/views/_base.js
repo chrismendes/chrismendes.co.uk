@@ -4,10 +4,8 @@
 define([
     'jquery',
     'backbone',
-    // 'routers/router',
-    'views/home',
     'common'
-], function($, Backbone, HomeView, Common) {
+], function($, Backbone, Common) {
 
     var BaseView = Backbone.View.extend({
 
@@ -40,10 +38,12 @@ define([
     	returnToHomepage: function() {
     		$('body').unbind('backgroundSet');
     		$('body').on('backgroundSet', function() {
-    			Router.navigate('/', true);
+                Backbone.trigger('changePage', '');
     		});
+            console.log('test1');
     		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
-    			Common.setBackground(HomeView.prototype.theme);
+                console.log('test2');
+    			Common.setBackground(Common.homeTheme);
     		});
     	}
 
