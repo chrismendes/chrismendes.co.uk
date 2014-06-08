@@ -11,6 +11,7 @@ define([
 
         currentView: null,
 
+        // Destroy current view before loading the next
         showView: function(nextView) {
             if(this.currentView) {
                 this.currentView.destroy();
