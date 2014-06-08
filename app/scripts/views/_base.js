@@ -9,9 +9,9 @@ define([
 
     var BaseView = Backbone.View.extend({
 
-    	el: '#main',
+    	el: '#page-contents',
     	elPage: null,
-    	template: null,
+    	// template: null,
     	theme: null,
 
     	events: {
@@ -19,8 +19,14 @@ define([
     	},
 
     	initialize: function() {
-    		this.render();
+    		// this.render();
     	},
+
+        destroy: function() {
+            this.stopListening();
+            this.undelegateEvents();
+            this.unbind();
+        },
 
     	render: function() {
     		if(this.elPage !== null) {
@@ -36,14 +42,11 @@ define([
     	onAfterRender: function() {},
 
     	returnToHomepage: function() {
-    		$('body').unbind('backgroundSet');
-    		$('body').on('backgroundSet', function() {
-                Backbone.trigger('changePage', '');
-    		});
-            console.log('test1');
     		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
-                console.log('test2');
-    			Common.setBackground(Common.homeTheme);
+    			Common.setBackground(Common.homeTheme, function() {
+                    // Change page
+                    Backbone.history.navigate('/', { trigger: true });
+                });
     		});
     	}
 

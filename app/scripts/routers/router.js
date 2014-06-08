@@ -3,10 +3,8 @@
 // -------
 define([
     'backbone',
-    'views/home',
-    'views/cv',
-    'views/portfolio'
-], function(Backbone, HomeView, CvView, PortfolioView) {
+    'app'
+], function(Backbone, App) {
 
     var Router = Backbone.Router.extend({
 
@@ -17,27 +15,22 @@ define([
         },
 
         initialize: function() {
-            this.index();
-            this.listenTo(Backbone, 'changePage', this.changePage);
-        },
-
-        // Used inside animate onComplete callbacks
-        changePage: function(target) {
-            var routeHandler = this.routes[target];
-            this[routeHandler]();
+            // Turn on Backbone's URL change listener (also triggers home route)
+            Backbone.history.start();
+            // Backbone.history.start({ pushState: true });
         },
 
         // Home Page
         index: function() {
-            new HomeView;
+            App.showHome();
         },
         // CV Page
         showCV: function() {
-            new CvView;
+            App.showCV();
         },
         // Portfolio Page
         showPortfolio: function() {
-            new PortfolioView;
+            App.showPortfolio();
         }
 
     });
