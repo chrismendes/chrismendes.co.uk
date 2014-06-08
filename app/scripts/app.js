@@ -1,64 +1,42 @@
-'use strict';
-
 // -------
-// RequireJS Config
+// App Controller
 // -------
-require.config({
-	baseURL: 'app/scripts',
-	paths: {
-		'jquery': 		            '../bower_components/jquery/dist/jquery',
-		'jqueryui': 	            '../bower_components/jquery-ui/ui/jquery-ui',
-		'underscore': 	            '../bower_components/underscore/underscore',
-		'backbone': 	            '../bower_components/backbone/backbone',
-        'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel',
-        'bootstrap-modal':          '../bower_components/bootstrap/js/modal',
-        'bootstrap-transition':     '../bower_components/bootstrap/js/transition',
-        'bootstrap-tab':            '../bower_components/bootstrap/js/tab',
-        'bootstrap-collapse':       '../bower_components/bootstrap/js/collapse'
-	},
-	shim: {
-		'underscore': {
-			exports: '_'
-		},
-		'backbone': {
-			exports: 'Backbone'
-		},
-        'jqueryui': {
-            exports: '$',
-            deps:    ['jquery']
-        },
-        'bootstrap-carousel': {
-            exports: 'bootstrap-carousel',
-            deps:    ['jquery']
-        },
-        'bootstrap-modal': {
-            exports: 'bootstrap-modal',
-            deps:    ['jquery']
-        },
-        'bootstrap-transition': {
-            exports: 'bootstrap-transition',
-            deps:    ['jquery']
-        },
-        'bootstrap-tab': {
-            exports: 'bootstrap-tab',
-            deps:    ['jquery']
-        },
-        'bootstrap-collapse': {
-            exports: 'bootstrap-collapse',
-            deps:    ['jquery']
-        }
-	}
-});
-
-
-// -------
-// App Start
-// -------
-require([
-    'backbone',
+define([
     'views/home',
-    'routers/router'
-], function(Backbone, HomeView, Router) {
-    var router = new Router();
-    router.initialize();
+    'views/cv',
+    'views/portfolio'
+], function(HomeView, CvView, PortfolioView) {
+
+    return {
+
+        currentView: null,
+
+        showView: function(nextView) {
+            if(this.currentView) {
+                this.currentView.destroy();
+            }
+            this.currentView = nextView;
+            this.currentView.render();
+        },
+
+        // Home Page
+        showHome: function() {
+            var home = new HomeView();
+            this.showView(home);
+        },
+
+        // CV Page
+        showCV: function() {
+            var cv = new CvView();
+            this.showView(cv);
+        },
+
+        // Portfolio Page
+        showPortfolio: function() {
+            var portfolio = new PortfolioView();
+            this.showView(portfolio);
+        }
+
+    }
+
 });

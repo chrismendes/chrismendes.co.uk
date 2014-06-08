@@ -8,9 +8,10 @@ define([
     'common'    
 ], function($, Backbone, BaseView, Common) {
 
-    var HomeView = Backbone.View.extend({
+    var HomeView = BaseView.extend({
 
-        el: '#main',
+        el: '#page-contents',
+        elPage: '#page-home',
         template: Common.template('template-home'),
         theme: 'blue',
 
@@ -21,17 +22,18 @@ define([
         },
 
         initialize: function() {
-            this.render();
+            // this.render();
         },
 
         render: function() {
             $('body').removeClass('slideup');
             $('#header .intro').show();
             this.$el.html(this.template());
-            $('#page-home').fadeIn();
+            $(this.elPage).fadeIn();
             return this;
         },
 
+        // Box hover over/out effects
         onBoxHover: function(e) {
             this.identifyBox(e).addClass('hover').addClass('hover-animate', 100);
         },
@@ -39,27 +41,31 @@ define([
             this.identifyBox(e).removeClass('hover').removeClass('hover-animate', 100);
         },
 
+        // Home page exit transition
         exitPage: function(e) {
             var boxClicked = this.identifyBox(e);
-            boxClicked.removeClass('hover', 100);
+            var navigateTo = boxClicked.attr('data-href');
+            // boxClicked.removeClass('hover', 50).removeClass('hover-animate', 50);
+            // Fix box heights so as to prevent them collapsing
             $('.box').each(function() {
                 $(this).parent().css('height', $(this).parent().height());
             });
-            $('.box').not(boxClicked).fadeOut(200, function() {
-                boxClicked.fadeOut(200, function() {
+            // Fade out all boxes not clicked first
+            $('.box').not(boxClicked).fadeOut();
+            // After short delay, fade out clicked box, change background, and redirect on complete
+            _.delay(function() {
+                boxClicked.fadeOut(300, function() {
                     $('body').addClass('slideup', 500, 'easeOutCubic', function() {
-                        var navigateTo = boxClicked.attr('data-href');
-                        $('body').unbind('backgroundSet');
-                        $('body').on('backgroundSet', function() {
-                            $('body').unbind('backgroundSet');
-                            Backbone.trigger('changePage', navigateTo);
+                        Common.setBackground(boxClicked.data('theme'), function() {
+                            // Change page
+                            Backbone.history.navigate(navigateTo, { trigger: true });
                         });
-                        Common.setBackground(boxClicked.data('theme'));
                     });
                 });
-            });
+            }, 200);
         },
 
+        // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyBox: function(e) {
             return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
         }
