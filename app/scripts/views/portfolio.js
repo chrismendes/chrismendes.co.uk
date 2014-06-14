@@ -11,9 +11,9 @@ define([
 
     var PortfolioView = BaseView.extend({
 
-        theme: 'teal',
-        elPage: '#page-portfolio',
         template: _.template(html),
+        elPage: '#page-portfolio',
+        theme: 'gold',
 
         onAfterRender: function() {
             this.setCarouselAnnotationHook();

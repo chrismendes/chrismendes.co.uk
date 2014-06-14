@@ -11,10 +11,9 @@ define([
 
     var CvView = BaseView.extend({
 
-        // template: Common.template('template-cv'),
-        theme: 'gold',
-        elPage: '#page-cv',
         template: _.template(html),
+        elPage: '#page-cv',
+        theme: 'gold',
 
         events: _.extend(BaseView.prototype.events, {
             'mouseenter a.info-popup span': 'showModal',

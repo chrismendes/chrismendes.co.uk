@@ -11,22 +11,14 @@ define([
 
     var HomeView = BaseView.extend({
 
+        template: _.template(html),
         elPage: '#page-home',
         theme: 'blue',
-        template: _.template(html),
 
         events: {
             'mouseenter .box':      'onBoxHover',
             'mouseleave .box':      'onBoxHoverOut',
             'click .box':           'exitPage'
-        },
-
-        render: function() {
-            $('body').removeClass('slideup');
-            $('#header .intro').show();
-            this.$el.html(this.template());
-            $(this.elPage).fadeIn();
-            return this;
         },
 
         // Box hover over/out effects

@@ -4,8 +4,10 @@
 define([
     'jquery',
     'backbone',
-    'common'
-], function($, Backbone, Common) {
+    'common',
+    'text!/templates/_header.html',
+    'text!/templates/_footer.html'
+], function($, Backbone, Common, htmlHeader, htmlFooter) {
 
     var BaseView = Backbone.View.extend({
 
@@ -29,10 +31,26 @@ define([
                 return false;
             }
     		if(this.elPage !== null) {
-    			$('body').addClass(this.theme).addClass('slideup');
-    			this.$el.html(this.template());
+
+                // Ensure header on sub page is raised up on direct access or page refresh
+                if(this.elPage !== '#page-home') {
+                    $('body').addClass(this.theme).addClass('slideup');
+                }
+
+                // Set header
+                var header = _.template(htmlHeader);
+                $('header').html(header());
+
+                // Set footer
+                var footer = _.template(htmlFooter);
+                $('footer').html(footer());
+
+                // Set page contents and show
+                this.$el.html(this.template());
     			$(this.elPage).fadeIn(200);
-    			this.onAfterRender();
+    			
+                this.onAfterRender();
+
     			return this;
     		}
     		return false;
