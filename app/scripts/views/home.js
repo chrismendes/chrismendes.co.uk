@@ -7,12 +7,13 @@ define([
     'views/_base',
     'text!/templates/home.html',
     'common'    
-], function($, Backbone, BaseView, templateHome, Common) {
+], function($, Backbone, BaseView, html, Common) {
 
     var HomeView = BaseView.extend({
 
         elPage: '#page-home',
         theme: 'blue',
+        template: _.template(html),
 
         events: {
             'mouseenter .box':      'onBoxHover',
@@ -23,7 +24,7 @@ define([
         render: function() {
             $('body').removeClass('slideup');
             $('#header .intro').show();
-            // this.$el.html(this.template());
+            this.$el.html(this.template());
             $(this.elPage).fadeIn();
             return this;
         },
