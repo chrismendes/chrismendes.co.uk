@@ -11,15 +11,10 @@ define([
 
     	el: '#page-contents',
     	elPage: null,
-    	// template: null,
     	theme: null,
 
     	events: {
     		'click .back-home': 'returnToHomepage'
-    	},
-
-    	initialize: function() {
-    		// this.render();
     	},
 
         destroy: function() {
