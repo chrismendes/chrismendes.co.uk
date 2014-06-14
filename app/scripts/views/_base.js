@@ -24,6 +24,10 @@ define([
         },
 
     	render: function() {
+            if(typeof this.template === 'undefined') {
+                console.error('Caught error: View template not defined.');
+                return false;
+            }
     		if(this.elPage !== null) {
     			$('body').addClass(this.theme).addClass('slideup');
     			this.$el.html(this.template());

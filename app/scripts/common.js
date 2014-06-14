@@ -10,11 +10,6 @@ define([
         // Colour theme for home page (used by exit transitions back to home page)
         homeTheme: 'blue',
 
-        // Retrieve template html block
-        template: function(id) {
-        	return _.template( $('#' + id).html() );
-        },
-
         // Fade in new background
         setBackground: function(colour, onComplete) {
         	if(_.isUndefined(colour)) {

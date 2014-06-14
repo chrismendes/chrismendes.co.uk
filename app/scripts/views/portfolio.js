@@ -5,14 +5,15 @@ define([
     'jquery',
     'backbone',
     'views/_base',
+    'text!/templates/portfolio.html',
     'common'
-], function($, Backbone, BaseView, Common) {
+], function($, Backbone, BaseView, html, Common) {
 
     var PortfolioView = BaseView.extend({
 
-        template: Common.template('template-portfolio'),
         theme: 'teal',
         elPage: '#page-portfolio',
+        template: _.template(html),
 
         onAfterRender: function() {
             this.setCarouselAnnotationHook();
