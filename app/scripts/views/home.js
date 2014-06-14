@@ -5,14 +5,13 @@ define([
     'jqueryui',
     'backbone',
     'views/_base',
+    'text!/templates/home.html',
     'common'    
-], function($, Backbone, BaseView, Common) {
+], function($, Backbone, BaseView, templateHome, Common) {
 
     var HomeView = BaseView.extend({
 
-        el: '#page-contents',
         elPage: '#page-home',
-        template: Common.template('template-home'),
         theme: 'blue',
 
         events: {
@@ -21,14 +20,10 @@ define([
             'click .box':           'exitPage'
         },
 
-        initialize: function() {
-            // this.render();
-        },
-
         render: function() {
             $('body').removeClass('slideup');
             $('#header .intro').show();
-            this.$el.html(this.template());
+            // this.$el.html(this.template());
             $(this.elPage).fadeIn();
             return this;
         },
