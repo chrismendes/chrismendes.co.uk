@@ -25,6 +25,9 @@
     }
     .btn {
         .opacity(0.8);
+        background: #fff;
+        border-width: 1px;
+        border-style: solid;
     }
     a:hover {
         text-decoration: none;
@@ -34,12 +37,16 @@
         background-color: #fff !important;
         margin-top: -5px;
         margin-bottom: 5px;
+        border-bottom: 0px;
     }
     &.is-active {
         h3.title {
             font-size: 20px;
             line-height: 1.1;
-            width: auto !important;
+            width: auto;
+        }
+        .btn {
+            color: #fff !important;
         }
         .icons, p.description {
             display: block;
@@ -99,9 +106,6 @@
             margin-bottom: 10px;
         }
         &.is-active {
-            .icons {
-                display: block;
-            }
             .btn {
                 margin-top: 0px;
             }
@@ -208,21 +212,18 @@
         background-color: @blue;
         &.is-animating {
             .box-border-top(@blue);
-            border-bottom: 0px;
         }
         &.is-active {
             h3.title {
                 color: @blue;
             }
             .btn {
-                color: #fff;
                 background: @blue;
             }
         }
         .btn {
             color: @blue;
-            background: #fff;
-            border: 1px solid @blue;
+            border-color: @blue;
         }
     }
 
@@ -230,21 +231,18 @@
         background-color: @red;
         .btn {
             color: @red;
-            background: #fff;
-            border: 1px solid @red;
+            border-color: @red;
         }
         &.is-animating {
             .box-border-top(@red);
-            border-bottom: 0px;
         }
         &.is-active {
             h3.title {
                 color: @red;
             }
             .btn {
-                color: #fff;
                 background: @red;
-                border: 1px solid @red;
+                border-color: @red;
             }
         }
     }
@@ -253,39 +251,18 @@
         background-color: @green;
         .btn {
             color: @green;
-            background: #fff;
-            border: 1px solid @green;
+            border-color: @green;
         }
         &.is-animating {
             .box-border-top(@green);
-            border-bottom: 0px;
         }
         &.is-active {
             h3.title {
                 color: @green;
             }
             .btn {
-                color: #fff;
                 background: @green;
             }
-        }
-    }
-
-    &.box-teal {
-        background-color: @teal;
-        &.is-animating {
-            .box-border-top(@teal);
-            border-bottom: 0px;
-        }
-        &.is-active {
-            h3.title {
-                color: @teal;
-            }
-        }
-        .btn {
-            color: @teal;
-            background: #fff;
-            border: 1px solid @teal;
         }
     }
 
@@ -293,19 +270,16 @@
         background-color: @gold;
         .btn {
             color: @gold;
-            background: #fff;
-            border: 1px solid @gold;
+            border-color: @gold;
         }
         &.is-animating {
             .box-border-top(@gold);
-            border-bottom: 0px;
         }
         &.is-active {
             h3.title {
                 color: @gold;
             }
             .btn {
-                color: #fff;
                 background: @gold;
             }
         }
@@ -315,19 +289,16 @@
         background-color: @purple;
         .btn {
             color: @purple;
-            background: #fff;
-            border: 1px solid @purple;
+            border-color: @purple;
         }
         &.is-animating {
             .box-border-top(@purple);
-            border-bottom: 0px;
         }
         &.is-active {
             h3.title {
                 color: @purple;
             }
             .btn {
-                color: #fff;
                 background: @purple;
             }
         }
