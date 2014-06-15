@@ -23,17 +23,17 @@ define([
 
         // Box hover over/out effects
         onBoxHover: function(e) {
-            this.identifyBox(e).addClass('hover').addClass('hover-animate', 100);
+            this.identifyBox(e).addClass('is-active').addClass('is-animating', 100);
         },
         onBoxHoverOut: function(e) {
-            this.identifyBox(e).removeClass('hover').removeClass('hover-animate', 100);
+            this.identifyBox(e).removeClass('is-active').removeClass('is-animating', 100);
         },
 
         // Home page exit transition
         exitPage: function(e) {
             var boxClicked = this.identifyBox(e);
             var navigateTo = boxClicked.attr('data-href');
-            // boxClicked.removeClass('hover', 50).removeClass('hover-animate', 50);
+            // boxClicked.removeClass('is-active', 50).removeClass('is-animating', 50);
             // Fix box heights so as to prevent them collapsing
             $('.box').each(function() {
                 $(this).parent().css('height', $(this).parent().height());

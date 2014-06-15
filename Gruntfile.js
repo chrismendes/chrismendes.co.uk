@@ -67,7 +67,7 @@ module.exports = function (grunt) {
             less: {
                 files: [
                     '<%= config.app %>/styles/*',
-                    '<%= config.app %>/styles/pages/*',
+                    '<%= config.app %>/styles/**/*',
                 ],
                 tasks: ['less'],
                 options: {
