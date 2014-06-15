@@ -1,0 +1,38 @@
+html, body {
+    min-height: 100%;
+    height: 100%;
+    .bg('blue');
+}
+body {
+    padding: 60px 0px;
+    overflow-y: scroll;
+    &.is-raised {
+        padding: 40px 0px;
+    }
+}
+
+
+/* -----------------
+Typeface
+----------------- */
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 46px;
+    margin: 7px 0px 40px 0px;
+}
+h3 {
+    font-family: Verdana;
+}
+
+
+/* -----------------
+Miscellaneous
+----------------- */
+/* Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

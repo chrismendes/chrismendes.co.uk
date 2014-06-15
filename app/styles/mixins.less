@@ -1,0 +1,30 @@
+/* -----------------
+General Mixins
+----------------- */
+.bg(@pattern) {
+    background: url('../images/bg/@{pattern}.jpg') 0px 0px no-repeat fixed;
+}
+.bgopacity(@colourHex, @opacity) {
+  background-color: hsla(hue(@colourHex), saturation(@colourHex), lightness(@colourHex), @opacity);
+}
+.bgicon(@icon, @position) {
+    background-image: url('../images/icons/@{icon}.png');
+    background-position: @position;
+    background-repeat: no-repeat;
+}
+
+.opacity(@opacity) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  filter: ~"alpha(opacity=@{opperc})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+}
+
+.boxshadow(@posX, @posY, @blur, @spread, @colour) {
+  -moz-box-shadow:    @posX @posY @blur @spread @colour;
+  -webkit-box-shadow: @posX @posY @blur @spread @colour;
+  box-shadow:         @posX @posY @blur @spread @colour;
+}
