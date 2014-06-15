@@ -83,14 +83,15 @@ header h1.myname {
   padding: 0px;
   float: left;
 }
-header h1.myname span {
+header h1.myname span.jobtitle {
   color: #666;
   text-shadow: none;
   font-size: 32px;
 }
-header p.lead {
+header p.strapline {
   color: #fff;
   font-size: 21px;
+  font-weight: 200;
   margin: 5px 0px 5px 4px;
   clear: both;
 }
