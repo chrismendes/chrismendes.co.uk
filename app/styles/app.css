@@ -65,7 +65,9 @@ General Mixins
   margin-top: 28px;
 }
 .page article {
-  border-left: 4px solid #666;
+  border-left-width: : 4px;
+  border-left-style: solid;
+  border-left-color: #666;
 }
 /* -----------------
 Header
@@ -533,4 +535,47 @@ article .tab-pane .panel {
   background: #1ec1c1;
   color: #FFFFFF;
   border: 1px solid #D0D0D0;
+}
+/* -----------------
+Themes
+----------------- */
+.teal {
+  background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
+}
+.green {
+  background: url('../images/bg/green.jpg') 0px 0px no-repeat fixed;
+}
+.purple {
+  background: url('../images/bg/purple.jpg') 0px 0px no-repeat fixed;
+}
+.gold {
+  background: url('../images/bg/gold.jpg') 0px 0px no-repeat fixed;
+}
+.blue {
+  background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
+}
+.grey {
+  background: url('../images/bg/grey.jpg') 0px 0px no-repeat fixed;
+}
+.denim {
+  background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
+}
+.page {
+  /* -----------------
+    Colour Schemes
+    ----------------- */
+  /* -----------------
+    Icons
+    ----------------- */
+}
+.page.page-red article {
+  border-left-color: #dd686d;
+}
+.page.page-red a {
+  color: #dd686d;
+}
+.page.page-cv article {
+  background-image: url('../images/icons/cv-large.png');
+  background-position: 97% 2%;
+  background-repeat: no-repeat;
 }
