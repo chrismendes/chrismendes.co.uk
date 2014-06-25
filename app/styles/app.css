@@ -1,12 +1,47 @@
+/* -----------------
+Oswald
+----------------- */
+@font-face {
+  font-family: 'oswaldbold';
+  src: url('../../fonts/oswald/oswald-bold-webfont.eot');
+  src: url('../../fonts/oswald/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/oswald/oswald-bold-webfont.woff') format('woff'), url('../../fonts/oswald/oswald-bold-webfont.ttf') format('truetype'), url('../../fonts/oswald/oswald-bold-webfont.svg#oswaldbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswaldbook';
+  src: url('../../fonts/oswald/oswald-regular-webfont.eot');
+  src: url('../../fonts/oswald/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/oswald/oswald-regular-webfont.woff') format('woff'), url('../../fonts/oswald/oswald-regular-webfont.ttf') format('truetype'), url('../../fonts/oswald/oswald-regular-webfont.svg#oswaldbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswaldlight';
+  src: url('../../fonts/oswald/oswald-light-webfont.eot');
+  src: url('../../fonts/oswald/oswald-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/oswald/oswald-light-webfont.woff') format('woff'), url('../../fonts/oswald/oswald-light-webfont.ttf') format('truetype'), url('../../fonts/oswald/oswald-light-webfont.svg#oswaldlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswald_stencilregular';
+  src: url('../../fonts/oswald/oswald-stencil-webfont.eot');
+  src: url('../../fonts/oswald/oswald-stencil-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/oswald/oswald-stencil-webfont.woff') format('woff'), url('../../fonts/oswald/oswald-stencil-webfont.ttf') format('truetype'), url('../../fonts/oswald/oswald-stencil-webfont.svg#oswald_stencilregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
 html,
 body {
   min-height: 100%;
-  height: 100%;
   background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
 }
 body {
   padding: 60px 0px;
   overflow-y: scroll;
+  font-family: Arial;
+  font-size: 14px;
 }
 body.is-raised {
   padding: 40px 0px;
@@ -15,14 +50,16 @@ body.is-raised {
 Typeface
 ----------------- */
 h1 {
+  font-family: Helvetica Neue;
   font-size: 36px;
 }
 h2 {
+  font-family: oswaldbook;
   font-size: 46px;
   margin: 7px 0px 40px 0px;
 }
 h3 {
-  font-family: Verdana;
+  font-weight: bold;
 }
 /* -----------------
 Miscellaneous
@@ -64,10 +101,22 @@ General Mixins
 .l-scattered-boxes .row {
   margin-top: 28px;
 }
-.page article {
-  border-left-width: : 4px;
+.l-article article {
+  border-left-width: 4px;
   border-left-style: solid;
   border-left-color: #666;
+}
+.l-article article > section {
+  margin-bottom: 50px;
+}
+.l-article article > section section {
+  margin-bottom: 30px;
+}
+.l-article .l-article-table .row {
+  margin-bottom: 6px;
+}
+.l-article .l-article-row-space .row {
+  margin-bottom: 16px;
 }
 /* -----------------
 Header
@@ -92,6 +141,7 @@ header h1.myname span.jobtitle {
 }
 header p.strapline {
   color: #fff;
+  font-family: Helvetica Neue;
   font-size: 21px;
   font-weight: 200;
   margin: 5px 0px 5px 4px;
@@ -476,22 +526,28 @@ article {
   width: 100%;
   padding: 40px;
   margin-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   -moz-box-shadow: 6px 6px 20px 0px #666666;
   -webkit-box-shadow: 6px 6px 20px 0px #666666;
   box-shadow: 6px 6px 20px 0px #666666;
+  /* -----------------
+    Typeface
+    ----------------- */
+  /* -----------------
+    Tab Navigation
+    ----------------- */
 }
 article h2 {
-  float: left;
-}
-article .heading-link {
-  margin: 33px 0px 0px 20px;
   float: left;
 }
 article h3 {
   font-size: 22px;
   border-bottom: 1px solid #D0D0D0;
   padding-bottom: 3px;
+}
+article .heading-link {
+  float: left;
+  margin: 33px 0px 0px 20px;
 }
 article .nav-tabs {
   width: 790px;
@@ -510,7 +566,7 @@ article .tab-pane .panel {
   width: 100%;
   padding: 40px;
   margin-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   -moz-box-shadow: 6px 6px 20px 0px #666666;
   -webkit-box-shadow: 6px 6px 20px 0px #666666;
   box-shadow: 6px 6px 20px 0px #666666;
@@ -519,7 +575,7 @@ article .tab-pane .panel {
   width: 100%;
   padding: 40px;
   margin-bottom: 100px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   -moz-box-shadow: 6px 6px 20px 0px #666666;
   -webkit-box-shadow: 6px 6px 20px 0px #666666;
   box-shadow: 6px 6px 20px 0px #666666;
@@ -560,7 +616,7 @@ Themes
 .denim {
   background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
 }
-.page {
+.l-article {
   /* -----------------
     Colour Schemes
     ----------------- */
@@ -568,13 +624,13 @@ Themes
     Icons
     ----------------- */
 }
-.page.page-red article {
+.l-article.page-red article {
   border-left-color: #dd686d;
 }
-.page.page-red a {
+.l-article.page-red a {
   color: #dd686d;
 }
-.page.page-cv article {
+.l-article.page-cv article {
   background-image: url('../images/icons/cv-large.png');
   background-position: 97% 2%;
   background-repeat: no-repeat;
