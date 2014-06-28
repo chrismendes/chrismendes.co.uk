@@ -9,9 +9,10 @@ define([
     var Router = Backbone.Router.extend({
 
         routes: {
-            '':            'index',
-            'cv':          'showCV',
-            'portfolio':   'showPortfolio'
+            '':             'index',
+            'cv':           'showCV',
+            'portfolio':    'showPortfolio',
+            'expertise':    'showSkills'
         },
 
         initialize: function() {
@@ -31,6 +32,10 @@ define([
         // Portfolio Page
         showPortfolio: function() {
             App.showPortfolio();
+        },
+        // Skills Page
+        showSkills: function() {
+            App.showSkills();
         }
 
     });

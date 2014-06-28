@@ -275,11 +275,11 @@ footer .navbar .col-md-6 {
   margin-top: -20px;
   height: 184px;
 }
-.box.box-1.is-animating {
-  margin-top: -30px;
-}
 .box.box-1 .btn {
   margin-top: 27px;
+}
+.box.box-1.is-animating {
+  margin-top: -30px;
 }
 .box.box-1.is-active .btn {
   margin-top: 0px;
@@ -592,6 +592,28 @@ article .tab-pane .panel {
   background: #1ec1c1;
   color: #FFFFFF;
   border: 1px solid #D0D0D0;
+}
+.category-column .category-box {
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.category-column .category-box.is-active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.category-column .category-box h2 {
+  font-size: 20px;
+  line-height: 130%;
+  margin: 0px 0px 10px 0px;
+}
+.category-column .category-box ul,
+.category-column .category-box li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.category-column .category-box li {
+  padding: 3px 0px;
 }
 /* -----------------
 Themes
