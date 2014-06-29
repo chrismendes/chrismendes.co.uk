@@ -1,0 +1,389 @@
+.scattered-boxes {
+
+    .box {
+
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        float: left;
+        .bgopacity(#FFFFFF, 100%);
+        .boxshadow(2px, 2px, 4px, 0px, #777);
+        .box-border-bottom(#fff);
+        background-repeat: no-repeat;
+
+        h3.title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: normal;
+            font-family: Helvetica Neue;
+            line-height: 40px;
+            margin: 0px 0px 10px 0px;
+        }
+        p.description {
+            display: none;
+        }
+        .icons {
+            display: none;
+            background-repeat: no-repeat;
+            background-position: 0px 100%;
+        }
+        .btn {
+            .opacity(0.8);
+            background: #fff;
+            border-width: 1px;
+            border-style: solid;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+
+        &.is-animating {
+            background-color: #fff !important;
+            margin-top: -5px;
+            margin-bottom: 5px;
+            border-bottom: 0px;
+        }
+        &.is-active {
+            h3.title {
+                font-size: 20px;
+                line-height: 1.1;
+                width: auto;
+            }
+            .btn {
+                color: #fff !important;
+            }
+            .icons, p.description {
+                display: block;
+            }
+        }
+
+
+        /* -----------------
+        Box 1 - Row 1, Col 1
+        ----------------- */
+        &.box-1 {
+            margin-top: -20px;
+            height: 184px;
+            .btn {
+                margin-top: 27px;
+            }
+            &.is-animating {
+                margin-top: -30px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        /* -----------------
+        Box 2 - Row 1, Col 2
+        ----------------- */
+        &.box-2 {
+            margin-top: -30px;
+            height: 191px;
+            .btn {
+                margin-top: 73px;
+            }
+            &.is-animating {
+                margin-top: -40px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        /* -----------------
+        Box 3 - Row 1, Col 3
+        ----------------- */
+        &.box-3 {
+            margin-top: -10px;
+            height: 192px;
+            .btn {
+                margin-top: 73px;
+            }
+            &.is-animating {
+                margin-top: -20px;
+                margin-bottom: 10px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        /* -----------------
+        Box 4 - Row 1, Col 4
+        ----------------- */
+        &.box-4 {
+            height: 171px;
+            .btn {
+                margin-top: 53px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+            &.is-animating {
+                margin-top: -10px;
+            }
+        }
+
+        /* -----------------
+        Box 5 - Row 2, Col 1
+        ----------------- */
+        &.box-5 {
+            margin-top: -20px;
+            height: 254px;
+            .btn {
+                margin-top: 135px;
+            }
+            &.is-animating {
+                margin-top: -30px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        /* -----------------
+        Box 6 - Row 2, Col 2
+        ----------------- */
+        &.box-6 {
+            height: 179px;
+            .btn {
+                margin-top: 20px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+            &.is-animating {
+                margin-top: -10px;
+            }
+        }
+
+        /* -----------------
+        Box 7 - Row 2, Col 3
+        ----------------- */
+        &.box-7 {
+            height: 151px;
+            .btn {
+                margin-top: 33px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+            &.is-animating {
+                margin-top: -10px;
+            }
+        }
+
+        /* -----------------
+        Box 8 - Row 2, Col 4
+        ----------------- */
+        &.box-8 {
+            margin-top: -10px;
+            height: 151px;
+            .btn {
+                margin-top: 33px;
+            }
+            &.is-animating {
+                margin-top: -20px;
+            }
+            &.is-active {
+                .btn {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+
+        /* -----------------
+        Box Colours
+        ----------------- */
+        &.box-blue {
+            background-color: @blue;
+            &.is-animating {
+                .box-border-top(@blue);
+            }
+            &.is-active {
+                h3.title {
+                    color: @blue;
+                }
+                .btn {
+                    background: @blue;
+                }
+            }
+            .btn {
+                color: @blue;
+                border-color: @blue;
+            }
+        }
+
+        &.box-red {
+            background-color: @red;
+            .btn {
+                color: @red;
+                border-color: @red;
+            }
+            &.is-animating {
+                .box-border-top(@red);
+            }
+            &.is-active {
+                h3.title {
+                    color: @red;
+                }
+                .btn {
+                    background: @red;
+                    border-color: @red;
+                }
+            }
+        }
+
+        &.box-green {
+            background-color: @green;
+            .btn {
+                color: @green;
+                border-color: @green;
+            }
+            &.is-animating {
+                .box-border-top(@green);
+            }
+            &.is-active {
+                h3.title {
+                    color: @green;
+                }
+                .btn {
+                    background: @green;
+                }
+            }
+        }
+
+        &.box-gold {
+            background-color: @gold;
+            .btn {
+                color: @gold;
+                border-color: @gold;
+            }
+            &.is-animating {
+                .box-border-top(@gold);
+            }
+            &.is-active {
+                h3.title {
+                    color: @gold;
+                }
+                .btn {
+                    background: @gold;
+                }
+            }
+        }
+
+        &.box-purple {
+            background-color: @purple;
+            .btn {
+                color: @purple;
+                border-color: @purple;
+            }
+            &.is-animating {
+                .box-border-top(@purple);
+            }
+            &.is-active {
+                h3.title {
+                    color: @purple;
+                }
+                .btn {
+                    background: @purple;
+                }
+            }
+        }
+
+
+        /* -----------------
+        Box Icons
+        ----------------- */
+        &.box-skills {
+            background-image: url('../images/home/skills.png');
+            background-position: 130% -40px;
+            .icons {
+                width: 216px;
+                height: 63px;
+                margin: 15px 0px 15px 5px;
+                background-image: url('../images/home/skills-icons.png');
+            }
+        }
+        &.box-cv {
+            background-image: url('../images/home/cv.png');
+            background-position: 20% -30px;
+        }
+        &.box-portfolio {
+            background-image: url('../images/home/portfolio.png');
+            background-position: 350% 8%;
+            .icons {
+                width: 213px;
+                height: 76px;
+                margin: 15px 0px 10px 10px;
+                background-image: url('../images/home/clients-icons.png');
+            }
+        }
+        &.box-situation {
+            background-image: url('../images/home/situation.png');
+            background-position: 170px -25px;
+        }
+        &.box-learning {
+            background-image: url('../images/home/learning.png');
+            background-position: -380% 0px;
+            .icons {
+                width: 123px;
+                height: 63px;
+                margin: 5px 0px 20px 0px;
+                background-image: url('../images/home/learning-icons.png');
+            }
+        }
+        &.box-workflow {
+            background-image: url('../images/home/workflow.png');
+            background-position: -250% -30px;
+            .icons {
+                width: 313px;
+                height: 58px;
+                margin: 15px 0px 15px 10px;
+                background-image: url('../images/home/workflow-icons.png');
+            }
+        }
+        &.box-about {
+            background-image: url('../images/home/about.png');
+            background-position: 120px 0px;
+        }
+        &.box-contact {
+            background-image: url('../images/home/contact.png');
+            background-position: 150px -50px;
+        }
+
+
+    }
+
+    /* -----------------
+    Mixins
+    ----------------- */
+    .box-border-bottom(@colour) {
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: @colour;
+    }
+    .box-border-top(@colour) {
+        border-top-width: 5px;
+        border-top-style: solid;
+        border-top-color: @colour;
+    }
+
+}
