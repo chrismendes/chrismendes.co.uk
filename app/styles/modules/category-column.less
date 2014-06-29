@@ -1,14 +1,19 @@
 .category-column {
-    // .bgopacity(#ffffff, 50%);
-    // padding: 5px 0px;
 
-    .category-box {
+    .category-column-box {
         padding: 10px;
         margin: 0px 0px 10px 0px;
+        
         .bgopacity(#ffffff, 60%);
+        border-left-color: #666;
+        border-left-style: solid;
+        border-left-width: 0px;
+
+        cursor: pointer;
 
         &.is-active {
             .bgopacity(#ffffff, 90%);
+            border-left-width: 4px;
         }
 
         h2 {
