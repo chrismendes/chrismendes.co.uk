@@ -62,6 +62,9 @@ h3 {
   font-family: oswaldbook;
   font-size: 22px;
 }
+h4 {
+  font-weight: bold;
+}
 /* -----------------
 Miscellaneous
 ----------------- */
@@ -77,14 +80,10 @@ Miscellaneous
 Colours
 ----------------- */
 /* -----------------
-Font Definitions
------------------ */
-@font-face {
-  font-family: 'PTSarif';
-  src: url('../fonts/PTSarif-Bold.ttf');
-}
-/* -----------------
 General Mixins
+----------------- */
+/* -----------------
+Top Level
 ----------------- */
 #bg-transition {
   display: none;
@@ -94,6 +93,31 @@ General Mixins
   left: 0px;
   width: 100%;
   height: 100%;
+}
+/* -----------------
+Common Styles
+----------------- */
+.theme-border {
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: #666;
+}
+.content-canvas {
+  padding: 40px;
+  background: #fff;
+  -moz-box-shadow: 6px 6px 20px 0px #666666;
+  -webkit-box-shadow: 6px 6px 20px 0px #666666;
+  box-shadow: 6px 6px 20px 0px #666666;
+}
+.l-content-rows .row {
+  padding: 20px 0px;
+  border-bottom: 1px solid #efefef;
+}
+.l-content-rows .row:first-child {
+  padding-top: 0px;
+}
+.l-content-rows .row.row-alt {
+  background: #f5f5f5;
 }
 .l-home {
   margin-top: 60px;
@@ -113,21 +137,6 @@ General Mixins
 }
 .l-cv .l-cv-row-space .row {
   margin-bottom: 16px;
-}
-/* -----------------
-Shared CSS
------------------ */
-.theme-border {
-  border-left-width: 4px;
-  border-left-style: solid;
-  border-left-color: #666;
-}
-.content-canvas {
-  padding: 40px;
-  background: #fff;
-  -moz-box-shadow: 6px 6px 20px 0px #666666;
-  -webkit-box-shadow: 6px 6px 20px 0px #666666;
-  box-shadow: 6px 6px 20px 0px #666666;
 }
 header {
   padding: 15px;
@@ -531,24 +540,38 @@ footer .navbar .col-md-6 {
   background-image: url('../images/home/contact.png');
   background-position: 150px -50px;
 }
-.page-title h2.title {
-  float: left;
+/* -----------------
+Page Title
+----------------- */
+/* -----------------
+Tabled Bullets
+----------------- */
+.tabled-bullets ul,
+.tabled-bullets li {
+  margin: 0px;
+  padding: 0px;
+}
+/* -----------------
+Icons
+----------------- */
+.icon-cv {
+  background-image: url('../images/icons/cv-large.png');
+  background-position: 97% 2%;
+  background-repeat: no-repeat;
 }
 .category-column .category-column-box {
   padding: 10px;
   margin: 0px 0px 10px 0px;
   background-color: rgba(255, 255, 255, 0.6);
-  border-left-color: #666;
-  border-left-style: solid;
-  border-left-width: 0px;
   cursor: pointer;
 }
 .category-column .category-column-box.is-active {
-  background-color: rgba(255, 255, 255, 0.9);
   border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: #666;
+  background-color: rgba(255, 255, 255, 0.9);
 }
-.category-column .category-column-box h2 {
-  font-size: 20px;
+.category-column .category-column-box h3 {
   line-height: 130%;
   margin: 0px 0px 10px 0px;
 }
@@ -585,22 +608,12 @@ Themes
 .denim {
   background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
 }
-.l-article {
-  /* -----------------
-    Colour Schemes
-    ----------------- */
-  /* -----------------
-    Icons
-    ----------------- */
-}
-.l-article.page-red article {
+/* -----------------
+Colour Schemes
+----------------- */
+.theme-red .theme-border {
   border-left-color: #dd686d;
 }
-.l-article.page-red a {
+.theme-red a {
   color: #dd686d;
-}
-.l-article.page-cv article {
-  background-image: url('../images/icons/cv-large.png');
-  background-position: 97% 2%;
-  background-repeat: no-repeat;
 }
