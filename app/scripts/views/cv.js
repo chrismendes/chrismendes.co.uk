@@ -15,10 +15,11 @@ define([
         elPage: '#page-cv',
         theme: 'gold',
 
-        events: _.extend(BaseView.prototype.events, {
-            'mouseenter a.info-popup span': 'showModal',
-            'mouseleave a.info-popup': 'hideModal',
-        }),
+        events: {
+            'mouseenter a.info-popup span':     'showModal',
+            'mouseleave a.info-popup':          'hideModal'
+            // 'click .back-home':                 'returnToHomepage'
+        },
 
         showModal: function(e) {
             var modal = $(e.target).attr('data-target');
