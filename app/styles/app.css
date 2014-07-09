@@ -253,9 +253,9 @@ footer .navbar .col-md-6 {
 }
 .scattered-boxes .box h3.title {
   color: #fff;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: normal;
-  font-family: Helvetica Neue;
+  font-family: Arial;
   line-height: 40px;
   margin: 0px 0px 10px 0px;
 }
@@ -368,7 +368,7 @@ footer .navbar .col-md-6 {
   height: 179px;
 }
 .scattered-boxes .box.box-6 .btn {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .scattered-boxes .box.box-6.is-active .btn {
   margin-top: 0px;
@@ -549,15 +549,21 @@ footer .navbar .col-md-6 {
   background-position: 150px -50px;
 }
 /* -----------------
-Page Title
------------------ */
-/* -----------------
 Tabled Bullets
 ----------------- */
 .tabled-bullets ul,
 .tabled-bullets li {
   margin: 0px;
   padding: 0px;
+}
+/* -----------------
+Tabbed Content
+----------------- */
+.tabbed-content .tabbed-content-body {
+  display: none;
+}
+.tabbed-content .tabbed-content-body.is-active {
+  display: block;
 }
 /* -----------------
 Icons
@@ -582,15 +588,21 @@ Icons
   background-color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
 }
+.category-column .category-column-box:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 .category-column .category-column-box.is-active {
   border-left-width: 4px;
   border-left-style: solid;
   border-left-color: #666;
-  background-color: rgba(255, 255, 255, 0.9);
+  background: #fff;
+}
+.category-column .category-column-box.is-active h3 {
+  text-decoration: none;
 }
 .category-column .category-column-box h3 {
   line-height: 130%;
-  margin: 0px 0px 10px 0px;
+  margin: 0px;
 }
 .category-column .category-column-box ul,
 .category-column .category-column-box li {
@@ -599,7 +611,10 @@ Icons
   list-style: none;
 }
 .category-column .category-column-box li {
-  padding: 3px 0px;
+  padding: 6px 0px 0px 0px;
+}
+.category-column .category-column-box p {
+  margin: 0px;
 }
 /* -----------------
 Themes
