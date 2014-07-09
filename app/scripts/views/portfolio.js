@@ -15,6 +15,10 @@ define([
         elPage: '#page-portfolio',
         theme: 'gold',
 
+        // events: {
+        //     'click .back-home': 'returnToHomepage'
+        // },
+
         onAfterRender: function() {
             this.setCarouselAnnotationHook();
         },

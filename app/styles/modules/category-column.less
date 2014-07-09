@@ -8,14 +8,21 @@
 
         cursor: pointer;
 
+        &:hover {
+            .bgopacity(#ffffff, 80%);
+        }
+
         &.is-active {
             .theme-border;
-            .bgopacity(#ffffff, 90%);
+            background: #fff;
+            h3 {
+                text-decoration: none;
+            }
         }
 
         h3 {
             line-height: 130%;
-            margin: 0px 0px 10px 0px;
+            margin: 0px;
         }
         ul, li {
             margin: 0px;
@@ -23,7 +30,10 @@
             list-style: none;
         }
         li {
-            padding: 3px 0px;
+            padding: 6px 0px 0px 0px;
+        }
+        p {
+            margin: 0px;
         }
     }
 

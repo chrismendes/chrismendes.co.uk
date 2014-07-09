@@ -15,15 +15,7 @@ define([
     	elPage: null,
     	theme: null,
 
-    	events: {
-    		'click .back-home': 'returnToHomepage'
-    	},
-
-        destroy: function() {
-            this.stopListening();
-            this.undelegateEvents();
-            this.unbind();
-        },
+        onBeforeRender: function() {},
 
     	render: function() {
             if(typeof this.template === 'undefined') {
@@ -31,6 +23,8 @@ define([
                 return false;
             }
     		if(this.elPage !== null) {
+
+                this.onBeforeRender();
 
                 // Ensure header on sub page is raised up on direct access or page refresh
                 if(this.elPage !== '#page-home') {
@@ -58,7 +52,13 @@ define([
 
     	onAfterRender: function() {},
 
-    	returnToHomepage: function() {
+    	destroy: function() {
+            this.stopListening();
+            this.undelegateEvents();
+            this.unbind();
+        },
+
+        returnToHomepage: function() {
     		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
     			Common.setBackground(Common.homeTheme, function() {
                     // Change page
