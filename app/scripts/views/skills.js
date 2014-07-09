@@ -18,7 +18,15 @@ define([
         events: _.extend(BaseView.prototype.events, {
             'mouseenter a.info-popup span': 'showModal',
             'mouseleave a.info-popup': 'hideModal',
-        })
+        }),
+
+        onAfterRender: function() {
+            // Slide in category column
+            $('.js-animated-entrace').removeClass('is-off-stage', 300);
+
+            // Fade in main body
+            $('.js-animated-entrace').removeClass('is-off-stage', 300);
+        }
 
     });
 
