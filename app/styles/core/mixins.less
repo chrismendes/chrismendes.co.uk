@@ -24,7 +24,13 @@ General Mixins
 }
 
 .boxshadow(@posX, @posY, @blur, @spread, @colour) {
-  -moz-box-shadow:    @posX @posY @blur @spread @colour;
-  -webkit-box-shadow: @posX @posY @blur @spread @colour;
-  box-shadow:         @posX @posY @blur @spread @colour;
+    -moz-box-shadow:    @posX @posY @blur @spread @colour;
+    -webkit-box-shadow: @posX @posY @blur @spread @colour;
+    box-shadow:         @posX @posY @blur @spread @colour;
+}
+
+.no-boxshadow {
+    -moz-box-shadow:    none;
+    -webkit-box-shadow: none;
+    box-shadow:         none;
 }

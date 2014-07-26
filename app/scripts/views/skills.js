@@ -11,13 +11,17 @@ define([
 
     var SkillsView = BaseView.extend({
 
-        template: _.template(html),
-        elPage: '#page-skills',
-        theme: 'green',
+        template:       _.template(html),
+        elPage:         '#page-skills',
+        background:     'green',
+        theme:          'red',
 
         events: {
             'click .js-nav':        'showContent'
-            // 'click .back-home': 'returnToHomepage'
+        },
+
+        onBeforeShow: function() {
+            $('body').addClass('theme-'+this.colour);
         },
 
         // Fade out current body content, fade in new
@@ -29,9 +33,13 @@ define([
                 return;
             }
             
-            // Change option states
+            // Change sidenav states
             $('.js-nav.is-active').removeClass('is-active', 100);
             boxClicked.addClass('is-active', 100);
+
+            // Update body heading
+            var title = boxClicked.attr('data-title');
+            $('.js-body-title').html(title);
 
             // Change body content
             $('.js-body.is-active').fadeOut(200, function() {

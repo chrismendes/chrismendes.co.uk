@@ -11,14 +11,18 @@ define([
 
     var HomeView = BaseView.extend({
 
-        template: _.template(html),
-        elPage: '#page-home',
-        theme: 'blue',
+        template:       _.template(html),
+        elPage:         '#page-home',
+        background:     'blue',
 
         events: {
             'mouseenter .box':      'onBoxHover',
             'mouseleave .box':      'onBoxHoverOut',
             'click .box':           'exitPage'
+        },
+
+        onAfterRender: function() {
+            $('body').addClass('is-not-raised', 400);
         },
 
         // Box hover over/out effects
@@ -43,7 +47,7 @@ define([
             // After short delay, fade out clicked box, change background, and redirect on complete
             _.delay(function() {
                 boxClicked.fadeOut(300, function() {
-                    $('body').addClass('slideup', 500, 'easeOutCubic', function() {
+                    $('body').removeClass('is-not-raised', 500, 'easeOutCubic', function() {
                         Common.setBackground(boxClicked.data('theme'), function() {
                             // Change page
                             Backbone.history.navigate(navigateTo, { trigger: true });
