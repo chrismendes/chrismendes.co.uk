@@ -14,6 +14,7 @@ define([
         template:       _.template(html),
         elPage:         '#page-portfolio',
         background:     'gold',
+        theme:          'red',
 
         // events: {
         //     'click .back-home': 'returnToHomepage'

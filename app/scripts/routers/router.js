@@ -12,7 +12,7 @@ define([
             '':             'index',
             'cv':           'showCV',
             'portfolio':    'showPortfolio',
-            'expertise':    'showSkills'
+            'skills':       'showSkills'
         },
 
         initialize: function() {

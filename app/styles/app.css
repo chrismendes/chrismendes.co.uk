@@ -679,7 +679,7 @@ Backgrounds
   background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
 }
 /* -----------------
-Colour Schemes
+Foreground Colour Schemes
 ----------------- */
 .theme-red .theme-border {
   border-left-color: #dd686d;
@@ -690,4 +690,14 @@ Colour Schemes
 .theme-red .btn {
   background: #dd686d;
   border-color: #dd686d;
+}
+.theme-green .theme-border {
+  border-left-color: #00cc99;
+}
+.theme-green a {
+  color: #00cc99;
+}
+.theme-green .btn {
+  background: #00cc99;
+  border-color: #00cc99;
 }
