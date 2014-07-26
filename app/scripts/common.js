@@ -19,9 +19,9 @@ define([
         	bodySlideUp = $('body').hasClass('slideup');
         	
         	// Fade in background via 'bg-transition' element
-        	$('#bg-transition').removeClass().addClass(colour);
+        	$('#bg-transition').removeClass().addClass('theme-bg-'+colour);
         	$('#bg-transition').fadeIn(500, function() {
-                $('body').removeClass().addClass(colour);
+                $('body').removeClass().addClass('theme-bg-'+colour);
                 if(bodySlideUp) {
                 	$('body').addClass('slideup');
                 }

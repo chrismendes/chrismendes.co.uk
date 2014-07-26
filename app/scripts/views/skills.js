@@ -22,6 +22,7 @@ define([
 
         onBeforeShow: function() {
             $('body').addClass('theme-'+this.colour);
+            $('.js-body-title').fadeOut();
         },
 
         // Fade out current body content, fade in new
@@ -39,7 +40,12 @@ define([
 
             // Update body heading
             var title = boxClicked.attr('data-title');
-            $('.js-body-title').html(title);
+            if(typeof title !== 'undefined') {
+                $('.js-body-title').html(title);
+                $('.js-body-title').fadeIn(200);
+            } else {
+                $('.js-body-title').fadeOut(200);
+            }
 
             // Change body content
             $('.js-body.is-active').fadeOut(200, function() {
