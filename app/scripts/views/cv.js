@@ -13,7 +13,8 @@ define([
 
         template:       _.template(html),
         elPage:         '#page-cv',
-        background:     'gold',
+        background:     'green',
+        theme:          'red',
 
         events: {
             // 'mouseenter a.info-popup span':     'showModal',

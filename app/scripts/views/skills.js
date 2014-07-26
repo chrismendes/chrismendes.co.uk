@@ -13,8 +13,8 @@ define([
 
         template:       _.template(html),
         elPage:         '#page-skills',
-        background:     'green',
-        theme:          'red',
+        background:     'gold',
+        theme:          'green',
 
         events: {
             'click .js-nav':        'showContent'

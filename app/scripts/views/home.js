@@ -48,7 +48,7 @@ define([
             _.delay(function() {
                 boxClicked.fadeOut(300, function() {
                     $('body').removeClass('is-not-raised', 500, 'easeOutCubic', function() {
-                        Common.setBackground(boxClicked.data('theme'), function() {
+                        Common.setBackground(boxClicked.attr('data-bg'), function() {
                             // Change page
                             Backbone.history.navigate(navigateTo, { trigger: true });
                         });
