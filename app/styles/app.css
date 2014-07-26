@@ -606,6 +606,11 @@ Icons
   background-position: 97% 2%;
   background-repeat: no-repeat;
 }
+.icon-skills {
+  background-image: url('../images/icons/skills-large.png');
+  background-position: 97% -30%;
+  background-repeat: no-repeat;
+}
 .category-column.is-off-stage {
   margin-left: 50px;
   -moz-opacity: 0;
