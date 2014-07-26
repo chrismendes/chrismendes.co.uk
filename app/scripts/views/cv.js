@@ -11,14 +11,13 @@ define([
 
     var CvView = BaseView.extend({
 
-        template: _.template(html),
-        elPage: '#page-cv',
-        theme: 'gold',
+        template:       _.template(html),
+        elPage:         '#page-cv',
+        background:     'gold',
 
         events: {
-            'mouseenter a.info-popup span':     'showModal',
-            'mouseleave a.info-popup':          'hideModal'
-            // 'click .back-home':                 'returnToHomepage'
+            // 'mouseenter a.info-popup span':     'showModal',
+            // 'mouseleave a.info-popup':          'hideModal'
         },
 
         showModal: function(e) {

@@ -38,13 +38,13 @@ body {
   background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
 }
 body {
-  padding: 60px 0px;
+  padding: 30px 0px;
   overflow-y: scroll;
   font-family: Arial;
   font-size: 14px;
 }
-body.is-raised {
-  padding: 40px 0px;
+body.is-not-raised {
+  padding: 60px 0px;
 }
 /* -----------------
 Typeface
@@ -66,6 +66,17 @@ h4 {
   font-weight: bold;
 }
 /* -----------------
+UI Elements
+----------------- */
+button:focus {
+  outline: 0 !important;
+}
+button:active {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* -----------------
 Miscellaneous
 ----------------- */
 /* Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
@@ -82,6 +93,11 @@ Colours
 /* -----------------
 General Mixins
 ----------------- */
+.no-boxshadow {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 /* -----------------
 Top Level
 ----------------- */
@@ -147,11 +163,14 @@ Common Styles
   margin-bottom: 16px;
 }
 header {
+  min-height: 157px;
+}
+header .title {
   padding: 15px;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-header h1.myname {
+header .title h1.myname {
   color: #fff;
   text-shadow: 2px 2px #777;
   font-size: 60px;
@@ -159,18 +178,29 @@ header h1.myname {
   padding: 0px;
   float: left;
 }
-header h1.myname span.jobtitle {
+header .title h1.myname span.jobtitle {
   color: #666;
   text-shadow: none;
   font-size: 32px;
 }
-header p.strapline {
+header .title p.strapline {
   color: #fff;
   font-family: Helvetica Neue;
   font-size: 21px;
   font-weight: 200;
   margin: 5px 0px 5px 4px;
   clear: both;
+}
+header .back-home {
+  display: none;
+  margin-top: 8px;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+}
+header .back-home:hover,
+header .back-home:focus {
+  color: #fff;
 }
 footer .navbar {
   background-color: rgba(0, 0, 0, 0.3);
@@ -617,27 +647,27 @@ Icons
   margin: 0px;
 }
 /* -----------------
-Themes
+Backgrounds
 ----------------- */
-.teal {
+.theme-bg-teal {
   background: url('../images/bg/teal.jpg') 0px 0px no-repeat fixed;
 }
-.green {
+.theme-bg-green {
   background: url('../images/bg/green.jpg') 0px 0px no-repeat fixed;
 }
-.purple {
+.theme-bg-purple {
   background: url('../images/bg/purple.jpg') 0px 0px no-repeat fixed;
 }
-.gold {
+.theme-bg-gold {
   background: url('../images/bg/gold.jpg') 0px 0px no-repeat fixed;
 }
-.blue {
+.theme-bg-blue {
   background: url('../images/bg/blue.jpg') 0px 0px no-repeat fixed;
 }
-.grey {
+.theme-bg-grey {
   background: url('../images/bg/grey.jpg') 0px 0px no-repeat fixed;
 }
-.denim {
+.theme-bg-denim {
   background: url('../images/bg/denimblue.jpg') 0px 0px no-repeat fixed;
 }
 /* -----------------
@@ -648,4 +678,8 @@ Colour Schemes
 }
 .theme-red a {
   color: #dd686d;
+}
+.theme-red .btn {
+  background: #dd686d;
+  border-color: #dd686d;
 }

@@ -11,9 +11,9 @@ define([
 
     var PortfolioView = BaseView.extend({
 
-        template: _.template(html),
-        elPage: '#page-portfolio',
-        theme: 'gold',
+        template:       _.template(html),
+        elPage:         '#page-portfolio',
+        background:     'gold',
 
         // events: {
         //     'click .back-home': 'returnToHomepage'

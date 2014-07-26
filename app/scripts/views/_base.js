@@ -11,9 +11,14 @@ define([
 
     var BaseView = Backbone.View.extend({
 
-    	el: '#page-contents',
-    	elPage: null,
-    	theme: null,
+    	el:             '#page-contents',
+    	elPage:         null,
+    	background:     null,
+        theme:          null,
+
+        sharedEvents:   {
+            'click .back-home':     'returnToHomepage'
+        },
 
         onBeforeRender: function() {},
 
@@ -26,22 +31,40 @@ define([
 
                 this.onBeforeRender();
 
-                // Ensure header on sub page is raised up on direct access or page refresh
                 if(this.elPage !== '#page-home') {
-                    $('body').addClass(this.theme).addClass('slideup');
+                    // Set header to raised on direct access
+                    $('body').addClass('slideup');
+                }
+
+                // Set background colour
+                if(this.background !== null) {
+                    $('body').addClass('theme-bg-'+this.background)
+                }
+
+                // Set page theme colour
+                if(this.theme !== null) {
+                    $('body').addClass('theme-'+this.theme)
                 }
 
                 // Set header
                 var header = _.template(htmlHeader);
                 $('header').html(header());
 
+                // Show back button
+                if(this.elPage !== '#page-home') {
+                    $('.back-home').fadeIn();
+                }
+
                 // Set footer
                 var footer = _.template(htmlFooter);
                 $('footer').html(footer());
 
-                // Set page contents and show
+                // Set page contents
                 this.$el.html(this.template());
-    			$(this.elPage).fadeIn(200);
+
+                this.onBeforeShow();
+
+                $(this.elPage).fadeIn(200);
     			
                 this.onAfterRender();
 
@@ -51,6 +74,8 @@ define([
     	},
 
     	onAfterRender: function() {},
+
+        onBeforeShow: function() {},
 
     	destroy: function() {
             this.stopListening();
