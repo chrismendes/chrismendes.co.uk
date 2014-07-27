@@ -1,265 +1,136 @@
 <!--
 Template - My Portfolio
 -->
-<div id="page-portfolio">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="subnav">
-        <button type="button" class="btn btn-default back-home">< Back to Home Page</button>
-      </div>
-    </div>
-  </div>
-  <article>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
-    <section class="filter">
-      <div class="row">
-        <div class="col-md-12">
-
-          <!-- Tabs -->
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#all" data-toggle="tab">All Projects</a></li>
-            <li><a href="#tech" data-toggle="tab">By Tech</a></li>
-            <li><a href="#client" data-toggle="tab">By Client</a></li>
-            <li><a href="#employer" data-toggle="tab">By Employer</a></li>
-          </ul>
-
-          <!-- Tab panels -->
-          <div class="tab-content">
-
-            <!-- Tab: All projects -->
-            <div class="tab-pane active" id="all">
-
-              <div class="row">
-                
-                <!-- Projects carousel -->
-                <div id="carousel-allprojects" class="carousel slide" data-ride="carousel" data-interval="false">
-
-                  <!-- Annotation & Breadcrumb -->
-                  <div class="col-md-3">
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-allprojects" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-allprojects" data-slide-to="1"></li>
-                      <li data-target="#carousel-allprojects" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-annotation"></div>
-                  </div>
-
-                  <!-- Slides -->
-                  <div class="col-md-9">
-                  
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="images/portfolio/autodesk-configurator/desktop.jpg" alt="Autodesk BIM Configurator">
-                        <div class="annotation">
-                          <h4>Autodesk BIM Configurator</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla malesuada dapibus. Sed adipiscing turpis lorem, ac laoreet velit blandit eu.</p>
-                          <p>Quisque eu dolor at ipsum lacinia malesuada varius a justo. Cras eget lorem tristique, tincidunt risus tincidunt, tempus arcu.</p>
-                          <p><a href="http://www.autodesk-build-today.com" target="_blank">http://www.autodesk-build-today.com</a></p>
-                          <br/><p><strong>Tech used: </strong>HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, PHP, CodeIgniter, MySQL</p>
-                          <p><strong>Responsible for: </strong>Full development stack</p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="images/portfolio/cisco-data-centre-hub/desktop.jpg" alt="Cisco Data Centre Hub">
-                        <div class="annotation">
-                          <h4>Cisco Data Centre Hub</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla malesuada dapibus. Sed adipiscing turpis lorem, ac laoreet velit blandit eu.</p>
-                          <p>Quisque eu dolor at ipsum lacinia malesuada varius a justo. Cras eget lorem tristique, tincidunt risus tincidunt, tempus arcu.</p>
-                          <p><a href="http://servers.cisco.co.uk" target="_blank">http://servers.cisco.co.uk</a></p>
-                          <br/><p><strong>Tech used: </strong>HTML, CSS, JavaScript, jQuery, PHP, CodeIgniter, MySQL</p>
-                          <p><strong>Responsible for: </strong>Full development stack</p>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="images/portfolio/sap-football/desktop.jpg" alt="SAP Innovation United">
-                        <div class="annotation">
-                          <h4>SAP Innovation United</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla malesuada dapibus. Sed adipiscing turpis lorem, ac laoreet velit blandit eu.</p>
-                          <p>Quisque eu dolor at ipsum lacinia malesuada varius a justo. Cras eget lorem tristique, tincidunt risus tincidunt, tempus arcu.</p>
-                          <p><a href="http://www.sapinnovationunited.com" target="_blank">http://www.sapinnovationunited.com</a></p>
-                          <br/><p><strong>Tech used: </strong>HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, PHP, CodeIgniter, MySQL</p>
-                          <p><strong>Responsible for: </strong>Back-end PHP/MySQL development</p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-allprojects" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-allprojects" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                  </div>
-
-                </div>
-              </div>
-
+<div class="row">
+  <div class="col-md-12">
+    <article class="content-canvas theme-border icon-portfolio">
+      <h2>My Portfolio</h2>
+      <section class="content-filters">
+        <label>Filters:</label>
+        <ul>
+          <li><button type="button" class="btn btn-inverse">Backbone.js</button></li>
+          <li><button type="button" class="btn btn-inverse">Responsive</button></li>
+          <li><button type="button" class="btn btn-inverse">PHP / MySQL</button></li>
+          <li><button type="button" class="btn btn-inverse">Cisco</button></li>
+          <li><button type="button" class="btn btn-inverse">Autodesk</button></li>
+        </ul>
+      </section>
+      <section class="grid-content">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">Jan-Mar 2014</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Success Factors</h3>
+              <a class="link" href="#">www.startanywherewithsuccess<br/>factors.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
             </div>
-
-            <!-- Tab: By tech -->
-            <div class="tab-pane" id="tech">
-              <div class="panel-group" id="accordion-tech">
-                
-                <!-- Accordian: Full stack development -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech1">
-                        Full Stack Development
-                        <span>Front and back</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech1" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                      Test 1
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Accordian: Front-end dev -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech2">
-                        HTML/CSS/JS
-                        <span>From Photoshop to the Web</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 2
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Accordian: Responsive dev -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech3">
-                        Responsive Development
-                        <span>Targeting desktops, tablets, and mobiles</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech3" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 3
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Accordian: JavaScript frameworks -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech4">
-                        JavaScript Framework Apps
-                        <span>Single Page Applications (SPA) with Backbone.js</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech4" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 4
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Accordian: Back-end dev -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech5">
-                        PHP/MySQL
-                        <span>Back-end development</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech5" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 5
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Accordian: CMS dev -->
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-tech" href="#tech6">
-                        CMS Development
-                        <span>WordPress and Drupal integration</span>
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="tech6" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 6
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Cisco Data Centre Hub</h3>
+              <a class="link" href="#">servers.cisco.co.uk</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
             </div>
-
-            <!-- Tab: By client -->
-            <div class="tab-pane" id="client">
-              <div class="panel-group" id="accordion-client">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-client" href="#client1">
-                        Autodesk
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="client1" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 1
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-client" href="#client2">
-                        Cisco
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="client2" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 2
-                    </div>
-                  </div>
-                </div>
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion-client" href="#client3">
-                        SAP
-                      </a>
-                    </h4>
-                  </div>
-                  <div id="client3" class="panel-collapse collapse">
-                    <div class="panel-body">
-                      Test 3
-                    </div>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">SAP Innovation United</h3>
+              <a class="link" href="#">www.sapinnovationunited.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
             </div>
-            <div class="tab-pane" id="employer">...</div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Autodesk Manufacturing Genius</h3>
+              <a class="link" href="#">www.autodesk-manufacturing-genius.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </article>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">SAP Didn't Expect That</h3>
+              <a class="link" href="#">www.sap.com/didntexpectthat</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Autodesk Build Today</h3>
+              <a class="link" href="#">www.autodesk-build-today.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">SAP Analytics 50 Tips</h3>
+              <a class="link" href="#">www.sap50analyticstips.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Autodesk Manufacturing Genius</h3>
+              <a class="link" href="#">www..com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Virgin Pure</h3>
+              <a class="link" href="#">www.virginpure.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">DKNY Fragrances</h3>
+              <a class="link" href="#">www.dknyfragrances.co.uk</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">SAP Solutions Confiugrator</h3>
+              <a class="link" href="#">www.sapcrystalsolutions<br/>configurator.com</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="grid-content-block">
+              <p class="date">May 2012</p>
+              <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+              <h3 class="project-name">Cisco BIG</h3>
+              <a class="link" href="#">www.ciscobig.co.uk</a>
+              <button type="button" class="btn more-details">Details &raquo;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </div>
 </div>
