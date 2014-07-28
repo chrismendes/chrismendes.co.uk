@@ -16,10 +16,6 @@ define([
     	background:     null,
         theme:          null,
 
-        sharedEvents:   {
-            'click .back-home':     'returnToHomepage'
-        },
-
         onBeforeRender: function() {},
 
     	render: function() {
@@ -52,7 +48,8 @@ define([
 
                 // Show back button
                 if(this.elPage !== '#page-home') {
-                    $('.back-home').fadeIn();
+                    $('.back-home').css('display', 'inline-block');
+                    $('.back-home').removeClass('is-hidden', 300);
                 }
 
                 // Set footer
