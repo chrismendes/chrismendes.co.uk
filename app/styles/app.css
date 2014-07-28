@@ -186,13 +186,21 @@ header .title p.strapline {
 header .back-home {
   display: none;
   margin-top: 8px;
-  color: #fff;
+  color: #fff !important;
   border-width: 1px;
   border-style: solid;
 }
 header .back-home:hover,
 header .back-home:focus {
   color: #fff;
+}
+header .back-home.is-hidden {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }
 footer .navbar {
   background-color: rgba(0, 0, 0, 0.3);

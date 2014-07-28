@@ -35,12 +35,16 @@ header {
         display: none;
         margin-top: 8px;
 
-        color: #fff;
+        color: #fff !important;
         border-width: 1px;
         border-style: solid;
 
         &:hover, &:focus {
             color: #fff;
+        }
+
+        &.is-hidden {
+            .opacity(0);
         }
     }
 }
