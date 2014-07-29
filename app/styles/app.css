@@ -607,6 +607,23 @@ Tabled Bullets
   padding: 0px;
 }
 /* -----------------
+Formatted Table
+----------------- */
+.formatted-table {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  margin: 20px 0px 30px 0px;
+}
+.formatted-table td {
+  padding: 10px;
+}
+.formatted-table thead {
+  background: #efefef;
+}
+.formatted-table thead td {
+  font-weight: bold;
+}
+/* -----------------
 Tabbed Content
 ----------------- */
 .tabbed-content .tabbed-content-body {
