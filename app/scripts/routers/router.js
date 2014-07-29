@@ -12,7 +12,8 @@ define([
             '':             'index',
             'cv':           'showCV',
             'portfolio':    'showPortfolio',
-            'skills':       'showSkills'
+            'skills':       'showSkills',
+            'situation':    'showCurrentSituation'
         },
 
         initialize: function() {
@@ -36,8 +37,11 @@ define([
         // Skills Page
         showSkills: function() {
             App.showSkills();
+        },
+        // Current Situation Page
+        showCurrentSituation: function() {
+            App.showCurrentSituation();
         }
-
     });
 
     return Router;

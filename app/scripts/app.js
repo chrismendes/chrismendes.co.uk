@@ -5,8 +5,9 @@ define([
     'views/home',
     'views/cv',
     'views/portfolio',
-    'views/skills'
-], function(HomeView, CvView, PortfolioView, SkillsView) {
+    'views/skills',
+    'views/situation'
+], function(HomeView, CvView, PortfolioView, SkillsView, SituationView) {
 
     return {
 
@@ -43,6 +44,12 @@ define([
         showSkills: function() {
             var skills = new SkillsView();
             this.showView(skills);
+        },
+
+        // Skills Page
+        showCurrentSituation: function() {
+            var currentSituation = new SituationView();
+            this.showView(currentSituation);
         }
 
     }
