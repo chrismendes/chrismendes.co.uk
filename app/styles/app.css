@@ -633,6 +633,23 @@ Tabbed Content
   display: block;
 }
 /* -----------------
+Radio Buttons
+----------------- */
+.radio-buttons {
+  margin-bottom: 25px;
+}
+.radio-buttons .radio-buttons-item input[type=radio] {
+  margin-right: 10px;
+  margin-top: 2px;
+  float: left;
+}
+.radio-buttons .radio-buttons-item label {
+  margin-top: 0px;
+}
+.radio-buttons .radio-buttons-item.is-disabled label {
+  color: #d0d0d0;
+}
+/* -----------------
 Icons
 ----------------- */
 .icon-cv {
