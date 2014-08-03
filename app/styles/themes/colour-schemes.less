@@ -3,7 +3,7 @@ Foreground Colour Schemes
 ----------------- */
 &.theme-red {
     .theme-border {
-        border-left-color: @red;
+        border-left-color: @green;
     }
     a {
         color: @red;
@@ -39,5 +39,20 @@ Foreground Colour Schemes
     .btn {
         background: @green;
         border-color: @green;
+
+        &.btn-inverse {
+            color: @green;
+        }
+
+        &.is-active {
+            background: @green !important;
+        }
+    }
+    .tabbed-content {
+        .tabbed-content-tabs {
+            li.active {
+                border-bottom-color: @green;
+            }
+        }
     }
 }
