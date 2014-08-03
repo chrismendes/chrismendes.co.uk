@@ -18,7 +18,7 @@ define([
         events: {
             'mouseenter .box':      'onBoxHover',
             'mouseleave .box':      'onBoxHoverOut',
-            'click .box':           'exitPage'
+            'click .box':           'onBoxClick'
         },
 
         onAfterRender: function() {
@@ -33,10 +33,21 @@ define([
             this.identifyBox(e).removeClass('is-active').removeClass('is-animating', 100);
         },
 
-        // Home page exit transition
-        exitPage: function(e) {
+        onBoxClick: function(e) {
             var boxClicked = this.identifyBox(e);
+            if(typeof boxClicked.attr('data-href') !== 'undefined') {
+                this.exitPage(boxClicked);
+            } else {
+                this.showModal(boxClicked);
+            }
+        },
+
+        // Home page exit transition
+        exitPage: function(boxClicked) {
             var navigateTo = boxClicked.attr('data-href');
+            if(typeof navigateTo === 'undefined') {
+                return;
+            }
             // boxClicked.removeClass('is-active', 50).removeClass('is-animating', 50);
             // Fix box heights so as to prevent them collapsing
             $('.box').each(function() {
@@ -55,6 +66,14 @@ define([
                     });
                 });
             }, 200);
+        },
+
+        showModal: function(boxClicked) {
+            var modalSrc = boxClicked.attr('data-modal');
+            if(typeof modalSrc === 'undefined') {
+                return;
+            }
+            
         },
 
         // Return jQuery element for clicked box, whether box itself or child element clicked

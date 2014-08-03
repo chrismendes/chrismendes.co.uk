@@ -13,7 +13,8 @@ define([
             'cv':           'showCV',
             'portfolio':    'showPortfolio',
             'skills':       'showSkills',
-            'situation':    'showCurrentSituation'
+            'situation':    'showCurrentSituation',
+            'contact':      'showContactModal'
         },
 
         initialize: function() {
@@ -42,6 +43,7 @@ define([
         showCurrentSituation: function() {
             App.showCurrentSituation();
         }
+        
     });
 
     return Router;
