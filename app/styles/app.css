@@ -628,34 +628,8 @@ Formatted Table
 Tabbed Content
 ----------------- */
 .tabbed-content .tabbed-content-tabs {
-  width: 100%;
-  float: left;
   margin-bottom: 20px;
   border-bottom: 1px solid #c0c0c0;
-  height: 32px;
-  overflow: hidden;
-}
-.tabbed-content .tabbed-content-tabs button {
-  border-bottom: 0px;
-}
-.tabbed-content .tabbed-content-tabs ul,
-.tabbed-content .tabbed-content-tabs li {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-.tabbed-content .tabbed-content-tabs li {
-  float: left;
-  margin-left: -1px;
-}
-.tabbed-content .tabbed-content-tabs li:first-child {
-  margin-left: 0px;
-}
-.tabbed-content .tabbed-content-body {
-  display: none;
-}
-.tabbed-content .tabbed-content-body.is-active {
-  display: block;
 }
 /* -----------------
 Radio Buttons

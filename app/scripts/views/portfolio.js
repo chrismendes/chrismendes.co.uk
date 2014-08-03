@@ -6,7 +6,8 @@ define([
     'backbone',
     'views/_base',
     'text!/templates/portfolio.html',
-    'common'
+    'common',
+    'bootstrap-tab'
 ], function($, Backbone, BaseView, html, Common) {
 
     var PortfolioView = BaseView.extend({
@@ -23,7 +24,6 @@ define([
 
         // Box hover over/out effects
         onBoxHover: function(e) {
-            console.log('onBoxHover');
             this.identifyBox(e).not('.is-filtered-out').addClass('is-active', 200);
         },
         onBoxHoverOut: function(e) {
