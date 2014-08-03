@@ -17,27 +17,11 @@ define([
         background:     'gold',
         theme:          'red',
 
-        events: {
-            'mouseenter .grid-content-block':      'onBoxHover',
-            'mouseleave .grid-content-block':      'onBoxHoverOut',
-        },
-
-        // Box hover over/out effects
-        onBoxHover: function(e) {
-            this.identifyBox(e).not('.is-filtered-out').addClass('is-active', 200);
-        },
-        onBoxHoverOut: function(e) {
-            this.identifyBox(e).removeClass('is-active', 200);
-        },
+        events: {},
 
         onAfterRender: function() {
             // this.setCarouselAnnotationHook();
         },
-
-        // Return jQuery element for clicked box, whether box itself or child element clicked
-        identifyBox: function(e) {
-            return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
-        }
 
         // setCarouselAnnotationHook: function() {
         //     this.setCarouselAnnotation();

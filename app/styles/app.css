@@ -70,6 +70,9 @@ h4 {
 /* -----------------
 UI Elements
 ----------------- */
+button {
+  color: #fff;
+}
 button:focus {
   outline: 0 !important;
 }
@@ -84,7 +87,6 @@ button.btn-inverse {
 /* -----------------
 Miscellaneous
 ----------------- */
-/* Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
 *,
 *:before,
 *:after {
@@ -135,6 +137,14 @@ Common Styles
 }
 .l-content-rows .row.row-alt {
   background: #f5f5f5;
+}
+.l-grid-content {
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+}
+.l-grid-content .row {
+  margin-bottom: 40px;
 }
 .l-home {
   margin-top: 60px;
@@ -628,7 +638,7 @@ Formatted Table
 Tabbed Content
 ----------------- */
 .tabbed-content .tabbed-content-tabs {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #efefef;
 }
 .tabbed-content .tabbed-content-tabs li a {
@@ -749,37 +759,34 @@ Icons
 .horizontal-buttons li:first-child {
   margin-left: 0px;
 }
-.grid-content {
-  margin-top: 20px;
-  width: 100%;
-  float: left;
-}
-.grid-content .grid-content-block {
+.polaroid {
   width: 100%;
   min-height: 80px;
   padding: 10px;
+  border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px 10px 0px #c0c0c0;
   -webkit-box-shadow: 3px 3px 10px 0px #c0c0c0;
   box-shadow: 3px 3px 10px 0px #c0c0c0;
-  cursor: pointer;
 }
-.grid-content .grid-content-block.is-active {
+.polaroid:hover {
   -moz-box-shadow: 3px 3px 10px 0px #666666;
   -webkit-box-shadow: 3px 3px 10px 0px #666666;
   box-shadow: 3px 3px 10px 0px #666666;
+  border: 1px solid #ccc;
 }
-.grid-content .grid-content-block.is-filtered-out {
+.polaroid.is-filtered-out {
   -moz-opacity: 0.2;
   -khtml-opacity: 0.2;
   -webkit-opacity: 0.2;
   opacity: 0.2;
   filter: alpha(opacity=20);
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+  -moz-box-shadow: 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 0px #ffffff;
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  border: 1px solid #c0c0c0;
 }
-.grid-content .grid-content-block img.screenshot {
-  width: 100%;
-}
-.grid-content .grid-content-block p.date {
+.polaroid .sticky {
   text-align: right;
   color: #999;
   font-size: 11px;
@@ -793,30 +800,58 @@ Icons
   right: 5px;
   top: -10px;
 }
-.grid-content .grid-content-block h3.project-name {
+.project-list-item img.screenshot-thumb {
+  float: right;
+  margin: 0px 15px 0px 25px;
+  -moz-box-shadow: 2px 2px 6px 0px #c0c0c0;
+  -webkit-box-shadow: 2px 2px 6px 0px #c0c0c0;
+  box-shadow: 2px 2px 6px 0px #c0c0c0;
+}
+.project-list-item h3.project-name {
+  margin: 0px 0px 4px 0px;
+}
+.project-list-item p.link {
+  margin: 0px 0px 8px 0px;
+}
+.project-list-item p.description {
+  margin: 0px 0px 15px 0px;
+}
+.project-list-item button.screenshots-link {
+  background: #1ec1c1;
+  color: #fff;
+  border: 0px;
+}
+.project-list-item .note-heading {
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.project-list-item.polaroid {
+  cursor: pointer;
+}
+.project-list-item.polaroid img.screenshot {
+  width: 100%;
+}
+.project-list-item.polaroid h3.project-name {
   text-align: center;
   width: 100%;
   margin: 10px 0px 0px 0px;
 }
-.grid-content .grid-content-block a.link {
+.project-list-item.polaroid a.link {
   text-align: center;
   font-size: 13px;
   width: 100%;
   display: inline-block;
   margin-top: 3px;
 }
-.grid-content .grid-content-block a.link:hover {
+.project-list-item.polaroid a.link:hover {
   text-decoration: none;
 }
-.grid-content .grid-content-block button.more-details {
+.project-list-item.polaroid button.more-details {
   background: #1ec1c1;
   color: #fff;
   border: 0px;
   margin: 6px auto 0px auto;
   display: block;
-}
-.grid-content .row {
-  margin-bottom: 40px;
 }
 /* -----------------
 Backgrounds
@@ -846,7 +881,7 @@ Backgrounds
 Foreground Colour Schemes
 ----------------- */
 .theme-red .theme-border {
-  border-left-color: #dd686d;
+  border-left-color: #00cc99;
 }
 .theme-red a {
   color: #dd686d;
@@ -873,4 +908,13 @@ Foreground Colour Schemes
 .theme-green .btn {
   background: #00cc99;
   border-color: #00cc99;
+}
+.theme-green .btn.btn-inverse {
+  color: #00cc99;
+}
+.theme-green .btn.is-active {
+  background: #00cc99 !important;
+}
+.theme-green .tabbed-content .tabbed-content-tabs li.active {
+  border-bottom-color: #00cc99;
 }
