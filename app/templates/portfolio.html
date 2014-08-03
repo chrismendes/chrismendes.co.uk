@@ -5,132 +5,142 @@ Template - My Portfolio
   <div class="col-md-12">
     <article class="content-canvas theme-border icon-portfolio">
       <h2>My Portfolio</h2>
+      
       <div class="tabbed-content">
+        
         <div class="tabbed-content-tabs">
-          <ul>
-            <li><button type="button" class="btn btn-inverse">Project Highlights</button></li>
-            <li><button type="button" class="btn btn-inverse">DNX Marketing (Mar 12-May 14)</button></li>
-            <li><button type="button" class="btn btn-inverse">Fingo Marketing</button></li>
-            <li><button type="button" class="btn btn-inverse">Other Projects</button></li>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#highlights" role="tab" data-toggle="tab">Project Highlights</a></li>
+            <li><a href="#contract" role="tab" data-toggle="tab">Contract Work</a></li>
+            <li><a href="#dnx" role="tab" data-toggle="tab">DNX Marketing</a></li>
+            <li><a href="#fingo" role="tab" data-toggle="tab">Fingo Marketing</a></li>
+            <li><a href="#other" role="tab" data-toggle="tab">Other Projects</a></li>
           </ul>
         </div>
-        <div class="tabbed-content-body is-active">
-          <section class="grid-content">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="grid-content-block is-hovered-over" data-tags="backbone dnx">
-                  <p class="date">Jan-Mar 2014</p>
-                  <img class="screenshot" src="images/portfolio/success-factors/thumb.jpg" width="222" height="130" alt="Success Factors"/>
-                  <h3 class="project-name">Success Factors</h3>
-                  <a class="link" href="#">www.startanywherewithsuccess<br/>factors.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
+        
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="highlights">
+            <section class="grid-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="grid-content-block is-hovered-over" data-tags="backbone dnx">
+                    <p class="date">Jan-Mar 2014</p>
+                    <img class="screenshot" src="images/portfolio/success-factors/thumb.jpg" width="222" height="130" alt="Success Factors"/>
+                    <h3 class="project-name">Success Factors</h3>
+                    <a class="link" href="#">www.startanywherewithsuccess<br/>factors.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block is-filtered-out" data-tags="dnx phpmysql cisco responsive">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Cisco Data Centre Hub</h3>
+                    <a class="link" href="#">servers.cisco.co.uk</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="dnx phpmysql">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">SAP Innovation United</h3>
+                    <a class="link" href="#">www.sapinnovationunited.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="dnx autodesk phpmysql">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Autodesk Manufacturing Genius</h3>
+                    <a class="link" href="#">www.autodesk-manufacturing-genius.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="grid-content-block is-filtered-out" data-tags="dnx phpmysql cisco responsive">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Cisco Data Centre Hub</h3>
-                  <a class="link" href="#">servers.cisco.co.uk</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">SAP Didn't Expect That</h3>
+                    <a class="link" href="#">www.sap.com/didntexpectthat</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Autodesk Build Today</h3>
+                    <a class="link" href="#">www.autodesk-build-today.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">SAP Analytics 50 Tips</h3>
+                    <a class="link" href="#">www.sap50analyticstips.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Autodesk Manufacturing Genius</h3>
+                    <a class="link" href="#">www..com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="dnx phpmysql">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">SAP Innovation United</h3>
-                  <a class="link" href="#">www.sapinnovationunited.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Virgin Pure</h3>
+                    <a class="link" href="#">www.virginpure.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">DKNY Fragrances</h3>
+                    <a class="link" href="#">www.dknyfragrances.co.uk</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">SAP Solutions Configurator</h3>
+                    <a class="link" href="#">www.sapcrystalsolutions<br/>configurator.com</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grid-content-block" data-tags="">
+                    <p class="date">May 2012</p>
+                    <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
+                    <h3 class="project-name">Cisco BIG</h3>
+                    <a class="link" href="#">www.ciscobig.co.uk</a>
+                    <button type="button" class="btn more-details">Details &raquo;</button>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="dnx autodesk phpmysql">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Autodesk Manufacturing Genius</h3>
-                  <a class="link" href="#">www.autodesk-manufacturing-genius.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">SAP Didn't Expect That</h3>
-                  <a class="link" href="#">www.sap.com/didntexpectthat</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Autodesk Build Today</h3>
-                  <a class="link" href="#">www.autodesk-build-today.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">SAP Analytics 50 Tips</h3>
-                  <a class="link" href="#">www.sap50analyticstips.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Autodesk Manufacturing Genius</h3>
-                  <a class="link" href="#">www..com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Virgin Pure</h3>
-                  <a class="link" href="#">www.virginpure.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">DKNY Fragrances</h3>
-                  <a class="link" href="#">www.dknyfragrances.co.uk</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">SAP Solutions Configurator</h3>
-                  <a class="link" href="#">www.sapcrystalsolutions<br/>configurator.com</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="grid-content-block" data-tags="">
-                  <p class="date">May 2012</p>
-                  <img class="screenshot" src="images/portfolio/autodesk-configurator/desktop.jpg"/>
-                  <h3 class="project-name">Cisco BIG</h3>
-                  <a class="link" href="#">www.ciscobig.co.uk</a>
-                  <button type="button" class="btn more-details">Details &raquo;</button>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          </div>
+          <div class="tab-pane fade" id="dnx">
+            <p>This is a test.</p>
+          </div>
+
         </div>
       </div>
     </article>
