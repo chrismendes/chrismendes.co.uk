@@ -629,7 +629,25 @@ Tabbed Content
 ----------------- */
 .tabbed-content .tabbed-content-tabs {
   margin-bottom: 20px;
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 1px solid #efefef;
+}
+.tabbed-content .tabbed-content-tabs li a {
+  margin-right: 0px;
+}
+.tabbed-content .tabbed-content-tabs li:hover {
+  border-bottom: 2px solid #c0c0c0;
+}
+.tabbed-content .tabbed-content-tabs li:hover a {
+  background: none;
+  border-color: #fff;
+}
+.tabbed-content .tabbed-content-tabs li.active {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+}
+.tabbed-content .tabbed-content-tabs li.active:hover a {
+  border-color: #ddd;
 }
 /* -----------------
 Radio Buttons
@@ -782,6 +800,7 @@ Icons
 }
 .grid-content .grid-content-block a.link {
   text-align: center;
+  font-size: 13px;
   width: 100%;
   display: inline-block;
   margin-top: 3px;
@@ -841,6 +860,9 @@ Foreground Colour Schemes
 }
 .theme-red .btn.is-active {
   background: #dd686d !important;
+}
+.theme-red .tabbed-content .tabbed-content-tabs li.active {
+  border-bottom-color: #dd686d;
 }
 .theme-green .theme-border {
   border-left-color: #00cc99;
