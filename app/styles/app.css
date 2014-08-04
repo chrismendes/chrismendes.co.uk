@@ -827,6 +827,7 @@ Icons
 }
 .project-list-item.polaroid {
   cursor: pointer;
+  min-height: 270px;
 }
 .project-list-item.polaroid img.screenshot {
   width: 100%;
