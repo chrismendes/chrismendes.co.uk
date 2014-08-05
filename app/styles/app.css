@@ -243,6 +243,18 @@ footer .navbar .navbar-nav.pull-right li a {
 footer .navbar .col-md-6 {
   padding: 0px;
 }
+.body-heading h2 {
+  float: left;
+}
+.body-heading .body-heading-links {
+  margin-left: 20px;
+  margin-top: 33px;
+  float: left;
+}
+.body-heading .body-heading-links a {
+  display: inline-block;
+  float: left;
+}
 .scattered-boxes {
   /* -----------------
     Mixins
@@ -640,6 +652,7 @@ Tabbed Content
 .tabbed-content .tabbed-content-tabs {
   margin-bottom: 25px;
   border-bottom: 1px solid #efefef;
+  clear: both;
 }
 .tabbed-content .tabbed-content-tabs li a {
   margin-right: 0px;
