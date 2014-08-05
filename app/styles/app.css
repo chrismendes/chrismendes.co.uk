@@ -672,6 +672,9 @@ Tabbed Content
 .tabbed-content .tabbed-content-tabs li.active:hover a {
   border-color: #ddd;
 }
+.tabbed-content .tabbed-content-body {
+  display: none;
+}
 /* -----------------
 Radio Buttons
 ----------------- */
