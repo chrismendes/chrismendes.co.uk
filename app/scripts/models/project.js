@@ -13,9 +13,9 @@ define([
             description:    null,
             skills:         [],
             employer:       null,
+            contract:       false,
             date:           null,
             highlight:      false
-            category:       null
         }
 
     });
