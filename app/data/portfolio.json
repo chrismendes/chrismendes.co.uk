@@ -1,134 +1,132 @@
-{
-    "projects": [
-        {
-            "name":             "Capablue",
-            "url":              "www.capablue.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         null,
-            "contract":         true,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Success Factors",
-            "url":              "www.startanywherewithsuccessfactors.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Capablue TV Everywhere",
-            "url":              "White-label product prototype",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         null,
-            "contract":         true,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "SAP Innovation United",
-            "url":              "www.sapinnovationunited.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "SAP Didn't Expect That",
-            "url":              "www.sap.com/didntexpectthat",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Cisco Data Centre Hub",
-            "url":              "servers.cisco.co.uk",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "SAP Crystal Solutions",
-            "url":              "www.sapcrystalsolutionsconfigurator.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Autodesk Manufacturing Genius",
-            "url":              "www.autodesk-manufacturing-genius.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Autodesk Build Today",
-            "url":              "www.autodesk-build-today.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "SAP Analytics 50 Tips",
-            "url":              "www.sap50analyticstips.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Virgin Pure",
-            "url":              "www.virginpure.com",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "DKNY Fragrances",
-            "url":              "www.dknyfragrances.co.uk",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        },
-        {
-            "name":             "Cisco BIG",
-            "url":              "www.ciscobig.co.uk",
-            "description":      "",
-            "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
-            "employer":         "DNX Marketing",
-            "contract":         false,
-            "date":             "Aug 2014",
-            "highlight":        true
-        }
-    ]
-}
+[
+    {
+        "name":             "Capablue",
+        "url":              "www.capablue.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         null,
+        "contract":         true,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Success Factors",
+        "url":              "www.startanywherewithsuccessfactors.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Capablue TV Everywhere",
+        "url":              "White-label product prototype",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         null,
+        "contract":         true,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "SAP Innovation United",
+        "url":              "www.sapinnovationunited.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "SAP Didn't Expect That",
+        "url":              "www.sap.com/didntexpectthat",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Cisco Data Centre Hub",
+        "url":              "servers.cisco.co.uk",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "SAP Crystal Solutions",
+        "url":              "www.sapcrystalsolutionsconfigurator.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Autodesk Manufacturing Genius",
+        "url":              "www.autodesk-manufacturing-genius.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Autodesk Build Today",
+        "url":              "www.autodesk-build-today.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "SAP Analytics 50 Tips",
+        "url":              "www.sap50analyticstips.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Virgin Pure",
+        "url":              "www.virginpure.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "DKNY Fragrances",
+        "url":              "www.dknyfragrances.co.uk",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    },
+    {
+        "name":             "Cisco BIG",
+        "url":              "www.ciscobig.co.uk",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ]
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true
+    }
+]
