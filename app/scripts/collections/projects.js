@@ -8,12 +8,10 @@ define([
 
     var ProjectsCollection = Backbone.Collection.extend({
 
-        model: ProjectModel,
-
-        url: function() {
-            return '';
-        }
+        model: ProjectModel
 
     });
 
-}
+    return ProjectsCollection;
+
+});

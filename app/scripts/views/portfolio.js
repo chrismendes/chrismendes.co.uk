@@ -6,9 +6,11 @@ define([
     'backbone',
     'views/_base',
     'text!/templates/portfolio.html',
+    'collections/projects',
+    'text!/data/portfolio.json',
     'common',
     'bootstrap-tab'
-], function($, Backbone, BaseView, html, Common) {
+], function($, Backbone, BaseView, html, ProjectCollection, PortfolioData, Common) {
 
     var PortfolioView = BaseView.extend({
 
@@ -18,6 +20,11 @@ define([
         theme:          'red',
 
         events: {},
+
+        initialize: function() {
+            var projects = new ProjectCollection(PortfolioData);
+            console.log(projects);
+        },
 
         onAfterRender: function() {
             // this.setCarouselAnnotationHook();
