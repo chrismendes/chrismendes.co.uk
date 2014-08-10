@@ -30,9 +30,12 @@ Tabled Bullets
 Formatted Table
 ----------------- */
 .formatted-table {
-    width: 100%;
     border: 1px solid #c0c0c0;
     margin: 20px 0px 30px 0px;
+
+    &.formatted-table-fullwidth {
+        width: 100%;
+    }
 
     td {
         padding: 10px;
@@ -91,7 +94,8 @@ Tabbed Content
 Radio Buttons
 ----------------- */
 .radio-buttons {
-    margin-bottom: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     .radio-buttons-item {
         input[type=radio] {
