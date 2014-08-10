@@ -22,8 +22,7 @@ define([
         events: {},
 
         initialize: function() {
-            var projects = new ProjectCollection(PortfolioData);
-            console.log(projects);
+            var projects = new ProjectCollection(JSON.parse(PortfolioData));
         },
 
         onAfterRender: function() {
