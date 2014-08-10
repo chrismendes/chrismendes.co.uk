@@ -663,6 +663,7 @@ Tabbed Content
   margin-bottom: 25px;
   border-bottom: 1px solid #efefef;
   clear: both;
+  width: 75%;
 }
 .tabbed-content .tabbed-content-tabs li a {
   margin-right: 0px;
@@ -706,14 +707,19 @@ Radio Buttons
 /* -----------------
 Icons
 ----------------- */
+.icon-skills {
+  background-image: url('../images/icons/skills-large.png');
+  background-position: 95% 30px;
+  background-repeat: no-repeat;
+}
 .icon-cv {
   background-image: url('../images/icons/cv-large.png');
   background-position: 97% 2%;
   background-repeat: no-repeat;
 }
-.icon-skills {
-  background-image: url('../images/icons/skills-large.png');
-  background-position: 95% 30px;
+.icon-portfolio {
+  background-image: url('../images/icons/portfolio-large.png');
+  background-position: 96% 30px;
   background-repeat: no-repeat;
 }
 .category-column.is-off-stage {
@@ -794,6 +800,7 @@ Icons
   -moz-box-shadow: 3px 3px 10px 0px #c0c0c0;
   -webkit-box-shadow: 3px 3px 10px 0px #c0c0c0;
   box-shadow: 3px 3px 10px 0px #c0c0c0;
+  background: #fff;
 }
 .polaroid:hover {
   -moz-box-shadow: 3px 3px 10px 0px #666666;
