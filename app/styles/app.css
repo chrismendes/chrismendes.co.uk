@@ -247,13 +247,20 @@ footer .navbar .col-md-6 {
   float: left;
 }
 .body-heading .body-heading-links {
-  margin-left: 20px;
-  margin-top: 33px;
+  margin-left: 35px;
+  margin-top: 22px;
   float: left;
 }
 .body-heading .body-heading-links a {
   display: inline-block;
   float: left;
+}
+.body-heading .body-heading-links a.icon {
+  min-height: 30px;
+  padding: 5px 0px 0px 40px;
+}
+.body-heading .body-heading-links a.icon.pdf {
+  background: url('../images/icons/pdf.png') no-repeat;
 }
 .scattered-boxes {
   /* -----------------
