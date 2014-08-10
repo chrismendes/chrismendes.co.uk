@@ -13,7 +13,7 @@ define([
             'cv':           'showCV',
             'portfolio':    'showPortfolio',
             'skills':       'showSkills',
-            'situation':    'showCurrentSituation',
+            'employment':   'showEmployment',
             'contact':      'showContactModal'
         },
 
@@ -40,8 +40,8 @@ define([
             App.showSkills();
         },
         // Current Situation Page
-        showCurrentSituation: function() {
-            App.showCurrentSituation();
+        showEmployment: function() {
+            App.showEmployment();
         }
         
     });

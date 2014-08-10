@@ -3,19 +3,19 @@
 // -------
 define([
     'views/_base',
-    'text!/templates/situation.html',
+    'text!/templates/employment.html',
     'common'
 ], function(BaseView, html, Common) {
 
-    var CurrentSituationView = BaseView.extend({
+    var EmploymentView = BaseView.extend({
 
         template:       _.template(html),
-        elPage:         '#page-situation',
-        background:     'denimblue',
+        elPage:         '#page-employment',
+        background:     'denim',
         theme:          'green'
 
     });
 
-    return CurrentSituationView;
+    return EmploymentView;
 
 });

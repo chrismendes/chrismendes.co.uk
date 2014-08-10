@@ -569,8 +569,8 @@ footer .navbar .col-md-6 {
   margin: 15px 0px 10px 10px;
   background-image: url('../images/home/clients-icons.png');
 }
-.scattered-boxes .box.box-situation {
-  background-image: url('../images/home/situation.png');
+.scattered-boxes .box.box-employment {
+  background-image: url('../images/home/employment.png');
   background-position: 170px -25px;
 }
 .scattered-boxes .box.box-learning {
@@ -633,9 +633,11 @@ Tabled Bullets
 Formatted Table
 ----------------- */
 .formatted-table {
-  width: 100%;
   border: 1px solid #c0c0c0;
   margin: 20px 0px 30px 0px;
+}
+.formatted-table.formatted-table-fullwidth {
+  width: 100%;
 }
 .formatted-table td {
   padding: 10px;
@@ -679,7 +681,8 @@ Tabbed Content
 Radio Buttons
 ----------------- */
 .radio-buttons {
-  margin-bottom: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .radio-buttons .radio-buttons-item input[type=radio] {
   margin-right: 10px;
