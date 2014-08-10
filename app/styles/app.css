@@ -686,6 +686,9 @@ Tabbed Content
 .tabbed-content .tabbed-content-body {
   display: none;
 }
+.tabbed-content .tabbed-content-body.is-active {
+  display: block;
+}
 /* -----------------
 Radio Buttons
 ----------------- */
