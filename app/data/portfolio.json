@@ -95,7 +95,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "autodesk-buildtoday"
     },
     {
@@ -106,7 +106,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "sap-analytics"
     },
     {
@@ -117,7 +117,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "virginpure"
     },
     {
@@ -128,7 +128,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "dkny"
     },
     {
@@ -139,7 +139,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "cisco-big"
     }
 ]
