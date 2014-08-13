@@ -15,6 +15,7 @@ define([
     	elPage:         null,
     	background:     null,
         theme:          null,
+        data:           null,
 
         onBeforeRender: function() {},
 
@@ -57,7 +58,7 @@ define([
                 $('footer').html(footer());
 
                 // Set page contents
-                this.$el.html(this.template());
+                this.$el.html(this.template(this.data));
 
                 this.onBeforeShow();
 

@@ -13,140 +13,55 @@ Template - My Portfolio
       
       <div class="tabbed-content">
         
+        <!--
+        Tabs
+        -->
         <div class="tabbed-content-tabs">
           <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="#highlights" role="tab" data-toggle="tab">Project Highlights</a></li>
-            <li><a href="#contract" role="tab" data-toggle="tab">Contract Work</a></li>
-            <li><a href="#dnx" role="tab" data-toggle="tab">DNX Marketing</a></li>
-            <li><a href="#fingo" role="tab" data-toggle="tab">Fingo Marketing</a></li>
-            <li><a href="#other" role="tab" data-toggle="tab">Other Projects</a></li>
+            <% _.each(categories, function(cat, id) { %>
+            <li<% if(id === 'highlights') { %> class="active"<% } %>><a href="#<%= id %>" role="tab" data-toggle="tab"><%= cat.name %></a></li>
+            <% }); %>
           </ul>
         </div>
         
         <!--
-        Project Highlights
+        Tabbed Content
         -->
         <div class="tab-content">
-          <div class="tab-pane active" id="highlights">
+        <% _.each(categories, function(cat, id) { %>
+          <div class="tab-pane<% if(id === 'highlights') { %> active<% } %>" id="<%= id %>">
+            <% if(id === 'highlights') { %>
+            <!--
+            Project Highlights
+            -->
             <section class="l-grid-content">
               <div class="row">
-                <!--
-                Capablue
-                -->
+              <% _.each(cat.projects, function(project, i) { %>
+                <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
                 <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="backbone">
+                  <div class="project-list-item polaroid">
                     <p class="sticky">Backbone.js</p>
-                    <img class="screenshot" src="images/portfolio/projects/capablue/thumb.jpg" width="220" height="128" alt="Capablue"/>
-                    <h3 class="project-name">Capablue</h3>
-                    <a class="link" href="#">www.capablue.com</a>
+                    <img class="screenshot"¡ src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
+                    <h3 class="project-name"><%= project.get('name') %></h3>
+                    <a class="link" href="#"><%= project.get('url') %></a>
                     <button type="button" class="btn more-details">Details &raquo;</button>
                   </div>
                 </div>
-                <!--
-                Success Factors
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="backbone dnx">
-                    <p class="sticky">Backbone.js</p>
-                    <img class="screenshot" src="images/portfolio/projects/success-factors/thumb.jpg" width="220" height="128" alt="Success Factors"/>
-                    <h3 class="project-name">Success Factors</h3>
-                    <a class="link" href="#">www.startanywherewithsuccess<br/>factors.com</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-                <!--
-                Capablue TVe
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="backbone dnx">
-                    <p class="sticky">Backbone.js</p>
-                    <img class="screenshot" src="images/portfolio/projects/capablue-tve/thumb.jpg" width="220" height="128" alt="Capablue TV Everywhere"/>
-                    <h3 class="project-name">Capablue TV Everywhere</h3>
-                    <a class="link" href="#">www.startanywherewithsuccess<br/>factors.com</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-                <!--
-                SAP Innovation United
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="dnx phpmysql">
-                    <p class="sticky">PHP, CodeIgniter</p>
-                    <img class="screenshot" src="images/portfolio/projects/sap-football/thumb.jpg" width="220" height="128" alt="SAP Innovation United"/>
-                    <h3 class="project-name">SAP Innovation United</h3>
-                    <a class="link" href="#">www.sapinnovationunited.com</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <!--
-                SAP Didn't Expect That
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="">
-                    <p class="sticky">Responsive</p>
-                    <img class="screenshot" src="images/portfolio/projects/sap-didnt-expect/thumb.jpg" width="220" height="128" alt="SAP Didn't Expect That"/>
-                    <h3 class="project-name">SAP Didn't Expect That</h3>
-                    <a class="link" href="#">www.sap.com/didntexpectthat</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-                <!--
-                Cisco Data Centre Hub
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="dnx phpmysql cisco responsive">
-                    <p class="sticky">Responsive</p>
-                    <img class="screenshot" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="220" height="128" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">Cisco Data Centre Hub</h3>
-                    <a class="link" href="#">servers.cisco.co.uk</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-                <!--
-                SAP Solutions Configurator
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="">
-                    <p class="sticky">Responsive</p>
-                    <img class="screenshot" src="images/portfolio/projects/sap-crystal-solutions/thumb.jpg" width="220" height="128" alt="SAP Crystal Solutions"/>
-                    <h3 class="project-name">SAP Crystal Solutions</h3>
-                    <a class="link" href="#">www.sapcrystalsolutions<br/>configurator.com</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-                <!--
-                Autodesk Manufacturing Genius
-                -->
-                <div class="col-md-3">
-                  <div class="project-list-item polaroid" data-tags="dnx autodesk phpmysql">
-                    <p class="sticky">Responsive</p>
-                    <img class="screenshot" src="images/portfolio/projects/autodesk-manufacturing-genius/thumb.jpg" width="220" height="128" alt="Autodesk Manufacturing Genius"/>
-                    <h3 class="project-name">Autodesk Manufacturing Genius</h3>
-                    <a class="link" href="#">www.autodesk-manufacturing-genius.com</a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                  </div>
-                </div>
-              </div>
+              <% }); %>
             </section>
-          </div>
-
-          <!--
-          DNX
-          -->
-          <div class="tab-pane" id="dnx">
-            <div class="l-content-rows">
-              <!--
-              Autodesk Manufacturing Genius
-              -->
+            <% } else { %>
+            <!--
+            Other Categories
+            -->
+            <section class="l-content-rows">
+              <% _.each(cat.projects, function(project, i) { %>
               <div class="row project-list-item">
                 <div class="col-md-2">
-                  <img class="client-logo" src="images/portfolio/logos/autodesk.jpg" width="140" height="28" alt="Autodesk"/>
+                  <img class="client-logo" src="images/portfolio/logos/autodesk.jpg" width="140" height="28" alt=""/>
                 </div>
                 <div class="col-md-7">
                   <img class="screenshot-thumb" src="images/portfolio/projects/autodesk-manufacturing-genius/thumb.jpg" width="140" height="111" alt="Autodesk Manufacturing Genius"/>
-                  <h3 class="project-name">Autodesk Manufacturing Genius</h3>
+                  <h3 class="project-name"><%= project.get('name') %></h3>
                   <p class="link">
                     <a href="http://www.autodesk-manufacturing-genius.com" target="_blank">
                       www.autodesk-manufacturing-genius.com
@@ -168,195 +83,12 @@ Template - My Portfolio
                   <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
                 </div>
               </div>
-              <!--
-              Cisco Data Centre Hub
-              -->
-              <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">Cisco Data Centre Hub</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        servers.cisco.co.uk
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-                <!--
-                Autodesk Build Today
-                -->
-                <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">Autodesk Build Today</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        www.autodesk-build-today.com
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-                <!--
-                SAP Analytics 50 Tips
-                -->
-                <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">SAP Analytics 50 Tips</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        www.sap50analyticstips.com
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-                <!--
-                Virgin Pure
-                -->
-                <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">Virgin Pure</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        www.virginpure.com
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-                <!--
-                DKNY Fragrances
-                -->
-                <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">DKNY Fragrances</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        www.dknyfragrances.co.uk
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-                <!--
-                Cisco BIG
-                -->
-                <div class="row project-list-item">
-                  <div class="col-md-2">
-                    <img class="client-logo" src="images/portfolio/logos/cisco.jpg" width="140" height="73" alt="Cisco"/>
-                  </div>
-                  <div class="col-md-7">
-                    <img class="screenshot-thumb" src="images/portfolio/projects/cisco-data-centre-hub/thumb.jpg" width="140" height="115" alt="Cisco Data Centre Hub"/>
-                    <h3 class="project-name">Cisco BIG</h3>
-                    <p class="link">
-                      <a href="http://servers.cisco.co.uk" target="_blank">
-                        www.ciscobig.co.uk
-                      </a>
-                    </p>
-                    <p class="description">
-                      Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and 
-                      back-end. Multi-language. Responsive.
-                    </p>
-                  </div>
-                  <div class="col-md-3">
-                    <p class="note-heading">Relevant Skills:</p>
-                    <ul>
-                      <li>HTML, CSS, JavaScript</li>
-                      <li>Responsive development</li>
-                      <li>PHP, CodeIgniter, MySQL</li>
-                    </ul>
-                    <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                    <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <% }); %>
+            </section>
+            <% } %>
           </div>
+          <% }); %>
+        </div>
 
         </div>
       </div>
