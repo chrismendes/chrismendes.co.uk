@@ -29,6 +29,7 @@ Template - My Portfolio
         -->
         <div class="tab-content">
         <% _.each(categories, function(cat, id) { %>
+        <% console.log(cat) %>
           <div class="tab-pane<% if(id === 'highlights') { %> active<% } %>" id="<%= id %>">
             <% if(id === 'highlights') { %>
             <!--
@@ -41,9 +42,9 @@ Template - My Portfolio
                 <div class="col-md-3">
                   <div class="project-list-item polaroid">
                     <p class="sticky">Backbone.js</p>
-                    <img class="screenshot"¡ src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
-                    <h3 class="project-name"><%= project.get('name') %></h3>
-                    <a class="link" href="#"><%= project.get('url') %></a>
+                    <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
+                    <h3 class="project-name"><%= project.name %></h3>
+                    <a class="link" href="#"><%= project.url %></a>
                     <button type="button" class="btn more-details">Details &raquo;</button>
                   </div>
                 </div>
@@ -57,7 +58,7 @@ Template - My Portfolio
               <% _.each(cat.projects, function(project, i) { %>
               <div class="row project-list-item">
                 <div class="col-md-2">
-                  <img class="client-logo" src="images/portfolio/logos/autodesk.jpg" width="140" height="28" alt=""/>
+                  <img class="client-logo" src="images/portfolio/logos/<%= project.get('id') %>.jpg" width="140" height="28" alt=""/>
                 </div>
                 <div class="col-md-7">
                   <img class="screenshot-thumb" src="images/portfolio/projects/autodesk-manufacturing-genius/thumb.jpg" width="140" height="111" alt="Autodesk Manufacturing Genius"/>
