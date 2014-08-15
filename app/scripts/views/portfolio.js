@@ -27,37 +27,27 @@ define([
         },
 
         prepareData: function(collection) {
-            // TODO: Parse to JSON rather than passing down models to view
-            var projects = {};
-            
-            projects.highlights = collection.filter(function(item) {
-                return item.get('highlight') === true;
-            });
+            // TODO: Parse to JSON rather than passing down models to
+            var categories = {
+                highlights:     { name: 'Project Highlights',   filter: { highlight: true } },
+                contract:       { name: 'Contract Work',        filter: { contract: true } },
+                dnx:            { name: 'DNX Marketing',        filter: { employer: 'DNX Marketing' } },
+                fingo:          { name: 'Fingo Marketing',      filter: { employer: 'Fingo Marketing' } },
+                other:          { name: 'Other Projects',       filter: { contract: false, employer: null } }
+            };
 
-            projects.contract = collection.filter(function(item) {
-                return item.get('contract') === true;
-            });
+            var categoryData = {};
 
-            projects.dnx = collection.filter(function(item) {
-                return item.get('employer') === 'DNX Marketing';
-            });
-
-            projects.fingo = collection.filter(function(item) {
-                return item.get('employer') === 'Fingo Marketing';
-            });
-
-            projects.other = collection.filter(function(item) {
-                return item.get('contract') === false && item.get('employer') === null;
+            _.each(categories, function(config, key) {
+                var projects = collection.where(config.filter);
+                _.each(projects, function(proj, key) {
+                    
+                });
+                categoryData[key] = { name: config.name, projects: projects };
             });
 
             this.data = {
-                categories: {
-                    'highlights':   { name: 'Project Highlights',   projects: projects.highlights },
-                    'contract':     { name: 'Contract Work',        projects: projects.contract },
-                    'dnx':          { name: 'DNX Marketing',        projects: projects.dnx },
-                    'fingo':        { name: 'Fingo Marketing',      projects: projects.fingo },
-                    'other':        { name: 'Other Projects',       projects: projects.other }
-                }
+                categories: categoryData
             };
         },
 
