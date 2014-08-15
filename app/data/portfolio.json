@@ -66,6 +66,17 @@
         "id":               "cisco"
     },
     {
+        "name":             "SAP Lumira",
+        "url":              "www.insightmeetsinstinct.com",
+        "description":      "",
+        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development" ],
+        "employer":         "DNX Marketing",
+        "contract":         false,
+        "date":             "Aug 2014",
+        "highlight":        true,
+        "id":               "sap-lumira"
+    },
+    {
         "name":             "SAP Crystal Solutions",
         "url":              "www.sapcrystalsolutionsconfigurator.com",
         "description":      "",
@@ -73,7 +84,7 @@
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
-        "highlight":        true,
+        "highlight":        false,
         "id":               "sap-crystalsolutions"
     },
     {
