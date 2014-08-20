@@ -27,7 +27,6 @@ define([
         },
 
         prepareData: function(collection) {
-            // TODO: Parse to JSON rather than passing down models to
             var categories = {
                 highlights:     { name: 'Project Highlights',   filter: { highlight: true } },
                 contract:       { name: 'Contract Work',        filter: { contract: true } },
@@ -35,17 +34,18 @@ define([
                 fingo:          { name: 'Fingo Marketing',      filter: { employer: 'Fingo Marketing' } },
                 other:          { name: 'Other Projects',       filter: { contract: false, employer: null } }
             };
-
             var categoryData = {};
 
+            // Convert backbone models to object literals
             _.each(categories, function(config, key) {
                 var projects = collection.where(config.filter);
                 _.each(projects, function(proj, key) {
-                    
+                    projects[key] = proj.attributes
                 });
                 categoryData[key] = { name: config.name, projects: projects };
             });
 
+            // Release data to view
             this.data = {
                 categories: categoryData
             };
