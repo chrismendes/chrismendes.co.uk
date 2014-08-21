@@ -867,7 +867,6 @@ Icons
 }
 .project-list-item.polaroid {
   cursor: pointer;
-  min-height: 270px;
 }
 .project-list-item.polaroid .screenshot {
   width: 100%;
@@ -896,9 +895,12 @@ Icons
 .project-list-item.polaroid a.link {
   text-align: center;
   font-size: 13px;
-  width: 100%;
-  display: inline-block;
-  margin-top: 3px;
+  width: 85%;
+  display: block;
+  margin: 3px auto 0px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .project-list-item.polaroid a.link:hover {
   text-decoration: none;
