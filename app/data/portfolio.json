@@ -3,11 +3,12 @@
         "name":             "Capablue",
         "url":              "www.capablue.com",
         "description":      "",
-        "skills":           [ "HTML, CSS", "JavaScript", "Backbone.js", "Responsive development" ],
+        "skills":           [ "HTML, CSS, Foundation", "JavaScript, Backbone.js", "Responsive development" ],
         "employer":         null,
         "contract":         true,
         "date":             "Aug/Sep 2014",
         "highlight":        true,
+        "techCategory":     true,
         "id":               "capablue",
         "clientId":         "capablue"
     },
@@ -15,23 +16,25 @@
         "name":             "Success Factors",
         "url":              "www.startanywherewithsuccessfactors.com",
         "description":      "Interactive questionnaire for HR professionals to obtain helpful information tailored to their needs based on the answers given. User journey data dispatched to Marketo CRM.",
-        "skills":           [ "HTML, CSS", "JavaScript" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     true,
         "id":               "successfactors",
         "clientId":         "successfactors"
     },
     {
         "name":             "Capablue TV Everywhere",
-        "url":              "White-label product prototype",
+        "url":              "Not yet published",
         "description":      "",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery, Backbone.js", "Responsive development", "PHP" ],
+        "skills":           [ "HTML, CSS, Foundation", "JavaScript, jQuery, Backbone.js", "Responsive development", "PHP" ],
         "employer":         null,
         "contract":         true,
         "date":             "May - July 2014",
         "highlight":        true,
+        "techCategory":     true,
         "id":               "capablue-tve",
         "clientId":         "capablue"
     },
@@ -44,6 +47,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     false,
         "id":               "sap-football",
         "clientId":         "sap"
     },
@@ -56,6 +60,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     false,
         "id":               "cisco",
         "clientId":         "cisco"
     },
@@ -68,6 +73,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     false,
         "id":               "sap-didntexpect",
         "clientId":         "sap"
     },
@@ -75,11 +81,12 @@
         "name":             "Autodesk Manufacturing",
         "url":              "www.autodesk-manufacturing-genius.com",
         "description":      "Microsite presenting case studies for suite of CAD products, as well as a questionnaire to help map products to user requirements. Responsible for front-end and back-end. Responsive.",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     false,
         "id":               "autodesk-manufacturing",
         "clientId":         "autodesk"
     },
@@ -87,11 +94,12 @@
         "name":             "SAP Crystal Solutions",
         "url":              "www.sapcrystalsolutionsconfigurator.com",
         "description":      "Microsite providing a questionnaire to determine SAP product s for given business requirements. Responsible for front-end and back-end. Responsive.",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "sap-crystalsolutions",
         "clientId":         "sap"
     },
@@ -99,11 +107,12 @@
         "name":             "SAP Lumira",
         "url":              "www.insightmeetsinstinct.com",
         "description":      "",
-        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript", "Responsive development" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
+        "techCategory":     false,
         "id":               "sap-lumira",
         "clientId":         "sap"
     },
@@ -111,11 +120,12 @@
         "name":             "Autodesk Build Today",
         "url":              "www.autodesk-build-today.com",
         "description":      "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
-        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "autodesk-buildtoday",
         "clientId":         "autodesk"
     },
@@ -128,6 +138,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "sap-analytics",
         "clientId":         "sap"
     },
@@ -135,11 +146,12 @@
         "name":             "Virgin Pure",
         "url":              "www.virginpure.com",
         "description":      "Formally Strauss Water, Virgin Pure sells dispenser machines that provide purified water. Drupal CMS. Responsible for front-end and back-end.",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "virginpure",
         "clientId":         "virginpure"
     },
@@ -152,6 +164,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "dkny",
         "clientId":         "dkny"
     },
@@ -159,11 +172,12 @@
         "name":             "Cisco BIG",
         "url":              "www.ciscobig.co.uk",
         "description":      "Cisco-led programme aimed at technology start-ups. Responsible for front-end. Responsive.",
-        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "cisco-big",
         "clientId":         "cisco"
     },
@@ -176,6 +190,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "coconuthair",
         "clientId":         null
     },
@@ -188,6 +203,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "personalagent",
         "clientId":         null
     },
@@ -200,6 +216,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "oraclepr",
         "clientId":         null
     },
@@ -212,6 +229,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "limeshowrooms",
         "clientId":         null
     },
@@ -224,6 +242,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "lifeworks",
         "clientId":         null
     },
@@ -236,6 +255,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "podvolunteer",
         "clientId":         null
     },
@@ -248,6 +268,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "peppermintbars",
         "clientId":         null
     },
@@ -260,6 +281,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "strengthspartnership",
         "clientId":         null
     },
@@ -272,6 +294,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "whybother",
         "clientId":         null
     },
@@ -284,6 +307,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "newfieldit",
         "clientId":         null
     },
@@ -296,6 +320,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "",
         "clientId":         null
     },
@@ -308,6 +333,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "asashwindow",
         "clientId":         null
     },
@@ -320,6 +346,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "elizabethstone",
         "clientId":         null
     },
@@ -332,6 +359,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "surreyfire",
         "clientId":         null
     },
@@ -344,6 +372,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "botleybyrne",
         "clientId":         null
     },
@@ -356,6 +385,7 @@
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "secutel",
         "clientId":         null
     },
@@ -363,24 +393,39 @@
         "name":             "Equate Clothing",
         "url":              "www.equ8.co.uk ",
         "description":      "Product showcase and ecommerce website for business startup selling its own line of stylish streetwear.",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development" ],
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development" ],
         "employer":         null,
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "equate",
         "clientId":         null
     },
     {
         "name":             "Monopoly",
         "url":              "www.chrismendes.co.uk/portfolio/monopoly",
-        "description":      "A replica of the well known board game built with Flash. My undergraduate final year project when at university.",
+        "description":      "A replica of the well known board game built with Flash. User plays against AI opponents. My undergraduate final year project at university.",
         "skills":           [ "Adobe Flash", "ActionScript 2.0" ],
         "employer":         null,
         "contract":         false,
         "date":             "2008",
         "highlight":        false,
+        "techCategory":     false,
         "id":               "monopoly",
+        "clientId":         null
+    },
+    {
+        "name":             "My Website",
+        "url":              "www.chrismendes.co.uk",
+        "description":      "Personal website for web development contracting purposes. Consists of my CV, portfolio, and other useful information.",
+        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js" ],
+        "employer":         null,
+        "contract":         false,
+        "date":             "Aug 2014 (Ongoing)",
+        "highlight":        false,
+        "techCategory":     true,
+        "id":               "mysite",
         "clientId":         null
     }
 ]

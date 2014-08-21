@@ -838,6 +838,11 @@ Icons
   right: 5px;
   top: -10px;
 }
+.project-list-item .client-logo {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
 .project-list-item img.screenshot-thumb {
   float: right;
   width: auto;
