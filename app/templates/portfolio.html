@@ -56,9 +56,13 @@ Template - My Portfolio
             <section class="l-content-rows">
               <% _.each(cat.projects, function(project, i) { %>
               <div class="row project-list-item">
-                <% if(project.clientId !== null) { %>
+                <% if(cat.clientLogos) { %>
                 <div class="col-md-2">
-                  <img class="client-logo" src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
+                  <% if(project.clientId !== null) { %>
+                  <div class="client-logo">
+                    <img src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
+                  </div>
+                  <% } %>
                 </div>
                 <% } %>
                 <div class="col-md-7">

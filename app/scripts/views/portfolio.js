@@ -28,11 +28,11 @@ define([
 
         prepareData: function(collection) {
             var categories = {
-                highlights:     { name: 'Project Highlights',   filter: { highlight: true } },
-                contract:       { name: 'Contract Work',        filter: { contract: true } },
-                dnx:            { name: 'Big Businesses',    filter: { employer: 'DNX Marketing' } },
-                fingo:          { name: 'Small Businesses',       filter: { employer: 'Fingo Marketing' } },
-                other:          { name: 'Other Projects',       filter: { contract: false, employer: null } }
+                highlights:     { name: 'Project Highlights',   filter: { highlight: true }                                       },
+                tech:           { name: 'Backbone.js',          filter: { techCategory: true },                 clientLogos: true },
+                big:            { name: 'Big Business',         filter: { employer: 'DNX Marketing' },          clientLogos: true },
+                small:          { name: 'Small Business',       filter: { employer: 'Fingo Marketing' }                           },
+                other:          { name: 'Other Projects',       filter: { contract: false, employer: null }                       }
             };
             var categoryData = {};
 
@@ -42,7 +42,7 @@ define([
                 _.each(projects, function(proj, key) {
                     projects[key] = proj.attributes
                 });
-                categoryData[key] = { name: config.name, projects: projects };
+                categoryData[key] = { name: config.name, projects: projects, clientLogos: config.clientLogos };
             });
 
             // Release data to view
