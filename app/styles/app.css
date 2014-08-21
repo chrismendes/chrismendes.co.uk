@@ -840,6 +840,8 @@ Icons
 }
 .project-list-item img.screenshot-thumb {
   float: right;
+  width: auto;
+  height: auto;
   margin: 0px 15px 0px 25px;
   -moz-box-shadow: 2px 2px 6px 0px #c0c0c0;
   -webkit-box-shadow: 2px 2px 6px 0px #c0c0c0;

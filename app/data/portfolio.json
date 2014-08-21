@@ -3,154 +3,168 @@
         "name":             "Capablue",
         "url":              "www.capablue.com",
         "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "skills":           [ "HTML, CSS", "JavaScript", "Backbone.js", "Responsive development" ],
         "employer":         null,
         "contract":         true,
-        "date":             "Aug 2014",
+        "date":             "Aug/Sep 2014",
         "highlight":        true,
-        "id":               "capablue"
+        "id":               "capablue",
+        "clientId":         "capablue"
     },
     {
         "name":             "Success Factors",
         "url":              "www.startanywherewithsuccessfactors.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Interactive questionnaire for HR professionals to obtain helpful information tailored to their needs based on the answers given. User journey data dispatched to Marketo CRM.",
+        "skills":           [ "HTML, CSS", "JavaScript" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "successfactors"
+        "id":               "successfactors",
+        "clientId":         "successfactors"
     },
     {
         "name":             "Capablue TV Everywhere",
         "url":              "White-label product prototype",
         "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery, Backbone.js", "Responsive development", "PHP" ],
         "employer":         null,
         "contract":         true,
-        "date":             "Aug 2014",
+        "date":             "May - July 2014",
         "highlight":        true,
-        "id":               "capablue-tve"
+        "id":               "capablue-tve",
+        "clientId":         "capablue"
     },
     {
         "name":             "SAP Innovation United",
         "url":              "www.sapinnovationunited.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Fun mini football game with SAP branding and product positioning. Includes sophisticated match engine to simulate match results. Responsible for back-end.",
+        "skills":           [ "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "sap-football"
+        "id":               "sap-football",
+        "clientId":         "sap"
     },
     {
         "name":             "SAP Didn't Expect That",
         "url":              "www.sap.com/didntexpectthat",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "sap-didntexpect"
+        "id":               "sap-didntexpect",
+        "clientId":         "sap"
     },
     {
         "name":             "Cisco Data Centre Hub",
         "url":              "servers.cisco.co.uk",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and back-end. Multi-language. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "cisco"
+        "id":               "cisco",
+        "clientId":         "cisco"
     },
     {
         "name":             "SAP Lumira",
         "url":              "www.insightmeetsinstinct.com",
         "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development" ],
+        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "sap-lumira"
+        "id":               "sap-lumira",
+        "clientId":         "sap"
     },
     {
         "name":             "SAP Crystal Solutions",
         "url":              "www.sapcrystalsolutionsconfigurator.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Microsite providing a questionnaire to determine SAP product s for given business requirements. Responsible for front-end and back-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "sap-crystalsolutions"
+        "id":               "sap-crystalsolutions",
+        "clientId":         "sap"
     },
     {
         "name":             "Autodesk Manufacturing Genius",
         "url":              "www.autodesk-manufacturing-genius.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Microsite presenting case studies for suite of CAD products, as well as a questionnaire to help map products to user requirements. Responsible for front-end and back-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        true,
-        "id":               "autodesk-manufacturing"
+        "id":               "autodesk-manufacturing",
+        "clientId":         "autodesk"
     },
     {
         "name":             "Autodesk Build Today",
         "url":              "www.autodesk-build-today.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "autodesk-buildtoday"
+        "id":               "autodesk-buildtoday",
+        "clientId":         "autodesk"
     },
     {
-        "name":             "SAP Analytics 50 Tips",
+        "name":             "SAP Get Connected",
         "url":              "www.sap50analyticstips.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript, Treesaver.js", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "sap-analytics"
+        "id":               "sap-analytics",
+        "clientId":         "sap"
     },
     {
         "name":             "Virgin Pure",
         "url":              "www.virginpure.com",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Formally Strauss Water, Virgin Pure sells dispenser machines that provide purified water. Drupal CMS. Responsible for front-end and back-end.",
+        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "virginpure"
+        "id":               "virginpure",
+        "clientId":         "virginpure"
     },
     {
         "name":             "DKNY Fragrances",
         "url":              "www.dknyfragrances.co.uk",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Main UK site for DKNY’s range of fragrance products. Responsible for maintaining front-end.",
+        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "dkny"
+        "id":               "dkny",
+        "clientId":         "dkny"
     },
     {
         "name":             "Cisco BIG",
         "url":              "www.ciscobig.co.uk",
-        "description":      "",
-        "skills":           [ "HTML", "CSS", "JavaScript", "Responsive development", "PHP", "CodeIgniter", "MySQL" ],
+        "description":      "Cisco-led programme aimed at technology start-ups. Responsible for front-end. Responsive.",
+        "skills":           [ "HTML, CSS", "JavaScript", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":         "DNX Marketing",
         "contract":         false,
         "date":             "Aug 2014",
         "highlight":        false,
-        "id":               "cisco-big"
+        "id":               "cisco-big",
+        "clientId":         "cisco"
     }
 ]
