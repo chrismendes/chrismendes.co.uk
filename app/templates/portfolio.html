@@ -57,30 +57,28 @@ Template - My Portfolio
               <% _.each(cat.projects, function(project, i) { %>
               <div class="row project-list-item">
                 <div class="col-md-2">
-                  <img class="client-logo" src="images/portfolio/logos/<%= project.id %>.jpg" alt=""/>
+                  <img class="client-logo" src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
                 </div>
                 <div class="col-md-7">
-                  <img class="screenshot-thumb" src="images/portfolio/projects/autodesk-manufacturing-genius/thumb.jpg" width="140" height="111" alt="Autodesk Manufacturing Genius"/>
+                  <img class="screenshot-thumb" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
                   <h3 class="project-name"><%= project.name %></h3>
                   <p class="link">
-                    <a href="http://www.autodesk-manufacturing-genius.com" target="_blank">
-                      www.autodesk-manufacturing-genius.com
+                    <a href="http://<%= project.url %>" target="_blank">
+                      <%= project.url %>
                     </a>
                   </p>
                   <p class="description">
-                    Microsite presenting case studies for suite of CAD products, as well as a questionnaire to help map 
-                    products to user requirements. Contributed to front-end and back-end. Responsive.
+                    <%= project.description %>
                   </p>
                 </div>
                 <div class="col-md-3">
+                  <p><%= project.date %></p>
                   <p class="note-heading">Relevant Skills:</p>
                   <ul>
                     <li>HTML, CSS, JavaScript</li>
                     <li>Responsive development</li>
                     <li>PHP, CodeIgniter, MySQL</li>
                   </ul>
-                  <p><span class="note-heading">Employer:</span> DNX Marketing</p>
-                  <p><span class="note-heading">Project Date:</span> Sep 2013 - Mar 2014</p>
                 </div>
               </div>
               <% }); %>
