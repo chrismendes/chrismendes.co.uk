@@ -30,8 +30,8 @@ define([
             var categories = {
                 highlights:     { name: 'Project Highlights',   filter: { highlight: true } },
                 contract:       { name: 'Contract Work',        filter: { contract: true } },
-                dnx:            { name: 'DNX Marketing',        filter: { employer: 'DNX Marketing' } },
-                fingo:          { name: 'Fingo Marketing',      filter: { employer: 'Fingo Marketing' } },
+                dnx:            { name: 'Big Businesses',    filter: { employer: 'DNX Marketing' } },
+                fingo:          { name: 'Small Businesses',       filter: { employer: 'Fingo Marketing' } },
                 other:          { name: 'Other Projects',       filter: { contract: false, employer: null } }
             };
             var categoryData = {};
