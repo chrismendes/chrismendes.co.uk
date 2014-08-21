@@ -34,7 +34,6 @@
 
     &.polaroid {
         cursor: pointer;
-        min-height: 270px;
 
         .screenshot {
             width: 100%;
@@ -58,9 +57,14 @@
         a.link {
             text-align: center;
             font-size: 13px;
-            width: 100%;
-            display: inline-block;
-            margin-top: 3px;
+            
+            width: 85%;
+            display: block;
+            margin: 3px auto 0px auto;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             &:hover {
                 text-decoration: none;
