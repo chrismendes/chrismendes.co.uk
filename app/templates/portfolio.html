@@ -81,9 +81,9 @@ Template - My Portfolio
                   <p><%= project.date %></p>
                   <p class="note-heading">Relevant Skills:</p>
                   <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Responsive development</li>
-                    <li>PHP, CodeIgniter, MySQL</li>
+                    <% _.each(project.skills, function(skill) { %>
+                    <li><%= skill %></li>
+                    <% }); %>
                   </ul>
                 </div>
               </div>
