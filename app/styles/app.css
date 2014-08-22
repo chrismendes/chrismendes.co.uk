@@ -241,6 +241,12 @@ footer .navbar .navbar-nav.pull-right li a {
   padding-right: 0px;
   padding-left: 15px;
 }
+footer .navbar .copyright {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 20px;
+  float: right;
+}
 footer .navbar .col-md-6 {
   padding: 0px;
 }
