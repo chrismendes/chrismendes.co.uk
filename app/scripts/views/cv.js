@@ -6,7 +6,9 @@ define([
     'backbone',
     'views/_base',
     'text!/templates/cv.html',
-    'common'
+    'common',
+    'bootstrap-transition',
+    'bootstrap-collapse'
 ], function($, Backbone, BaseView, html, Common) {
 
     var CvView = BaseView.extend({

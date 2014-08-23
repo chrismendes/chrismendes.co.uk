@@ -1,0 +1,81 @@
+.job-accordion {
+    margin-top: 20px;
+
+    .job-accordion-item {
+        border: 1px solid #d0d0d0;
+        border-top: 0px;
+
+        &:first-child {
+            border-top: 1px solid #d0d0d0;
+        }
+
+        .job-accordion-item-header {
+            background: linear-gradient(#ffffff, #efefef);
+            cursor: pointer;
+            height: 45px;
+
+            p {
+                padding: 15px;
+                font-weight: normal;
+                display: inline-block;
+
+                .date {
+                    width: 175px;
+                    display: inline-block;
+                }
+                .company {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .job-accordion-item-body {
+            padding: 15px;
+
+            .info-box {
+                padding: 10px;
+                margin: 0px 0px 20px 20px;
+                .boxshadow(3px, 3px, 10px, 0px, #c0c0c0);
+                float: right;
+
+                .company {
+                    margin: 0px auto;
+                    max-width: 250px;
+                    float: left;
+
+                    .logo {
+                        margin: 0px auto;
+                        display: block;
+                    }
+                    .link {
+                        clear: both;
+                        display: block;
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .summary {
+                        font-size: 11px;
+                        margin: 10px 0px 0px 0px;
+                    }
+                }
+
+                .photo {
+                    display: none;
+                    max-width: 200px;
+                    float: right;
+                    margin-left: 15px;
+                    text-align: center;
+
+                    img {
+                        border: 1px solid #c0c0c0;
+                    }
+                    .caption {
+                        font-size: 11px;
+                        margin: 7px 0px 0px 0px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
