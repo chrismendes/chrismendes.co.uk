@@ -8,6 +8,7 @@
     .category-column-box {
         padding: 10px;
         margin: 0px 0px 10px 0px;
+        width: 100%;
         
         .bgopacity(#ffffff, 60%);
 
@@ -17,15 +18,19 @@
             .bgopacity(#ffffff, 80%);
         }
 
-        &.is-active {
+        &.active {
             .theme-border;
             background: #fff;
             h3 {
                 text-decoration: none;
             }
+            a {
+                background: none;
+                border: 0px;
+            }
         }
 
-        h3 {
+        h3, h4 {
             line-height: 130%;
             margin: 0px;
         }
@@ -40,6 +45,34 @@
         p {
             margin: 0px;
         }
+        a {
+            font-weight: bold;
+            color: inherit;
+            padding: 0px;
+            margin: 0px !important;
+            background: none !important;
+            border: 0px !important;
+        }
+        small {
+            font-size: 11px;
+            font-weight: normal;
+        }
+    }
+
+    &.category-column-whitebg {
+
+        .category-column-box {
+            background: #efefef;
+
+            &:hover {
+                background: #dfdfdf;
+            }
+        }
+
+    }
+
+    ul {
+        border-bottom: 0px;
     }
 
 }
