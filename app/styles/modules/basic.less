@@ -132,7 +132,7 @@ Info Box
     max-width: 270px;
     float: right;
 
-    .boxshadow(3px, 3px, 10px, 0px, #c0c0c0);
+    .boxshadow(3px, 3px, 10px, 0px, #efefef);
     border: 1px solid #dfdfdf;
 
     img {
@@ -148,5 +148,38 @@ Info Box
     .caption {
         font-size: 11px;
         margin: 10px 0px 0px 0px;
+    }
+}
+
+/* -----------------
+Side by Side Content
+----------------- */
+.side-by-side-content {
+
+    .side-by-side-content-column {
+        text-align: center;
+        padding: 10px 15px;
+
+        &:first-child {
+            border-right: 1px solid #efefef;
+        }
+
+        img {
+            display: inline-block;
+            margin: 5px 0px 20px 0px;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 25px;
+
+            &.left {
+                float: left;
+            }
+            &.right {
+                float: right;
+            }
+        }
+
     }
 }
