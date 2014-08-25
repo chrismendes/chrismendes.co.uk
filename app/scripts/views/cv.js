@@ -8,7 +8,7 @@ define([
     'text!/templates/cv.html',
     'common',
     'bootstrap-transition',
-    'bootstrap-collapse'
+    'bootstrap-tab'
 ], function($, Backbone, BaseView, html, Common) {
 
     var CvView = BaseView.extend({

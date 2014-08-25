@@ -57,13 +57,16 @@ Tabbed Content
 
     .tabbed-content-tabs {
         margin-bottom: 25px;
-        border-bottom: 1px solid #efefef;
+        border-bottom: 1px solid #c0c0c0;
         clear: both;
         width: 75%;
 
         li {
             a {
                 margin-right: 0px;
+            }
+            small {
+                font-size: 11px;
             }
         }
         li:hover {
@@ -117,5 +120,33 @@ Radio Buttons
                 color: #d0d0d0;
             }
         }
+    }
+}
+
+/* -----------------
+Info Box
+----------------- */
+.info-box {
+    padding: 10px;
+    margin: 0px 0px 20px 20px;
+    max-width: 270px;
+    float: right;
+
+    .boxshadow(3px, 3px, 10px, 0px, #c0c0c0);
+    border: 1px solid #dfdfdf;
+
+    img {
+        margin: 0px auto;
+        display: block;
+    }
+    .link {
+        clear: both;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .caption {
+        font-size: 11px;
+        margin: 10px 0px 0px 0px;
     }
 }
