@@ -156,32 +156,6 @@
         "clientId":         "virginpure"
     },
     {
-        "name":             "DKNY Fragrances",
-        "url":              "www.dknyfragrances.co.uk",
-        "description":      "Main UK site for DKNY’s range of fragrance products. Responsible for maintaining front-end.",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
-        "employer":         "DNX Marketing",
-        "contract":         false,
-        "date":             "Aug 2014",
-        "highlight":        false,
-        "techCategory":     false,
-        "id":               "dkny",
-        "clientId":         "dkny"
-    },
-    {
-        "name":             "Cisco BIG",
-        "url":              "www.ciscobig.co.uk",
-        "description":      "Cisco-led programme aimed at technology start-ups. Responsible for front-end. Responsive.",
-        "skills":           [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
-        "employer":         "DNX Marketing",
-        "contract":         false,
-        "date":             "Aug 2014",
-        "highlight":        false,
-        "techCategory":     false,
-        "id":               "cisco-big",
-        "clientId":         "cisco"
-    },
-    {
         "name":             "Coconut Hair ",
         "url":              "www.coconuthair.com",
         "description":      "",
@@ -260,19 +234,6 @@
         "clientId":         null
     },
     {
-        "name":             "Peppermint Bars",
-        "url":              "www.peppermintbars.co.uk ",
-        "description":      "",
-        "skills":           [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
-        "employer":         "Fingo Marketing",
-        "contract":         false,
-        "date":             "Aug 2014",
-        "highlight":        false,
-        "techCategory":     false,
-        "id":               "peppermintbars",
-        "clientId":         null
-    },
-    {
         "name":             "Strengths Partnership",
         "url":              "www.strengthspartnership.com",
         "description":      "",
@@ -321,7 +282,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
-        "id":               "",
+        "id":               "epsomdental",
         "clientId":         null
     },
     {
