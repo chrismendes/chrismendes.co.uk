@@ -57,12 +57,15 @@ define([
         },
 
         showProjectModal: function(e) {
-            var modal = $(e.target).parents('.js-modal-id').attr('data-modal');
+            var project = $(e.target).parents('.js-modal-id');
+            var modal = project.attr('data-modal');
             if(typeof modal !== 'undefined') {
-                var self = this;
-                this.showModal(modal, function() {
-                    self.startCarousel();
-                });
+                if(!project.hasClass('js-noclick')) {
+                    var self = this;
+                    this.showModal(modal, function() {
+                        self.startCarousel();
+                    });
+                }
             }
         },
 
