@@ -81,14 +81,32 @@ define([
             this.unbind();
         },
 
-        returnToHomepage: function() {
-    		$('body').removeClass('slideup', 500, 'easeOutCubic', function() {
-    			Common.setBackground(Common.homeTheme, function() {
-                    // Change page
-                    Backbone.history.navigate('/', { trigger: true });
-                });
-    		});
-    	}
+        // backToHomepage: function() {
+        //     $('body').removeClass('slideup', 500, 'easeOutCubic', function() {
+        //         Common.setBackground(Common.homeTheme, function() {
+        //             Backbone.history.navigate('/', { trigger: true });
+        //         });
+        //     });
+        // },
+
+        showModal: function(e) {
+            var element = this.identifyClickedBox(e);
+            var req = element.attr('data-modal');
+            if(typeof req !== 'undefined') {
+                var modalContent = {
+                    header: $('.js-modal-content-'+req+' .js-modal-content-header').html(),
+                    body:   $('.js-modal-content-'+req+' .js-modal-content-body').html()
+                }
+                $('.js-modal-header').html(modalContent.header);
+                $('.js-modal-body').html(modalContent.body);
+                $('.js-modal').modal();
+            }
+        },
+
+        // Return jQuery element for clicked box, whether box itself or child element clicked
+        identifyClickedBox: function(e) {
+            return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
+        }
 
     });
 
