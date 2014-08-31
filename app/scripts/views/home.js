@@ -27,14 +27,14 @@ define([
 
         // Box hover over/out effects
         onBoxHover: function(e) {
-            this.identifyBox(e).addClass('is-active').addClass('is-animating', 100);
+            this.identifyClickedBox(e).addClass('is-active').addClass('is-animating', 100);
         },
         onBoxHoverOut: function(e) {
-            this.identifyBox(e).removeClass('is-active').removeClass('is-animating', 100);
+            this.identifyClickedBox(e).removeClass('is-active').removeClass('is-animating', 100);
         },
 
         onBoxClick: function(e) {
-            var boxClicked = this.identifyBox(e);
+            var boxClicked = this.identifyClickedBox(e);
             if(typeof boxClicked.attr('data-href') !== 'undefined') {
                 this.exitPage(boxClicked);
             } else {
@@ -74,11 +74,6 @@ define([
                 return;
             }
             
-        },
-
-        // Return jQuery element for clicked box, whether box itself or child element clicked
-        identifyBox: function(e) {
-            return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
         }
 
     });

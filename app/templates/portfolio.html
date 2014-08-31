@@ -39,11 +39,24 @@ Template - My Portfolio
               <% _.each(cat.projects, function(project, i) { %>
                 <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
                 <div class="col-md-3">
-                  <div class="project-list-item polaroid">
+                  <div class="project-list-item polaroid js-modal-show" data-modal="<%= project.id %>">
                     <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                     <h3 class="project-name"><%= project.name %></h3>
                     <a class="link" href="#"><%= project.url %></a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
+                    <button type="button" class="btn more-details" data-modal="<%= project.id %>">Details &raquo;</button>
+                    <div class="modal-content js-modal-content-<%= project.id %>">
+                      <div class="js-modal-content-header">
+                        <div class="project-highlight-modal-header">
+                          <h3><%= project.name %></h3>
+                          <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                        </div>
+                      </div>
+                      <div class="js-modal-content-body">
+                        <div class="project-highlight-modal-body">
+                          <p>This is a test.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               <% }); %>

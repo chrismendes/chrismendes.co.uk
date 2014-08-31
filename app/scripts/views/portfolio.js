@@ -9,7 +9,8 @@ define([
     'collections/projects',
     'text!/data/portfolio.json',
     'common',
-    'bootstrap-tab'
+    'bootstrap-tab',
+    'bootstrap-modal'
 ], function($, Backbone, BaseView, html, ProjectCollection, PortfolioData, Common) {
 
     var PortfolioView = BaseView.extend({
@@ -19,7 +20,9 @@ define([
         background:     'gold',
         theme:          'red',
 
-        events: {},
+        events: {
+            'click .js-modal-show':     'showModal'
+        },
 
         initialize: function() {
             var projects = new ProjectCollection(JSON.parse(PortfolioData));
