@@ -11,11 +11,11 @@ require.config({
         'jqueryui':                 '../bower_components/jquery-ui/ui/jquery-ui',
         'underscore':               '../bower_components/underscore/underscore',
         'backbone':                 '../bower_components/backbone/backbone',
-        'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel',
         'bootstrap-modal':          '../bower_components/bootstrap/js/modal',
         'bootstrap-transition':     '../bower_components/bootstrap/js/transition',
         'bootstrap-tab':            '../bower_components/bootstrap/js/tab',
-        'bootstrap-collapse':       '../bower_components/bootstrap/js/collapse'
+        'bootstrap-collapse':       '../bower_components/bootstrap/js/collapse',
+        'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel'
     },
     shim: {
         'underscore': {

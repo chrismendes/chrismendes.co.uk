@@ -89,7 +89,7 @@ define([
         //     });
         // },
 
-        showModal: function(e) {
+        showModal: function(e, onComplete) {
             var element = this.identifyClickedBox(e);
             var req = element.attr('data-modal');
             if(typeof req !== 'undefined') {
@@ -100,6 +100,10 @@ define([
                 $('.js-modal-header').html(modalContent.header);
                 $('.js-modal-body').html(modalContent.body);
                 $('.js-modal').modal();
+
+                if(typeof onComplete !== 'undefined') {
+                    onComplete();
+                }
             }
         },
 

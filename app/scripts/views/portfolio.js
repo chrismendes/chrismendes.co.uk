@@ -10,7 +10,9 @@ define([
     'text!/data/portfolio.json',
     'common',
     'bootstrap-tab',
-    'bootstrap-modal'
+    'bootstrap-modal',
+    'bootstrap-transition',
+    'bootstrap-carousel'
 ], function($, Backbone, BaseView, html, ProjectCollection, PortfolioData, Common) {
 
     var PortfolioView = BaseView.extend({
@@ -21,7 +23,7 @@ define([
         theme:          'red',
 
         events: {
-            'click .js-modal-show':     'showModal'
+            'click .js-modal-show':     'showProjectModal'
         },
 
         initialize: function() {
@@ -50,29 +52,24 @@ define([
 
             // Release data to view
             this.data = {
-                categories: categoryData
+                categories: categoryData,
+                carouselSlides: 4
             };
         },
 
-        onAfterRender: function() {
-            // this.setCarouselAnnotationHook();
+        showProjectModal: function(e) {
+            this.showModal(e, this.startCarousel);
         },
 
-        // setCarouselAnnotationHook: function() {
-        //     this.setCarouselAnnotation();
-        //     var self = this;
-        //     $('#carousel-allprojects').on('slid.bs.carousel', function() {
-        //         self.setCarouselAnnotation();
-        //         $('.carousel-annotation').fadeIn(150);
-        //     });
-        //     $('#carousel-allprojects').on('slide.bs.carousel', function() {
-        //         $('.carousel-annotation').fadeOut(500);
-        //     });
-        // },
-        // setCarouselAnnotation: function() {
-        //     var annotation = $('#carousel-allprojects').find('.item.active .annotation').html();
-        //     $('.carousel-annotation').html(annotation);
-        // }
+        startCarousel: function() {
+            $('.carousel').carousel();
+            $('.carousel-control.right').click(function() {
+                $('.carousel').carousel('next')
+            });
+            $('.carousel-control.left').click(function() {
+                $('.carousel').carousel('prev')
+            });
+        }
 
     });
 
