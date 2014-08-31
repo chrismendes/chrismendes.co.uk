@@ -6,12 +6,49 @@
         height: 100%;
     }
 
-    img.screenshot-thumb {
-        float: right;
-        width: auto;
-        height: auto;
+    .screenshot-thumb {
+        cursor: pointer;
         margin: 0px 15px 0px 25px;
+        float: right;
         .boxshadow(2px, 2px, 6px, 0px, #c0c0c0);
+
+        img {
+            width: auto;
+            height: auto;
+            .opacity(0.8);
+        }
+
+        .click-icon {
+            width: 100%;
+            height: 128px;
+            background: url('../images/portfolio/icons/click-thumb.png') 0px 0px no-repeat;
+            display: block;
+            position: absolute;
+            z-index: 9;
+        }
+
+        &:hover {
+            img {
+                .opacity(1);
+            }
+            .click-icon {
+                background-position: 0px -128px;
+            }
+        }
+    }
+
+    &.is-not-clickable {
+        .screenshot-thumb {
+            cursor: inherit;
+
+            .click-icon {
+                display: none;
+            }
+
+            img {
+                .opacity(1);
+            }
+        }
     }
 
     h3.project-name {
@@ -103,5 +140,7 @@
     }
 }
 .project-highlight-modal-body {
-
+    .carousel .item {
+        border: 1px solid #efefef;
+    }
 }

@@ -87,7 +87,7 @@ Template - My Portfolio
             -->
             <section class="l-content-rows">
               <% _.each(cat.projects, function(project, i) { %>
-              <div class="row project-list-item js-modal-id" data-modal="<%= project.id %>">
+              <div class="row project-list-item js-modal-id<% if(project.screenshots === 0) { %> is-not-clickable js-noclick<% } %>" data-modal="<%= project.id %>">
                 <% if(cat.clientLogos) { %>
                 <div class="col-md-2">
                   <% if(project.clientId !== null) { %>
@@ -98,7 +98,10 @@ Template - My Portfolio
                 </div>
                 <% } %>
                 <div class="col-md-7">
-                  <img class="screenshot-thumb js-modal-show" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
+                  <div class="screenshot-thumb js-modal-show">
+                    <span class="click-icon"></span>
+                    <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
+                  </div>
                   <h3 class="project-name"><%= project.name %></h3>
                   <p class="link">
                     <a href="http://<%= project.url %>" target="_blank">
@@ -128,11 +131,13 @@ Template - My Portfolio
                   <div class="js-modal-content-body">
                     <div class="project-highlight-modal-body">
                       <div id="carousel-<%= project.id %>" class="carousel slide">
+                        <% if(project.screenshots > 1) { %>
                         <ol class="carousel-indicators">
                           <% for(var i = 0; i < project.screenshots; i++) { %>
                           <li data-target="#carousel-<%= project.id %>" data-slide-to="<%= i %>"<% if(i === 0) { %> class="active"<% } %>></li>
                           <% } %>
                         </ol>
+                        <% } %>
                         <div class="carousel-inner">
                           <% for(var i = 0; i < project.screenshots; i++) { %>
                           <div class="item<% if(i === 0) { %> active<% } %>">
@@ -140,12 +145,14 @@ Template - My Portfolio
                           </div>
                           <% } %>
                         </div>
+                        <% if(project.screenshots > 1) { %>
                         <a class="left carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="prev">
                           <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
                         <a class="right carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="next">
                           <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
+                        <% } %>
                       </div>
                     </div>
                   </div>
