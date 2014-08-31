@@ -53,13 +53,15 @@ Template - My Portfolio
                       </div>
                       <div class="js-modal-content-body">
                         <div class="project-highlight-modal-body">
+                          <% if(project.screenshots > 0) { %>
                           <div id="carousel-<%= project.id %>" class="carousel slide">
+                            <% if(project.screenshots > 1) { %>
                             <ol class="carousel-indicators">
                               <% for(var i = 0; i < project.screenshots; i++) { %>
                               <li data-target="#carousel-<%= project.id %>" data-slide-to="<%= i %>"<% if(i === 0) { %> class="active"<% } %>></li>
                               <% } %>
-                        </ol>
                             </ol>
+                            <% } %>
                             <div class="carousel-inner">
                               <% for(var i = 0; i < project.screenshots; i++) { %>
                               <div class="item<% if(i === 0) { %> active<% } %>">
@@ -67,13 +69,16 @@ Template - My Portfolio
                               </div>
                               <% } %>
                             </div>
+                            <% if(project.screenshots > 1) { %>
                             <a class="left carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="prev">
                               <span class="glyphicon glyphicon-chevron-left"></span>
                             </a>
                             <a class="right carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="next">
                               <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
+                            <% } %>
                           </div>
+                          <% } %>
                         </div>
                       </div>
                     </div>
@@ -121,6 +126,7 @@ Template - My Portfolio
                     <% }); %>
                   </ul>
                 </div>
+                <% if(project.screenshots > 0) { %>
                 <div class="modal-content js-modal-content-<%= project.id %>">
                   <div class="js-modal-content-header">
                     <div class="project-highlight-modal-header">
@@ -130,14 +136,13 @@ Template - My Portfolio
                   </div>
                   <div class="js-modal-content-body">
                     <div class="project-highlight-modal-body">
+                      <% if(project.screenshots > 1) { %>
                       <div id="carousel-<%= project.id %>" class="carousel slide">
-                        <% if(project.screenshots > 1) { %>
                         <ol class="carousel-indicators">
                           <% for(var i = 0; i < project.screenshots; i++) { %>
                           <li data-target="#carousel-<%= project.id %>" data-slide-to="<%= i %>"<% if(i === 0) { %> class="active"<% } %>></li>
                           <% } %>
                         </ol>
-                        <% } %>
                         <div class="carousel-inner">
                           <% for(var i = 0; i < project.screenshots; i++) { %>
                           <div class="item<% if(i === 0) { %> active<% } %>">
@@ -145,18 +150,20 @@ Template - My Portfolio
                           </div>
                           <% } %>
                         </div>
-                        <% if(project.screenshots > 1) { %>
                         <a class="left carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="prev">
                           <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
                         <a class="right carousel-control" href="#carousel-<%= project.id %>" role="button" data-slide="next">
                           <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
-                        <% } %>
                       </div>
+                      <% } else { %>
+                      <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
+                      <% } %>
                     </div>
                   </div>
                 </div>
+                <% } %>
               </div>
               <% }); %>
             </section>
