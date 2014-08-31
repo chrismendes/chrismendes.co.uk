@@ -5162,6 +5162,9 @@ Icons
 .project-highlight-modal-body .carousel .item {
   border: 1px solid #efefef;
 }
+.project-highlight-modal-body img {
+  width: 100%;
+}
 /* -----------------
 Backgrounds
 ----------------- */
