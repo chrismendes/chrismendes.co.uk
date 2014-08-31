@@ -58,11 +58,17 @@ define([
         },
 
         showProjectModal: function(e) {
-            this.showModal(e, this.startCarousel);
+            var modal = $(e.target).parents('.js-modal-id').attr('data-modal');
+            if(typeof modal !== 'undefined') {
+                var self = this;
+                this.showModal(modal, function() {
+                    self.startCarousel();
+                });
+            }
         },
 
         startCarousel: function() {
-            $('.carousel').carousel();
+            $('.carousel').carousel(0);
             $('.carousel-control.right').click(function() {
                 $('.carousel').carousel('next')
             });

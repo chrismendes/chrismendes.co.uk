@@ -89,21 +89,17 @@ define([
         //     });
         // },
 
-        showModal: function(e, onComplete) {
-            var element = this.identifyClickedBox(e);
-            var req = element.attr('data-modal');
-            if(typeof req !== 'undefined') {
-                var modalContent = {
-                    header: $('.js-modal-content-'+req+' .js-modal-content-header').html(),
-                    body:   $('.js-modal-content-'+req+' .js-modal-content-body').html()
-                }
-                $('.js-modal-header').html(modalContent.header);
-                $('.js-modal-body').html(modalContent.body);
-                $('.js-modal').modal();
+        showModal: function(modalID, onComplete) {
+            var modalContent = {
+                header: $('.js-modal-content-'+modalID+' .js-modal-content-header').html(),
+                body:   $('.js-modal-content-'+modalID+' .js-modal-content-body').html()
+            }
+            $('.js-modal-header').html(modalContent.header);
+            $('.js-modal-body').html(modalContent.body);
+            $('.js-modal').modal();
 
-                if(typeof onComplete !== 'undefined') {
-                    onComplete();
-                }
+            if(typeof onComplete !== 'undefined') {
+                onComplete();
             }
         },
 
