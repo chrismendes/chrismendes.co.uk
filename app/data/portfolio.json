@@ -9,6 +9,7 @@
         "date":             "Aug/Sep 2014",
         "highlight":        true,
         "techCategory":     true,
+        "screenshots":      0,
         "id":               "capablue",
         "clientId":         "capablue"
     },
@@ -22,6 +23,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     true,
+        "screenshots":      6,
         "id":               "successfactors",
         "clientId":         "successfactors"
     },
@@ -35,6 +37,7 @@
         "date":             "May - July 2014",
         "highlight":        true,
         "techCategory":     true,
+        "screenshots":      1,
         "id":               "capablue-tve",
         "clientId":         "capablue"
     },
@@ -48,6 +51,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     false,
+        "screenshots":      8,
         "id":               "sap-football",
         "clientId":         "sap"
     },
@@ -61,6 +65,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     false,
+        "screenshots":      5,
         "id":               "cisco",
         "clientId":         "cisco"
     },
@@ -74,6 +79,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "sap-didntexpect",
         "clientId":         "sap"
     },
@@ -87,6 +93,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     false,
+        "screenshots":      5,
         "id":               "autodesk-manufacturing",
         "clientId":         "autodesk"
     },
@@ -100,6 +107,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      5,
         "id":               "sap-crystalsolutions",
         "clientId":         "sap"
     },
@@ -113,6 +121,7 @@
         "date":             "Aug 2014",
         "highlight":        true,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "sap-lumira",
         "clientId":         "sap"
     },
@@ -126,6 +135,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      1,
         "id":               "autodesk-buildtoday",
         "clientId":         "autodesk"
     },
@@ -139,6 +149,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      3,
         "id":               "sap-analytics",
         "clientId":         "sap"
     },
@@ -152,6 +163,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      3,
         "id":               "virginpure",
         "clientId":         "virginpure"
     },
@@ -165,6 +177,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      5,
         "id":               "coconuthair",
         "clientId":         null
     },
@@ -178,6 +191,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "personalagent",
         "clientId":         null
     },
@@ -191,6 +205,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "oraclepr",
         "clientId":         null
     },
@@ -204,6 +219,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "limeshowrooms",
         "clientId":         null
     },
@@ -217,6 +233,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "lifeworks",
         "clientId":         null
     },
@@ -230,6 +247,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "podvolunteer",
         "clientId":         null
     },
@@ -243,6 +261,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      5,
         "id":               "strengthspartnership",
         "clientId":         null
     },
@@ -256,6 +275,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "whybother",
         "clientId":         null
     },
@@ -269,6 +289,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "newfieldit",
         "clientId":         null
     },
@@ -282,6 +303,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "epsomdental",
         "clientId":         null
     },
@@ -295,6 +317,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "asashwindow",
         "clientId":         null
     },
@@ -308,6 +331,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      3,
         "id":               "elizabethstone",
         "clientId":         null
     },
@@ -321,6 +345,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "surreyfire",
         "clientId":         null
     },
@@ -334,6 +359,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "botleybyrne",
         "clientId":         null
     },
@@ -347,6 +373,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "secutel",
         "clientId":         null
     },
@@ -360,6 +387,7 @@
         "date":             "Aug 2014",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      4,
         "id":               "equate",
         "clientId":         null
     },
@@ -373,6 +401,7 @@
         "date":             "2008",
         "highlight":        false,
         "techCategory":     false,
+        "screenshots":      1,
         "id":               "monopoly",
         "clientId":         null
     },
@@ -386,6 +415,7 @@
         "date":             "Aug 2014 (Ongoing)",
         "highlight":        false,
         "techCategory":     true,
+        "screenshots":      0,
         "id":               "mysite",
         "clientId":         null
     }
