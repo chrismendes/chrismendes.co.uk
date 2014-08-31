@@ -31,6 +31,7 @@ Template - My Portfolio
         <% _.each(categories, function(cat, id) { %>
           <div class="tab-pane<% if(id === 'highlights') { %> active<% } %>" id="<%= id %>">
             <% if(id === 'highlights') { %>
+
             <!--
             Project Highlights
             -->
@@ -39,11 +40,15 @@ Template - My Portfolio
               <% _.each(cat.projects, function(project, i) { %>
                 <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
                 <div class="col-md-3">
+                  
                   <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
                     <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                     <h3 class="project-name"><%= project.name %></h3>
                     <a class="link" href="#"><%= project.url %></a>
                     <button type="button" class="btn more-details">Details &raquo;</button>
+                    <!--
+                    Modal
+                    -->
                     <div class="modal-content js-modal-content-<%= project.id %>">
                       <div class="js-modal-content-header">
                         <div class="project-highlight-modal-header">
@@ -53,6 +58,9 @@ Template - My Portfolio
                       </div>
                       <div class="js-modal-content-body">
                         <div class="project-highlight-modal-body">
+                          <!--
+                          Carousel
+                          -->
                           <% if(project.screenshots > 0) { %>
                           <div id="carousel-<%= project.id %>" class="carousel slide">
                             <% if(project.screenshots > 1) { %>
@@ -87,6 +95,7 @@ Template - My Portfolio
               <% }); %>
             </section>
             <% } else { %>
+
             <!--
             Other Categories
             -->
@@ -126,6 +135,9 @@ Template - My Portfolio
                     <% }); %>
                   </ul>
                 </div>
+                <!--
+                Modal
+                -->
                 <% if(project.screenshots > 0) { %>
                 <div class="modal-content js-modal-content-<%= project.id %>">
                   <div class="js-modal-content-header">
@@ -136,6 +148,9 @@ Template - My Portfolio
                   </div>
                   <div class="js-modal-content-body">
                     <div class="project-highlight-modal-body">
+                      <!--
+                      Carousel
+                      -->
                       <% if(project.screenshots > 1) { %>
                       <div id="carousel-<%= project.id %>" class="carousel slide">
                         <ol class="carousel-indicators">
