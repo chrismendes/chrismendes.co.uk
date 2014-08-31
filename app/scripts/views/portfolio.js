@@ -34,7 +34,7 @@ define([
         prepareData: function(collection) {
             var categories = {
                 highlights:     { name: 'Project Highlights',   filter: { highlight: true }                                       },
-                tech:           { name: 'Backbone.js',          filter: { techCategory: true },                 clientLogos: true },
+                tech:           { name: 'JavaScript MVC',       filter: { techCategory: true },                 clientLogos: true },
                 big:            { name: 'Big Business',         filter: { employer: 'DNX Marketing' },          clientLogos: true },
                 small:          { name: 'Small Business',       filter: { employer: 'Fingo Marketing' }                           },
                 other:          { name: 'Other Projects',       filter: { contract: false, employer: null }                       }
