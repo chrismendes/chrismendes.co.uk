@@ -52,8 +52,7 @@ define([
 
             // Release data to view
             this.data = {
-                categories: categoryData,
-                carouselSlides: 4
+                categories: categoryData
             };
         },
 
