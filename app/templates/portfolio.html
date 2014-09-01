@@ -51,13 +51,20 @@ Template - My Portfolio
                     -->
                     <div class="modal-content js-modal-content-<%= project.id %>">
                       <div class="js-modal-content-header">
-                        <div class="project-highlight-modal-header">
+                        <div class="project-modal-header project-highlight-modal-header">
                           <h3><%= project.name %></h3>
                           <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                          <p class="description"><span class="date"><%= project.date %>.</span> <%= project.description %></p>
+                          <p class="technology"><strong>Technology</strong>:&nbsp;
+                          <% _.each(project.skills, function(skill, index) { %>
+                            <% if(index > 0) { %>, <% } %><%= skill %>
+                          <% }); %>
+                          </p>
+                          <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
                         </div>
                       </div>
                       <div class="js-modal-content-body">
-                        <div class="project-highlight-modal-body">
+                        <div class="project-modal-body">
                           <!--
                           Carousel
                           -->
@@ -145,13 +152,13 @@ Template - My Portfolio
                 <% if(project.screenshots > 0) { %>
                 <div class="modal-content js-modal-content-<%= project.id %>">
                   <div class="js-modal-content-header">
-                    <div class="project-highlight-modal-header">
+                    <div class="project-modal-header">
                       <h3><%= project.name %></h3>
                       <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
                     </div>
                   </div>
                   <div class="js-modal-content-body">
-                    <div class="project-highlight-modal-body">
+                    <div class="project-modal-body">
                       <!--
                       Carousel
                       -->

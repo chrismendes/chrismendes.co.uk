@@ -5157,17 +5157,36 @@ Icons
   margin: 6px auto 0px auto;
   display: block;
 }
-.project-highlight-modal-header h3 {
+.project-modal-header h3 {
   margin: 0px;
   display: inline-block;
 }
-.project-highlight-modal-header span.link {
+.project-modal-header .date {
+  font-style: italic;
+}
+.project-modal-header .link {
   margin-left: 10px;
 }
-.project-highlight-modal-body .carousel .item {
+.project-modal-header.project-highlight-modal-header {
+  padding-bottom: 12px;
+}
+.project-modal-header.project-highlight-modal-header .description {
+  margin-top: 6px;
+}
+.project-modal-header.project-highlight-modal-header .technology {
+  float: left;
+}
+.project-modal-header.project-highlight-modal-header .responsibility {
+  float: right;
+}
+.project-modal-body .carousel {
+  width: 80%;
+  margin: 0px auto;
+}
+.project-modal-body .carousel .item {
   border: 1px solid #efefef;
 }
-.project-highlight-modal-body img {
+.project-modal-body img {
   width: 100%;
 }
 /* -----------------
