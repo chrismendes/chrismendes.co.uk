@@ -117,6 +117,7 @@ Template - My Portfolio
                     <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
                   </div>
                   <h3 class="project-name"><%= project.name %></h3>
+                  <span class="date"><%= project.date %></span>
                   <p class="link">
                     <a href="http://<%= project.url %>" target="_blank">
                       <%= project.url %>
@@ -127,13 +128,16 @@ Template - My Portfolio
                   </p>
                 </div>
                 <div class="col-md-3">
-                  <p><%= project.date %></p>
-                  <p class="note-heading">Relevant Skills:</p>
+                  <p class="note-heading">Technology:</p>
                   <ul>
                     <% _.each(project.skills, function(skill) { %>
                     <li><%= skill %></li>
                     <% }); %>
                   </ul>
+                  <p>
+                    <span class="note-heading">Responsibility:</span><br/>
+                    <%= project.responsibility %>
+                  </p>
                 </div>
                 <!--
                 Modal
