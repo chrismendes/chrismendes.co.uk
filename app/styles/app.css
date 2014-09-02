@@ -5180,6 +5180,10 @@ Icons
 }
 .project-modal-body {
   overflow: hidden;
+  text-align: center;
+}
+.project-modal-body img {
+  width: 80%;
 }
 /* -----------------
 Carousel
