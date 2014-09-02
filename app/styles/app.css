@@ -4872,6 +4872,14 @@ Side by Side Content
   float: right;
 }
 /* -----------------
+Models
+----------------- */
+.modal .close .label {
+  font-size: 16px;
+  margin: 2px 6px 0px 0px;
+  float: left;
+}
+/* -----------------
 Icons
 ----------------- */
 .icon-skills {
