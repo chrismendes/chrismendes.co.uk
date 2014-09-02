@@ -1,41 +1,77 @@
 /* -----------------
 Carousel
 ----------------- */
-.carousel {
-    .carousel-control {
-        span {
-            margin-top: 0px;
-            color: #FFFFFF;
-        }
-        &.left {
-            margin-left: -104px;
-        }
-        &.right {
-            margin-right: -104px;
-        }
-    }
-}
-.carousel-indicators {
-    list-style: none;
+.owl-carousel {
+    width: 80%;
     margin: 20px auto 0px auto;
-    padding: 0px;
-    width: 100%;
-    position: relative;
-    left: 0px;
 
-    li {
-        float: left;
-        width: 50px !important;
-        height: 8px !important;
-        background: #C0C0C0;
-        margin: 0px 0px 0px 5px !important;
-        border-radius: 0px;
-        cursor: pointer;
-        &:first-child {
-            margin-left: 0px !important;
-        }
-        &.active {
-            background: @red;
+    .owl-item {
+        border: 1px solid #efefef;
+
+        img {
+            width: 100%;
         }
     }
+
+    // (TODO: Frosted glass effect)
+    .owl-wrapper-outer {
+        // overflow: visible;
+    }
+
+    // (TODO: Positions controls left and right)
+    .owl-buttons {
+        // position: absolute;
+        // width: 100%;
+        // height: 100%;
+        // top: 0px;
+
+        .owl-prev, .owl-next {
+            height: 100%;
+            width: 90px;
+            position: relative;
+        }
+
+        // (TODO: Frosted glass effect)
+        .owl-prev::before, .owl-next::before {
+            // content: '';
+            // position: absolute;
+            // z-index: -1;
+            // height: 100%;
+            // top: 0; right: 0; left: 0;
+            // filter: blur(5px);
+            // -webkit-filter: blur(5px);
+        }
+
+        .owl-prev {
+            float: left;
+            margin-left: -90px;
+        }
+        .owl-next {
+            float: right;
+            margin-right: -90px;
+        }
+    }
+
+    .owl-pagination {
+        position: absolute;
+        top: 0px;
+        margin-top: -20px;
+
+        .owl-page {
+            width: 50px;
+            height: 8px;
+            float: left;
+            background: #C0C0C0;
+            margin-left: 5px;
+
+            &:first-child {
+                margin-left: 0px;
+            }
+
+            &.active {
+                background: @red;
+            }
+        }
+    }
+
 }
