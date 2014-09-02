@@ -12,7 +12,7 @@ define([
     'bootstrap-tab',
     'bootstrap-modal',
     'bootstrap-transition',
-    'bootstrap-carousel'
+    'owlcarousel'
 ], function($, Backbone, BaseView, html, ProjectCollection, PortfolioData, Common) {
 
     var PortfolioView = BaseView.extend({
@@ -70,12 +70,10 @@ define([
         },
 
         startCarousel: function() {
-            $('.carousel').carousel(0);
-            $('.carousel-control.right').click(function() {
-                $('.carousel').carousel('next')
-            });
-            $('.carousel-control.left').click(function() {
-                $('.carousel').carousel('prev')
+            $('.js-modal .owl-carousel').owlCarousel({
+                singleItem: true,
+                navigation: true,
+                autoWidth: true
             });
         }
 

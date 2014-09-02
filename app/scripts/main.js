@@ -15,7 +15,8 @@ require.config({
         'bootstrap-transition':     '../bower_components/bootstrap/js/transition',
         'bootstrap-tab':            '../bower_components/bootstrap/js/tab',
         'bootstrap-collapse':       '../bower_components/bootstrap/js/collapse',
-        'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel'
+        'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel',
+        'owlcarousel':              '../bower_components/owlcarousel/owl-carousel/owl.carousel'
     },
     shim: {
         'underscore': {
@@ -46,6 +47,10 @@ require.config({
         },
         'bootstrap-collapse': {
             exports: 'bootstrap-collapse',
+            deps:    ['jquery']
+        },
+        'owlcarousel': {
+            exports: 'owlcarousel',
             deps:    ['jquery']
         }
     }

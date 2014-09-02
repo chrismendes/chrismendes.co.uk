@@ -81,14 +81,6 @@ define([
             this.unbind();
         },
 
-        // backToHomepage: function() {
-        //     $('body').removeClass('slideup', 500, 'easeOutCubic', function() {
-        //         Common.setBackground(Common.homeTheme, function() {
-        //             Backbone.history.navigate('/', { trigger: true });
-        //         });
-        //     });
-        // },
-
         showModal: function(modalID, onComplete) {
             var modalContent = {
                 header: $('.js-modal-content-'+modalID+' .js-modal-content-header').html(),
