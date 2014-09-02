@@ -71,11 +71,13 @@ Template - My Portfolio
                           <% if(project.screenshots > 0) { %>
                           <div id="carousel-<%= project.id %>" class="carousel slide">
                             <% if(project.screenshots > 1) { %>
-                            <ol class="carousel-indicators">
-                              <% for(var i = 0; i < project.screenshots; i++) { %>
-                              <li data-target="#carousel-<%= project.id %>" data-slide-to="<%= i %>"<% if(i === 0) { %> class="active"<% } %>></li>
-                              <% } %>
-                            </ol>
+                            <div class="carousel-indicators-container">
+                              <ol class="carousel-indicators">
+                                <% for(var i = 0; i < project.screenshots; i++) { %>
+                                <li data-target="#carousel-<%= project.id %>" data-slide-to="<%= i %>"<% if(i === 0) { %> class="active"<% } %>></li>
+                                <% } %>
+                              </ol>
+                            </div>
                             <% } %>
                             <div class="carousel-inner">
                               <% for(var i = 0; i < project.screenshots; i++) { %>
