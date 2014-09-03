@@ -5046,6 +5046,7 @@ Icons
   display: inline-block;
 }
 .project-list-item .date {
+  color: #999;
   font-size: 11px;
   margin-left: 5px;
 }
@@ -5170,12 +5171,12 @@ Icons
   display: inline-block;
 }
 .project-modal-header .date {
-  font-style: italic;
+  color: #999;
 }
 .project-modal-header .link {
   margin-left: 10px;
 }
-.project-modal-header.project-highlight-modal-header .description {
+.project-modal-header .description {
   margin-top: 6px;
 }
 .project-modal-body {
