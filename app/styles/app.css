@@ -4875,9 +4875,10 @@ Side by Side Content
 Models
 ----------------- */
 .modal .close .label {
-  font-size: 16px;
-  margin: 2px 6px 0px 0px;
+  color: #000;
   float: left;
+  margin: 2px 6px 0px 0px;
+  padding: 0px;
 }
 /* -----------------
 Icons
