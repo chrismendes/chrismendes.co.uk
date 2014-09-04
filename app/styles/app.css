@@ -4788,13 +4788,25 @@ Tabbed Content
   background: none;
   border-color: #fff;
 }
-.tabbed-content .tabbed-content-tabs li.active {
+.tabbed-content .tabbed-content-tabs .active {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #000;
 }
-.tabbed-content .tabbed-content-tabs li.active:hover a {
+.tabbed-content .tabbed-content-tabs .active:hover a {
   border-color: #ddd;
+}
+.tabbed-content .tabbed-content-tabs.cv-tabs li a {
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.tabbed-content .tabbed-content-tabs.cv-tabs .cv-tabs-contract a {
+  background-image: url('../images/cv/icons/contract.png');
+  padding-left: 48px;
+}
+.tabbed-content .tabbed-content-tabs.cv-tabs .cv-tabs-permanent a {
+  background-image: url('../images/cv/icons/permanent.png');
+  padding-left: 52px;
 }
 .tabbed-content .tabbed-content-body {
   display: none;
