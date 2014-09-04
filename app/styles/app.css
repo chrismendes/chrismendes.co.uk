@@ -4752,7 +4752,7 @@ Formatted Table
 ----------------- */
 .formatted-table {
   border: 1px solid #c0c0c0;
-  margin: 20px 0px 30px 0px;
+  margin: 20px 0px;
 }
 .formatted-table.formatted-table-fullwidth {
   width: 100%;
@@ -4806,8 +4806,11 @@ Tabbed Content
 Radio Buttons
 ----------------- */
 .radio-buttons {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 15px;
+}
+.radio-buttons .radio-buttons-item {
+  margin-bottom: 6px;
 }
 .radio-buttons .radio-buttons-item input[type=radio] {
   margin-right: 10px;
@@ -4832,6 +4835,10 @@ Info Box
   -webkit-box-shadow: 3px 3px 10px 0px #efefef;
   box-shadow: 3px 3px 10px 0px #efefef;
   border: 1px solid #dfdfdf;
+}
+.info-box.info-box-left {
+  float: left;
+  margin: 0px 20px 20px 0px;
 }
 .info-box img {
   margin: 0px auto;
