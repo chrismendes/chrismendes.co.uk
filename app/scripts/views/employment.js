@@ -11,7 +11,7 @@ define([
 
         template:       _.template(html),
         elPage:         '#page-employment',
-        background:     'denim',
+        background:     'purple',
         theme:          'green'
 
     });
