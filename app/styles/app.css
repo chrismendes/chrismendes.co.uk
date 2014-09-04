@@ -4806,8 +4806,7 @@ Tabbed Content
 Radio Buttons
 ----------------- */
 .radio-buttons {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 20px 0px 15px 0px;
 }
 .radio-buttons .radio-buttons-item {
   margin-bottom: 6px;
@@ -4822,6 +4821,28 @@ Radio Buttons
 }
 .radio-buttons .radio-buttons-item.is-disabled label {
   color: #d0d0d0;
+}
+/* -----------------
+Checkboxes
+----------------- */
+.checkboxes {
+  margin: 20px 0px 15px 1px;
+}
+.checkboxes .checkboxes-item {
+  background-image: url('../images/employment/checkbox-off.png');
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+.checkboxes .checkboxes-item.is-checked {
+  background-image: url('../images/employment/checkbox-on.png');
+  font-weight: bold;
+}
+.checkboxes .checkboxes-item.is-disabled {
+  color: #d0d0d0;
+  text-decoration: line-through;
 }
 /* -----------------
 Info Box
