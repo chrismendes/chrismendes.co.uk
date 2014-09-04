@@ -31,7 +31,7 @@ Formatted Table
 ----------------- */
 .formatted-table {
     border: 1px solid #c0c0c0;
-    margin: 20px 0px 30px 0px;
+    margin: 20px 0px;
 
     &.formatted-table-fullwidth {
         width: 100%;
@@ -102,10 +102,12 @@ Tabbed Content
 Radio Buttons
 ----------------- */
 .radio-buttons {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 15px;
 
     .radio-buttons-item {
+        margin-bottom: 6px;
+
         input[type=radio] {
             margin-right: 10px;
             margin-top: 2px;
@@ -131,6 +133,11 @@ Info Box
     margin: 0px 0px 20px 20px;
     max-width: 270px;
     float: right;
+
+    &.info-box-left {
+        float: left;
+        margin: 0px 20px 20px 0px;
+    }
 
     .boxshadow(3px, 3px, 10px, 0px, #efefef);
     border: 1px solid #dfdfdf;
