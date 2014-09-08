@@ -264,77 +264,84 @@ Template - Skills & Expertise
   <div class="col-md-3">
     <div class="tabbed-content-tabs">
 
-      <div class="category-column is-off-stage js-animated-entrace">
-        <!--
-        Nav - Overview
-        -->
-        <div class="category-column-box js-nav js-nav-overview is-active" data-body="overview">
-          <h3>Overview</h3>
-        </div>
-        <!--
-        Nav - Bread & butter stuff
-        -->
-        <div class="category-column-box js-nav js-nav-basics" data-body="basics" data-title="Bread &amp; butter stuff">
-          <h3>Bread &amp; butter stuff</h3>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-        <!--
-        Nav - Front-end development
-        -->
-        <div class="category-column-box js-nav js-nav-front" data-body="front" data-title="Front-end development">
-          <h3>Front-end development</h3>
-          <ul>
-            <li>Backbone</li>
-            <li>jQuery, Require.js</li>
-            <li>Sass/LESS</li>
-            <li>Foundation/Twitter Bootstrap</li>
-          </ul>
-        </div>
-        <!--
-        Nav - Back-end development
-        -->
-        <div class="category-column-box js-nav js-nav-back" data-body="back" data-title="Back-end development">
-          <h3>Back-end development</h3>
-          <ul>
-            <li>Laravel</li>
-            <li>CodeIgniter</li>
-            <li>WordPress</li>
-          </ul>
-        </div>
-        <!--
-        Nav - Testing
-        -->
-        <!--
-        <div class="category-column-box js-nav js-nav-testing" data-body="testing" data-title="Testing">
-          <h3>Testing</h3>
-          <ul>
-            <li>QUnit</li>
-            <li>Sinon.js</li>
-            <li>Mocha</li>
-            <li>Jasmine</li>
-            <li>CucumberJS</li>
-            <li>PHPUnit</li>
-          </ul>
-        </div>
-        -->
-
-        <!--
-        Nav - Miscellaneous
-        -->
-        <div class="category-column-box js-nav js-nav-misc" data-body="misc" data-title="Miscellaneous">
-          <h3>Miscellaneous</h3>
-          <ul>
-            <li>Git Version Control</li>
-            <li>Grunt Automation</li>
-            <li>JIRA, Confluence</li>
-            <li>Adobe Suite</li>
-          </ul>
-        </div>
+      <div class="category-column category-column-multiline-items is-off-stage js-animated-entrace">
+        <ul class="nav nav-tabs" role="tablist">
+          <!--
+          Nav - Overview
+          -->
+          <li class="category-column-box js-nav js-nav-overview active" data-body="overview">
+            <h3>Overview</h3>
+            <a href="#overview" class="js-tab-link"></a>
+          </li>
+          <!--
+          Nav - Bread & butter stuff
+          -->
+          <li class="category-column-box js-nav js-nav-basics" data-body="basics" data-title="Bread &amp; butter stuff">
+            <h3>Bread &amp; butter stuff</h3>
+            <a href="#basics" class="js-tab-link"></a>
+            <ul>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+          </li>
+          <!--
+          Nav - Front-end development
+          -->
+          <li class="category-column-box js-nav js-nav-front" data-body="front" data-title="Front-end development">
+            <h3>Front-end development</h3>
+            <a href="#front" class="js-tab-link"></a>
+            <ul>
+              <li>Backbone</li>
+              <li>jQuery, Require.js</li>
+              <li>Sass/LESS</li>
+              <li>Foundation/Twitter Bootstrap</li>
+            </ul>
+          </li>
+          <!--
+          Nav - Back-end development
+          -->
+          <li class="category-column-box js-nav js-nav-back" data-body="back" data-title="Back-end development">
+            <h3>Back-end development</h3>
+            <a href="#back" class="js-tab-link"></a>
+            <ul>
+              <li>Laravel</li>
+              <li>CodeIgniter</li>
+              <li>WordPress</li>
+            </ul>
+          </li>
+          <!--
+          Nav - Testing
+          -->
+          <!--
+          <li class="category-column-box js-nav js-nav-testing" data-body="testing" data-title="Testing">
+            <h3>Testing</h3>
+            <a href="#testing" class="js-tab-link"></a>
+            <ul>
+              <li>QUnit</li>
+              <li>Sinon.js</li>
+              <li>Mocha</li>
+              <li>Jasmine</li>
+              <li>CucumberJS</li>
+              <li>PHPUnit</li>
+            </ul>
+          </li>
+          -->
+          <!--
+          Nav - Miscellaneous
+          -->
+          <li class="category-column-box js-nav js-nav-misc" data-body="misc" data-title="Miscellaneous">
+            <h3>Miscellaneous</h3>
+            <a href="#misc" class="js-tab-link"></a>
+            <ul>
+              <li>Git Version Control</li>
+              <li>Grunt Automation</li>
+              <li>JIRA, Confluence</li>
+              <li>Adobe Suite</li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
     </div>

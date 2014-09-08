@@ -17,9 +17,9 @@ define([
         background:     'gold',
         theme:          'green',
 
-        // events: {
-        //     'click .js-nav':        'showContent'
-        // },
+        events: {
+            'click .js-nav':        'changeTab'
+        },
 
         onBeforeShow: function() {
             // $('body').addClass('theme-'+this.colour);
@@ -27,35 +27,28 @@ define([
         },
 
         // Fade out current body content, fade in new
-        // showContent: function(e) {
-        //     var boxClicked = this.identifyBox(e);
-        //     var reqContent = boxClicked.attr('data-body');
+        changeTab: function(e) {
+            var boxClicked = this.identifyBox(e);
+            var reqContent = boxClicked.attr('data-body');
 
-        //     if(boxClicked.hasClass('is-active')) {
-        //         return;
-        //     }
+            if(boxClicked.hasClass('is-active')) {
+                return;
+            }
+
+            $('.js-nav-'+reqContent+' .js-tab-link').tab('show');
             
-        //     // Change sidenav states
-        //     $('.js-nav.is-active').removeClass('is-active', 100);
-        //     boxClicked.addClass('is-active', 100);
+            // Change sidenav states
+            // $('.js-nav.is-active').removeClass('is-active', 100);
+            // boxClicked.addClass('is-active', 100);
 
-        //     // Update body heading
-        //     var title = boxClicked.attr('data-title');
-        //     if(typeof title !== 'undefined') {
-        //         $('.js-body-title').html(title);
-        //         $('.js-body-title').fadeIn(200);
-        //     } else {
-        //         $('.js-body-title').fadeOut(200);
-        //     }
-
-        //     // Change body content
-        //     $('.js-body.is-active').fadeOut(200, function() {
-        //         $(this).removeClass('is-active');
-        //         $('.js-body-'+reqContent).fadeIn(200, function() {
-        //             $(this).addClass('is-active');
-        //         });
-        //     });
-        // },
+            // Change body content
+            // $('.js-body.is-active').fadeOut(200, function() {
+            //     $(this).removeClass('is-active');
+            //     $('.js-body-'+reqContent).fadeIn(200, function() {
+            //         $(this).addClass('is-active');
+            //     });
+            // });
+        },
 
         // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyBox: function(e) {

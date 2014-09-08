@@ -1,12 +1,7 @@
 .category-column {
 
-    &.is-off-stage {
-        margin-left: 50px;
-        .opacity(0);
-    }
-
     .category-column-box {
-        padding: 10px;
+        // padding: 10px;
         margin: 0px 0px 10px 0px;
         width: 100%;
         
@@ -48,7 +43,7 @@
         a {
             font-weight: bold;
             color: inherit;
-            padding: 0px;
+            padding: 10px;
             margin: 0px !important;
             background: none !important;
             border: 0px !important;
@@ -65,9 +60,28 @@
 
             &:hover {
                 background: #dfdfdf;
+
+                &.active {
+                    background: #f5f5f5;
+                }
             }
         }
 
+    }
+
+    &.category-column-multiline-items {
+        .category-column-box {
+            padding: 10px;
+
+            a {
+                padding: 0px;
+            }
+        }
+    }
+
+    &.is-off-stage {
+        margin-left: 50px;
+        .opacity(0);
     }
 
     ul {
