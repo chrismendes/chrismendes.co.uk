@@ -4355,7 +4355,11 @@ footer .navbar .navbar-nav.pull-right li a {
 footer .navbar .copyright {
   color: #fff;
   font-size: 11px;
+<<<<<<< HEAD
   margin-top: 20px;
+=======
+  margin-top: 17px;
+>>>>>>> 72c325f134810d75c56a09085218be299dbb24b1
   float: right;
 }
 footer .navbar .col-md-6 {
@@ -5234,6 +5238,7 @@ Icons
 .project-modal-body img {
   width: 80%;
 }
+<<<<<<< HEAD
 /* -----------------
 Carousel
 ----------------- */
@@ -5278,6 +5283,24 @@ Carousel
 }
 .owl-carousel .owl-pagination .owl-page.active {
   background: #dd686d;
+=======
+.monopoly-card {
+  margin: 10px 0px;
+  background: #FFFFE1;
+  -moz-box-shadow: 2px 2px 4px 0px #c0c0c0;
+  -webkit-box-shadow: 2px 2px 4px 0px #c0c0c0;
+  box-shadow: 2px 2px 4px 0px #c0c0c0;
+}
+.monopoly-card .title {
+  font-weight: bold;
+  padding-top: 20px;
+}
+.monopoly-card .description {
+  font-size: 13px;
+}
+.monopoly-card img {
+  margin-bottom: 10px !important;
+>>>>>>> 72c325f134810d75c56a09085218be299dbb24b1
 }
 /* -----------------
 Backgrounds
