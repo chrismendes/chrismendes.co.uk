@@ -5234,50 +5234,22 @@ Icons
 .project-modal-body img {
   width: 80%;
 }
-/* -----------------
-Carousel
------------------ */
-.owl-carousel {
-  width: 80%;
-  margin: 20px auto 0px auto;
+.monopoly-card {
+  margin: 10px 0px;
+  background: #FFFFE1;
+  -moz-box-shadow: 2px 2px 4px 0px #c0c0c0;
+  -webkit-box-shadow: 2px 2px 4px 0px #c0c0c0;
+  box-shadow: 2px 2px 4px 0px #c0c0c0;
 }
-.owl-carousel .owl-item {
-  border: 1px solid #efefef;
+.monopoly-card .title {
+  font-weight: bold;
+  padding-top: 20px;
 }
-.owl-carousel .owl-item img {
-  width: 100%;
+.monopoly-card .description {
+  font-size: 13px;
 }
-.owl-carousel .owl-buttons .owl-prev,
-.owl-carousel .owl-buttons .owl-next {
-  height: 100%;
-  width: 90px;
-  position: relative;
-}
-.owl-carousel .owl-buttons .owl-prev {
-  float: left;
-  margin-left: -90px;
-}
-.owl-carousel .owl-buttons .owl-next {
-  float: right;
-  margin-right: -90px;
-}
-.owl-carousel .owl-pagination {
-  position: absolute;
-  top: 0px;
-  margin-top: -20px;
-}
-.owl-carousel .owl-pagination .owl-page {
-  width: 50px;
-  height: 8px;
-  float: left;
-  background: #C0C0C0;
-  margin-left: 5px;
-}
-.owl-carousel .owl-pagination .owl-page:first-child {
-  margin-left: 0px;
-}
-.owl-carousel .owl-pagination .owl-page.active {
-  background: #dd686d;
+.monopoly-card img {
+  margin-bottom: 10px !important;
 }
 /* -----------------
 Backgrounds
