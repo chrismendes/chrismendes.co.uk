@@ -18,7 +18,8 @@ define([
         events: {
             'mouseenter .box':      'onBoxHover',
             'mouseleave .box':      'onBoxHoverOut',
-            'click .box':           'onBoxClick'
+            'click .box':           'onBoxClick',
+            'click .js-modal-show': 'showContactModal'
         },
 
         onAfterRender: function() {
@@ -38,7 +39,10 @@ define([
             if(typeof boxClicked.attr('data-href') !== 'undefined') {
                 this.exitPage(boxClicked);
             } else {
-                this.showModal(boxClicked);
+                var modal = boxClicked.attr('data-modal');
+                if(typeof modal !== 'undefined') {
+                    this.showModal(modal);
+                }
             }
         },
 
@@ -66,14 +70,6 @@ define([
                     });
                 });
             }, 200);
-        },
-
-        showModal: function(boxClicked) {
-            var modalSrc = boxClicked.attr('data-modal');
-            if(typeof modalSrc === 'undefined') {
-                return;
-            }
-            
         }
 
     });

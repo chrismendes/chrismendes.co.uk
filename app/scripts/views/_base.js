@@ -82,14 +82,23 @@ define([
         },
 
         showModal: function(modalID, onComplete) {
+            // Acquire new modal content
             var modalContent = {
                 header: $('.js-modal-content-'+modalID+' .js-modal-content-header').html(),
                 body:   $('.js-modal-content-'+modalID+' .js-modal-content-body').html()
             }
+            // Determine large or small modal
+            if($('.js-modal-content-'+modalID).attr('data-modal-large') === 'false') {
+                $('.js-modal .modal-dialog').removeClass('modal-lg');
+            } else {
+                $('.js-modal .modal-dialog').addClass('modal-lg');
+            }
+            // Set contents and show
             $('.js-modal-header').html(modalContent.header);
             $('.js-modal-body').html(modalContent.body);
             $('.js-modal').modal();
 
+            // Run callback if specified
             if(typeof onComplete !== 'undefined') {
                 onComplete();
             }
