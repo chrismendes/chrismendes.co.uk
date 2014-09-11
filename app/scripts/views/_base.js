@@ -83,18 +83,26 @@ define([
 
         showModal: function(modalID, onComplete) {
             // Acquire new modal content
+            var modalTarget = '.js-modal-content-' + modalID;
             var modalContent = {
-                header: $('.js-modal-content-'+modalID+' .js-modal-content-header').html(),
-                body:   $('.js-modal-content-'+modalID+' .js-modal-content-body').html()
+                header: $(modalTarget+' .js-modal-content-header').html(),
+                body:   $(modalTarget+' .js-modal-content-body').html()
             }
             // Determine large or small modal
-            if($('.js-modal-content-'+modalID).attr('data-modal-large') === 'false') {
+            if($(modalTarget).attr('data-modal-large') === 'false') {
                 $('.js-modal .modal-dialog').removeClass('modal-lg');
             } else {
                 $('.js-modal .modal-dialog').addClass('modal-lg');
             }
-            // Set contents and show
-            $('.js-modal-header').html(modalContent.header);
+            // Set header contents
+            if(typeof modalContent.header !== 'undefined') {
+                $('.js-modal').removeClass('modal-no-header');
+                $('.js-modal-header').html(modalContent.header);
+            } else {
+                $('.js-modal-header').empty();
+                $('.js-modal').addClass('modal-no-header');
+            }
+            // Set body contents and show
             $('.js-modal-body').html(modalContent.body);
             $('.js-modal').modal();
 
