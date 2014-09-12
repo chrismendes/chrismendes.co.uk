@@ -14,12 +14,13 @@ define([
         template:       _.template(html),
         elPage:         '#page-home',
         background:     'blue',
+        theme:          'blue',
 
         events: {
-            'mouseenter .box':      'onBoxHover',
-            'mouseleave .box':      'onBoxHoverOut',
-            'click .box':           'onBoxClick',
-            'click .js-modal-show': 'showContactModal'
+            'mouseenter .box':       'onBoxHover',
+            'mouseleave .box':       'onBoxHoverOut',
+            'click .box':            'onBoxClick',
+            'click .js-modal-close': 'closeContactModal'
         },
 
         onAfterRender: function() {
@@ -70,6 +71,11 @@ define([
                     });
                 });
             }, 200);
+        },
+
+        closeContactModal: function() {
+            console.log('closeContactModal');
+            this.closeModal();
         }
 
     });

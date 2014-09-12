@@ -11,6 +11,7 @@ Foreground Colour Schemes
     .btn {
         background: @red;
         border-color: @red;
+        color: #fff;
 
         &.btn-inverse {
             color: @red;
@@ -42,6 +43,7 @@ Foreground Colour Schemes
     .btn {
         background: @green;
         border-color: @green;
+        color: #fff;
 
         &.btn-inverse {
             color: @green;
@@ -57,5 +59,37 @@ Foreground Colour Schemes
                 border-bottom-color: @green;
             }
         }
+    }
+}
+
+.theme-blue {
+    .theme-border {
+        border-left-color: @blue;
+    }
+    a {
+        color: @blue;
+    }
+    .btn {
+        background: @blue;
+        border-color: @blue;
+        color: #fff;
+
+        &.btn-inverse {
+            color: @blue;
+        }
+
+        &.is-active {
+            background: @blue !important;
+        }
+    }
+    .tabbed-content {
+        .tabbed-content-tabs {
+            li.active {
+                border-bottom-color: @blue;
+            }
+        }
+    }
+    .category-column-box.active {
+        border-left-color: @blue;
     }
 }

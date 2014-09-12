@@ -13,22 +13,29 @@ Carousel
         }
     }
 
-    // (TODO: Frosted glass effect)
     .owl-wrapper-outer {
-        // overflow: visible;
+        overflow: visible;
     }
 
-    // (TODO: Positions controls left and right)
+    .owl-controls {
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        height: 100%;
+    }
     .owl-buttons {
-        // position: absolute;
-        // width: 100%;
-        // height: 100%;
-        // top: 0px;
 
         .owl-prev, .owl-next {
             height: 100%;
             width: 90px;
-            position: relative;
+            position: absolute;
+            top: 25px;
+            
+            background: #fff;
+            opacity: 0.8;
+
+            // filter: blur(5px);
+            // -webkit-filter: blur(5px);
         }
 
         // (TODO: Frosted glass effect)
@@ -43,19 +50,16 @@ Carousel
         }
 
         .owl-prev {
-            float: left;
-            margin-left: -90px;
+            left: -90px;
         }
         .owl-next {
-            float: right;
-            margin-right: -90px;
+            right: -90px;
         }
     }
 
     .owl-pagination {
-        position: absolute;
-        top: 0px;
-        margin-top: -20px;
+        display: inline-block;
+        margin: 0px auto;
 
         .owl-page {
             width: 50px;

@@ -112,6 +112,11 @@ define([
             }
         },
 
+        closeModal: function() {
+            console.log('closeModal');
+            $('.js-modal').close();
+        },
+
         // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyClickedBox: function(e) {
             return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
