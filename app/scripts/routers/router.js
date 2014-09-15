@@ -14,7 +14,7 @@ define([
             'portfolio':    'showPortfolio',
             'skills':       'showSkills',
             'employment':   'showEmployment',
-            'contact':      'showContactModal'
+            'learning':     'showLearning'
         },
 
         initialize: function() {
@@ -39,9 +39,13 @@ define([
         showSkills: function() {
             App.showSkills();
         },
-        // Current Situation Page
+        // Employment Page
         showEmployment: function() {
             App.showEmployment();
+        },
+        // Learning Page
+        showLearning: function() {
+            App.showLearning();
         }
         
     });
