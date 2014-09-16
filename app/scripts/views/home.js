@@ -74,7 +74,6 @@ define([
         },
 
         closeContactModal: function() {
-            console.log('closeContactModal');
             this.closeModal();
         }
 
