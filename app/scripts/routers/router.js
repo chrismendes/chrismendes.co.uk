@@ -14,7 +14,9 @@ define([
             'portfolio':    'showPortfolio',
             'skills':       'showSkills',
             'employment':   'showEmployment',
-            'learning':     'showLearning'
+            'learning':     'showLearning',
+            'workflow':     'showWorkflow',
+            'about':        'showAboutMe'
         },
 
         initialize: function() {
@@ -46,6 +48,14 @@ define([
         // Learning Page
         showLearning: function() {
             App.showLearning();
+        },
+        // Dev Workflow Page
+        showWorkflow: function() {
+            App.showWorkflow();
+        },
+        // About Me Page
+        showAboutMe: function() {
+            App.showAboutMe();
         }
         
     });

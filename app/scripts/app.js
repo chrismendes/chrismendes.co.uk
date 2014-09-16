@@ -7,8 +7,10 @@ define([
     'views/portfolio',
     'views/skills',
     'views/employment',
-    'views/learning'
-], function(HomeView, CvView, PortfolioView, SkillsView, EmploymentView, LearningView) {
+    'views/learning',
+    'views/workflow',
+    'views/about'
+], function(HomeView, CvView, PortfolioView, SkillsView, EmploymentView, LearningView, WorkflowView, AboutView) {
 
     return {
 
@@ -57,6 +59,18 @@ define([
         showLearning: function() {
             var learning = new LearningView();
             this.showView(learning);
+        },
+
+        // Dev Workflow Page
+        showWorkflow: function() {
+            var workflow = new WorkflowView();
+            this.showView(workflow);
+        },
+
+        // About Me Page
+        showAboutMe: function() {
+            var about = new AboutView();
+            this.showView(about);
         }
 
     }
