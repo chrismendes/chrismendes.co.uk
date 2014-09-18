@@ -1,0 +1,36 @@
+.icon-grid {
+    width: 100%;
+
+    .icon-grid-column {
+        width: 50%;
+        float: left;
+    }
+
+    .icon-grid-item {
+        background: #efefef;
+        margin: 1px;
+        padding: 10px;
+        height: 95px;
+        cursor: pointer;
+        text-align: center;
+
+        .title {
+            clear: both;
+            display: block;
+        }
+        .icon {
+            margin-top: 5px;
+        }
+
+        &:hover {
+            background: #dfdfdf;
+        }
+        &.is-active {
+            background: #64C5E8;
+
+            .title {
+                color: #fff;
+            }
+        }
+    }
+}
