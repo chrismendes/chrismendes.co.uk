@@ -19,19 +19,17 @@
             line-height: 40px;
             margin: 0px 0px 10px 0px;
         }
-        .description {
+        .description, .icons {
             display: none;
-        }
-        .icons {
-            display: none;
-            background-repeat: no-repeat;
-            background-position: 0px 100%;
         }
         .btn {
             .opacity(0.8);
             background: #fff;
             border-width: 1px;
             border-style: solid;
+
+            position: absolute;
+            bottom: 20px;
         }
         a:hover {
             text-decoration: none;
@@ -64,16 +62,8 @@
         &.box-1 {
             margin-top: -20px;
             height: 184px;
-            .btn {
-                margin-top: 66px;
-            }
             &.is-animating {
                 margin-top: -30px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                }
             }
         }
 
@@ -83,16 +73,8 @@
         &.box-2 {
             margin-top: -30px;
             height: 191px;
-            .btn {
-                margin-top: 73px;
-            }
             &.is-animating {
                 margin-top: -40px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 6px;
-                }
             }
         }
 
@@ -102,17 +84,9 @@
         &.box-3 {
             margin-top: -10px;
             height: 192px;
-            .btn {
-                margin-top: 73px;
-            }
             &.is-animating {
                 margin-top: -20px;
                 margin-bottom: 10px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                }
             }
         }
 
@@ -121,14 +95,6 @@
         ----------------- */
         &.box-4 {
             height: 171px;
-            .btn {
-                margin-top: 53px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 6px;
-                }
-            }
             &.is-animating {
                 margin-top: -10px;
             }
@@ -138,18 +104,10 @@
         Box 5 - Row 2, Col 1
         ----------------- */
         &.box-5 {
-            margin-top: -20px;
+            margin-top: -10px;
             height: 254px;
-            .btn {
-                margin-top: 135px;
-            }
             &.is-animating {
                 margin-top: -30px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                }
             }
         }
 
@@ -158,14 +116,6 @@
         ----------------- */
         &.box-6 {
             height: 179px;
-            .btn {
-                margin-top: 60px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                }
-            }
             &.is-animating {
                 margin-top: -10px;
             }
@@ -176,14 +126,6 @@
         ----------------- */
         &.box-7 {
             height: 151px;
-            .btn {
-                margin-top: 33px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                }
-            }
             &.is-animating {
                 margin-top: -10px;
             }
@@ -195,17 +137,8 @@
         &.box-8 {
             margin-top: -10px;
             height: 151px;
-            .btn {
-                margin-top: 33px;
-            }
             &.is-animating {
                 margin-top: -20px;
-            }
-            &.is-active {
-                .btn {
-                    margin-top: 0px;
-                    // margin-top: 48px;
-                }
             }
         }
 
@@ -317,31 +250,19 @@
             background-image: url('../images/home/skills.png');
             background-position: 130% -40px;
             .icons {
-                width: 216px;
-                height: 63px;
-                margin: 15px 0px 15px 5px;
-                background-image: url('../images/home/skills-icons.png');
+                margin-top: 15px;
             }
         }
         &.box-cv {
             background-image: url('../images/home/cv.png');
             background-position: 20% -30px;
             .icons {
-                width: 122px;
-                height: 37px;
-                margin: -2px 0px 5px 4px;
-                background-image: url('../images/home/cv-icons.png');
+                margin-top: -5px;
             }
         }
         &.box-portfolio {
             background-image: url('../images/home/portfolio.png');
             background-position: 350% 8%;
-            .icons {
-                width: 213px;
-                height: 76px;
-                margin: 15px 0px 10px 10px;
-                background-image: url('../images/home/clients-icons.png');
-            }
         }
         &.box-employment {
             background-image: url('../images/home/employment.png');
@@ -350,22 +271,10 @@
         &.box-learning {
             background-image: url('../images/home/learning.png');
             background-position: -380% 0px;
-            .icons {
-                width: 123px;
-                height: 63px;
-                margin: 5px 0px 20px 0px;
-                background-image: url('../images/home/learning-icons.png');
-            }
         }
         &.box-workflow {
             background-image: url('../images/home/workflow.png');
             background-position: -250% -30px;
-            .icons {
-                width: 313px;
-                height: 58px;
-                margin: 15px 0px 15px 10px;
-                background-image: url('../images/home/workflow-icons.png');
-            }
         }
         &.box-about {
             background-image: url('../images/home/about.png');
@@ -393,4 +302,57 @@
         border-top-color: @colour;
     }
 
+}
+
+// Small Desktop
+@media screen and (max-width: @screen-md-max) {
+    .scattered-boxes {
+        .box {
+            .title {
+                font-size: 26px;
+                line-height: 32px;
+            }
+            .icons {
+                width: 100%;
+                height: auto;
+            }
+
+            &.box-cv {
+                background-position: 35% -30px;
+                .description {
+                    display: none !important;
+                }
+                .icons {
+                    margin-top: 15px;
+                }
+                .btn {
+                    margin-left: -4px;
+                }
+            }
+            &.box-portfolio {
+                background-position: -200% 8%;
+                .icons {
+                    margin-top: 17px;
+                }
+            }
+            &.box-workflow {
+                background-position: 30px -30px;
+                .icons {
+                    margin-top: 18px;
+                }
+            }
+            &.box-employment {
+                background-position: 100px -25px;
+            }
+            &.box-learning {
+                background-position: 25px 0px;
+            }
+            &.box-about {
+                background-position: 80px 0px;
+            }
+            &.box-contact {
+                background-position: 95px -50px;
+            }
+        }
+    }
 }
