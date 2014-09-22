@@ -9,6 +9,7 @@ define([
 
     var EmploymentView = BaseView.extend({
 
+        id:             'employment',
         template:       _.template(html),
         elPage:         '#page-employment',
         background:     'purple',

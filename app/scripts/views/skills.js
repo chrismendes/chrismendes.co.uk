@@ -12,6 +12,7 @@ define([
 
     var SkillsView = BaseView.extend({
 
+        id:             'skills',
         template:       _.template(html),
         elPage:         '#page-skills',
         background:     'gold',

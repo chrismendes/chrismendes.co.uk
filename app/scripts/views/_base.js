@@ -11,13 +11,22 @@ define([
 
     var BaseView = Backbone.View.extend({
 
-    	el:             '#page-contents',
+    	id:             null,
+        el:             '#page-contents',
     	elPage:         null,
     	background:     null,
         theme:          null,
         data:           null,
 
         onBeforeRender: function() {},
+
+        onBeforeRenderBase: function() {
+            this.clearThemeClasses();
+        },
+
+        onAfterRenderBase: function() {
+            this.setMenuActiveItem();
+        },
 
     	render: function() {
             if(typeof this.template === 'undefined') {
@@ -26,7 +35,7 @@ define([
             }
     		if(this.elPage !== null) {
 
-                this.clearThemeClasses();
+                this.onBeforeRenderBase();
 
                 this.onBeforeRender();
 
@@ -66,6 +75,8 @@ define([
 
                 $(this.elPage).fadeIn(200);
     			
+                this.onAfterRenderBase();
+
                 this.onAfterRender();
 
     			return this;
@@ -130,6 +141,11 @@ define([
             if(addSlideUp) {
                 $('body').addClass('slideup');
             }
+        },
+
+        setMenuActiveItem: function() {
+            $('.js-menu li').removeClass('is-active');
+            $('.js-menu-' + this.id).addClass('is-active');
         }
 
     });

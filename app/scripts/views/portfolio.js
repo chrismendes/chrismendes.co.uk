@@ -17,6 +17,7 @@ define([
 
     var PortfolioView = BaseView.extend({
 
+        id:             'portfolio',
         template:       _.template(html),
         elPage:         '#page-portfolio',
         background:     'gold',

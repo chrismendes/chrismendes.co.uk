@@ -5,10 +5,11 @@
         color: #fff !important;
         padding: 6px 10px;
         display: inline-block;
-        .bgopacity(#ffffff, 10%);
+        .bgopacity(#ffffff, 20%);
 
         &:hover {
             text-decoration: none;
+            .bgopacity(#ffffff, 10%);
         }
     }
 
@@ -20,6 +21,11 @@
 
     .home {
         float: left;
+        height: 30px;
+
+        .icon {
+            margin: -2px 2px 0px -2px;
+        }
     }
 
     .sitemap {
@@ -33,19 +39,13 @@
         &:first-child {
             margin-left: 0px;
         }
-
-        &:hover {
-            a {
-                .bgopacity(#ffffff, 20%);
-            }
-        }
     }
 
-    li.active {
+    li.is-active {
         a {
             // color: #efefef !important;
             // padding: 7px 9px 5px 11px;
-            .bgopacity(#ffffff, 20%);
+            .bgopacity(#ffffff, 10%);
         }
     }
 

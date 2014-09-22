@@ -9,6 +9,7 @@ define([
 
     var LearningView = BaseView.extend({
 
+        id:             'learning',
         template:       _.template(html),
         elPage:         '#page-learning',
         background:     'teal',

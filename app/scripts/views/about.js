@@ -9,6 +9,7 @@ define([
 
     var AboutView = BaseView.extend({
 
+        id:             'about',
         template:       _.template(html),
         elPage:         '#page-about',
         background:     'teal',

@@ -10,6 +10,7 @@ define([
 
     var WorkflowView = BaseView.extend({
 
+        id:             'workflow',
         template:       _.template(html),
         elPage:         '#page-workflow',
         background:     'teal',

@@ -11,6 +11,7 @@ define([
 
     var HomeView = BaseView.extend({
 
+        id:             'home',
         template:       _.template(html),
         elPage:         '#page-home',
         background:     'blue',

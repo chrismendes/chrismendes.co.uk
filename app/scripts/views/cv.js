@@ -11,6 +11,7 @@ define([
 
     var CvView = BaseView.extend({
 
+        id:             'cv',
         template:       _.template(html),
         elPage:         '#page-cv',
         background:     'green',
