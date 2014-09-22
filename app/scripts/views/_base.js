@@ -26,6 +26,8 @@ define([
             }
     		if(this.elPage !== null) {
 
+                this.clearThemeClasses();
+
                 this.onBeforeRender();
 
                 if(this.elPage !== '#page-home') {
@@ -120,6 +122,14 @@ define([
         // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyClickedBox: function(e) {
             return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
+        },
+
+        clearThemeClasses: function() {
+            var addSlideUp = ($('body').hasClass('slideup'));
+            $('body').attr('class', '');
+            if(addSlideUp) {
+                $('body').addClass('slideup');
+            }
         }
 
     });
