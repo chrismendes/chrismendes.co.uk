@@ -11,7 +11,7 @@
         .box-border-bottom(#fff);
         background-repeat: no-repeat;
 
-        h3.title {
+        .title {
             color: #fff;
             font-size: 30px;
             font-weight: normal;
@@ -19,7 +19,7 @@
             line-height: 40px;
             margin: 0px 0px 10px 0px;
         }
-        p.description {
+        .description {
             display: none;
         }
         .icons {
@@ -44,7 +44,7 @@
             border-bottom: 0px;
         }
         &.is-active {
-            h3.title {
+            .title {
                 font-size: 20px;
                 line-height: 1.1;
                 width: auto;
@@ -325,6 +325,12 @@
         &.box-cv {
             background-image: url('../images/home/cv.png');
             background-position: 20% -30px;
+            .icons {
+                width: 122px;
+                height: 37px;
+                margin: -2px 0px 5px 4px;
+                background-image: url('../images/home/cv-icons.png');
+            }
         }
         &.box-portfolio {
             background-image: url('../images/home/portfolio.png');
