@@ -304,7 +304,9 @@
 
 }
 
-// Small Desktop
+/* -----------------
+Small Desktop
+----------------- */
 @media screen and (max-width: @screen-md-max) {
     .scattered-boxes {
         .box {
@@ -352,6 +354,68 @@
             }
             &.box-contact {
                 background-position: 95px -50px;
+            }
+        }
+    }
+}
+
+/* -----------------
+Tablet (Boxes vertically stacked)
+----------------- */
+@media screen and (max-width: @screen-sm-max) {
+    .scattered-boxes {
+        .box {
+            margin: 0px !important;
+            height: 90px !important;
+            background-position: 100% 0px !important;
+            border-bottom-width: 0px;
+            border-top: 2px solid #fff !important;
+            .title {
+                float: left;
+                margin: 0px 20px 0px 0px;
+                font-size: 34px !important;
+            }
+            .description {
+                display: none !important;
+            }
+            .btn {
+                float: left;
+                position: relative;
+                bottom: 0px;
+            }
+            .icons {
+                display: none !important;
+            }
+
+            &.box-skills {
+                border-top: 0px !important;
+                background-position: 97% -135px !important;
+            }
+            &.box-cv {
+                background-position: 115% -110px !important;
+            }
+            &.box-portfolio {
+                background-position: 100% -30px !important;
+            }
+            &.box-employment {
+                .scattered-boxes .box .box-gold;
+                background-position: 110% -10px !important;
+            }
+            &.box-learning {
+                .scattered-boxes .box .box-blue;
+                background-position: 105% -50px !important;
+            }
+            &.box-workflow {
+                .scattered-boxes .box .box-blue;
+                background-position: 100% -70px !important;
+            }
+            &.box-about {
+                .scattered-boxes .box .box-purple;
+                background-position: 100% -20px !important;
+            }
+            &.box-contact {
+                .scattered-boxes .box .box-green;
+                background-position: 100% -70px !important;
             }
         }
     }

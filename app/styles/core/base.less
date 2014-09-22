@@ -17,11 +17,17 @@ body {
         padding: 60px 0px;
     }
 }
+    // Tablet
+    @media screen and (max-width: @screen-sm-max) {
+        body, body.is-not-raised { // Cancel body sliding up/down on page change
+            padding: 20px 0px 70px 0px;
+        }
+    }
 
 
 /* -----------------
 Typeface
------------------ */
+----------------- 
 h1 {
     font-family: Helvetica Neue;
     font-size: 36px;
