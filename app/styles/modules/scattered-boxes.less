@@ -365,15 +365,20 @@ Tablet (Boxes vertically stacked)
 @media screen and (max-width: @screen-sm-max) {
     .scattered-boxes {
         .box {
-            margin: 0px !important;
+            margin: 0px 0px 10px 0px!important;
             height: 90px !important;
+            background: #fff !important;
+            .bgopacity(#ffffff, 40%) !important;
             background-position: 100% 0px !important;
-            border-bottom-width: 0px;
-            border-top: 2px solid #fff !important;
+            border-top-width: 0px !important;
+            border-left: 4px solid #fff;
+            border-bottom: 0px;
+
             .title {
                 float: left;
                 margin: 0px 20px 0px 0px;
-                font-size: 34px !important;
+                font-size: 34px;
+                color: #555 !important;
             }
             .description {
                 display: none !important;
@@ -382,13 +387,44 @@ Tablet (Boxes vertically stacked)
                 float: left;
                 position: relative;
                 bottom: 0px;
+                color: #fff !important;
             }
             .icons {
                 display: none !important;
             }
 
+            &.is-active {
+                .title {
+                    font-size: 34px;
+                }
+            }
+
+            &.box.box-green {
+                .scattered-boxes .box.box-green.is-active;
+                border-left: 4px solid @green;
+            }
+            &.box.box-red {
+                .scattered-boxes .box.box-red.is-active;
+                .scattered-boxes .box.box-red.is-animating;
+                border-left: 4px solid @red;
+            }
+            &.box.box-gold {
+                .scattered-boxes .box.box-gold.is-active;
+                .scattered-boxes .box.box-gold.is-animating;
+                border-left: 4px solid @gold;
+            }
+            &.box.box-blue {
+                .scattered-boxes .box.box-blue.is-active;
+                .scattered-boxes .box.box-blue.is-animating;
+                border-left: 4px solid @blue;
+            }
+            &.box.box-purple {
+                .scattered-boxes .box.box-purple.is-active;
+                .scattered-boxes .box.box-purple.is-animating;
+                border-left: 4px solid @purple;
+            }
+            
             &.box-skills {
-                border-top: 0px !important;
                 background-position: 97% -135px !important;
             }
             &.box-cv {
@@ -398,25 +434,47 @@ Tablet (Boxes vertically stacked)
                 background-position: 100% -30px !important;
             }
             &.box-employment {
-                .scattered-boxes .box .box-gold;
                 background-position: 110% -10px !important;
             }
             &.box-learning {
-                .scattered-boxes .box .box-blue;
+                .scattered-boxes .box.box-purple.is-active !important;
+                border-left: 4px solid @purple !important;
                 background-position: 105% -50px !important;
+                .title {
+                    color: #555 !important;
+                }
+                .btn {
+                    .scattered-boxes .box.box-purple .btn;
+                }
             }
             &.box-workflow {
-                .scattered-boxes .box .box-blue;
                 background-position: 100% -70px !important;
             }
             &.box-about {
-                .scattered-boxes .box .box-purple;
                 background-position: 100% -20px !important;
             }
             &.box-contact {
-                .scattered-boxes .box .box-green;
                 background-position: 100% -70px !important;
             }
+        }
+    }
+}
+
+/* -----------------
+Phone
+----------------- */
+@media screen and (max-width: @screen-xs-max) {
+    .scattered-boxes .box {
+        height: auto !important;
+
+        .title, &.is-active .title {
+            font-size: 24px;
+            line-height: 30px;
+            width: 40%;
+            float: left;
+        }
+        .btn {
+            float: right;
         }
     }
 }

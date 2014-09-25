@@ -7,14 +7,16 @@ header {
             color: #fff;
             text-shadow: 2px 2px #777;
             font-size: 60px;
-            margin: 0px 0px 5px 0px;
+            margin: 0px 14px 5px 0px;
             padding: 0px;
             float: left;
-            .jobtitle {
-                color: #666;
-                text-shadow: none;
-                font-size: 32px;
-            }
+        }
+        .jobtitle {
+            color: #666;
+            text-shadow: none;
+            font-size: 32px;
+            display: inline-block;
+            margin-top: 34px;
         }
 
         .strapline {
@@ -46,19 +48,30 @@ header {
     }
 }
 
-/* -----------------
-Tablet
------------------ */
+// Tablet
 @media screen and (max-width: @screen-sm-max) {
     header {
         .title .myname {
             font-size: 52px;
-            .jobtitle {
-                font-size: 24px;
-            }
+        }
+        .title .jobtitle {
+            font-size: 24px;
+            margin-top: 30px;
         }
         .title .strapline {
             font-size: 16px;
+        }
+    }
+}
+
+// Phone
+@media screen and (max-width: @screen-xs-max) {
+    header {
+        .title .strapline {
+            font-size: 16px;
+        }
+        .title .jobtitle {
+            // margin: 8px 0px 8px 0px;
         }
     }
 }
@@ -111,6 +124,29 @@ footer {
         
         .col-md-6 {
             padding: 0px;
+        }
+    }
+}
+
+// Phone
+@media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
+    .navbar .navbar-nav {
+        width: 60%;
+        float: left;
+        margin-left: 0px;
+    }
+    .copyright {
+        width: 120px;
+        margin-top: -10px;
+        display: inline-block;
+    }
+}
+
+// Adjust jobtitle when beneath name
+@media screen and (max-width: 657px) {
+    header {
+        .title .jobtitle {
+            margin: 8px 0px 10px 0px;
         }
     }
 }
