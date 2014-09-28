@@ -13,7 +13,6 @@ define([
 
     	id:             null,
         el:             '#page-contents',
-    	elPage:         null,
     	background:     null,
         theme:          null,
         data:           null,
