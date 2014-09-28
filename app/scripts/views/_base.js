@@ -26,62 +26,48 @@ define([
 
         onAfterRenderBase: function() {
             this.setMenuActiveItem();
+            this.setMobileMenuButtonHandler();
         },
 
     	render: function() {
-            if(typeof this.template === 'undefined') {
-                console.error('Caught error: View template not defined.');
-                return false;
+            this.onBeforeRenderBase();
+            this.onBeforeRender();
+
+            if(this.id !== 'home') {
+                // Set header to raised on direct access
+                // $('body').addClass('slideup');
             }
-    		if(this.elPage !== null) {
 
-                this.onBeforeRenderBase();
+            // Set background colour
+            if(this.background !== null) {
+                $('body').addClass('theme-bg-'+this.background)
+            }
 
-                this.onBeforeRender();
+            // Set page theme colour
+            if(this.theme !== null) {
+                $('body').addClass('theme-'+this.theme)
+            }
 
-                if(this.elPage !== '#page-home') {
-                    // Set header to raised on direct access
-                    $('body').addClass('slideup');
-                }
+            // Set header
+            var header = _.template(htmlHeader);
+            $('header').html(header());
 
-                // Set background colour
-                if(this.background !== null) {
-                    $('body').addClass('theme-bg-'+this.background)
-                }
+            // Set footer
+            var footer = _.template(htmlFooter);
+            $('footer').html(footer());
 
-                // Set page theme colour
-                if(this.theme !== null) {
-                    $('body').addClass('theme-'+this.theme)
-                }
+            // Set page contents
+            this.$el.html(this.template(this.data));
 
-                // Set header
-                var header = _.template(htmlHeader);
-                $('header').html(header());
+            this.onBeforeShow();
 
-                // Show back button
-                if(this.elPage !== '#page-home') {
-                    $('.back-home').css('display', 'inline-block');
-                    $('.back-home').removeClass('is-hidden', 300);
-                }
+            $('.js-fadein').fadeIn(400);
+			
+            this.onAfterRenderBase();
 
-                // Set footer
-                var footer = _.template(htmlFooter);
-                $('footer').html(footer());
+            this.onAfterRender();
 
-                // Set page contents
-                this.$el.html(this.template(this.data));
-
-                this.onBeforeShow();
-
-                $(this.elPage).fadeIn(200);
-    			
-                this.onAfterRenderBase();
-
-                this.onAfterRender();
-
-    			return this;
-    		}
-    		return false;
+			return this;
     	},
 
     	onAfterRender: function() {},
@@ -146,6 +132,15 @@ define([
         setMenuActiveItem: function() {
             $('.js-menu li').removeClass('is-active');
             $('.js-menu-' + this.id).addClass('is-active');
+        },
+
+        setMobileMenuButtonHandler: function() {
+            $('.js-open-mobile-menu').click(function() {
+                $('body').addClass('is-inactive');
+            });
+            $('.js-close-mobile-menu').click(function() {
+                $('body').removeClass('is-inactive');
+            });
         }
 
     });

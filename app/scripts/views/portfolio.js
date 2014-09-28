@@ -19,7 +19,6 @@ define([
 
         id:             'portfolio',
         template:       _.template(html),
-        elPage:         '#page-portfolio',
         background:     'gold',
         theme:          'red',
 

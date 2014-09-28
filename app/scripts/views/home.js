@@ -13,7 +13,6 @@ define([
 
         id:             'home',
         template:       _.template(html),
-        elPage:         '#page-home',
         background:     'blue',
         theme:          'blue',
 

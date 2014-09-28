@@ -1,184 +1,188 @@
 <!--
 Template - My Portfolio
 -->
-<div class="row">
-  <div class="col-md-12">
-    <article class="content-canvas theme-border icon-portfolio">
-      <div class="body-heading">
-        <h2>My Portfolio</h2>
-        <div class="body-heading-links">
-          <a href="/pdf/Chris_Mendes_Portfolio.pdf" class="icon pdf">Download</a>
-        </div>
-      </div>
-      
-      <div class="tabbed-content">
-        
-        <!--
-        Tabs
-        -->
-        <div class="tabbed-content-tabs">
-          <ul class="nav nav-tabs" role="tablist">
-            <% _.each(categories, function(cat, id) { %>
-            <li<% if(id === 'highlights') { %> class="active"<% } %>><a href="#<%= id %>" role="tab" data-toggle="tab"><%= cat.name %></a></li>
-            <% }); %>
-          </ul>
-        </div>
-        
-        <!--
-        Tabbed Content
-        -->
-        <div class="tab-content">
-        <% _.each(categories, function(cat, id) { %>
-          <div class="tab-pane<% if(id === 'highlights') { %> active<% } %>" id="<%= id %>">
-            <% if(id === 'highlights') { %>
+<div class="page-container js-fadein">
 
-            <!--
-            Project Highlights
-            -->
-            <section class="l-grid-content">
-              <div class="row">
-              <% _.each(cat.projects, function(project, i) { %>
-                <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
-                <div class="col-md-3">
-                  
-                  <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
-                    <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
-                    <h3 class="project-name"><%= project.name %></h3>
-                    <a class="link" href="#"><%= project.url %></a>
-                    <button type="button" class="btn more-details">Details &raquo;</button>
-                    <!--
-                    Modal
-                    -->
-                    <div class="modal-content js-modal-content-<%= project.id %>">
-                      <div class="js-modal-content-header">
-                        <div class="project-modal-header project-highlight-modal-header">
-                          <h3><%= project.name %></h3>
-                          <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
-                          <p class="description"><%= project.description %> <span class="date"><%= project.date %>.</span></p>
-                          <p class="technology"><strong>Technology</strong>:&nbsp;
-                          <% _.each(project.skills, function(skill, index) { %>
-                            <% if(index > 0) { %>, <% } %><%= skill %>
-                          <% }); %>
-                          </p>
-                          <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
+  <div class="row">
+    <div class="col-md-12">
+      <article class="content-canvas theme-border icon-portfolio">
+        <div class="body-heading">
+          <h2>My Portfolio</h2>
+          <div class="body-heading-links">
+            <a href="/pdf/Chris_Mendes_Portfolio.pdf" class="icon pdf">Download</a>
+          </div>
+        </div>
+        
+        <div class="tabbed-content">
+          
+          <!--
+          Tabs
+          -->
+          <div class="tabbed-content-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+              <% _.each(categories, function(cat, id) { %>
+              <li<% if(id === 'highlights') { %> class="active"<% } %>><a href="#<%= id %>" role="tab" data-toggle="tab"><%= cat.name %></a></li>
+              <% }); %>
+            </ul>
+          </div>
+          
+          <!--
+          Tabbed Content
+          -->
+          <div class="tab-content">
+          <% _.each(categories, function(cat, id) { %>
+            <div class="tab-pane<% if(id === 'highlights') { %> active<% } %>" id="<%= id %>">
+              <% if(id === 'highlights') { %>
+
+              <!--
+              Project Highlights
+              -->
+              <section class="l-grid-content">
+                <div class="row">
+                <% _.each(cat.projects, function(project, i) { %>
+                  <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
+                  <div class="col-md-3">
+                    
+                    <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
+                      <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
+                      <h3 class="project-name"><%= project.name %></h3>
+                      <a class="link" href="#"><%= project.url %></a>
+                      <button type="button" class="btn more-details">Details &raquo;</button>
+                      <!--
+                      Modal
+                      -->
+                      <div class="modal-content js-modal-content-<%= project.id %>">
+                        <div class="js-modal-content-header">
+                          <div class="project-modal-header project-highlight-modal-header">
+                            <h3><%= project.name %></h3>
+                            <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                            <p class="description"><%= project.description %> <span class="date"><%= project.date %>.</span></p>
+                            <p class="technology"><strong>Technology</strong>:&nbsp;
+                            <% _.each(project.skills, function(skill, index) { %>
+                              <% if(index > 0) { %>, <% } %><%= skill %>
+                            <% }); %>
+                            </p>
+                            <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="js-modal-content-body">
-                        <div class="project-modal-body">
-                          <!--
-                          Carousel
-                          -->
-                          <% if(project.screenshots > 1) { %>
-                          <div class="owl-carousel">
-                            <% for(var i = 0; i < project.screenshots; i++) { %>
-                            <div class="item">
-                              <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                        <div class="js-modal-content-body">
+                          <div class="project-modal-body">
+                            <!--
+                            Carousel
+                            -->
+                            <% if(project.screenshots > 1) { %>
+                            <div class="owl-carousel">
+                              <% for(var i = 0; i < project.screenshots; i++) { %>
+                              <div class="item">
+                                <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                              </div>
+                              <% } %>
                             </div>
+                            <% } else { %>
+                            <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
                             <% } %>
                           </div>
-                          <% } else { %>
-                          <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
-                          <% } %>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              <% }); %>
-            </section>
-            <% } else { %>
+                <% }); %>
+              </section>
+              <% } else { %>
 
-            <!--
-            Other Categories
-            -->
-            <section class="l-content-rows">
-              <% _.each(cat.projects, function(project, i) { %>
-              <div class="row project-list-item js-modal-id<% if(project.screenshots === 0) { %> is-not-clickable js-noclick<% } %>" data-modal="<%= project.id %>">
-                <% if(cat.clientLogos) { %>
-                <div class="col-md-2">
-                  <% if(project.clientId !== null) { %>
-                  <div class="client-logo">
-                    <img src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
+              <!--
+              Other Categories
+              -->
+              <section class="l-content-rows">
+                <% _.each(cat.projects, function(project, i) { %>
+                <div class="row project-list-item js-modal-id<% if(project.screenshots === 0) { %> is-not-clickable js-noclick<% } %>" data-modal="<%= project.id %>">
+                  <% if(cat.clientLogos) { %>
+                  <div class="col-md-2">
+                    <% if(project.clientId !== null) { %>
+                    <div class="client-logo">
+                      <img src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
+                    </div>
+                    <% } %>
+                  </div>
+                  <% } %>
+                  <div class="col-md-7">
+                    <div class="screenshot-thumb js-modal-show">
+                      <span class="click-icon"></span>
+                      <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
+                    </div>
+                    <h3 class="project-name"><%= project.name %></h3>
+                    <span class="date"><%= project.date %></span>
+                    <p class="link">
+                      <a href="http://<%= project.url %>" target="_blank">
+                        <%= project.url %>
+                      </a>
+                    </p>
+                    <p class="description">
+                      <%= project.description %>
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <p class="note-heading">Technology:</p>
+                    <ul>
+                      <% _.each(project.skills, function(skill) { %>
+                      <li><%= skill %></li>
+                      <% }); %>
+                    </ul>
+                    <p>
+                      <span class="note-heading">Responsibility:</span><br/>
+                      <%= project.responsibility %>
+                    </p>
+                  </div>
+                  <!--
+                  Modal
+                  -->
+                  <% if(project.screenshots > 0) { %>
+                  <div class="modal-content js-modal-content-<%= project.id %>">
+                    <div class="js-modal-content-header">
+                      <div class="project-modal-header">
+                        <h3><%= project.name %></h3>
+                        <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                        <p class="description"><%= project.description %> <span class="date"><%= project.date %>.</span></p>
+                        <p class="technology"><strong>Technology</strong>:&nbsp;
+                        <% _.each(project.skills, function(skill, index) { %>
+                          <% if(index > 0) { %>, <% } %><%= skill %>
+                        <% }); %>
+                        </p>
+                        <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
+                      </div>
+                    </div>
+                    <div class="js-modal-content-body">
+                      <div class="project-modal-body">
+                        <!--
+                        Carousel
+                        -->
+                        <% if(project.screenshots > 1) { %>
+                        <div class="owl-carousel">
+                          <% for(var i = 0; i < project.screenshots; i++) { %>
+                          <div class="item">
+                            <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                          </div>
+                          <% } %>
+                        </div>
+                        <% } else { %>
+                        <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
+                        <% } %>
+                      </div>
+                    </div>
                   </div>
                   <% } %>
                 </div>
-                <% } %>
-                <div class="col-md-7">
-                  <div class="screenshot-thumb js-modal-show">
-                    <span class="click-icon"></span>
-                    <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
-                  </div>
-                  <h3 class="project-name"><%= project.name %></h3>
-                  <span class="date"><%= project.date %></span>
-                  <p class="link">
-                    <a href="http://<%= project.url %>" target="_blank">
-                      <%= project.url %>
-                    </a>
-                  </p>
-                  <p class="description">
-                    <%= project.description %>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p class="note-heading">Technology:</p>
-                  <ul>
-                    <% _.each(project.skills, function(skill) { %>
-                    <li><%= skill %></li>
-                    <% }); %>
-                  </ul>
-                  <p>
-                    <span class="note-heading">Responsibility:</span><br/>
-                    <%= project.responsibility %>
-                  </p>
-                </div>
-                <!--
-                Modal
-                -->
-                <% if(project.screenshots > 0) { %>
-                <div class="modal-content js-modal-content-<%= project.id %>">
-                  <div class="js-modal-content-header">
-                    <div class="project-modal-header">
-                      <h3><%= project.name %></h3>
-                      <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
-                      <p class="description"><%= project.description %> <span class="date"><%= project.date %>.</span></p>
-                      <p class="technology"><strong>Technology</strong>:&nbsp;
-                      <% _.each(project.skills, function(skill, index) { %>
-                        <% if(index > 0) { %>, <% } %><%= skill %>
-                      <% }); %>
-                      </p>
-                      <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
-                    </div>
-                  </div>
-                  <div class="js-modal-content-body">
-                    <div class="project-modal-body">
-                      <!--
-                      Carousel
-                      -->
-                      <% if(project.screenshots > 1) { %>
-                      <div class="owl-carousel">
-                        <% for(var i = 0; i < project.screenshots; i++) { %>
-                        <div class="item">
-                          <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
-                        </div>
-                        <% } %>
-                      </div>
-                      <% } else { %>
-                      <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
-                      <% } %>
-                    </div>
-                  </div>
-                </div>
-                <% } %>
-              </div>
-              <% }); %>
-            </section>
-            <% } %>
+                <% }); %>
+              </section>
+              <% } %>
+            </div>
+            <% }); %>
           </div>
-          <% }); %>
-        </div>
 
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
   </div>
+
 </div>

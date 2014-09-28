@@ -11,7 +11,6 @@ define([
 
         id:             'about',
         template:       _.template(html),
-        elPage:         '#page-about',
         background:     'teal',
         theme:          'green'
 

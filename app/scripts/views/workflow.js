@@ -12,7 +12,6 @@ define([
 
         id:             'workflow',
         template:       _.template(html),
-        elPage:         '#page-workflow',
         background:     'teal',
         theme:          'green',
 

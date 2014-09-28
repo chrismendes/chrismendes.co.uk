@@ -14,17 +14,11 @@ define([
 
         id:             'skills',
         template:       _.template(html),
-        elPage:         '#page-skills',
         background:     'gold',
         theme:          'green',
 
         events: {
             'click .js-nav':        'changeTab'
-        },
-
-        onBeforeShow: function() {
-            // $('body').addClass('theme-'+this.colour);
-            // $('.js-body-title').fadeOut();
         },
 
         // Fade out current body content, fade in new
