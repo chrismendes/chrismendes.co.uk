@@ -11,8 +11,8 @@ define([
 
     var BaseView = Backbone.View.extend({
 
-    	id:             null,
-        el:             '#page-contents',
+    	el:             '.js-page-template',
+        id:             null,
     	background:     null,
         theme:          null,
         data:           null,
@@ -135,10 +135,10 @@ define([
 
         setMobileMenuButtonHandler: function() {
             $('.js-open-mobile-menu').click(function() {
-                $('body').addClass('is-inactive');
+                $('body').addClass('mobile-menu-open');
             });
             $('.js-close-mobile-menu').click(function() {
-                $('body').removeClass('is-inactive');
+                $('body').removeClass('mobile-menu-open');
             });
         }
 
