@@ -1,12 +1,19 @@
 .mobile-menu-container {
-    display: none;
-
     position: absolute;
     z-index: 9;
     top: 0px;
     right: 0px;
+    width: 250px;
     height: 100%;
     background: #4F4F4F;
+
+    // -webkit-transform: translate3d(250px, 0, 0);
+    // transform: translate3d(250px, 0, 0);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+
+    -webkit-transition: -webkit-transform 0.5s ease 0.1s;
+    transition: transform 0.5s ease 0.1s;
 
     ul, li {
         list-style: none;
@@ -41,15 +48,28 @@
     }
 }
 
+.app-container {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+
+    -webkit-transition: all 0.5s ease 0.1s;
+    transition: all 0.5s ease 0.1s;
+}
+
 body.mobile-menu-open {
     overflow: hidden;
     cursor: default;
 
     .app-container {
-        .opacity(0.4);
+        .opacity(0.3);
+        -webkit-transform: translateX(-250px);
+        transform: translateX(-250px);
     }
 
     .mobile-menu-container {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+
         display: block;
     }
 }
