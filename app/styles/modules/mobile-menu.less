@@ -12,8 +12,8 @@
     -webkit-transform: translateX(250px);
     transform: translateX(250px);
 
-    -webkit-transition: -webkit-transform 0.5s ease 0.1s;
-    transition: transform 0.5s ease 0.1s;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
 
     ul, li {
         list-style: none;
@@ -52,12 +52,12 @@
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
 
-    -webkit-transition: all 0.5s ease 0.1s;
-    transition: all 0.5s ease 0.1s;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 body.mobile-menu-open {
-    overflow: hidden;
+    position: fixed;
     cursor: default;
 
     .app-container {
