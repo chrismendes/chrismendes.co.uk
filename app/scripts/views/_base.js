@@ -25,7 +25,7 @@ define([
 
         onAfterRenderBase: function() {
             this.setMenuActiveItem();
-            this.setMobileMenuButtonHandler();
+            this.setMobileMenuButtonHandlers();
         },
 
     	render: function() {
@@ -111,7 +111,6 @@ define([
         },
 
         closeModal: function() {
-            console.log('closeModal');
             $('.js-modal').close();
         },
 
@@ -133,11 +132,13 @@ define([
             $('.js-menu-' + this.id).addClass('is-active');
         },
 
-        setMobileMenuButtonHandler: function() {
-            $('.js-open-mobile-menu').click(function() {
+        setMobileMenuButtonHandlers: function() {
+            $('.js-open-mobile-menu').click(function(e) {
+                e.preventDefault();
                 $('body').addClass('mobile-menu-open');
             });
-            $('.js-close-mobile-menu').click(function() {
+            $('.js-close-mobile-menu').click(function(e) {
+                e.preventDefault();
                 $('body').removeClass('mobile-menu-open');
             });
         }
