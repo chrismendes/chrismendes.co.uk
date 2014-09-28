@@ -9,8 +9,11 @@ define([
     'views/employment',
     'views/learning',
     'views/workflow',
-    'views/about'
-], function(HomeView, CvView, PortfolioView, SkillsView, EmploymentView, LearningView, WorkflowView, AboutView) {
+    'views/about',
+    'fastclick'
+], function(HomeView, CvView, PortfolioView, SkillsView, EmploymentView, LearningView, WorkflowView, AboutView, FastClick) {
+
+    new FastClick(document.body);
 
     return {
 

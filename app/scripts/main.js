@@ -16,7 +16,8 @@ require.config({
         'bootstrap-tab':            '../bower_components/bootstrap/js/tab',
         'bootstrap-collapse':       '../bower_components/bootstrap/js/collapse',
         'bootstrap-carousel':       '../bower_components/bootstrap/js/carousel',
-        'owlcarousel':              '../bower_components/owlcarousel/owl-carousel/owl.carousel'
+        'owlcarousel':              '../bower_components/owlcarousel/owl-carousel/owl.carousel',
+        'fastclick':                '../bower_components/fastclick-amd/fastclick',
     },
     shim: {
         'underscore': {
