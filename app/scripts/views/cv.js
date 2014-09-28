@@ -15,7 +15,11 @@ define([
         template:       _.template(html),
         elPage:         '#page-cv',
         background:     'green',
-        theme:          'red'
+        theme:          'red',
+
+        onAfterRender: function() {
+            $('body').addClass('is-inactive');
+        }
 
     });
 

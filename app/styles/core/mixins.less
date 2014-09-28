@@ -34,3 +34,7 @@ General Mixins
     -webkit-box-shadow: none;
     box-shadow:         none;
 }
+
+.gradient(@colour1, @colour2) {
+    background-image: linear-gradient(to right, @colour1, @colour2, @colour1);
+}
