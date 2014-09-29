@@ -5,7 +5,6 @@ html, body {
     min-height: 100%;
 }
 body {
-    padding: 30px 0px 75px 0px;
     overflow-y: scroll;
     overflow-x: hidden;
     position: static;
@@ -13,18 +12,7 @@ body {
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
-
-    &.is-not-raised {
-        padding: 60px 0px;
-    }
 }
-    // Tablet
-    @media screen and (max-width: @screen-sm-max) {
-        body, body.is-not-raised { // Cancel body sliding up/down on page change
-            padding: 20px 0px 70px 0px;
-        }
-    }
-
 
 /* -----------------
 Typeface

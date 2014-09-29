@@ -3,6 +3,21 @@
 /* -----------------
 Top Level
 ----------------- */
+.app-container {
+  padding: 30px 0px 75px 0px;
+}
+body.is-not-raised {
+  .app-container {
+    padding: 60px 0px;
+  }
+}
+  // Tablet
+  @media screen and (max-width: @screen-sm-max) {
+      .app-container, .app-container.is-not-raised { // Cancel body sliding up/down on page change
+          padding: 20px 0px 0px 0px;
+      }
+  }
+
 .page-container {
     display: none; // Hidden on page load, faded in via JS
     margin-top: 20px;

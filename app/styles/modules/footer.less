@@ -1,4 +1,6 @@
 footer {
+    padding-top: 20px;
+
     .navbar {
 
         .bgopacity(#000000, 30%);
@@ -48,17 +50,27 @@ footer {
     }
 }
 
+// Tablet
+@media screen and (max-width: @screen-sm-max) {
+    footer {
+        padding-top: 70px;
+    }
+}
+
 // Phone
 @media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
-    .navbar .navbar-nav {
-        width: 60%;
-        float: left;
-        margin-left: 0px;
-    }
-    .copyright {
-        width: 120px;
-        margin-top: -10px;
-        display: inline-block;
+    footer {
+        padding-top: 70px;
+        .navbar .navbar-nav {
+            width: 60%;
+            float: left;
+            margin-left: 0px;
+        }
+        .copyright {
+            width: 120px;
+            margin-top: -10px;
+            display: inline-block;
+        }
     }
 }
 
