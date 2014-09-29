@@ -13,7 +13,7 @@ body.is-not-raised {
 }
   // Tablet
   @media screen and (max-width: @screen-sm-max) {
-      .app-container, .app-container.is-not-raised { // Cancel body sliding up/down on page change
+      .app-container, body.is-not-raised .app-container { // Cancel body sliding up/down on page change
           padding: 20px 0px 0px 0px;
       }
   }
