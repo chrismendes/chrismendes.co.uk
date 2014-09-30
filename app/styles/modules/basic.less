@@ -111,6 +111,17 @@ Tabbed Content
             display: block;
         }
     }
+
+    // Phone
+    @media screen and (max-width: @screen-xs-max) {
+        .tabbed-content-tabs {
+            width: 100%;
+
+            li .sub-label {
+                display: none;
+            }
+        }
+    }
 }
 
 
@@ -201,6 +212,11 @@ Info Box
         &.caption-centre {
             text-align: center;
         }
+    }
+
+    // Phone
+    @media screen and (max-width: @screen-xs-max) {
+        display: none;
     }
 }
 
