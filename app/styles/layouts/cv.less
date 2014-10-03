@@ -14,6 +14,14 @@
     .l-cv-table {
         .row {
             margin-bottom: 6px;
+
+            @media screen and (max-width: @screen-xs-max) {
+                margin-bottom: 0px;
+
+                .column-heading {
+                    margin-top: 10px;
+                }
+            }
         }
     }
 
