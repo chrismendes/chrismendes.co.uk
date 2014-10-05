@@ -11,7 +11,7 @@ define([
 
     var BaseView = Backbone.View.extend({
 
-    	el:             '.js-page-template',
+    	el:             '.js-page-container',
         id:             null,
     	background:     null,
         theme:          null,
@@ -31,11 +31,6 @@ define([
     	render: function() {
             this.onBeforeRenderBase();
             this.onBeforeRender();
-
-            if(this.id !== 'home') {
-                // Set header to raised on direct access
-                // $('body').addClass('slideup');
-            }
 
             // Set background colour
             if(this.background !== null) {
