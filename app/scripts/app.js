@@ -6,12 +6,12 @@ define([
     'views/cv',
     'views/portfolio',
     'views/skills',
-    'views/employment',
+    'views/recruitment',
     'views/learning',
     'views/workflow',
     'views/about',
     // 'fastclick'
-], function(HomeView, CvView, PortfolioView, SkillsView, EmploymentView, LearningView, WorkflowView, AboutView/*, FastClick*/) {
+], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, LearningView, WorkflowView, AboutView/*, FastClick*/) {
 
     // new FastClick(document.body);
 
@@ -53,9 +53,9 @@ define([
         },
 
         // Employment Page
-        showEmployment: function() {
-            var employment = new EmploymentView();
-            this.showView(employment);
+        showRecruitment: function() {
+            var recruitment = new RecruitmentView();
+            this.showView(recruitment);
         },
 
         // Learning Page

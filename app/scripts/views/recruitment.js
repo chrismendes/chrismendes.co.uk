@@ -3,19 +3,19 @@
 // -------
 define([
     'views/_base',
-    'text!/templates/employment.html',
+    'text!/templates/recruitment.html',
     'common'
 ], function(BaseView, html, Common) {
 
-    var EmploymentView = BaseView.extend({
+    var RecruitmentView = BaseView.extend({
 
-        id:             'employment',
+        id:             'recruitment',
         template:       _.template(html),
         background:     'purple',
         theme:          'green'
 
     });
 
-    return EmploymentView;
+    return RecruitmentView;
 
 });
