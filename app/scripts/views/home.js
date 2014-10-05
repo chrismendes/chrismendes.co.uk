@@ -19,8 +19,7 @@ define([
         events: {
             'mouseenter .box':       'onBoxHover',
             'mouseleave .box':       'onBoxHoverOut',
-            'click .box':            'onBoxClick',
-            'click .js-modal-close': 'closeContactModal'
+            'click .box':            'onBoxClick'
         },
 
         onAfterRender: function() {
@@ -72,10 +71,6 @@ define([
                     });
                 });
             }, 200);
-        },
-
-        closeContactModal: function() {
-            this.closeModal();
         }
 
     });

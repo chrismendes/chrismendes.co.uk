@@ -12,7 +12,11 @@ define([
         id:             'recruitment',
         template:       _.template(html),
         background:     'purple',
-        theme:          'green'
+        theme:          'green',
+
+        onAfterRender: function() {
+            this.closeModal();
+        }
 
     });
 

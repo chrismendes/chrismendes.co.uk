@@ -111,7 +111,7 @@ define([
         },
 
         closeModal: function() {
-            $('.js-modal').close();
+            $('.js-modal').modal('hide');
         },
 
         // Return jQuery element for clicked box, whether box itself or child element clicked
