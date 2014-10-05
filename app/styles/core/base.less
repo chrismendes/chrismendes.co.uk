@@ -5,10 +5,6 @@ html, body {
     min-height: 100%;
 }
 body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: static;
-    
     font-family: Arial;
     font-size: 14px;
     line-height: 18px;
@@ -48,6 +44,12 @@ small {
 }
 a {
     text-decoration: none;
+}
+ul {
+    // Phone
+    @media screen and (max-width: @screen-xs-max) {
+        padding-left: 18px;
+    }
 }
 
 /* -----------------
