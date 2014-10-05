@@ -13,7 +13,7 @@ define([
             'cv':           'showCV',
             'portfolio':    'showPortfolio',
             'skills':       'showSkills',
-            'employment':   'showEmployment',
+            'recruitment':  'showRecruitment',
             'learning':     'showLearning',
             'workflow':     'showWorkflow',
             'about':        'showAboutMe'
@@ -42,8 +42,8 @@ define([
             App.showSkills();
         },
         // Employment Page
-        showEmployment: function() {
-            App.showEmployment();
+        showRecruitment: function() {
+            App.showRecruitment();
         },
         // Learning Page
         showLearning: function() {
