@@ -31,7 +31,7 @@
     },
     {
         "name":             "Capablue TV Everywhere",
-        "url":              "Not yet published",
+        "url":              "dev-capella-tve.connected-live.tv",
         "description":      "",
         "skills":           [ "HTML, CSS, Foundation", "JavaScript, jQuery, Backbone.js", "Responsive development", "PHP" ],
         "employer":         null,
