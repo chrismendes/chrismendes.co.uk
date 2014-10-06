@@ -120,6 +120,11 @@ Template - My Portfolio
                     <p class="description">
                       <%= project.description %>
                     </p>
+                    <% if(project.codeSample === true) { %>
+                    <a class="btn btn-icon btn-icon-github" href="<%= project.codeSampleURL %>" target="_blank">
+                      <span>Review code ></span>
+                    </a>
+                    <% } %>
                   </div>
                   <div class="col-md-3">
                     <p class="note-heading">Technology:</p>

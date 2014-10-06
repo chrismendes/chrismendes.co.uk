@@ -33,11 +33,11 @@ define([
 
         prepareData: function(collection) {
             var categories = {
-                highlights:     { name: 'Project Highlights',   filter: { highlight: true }                                       },
-                tech:           { name: 'JavaScript MVC',       filter: { techCategory: true },                 clientLogos: true },
-                big:            { name: 'Big Business',         filter: { employer: 'DNX Marketing' },          clientLogos: true },
-                small:          { name: 'Small Business',       filter: { employer: 'Fingo Marketing' }                           },
-                other:          { name: 'Other Projects',       filter: { contract: false, employer: null }                       }
+                highlights:     { name: 'Project Highlights',   filter: { highlight:  true }                                        },
+                big:            { name: 'Big Business',         filter: { employer:   'DNX Marketing' },          clientLogos: true },
+                small:          { name: 'Small Business',       filter: { employer:   'Fingo Marketing' }                           },
+                other:          { name: 'Other Projects',       filter: { contract:   false, employer: null }                       },
+                codeSamples:    { name: 'Code Samples',         filter: { codeSample: true }                                        }
             };
             var categoryData = {};
 
