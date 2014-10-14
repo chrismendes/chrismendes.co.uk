@@ -11,7 +11,7 @@
         "highlight":        true,
         "codeSample":       false,
         "codeSampleURL":    null,
-        "screenshots":      0,
+        "screenshots":      3,
         "id":               "capablue",
         "clientId":         "capablue"
     },
@@ -27,7 +27,7 @@
         "highlight":        true,
         "codeSample":       false,
         "codeSampleURL":    null,
-        "screenshots":      6,
+        "screenshots":      5,
         "id":               "successfactors",
         "clientId":         "successfactors"
     },
@@ -43,7 +43,7 @@
         "highlight":        true,
         "codeSample":       false,
         "codeSampleURL":    null,
-        "screenshots":      1,
+        "screenshots":      3,
         "id":               "capablue-tve",
         "clientId":         "capablue"
     },
