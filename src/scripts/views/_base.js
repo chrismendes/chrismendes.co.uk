@@ -5,8 +5,8 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!/templates/_header.html',
-    'text!/templates/_footer.html'
+    'text!../../templates/_header.html',
+    'text!../../templates/_footer.html'
 ], function($, _, Backbone, htmlHeader, htmlFooter) {
 
     'use strict';

@@ -4,7 +4,7 @@
 define([
     'underscore',
     'views/_base',
-    'text!/templates/recruitment.html'
+    'text!../../templates/recruitment.html'
 ], function(_, BaseView, html) {
 
     'use strict';

@@ -6,7 +6,7 @@ define([
     'underscore',
     'backbone',
     'views/_base',
-    'text!/templates/skills.html',
+    'text!../../templates/skills.html',
     'bootstrap-tab'
 ], function($, _, Backbone, BaseView, html) {
 

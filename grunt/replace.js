@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             replacements: [
                 // Swap require.js reference for main.js
                 {
-                    from:   'libs/requirejs/require.js',
+                    from:   'libraries/requirejs/require.js',
                     to:     'js/main.js'
                 },
                 // Remove redundant data-main attribute
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
         },
 
         // Update src property for all images with CDN URL for production
-        // e.g. <img src="../images/logo.png" -> <img src="https://cdn.capablue.com/images/logo.png"...
+        // e.g. <img src="../images/logo.png" -> <img src="https://cdn.cloudserver.com/images/logo.png"...
         cdn: {
             src: [
                 '<%= config.dist.root %>/index.html',
@@ -41,18 +41,6 @@ module.exports = function(grunt) {
                 {
                     from:   '../images',
                     to:     cdnBaseUrl
-                }
-            ]
-        },
-
-        // Update views/news module in compiled main.js so as to retrieve news HTML content from within dist directory structure (different from dev)
-        newstemplates: {
-            src: ['<%= config.dist.scripts %>/main.js'],
-            overwrite: true,
-            replacements: [
-                {
-                    from:   'templates/content/main/news/',
-                    to:     'html/news/'
                 }
             ]
         }

@@ -5,7 +5,7 @@ define([
     'jquery',
     'underscore',
     'views/_base',
-    'text!/templates/cv.html',
+    'text!../../templates/cv.html',
     'bootstrap-tab'
 ], function($, _, BaseView, html) {
 

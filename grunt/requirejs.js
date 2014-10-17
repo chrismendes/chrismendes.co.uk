@@ -9,12 +9,12 @@ module.exports = function(grunt) {
     requirejs = {
         compile: {
             options: {
-                baseUrl:                    '<%= config.dev.root %>',
+                baseUrl:                    '<%= config.dev.scripts %>',
                 out:                        '<%= config.dist.scripts %>/main.js',
-                mainConfigFile:             '<%= config.dev.root %>/config.js',
+                mainConfigFile:             '<%= config.dev.scripts %>/main.js',
                 findNestedDependencies:     true,
                 name:                       'main',
-                include:                    ['libs/almond/almond', 'main'],
+                include:                    ['../libraries/almond/almond', 'main'],
                 stubModules:                ['text'],
                 insertRequire:              ['main'],
                 preserveLicenseComments:    false,

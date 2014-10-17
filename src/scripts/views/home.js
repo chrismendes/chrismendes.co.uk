@@ -6,7 +6,7 @@ define([
     'underscore',
     'backbone',
     'views/_base',
-    'text!/templates/home.html'
+    'text!../../templates/home.html'
 ], function($, _, Backbone, BaseView, html) {
 
     'use strict';

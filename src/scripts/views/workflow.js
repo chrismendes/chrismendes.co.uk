@@ -5,7 +5,7 @@ define([
     'jqueryui',
     'underscore',
     'views/_base',
-    'text!/templates/workflow.html'
+    'text!../../templates/workflow.html'
 ], function($, _, BaseView, html) {
 
     'use strict';
