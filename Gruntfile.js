@@ -79,7 +79,7 @@ module.exports = function (grunt) {
             'htmlmin',                // Minify HTML
         ]);
         if(target === 'production') {
-            /* jshint: noempty: false */
+            /* jshint noempty: false */
             // grunt.task.run(['replace:cdn']); // Update all image src paths based on the site's external CDN (production only, as CDN fetches images from live environment)
         }
     });

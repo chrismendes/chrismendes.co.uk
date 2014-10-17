@@ -3,12 +3,14 @@
 // -------
 define([
     'jquery',
+    'underscore',
     'backbone',
     'views/_base',
     'text!/templates/skills.html',
-    'common',
     'bootstrap-tab'
-], function($, Backbone, BaseView, html, Common) {
+], function($, _, Backbone, BaseView, html) {
+
+    'use strict';
 
     var SkillsView = BaseView.extend({
 
@@ -47,7 +49,7 @@ define([
 
         // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyBox: function(e) {
-            return (e.target.tagName != 'DIV') ? $(e.target).parents('.js-nav') : $(e.target);
+            return (e.target.tagName !== 'DIV') ? $(e.target).parents('.js-nav') : $(e.target);
         },
 
         // Page entrance animations

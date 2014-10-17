@@ -3,17 +3,19 @@
 // -------
 define([
     'jquery',
+    'underscore',
     'backbone',
-    'common',
     'text!/templates/_header.html',
     'text!/templates/_footer.html'
-], function($, Backbone, Common, htmlHeader, htmlFooter) {
+], function($, _, Backbone, htmlHeader, htmlFooter) {
+
+    'use strict';
 
     var BaseView = Backbone.View.extend({
 
-    	el:             '.js-page-container',
+        el:             '.js-page-container',
         id:             null,
-    	background:     null,
+        background:     null,
         theme:          null,
         data:           null,
 
@@ -28,18 +30,18 @@ define([
             this.setMobileMenuButtonHandlers();
         },
 
-    	render: function() {
+        render: function() {
             this.onBeforeRenderBase();
             this.onBeforeRender();
 
             // Set background colour
             if(this.background !== null) {
-                $('body').addClass('theme-bg-'+this.background)
+                $('body').addClass('theme-bg-'+this.background);
             }
 
             // Set page theme colour
             if(this.theme !== null) {
-                $('body').addClass('theme-'+this.theme)
+                $('body').addClass('theme-'+this.theme);
             }
 
             // Set header
@@ -56,19 +58,19 @@ define([
             this.onBeforeShow();
 
             $('.js-fadein').fadeIn(400);
-			
+            
             this.onAfterRenderBase();
 
             this.onAfterRender();
 
-			return this;
-    	},
+            return this;
+        },
 
-    	onAfterRender: function() {},
+        onAfterRender: function() {},
 
         onBeforeShow: function() {},
 
-    	destroy: function() {
+        destroy: function() {
             this.stopListening();
             this.undelegateEvents();
             this.unbind();
@@ -80,7 +82,7 @@ define([
             var modalContent = {
                 header: $(modalTarget+' .js-modal-content-header').html(),
                 body:   $(modalTarget+' .js-modal-content-body').html()
-            }
+            };
             // Determine large or small modal
             if($(modalTarget).attr('data-modal-large') === 'false') {
                 $('.js-modal .modal-dialog').removeClass('modal-lg');
@@ -111,7 +113,7 @@ define([
 
         // Return jQuery element for clicked box, whether box itself or child element clicked
         identifyClickedBox: function(e) {
-            return (e.target.tagName != 'DIV') ? $(e.target).parent() : $(e.target);
+            return (e.target.tagName !== 'DIV') ? $(e.target).parent() : $(e.target);
         },
 
         clearThemeClasses: function() {

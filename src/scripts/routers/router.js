@@ -6,6 +6,8 @@ define([
     'app'
 ], function(Backbone, App) {
 
+    'use strict';
+
     var Router = Backbone.Router.extend({
 
         routes: {

@@ -2,8 +2,10 @@
 // Project Model
 // -------
 define([
-    'backbone' 
+    'backbone'
 ], function(Backbone) {
+
+    'use strict';
 
     var ProjectModel = Backbone.Model.extend({
 

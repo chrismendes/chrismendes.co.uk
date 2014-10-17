@@ -3,11 +3,13 @@
 // -------
 define([
     'jqueryui',
+    'underscore',
     'backbone',
     'views/_base',
-    'text!/templates/home.html',
-    'common'    
-], function($, Backbone, BaseView, html, Common) {
+    'text!/templates/home.html'
+], function($, _, Backbone, BaseView, html) {
+
+    'use strict';
 
     var HomeView = BaseView.extend({
 
@@ -61,16 +63,39 @@ define([
             // Fade out all boxes not clicked first
             $('.box').not(boxClicked).fadeOut();
             // After short delay, fade out clicked box, change background, and redirect on complete
+            var self = this;
             _.delay(function() {
                 boxClicked.fadeOut(300, function() {
                     $('body').removeClass('is-not-raised', 500, 'easeOutCubic', function() {
-                        Common.setBackground(boxClicked.attr('data-bg'), function() {
+                        self.setBackground(boxClicked.attr('data-bg'), function() {
                             // Change page
                             Backbone.history.navigate(navigateTo, { trigger: true });
                         });
                     });
                 });
             }, 200);
+        },
+
+        // Fade in new background
+        setBackground: function(colour, onComplete) {
+            if(_.isUndefined(colour)) {
+                return false;
+            }
+            // Preserve 'slideup' body class if present
+            var bodySlideUp = $('body').hasClass('slideup');
+            
+            // Fade in background via 'bg-transition' element
+            $('#bg-transition').removeClass().addClass('theme-bg-'+colour);
+            $('#bg-transition').fadeIn(500, function() {
+                $('body').removeClass().addClass('theme-bg-'+colour);
+                if(bodySlideUp) {
+                    $('body').addClass('slideup');
+                }
+                $('#bg-transition').hide();
+                if(onComplete) {
+                    onComplete();
+                }
+            });
         }
 
     });

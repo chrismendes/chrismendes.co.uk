@@ -3,11 +3,13 @@
 // -------
 define([
     'jquery',
+    'underscore',
     'views/_base',
     'text!/templates/cv.html',
-    'common',
     'bootstrap-tab'
-], function($, BaseView, html) {
+], function($, _, BaseView, html) {
+
+    'use strict';
 
     var CvView = BaseView.extend({
 

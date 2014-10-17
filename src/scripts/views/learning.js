@@ -2,10 +2,12 @@
 // Learning Page
 // -------
 define([
+    'underscore',
     'views/_base',
-    'text!/templates/learning.html',
-    'common'
-], function(BaseView, html, Common) {
+    'text!/templates/learning.html'
+], function(_, BaseView, html) {
+
+    'use strict';
 
     var LearningView = BaseView.extend({
 

@@ -3,17 +3,19 @@
 // -------
 define([
     'jquery',
+    'underscore',
     'backbone',
     'views/_base',
     'text!/templates/portfolio.html',
     'collections/projects',
     'text!/data/portfolio.json',
-    'common',
     'bootstrap-tab',
     'bootstrap-modal',
     'bootstrap-transition',
     'owlcarousel'
-], function($, Backbone, BaseView, html, ProjectCollection, PortfolioData, Common) {
+], function($, _, Backbone, BaseView, html, ProjectCollection, PortfolioData) {
+
+    'use strict';
 
     var PortfolioView = BaseView.extend({
 
@@ -32,6 +34,7 @@ define([
         },
 
         prepareData: function(collection) {
+            /* jshint maxlen: 200 */
             var categories = {
                 highlights:     { name: 'Project Highlights',   filter: { highlight:  true }                                        },
                 big:            { name: 'Big Business',         filter: { employer:   'DNX Marketing' },          clientLogos: true },
@@ -45,7 +48,7 @@ define([
             _.each(categories, function(config, key) {
                 var projects = collection.where(config.filter);
                 _.each(projects, function(proj, key) {
-                    projects[key] = proj.attributes
+                    projects[key] = proj.attributes;
                 });
                 categoryData[key] = { name: config.name, projects: projects, clientLogos: config.clientLogos };
             });

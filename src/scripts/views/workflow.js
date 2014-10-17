@@ -3,10 +3,12 @@
 // -------
 define([
     'jqueryui',
+    'underscore',
     'views/_base',
-    'text!/templates/workflow.html',
-    'common'
-], function($, BaseView, html, Common) {
+    'text!/templates/workflow.html'
+], function($, _, BaseView, html) {
+
+    'use strict';
 
     var WorkflowView = BaseView.extend({
 

@@ -1,5 +1,3 @@
-'use strict';
-
 // -------
 // RequireJS Config
 // -------
@@ -64,5 +62,7 @@ require.config({
 require([
     'routers/router'
 ], function(Router) {
+    'use strict';
+    /* jshint nonew: false */
     new Router();
 });

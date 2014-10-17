@@ -10,10 +10,11 @@ define([
     'views/learning',
     'views/workflow',
     'views/about',
-    // 'fastclick'
-], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, LearningView, WorkflowView, AboutView/*, FastClick*/) {
+], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, LearningView, WorkflowView, AboutView) {
 
-    // new FastClick(document.body);
+    'use strict';
+
+    // (TODO: Add FastClick.js)
 
     return {
 
@@ -76,6 +77,6 @@ define([
             this.showView(about);
         }
 
-    }
+    };
 
 });

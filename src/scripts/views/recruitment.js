@@ -2,10 +2,12 @@
 // Employment Page
 // -------
 define([
+    'underscore',
     'views/_base',
-    'text!/templates/recruitment.html',
-    'common'
-], function(BaseView, html, Common) {
+    'text!/templates/recruitment.html'
+], function(_, BaseView, html) {
+
+    'use strict';
 
     var RecruitmentView = BaseView.extend({
 

@@ -2,10 +2,12 @@
 // About Me Page
 // -------
 define([
+    'underscore',
     'views/_base',
-    'text!/templates/about.html',
-    'common'
-], function(BaseView, html, Common) {
+    'text!/templates/about.html'
+], function(_, BaseView, html) {
+
+    'use strict';
 
     var AboutView = BaseView.extend({
 

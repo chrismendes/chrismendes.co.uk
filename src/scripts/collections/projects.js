@@ -6,6 +6,8 @@ define([
     'models/project'
 ], function(Backbone, ProjectModel) {
 
+    'use strict';
+
     var ProjectsCollection = Backbone.Collection.extend({
 
         model: ProjectModel
