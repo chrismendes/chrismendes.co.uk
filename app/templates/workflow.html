@@ -10,8 +10,8 @@ Template - Dev Workflow
         
         <div class="l-spaced-rows">
           <div class="row">
-            <div class="col-md-12">
-              <p class="large">For the benefit of Development Managers and other developers, below are some of the tools and applications that I am familiar with and use project-to-project where possible:</p>
+            <div class="col-md-9">
+              <p class="large">For the benefit of Development Managers and other Developers, below are some of the tools and applications that I am familiar with and use project-to-project where possible:</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ Template - Dev Workflow
                 <!--
                 Grunt
                 -->
-                <div class="tab-pane js-tab active" id="select">
+                <div class="tab-pane js-tab _active" id="select">
                   <h3>Select an icon</h3>
                 </div>
                 <div class="tab-pane js-tab" id="grunt">
@@ -75,23 +75,22 @@ Template - Dev Workflow
                       <a class="link" href="http://gruntjs.com" target="_blank">www.gruntjs.com</a>
                     </div>
                     <h3>Grunt</h3>
-                    <p class="description large">An automation tool that aids development, testing, and optimisation.</p>
+                    <p class="description large">Automation tool that aids development, testing, and optimisation.</p>
                   </div>
                   <hr/>
-                  <p>Some of my favourite Grunt tasks are:</p>
+                  <p>I use Grunt for JavaScript linting, compiling Sass/LESS, generating spritesheets, browser auto-reloading, and for other development admin.</p>
+                  <p>But also for building and optimising an app fit for a production environment, involving code concatenation and minification for example.</p>
+                  <p>A few of my favourite Grunt plugins are:</p>
                   <ul>
-                    <li><a href="https://github.com/shakyShane/grunt-browser-sync" target="_blank">grunt-browser-sync</a> - Watches code and injects changes into the browser on each target device at once</li>
-                    <li><a href="https://github.com/gruntjs/grunt-contrib-jshint" target="_blank">grunt-contrib-jshint</a> - Lints JavaScript and enforces code standards as well as pre-empts errors</li>
-                    <li><a href="https://github.com/nDmitry/grunt-autoprefixer" target="_blank">grunt-autoprefixer</a> - Scans CSS and inserts missing browser specific prefixes, such as <em>-webkit-user-select</em></li>
-                    <li><a href="https://github.com/cbas/grunt-rev" target="_blank">grunt-rev</a> - Prefixes asset filenames with a unique hash for anti-caching purposes</li>
+                    <li><a href="https://github.com/shakyShane/grunt-browser-sync" target="_blank">grunt-browser-sync</a> - Watches code and injects changes into the browser on each target device at once, and keeping them all in sync when navigating</li>
+                    <li><a href="https://github.com/cbas/grunt-rev" target="_blank">grunt-rev</a> - Appends to asset filenames a unique content-based hash for anti-caching purposes</li>
                     <li><a href="https://github.com/Ensighten/grunt-spritesmith" target="_blank">grunt-spritesmith</a> - Generates sprite sheets and CSS based on specified image files</li>
-                    <li><a href="https://github.com/asciidisco/grunt-requirejs" target="_blank">grunt-requirejs</a> - Compiles requirejs module driven applications into an optimised build, optionally with almond.js</li>
                   </ul>
                 </div>
                 <!--
                 Chrome DevTools
                 -->
-                <div class="tab-pane js-tab" id="devtools">
+                <div class="tab-pane js-tab active" id="devtools">
                   <div class="heading-description-image">
                     <div class="info-box">
                       <a href="https://developer.chrome.com/devtools" target="_blank">
@@ -100,7 +99,7 @@ Template - Dev Workflow
                       <a class="link" href="https://developer.chrome.com/devtools" target="_blank">developer.chrome.com/devtools</a>
                     </div>
                     <h3>Chrome DevTools</h3>
-                    <p class="description large">Lorem ipsum.</p>
+                    <p class="description large">Web debugging toolkit.</p>
                   </div>
                   <hr/>
                   <p>Lorem ipsum.</p>
@@ -117,11 +116,11 @@ Template - Dev Workflow
                       <a class="link" href="http://bower.io" target="_blank">bower.io</a>
                     </div>
                     <h3>Bower / NPM</h3>
-                    <p class="description large">A package manager that enables easy management of library and framework dependencies.</p>
+                    <p class="description large">Package managers that enable easy management of library and framework dependencies.</p>
                   </div>
                   <hr/>
-                  <p>Having used Bower for a couple of years commercially, I am very comfortable with the essential functionality for use on a given project.</p>
-                  <p>I am also compentant with Node Package Manager (NPM) for similar purposes, but predominantly with respect to development dependencies, such as Grunt modules.</p>
+                  <p>Having used Bower for a couple of years now within development teams, it is a must for keeping developers on the same page.</p>
+                  <p>I use the Node Package Manager (NPM) for similar purposes, but predominantly with respect to development dependencies such as Grunt plugins.</p>
                 </div>
                 <!--
                 Sublime Text
@@ -155,7 +154,9 @@ Template - Dev Workflow
                     <p class="description large">Modern tool for generating boilerplate code to kick-start a new project.</p>
                   </div>
                   <hr/>
-                  <p>Lorem ipsum.</p>
+                  <p>More often than not I won't use Yeoman to actually provide boilerplate code for a new project, but instead as an insight towards the latest code structures and trends that others have established.</p>
+                  <p>I have however used Yeoman's flagship generator in the past, 'webapp-generator', for use on simple landing pages or very small three to four page static sites.</p>
+                  <p>I am also intrigued by the idea of writing my own Yeoman generators for the purpose of providing a quick route to scaffolding a new project with my own boilerplate code for my own use only.</p>
                 </div>
                 <!--
                 Command Line
@@ -183,10 +184,12 @@ Template - Dev Workflow
                       <a class="link" href="http://www.charlesproxy.com" target="_blank">charlesproxy.com</a>
                     </div>
                     <h3>Charles</h3>
-                    <p class="description large">Lorem ipsum.</p>
+                    <p class="description large">Web debugging, monitoring, and proxy tool.</p>
                   </div>
                   <hr/>
-                  <p>Lorem ipsum.</p>
+                  <p>I have benefited a lot from using Charles not only as a HTTP Monitor, for which there are many tools, but also as a means to develop apps with external dependencies.</p>
+                  <p>For example, using Charles' proxy functionality on a recent project, I have been able to redirect requests to an external live video stream (.m3u8 file) to a local version of this file, in order to change the contents of it for experiment and testing purposes.</p>
+                  <p>Furthermore, using the throttling feature it is very easy to test the performance of a site under a limited Internet connection.</p>
                 </div>
                 <!--
                 YSlow
@@ -200,10 +203,12 @@ Template - Dev Workflow
                       <a class="link" href="#" target="_blank">developer.yahoo.com/yslow</a>
                     </div>
                     <h3>YSlow</h3>
-                    <p class="description large">Lorem ipsum.</p>
+                    <p class="description large">Analysis tool for measuring the level of optimisation.</p>
                   </div>
                   <hr/>
-                  <p>Lorem ipsum.</p>
+                  <p>Relevant to one of my key interests, web performance, I very often rely on YSlow as a standard to judge whether or not basic principles for good web performance has been implemented or not.</p>
+                  <p>This helps in providing a checklist for developing my own sites, but also a means to assess others.</p>
+                  <p>In addition, I often call upon other tools to help enhance web performance such as Google <a href="https://developers.google.com/speed/pagespeed/insights" target="_blank">PageSpeed Insights</a> and <a href="http://www.webpagetest.org" target="_blank">webpagetest.org</a>.</p>
                 </div>
                 <!--
                 Git
