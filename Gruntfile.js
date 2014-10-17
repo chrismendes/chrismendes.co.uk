@@ -51,7 +51,7 @@ module.exports = function (grunt) {
         }
         grunt.task.run([
             'clean:server',
-            'sass',
+            'less',
             'autoprefixer',
             'browserSync:dev',
             'watch'
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
             'clean:dist',             // Clear our current dist directory before new build
             'jshint',                 // Lint JS
             'useminPrepare',          // Usemin task step 1, gather all "build:js/css" comment blocks in index.html for subsequent task configuration
-            'sass',                   // Compile scss
+            'less',                   // Compile scss
             'autoprefixer',           // Inject browser-specific CSS style prefixes, such as "-webkit" and "-moz"
             'concat',                 // Configured by useminPrepare task, concatenate CSS/JS
             'cssmin',                 // Configured by useminPrepare task, minify CSS

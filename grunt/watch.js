@@ -28,9 +28,9 @@ module.exports = function(grunt) {
         gruntfile: {
             files: ['Gruntfile.js']
         },
-        sass: {
-            files: ['<%= config.dev.styles %>/{,*/}*.{scss,sass}'],
-            tasks: ['sass', 'autoprefixer']
+        less: {
+            files: ['<%= config.dev.styles %>/{,*/}*.{less}'],
+            tasks: ['less', 'autoprefixer']
         },
         // styles: {
         //     files: ['<%= config.dev.root %>/css/{,*/}*.css'],

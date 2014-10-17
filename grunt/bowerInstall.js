@@ -9,9 +9,6 @@ module.exports = function(grunt) {
     bowerInstall = {
         app: {
             src: ['<%= config.dev.root %>/index.html']
-        },
-        sass: {
-            src: ['<%= config.dev.styles %>/{,*/}*.{scss,sass}']
         }
     };
 
