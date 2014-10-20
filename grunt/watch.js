@@ -36,7 +36,8 @@ module.exports = function(grunt) {
                 livereload: '<%= connect.options.livereload %>'
             },
             files: [
-                '<%= config.dev.root %>/{,*/}*.html'
+                '<%= config.dev.root %>/{,*/}*.html',
+                '<%= config.dev.templates %>/{,*/}*.html'
             ]
         }
     };
