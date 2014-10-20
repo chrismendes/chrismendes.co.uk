@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     browserSync = {
         dev: {
             bsFiles: {
-                src: [ '<%= config.dev.root %>/css/*.css',
+                src: [ '<%= config.dev.styles %>/*.css',
                        '<%= config.dev.images %>/**/*.jpg',
                        '<%= config.dev.images %>/**/*.png',
                        '<%= config.dev.scripts %>/*.js',

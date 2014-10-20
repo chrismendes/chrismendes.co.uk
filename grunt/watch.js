@@ -6,9 +6,12 @@ module.exports = function(grunt) {
     var watch = grunt.config('watch') || {};
 
     watch = {
-        bower: {
-            files: ['bower.json'],
-            tasks: ['bowerInstall']
+        less: {
+            files: [
+                '<%= config.dev.styles %>/app.less',
+                '<%= config.dev.styles %>/{,*/}*.{less}'
+            ],
+            tasks: ['less', 'autoprefixer']
         },
         js: {
             files: [
@@ -21,29 +24,20 @@ module.exports = function(grunt) {
                 livereload: true
             }
         },
-        jstest: {
-            files: ['test/spec/{,*/}*.js'],
-            tasks: ['test:watch']
+        bower: {
+            files: ['bower.json'],
+            tasks: ['bowerInstall']
         },
         gruntfile: {
             files: ['Gruntfile.js']
         },
-        less: {
-            files: ['<%= config.dev.styles %>/{,*/}*.{less}'],
-            tasks: ['less', 'autoprefixer']
-        },
-        // styles: {
-        //     files: ['<%= config.dev.root %>/css/{,*/}*.css'],
-        //     tasks: ['autoprefixer']
-        // },
+
         livereload: {
             options: {
                 livereload: '<%= connect.options.livereload %>'
             },
             files: [
-                '<%= config.dev.root %>/{,*/}*.html',
-                '.tmp/styles/{,*/}*.css',
-                '<%= config.dev.images %>/{,*/}*'
+                '<%= config.dev.root %>/{,*/}*.html'
             ]
         }
     };
