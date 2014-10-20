@@ -8,8 +8,7 @@ module.exports = function(grunt) {
     watch = {
         less: {
             files: [
-                '<%= config.dev.styles %>/app.less',
-                '<%= config.dev.styles %>/{,*/}*.{less}'
+                '<%= config.dev.styles %>/{,*/}*.less'
             ],
             tasks: ['less', 'autoprefixer']
         },
