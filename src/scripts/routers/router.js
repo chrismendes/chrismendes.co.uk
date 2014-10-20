@@ -11,14 +11,13 @@ define([
     var Router = Backbone.Router.extend({
 
         routes: {
-            '':             'index',
-            'cv':           'showCV',
-            'portfolio':    'showPortfolio',
-            'skills':       'showSkills',
-            'recruitment':  'showRecruitment',
-            'learning':     'showLearning',
-            'workflow':     'showWorkflow',
-            'about':        'showAboutMe'
+            '':                 'index',
+            'cv':               'showCV',
+            'portfolio':        'showPortfolio',
+            'skills':           'showSkills',
+            'recruitment':      'showRecruitment',
+            'recommendations':  'showRecommendations',
+            'about':            'showAboutMe'
         },
 
         initialize: function() {
@@ -47,13 +46,9 @@ define([
         showRecruitment: function() {
             App.showRecruitment();
         },
-        // Learning Page
-        showLearning: function() {
-            App.showLearning();
-        },
-        // Dev Workflow Page
-        showWorkflow: function() {
-            App.showWorkflow();
+        // Recommendations Page
+        showRecommendations: function() {
+            App.showRecommendations();
         },
         // About Me Page
         showAboutMe: function() {
