@@ -17,7 +17,7 @@ define([
         id:             'skills',
         template:       _.template(html),
         background:     'gold',
-        theme:          'green',
+        theme:          'red',
 
         events: {
             'click .js-nav':        'changeTab'

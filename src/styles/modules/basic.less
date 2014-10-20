@@ -230,6 +230,12 @@ Side by Side Content
 ----------------- */
 .side-by-side-content {
 
+    &.side-by-side-content-text-left {
+        .side-by-side-content-column {
+            text-align: left;
+        }
+    }
+
     .side-by-side-content-column {
         text-align: center;
         padding: 10px 15px;
@@ -238,9 +244,18 @@ Side by Side Content
             border-right: 1px solid #efefef;
         }
 
+        h3, h4, h5 {
+            &:first-child {
+                margin-top: 10px;
+            }
+        }
+
         img {
             display: inline-block;
             margin: 5px 0px 20px 0px;
+        }
+        .media img {
+            margin: 8px 20px 0px 0px;
         }
 
         ul {
@@ -257,6 +272,16 @@ Side by Side Content
 
     }
 }
+
+
+/* -----------------
+Image Column (left of text)
+----------------- */
+.media img {
+    margin: 0px;
+    margin-right: 20px !important;
+}
+
 
 /* -----------------
 Models
