@@ -79,6 +79,9 @@ Tabbed Content
             a {
                 background: none;
                 border-color: #fff;
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
         .active {
@@ -90,6 +93,10 @@ Tabbed Content
                     border-color: #ddd;
                 }
             }
+        }
+
+        .subnav-mobile {
+            display: none;
         }
 
         &.cv-tabs {
@@ -104,6 +111,57 @@ Tabbed Content
             .cv-tabs-permanent a {
                 background-image: url('../images/cv/icons/permanent.png');
                 padding-left: 52px;
+            }
+            @media screen and (max-width: @screen-xs-max) { // Phone
+                li a {
+                    padding-left: 50px !important;
+                }
+            }
+        }
+
+        @media screen and (max-width: @screen-xs-max) { // Phone
+            border: 1px solid #ddd;
+            .nav-tabs {
+                border-bottom: 0px;
+            }
+            li {
+                clear: both;
+                width: 100%;
+                border: 0px;
+                &:hover {
+                    border-bottom: 0px;
+                }
+                a {
+                    border: 0px;
+                    border-left-width: 3px;
+                    border-left-style: solid;
+                    border-left-color: #fff;
+                    border-radius: 0px;
+                    background: none;
+                }
+                &.active {
+                    border-bottom: 0px;
+                    a, a:hover {
+                        border-width: 0px;
+                        border-left-width: 3px;
+                    }
+                    a {
+                        font-weight: bold;
+                    }
+                    .subnav-mobile {
+                        list-style: none;
+                        display: block;
+                        a {
+                            padding: 10px 20px;
+                            display: inline-block;
+                            border-left: 0px;
+                            font-weight: normal;
+                        }
+                        li.active a {
+                            color: #555;
+                        }
+                    }
+                }
             }
         }
     }
