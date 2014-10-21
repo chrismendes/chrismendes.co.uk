@@ -7,9 +7,9 @@ define([
     'views/portfolio',
     'views/skills',
     'views/recruitment',
-    'views/recommendations',
+    'views/feedback',
     'views/about',
-], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, RecommendationsView, AboutView) {
+], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, FeedbackView, AboutView) {
 
     'use strict';
 
@@ -59,9 +59,9 @@ define([
         },
 
         // Learning Page
-        showRecommendations: function() {
-            var recommendations = new RecommendationsView();
-            this.showView(recommendations);
+        showFeedback: function() {
+            var feedback = new FeedbackView();
+            this.showView(feedback);
         },
 
         // About Me Page

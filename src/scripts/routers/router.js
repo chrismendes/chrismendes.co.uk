@@ -16,7 +16,7 @@ define([
             'portfolio':        'showPortfolio',
             'skills':           'showSkills',
             'recruitment':      'showRecruitment',
-            'recommendations':  'showRecommendations',
+            'feedback':         'showFeedback',
             'about':            'showAboutMe'
         },
 
@@ -46,9 +46,9 @@ define([
         showRecruitment: function() {
             App.showRecruitment();
         },
-        // Recommendations Page
-        showRecommendations: function() {
-            App.showRecommendations();
+        // Job Feedback Page
+        showFeedback: function() {
+            App.showFeedback();
         },
         // About Me Page
         showAboutMe: function() {

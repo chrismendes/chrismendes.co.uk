@@ -472,9 +472,21 @@ Phone
             line-height: 30px;
             width: 40%;
             float: left;
+            margin-right: 0px;
         }
         .btn {
             float: right;
+        }
+    }
+}
+@media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
+    .scattered-boxes .box {
+        .title, &.is-active .title {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        .btn {
+            // font-size: 13px;
         }
     }
 }

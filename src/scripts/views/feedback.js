@@ -1,23 +1,23 @@
 // -------
-// Recommendations Page
+// Job Feedback Page
 // -------
 define([
     'underscore',
     'views/_base',
-    'text!../../templates/recommendations.html'
+    'text!../../templates/feedback.html'
 ], function(_, BaseView, html) {
 
     'use strict';
 
-    var RecommendationsView = BaseView.extend({
+    var FeedbackView = BaseView.extend({
 
-        id:             'recommendations',
+        id:             'feedback',
         template:       _.template(html),
         background:     'teal',
         theme:          'red'
 
     });
 
-    return RecommendationsView;
+    return FeedbackView;
 
 });
