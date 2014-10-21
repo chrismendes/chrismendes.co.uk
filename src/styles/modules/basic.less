@@ -14,7 +14,7 @@ Content Canvas
     }
 
     @media screen and (max-width: @screen-xs-max) { // Phone
-        padding: 20px;
+        padding: 16px;
     }
 }
 
@@ -99,23 +99,24 @@ Tabbed Content
             display: none;
         }
 
-        &.cv-tabs {
-            li a {
-                background-position: 8px 8px;
-                background-repeat: no-repeat;
+
+        .tab-icon {
+            a, a:hover {
+                background-position: 8px 8px !important;
+                background-repeat: no-repeat !important;
             }
-            .cv-tabs-contract a {
+            &.tab-icon-contract > a {
                 background-image: url('../images/cv/icons/contract.png');
                 padding-left: 48px;
             }
-            .cv-tabs-permanent a {
+            &.tab-icon-permanent > a {
                 background-image: url('../images/cv/icons/permanent.png');
                 padding-left: 52px;
             }
-            @media screen and (max-width: @screen-xs-max) { // Phone
-                li a {
-                    padding-left: 50px !important;
-                }
+        }
+        @media screen and (max-width: @screen-xs-max) { // Phone
+            li a {
+                // padding-left: 50px;
             }
         }
 
@@ -160,6 +161,9 @@ Tabbed Content
                         li.active a {
                             color: #555;
                         }
+                    }
+                    &.tab-icon .subnav-mobile a {
+                        padding-left: 45px !important;
                     }
                 }
             }
