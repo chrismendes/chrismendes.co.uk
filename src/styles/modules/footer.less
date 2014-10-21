@@ -58,11 +58,17 @@ footer {
 }
 
 // Phone
-@media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
+@media screen and (max-width: @screen-xs-max) {
     footer {
-        padding-top: 30px;
+        padding-top: 10px;
         .navbar {
             position: relative;
+        }
+    }
+}
+@media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
+    footer {
+        .navbar {
             .navbar-nav {
                 width: 60%;
                 float: left;
@@ -78,6 +84,13 @@ footer {
             .email-address {
                 font-size: 13px;
             }
+        }
+    }
+}
+@media screen and (max-width: @screen-xs-max) and (orientation: landscape) {
+    footer {
+        .navbar .email-address {
+            margin-left: 16px;
         }
     }
 }
