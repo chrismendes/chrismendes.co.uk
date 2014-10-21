@@ -22,6 +22,12 @@
                 background: url('../images/icons/pdf.png') no-repeat;
             }
         }
+
+        @media screen and (max-width: @screen-sm-max) { // Tablet
+            a.download-file {
+                display: none;
+            }
+        }
     }
 
 }

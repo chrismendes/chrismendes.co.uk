@@ -21,6 +21,11 @@ h2 {
     font-family: Helvetica Neue, Arial;
     font-size: 46px;
     margin: 7px 0px 40px 0px;
+    
+    @media screen and (max-width: @screen-xs-max) { // Phone
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
 }
 h3 {
     font-family: oswaldbook;
@@ -47,8 +52,7 @@ a {
     text-decoration: none;
 }
 ul {
-    // Phone
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-xs-max) { // Phone
         padding-left: 18px;
     }
 }

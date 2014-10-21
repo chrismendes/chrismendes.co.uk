@@ -26,7 +26,7 @@ define([
 
         onAfterRender: function() {
             $('.menu').hide();
-            $('body').addClass('is-not-raised', 400);
+            $('body').addClass('home').addClass('is-not-raised', 400);
         },
 
         // Box hover over/out effects

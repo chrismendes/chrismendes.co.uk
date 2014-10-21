@@ -2,6 +2,7 @@ header {
     .title {
         padding: 15px;
         .bgopacity(#ffffff, 10%);
+        clear: both;
 
         .myname {
             color: #fff;
@@ -48,21 +49,39 @@ header {
     }
 
     .mobile-menu-button {
-        position: absolute;
-        right: 25px;
-        top: 10px;
-        height: 32px;
+        height: 20px;
         display: none;
 
-        &:before {
-            float: right;
-            width: 35px;
-            height: 6px;
-            background: #fff;
-            box-shadow: 0px 6px transparent, 0px 12px #fff, 0px 18px transparent, 0px 24px #fff;
-            content: '';
+        a {
+            position: absolute;
+            right: 15px;
+            height: 22px;
+            z-index: 9;
+
+            &:before {
+                float: right;
+                width: 22px;
+                height: 3px;
+                background: #fff;
+                box-shadow: 0px 4px transparent, 0px 8px #fff, 0px 12px transparent, 0px 16px #fff;
+                content: '';
+            }
+
+            span {
+                color: #fff;
+                font-size: 20px;
+                padding-right: 10px;
+            }
         }
     }
+
+    .myname-mobile {
+        display: none;
+    }
+}
+
+.home header .mobile-menu-button {
+    display: none;
 }
 
 // Tablet
@@ -84,11 +103,41 @@ header {
 // Phone
 @media screen and (max-width: @screen-xs-max) {
     header {
-        .title .strapline {
-            font-size: 16px;
+        .title {
+            display: none;
+            .myname {
+                font-size: 40px;
+                margin: 0px 0px 0px 0px;
+            }
+            .jobtitle {
+                line-height: 26px;
+            }
+            .strapline {
+                font-size: 16px;
+                margin-top: 0px;
+            }
         }
         .mobile-menu-button {
             display: block;
+        }
+        .myname-mobile {
+            color: #fff;
+            text-shadow: 2px 2px #777;
+            font-size: 24px;
+            line-height: 16px;
+
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            display: block;
+        }
+    }
+    .home {
+        header .title {
+            display: block;
+        }
+        header .myname-mobile {
+            display: none;
         }
     }
 }

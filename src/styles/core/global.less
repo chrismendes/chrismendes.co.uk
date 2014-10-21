@@ -11,12 +11,12 @@ body.is-not-raised {
     padding: 60px 0px;
   }
 }
-  // Tablet
-  @media screen and (max-width: @screen-sm-max) {
-      .app-container, body.is-not-raised .app-container { // Cancel body sliding up/down on page change
-          padding: 20px 0px 0px 0px;
-      }
-  }
+    // Cancel body sliding up/down on page change
+    @media screen and (max-width: @screen-sm-max) { // Tablet
+        .app-container, body.is-not-raised .app-container {
+            padding: 16px 0px 0px 0px;
+        }
+    }
 
 .page-container {
     display: none; // Hidden on page load, faded in via JS
