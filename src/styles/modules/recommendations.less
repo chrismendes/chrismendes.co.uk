@@ -16,6 +16,13 @@
     .person-jobtitle {
         font-size: 13px;
     }
+
+    @media screen and (max-width: @screen-xs-max) { // Phone
+        width: 100%;
+        .person-name, .person-jobtitle {
+            text-align: left;
+        }
+    }
 }
 
 
@@ -24,6 +31,7 @@
     margin: 0px auto;
 
     @media screen and (max-width: @screen-xs-max) { // Phone
+        width: 100%;
         h3 {
             margin-top: 4px;
         }
