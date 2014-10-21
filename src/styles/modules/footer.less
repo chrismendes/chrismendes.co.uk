@@ -60,15 +60,24 @@ footer {
 // Phone
 @media screen and (max-width: @screen-xs-max) and (orientation: portrait) {
     footer {
-        .navbar .navbar-nav {
-            width: 60%;
-            float: left;
-            margin-left: 0px;
-        }
-        .copyright {
-            width: 120px;
-            margin-top: -10px;
-            display: inline-block;
+        padding-top: 30px;
+        .navbar {
+            position: relative;
+            .navbar-nav {
+                width: 60%;
+                float: left;
+                margin-left: 0px;
+            }
+            .copyright {
+                width: 95px;
+                display: block;
+                font-size: 9px;
+                line-height: 12px;
+                margin-top: 16px;
+            }
+            .email-address {
+                font-size: 13px;
+            }
         }
     }
 }
