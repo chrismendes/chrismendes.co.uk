@@ -38,15 +38,15 @@ Template - My Portfolio
               Project Highlights
               -->
               <section class="l-grid-content">
-                <div class="row">
+                <div class="row project-row">
                 <% _.each(cat.projects, function(project, i) { %>
-                  <% if(i && (i % 4 === 0)) {  %></div><div class="row"><% } %>
-                  <div class="col-md-3">
+                  <% if(i && (i % 4 === 0)) {  %></div><div class="row project-row"><% } %>
+                  <div class="col-md-3 col-sm-6 project-column">
                     
                     <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
                       <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                       <h3 class="project-name"><%= project.name %></h3>
-                      <a class="link"><%= project.url %></a>
+                      <span class="link secondary-caption"><%= project.url %></span>
                       <button type="button" class="btn more-details">Details &raquo;</button>
                       <!--
                       Modal

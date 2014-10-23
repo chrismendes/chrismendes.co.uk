@@ -30,8 +30,15 @@
     margin-top: 20px;
     width: 100%;
     float: left;
-    
+
     .row {
         margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: @screen-xs-max) { // Phone
+        margin: 0px;
+        .row {
+            margin-bottom: 0px;
+        }
     }
 }
