@@ -97,7 +97,7 @@ Template - My Portfolio
                 <% _.each(cat.projects, function(project, i) { %>
                 <div class="row project-list-item js-modal-id<% if(project.screenshots === 0) { %> is-not-clickable js-noclick<% } %>" data-modal="<%= project.id %>">
                   <% if(cat.clientLogos) { %>
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-xs-12">
                     <% if(project.clientId !== null) { %>
                     <div class="client-logo">
                       <img src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
@@ -105,18 +105,20 @@ Template - My Portfolio
                     <% } %>
                   </div>
                   <% } %>
-                  <div class="col-md-7">
+                  <div class="col-md-7 col-xs-12">
                     <div class="screenshot-thumb js-modal-show">
                       <span class="click-icon"></span>
                       <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
                     </div>
-                    <h3 class="project-name"><%= project.name %></h3>
-                    <span class="date"><%= project.date %></span>
-                    <p class="link">
-                      <a href="http://<%= project.url %>" target="_blank">
-                        <%= project.url %>
-                      </a>
-                    </p>
+                    <div class="project-summary">
+                      <h3 class="project-name"><%= project.name %></h3>
+                      <span class="date"><%= project.date %></span>
+                      <p class="link">
+                        <a href="http://<%= project.url %>" target="_blank">
+                          <%= project.url %>
+                        </a>
+                      </p>
+                    </div>
                     <p class="description">
                       <%= project.description %>
                     </p>
@@ -126,9 +128,9 @@ Template - My Portfolio
                     </a>
                     <% } %>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-xs-12">
                     <p class="note-heading">Technology:</p>
-                    <ul>
+                    <ul class="project-technology">
                       <% _.each(project.skills, function(skill) { %>
                       <li><%= skill %></li>
                       <% }); %>

@@ -114,11 +114,6 @@ Tabbed Content
                 padding-left: 52px;
             }
         }
-        @media screen and (max-width: @screen-xs-max) { // Phone
-            li a {
-                // padding-left: 50px;
-            }
-        }
 
         @media screen and (max-width: @screen-xs-max) { // Phone
             border: 1px solid #ddd;
@@ -186,7 +181,7 @@ Tabbed Content
     }
 
     // Phone
-    @media screen and (max-width: @screen-xs-max) {
+    @media screen and (max-width: @screen-sm-max) {
         .tabbed-content-tabs {
             width: 100%;
 
@@ -240,7 +235,7 @@ Checkboxes
 
         &.is-checked {
             background-image: url('../images/employment/checkbox-on.png');
-            font-weight: bold;
+            // font-weight: bold;
         }
 
         &.is-disabled {
