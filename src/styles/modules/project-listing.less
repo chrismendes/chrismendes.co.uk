@@ -22,6 +22,9 @@ Standard Project Listing
 
     .link {
         margin: 0px 0px 8px 0px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .description {
@@ -32,6 +35,10 @@ Standard Project Listing
         background: @teal;
         color: #fff;
         border: 0px;
+    }
+
+    .project-technology {
+        padding-left: 20px;
     }
 
     .note-heading {
@@ -148,6 +155,23 @@ Standard Project Listing
         }
     }
 
+    @media screen and (min-width : @screen-md-min) and (max-width: @screen-md-max) { // Small Desktop/Tablet Landscape
+        .project-summary {
+            .date {
+                display: block;
+                margin-left: 0px;
+                margin-bottom: 3px;
+            }
+        }
+        .screenshot-thumb {
+            margin-bottom: 15px;
+        }
+        .client-logo img {
+            width: 95%;
+            height: auto;
+        }
+    }
+
 
 /* -----------------
 Polaroid Project Listing
@@ -196,14 +220,21 @@ Polaroid Project Listing
             margin: 6px auto 0px auto;
             display: block;
         }
-    }
 
-    @media screen and (max-width: @screen-xs-max) { // Phone
-        &.polaroid {
+        @media screen and (max-width: @screen-xs-max) { // Phone
             margin-bottom: 30px;
+            .link {
+                float: none;
+            }
         }
-        .link {
-            float: none;
+
+        @media screen and (min-width : @screen-md-min) and (max-width: @screen-md-max) { // Small Desktop/Tablet Landscape
+            min-height: 248px;
+            .btn {
+                position: absolute;
+                bottom: 10px;
+                left: 70px;
+            }
         }
     }
 
@@ -213,13 +244,6 @@ Polaroid Project Listing
     .project-column {
         width: 50%;
         float: left;
-    }
-    .project-list-item {
-        &.polaroid {
-            .screenshot {
-                max-width: 95%;
-            }
-        }
     }
 }
 
