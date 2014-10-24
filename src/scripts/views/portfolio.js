@@ -1,4 +1,4 @@
-// -------
+    // -------
 // Portfolio Page
 // -------
 define([
@@ -67,6 +67,7 @@ define([
                     var self = this;
                     this.showModal(modal, function() {
                         self.startCarousel();
+                        self.setModalTabClickEvents();
                     });
                 }
             }
@@ -77,6 +78,17 @@ define([
                 singleItem: true,
                 navigation: true,
                 autoWidth: true
+            });
+        },
+
+        setModalTabClickEvents: function() {
+            /* jshint maxlen: 200 */
+            // Handled manually as tab content actually exists twice (duplicated and imported into modal) and Bootstrap tab JS fails under these conditions
+            $('.js-carousel-tabs .js-tablink').click(function(e) {
+                e.preventDefault();
+                var tab = $(this).attr('href');
+                $('.js-tab').removeClass('active');
+                $('.js-modal-body ' + tab).addClass('active');
             });
         }
 

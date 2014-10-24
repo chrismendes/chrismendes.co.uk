@@ -57,11 +57,11 @@ define([
 
             this.onBeforeShow();
 
-            $('.js-fadein').fadeIn(400);
-            
-            this.onAfterRenderBase();
-
-            this.onAfterRender();
+            var self = this;
+            $('.js-fadein').fadeIn(400, function() {
+                self.onAfterRenderBase();
+                self.onAfterRender();
+            });
 
             return this;
         },

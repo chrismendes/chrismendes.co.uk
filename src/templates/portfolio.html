@@ -71,16 +71,35 @@ Template - My Portfolio
                             Carousel
                             -->
                             <% if(project.screenshots > 1) { %>
-                            <div class="owl-carousel">
-                              <% for(var i = 0; i < project.screenshots; i++) { %>
-                              <div class="item">
-                                <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                            <div class="tabbed-content">
+                              <div class="tabbed-content-tabs tabbed-content-tabs-centred">
+                                <ul class="nav nav-tabs js-carousel-tabs" role="tablist">
+                                  <li class="active tab-icon tab-icon-contract"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
+                                  <li class="tab-icon tab-icon-contract"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
+                                  <li class="tab-icon tab-icon-contract"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
+                                </ul>
                               </div>
-                              <% } %>
+                              <div class="tab-content">
+                                <div class="tab-pane js-tab active" id="screenshots-desktop">
+                                  <div class="owl-carousel">
+                                    <% for(var i = 0; i < project.screenshots; i++) { %>
+                                    <div class="item">
+                                      <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                                    </div>
+                                    <% } %>
+                                  </div>
+                                  <% } else { %>
+                                  <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
+                                  <% } %>
+                                </div>
+                                <div class="tab-pane js-tab" id="screenshots-tablet">
+                                  <p>TABLET</p>
+                                </div>
+                                <div class="tab-pane js-tab" id="screenshots-phone">
+                                  <p>PHONE</p>
+                                </div>
+                              </div>
                             </div>
-                            <% } else { %>
-                            <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
-                            <% } %>
                           </div>
                         </div>
                       </div>
@@ -149,13 +168,6 @@ Template - My Portfolio
                       <div class="project-modal-header">
                         <h3><%= project.name %></h3>
                         <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
-                        <p class="description"><%= project.description %> <span class="date"><%= project.date %>.</span></p>
-                        <p class="technology"><strong>Technology</strong>:&nbsp;
-                        <% _.each(project.skills, function(skill, index) { %>
-                          <% if(index > 0) { %>, <% } %><%= skill %>
-                        <% }); %>
-                        </p>
-                        <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
                       </div>
                     </div>
                     <div class="js-modal-content-body">
