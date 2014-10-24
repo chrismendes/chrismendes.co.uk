@@ -76,8 +76,17 @@ define([
         startCarousel: function() {
             $('.js-modal .owl-carousel').owlCarousel({
                 singleItem: true,
-                navigation: true,
                 autoWidth: true
+            });
+
+            var owl = $('.js-modal .owl-carousel').data('owlCarousel');
+            $('.js-carousel-previous').click(function(e) {
+                e.preventDefault();
+                owl.prev();
+            });
+            $('.js-carousel-next').click(function(e) {
+                e.preventDefault();
+                owl.next();
             });
         },
 

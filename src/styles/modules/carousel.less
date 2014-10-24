@@ -2,14 +2,15 @@
 Carousel
 ----------------- */
 .owl-carousel {
-    width: 80%;
+    width: 100%;
     margin: 20px auto 0px auto;
 
     .owl-item {
         border: 1px solid #efefef;
+        text-align: center;
 
         img {
-            width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -19,29 +20,9 @@ Carousel
 
     .owl-controls {
         position: absolute;
-        top: -25px;
+        top: -31px;
         width: 100%;
         text-align: center;
-    }
-    .owl-buttons {
-        display: none;
-
-        .owl-prev, .owl-next {
-            height: 100%;
-            width: 90px;
-            position: absolute;
-            top: 25px;
-            
-            background: #fff;
-            opacity: 0.8;
-        }
-
-        .owl-prev {
-            left: -90px;
-        }
-        .owl-next {
-            right: -90px;
-        }
     }
 
     .owl-pagination {
@@ -65,6 +46,22 @@ Carousel
         }
     }
 
+}
+
+.owl-carousel-navigation {
+    position: absolute;
+    margin-top: -30px;
+    width: 100%;
+
+    .next {
+        float: right;
+        margin-right: 34px;
+    }
+
+    a {
+        position: relative;
+        z-index: 9;
+    }
 }
 
 .tab-pane .owl-carousel {

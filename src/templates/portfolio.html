@@ -68,36 +68,44 @@ Template - My Portfolio
                         <div class="js-modal-content-body">
                           <div class="project-modal-body">
                             <!--
-                            Carousel
+                            Screenshots Carousel(s)
                             -->
-                            <% if(project.screenshots > 1) { %>
                             <div class="tabbed-content">
+                              <% if(project.screenshots.desktop > 0 && (project.screenshots.tablet > 0 || project.screenshots.phone > 0)) { %>
                               <div class="tabbed-content-tabs tabbed-content-tabs-centred">
                                 <ul class="nav nav-tabs js-carousel-tabs" role="tablist">
-                                  <li class="active tab-icon tab-icon-contract"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
-                                  <li class="tab-icon tab-icon-contract"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
-                                  <li class="tab-icon tab-icon-contract"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
+                                  <% if(project.screenshots.desktop > 0) { %>
+                                  <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
+                                  <% } %>
+                                  <% if(project.screenshots.tablet > 0) { %>
+                                  <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
+                                  <% } %>
+                                  <% if(project.screenshots.phone > 0) { %>
+                                  <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
+                                  <% } %>
                                 </ul>
                               </div>
+                              <% } %>
                               <div class="tab-content">
-                                <div class="tab-pane js-tab active" id="screenshots-desktop">
-                                  <div class="owl-carousel">
-                                    <% for(var i = 0; i < project.screenshots; i++) { %>
+                                <% _.each(project.screenshots, function(quantity, type) { %>
+                                <div class="tab-pane js-tab<% if(type === "desktop") { %> active<% } %>" id="screenshots-<%= type %>">
+                                  <div class="owl-carousel-navigation">
+                                    <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
+                                    <a class="next js-carousel-next" href="#">Next Slide ></a>
+                                  </div>
+                                  <div class="owl-carousel js-carousel">
+                                    <% for(var i = 0; i < project.screenshots[type]; i++) { %>
                                     <div class="item">
+                                      <% if(type === "desktop") { %>
                                       <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                                      <% } else { %>
+                                      <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
+                                      <% } %>
                                     </div>
                                     <% } %>
                                   </div>
-                                  <% } else { %>
-                                  <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
-                                  <% } %>
                                 </div>
-                                <div class="tab-pane js-tab" id="screenshots-tablet">
-                                  <p>TABLET</p>
-                                </div>
-                                <div class="tab-pane js-tab" id="screenshots-phone">
-                                  <p>PHONE</p>
-                                </div>
+                                <% }); %>
                               </div>
                             </div>
                           </div>
