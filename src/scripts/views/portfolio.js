@@ -1,4 +1,4 @@
-    // -------
+// -------
 // Portfolio Page
 // -------
 define([
@@ -52,6 +52,7 @@ define([
                 });
                 categoryData[key] = { name: config.name, projects: projects, clientLogos: config.clientLogos };
             });
+            console.log(categoryData);
 
             // Release data to view
             this.data = {
@@ -78,13 +79,16 @@ define([
                 singleItem: true,
                 autoWidth: true
             });
+            this.setCarouselNavClickEvents('.js-tab:first-child');
+        },
 
-            var owl = $('.js-modal .owl-carousel').data('owlCarousel');
-            $('.js-carousel-previous').click(function(e) {
+        setCarouselNavClickEvents: function(tab) {
+            var owl = $('.js-modal ' + tab + ' .js-carousel').data('owlCarousel');
+            $('.js-carousel-previous').unbind('click').click(function(e) {
                 e.preventDefault();
                 owl.prev();
             });
-            $('.js-carousel-next').click(function(e) {
+            $('.js-carousel-next').unbind('click').click(function(e) {
                 e.preventDefault();
                 owl.next();
             });
@@ -93,11 +97,13 @@ define([
         setModalTabClickEvents: function() {
             /* jshint maxlen: 200 */
             // Handled manually as tab content actually exists twice (duplicated and imported into modal) and Bootstrap tab JS fails under these conditions
+            var self = this;
             $('.js-carousel-tabs .js-tablink').click(function(e) {
                 e.preventDefault();
                 var tab = $(this).attr('href');
                 $('.js-tab').removeClass('active');
                 $('.js-modal-body ' + tab).addClass('active');
+                self.setCarouselNavClickEvents(tab);
             });
         }
 
