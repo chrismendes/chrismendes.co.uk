@@ -33,6 +33,14 @@ define([
             this.prepareData(projects);
         },
 
+        onAfterRender: function() {
+            $('a.download-file').click(function(e) {
+                e.preventDefault();
+                $('.js-modal').modal('show');
+            });
+            this.setProjectModalTearDown();
+        },
+
         prepareData: function(collection) {
             /* jshint maxlen: 200 */
             var categories = {
@@ -64,15 +72,12 @@ define([
             var modal = project.attr('data-modal');
             if(typeof modal !== 'undefined') {
                 if(!project.hasClass('js-noclick')) {
-                    var self = this;
                     // Show/hide project details in modal header
                     var projectDetails = $('.js-modal-content-' + modal + ' .js-project-details');
-                    if(!$('#highlights').hasClass('active')) {
-                        projectDetails.hide();
-                    } else {
-                        projectDetails.show();
-                    }
+                    (!$('#highlights').hasClass('active')) ? projectDetails.hide() : projectDetails.show();
+
                     // Show modal and configure carousel(s) and tab links
+                    var self = this;
                     this.showModal(modal, function() {
                         self.startCarousels();
                         self.setModalTabClickEvents();
@@ -81,8 +86,13 @@ define([
             }
         },
 
-        onAfterRender: function() {
-            this.setCarouselTearDown();
+        setProjectModalTearDown: function() {
+            var self = this;
+            $('.js-modal').on('hidden.bs.modal', function() {
+                self.destroyCarousels();
+                $('.js-modal .js-modal-header').empty();
+                $('.js-modal .js-modal-body').empty();
+            });
         },
 
         startCarousels: function() {
@@ -96,14 +106,9 @@ define([
         destroyCarousels: function() {
             $('.js-modal .js-tab').each(function() {
                 var owl = $(this).find('.js-carousel').data('owlCarousel');
-                owl.destroy();
-            });
-        },
-
-        setCarouselTearDown: function() {
-            var self = this;
-            $('.js-modal').on('hidden.bs.modal', function() {
-                self.destroyCarousels();
+                if(typeof owl !== 'undefined') {
+                    owl.destroy();
+                }
             });
         },
 
@@ -121,13 +126,19 @@ define([
 
         setModalTabClickEvents: function() {
             /* jshint maxlen: 200 */
-            // Handled manually as tab content actually exists twice (duplicated and imported into modal) and Bootstrap tab JS fails under these conditions
+            // Handled manually as tab content exists twice (original template, duplicate imported into modal) and Bootstrap tab JS fails under these conditions
             var self = this;
-            $('.js-carousel-tabs .js-tablink').click(function(e) {
+            $('.js-modal .js-tablink').click(function(e) {
                 e.preventDefault();
+                // Set tab link active
+                $('.js-modal .js-carousel-tabs li').removeClass('active');
+                $(this).parent('li').addClass('active');
+                // Change tabs
                 var tab = $(this).attr('href');
-                $('.js-tab').removeClass('active');
-                $('.js-modal-body ' + tab).addClass('active');
+                $('.js-modal .js-tab').removeClass('active');
+                $('.js-modal ' + tab).addClass('active');
+
+                // Update carousel previous/next links to work with current tab's carousel
                 self.setCarouselNavClickEvents(tab);
             });
         }

@@ -167,15 +167,15 @@ Template - My Portfolio
                 <div class="tabbed-content">
                   <% if(project.screenshots.desktop > 0 && (project.screenshots.tablet > 0 || project.screenshots.phone > 0)) { %>
                   <div class="tabbed-content-tabs tabbed-content-tabs-centred">
-                    <ul class="nav nav-tabs js-carousel-tabs" role="tablist">
+                    <ul class="nav nav-tabs js-carousel-tabs">
                       <% if(project.screenshots.desktop > 0) { %>
-                      <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
+                      <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" class="js-tablink">Desktop</a></li>
                       <% } %>
                       <% if(project.screenshots.tablet > 0) { %>
-                      <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
+                      <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" class="js-tablink">Tablet</a></li>
                       <% } %>
                       <% if(project.screenshots.phone > 0) { %>
-                      <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
+                      <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" class="js-tablink">Phone</a></li>
                       <% } %>
                     </ul>
                   </div>
