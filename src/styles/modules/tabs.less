@@ -45,9 +45,10 @@ Tabbed Content
 
         .tab-icon {
             a, a:hover {
-                background-position: 8px 8px !important;
-                background-repeat: no-repeat !important;
+                background-position: 8px 8px;
+                background-repeat: no-repeat;
             }
+            // (TODO: Move icons to neutral icons dir, rename to: desktop/laptop/tablet/phone)
             &.tab-icon-contract > a {
                 background-image: url('../images/cv/icons/contract.png');
                 padding-left: 48px;
@@ -63,10 +64,18 @@ Tabbed Content
             &.tab-icon-tablet > a {
                 background-image: url('../images/portfolio/icons/tablet.gif');
                 padding-left: 40px;
+                @media screen and (max-width: @screen-xs-max) { // Phone
+                    padding-left: 52px;
+                    background-position: 13px 8px;
+                }
             }
             &.tab-icon-phone > a {
                 background-image: url('../images/portfolio/icons/phone.gif');
                 padding-left: 32px;
+                @media screen and (max-width: @screen-xs-max) { // Phone
+                    padding-left: 52px;
+                    background-position: 17px 8px;
+                }
             }
         }
 

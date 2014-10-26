@@ -270,6 +270,15 @@ Project Details Popup
     .description {
         margin-top: 6px;
     }
+
+    @media screen and (max-width: @screen-xs-max) { // Phone
+        .link {
+            margin-left: 0px;
+            margin-top: 5px;
+            display: inline-block;
+            width: 100%;
+        }
+    }
 }
 .project-modal-body {
     overflow: hidden;

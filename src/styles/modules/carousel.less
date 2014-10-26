@@ -37,11 +37,19 @@ Carousel
             margin-left: 5px;
 
             &:first-child {
-                margin-left: 0px;
+                margin-left: 15px;
             }
 
             &.active {
                 background: @red;
+            }
+
+            @media screen and (max-width: @screen-sm-max) { // Tablet
+                width: 25px;
+            }
+
+            @media screen and (max-width: @screen-xs-max) { // Phone
+                width: 10px;
             }
         }
     }
