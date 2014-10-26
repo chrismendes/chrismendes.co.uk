@@ -16,7 +16,7 @@ Template - My Portfolio
         <div class="tabbed-content">
           
           <!--
-          Tabs
+          Tab Links
           -->
           <div class="tabbed-content-tabs">
             <ul class="nav nav-tabs" role="tablist">
@@ -27,7 +27,7 @@ Template - My Portfolio
           </div>
           
           <!--
-          Tabbed Content
+          Tabs
           -->
           <div class="tab-content">
           <% _.each(categories, function(cat, id) { %>
@@ -42,79 +42,18 @@ Template - My Portfolio
                 <% _.each(cat.projects, function(project, i) { %>
                   <% if(i && (i % 4 === 0)) {  %></div><div class="row project-row"><% } %>
                   <div class="col-md-3 col-sm-6 project-column">
-                    
+
                     <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
                       <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                       <h3 class="project-name"><%= project.name %></h3>
                       <span class="link secondary-caption"><%= project.url %></span>
                       <button type="button" class="btn more-details">Details &raquo;</button>
-                      <!--
-                      Modal
-                      -->
-                      <div class="modal-content js-modal-content-<%= project.id %>">
-                        <div class="js-modal-content-header">
-                          <div class="project-modal-header project-highlight-modal-header">
-                            <h3><%= project.name %></h3>
-                            <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
-                            <p class="description"><%= project.description %> <span class="date"><%= project.date %></span></p>
-                            <p class="technology"><strong>Technology</strong>:&nbsp;
-                            <% _.each(project.skills, function(skill, index) { %>
-                              <% if(index > 0) { %>, <% } %><%= skill %>
-                            <% }); %>
-                            </p>
-                            <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
-                          </div>
-                        </div>
-                        <div class="js-modal-content-body">
-                          <div class="project-modal-body">
-                            <!--
-                            Screenshots Carousel(s)
-                            -->
-                            <div class="tabbed-content">
-                              <% if(project.screenshots.desktop > 0 && (project.screenshots.tablet > 0 || project.screenshots.phone > 0)) { %>
-                              <div class="tabbed-content-tabs tabbed-content-tabs-centred">
-                                <ul class="nav nav-tabs js-carousel-tabs" role="tablist">
-                                  <% if(project.screenshots.desktop > 0) { %>
-                                  <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
-                                  <% } %>
-                                  <% if(project.screenshots.tablet > 0) { %>
-                                  <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
-                                  <% } %>
-                                  <% if(project.screenshots.phone > 0) { %>
-                                  <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
-                                  <% } %>
-                                </ul>
-                              </div>
-                              <% } %>
-                              <div class="tab-content">
-                                <% _.each(project.screenshots, function(quantity, type) { %>
-                                <div class="tab-pane js-tab<% if(type === "desktop") { %> active<% } %>" id="screenshots-<%= type %>">
-                                  <div class="owl-carousel-navigation">
-                                    <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
-                                    <a class="next js-carousel-next" href="#">Next Slide ></a>
-                                  </div>
-                                  <div class="owl-carousel js-carousel">
-                                    <% for(var i = 0; i < project.screenshots[type]; i++) { %>
-                                    <div class="item">
-                                      <% if(type === "desktop") { %>
-                                      <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
-                                      <% } else { %>
-                                      <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
-                                      <% } %>
-                                    </div>
-                                    <% } %>
-                                  </div>
-                                </div>
-                                <% }); %>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
+
                   </div>
                 <% }); %>
               </section>
+
               <% } else { %>
 
               <!--
@@ -123,6 +62,10 @@ Template - My Portfolio
               <section class="l-content-rows">
                 <% _.each(cat.projects, function(project, i) { %>
                 <div class="row project-list-item js-modal-id<% if(project.screenshots === 0) { %> is-not-clickable js-noclick<% } %>" data-modal="<%= project.id %>">
+
+                  <!--
+                  Client Logo
+                  -->
                   <% if(cat.clientLogos) { %>
                   <div class="col-md-2 col-xs-12">
                     <% if(project.clientId !== null) { %>
@@ -132,6 +75,10 @@ Template - My Portfolio
                     <% } %>
                   </div>
                   <% } %>
+
+                  <!--
+                  Basic Details / Screenshot
+                  -->
                   <div class="col-md-7 col-xs-12">
                     <div class="screenshot-thumb js-modal-show">
                       <span class="click-icon"></span>
@@ -155,6 +102,10 @@ Template - My Portfolio
                     </a>
                     <% } %>
                   </div>
+
+                  <!--
+                  Technology / Responsibility
+                  -->
                   <div class="col-md-3 col-xs-12">
                     <p class="note-heading">Technology:</p>
                     <ul class="project-technology">
@@ -167,37 +118,7 @@ Template - My Portfolio
                       <%= project.responsibility %>
                     </p>
                   </div>
-                  <!--
-                  Modal
-                  -->
-                  <% if(project.screenshots > 0) { %>
-                  <div class="modal-content js-modal-content-<%= project.id %>">
-                    <div class="js-modal-content-header">
-                      <div class="project-modal-header">
-                        <h3><%= project.name %></h3>
-                        <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
-                      </div>
-                    </div>
-                    <div class="js-modal-content-body">
-                      <div class="project-modal-body">
-                        <!--
-                        Carousel
-                        -->
-                        <% if(project.screenshots > 1) { %>
-                        <div class="owl-carousel">
-                          <% for(var i = 0; i < project.screenshots; i++) { %>
-                          <div class="item">
-                            <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
-                          </div>
-                          <% } %>
-                        </div>
-                        <% } else { %>
-                        <img src="images/portfolio/projects/<%= project.id %>/1.jpg"/>
-                        <% } %>
-                      </div>
-                    </div>
-                  </div>
-                  <% } %>
+
                 </div>
                 <% }); %>
               </section>
@@ -208,6 +129,85 @@ Template - My Portfolio
 
           </div>
         </div>
+
+        <!--
+        Project Modals
+        -->
+        <div class="standby-modal-content">
+          <% _.each(_.flatten(_.pluck(categories, 'projects')), function(project, i) { %>
+          <div class="modal-content js-modal-content-<%= project.id %>">
+
+            <!--
+            Header
+            -->
+            <div class="js-modal-content-header">
+              <div class="project-modal-header">
+                <h3><%= project.name %></h3>
+                <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                <div class="js-project-details">
+                  <p class="description"><%= project.description %> <span class="date"><%= project.date %></span></p>
+                  <p class="technology"><strong>Technology</strong>:&nbsp;
+                  <% _.each(project.skills, function(skill, index) { %>
+                    <% if(index > 0) { %>, <% } %><%= skill %>
+                  <% }); %>
+                  </p>
+                  <p class="responsibility"><strong>Responsibility</strong>: <%= project.responsibility %></p>
+                </div>
+              </div>
+            </div>
+
+            <!--
+            Body
+            -->
+            <div class="js-modal-content-body">
+              <div class="project-modal-body">
+                <!--
+                Screenshot Carousel(s)
+                -->
+                <div class="tabbed-content">
+                  <% if(project.screenshots.desktop > 0 && (project.screenshots.tablet > 0 || project.screenshots.phone > 0)) { %>
+                  <div class="tabbed-content-tabs tabbed-content-tabs-centred">
+                    <ul class="nav nav-tabs js-carousel-tabs" role="tablist">
+                      <% if(project.screenshots.desktop > 0) { %>
+                      <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" role="tab" data-toggle="tab" class="js-tablink">Desktop</a></li>
+                      <% } %>
+                      <% if(project.screenshots.tablet > 0) { %>
+                      <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" role="tab" data-toggle="tab" class="js-tablink">Tablet</a></li>
+                      <% } %>
+                      <% if(project.screenshots.phone > 0) { %>
+                      <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" role="tab" data-toggle="tab" class="js-tablink">Phone</a></li>
+                      <% } %>
+                    </ul>
+                  </div>
+                  <% } %>
+                  <div class="tab-content">
+                    <% _.each(project.screenshots, function(quantity, type) { %>
+                    <div class="tab-pane js-tab<% if(type === "desktop") { %> active<% } %>" id="screenshots-<%= type %>">
+                      <div class="owl-carousel-navigation">
+                        <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
+                        <a class="next js-carousel-next" href="#">Next Slide ></a>
+                      </div>
+                      <div class="owl-carousel js-carousel">
+                        <% for(var i = 0; i < project.screenshots[type]; i++) { %>
+                        <div class="item">
+                          <% if(type === "desktop") { %>
+                          <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                          <% } else { %>
+                          <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
+                          <% } %>
+                        </div>
+                        <% } %>
+                      </div>
+                    </div>
+                    <% }); %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }); %>
+        </div>
+
       </article>
     </div>
   </div>

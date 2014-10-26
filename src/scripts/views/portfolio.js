@@ -52,7 +52,6 @@ define([
                 });
                 categoryData[key] = { name: config.name, projects: projects, clientLogos: config.clientLogos };
             });
-            console.log(categoryData);
 
             // Release data to view
             this.data = {
@@ -66,20 +65,46 @@ define([
             if(typeof modal !== 'undefined') {
                 if(!project.hasClass('js-noclick')) {
                     var self = this;
+                    // Show/hide project details in modal header
+                    var projectDetails = $('.js-modal-content-' + modal + ' .js-project-details');
+                    if(!$('#highlights').hasClass('active')) {
+                        projectDetails.hide();
+                    } else {
+                        projectDetails.show();
+                    }
+                    // Show modal and configure carousel(s) and tab links
                     this.showModal(modal, function() {
-                        self.startCarousel();
+                        self.startCarousels();
                         self.setModalTabClickEvents();
                     });
                 }
             }
         },
 
-        startCarousel: function() {
-            $('.js-modal .owl-carousel').owlCarousel({
+        onAfterRender: function() {
+            this.setCarouselTearDown();
+        },
+
+        startCarousels: function() {
+            $('.js-modal .js-carousel').owlCarousel({
                 singleItem: true,
                 autoWidth: true
             });
             this.setCarouselNavClickEvents('.js-tab:first-child');
+        },
+
+        destroyCarousels: function() {
+            $('.js-modal .js-tab').each(function() {
+                var owl = $(this).find('.js-carousel').data('owlCarousel');
+                owl.destroy();
+            });
+        },
+
+        setCarouselTearDown: function() {
+            var self = this;
+            $('.js-modal').on('hidden.bs.modal', function() {
+                self.destroyCarousels();
+            });
         },
 
         setCarouselNavClickEvents: function(tab) {
