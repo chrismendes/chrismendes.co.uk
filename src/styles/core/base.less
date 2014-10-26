@@ -3,6 +3,7 @@ html {
 }
 html, body {
     min-height: 100%;
+    overflow-x: hidden;
 }
 body {
     font-family: Arial;
@@ -83,4 +84,10 @@ Miscellaneous
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+// IE10 mobile viewport (ignores viewport metatag)
+@-ms-viewport{
+    width: device-width;
+    zoom: 1.0;
 }
