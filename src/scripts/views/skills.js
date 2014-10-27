@@ -17,7 +17,26 @@ define([
         id:             'skills',
         template:       _.template(html),
         background:     'gold',
-        theme:          'red'
+        theme:          'red',
+
+        events: {
+            'click .js-icon-select':    'onWorkflowBoxClick'
+        },
+
+        onWorkflowBoxClick: function(e) {
+            var selected = this.identifyClickedBox(e);
+            this.setActive(selected);
+            this.changeContent(selected.attr('data-tab'));
+        },
+
+        setActive: function(selected) {
+            $('.js-icon-select').removeClass('is-active');
+            selected.toggleClass('is-active');
+        },
+        changeContent: function(tab) {
+            $('.js-workflow-tab').hide();
+            $('#'+tab).show();
+        }
 
     });
 
