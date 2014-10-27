@@ -14,6 +14,8 @@ A fully responsive website accessible across desktops, tablets, and mobile phone
 * Twitter Bootstrap
 * JavaScript, jQuery, JSON
 * Backbone.js, Require.js
+* Grunt, Bower
+
 
 
 ## Build/Run Locally
