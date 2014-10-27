@@ -18,7 +18,7 @@ A fully responsive website accessible across desktops, tablets, and mobile phone
 
 ## Build/Run Locally
 
-Having checked out the project, following the steps below:
+Having checked out the project, follow the steps below:
 
 1) Install Grunt dependencies via NPM (will create the 'node_modules' directory):
 
@@ -32,14 +32,17 @@ $ npm install
 $ bower install
 ```
 
-3) Run the app via Grunt:
+3) Run local Node.js server and open app in browser via Grunt:
 
 ```sh
-# Development version
+# Development version ('src' directory)
 $ grunt serve
 
-# Production version
+# Production version ('dist' directory)
 $ grunt serve:dist
+
+# Build to 'dist' only
+$ grunt build
 ```
 
 ## Todo
