@@ -44,6 +44,22 @@
         background: linear-gradient(to bottom, #323232 0, #4F4F4F 100%);
         text-align: right;
     }
+
+    @media screen and (max-width: @screen-xs-max) and (orientation: landscape) { // Phone Landscape
+        width: 400px;
+        -webkit-transform: translateX(400px);
+        transform: translateX(400px);
+
+        ul {
+            width: 200px;
+            &.landscape-col-left {
+                float: left;
+            }
+            &.landscape-col-right {
+                float: right;
+            }
+        }
+    }
 }
 
 .app-container {
