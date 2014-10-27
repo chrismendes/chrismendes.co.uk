@@ -74,7 +74,7 @@ module.exports = function (grunt) {
             'requirejs',              // Compile all require.js modules and dependencies for app into main.js
             'replace:mainjs',         // Update index.html require.js script include (swapping src="require.js" and "data-main" for src="js/main.js")
             'modernizr',              // Replace dist modernizr.js with tailored version based on JS/CSS tests in use
-            'filerev',                // Append content-based hash to asset filenames for cache busting purposes
+            // 'filerev',                // Append content-based hash to asset filenames for cache busting purposes
             'usemin',                 // Replace references to now concatenated and optimised assets via useminPrepare and other tasks above
             'htmlmin',                // Minify HTML
         ]);
