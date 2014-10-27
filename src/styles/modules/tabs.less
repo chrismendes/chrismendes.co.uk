@@ -45,8 +45,8 @@ Tabbed Content
 
         .tab-icon {
             a, a:hover {
-                background-position: 8px 8px;
-                background-repeat: no-repeat;
+                background-position: 8px 8px !important;
+                background-repeat: no-repeat !important;
             }
             // (TODO: Move icons to neutral icons dir, rename to: desktop/laptop/tablet/phone)
             &.tab-icon-contract > a {
@@ -66,7 +66,7 @@ Tabbed Content
                 padding-left: 40px;
                 @media screen and (max-width: @screen-xs-max) { // Phone
                     padding-left: 52px;
-                    background-position: 13px 8px;
+                    background-position: 13px 8px !important;
                 }
             }
             &.tab-icon-phone > a {
@@ -74,7 +74,7 @@ Tabbed Content
                 padding-left: 32px;
                 @media screen and (max-width: @screen-xs-max) { // Phone
                     padding-left: 52px;
-                    background-position: 17px 8px;
+                    background-position: 17px 8px !important;
                 }
             }
         }
