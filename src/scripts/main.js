@@ -9,11 +9,11 @@ require.config({
         'jqueryui':                 '../libraries/jquery-ui/ui/jquery-ui',
         'underscore':               '../libraries/underscore/underscore',
         'backbone':                 '../libraries/backbone/backbone',
-        'bootstrap-modal':          '../libraries/bootstrap/js/modal',
-        'bootstrap-transition':     '../libraries/bootstrap/js/transition',
-        'bootstrap-tab':            '../libraries/bootstrap/js/tab',
-        'bootstrap-collapse':       '../libraries/bootstrap/js/collapse',
-        'bootstrap-carousel':       '../libraries/bootstrap/js/carousel',
+        'bootstrapmodal':          '../libraries/bootstrap/js/modal',
+        'bootstraptransition':     '../libraries/bootstrap/js/transition',
+        'bootstraptab':            '../libraries/bootstrap/js/tab',
+        'bootstrapcollapse':       '../libraries/bootstrap/js/collapse',
+        'bootstrapcarousel':       '../libraries/bootstrap/js/carousel',
         'owlcarousel':              '../libraries/owlcarousel/owl-carousel/owl.carousel',
         'fastclick':                '../libraries/fastclick-amd/fastclick',
     },
@@ -28,24 +28,24 @@ require.config({
             exports: '$',
             deps:    ['jquery']
         },
-        'bootstrap-carousel': {
-            exports: 'bootstrap-carousel',
+        'bootstrapcarousel': {
+            exports: 'bootstrapcarousel',
             deps:    ['jquery']
         },
-        'bootstrap-modal': {
-            exports: 'bootstrap-modal',
+        'bootstrapmodal': {
+            exports: 'bootstrapmodal',
             deps:    ['jquery']
         },
-        'bootstrap-transition': {
-            exports: 'bootstrap-transition',
+        'bootstraptransition': {
+            exports: 'bootstraptransition',
             deps:    ['jquery']
         },
-        'bootstrap-tab': {
-            exports: 'bootstrap-tab',
+        'bootstraptab': {
+            exports: 'bootstraptab',
             deps:    ['jquery']
         },
-        'bootstrap-collapse': {
-            exports: 'bootstrap-collapse',
+        'bootstrapcollapse': {
+            exports: 'bootstrapcollapse',
             deps:    ['jquery']
         },
         'owlcarousel': {
