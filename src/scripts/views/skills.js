@@ -7,7 +7,7 @@ define([
     'backbone',
     'views/_base',
     'text!../../templates/skills.html',
-    'bootstrap-tab'
+    'bootstraptab'
 ], function($, _, Backbone, BaseView, html) {
 
     'use strict';

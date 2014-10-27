@@ -9,9 +9,9 @@ define([
     'text!../../templates/portfolio.html',
     'collections/projects',
     'text!../../data/portfolio.json',
-    'bootstrap-tab',
-    'bootstrap-modal',
-    'bootstrap-transition',
+    'bootstraptab',
+    'bootstrapmodal',
+    'bootstraptransition',
     'owlcarousel'
 ], function($, _, Backbone, BaseView, html, ProjectCollection, PortfolioData) {
 

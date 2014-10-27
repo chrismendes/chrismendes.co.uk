@@ -6,7 +6,7 @@ define([
     'underscore',
     'views/_base',
     'text!../../templates/cv.html',
-    'bootstrap-tab'
+    'bootstraptab'
 ], function($, _, BaseView, html) {
 
     'use strict';
