@@ -57,6 +57,11 @@ Currently outstanding:
 * Convert suitable images to spritesheets
 * Thorough cross-browser and cross-device testing
 
+Phase two and three:
+
+* Make site crawlable by search engines (currently not)
+* Create separate branch with alternative technology stack:
+    * i.e. AngularJS, Foundation, Sass
 
 ## License
 
