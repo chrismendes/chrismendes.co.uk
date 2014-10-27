@@ -500,7 +500,7 @@
         "date":                   "May 2014 (Ongoing)",
         "highlight":              false,
         "codeSample":             true,
-        "codeSampleURL":          "https://github.com/chrismendes",
+        "codeSampleURL":          "https://github.com/chrismendes/chrismendes.co.uk",
         "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
         "id":                     "mysite",
         "clientId":               null
