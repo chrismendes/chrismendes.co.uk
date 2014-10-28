@@ -41,11 +41,6 @@ define([
             var boxClicked = this.identifyClickedBox(e);
             if(typeof boxClicked.attr('data-href') !== 'undefined') {
                 this.exitPage(boxClicked);
-            } else {
-                var modal = boxClicked.attr('data-modal');
-                if(typeof modal !== 'undefined') {
-                    this.showModal(modal);
-                }
             }
         },
 
@@ -81,16 +76,10 @@ define([
             if(_.isUndefined(colour)) {
                 return false;
             }
-            // Preserve 'slideup' body class if present
-            var bodySlideUp = $('body').hasClass('slideup');
-            
             // Fade in background via 'bg-transition' element
             $('#bg-transition').removeClass().addClass('theme-bg-'+colour);
             $('#bg-transition').fadeIn(500, function() {
                 $('body').removeClass().addClass('theme-bg-'+colour);
-                if(bodySlideUp) {
-                    $('body').addClass('slideup');
-                }
                 $('#bg-transition').hide();
                 if(onComplete) {
                     onComplete();

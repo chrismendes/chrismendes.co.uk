@@ -12,7 +12,6 @@
     <!-- build:css css/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="libraries/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="libraries/owlcarousel/owl-carousel/owl.carousel.css" />
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -63,7 +62,7 @@
 
       <div class="container">
 
-        <header>
+        <header class="js-header">
         </header>
         
         <div class="row">
@@ -78,42 +77,17 @@
 
     </div>
 
-    <footer>
+    <footer class="js-footer">
     </footer>
 
-    <div id="page-modal" class="modal fade js-modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">
-              <span class="label">Close</span><span aria-hidden="true">&times;</span>
-            </button>
-            <div class="js-modal-header">
-              
-            </div>
-          </div>
-          <div class="js-modal-body modal-body">
-
-          </div>
-        </div>
-      </div>
+    <div class="js-modal-skeleton">
     </div>
 
-    <nav class="mobile-menu-container">
-      <a class="close-mobile-menu js-close-mobile-menu" href="#">Close X</a>
-      <ul class="landscape-col-left">
-        <li><a href="#">Home</a></li>
-        <li><a href="#skills">Skills &amp; Expertise</a></li>
-        <li><a href="#cv">My CV</a></li>
-        <li><a href="#portfolio">My Portfolio</a></li>
-      </ul>
-      <ul class="landscape-col-right">
-        <li><a href="#feedback">Job Feedback</a></li>
-        <!-- <li><a href="#about">About Me</a></li> -->
-        <li><a href="#recruitment">Recruitment</a></li>
-        <li><a href="#">Get In Touch</a></li>
-      </ul>
-    </nav>
+    <div class="js-shared-content">
+    </div>
+
+    <div class="js-mobile-menu">
+    </div>
 
     <script src="libraries/requirejs/require.js" data-main="scripts/main.js" async></script>
 
@@ -121,6 +95,7 @@
     <script src="libraries/modernizr/modernizr.js" async></script>
     <!-- endbuild -->
 
+    <!-- (TODO: Test IE8 and determine necessary polyfills) -->
     <!--[if IE 8]>
     <!-- build:js js/ie8.js -->
     <!--<script src="libraries/rem-unit-polyfill/js/rem.js" async></script>-->

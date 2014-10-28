@@ -1,135 +1,88 @@
 <!--
 Template - Home Page
 -->
-<div class="l-home page-container js-fadein">
+<div class="l-home page-container is-hidden js-fadein">
 
-    <div class="scattered-boxes">
-      <div class="row">
-        <!--
-        Skills & Expertise
-        -->
-        <div class="col-md-3">
-          <div class="box box-1 box-green box-skills" data-href="skills" data-bg="gold">
-            <h3 class="title">Skills &amp; Expertise</h3>
-            <!-- <span class="icons"></span> -->
-            <img class="icons" src="images/home/skills-icons.png" width="216" height="64" alt="Skills &amp; Expertise"/>
-            <button type="button" class="btn disabled">Examine skill set ></button>
-          </div>
-        </div>
-        <!--
-        My CV
-        -->
-        <div class="col-md-2">
-          <div class="box box-2 box-red box-cv" data-href="cv" data-bg="green">
-            <h3 class="title">My CV</h3>
-            <p class="description">Work, education, achievements, etc.</p>
-            <img class="icons" src="images/home/cv-icons.png" width="122" height="37" alt="My CV"/>
-            <button type="button" class="btn disabled">Review CV ></button>
-          </div>
-        </div>
-        <!--
-        My Portfolio
-        -->
-        <div class="col-md-3">
-          <div class="box box-3 box-red box-portfolio" data-href="portfolio" data-bg="gold">
-            <h3 class="title">My Portfolio</h3>
-            <img class="icons" src="images/home/portfolio-icons.png" width="213" height="76" alt="Cisco / Autodesk / SAP / Capablue"/>
-            <button type="button" class="btn disabled">Inspect portfolio ></button>
-          </div>
-        </div>
-        <!--
-        Job Feedback
-        -->
-        <div class="col-md-4">
-          <div class="box box-4 box-gold box-feedback" data-href="feedback" data-bg="teal">
-            <h3 class="title">Job Feedback</h3>
-            <p class="description">Written recommendations that I have received from the people that I have worked with.</p>
-            <button type="button" class="btn disabled">Read feedback ></button>
-          </div>
+  <div class="scattered-boxes">
+    <div class="row">
+      <!--
+      Skills & Expertise
+      -->
+      <div class="col-md-3">
+        <div class="box box-1 box-green box-skills" data-href="skills" data-bg="gold">
+          <h3 class="title">Skills &amp; Expertise</h3>
+          <!-- <span class="icons"></span> -->
+          <img class="icons" src="images/home/skills-icons.png" width="216" height="64" alt="Skills &amp; Expertise"/>
+          <button type="button" class="btn disabled">Examine skill set ></button>
         </div>
       </div>
-      <div class="row">
-        <!--
-        About Me
-        -->
-        <div class="col-md-2">
-          <div class="box box-5 box-green box-about" data-href="about" data-bg="teal">
-            <h3 class="title">About Me</h3>
-            <!-- <p class="description">Coming soon.</p> -->
-            <button type="button" class="btn disabled">Coming soon</button>
-          </div>
+      <!--
+      My CV
+      -->
+      <div class="col-md-2">
+        <div class="box box-2 box-red box-cv" data-href="cv" data-bg="green">
+          <h3 class="title">My CV</h3>
+          <p class="description">Work, education, achievements, etc.</p>
+          <img class="icons" src="images/home/cv-icons.png" width="122" height="37" alt="My CV"/>
+          <button type="button" class="btn disabled">Review CV ></button>
         </div>
-        <!--
-        Recruitment
-        -->
-        <div class="col-md-4">
-          <div class="box box-6 box-purple box-recruitment" data-href="recruitment" data-bg="teal">
-            <h3 class="title">Recruitment</h3>
-            <p class="description">Basic details such as my daily rate, location, interested roles, etc.</p>
-            <button type="button" class="btn disabled">
-              <span class="hidden-xs hidden-sm">Click for details ></span>
-              <span class="visible-xs-block visible-sm-block">Tap for details ></span>
-            </button>
-          </div>
-        </div>
-        <!--
-        About Me
-        -->
-        <!-- 
-        <div class="col-md-3">
-          <div class="box box-7 box-blue box-about" data-href="about" data-bg="teal">
-            <h3 class="title">About Me</h3>
-            <p class="description">Brown eyes, brown hair, and other useful information...</p>
-            <button type="button" class="btn disabled">Who I am ></button>
-          </div>
-        </div>
-         -->
-        <!--
-        Contact
-        -->
-        <div class="col-md-3">
-          <div class="box box-8 box-blue box-contact" data-modal="contact">
-            <h3 class="title">Get In Touch</h3>
-            <p class="description">Please get in touch regarding a contract vacancy.</p>
-            <button type="button" class="btn disabled">Contact me ></button>
-          </div>
-        </div>
-        <!--
-        Contact Modal
-        -->
-        <div class="js-modal-content-contact hide" data-modal-large="false">
-          <div class="js-modal-content-header">
-            <h3>Get In Touch</h3>
-          </div>
-          <div class="js-modal-content-body">
-            <div class="row">
-              <div class="side-by-side-content">
-                <div class="side-by-side-content-column col-md-6">
-                  <p><strong>Email Address</strong></p>
-                  <a href="mailto:inbox@chrismendes.co.uk" class="btn">inbox@chrismendes.co.uk</a>
-                </div>
-                <div class="side-by-side-content-column col-md-6">
-                  <p><strong>LinkedIn Profile</strong></p>
-                  <a href="http://uk.linkedin.com/in/chrismendes" target="_blank" class="btn">uk.linkedin.com/in/chrismendes</a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <br/><p>Regarding contract vacancies, please provided the following information:</p>
-                <ul>
-                  <li>Skills Required</li>
-                  <li>Daily Rate</li>
-                  <li>Location</li>
-                </ul>
-                <p>I will not be considering permanent positions so please limit emails to <u>contract roles only</u>.</p>
-                <p>See <a href="#recruitment">Recruitment</a> page for more details.</p>
-              </div>
-          </div>
-        </div>
-
       </div>
-      
+      <!--
+      My Portfolio
+      -->
+      <div class="col-md-3">
+        <div class="box box-3 box-red box-portfolio" data-href="portfolio" data-bg="gold">
+          <h3 class="title">My Portfolio</h3>
+          <img class="icons" src="images/home/portfolio-icons.png" width="213" height="76" alt="Cisco / Autodesk / SAP / Capablue"/>
+          <button type="button" class="btn disabled">Inspect portfolio ></button>
+        </div>
+      </div>
+      <!--
+      Job Feedback
+      -->
+      <div class="col-md-4">
+        <div class="box box-4 box-gold box-feedback" data-href="feedback" data-bg="teal">
+          <h3 class="title">Job Feedback</h3>
+          <p class="description">Written recommendations that I have received from the people that I have worked with.</p>
+          <button type="button" class="btn disabled">Read feedback ></button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--
+      About Me
+      -->
+      <div class="col-md-2">
+        <div class="box box-5 box-green box-about" data-href="about" data-bg="teal">
+          <h3 class="title">About Me</h3>
+          <!-- <p class="description">Coming soon.</p> -->
+          <button type="button" class="btn disabled">Coming soon</button>
+        </div>
+      </div>
+      <!--
+      Recruitment
+      -->
+      <div class="col-md-4">
+        <div class="box box-6 box-purple box-recruitment" data-href="recruitment" data-bg="teal">
+          <h3 class="title">Recruitment</h3>
+          <p class="description">Basic details such as my daily rate, location, interested roles, etc.</p>
+          <button type="button" class="btn disabled">
+            <span class="hidden-xs hidden-sm">Click for details ></span>
+            <span class="visible-xs-block visible-sm-block">Tap for details ></span>
+          </button>
+        </div>
+      </div>
+      <!--
+      Contact
+      -->
+      <div class="col-md-3">
+        <div class="box box-8 box-blue box-contact js-shared-modal" data-modal="contact">
+          <h3 class="title">Get In Touch</h3>
+          <p class="description">Please get in touch regarding a contract vacancy.</p>
+          <button type="button" class="btn disabled">Contact me ></button>
+        </div>
+      </div>
+    
     </div>
   </div>
 

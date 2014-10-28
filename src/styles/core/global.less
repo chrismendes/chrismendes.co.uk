@@ -19,8 +19,10 @@ body.is-not-raised {
     }
 
 .page-container {
-    display: none; // Hidden on page load, faded in via JS
     margin-top: 20px;
+    &.is-hidden {
+        display: none; // Hidden on page load, faded in via JS
+    }
 }
 
 #bg-transition {
