@@ -33,7 +33,6 @@ define([
         },
 
         onAfterRenderBase: function() {
-            this.setMenuActiveItem();
             this.setMobileMenuButtonHandlers();
             this.setSharedModalClickHandler();
         },
@@ -43,6 +42,8 @@ define([
             if(this.id === 'home') {
                 $('.js-menu').hide();
             }
+
+            this.setMenuActiveItem();
         },
 
         render: function() {
@@ -58,7 +59,7 @@ define([
             this.onBeforeShowBase();
             this.onBeforeShow();
 
-            // Fade in page or show
+            // Fade in page if hidden
             if($('.js-fadein').length > 0) {
                 var self = this;
                 $('.js-fadein').fadeIn(400, function() {
