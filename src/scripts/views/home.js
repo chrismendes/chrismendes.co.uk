@@ -25,7 +25,6 @@ define([
         },
 
         onAfterRender: function() {
-            $('.menu').hide();
             $('body').addClass('home').addClass('is-not-raised', 400);
         },
 

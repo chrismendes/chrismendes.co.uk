@@ -38,6 +38,13 @@ define([
             this.setSharedModalClickHandler();
         },
 
+        onBeforeShowBase: function() {
+            // Hide horizontal navbar on home page
+            if(this.id === 'home') {
+                $('.js-menu').hide();
+            }
+        },
+
         render: function() {
             this.onBeforeRenderBase();
             this.onBeforeRender();
@@ -48,6 +55,7 @@ define([
             // Set page contents
             this.$el.html(this.template(this.data));
 
+            this.onBeforeShowBase();
             this.onBeforeShow();
 
             // Fade in page or show
