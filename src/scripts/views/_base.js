@@ -118,6 +118,12 @@ define([
             $('.js-modal-body').html(modalContent.body);
             $('.js-modal').modal();
 
+            // Set click handler for close modal link other than close button
+            var self = this;
+            $('.js-close-modal').click(function() {
+                self.closeModal();
+            });
+
             // Run callback if specified
             if(typeof onComplete !== 'undefined') {
                 onComplete();
@@ -126,6 +132,7 @@ define([
 
         closeModal: function() {
             $('.js-modal').modal('hide');
+            $('.modal-backdrop').remove();
         },
 
         setSharedModalClickHandler: function() {

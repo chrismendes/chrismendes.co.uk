@@ -16,9 +16,9 @@ define([
         background:     'purple',
         theme:          'green',
 
-        onAfterRender: function() {
-            this.closeModal();
-        }
+        // onAfterRender: function() {
+        //     this.closeModal();
+        // }
 
     });
 
