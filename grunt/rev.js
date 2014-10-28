@@ -14,7 +14,8 @@ module.exports = function(grunt) {
             src: [
                 '<%= config.dist.scripts %>/{,*/}*.js',
                 '<%= config.dist.styles %>/{,*/}*.css',
-                '<%= config.dist.images %>/{,*/}*.*',
+                // (TODO: Fix images reference updating post-rev)
+                // '<%= config.dist.images %>/{,*/}*.*',
                 '<%= config.dist.fonts %>/{,*/}*.*'
             ]
         }
