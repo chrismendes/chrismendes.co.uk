@@ -26,22 +26,10 @@ module.exports = function(grunt) {
                         'locales/*'
                     ]
                 },
-                // News templates (index, categories, articles)
+                // Monopoly project
                 {
-                    src:        ['<%= config.dev.templates %>/content/main/news/*.html'],
-                    dest:       '<%= config.dist.templates %>/news/',
-                    expand:     true,
-                    flatten:    true
-                },
-                {
-                    src:        ['<%= config.dev.templates %>/content/main/news/articles/*.html'],
-                    dest:       '<%= config.dist.templates %>/news/articles/',
-                    expand:     true,
-                    flatten:    true
-                },
-                {
-                    src:        ['<%= config.dev.templates %>/content/main/news/categories/*.html'],
-                    dest:       '<%= config.dist.templates %>/news/categories/',
+                    src:        [ 'misc/monopoly/*.*' ],
+                    dest:       '<%= config.dist.root %>/monopoly/',
                     expand:     true,
                     flatten:    true
                 }
