@@ -183,6 +183,7 @@ Template - My Portfolio
                   <div class="tab-content">
                     <% _.each(project.screenshots, function(quantity, type) { %>
                     <div class="tab-pane js-tab<% if(type === "desktop") { %> active<% } %>" id="screenshots-<%= type %>">
+                      <% if(project.screenshots[type] > 1) { %>
                       <div class="owl-carousel-navigation">
                         <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
                         <a class="next js-carousel-next" href="#">Next Slide ></a>
@@ -198,6 +199,15 @@ Template - My Portfolio
                         </div>
                         <% } %>
                       </div>
+                      <% } else { %>
+                      <div class="single-screenshot">
+                        <% if(type === "desktop") { %>
+                        <img src="images/portfolio/projects/<%= project.id %>/<%= 1 %>.jpg"/>
+                        <% } else { %>
+                        <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= 1 %>.jpg"/>
+                        <% } %>
+                      </div>
+                      <% } %>
                     </div>
                     <% }); %>
                   </div>
