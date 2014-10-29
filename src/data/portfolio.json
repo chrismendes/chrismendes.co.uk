@@ -474,7 +474,7 @@
     },
     {
         "name":                   "Monopoly",
-        "url":                    "www.chrismendes.co.uk/portfolio/monopoly",
+        "url":                    "www.chrismendes.co.uk/monopoly",
         "description":            "A replica of the well known board game built with Flash. User plays against AI opponents. My undergraduate final year project at university.",
         "skills":                 [ "Adobe Flash", "ActionScript 2.0" ],
         "employer":               null,
