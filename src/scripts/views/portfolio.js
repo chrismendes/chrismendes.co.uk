@@ -34,10 +34,6 @@ define([
         },
 
         onAfterRender: function() {
-            $('a.download-file').click(function(e) {
-                e.preventDefault();
-                $('.js-modal').modal('show');
-            });
             this.setProjectModalTearDown();
         },
 
