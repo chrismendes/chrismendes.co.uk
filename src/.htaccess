@@ -1,3 +1,19 @@
+# ---
+# Custom Rules
+# ---
+
+# Redirect [www.]chrismendes.co.uk -> chrismendes.london
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^chrismendes.co.uk$ [OR]
+    RewriteCond %{HTTP_HOST} ^www.chrismendes.co.uk$
+    RewriteRule (.*)$ http://chrismendes.london/$1 [R=301,L]
+</IfModule>
+
+# ---
+# HTML5 Boilerplate htaccess
+# ---
+
 # Apache Server Configs v2.2.0 | MIT License
 # https://github.com/h5bp/server-configs-apache
 
@@ -235,11 +251,11 @@ AddDefaultCharset utf-8
 
 # Option 1: rewrite www.example.com → example.com
 
-#<IfModule mod_rewrite.c>
-#    RewriteCond %{HTTPS} !=on
-#    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-#    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
-#</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -248,13 +264,13 @@ AddDefaultCharset utf-8
 # Be aware that the following might not be a good idea if you use "real"
 # subdomains for certain parts of your website.
 
-<IfModule mod_rewrite.c>
-   RewriteCond %{HTTPS} !=on
-   RewriteCond %{HTTP_HOST} !^www\. [NC]
-   RewriteCond %{SERVER_ADDR} !=127.0.0.1
-   RewriteCond %{SERVER_ADDR} !=::1
-   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-</IfModule>
+#<IfModule mod_rewrite.c>
+#   RewriteCond %{HTTPS} !=on
+#   RewriteCond %{HTTP_HOST} !^www\. [NC]
+#   RewriteCond %{SERVER_ADDR} !=127.0.0.1
+#   RewriteCond %{SERVER_ADDR} !=::1
+#   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+#</IfModule>
 
 
 # ##############################################################################
