@@ -54,8 +54,6 @@ Currently outstanding:
 * About Me page
 * Add missing copy on Skills > Developer Tools page
 * Add phone/tablet screenshots for various projects
-* Convert suitable images to spritesheets
-* Thorough cross-browser and cross-device testing
 
 Phase two and three:
 
