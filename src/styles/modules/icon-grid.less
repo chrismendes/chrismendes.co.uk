@@ -4,6 +4,10 @@
     .icon-grid-column {
         width: 50%;
         float: left;
+
+        @media screen and (min-width: 500px) and (max-width: @screen-sm-max) { // Phone Landscape/Tablet
+            width: 25%;
+        }
     }
 
     .icon-grid-item {
@@ -17,6 +21,10 @@
         .title {
             clear: both;
             display: block;
+            font-size: 13px;
+            @media screen and (min-width: @screen-md-max) { // Large desktop
+                font-size: 14px;
+            }
         }
         .icon {
             margin: 8px auto 0px auto;
@@ -24,12 +32,19 @@
 
         &:hover {
             background: #dfdfdf;
+            @media screen and (max-width: @screen-sm-max) { // Tablet/Phone
+                background: #00CC99;
+                .title {
+                    color: #fff;
+                }
+            }
         }
-        &.is-active {
-            background: #00CC99;
-
-            .title {
-                color: #fff;
+        @media screen and (min-width: @screen-sm-max) { // Desktop
+            &.is-active {
+                background: #00CC99;
+                .title {
+                    color: #fff;
+                }
             }
         }
     }

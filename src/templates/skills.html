@@ -36,7 +36,7 @@ Template - Skills & Expertise
               <!--
               Basic Services
               -->
-              <div class="tab-pane active" id="overview">
+              <div class="tab-pane _active" id="overview">
                 <div class="row">
                   <div class="col-md-9">
                     <p class="large">My skill set and expertise evolve around creating web applications from scratch and to a high standard.</p>
@@ -132,7 +132,7 @@ Template - Skills & Expertise
                     <!--
                     Body - Front-end development
                     -->
-                    <div class="tab-pane active" id="skills-frontend">
+                    <div class="tab-pane _active" id="skills-frontend">
                       <h3>Front-end Development</h3>
 
                       <div class="l-content-rows">
@@ -419,9 +419,9 @@ Template - Skills & Expertise
               </div>
 
               <!--
-              Development Workflow
+              Developer Tools
               -->
-              <div class="tab-pane" id="workflow">
+              <div class="tab-pane active" id="workflow">
 
                 <div class="l-spaced-rows">
                   <div class="row">
@@ -473,102 +473,138 @@ Template - Skills & Expertise
                       </div>
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs js-middle-content-column">
                       <div class="tab-content">
-                        <!--
-                        Grunt
-                        -->
                         <div class="tab-pane js-workflow-tab active" id="select">
                           <h3>Select an icon</h3>
                         </div>
+                        <!--
+                        Grunt
+                        -->
                         <div class="tab-pane js-workflow-tab" id="grunt">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://gruntjs.com" target="_blank">
-                                <span class="image sprite sprite-tech-grunt-large"></span>
-                              </a>
-                              <a class="link" href="http://gruntjs.com" target="_blank">www.gruntjs.com</a>
+                          <div class="js-modal-content-grunt">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://gruntjs.com" target="_blank">
+                                    <span class="image sprite sprite-tech-grunt-large"></span>
+                                  </a>
+                                  <a class="link" href="http://gruntjs.com" target="_blank">www.gruntjs.com</a>
+                                </div>
+                                <h3>Grunt</h3>
+                                <p class="description large">Automation tool that aids development, testing, and optimisation.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>Grunt</h3>
-                            <p class="description large">Automation tool that aids development, testing, and optimisation.</p>
+                            <div class="js-modal-content-body">
+                              <div class="tech-modal-body">
+                                <p>I use Grunt for JavaScript linting, compiling Sass/LESS, generating spritesheets, browser auto-reloading, and for other development admin.</p>
+                                <p>But also for building and optimising an app fit for a production environment, involving code concatenation and minification for example.</p>
+                                <p>A few of my favourite Grunt plugins are:</p>
+                                <ul>
+                                  <li><a href="https://github.com/shakyShane/grunt-browser-sync" target="_blank">grunt-browser-sync</a> - Watches code and injects changes into the browser on each target device at once, and keeping them all in sync when navigating</li>
+                                  <li><a href="https://github.com/cbas/grunt-rev" target="_blank">grunt-rev</a> - Appends to asset filenames a unique content-based hash for anti-caching purposes</li>
+                                  <li><a href="https://github.com/Ensighten/grunt-spritesmith" target="_blank">grunt-spritesmith</a> - Generates sprite sheets and CSS based on specified image files</li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                          <hr/>
-                          <p>I use Grunt for JavaScript linting, compiling Sass/LESS, generating spritesheets, browser auto-reloading, and for other development admin.</p>
-                          <p>But also for building and optimising an app fit for a production environment, involving code concatenation and minification for example.</p>
-                          <p>A few of my favourite Grunt plugins are:</p>
-                          <ul>
-                            <li><a href="https://github.com/shakyShane/grunt-browser-sync" target="_blank">grunt-browser-sync</a> - Watches code and injects changes into the browser on each target device at once, and keeping them all in sync when navigating</li>
-                            <li><a href="https://github.com/cbas/grunt-rev" target="_blank">grunt-rev</a> - Appends to asset filenames a unique content-based hash for anti-caching purposes</li>
-                            <li><a href="https://github.com/Ensighten/grunt-spritesmith" target="_blank">grunt-spritesmith</a> - Generates sprite sheets and CSS based on specified image files</li>
-                          </ul>
                         </div>
                         <!--
                         Chrome DevTools
                         -->
                         <div class="tab-pane js-workflow-tab" id="devtools">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://developer.chrome.com/devtools" target="_blank">
-                                <span class="image sprite sprite-tech-chrome-large"></span>
-                              </a>
-                              <a class="link" href="https://developer.chrome.com/devtools" target="_blank">developer.chrome.com/devtools</a>
+                          <div class="js-modal-content-devtools">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://developer.chrome.com/devtools" target="_blank">
+                                    <span class="image sprite sprite-tech-chrome-large"></span>
+                                  </a>
+                                  <a class="link" href="https://developer.chrome.com/devtools" target="_blank">developer.chrome.com/devtools</a>
+                                </div>
+                                <h3>Chrome DevTools</h3>
+                                <p class="description large">Web debugging toolkit.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>Chrome DevTools</h3>
-                            <p class="description large">Web debugging toolkit.</p>
+                            <div class="js-modal-content-body">
+                              <div class="tech-modal-body">
+                                <p>Familiar with a wide range of the included features, from inspecting the DOM and CSS styles with the Elements tab to inspecting JavaScript memory and performance with the Profiles tab.</p>
+                              </div>
+                            </div>
                           </div>
-                          <hr/>
-                          <p>Familiar with a wide range of the included features, from inspecting the DOM and CSS styles with the Elements tab to inspecting JavaScript memory and performance with the Profiles tab.</p>
                         </div>
                         <!--
                         Bower
                         -->
                         <div class="tab-pane js-workflow-tab" id="bower">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://bower.io" target="_blank">
-                                <span class="image sprite sprite-tech-bower-large"></span>
-                              </a>
-                              <a class="link" href="http://bower.io" target="_blank">bower.io</a>
+                          <div class="js-modal-content-bower">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://bower.io" target="_blank">
+                                    <span class="image sprite sprite-tech-bower-large"></span>
+                                  </a>
+                                  <a class="link" href="http://bower.io" target="_blank">bower.io</a>
+                                </div>
+                                <h3>Bower / NPM</h3>
+                                <p class="description large">Package managers that enable easy management of library and framework dependencies.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>Bower / NPM</h3>
-                            <p class="description large">Package managers that enable easy management of library and framework dependencies.</p>
+                            <div class="js-modal-content-body">
+                              <div class="tech-modal-body">
+                                <p>Having used Bower for a couple of years now within development teams, it is a must for keeping developers on the same page.</p>
+                                <p>I use the Node Package Manager (NPM) for similar purposes, but predominantly with respect to development dependencies such as Grunt plugins.</p>
+                              </div>
+                            </div>
                           </div>
-                          <hr/>
-                          <p>Having used Bower for a couple of years now within development teams, it is a must for keeping developers on the same page.</p>
-                          <p>I use the Node Package Manager (NPM) for similar purposes, but predominantly with respect to development dependencies such as Grunt plugins.</p>
                         </div>
                         <!--
                         Sublime Text
                         -->
                         <div class="tab-pane js-workflow-tab" id="sublime">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://www.sublimetext.com" target="_blank">
-                                <span class="image sprite sprite-tech-sublime-large"></span>
-                              </a>
-                              <a class="link" href="http://www.sublimetext.com" target="_blank">www.sublimetext.com</a>
+                          <div class="js-modal-content-sublime">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://www.sublimetext.com" target="_blank">
+                                    <span class="image sprite sprite-tech-sublime-large"></span>
+                                  </a>
+                                  <a class="link" href="http://www.sublimetext.com" target="_blank">www.sublimetext.com</a>
+                                </div>
+                                <h3>Sublime Text</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>Sublime Text</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         Yeoman
                         -->
                         <div class="tab-pane js-workflow-tab" id="yeoman">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://yeoman.io" target="_blank">
-                                <span class="image sprite sprite-tech-yeoman-large"></span>
-                              </a>
-                              <a class="link" href="http://yeoman.io" target="_blank">yeoman.io</a>
+                          <div class="js-modal-content-yeoman">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://yeoman.io" target="_blank">
+                                    <span class="image sprite sprite-tech-yeoman-large"></span>
+                                  </a>
+                                  <a class="link" href="http://yeoman.io" target="_blank">yeoman.io</a>
+                                </div>
+                                <h3>Yeoman</h3>
+                                <p class="description large">Modern tool for generating boilerplate code to kick-start a new project.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>Yeoman</h3>
-                            <p class="description large">Modern tool for generating boilerplate code to kick-start a new project.</p>
                           </div>
-                          <hr/>
                           <p>More often than not I won't use Yeoman to actually provide boilerplate code for a new project, but instead as an insight towards the latest code structures and trends that others have established.</p>
                           <p>I have however used Yeoman's flagship generator in the past, 'webapp-generator', for use on simple landing pages or very small three to four page static sites.</p>
                           <p>I am also intrigued by the idea of writing my own Yeoman generators for the purpose of providing a quick route to scaffolding a new project with my own boilerplate code for my own use only.</p>
@@ -577,31 +613,43 @@ Template - Skills & Expertise
                         Command Line
                         -->
                         <div class="tab-pane js-workflow-tab" id="commandline">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <span class="image sprite sprite-tech-terminal-large"></span>
+                          <div class="js-modal-content-commandline">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <span class="image sprite sprite-tech-terminal-large"></span>
+                                </div>
+                                <h3>Command Line</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>Command Line</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         Charles
                         -->
                         <div class="tab-pane js-workflow-tab" id="charles">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://www.charlesproxy.com" target="_blank">
-                                <span class="image sprite sprite-tech-charles-large"></span>
-                              </a>
-                              <a class="link" href="http://www.charlesproxy.com" target="_blank">charlesproxy.com</a>
+                          <div class="js-modal-content-charles">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://www.charlesproxy.com" target="_blank">
+                                    <span class="image sprite sprite-tech-charles-large"></span>
+                                  </a>
+                                  <a class="link" href="http://www.charlesproxy.com" target="_blank">charlesproxy.com</a>
+                                </div>
+                                <h3>Charles</h3>
+                                <p class="description large">Web debugging, monitoring, and proxy tool.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>Charles</h3>
-                            <p class="description large">Web debugging, monitoring, and proxy tool.</p>
                           </div>
-                          <hr/>
                           <p>I have benefited a lot from using Charles not only as a HTTP Monitor, for which there are many tools, but also as a means to develop apps with external dependencies.</p>
                           <p>For example, using Charles' proxy functionality on a recent project, I have been able to redirect requests to an external live video stream (.m3u8 file) to a local version of this file, in order to change the contents of it for experiment and testing purposes.</p>
                           <p>Furthermore, using the throttling feature it is very easy to test the performance of a site under a limited Internet connection.</p>
@@ -610,17 +658,21 @@ Template - Skills & Expertise
                         YSlow
                         -->
                         <div class="tab-pane js-workflow-tab" id="yslow">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://developer.yahoo.com/yslow" target="_blank">
-                                <span class="image sprite sprite-tech-yslow-large"></span>
-                              </a>
-                              <a class="link" href="#" target="_blank">developer.yahoo.com/yslow</a>
+                          <div class="js-modal-content-yslow">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://developer.yahoo.com/yslow" target="_blank">
+                                    <span class="image sprite sprite-tech-yslow-large"></span>
+                                  </a>
+                                  <a class="link" href="#" target="_blank">developer.yahoo.com/yslow</a>
+                                </div>
+                                <h3>YSlow</h3>
+                                <p class="description large">Analysis tool for measuring the level of optimisation.</p>
+                                <hr/>
+                              </div>
                             </div>
-                            <h3>YSlow</h3>
-                            <p class="description large">Analysis tool for measuring the level of optimisation.</p>
                           </div>
-                          <hr/>
                           <p>Relevant to one of my key interests, web performance, I very often rely on YSlow as a standard to judge whether or not basic principles for good web performance has been implemented or not.</p>
                           <p>This helps in providing a checklist for developing my own sites, but also a means to assess others.</p>
                           <p>In addition, I often call upon other tools to help enhance web performance such as Google <a href="https://developers.google.com/speed/pagespeed/insights" target="_blank">PageSpeed Insights</a> and <a href="http://www.webpagetest.org" target="_blank">webpagetest.org</a>.</p>
@@ -629,137 +681,201 @@ Template - Skills & Expertise
                         Git
                         -->
                         <div class="tab-pane js-workflow-tab" id="git">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://git-scm.com" target="_blank">
-                                <span class="image sprite sprite-tech-git-large"></span>
-                              </a>
-                              <a class="link" href="http://git-scm.com" target="_blank">git-scm.com</a>
+                          <div class="js-modal-content-git">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://git-scm.com" target="_blank">
+                                    <span class="image sprite sprite-tech-git-large"></span>
+                                  </a>
+                                  <a class="link" href="http://git-scm.com" target="_blank">git-scm.com</a>
+                                </div>
+                                <h3>Git Source Control</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>Git Source Control</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         BitBucket
                         -->
                         <div class="tab-pane js-workflow-tab" id="bitbucket">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://bitbucket.org" target="_blank">
-                                <span class="image sprite sprite-tech-bitbucket-large"></span>
-                              </a>
-                              <a class="link" href="https://bitbucket.org" target="_blank">bitbucket.org</a>
+                          <div class="js-modal-content-bitbucket">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://bitbucket.org" target="_blank">
+                                    <span class="image sprite sprite-tech-bitbucket-large"></span>
+                                  </a>
+                                  <a class="link" href="https://bitbucket.org" target="_blank">bitbucket.org</a>
+                                </div>
+                                <h3>BitBucket</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>BitBucket</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         Gitflow
                         -->
                         <div class="tab-pane js-workflow-tab" id="gitflow">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">
-                                <span class="image sprite sprite-tech-git-large"></span>
-                              </a>
-                              <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">nvie.com</a>
+                          <div class="js-modal-content-gitflow">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">
+                                    <span class="image sprite sprite-tech-git-large"></span>
+                                  </a>
+                                  <a class="link" href="http://nvie.com/posts/a-successful-git-branching-model" target="_blank">nvie.com</a>
+                                </div>
+                                <h3>Gitflow</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>Gitflow</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         Confluence
                         -->
                         <div class="tab-pane js-workflow-tab" id="confluence">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://www.atlassian.com/software/confluenc" target="_blank">
-                                <span class="image sprite sprite-tech-confluence-large"></span>
-                              </a>
-                              <a class="link" href="https://www.atlassian.com/software/confluenc" target="_blank">atlassian.com/software/confluence</a>
+                          <div class="js-modal-content-confluence">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://www.atlassian.com/software/confluenc" target="_blank">
+                                    <span class="image sprite sprite-tech-confluence-large"></span>
+                                  </a>
+                                  <a class="link" href="https://www.atlassian.com/software/confluenc" target="_blank">atlassian.com/software/confluence</a>
+                                </div>
+                                <h3>Confluence</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>Confluence</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         GitHub
                         -->
                         <div class="tab-pane js-workflow-tab" id="github">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://github.com" target="_blank">
-                                <span class="image sprite sprite-tech-github-large"></span>
-                              </a>
-                              <a class="link" href="https://github.com" target="_blank">github.com</a>
+                          <div class="js-modal-content-github">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://github.com" target="_blank">
+                                    <span class="image sprite sprite-tech-github-large"></span>
+                                  </a>
+                                  <a class="link" href="https://github.com" target="_blank">github.com</a>
+                                </div>
+                                <h3>GitHub</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>GitHub</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         JIRA
                         -->
                         <div class="tab-pane js-workflow-tab" id="jira">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://www.atlassian.com/software/jira" target="_blank">
-                                <span class="image sprite sprite-tech-jira-large"></span>
-                              </a>
-                              <a class="link" href="https://www.atlassian.com/software/jira" target="_blank">atlassian.com/software/jira</a>
+                          <div class="js-modal-content-jira">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://www.atlassian.com/software/jira" target="_blank">
+                                    <span class="image sprite sprite-tech-jira-large"></span>
+                                  </a>
+                                  <a class="link" href="https://www.atlassian.com/software/jira" target="_blank">atlassian.com/software/jira</a>
+                                </div>
+                                <h3>JIRA</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>JIRA</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         VirtualBox
                         -->
                         <div class="tab-pane js-workflow-tab" id="virtualbox">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="https://www.virtualbox.org" target="_blank">
-                                <span class="image sprite sprite-tech-virtualbox-large"></span>
-                              </a>
-                              <a class="link" href="https://www.virtualbox.org" target="_blank">virtualbox.org</a>
+                          <div class="js-modal-content-virtualbox">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="https://www.virtualbox.org" target="_blank">
+                                    <span class="image sprite sprite-tech-virtualbox-large"></span>
+                                  </a>
+                                  <a class="link" href="https://www.virtualbox.org" target="_blank">virtualbox.org</a>
+                                </div>
+                                <h3>VirtualBox</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>VirtualBox</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                         <!--
                         BrowserStack
                         -->
                         <div class="tab-pane js-workflow-tab" id="browserstack">
-                          <div class="heading-description-image">
-                            <div class="info-box">
-                              <a href="http://www.browserstack.com" target="_blank">
-                                <span class="image sprite sprite-tech-browserstack-large"></span>
-                              </a>
-                              <a class="link" href="http://www.browserstack.com" target="_blank">browserstack.com</a>
+                          <div class="js-modal-content-browserstack">
+                            <div class="js-modal-content-header">
+                              <div class="tech-modal-header">
+                                <div class="info-box">
+                                  <a href="http://www.browserstack.com" target="_blank">
+                                    <span class="image sprite sprite-tech-browserstack-large"></span>
+                                  </a>
+                                  <a class="link" href="http://www.browserstack.com" target="_blank">browserstack.com</a>
+                                </div>
+                                <h3>BrowserStack</h3>
+                                <p class="description large">Lorem ipsum.</p>
+                                <hr/>
+                              </div>
+                              <div class="js-modal-content-body">
+                                <div class="tech-modal-body">
+                                  <p>Lorem ipsum.</p>
+                                </div>
+                              </div>
                             </div>
-                            <h3>BrowserStack</h3>
-                            <p class="description large">Lorem ipsum.</p>
                           </div>
-                          <hr/>
-                          <p>Lorem ipsum.</p>
                         </div>
                       </div>
                     </div>
@@ -905,8 +1021,6 @@ Template - Skills & Expertise
                 </div>
 
               </div>
-
-
 
             </div>
 

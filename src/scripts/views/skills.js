@@ -25,8 +25,16 @@ define([
 
         onWorkflowBoxClick: function(e) {
             var selected = this.identifyClickedBox(e);
-            this.setActive(selected);
-            this.changeContent(selected.attr('data-tab'));
+            var tab = selected.attr('data-tab');
+
+            if($('.js-middle-content-column').css('display') !== 'none') {
+                // Desktop - populate middle column
+                this.setActive(selected);
+                this.changeContent(tab);
+            } else {
+                // Phone - trigger popup
+                this.showModal(tab);
+            }
         },
 
         setActive: function(selected) {
@@ -36,7 +44,7 @@ define([
         changeContent: function(tab) {
             $('.js-workflow-tab').hide();
             $('#'+tab).show();
-        }
+        },
 
     });
 

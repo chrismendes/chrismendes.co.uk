@@ -29,3 +29,43 @@
 .standby-modal-content {
     display: none;
 }
+
+
+/* -----------------
+Technology Modal
+----------------- */
+@media screen and (max-width: @screen-sm-max) { // Tablet/Phone
+    .tech-modal-header {
+        hr {
+            display: none;
+        }
+        .info-box {
+            background: #fff;
+        }
+        .description {
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: @screen-sm-max) { // Phone Landscape/Tablet
+    .tech-modal-header {
+        .info-box {
+            width: auto;
+            margin-top: 30px;
+            margin-right: -60px;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) { // Phone Portrait
+    .tech-modal-header {
+        .info-box {
+            width: 100% !important;
+            margin-top: 10px;
+            margin-right: 0px;
+        }
+    }
+}
