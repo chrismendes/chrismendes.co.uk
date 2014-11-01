@@ -5,7 +5,7 @@ Template - My Portfolio
 
   <div class="row">
     <div class="col-md-12">
-      <article class="content-canvas theme-border icon-portfolio">
+      <article class="content-canvas theme-border decor-portfolio">
         <div class="body-heading">
           <h2>My Portfolio</h2>
           <div class="body-heading-links">
@@ -44,7 +44,7 @@ Template - My Portfolio
                   <div class="col-md-3 col-sm-6 project-column">
 
                     <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
-                      <img class="screenshot" src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
+                      <img class="screenshot" src="images/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                       <h3 class="project-name"><%= project.name %></h3>
                       <span class="link secondary-caption"><%= project.url %></span>
                       <button type="button" class="btn more-details">Details &raquo;</button>
@@ -70,7 +70,7 @@ Template - My Portfolio
                   <div class="col-md-2 col-xs-12">
                     <% if(project.clientId !== null) { %>
                     <div class="client-logo">
-                      <img src="images/portfolio/logos/<%= project.clientId %>.jpg" alt=""/>
+                      <span class="sprite sprite-company-<%= project.clientId %>"></span>
                     </div>
                     <% } %>
                   </div>
@@ -81,8 +81,9 @@ Template - My Portfolio
                   -->
                   <div class="col-md-7 col-xs-12">
                     <div class="screenshot-thumb js-modal-show">
-                      <span class="click-icon"></span>
-                      <img src="images/portfolio/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
+                      <span class="click-icon sprite sprite-click-screenshot"></span>
+                      <span class="click-icon-hover sprite sprite-click-screenshot-hover"></span>
+                      <img src="images/projects/<%= project.id %>/thumb.jpg" width="140" height="111" alt="<%= project.name %>"/>
                     </div>
                     <div class="project-summary">
                       <h3 class="project-name"><%= project.name %></h3>
@@ -97,7 +98,8 @@ Template - My Portfolio
                       <%= project.description %>
                     </p>
                     <% if(project.codeSampleURL !== null) { %>
-                    <a class="btn btn-icon btn-icon-github" href="<%= project.codeSampleURL %>" target="_blank">
+                    <a class="btn btn-icon" href="<%= project.codeSampleURL %>" target="_blank">
+                      <i class="sprite sprite-repository-button"></i>
                       <span>Review code ></span>
                     </a>
                     <% } %>
@@ -169,13 +171,28 @@ Template - My Portfolio
                   <div class="tabbed-content-tabs tabbed-content-tabs-centred">
                     <ul class="nav nav-tabs js-carousel-tabs">
                       <% if(project.screenshots.desktop > 0) { %>
-                      <li class="active tab-icon tab-icon-desktop"><a href="#screenshots-desktop" class="js-tablink">Desktop</a></li>
+                      <li class="active tab-icon tab-icon-desktop">
+                        <a href="#screenshots-desktop" class="js-tablink">
+                          <i class="icon sprite sprite-device-desktop"></i>
+                          <span>Desktop</span>
+                        </a>
+                      </li>
                       <% } %>
                       <% if(project.screenshots.tablet > 0) { %>
-                      <li class="tab-icon tab-icon-tablet"><a href="#screenshots-tablet" class="js-tablink">Tablet</a></li>
+                      <li class="tab-icon tab-icon-tablet">
+                        <a href="#screenshots-tablet" class="js-tablink">
+                          <i class="icon sprite sprite-device-tablet"></i>
+                          <span>Tablet</span>
+                        </a>
+                      </li>
                       <% } %>
                       <% if(project.screenshots.phone > 0) { %>
-                      <li class="tab-icon tab-icon-phone"><a href="#screenshots-phone" class="js-tablink">Phone</a></li>
+                      <li class="tab-icon tab-icon-phone">
+                        <a href="#screenshots-phone" class="js-tablink">
+                          <i class="icon sprite sprite-device-phone"></i>
+                          <span>Phone</span>
+                        </a>
+                      </li>
                       <% } %>
                     </ul>
                   </div>
@@ -192,9 +209,9 @@ Template - My Portfolio
                         <% for(var i = 0; i < project.screenshots[type]; i++) { %>
                         <div class="item">
                           <% if(type === "desktop") { %>
-                          <img src="images/portfolio/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                          <img src="images/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
                           <% } else { %>
-                          <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
+                          <img src="images/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
                           <% } %>
                         </div>
                         <% } %>
@@ -202,9 +219,9 @@ Template - My Portfolio
                       <% } else { %>
                       <div class="single-screenshot">
                         <% if(type === "desktop") { %>
-                        <img src="images/portfolio/projects/<%= project.id %>/<%= 1 %>.jpg"/>
+                        <img src="images/projects/<%= project.id %>/<%= 1 %>.jpg"/>
                         <% } else { %>
-                        <img src="images/portfolio/projects/<%= project.id %>/<%= type %>/<%= 1 %>.jpg"/>
+                        <img src="images/projects/<%= project.id %>/<%= type %>/<%= 1 %>.jpg"/>
                         <% } %>
                       </div>
                       <% } %>

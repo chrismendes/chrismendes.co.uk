@@ -89,21 +89,23 @@ Checkboxes
     margin: 20px 0px 15px 1px;
 
     .checkboxes-item {
-        background-image: url('../images/employment/checkbox-off.png');
-        background-position: 0px 0px;
-        background-repeat: no-repeat;
-        padding-left: 30px;
         margin-bottom: 10px;
         min-height: 20px;
 
-        &.is-checked {
-            background-image: url('../images/employment/checkbox-on.png');
-            // font-weight: bold;
+        i {
+            float: left;
+            margin-bottom: 6px;
+            margin-right: 10px;
         }
 
-        &.is-disabled {
-            color: #d0d0d0;
-            text-decoration: line-through;
+        &.is-off {
+            span {
+                color: #d0d0d0;
+                text-decoration: line-through;
+            }
+            i {
+                margin-right: 13px;
+            }
         }
     }
 }
@@ -126,9 +128,8 @@ Info Box
     .boxshadow(3px, 3px, 10px, 0px, #efefef);
     border: 1px solid #dfdfdf;
 
-    img {
+    .image {
         margin: 0px auto;
-        display: block;
     }
     .link {
         clear: both;
@@ -181,9 +182,8 @@ Side by Side Content
             }
         }
 
-        img {
-            display: inline-block;
-            margin: 5px 0px 20px 0px;
+        .image {
+            margin: 5px auto 20px auto;
         }
         .media img {
             margin: 8px 20px 0px 0px;
@@ -208,7 +208,7 @@ Side by Side Content
 /* -----------------
 Image Column (left of text)
 ----------------- */
-.media img {
+.media img, .media .image {
     margin: 0px;
     margin-right: 20px !important;
 }

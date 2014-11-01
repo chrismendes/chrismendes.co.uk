@@ -58,13 +58,15 @@ Standard Project Listing
             .opacity(0.8);
         }
 
-        .click-icon {
+        .click-icon, .click-icon-hover {
             width: 220px;
             height: 128px;
-            background: url('../images/portfolio/icons/click-thumb.png') 0px 0px no-repeat;
             display: block;
             position: absolute;
             z-index: 9;
+        }
+        .click-icon-hover {
+            display: none;
         }
 
         &:hover {
@@ -72,7 +74,10 @@ Standard Project Listing
                 .opacity(1);
             }
             .click-icon {
-                background-position: 0px -128px;
+                display: none;
+            }
+            .click-icon-hover {
+                display: block;
             }
         }
     }

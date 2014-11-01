@@ -16,6 +16,25 @@ Tabbed Content
             small {
                 font-size: 11px;
             }
+
+            &.tab-icon {
+                .icon {
+                    margin-right: 10px;
+                    &.sprite-device-laptop {
+                        margin-right: 7px;
+                    }
+                }
+                .icon + span {
+                    float: right;
+                    margin-top: 2px;
+                }
+
+                a, a:hover {
+                    padding: 8px 10px 2px 10px;
+                    background-position: 8px 8px !important;
+                    background-repeat: no-repeat !important;
+                }
+            }
         }
         li:hover {
             border-bottom: 2px solid #c0c0c0;
@@ -42,43 +61,6 @@ Tabbed Content
             display: none;
         }
 
-
-        .tab-icon {
-            a, a:hover {
-                background-position: 8px 8px !important;
-                background-repeat: no-repeat !important;
-            }
-            // (TODO: Move icons to neutral icons dir, rename to: desktop/laptop/tablet/phone)
-            &.tab-icon-contract > a {
-                background-image: url('../images/cv/icons/contract.png');
-                padding-left: 48px;
-            }
-            &.tab-icon-permanent > a {
-                background-image: url('../images/cv/icons/permanent.png');
-                padding-left: 52px;
-            }
-            &.tab-icon-desktop > a {
-                background-image: url('../images/cv/icons/permanent.png');
-                padding-left: 52px;
-            }
-            &.tab-icon-tablet > a {
-                background-image: url('../images/portfolio/icons/tablet.gif');
-                padding-left: 40px;
-                @media screen and (max-width: @screen-xs-max) { // Phone
-                    padding-left: 52px;
-                    background-position: 13px 8px !important;
-                }
-            }
-            &.tab-icon-phone > a {
-                background-image: url('../images/portfolio/icons/phone.gif');
-                padding-left: 32px;
-                @media screen and (max-width: @screen-xs-max) { // Phone
-                    padding-left: 52px;
-                    background-position: 17px 8px !important;
-                }
-            }
-        }
-
         @media screen and (min-width: @screen-sm-min) { // Tablet/Desktop
             &.tabbed-content-tabs-centred {
                 width: 100%;
@@ -99,6 +81,7 @@ Tabbed Content
                 clear: both;
                 width: 100%;
                 border: 0px;
+
                 &:hover {
                     border-bottom: 0px;
                 }
@@ -109,7 +92,22 @@ Tabbed Content
                     border-left-color: #fff;
                     border-radius: 0px;
                     background: none;
+                    float: left;
+                    width: 100%;
                 }
+
+                &.tab-icon {
+                    .icon {
+                        float: left;
+                    }
+                    .icon + span {
+                        float: left;
+                    }
+                    a, a:hover {
+                        padding: 8px 10px;
+                    }
+                }
+
                 &.active {
                     border-bottom: 0px;
                     a, a:hover {
@@ -123,11 +121,16 @@ Tabbed Content
                         background: #F7F7F7;
                         list-style: none;
                         display: block;
+                        float: left;
+                        width: 100%;
                         a {
                             padding: 10px 20px;
                             display: inline-block;
                             border-left: 0px;
                             font-weight: normal;
+                            span {
+                                padding-left: 5px;
+                            }
                         }
                         li {
                             border-top: 1px solid #efefef;
