@@ -216,7 +216,7 @@ Template - My Portfolio
                         </div>
                         <% } %>
                       </div>
-                      <% } else { %>
+                      <% } else if(project.screenshots[type] > 0) { %>
                       <div class="single-screenshot">
                         <% if(type === "desktop") { %>
                         <img src="images/projects/<%= project.id %>/<%= 1 %>.jpg"/>
