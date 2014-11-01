@@ -21,9 +21,12 @@ Icons
 }
 
 .decor(@decor, @position) {
-    background-image: url('../images/decor/@{decor}.png');
+    background-image: url('../images/decor/decor-@{decor}.png');
     background-position: @position;
     background-repeat: no-repeat;
+}
+.decor(@decor) {
+    background-image: url('../images/decor/decor-@{decor}.png');
 }
 
 // Phone
