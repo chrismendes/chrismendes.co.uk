@@ -94,7 +94,8 @@ define([
         startCarousels: function() {
             $('.js-modal .js-carousel').owlCarousel({
                 singleItem: true,
-                autoWidth: true
+                autoWidth: true,
+                lazyLoad: true
             });
             this.setCarouselNavClickEvents('.js-tab:first-child');
         },

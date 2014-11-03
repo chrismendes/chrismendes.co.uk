@@ -209,9 +209,9 @@ Template - My Portfolio
                         <% for(var i = 0; i < project.screenshots[type]; i++) { %>
                         <div class="item">
                           <% if(type === "desktop") { %>
-                          <img src="images/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
+                          <img class="lazyOwl" data-src="images/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
                           <% } else { %>
-                          <img src="images/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
+                          <img class="lazyOwl" data-src="images/projects/<%= project.id %>/<%= type %>/<%= i+1 %>.jpg"/>
                           <% } %>
                         </div>
                         <% } %>
