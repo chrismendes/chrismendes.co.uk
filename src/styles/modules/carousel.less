@@ -8,6 +8,11 @@ Carousel
     .owl-item {
         border: 1px solid #efefef;
         text-align: center;
+        min-height: 200px;
+
+        &.loading {
+            background: url('../images/spinner.gif') center center no-repeat;
+        }
 
         img {
             max-width: 100%;

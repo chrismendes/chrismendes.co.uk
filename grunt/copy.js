@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'sitemap.xml',
-                        'images/*.{png,jpg}',
+                        'images/*.{png,jpg,gif}',
                         'images/decor/*',
                         'images/projects/**/*',
                         '*.html',
