@@ -8,7 +8,6 @@ Carousel
     .owl-item {
         border: 1px solid #efefef;
         background: #fff;
-        text-align: center;
         min-height: 200px;
 
         &.loading {
@@ -17,6 +16,12 @@ Carousel
 
         img {
             max-width: 100%;
+        }
+    }
+
+    &.owl-carousel-centred {
+        .owl-item {
+            text-align: center;
         }
     }
 
