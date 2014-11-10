@@ -47,19 +47,12 @@ $ grunt serve:dist
 $ grunt build
 ```
 
-## Todo
-
-Currently outstanding:
-
-* About Me page
-* Add missing copy on Skills > Developer Tools page
-* Add phone/tablet screenshots for various projects
-
-Phase two and three:
+## Future Improvements
 
 * Make site crawlable by search engines (currently not)
 * Create separate branch with alternative technology stack:
     * i.e. AngularJS, Foundation, Sass
+
 
 ## License
 
