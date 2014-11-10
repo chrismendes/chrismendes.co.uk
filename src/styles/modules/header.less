@@ -120,17 +120,23 @@ header {
         }
         .mobile-menu-button {
             display: block;
+            float: right;
         }
         .myname-mobile {
-            color: #fff;
-            text-shadow: 2px 2px #777;
-            font-size: 24px;
-            line-height: 16px;
-
             float: left;
             margin: 0px;
             padding: 0px;
             display: block;
+
+            text-shadow: 2px 2px #777;
+            font-size: 24px;
+            line-height: 16px;
+            a {
+                color: #fff;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
     .home {
