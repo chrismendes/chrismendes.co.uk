@@ -53,13 +53,26 @@
     a {
         font-size: 18px;
         color: #fff !important;
-        padding: 15px 20px;
+        padding: 15px 10px;
         display: inline-block;
         width: 100%;
 
         &:hover {
             background: #666;
             text-decoration: none;
+        }
+
+        .icon {
+            float: left;
+            width: 30px;
+            margin-right: 10px;
+            .sprite {
+                margin: 0px auto;
+            }
+        }
+        .link-label {
+            margin-top: 4px;
+            display: inline-block;
         }
     }
 
@@ -74,12 +87,12 @@
     }
 
     @media screen and (max-width: @screen-xs-max) and (orientation: landscape) { // Phone Landscape
-        width: 400px;
-        -webkit-transform: translateX(400px);
-        transform: translateX(400px);
+        width: 420px;
+        -webkit-transform: translateX(420px);
+        transform: translateX(420px);
 
         ul {
-            width: 200px;
+            width: 210px;
             &.landscape-col-left {
                 float: left;
             }

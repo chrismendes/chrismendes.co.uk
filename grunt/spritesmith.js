@@ -19,7 +19,6 @@ module.exports = function(grunt) {
         core: {
             src:            [
                             '<%= config.dev.images %>/icons/*.png',
-                            '<%= config.dev.images %>/decor/mobilemenu/*.png',
                             ],
             destImg:        '<%= config.dev.images %>/spritesheet-core.png',
             destCSS:        '<%= config.dev.styles %>/core/sprites/core.less',
