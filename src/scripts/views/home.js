@@ -24,7 +24,7 @@ define([
             'click .box':            'onBoxClick'
         },
 
-        onAfterRender: function() {
+        onBeforeShow: function() {
             $('body').addClass('home').addClass('is-not-raised', 400);
         },
 
