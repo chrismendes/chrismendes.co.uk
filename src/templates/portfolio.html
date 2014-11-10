@@ -202,8 +202,8 @@ Template - My Portfolio
                     <div class="tab-pane js-tab<% if(type === "desktop") { %> active<% } %>" id="screenshots-<%= type %>">
                       <% if(project.screenshots[type] > 1) { %>
                       <div class="owl-carousel-navigation">
-                        <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
-                        <a class="next js-carousel-next" href="#">Next Slide ></a>
+                        <a class="previous js-carousel-previous" href="#">< Previous<span class="hidden-xs"> Slide</span></a>
+                        <a class="next js-carousel-next" href="#">Next <span class="hidden-xs">Slide </span>></a>
                       </div>
                       <div class="owl-carousel owl-carousel-centred js-carousel">
                         <% for(var i = 0; i < project.screenshots[type]; i++) { %>
