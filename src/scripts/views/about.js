@@ -15,7 +15,7 @@ define([
 
         id:             'about',
         template:       _.template(html),
-        background:     'teal',
+        background:     'green',
         theme:          'red',
 
         onBeforeShow: function() {
