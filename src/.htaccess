@@ -2,11 +2,13 @@
 # Custom Rules
 # ---
 
-# Redirect [www.]chrismendes.co.uk -> chrismendes.london
+# Redirect [www.]chrismendes.co.uk / [www.]cmendes.co.uk -> chrismendes.london
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTP_HOST} ^chrismendes.co.uk$ [OR]
-    RewriteCond %{HTTP_HOST} ^www.chrismendes.co.uk$
+    RewriteCond %{HTTP_HOST} ^www.chrismendes.co.uk$ [OR]
+    RewriteCond %{HTTP_HOST} ^cmendes.co.uk$ [OR]
+    RewriteCond %{HTTP_HOST} ^www.cmendes.co.uk$
     RewriteRule (.*)$ http://chrismendes.london/$1 [R=301,L]
 </IfModule>
 
