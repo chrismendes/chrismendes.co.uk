@@ -2,7 +2,7 @@
     {
         "name":                   "Capablue",
         "url":                    "www.capablue.com",
-        "description":            "",
+        "description":            "Corporate website for this media broadcast company. Fully responsive site built predominantly with Backbone and Foundation. Highly optimised through a comprehensive build process via Grunt.",
         "date":                   "August - October 2014",
         "skills":                 [ "HTML, CSS, Foundation", "JavaScript, Backbone.js", "Responsive development" ],
         "employer":               null,
