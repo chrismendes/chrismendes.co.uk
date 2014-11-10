@@ -491,7 +491,7 @@
     },
     {
         "name":                   "My Website",
-        "url":                    "www.chrismendes.co.uk",
+        "url":                    "chrismendes.london",
         "description":            "Personal website for web development contracting purposes. Consists of my CV, portfolio, and other useful information.",
         "skills":                 [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js" ],
         "employer":               null,
