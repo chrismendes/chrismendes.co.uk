@@ -291,6 +291,12 @@
         &.box-about {
             .decor('aboutme');
             background-position: 100px 50px;
+            .icons {
+                .sprite(@boxicons-about);
+                @media screen and (max-width: @screen-md-max) {
+                    .sprite(@boxicons-about-small);
+                }
+            }
         }
         &.box-feedback {
             .decor('feedback');
@@ -338,7 +344,7 @@ Small Desktop
             &.box-cv {
                 background-position: 35% -30px;
                 .description {
-                    display: none !important;
+                    // display: none !important;
                 }
                 .icons {
                     margin-top: 15px;
