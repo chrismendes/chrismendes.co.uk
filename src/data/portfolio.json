@@ -169,7 +169,7 @@
     {
         "name":                   "SAP Get Connected",
         "url":                    "www.sap50analyticstips.com",
-        "description":            "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
+        "description":            "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive. Since deactivated.",
         "date":                   "December 2013",
         "skills":                 [ "HTML, CSS", "JavaScript, Treesaver.js", "PHP, CodeIgniter, MySQL" ],
         "employer":               "DNX Marketing",
@@ -186,7 +186,7 @@
     {
         "name":                   "Virgin Pure",
         "url":                    "www.virginpure.com",
-        "description":            "Formally Strauss Water, Virgin Pure sells dispenser machines that provide purified water. Drupal CMS. Responsible for front-end and back-end.",
+        "description":            "Formally Strauss Water, Virgin Pure sells dispenser machines that provide purified water. Drupal CMS. Responsible for front-end and back-end. Since re-designed.",
         "date":                   "June - November 2012",
         "skills":                 [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, Drupal, MySQL" ],
         "employer":               "DNX Marketing",
@@ -424,7 +424,7 @@
     {
         "name":                   "Surrey Fire Systems",
         "url":                    "www.surreyfiresystems.co.uk",
-        "description":            "Fire alarm company based in Horley, Surrey. Typical company website describing products and services. Site has since been re-designed.",
+        "description":            "Fire alarm company based in Horley, Surrey. Typical company website describing products and services. Since re-designed.",
         "date":                   "January 2011",
         "skills":                 [ "HTML, CSS" ],
         "employer":               "Fingo Marketing",
