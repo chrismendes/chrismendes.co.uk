@@ -10,45 +10,47 @@ Template - About Me
         
         <div class="carousel-presentation">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-3 col-xs-2">
+              <a class="nav nav-previous js-carousel-previous" href="#">< Previous<span class="visible-md-inline visible-lg-inline"> Slide</span></a>
+            </div>
+            <div class="col-md-6 col-xs-8">
 
-              <!--
-              <div class="owl-carousel-navigation">
-                <a class="previous js-carousel-previous" href="#">< Previous Slide</a>
-                <a class="next js-carousel-next" href="#">Next Slide ></a>
-              </div>
-              -->
               <div class="icon-grid icon-grid-single-row">
                 <div class="icon-grid-column">
-
-                  <!-- Intro -->
-                  <div class="icon-grid-item js-slide-link is-active" data-slide="0">
-                    <img src="images/icons/topic-intro.png"/>
+                  <div class="row-mobile">
+                    <!-- Intro -->
+                    <div class="icon-grid-item js-slide-link is-active" data-slide="0">
+                      <img src="images/icons/topic-intro.png"/>
+                    </div>
+                    <!-- Career Ambition -->
+                    <div class="icon-grid-item js-slide-link" data-slide="1">
+                      <img src="images/icons/topic-career.png"/>
+                    </div>
+                    <!-- General Interests -->
+                    <div class="icon-grid-item js-slide-link" data-slide="2">
+                      <img src="images/icons/topic-interests.png"/>
+                    </div>
                   </div>
-                  <!-- Career Ambition -->
-                  <div class="icon-grid-item js-slide-link" data-slide="1">
-                    <img src="images/icons/topic-career.png"/>
+                  <div class="row-mobile">
+                    <!-- Sport -->
+                    <div class="icon-grid-item js-slide-link" data-slide="3">
+                      <img src="images/icons/topic-sport.png"/>
+                    </div>
+                    <!-- Random Facts -->
+                    <div class="icon-grid-item js-slide-link" data-slide="4">
+                      <img src="images/icons/topic-misc.png"/>
+                    </div>
+                    <!-- TA -->
+                    <div class="icon-grid-item js-slide-link" data-slide="5">
+                      <img src="images/icons/topic-end.png"/>
+                    </div>
                   </div>
-                  <!-- General Interests -->
-                  <div class="icon-grid-item js-slide-link" data-slide="2">
-                    <img src="images/icons/topic-interests.png"/>
-                  </div>
-                  <!-- Sport -->
-                  <div class="icon-grid-item js-slide-link" data-slide="3">
-                    <img src="images/icons/topic-sport.png"/>
-                  </div>
-                  <!-- Random Facts -->
-                  <div class="icon-grid-item js-slide-link" data-slide="4">
-                    <img src="images/icons/topic-misc.png"/>
-                  </div>
-                  <!-- TA -->
-                  <div class="icon-grid-item js-slide-link" data-slide="5">
-                    <img src="images/icons/topic-intro.png"/>
-                  </div>
-
                 </div>
               </div>
 
+            </div>
+            <div class="col-md-3 col-xs-2">
+              <a class="nav nav-next js-carousel-next" href="#">Next<span class="visible-md-inline visible-lg-inline"> Slide</span> ></a>
             </div>
           </div>
 
@@ -59,7 +61,7 @@ Template - About Me
                 <!--
                 Intro
                 -->
-                <div class="item">
+                <div class="item slide-intro">
                   <h3 class="title">Introduction</h3>
                   <div class="row">
                     <div class="col-md-5">
@@ -76,7 +78,7 @@ Template - About Me
                 <!--
                 Career Ambition
                 -->
-                <div class="item">
+                <div class="item slide-career">
                   <h3 class="title">Career Ambition</h3>
                   <div class="row">
                     <div class="col-md-6">
@@ -87,22 +89,22 @@ Template - About Me
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                       <h4>Learning New Tech</h4>
                       <div class="info-box">
                         <img class="image" src="images/photos/career-bear.jpg"/>
                         <p class="caption">Always exploring new web technologies at home.</p>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                       <h4>Switch to Contracting</h4>
                       <div class="info-box">
                         <img class="image" src="images/photos/career-buildings.jpg"/>
                         <p class="caption">Recently switched from permanent to contractor to broaden my horizons.</p>
                       </div>
                     </div>
-                    <div class="col-md-4">
-                      <h4>Working on My Own Product</h4>
+                    <div class="col-md-4 col-sm-4">
+                      <h4>My Own Product</h4>
                       <div class="info-box">
                         <img class="image" src="images/photos/career-appstore.jpg"/>
                         <p class="caption">Working in the background on my own phone app.</p>
@@ -114,24 +116,24 @@ Template - About Me
                 <!--
                 General Interests
                 -->
-                <div class="item l-spaced-rows">
+                <div class="item slide-interests l-spaced-rows">
                   <h3 class="title">General Interests</h3>
                   <div class="row">
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-1 content-column">
                       <div class="info-box info-box-xsmall">
                         <h4>Music</h4>
                         <img class="image" src="images/photos/interest-music.jpg"/>
                         <p class="caption">Pop and pop rock in particular.</p>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12 content-column">
                       <div class="info-box info-box-xsmall">
                         <h4>History</h4>
                         <img class="image" src="images/photos/interest-history.jpg"/>
                         <p class="caption">Interested in the Roman and British empires.</p>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12 content-column">
                       <div class="info-box info-box-xsmall">
                         <h4>Business</h4>
                         <img class="image" src="images/photos/interest-business.jpg"/>
@@ -140,21 +142,21 @@ Template - About Me
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-3 col-md-offset-2">
+                    <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-2 content-column">
                       <div class="info-box info-box-xsmall info-box-left">
                         <h4>TV Box Sets</h4>
                         <img class="image" src="images/photos/interest-tv.jpg"/>
                         <p class="caption">Character driven dramas like Breaking Bad.</p>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12 content-column">
                       <div class="info-box info-box-xsmall info-box-left">
                         <h4>Cooking</h4>
                         <img class="image" src="images/photos/interest-cooking.jpg"/>
                         <p class="caption">Complete beginner but I'm learning!</p>
                       </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12 content-column">
                       <div class="info-box info-box-xsmall info-box-left">
                         <h4>Cat Selfies</h4>
                         <img class="image" src="images/photos/interest-catselfie.jpg"/>
@@ -167,7 +169,7 @@ Template - About Me
                 <!--
                 Sport
                 -->
-                <div class="item">
+                <div class="item slide-sport">
                   <h3 class="title">Sport</h3>
 
                   <div class="side-by-side-content">
@@ -203,15 +205,78 @@ Template - About Me
                 <!--
                 Random Facts
                 -->
-                <div class="item">
+                <div class="item slide-random">
                   <h3 class="title">Random Facts</h3>
+                  <div class="row">
+                    <div class="fact">
+                      <div class="col-md-2 col-md-offset-1 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-films.jpg"/>
+                      </div>
+                      <div class="col-md-3 col-xs-8 column-text">
+                        <p class="question sticky">Favourite Films</p>
+                        <p class="answer">The Prestige, Memento, Shutter Island</p>
+                      </div>
+                    </div>
+                    <div class="fact">
+                      <div class="col-md-3 col-xs-8 column-text">
+                        <p class="question sticky">How I Relax</p>
+                        <p class="answer">Computer games, Listen to music, Sleep :p</p>
+                      </div>
+                      <div class="col-md-2 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-games.jpg"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="fact">
+                      <div class="col-md-2 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-people.jpg"/>
+                      </div>
+                      <div class="col-md-3 col-xs-8 column-text">
+                        <p class="question sticky">People I Admire</p>
+                        <p class="answer">Christopher Hitchens, Gordon Ramsay, Derren Brown</p>
+                      </div>
+                    </div>
+                    <div class="fact">
+                      <div class="col-md-3 col-md-offset-2 col-xs-8 column-text">
+                        <p class="question sticky">Favourite Food</p>
+                        <p class="answer">Italian</p>
+                      </div>
+                      <div class="col-md-2 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-food.jpg"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="fact">
+                      <div class="col-md-2 col-md-offset-1 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-career.jpg"/>
+                      </div>
+                      <div class="col-md-3 col-xs-8 column-text">
+                        <p class="question sticky">Fantasy Career</p>
+                        <p class="answer">Premier League Footballer</p>
+                      </div>
+                    </div>
+                    <div class="fact">
+                      <div class="col-md-3 col-xs-8 column-text">
+                        <p class="question sticky">Favourite School Subject</p>
+                        <p class="answer">PE and Drama. Geography was absolutely pointless.</p>
+                      </div>
+                      <div class="col-md-2 col-xs-4 column-image">
+                        <img class="img-thumbnail" src="images/photos/random-school.jpg"/>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <!--
-                Army Reserve
+                Thanks
                 -->
-                <div class="item">
-                  <h3 class="title">Army Reserve</h3>
+                <div class="item slide-thanks">
+                  <h3 class="title">That's it!</h3>
+                  <p class="sticky">Thanks for browsing through this very short "about me" presentation.</p>
+                  <p>And thanks to Merlin for interrupting me and making putting this together take twice as long as it needed to!</p>
+                  <img src="images/photos/merlin.jpg" class="img-thumbnail"/>
                 </div>
               </div>
             </div>
