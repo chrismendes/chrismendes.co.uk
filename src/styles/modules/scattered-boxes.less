@@ -258,6 +258,9 @@
             .icons {
                 margin-top: 15px;
                 .sprite(@boxicons-skills);
+                @media screen and (max-width: @screen-md-max) {
+                    .sprite(@boxicons-skills-small);
+                }
             }
         }
         &.box-cv {
@@ -266,6 +269,9 @@
             .icons {
                 margin-top: -5px;
                 .sprite(@boxicons-cv);
+                @media screen and (max-width: @screen-md-max) {
+                    .sprite(@boxicons-cv-small);
+                }
             }
         }
         &.box-portfolio {
@@ -273,6 +279,9 @@
             background-position: 350% 8%;
             .icons {
                 .sprite(@boxicons-portfolio);
+                @media screen and (max-width: @screen-md-max) {
+                    .sprite(@boxicons-portfolio-small);
+                }
             }
         }
         &.box-recruitment {
@@ -493,9 +502,6 @@ Phone
         .title, &.is-active .title {
             font-size: 22px;
             line-height: 26px;
-        }
-        .btn {
-            // font-size: 13px;
         }
     }
 }
