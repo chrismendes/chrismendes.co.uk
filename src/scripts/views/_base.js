@@ -38,6 +38,9 @@ define([
         },
 
         onBeforeShowBase: function() {
+            // Restore footer
+            $('.js-footer').show();
+
             // Hide horizontal navbar on home page
             if(this.id === 'home') {
                 $('.js-menu').hide();

@@ -49,7 +49,9 @@ define([
             if(typeof navigateTo === 'undefined') {
                 return;
             }
-            // boxClicked.removeClass('is-active', 50).removeClass('is-animating', 50);
+            // Hide footer so as to not appear top of page mid-transition
+            $('.js-footer').hide();
+
             // Fix box heights so as to prevent them collapsing
             $('.box').each(function() {
                 $(this).parent().css('height', $(this).parent().height());
