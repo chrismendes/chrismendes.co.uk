@@ -472,7 +472,7 @@
         "highlight":              false,
         "codeSample":             true,
         "codeSampleURL":          "https://github.com/chrismendes/chrismendes.london",
-        "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
+        "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
         "id":                     "mysite",
         "clientId":               null
     }
