@@ -47,6 +47,7 @@ define([
             }
 
             this.setMenuActiveItem();
+            this.scrollToTop();
         },
 
         render: function() {
@@ -192,6 +193,10 @@ define([
             if(this.theme !== null) {
                 $('body').addClass('theme-'+this.theme);
             }
+        },
+
+        scrollToTop: function() {
+            window.scrollTo(0, 0);
         }
 
     });
