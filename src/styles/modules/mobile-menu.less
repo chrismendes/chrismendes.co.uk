@@ -21,6 +21,33 @@
 
     li {
         border-top: 1px solid #666;
+        border-left-width: 4px;
+        border-left-style: solid;
+        &.blue {
+            border-left-color: @blue;
+        }
+        &.green {
+            border-left-color: @green;
+        }
+        &.red {
+            border-left-color: @red;
+        }
+        &.teal {
+            border-left-color: @teal;
+        }
+        &.purple {
+            border-left-color: @purple;
+        }
+
+        &.is-active {
+            background: #ddd;
+            a {
+                color: #4F4F4F !important;
+                &:hover {
+                    background: inherit;
+                }
+            }
+        }
     }
 
     a {
@@ -43,6 +70,7 @@
         height: 60px;
         background: linear-gradient(to bottom, #323232 0, #4F4F4F 100%);
         text-align: right;
+        padding-top: 18px;
     }
 
     @media screen and (max-width: @screen-xs-max) and (orientation: landscape) { // Phone Landscape

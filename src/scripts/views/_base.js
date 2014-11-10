@@ -161,7 +161,7 @@ define([
         },
 
         setMenuActiveItem: function() {
-            $('.js-menu li').removeClass('is-active');
+            $('.js-menu li, .js-menu-mobile li').removeClass('is-active');
             $('.js-menu-' + this.id).addClass('is-active');
         },
 
