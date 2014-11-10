@@ -151,7 +151,7 @@ Template - My Portfolio
                 <h3><%= project.name %></h3>
                 <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
                 <div class="js-project-details">
-                  <p class="description"><%= project.description %> <span class="date"><%= project.date %></span></p>
+                  <p class="description"><%= project.description %> <span class="date secondary-caption"><%= project.date %></span></p>
                   <p class="technology"><strong>Technology</strong>:&nbsp;
                   <% _.each(project.skills, function(skill, index) { %>
                     <% if(index > 0) { %>, <% } %><%= skill %>
