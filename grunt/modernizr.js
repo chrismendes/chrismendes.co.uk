@@ -17,9 +17,8 @@ module.exports = function(grunt) {
             },
             files: {
                 src: [
-                    '<%= config.dev.styles %>/{,*/}*.scss',
-                    '<%= config.dev.scripts %>/{,*/}*.js',
-                    '!<%= config.dev.scripts %>/vendor/*'
+                    '<%= config.dev.styles %>/{,*/}*.less',
+                    '<%= config.dev.scripts %>/{,*/}*.js'
                 ]
             },
             uglify: true
