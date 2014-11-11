@@ -20,7 +20,7 @@
             }
         }
 
-        @media screen and (max-width: 675px) { // Phone Portrait
+        @media screen and (max-width: 550px) { // Phone Portrait (not strict)
             width: 207px;
             .row-mobile {
                 float: left;
@@ -30,11 +30,18 @@
     }
 
     .nav {
-        margin-top: 20px;
+        margin-top: 15px;
+        padding: 6px;
+        @media screen and (max-width: @screen-xs-max) { // Phone
+            margin-bottom: 20px;
+        }
         &.nav-previous {
             float: right;
             @media screen and (min-width: @screen-md-max) { // Large Desktop
                 margin-right: -50px;
+            }
+            @media screen and (max-width: @screen-xs-max) { // Phone
+                float: left;
             }
         }
         &.nav-next {
@@ -42,9 +49,9 @@
             @media screen and (min-width: @screen-md-max) { // Large Desktop
                 margin-left: -50px;
             }
-        }
-        @media screen and (max-width: 675px) { // Phone Portrait
-            display: none;
+            @media screen and (max-width: @screen-xs-max) { // Phone
+                float: right;
+            }
         }
     }
 
