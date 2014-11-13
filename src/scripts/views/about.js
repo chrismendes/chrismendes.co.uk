@@ -14,6 +14,7 @@ define([
     var AboutView = BaseView.extend({
 
         id:             'about',
+        name:           'About Me',
         template:       _.template(html),
         background:     'green',
         theme:          'red',

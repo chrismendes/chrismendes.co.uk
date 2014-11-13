@@ -12,6 +12,7 @@ define([
     var FeedbackView = BaseView.extend({
 
         id:             'feedback',
+        name:           'Job Feedback',
         template:       _.template(html),
         background:     'teal',
         theme:          'red'

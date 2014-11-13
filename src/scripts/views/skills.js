@@ -15,6 +15,7 @@ define([
     var SkillsView = BaseView.extend({
 
         id:             'skills',
+        name:           'Skills & Expertise',
         template:       _.template(html),
         background:     'gold',
         theme:          'red',

@@ -12,6 +12,7 @@ define([
     var RecruitmentView = BaseView.extend({
 
         id:             'recruitment',
+        name:           'Recruitment',
         template:       _.template(html),
         background:     'purple',
         theme:          'red'

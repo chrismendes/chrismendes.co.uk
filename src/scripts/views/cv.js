@@ -14,6 +14,7 @@ define([
     var CvView = BaseView.extend({
 
         id:             'cv',
+        name:           'My CV',
         template:       _.template(html),
         background:     'green',
         theme:          'red',

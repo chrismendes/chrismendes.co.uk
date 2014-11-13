@@ -20,6 +20,7 @@ define([
     var PortfolioView = BaseView.extend({
 
         id:             'portfolio',
+        name:           'My Portfolio',
         template:       _.template(html),
         background:     'gold',
         theme:          'red',

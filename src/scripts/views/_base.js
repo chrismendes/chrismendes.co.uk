@@ -35,6 +35,7 @@ define([
         onAfterRenderBase: function() {
             this.setMobileMenuButtonHandlers();
             this.setSharedModalClickHandler();
+            this.trackPageView();
         },
 
         onBeforeShowBase: function() {
@@ -242,6 +243,14 @@ define([
             }
 
             ga('send', 'event', category, 'click', label);
+        },
+
+        trackPageView: function() {
+            /* global ga */
+            ga('send', 'pageview', {
+                'page':  '/#' + this.id,
+                'title': this.name
+            });
         }
 
     });
