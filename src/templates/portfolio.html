@@ -85,7 +85,7 @@ Template - My Portfolio
                   -->
                   <div class="col-md-7 col-xs-12">
                     <% if(project.screenshots.desktop > 0 || project.screenshots.tablet > 0 || project.screenshots.phone > 0) { %>
-                    <div class="screenshot-thumb screenshot-thumb-clickable js-modal-show js-track" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="Screenshot Thumb">
+                    <div class="screenshot-thumb screenshot-thumb-clickable js-modal-show js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="Screenshot Thumb (List View)">
                       <span class="click-icon sprite sprite-click-screenshot"></span>
                       <span class="click-icon-hover sprite sprite-click-screenshot-hover"></span>
                     <% } else { %>
@@ -97,7 +97,7 @@ Template - My Portfolio
                       <h3 class="project-name"><%= project.name %></h3>
                       <span class="date"><%= project.date %></span>
                       <p class="link">
-                        <a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="URL">
+                        <a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="URL (List View)">
                           <%= project.url %>
                         </a>
                       </p>
@@ -106,7 +106,7 @@ Template - My Portfolio
                       <%= project.description %>
                     </p>
                     <% if(project.codeSampleURL !== null) { %>
-                    <a class="btn btn-icon js-track" href="<%= project.codeSampleURL %>" target="_blank" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="Review Code">
+                    <a class="btn btn-icon js-track" href="<%= project.codeSampleURL %>" target="_blank" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="Review Code (List View)">
                       <i class="sprite sprite-repository-button"></i>
                       <span>Review code ></span>
                     </a>
@@ -153,7 +153,7 @@ Template - My Portfolio
             <div class="js-modal-content-header">
               <div class="project-modal-header">
                 <h3><%= project.name %></h3>
-                <span class="link"><a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="URL">
+                <span class="link"><a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="URL (Modal)">
                   <%= project.url %></a>
                 </span>
                 <div class="js-project-details">
@@ -182,7 +182,7 @@ Template - My Portfolio
                     <ul class="nav nav-tabs js-carousel-tabs">
                       <% if(project.screenshots.desktop > 0) { %>
                       <li class="active tab-icon tab-icon-desktop">
-                        <a href="#screenshots-desktop" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Desktop">
+                        <a href="#screenshots-desktop" class="js-tablink js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="Screenshot Tab - Desktop">
                           <i class="icon sprite sprite-device-desktop"></i>
                           <span>Desktop</span>
                         </a>
@@ -190,7 +190,7 @@ Template - My Portfolio
                       <% } %>
                       <% if(project.screenshots.tablet > 0) { %>
                       <li class="tab-icon tab-icon-tablet">
-                        <a href="#screenshots-tablet" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Tablet">
+                        <a href="#screenshots-tablet" class="js-tablink js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="Screenshot Tab - Tablet">
                           <i class="icon sprite sprite-device-tablet"></i>
                           <span>Tablet</span>
                         </a>
@@ -198,7 +198,7 @@ Template - My Portfolio
                       <% } %>
                       <% if(project.screenshots.phone > 0) { %>
                       <li class="tab-icon tab-icon-phone">
-                        <a href="#screenshots-phone" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Phone">
+                        <a href="#screenshots-phone" class="js-tablink js-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="Screenshot Tab - Phone">
                           <i class="icon sprite sprite-device-phone"></i>
                           <span>Phone</span>
                         </a>
@@ -215,7 +215,7 @@ Template - My Portfolio
                         <a class="previous js-carousel-previous" href="#">< Previous<span class="hidden-xs"> Slide</span></a>
                         <a class="next js-carousel-next" href="#">Next <span class="hidden-xs">Slide </span>></a>
                       </div>
-                      <div class="owl-carousel owl-carousel-centred js-carousel js-carousel-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="<%= type %>, slide #">
+                      <div class="owl-carousel owl-carousel-centred js-carousel js-carousel-track" data-track-category="My Portfolio (<%= project.name %>)" data-track-label="<%= type %>, slide #">
                         <% for(var i = 0; i < project.screenshots[type]; i++) { %>
                         <div class="item js-carousel-item">
                           <% if(type === "desktop") { %>
