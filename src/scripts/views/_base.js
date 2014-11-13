@@ -247,9 +247,16 @@ define([
 
         trackPageView: function() {
             /* global ga */
+            var location = window.location.protocol + '//' + window.location.hostname + window.location.pathname;
+            var page = '/';
+            if(this.id !== 'home') {
+                location = location + this.id;
+                page = page + this.id;
+            }
             ga('send', 'pageview', {
-                'page':  '/#' + this.id,
-                'title': this.name
+                'location':  location,
+                'page':      page,
+                'title':     this.name
             });
         }
 
