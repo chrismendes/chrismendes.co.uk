@@ -94,10 +94,15 @@ define([
         startCarousels: function() {
             $('.js-modal .js-carousel').owlCarousel({
                 singleItem: true,
-                autoWidth: true,
-                lazyLoad: true
+                autoWidth:  true,
+                lazyLoad:   true,
+                afterMove: _.bind(this.onCarouselChange, { view: this })
             });
             this.setCarouselNavClickEvents('.js-tab:first-child');
+        },
+
+        onCarouselChange: function() {
+            this.view.trackCarouselChange(true);
         },
 
         destroyCarousels: function() {

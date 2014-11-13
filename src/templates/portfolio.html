@@ -21,7 +21,11 @@ Template - My Portfolio
           <div class="tabbed-content-tabs">
             <ul class="nav nav-tabs" role="tablist">
               <% _.each(categories, function(cat, id) { %>
-              <li<% if(id === 'highlights') { %> class="active"<% } %>><a href="#<%= id %>" role="tab" data-toggle="tab"><%= cat.name %></a></li>
+              <li<% if(id === 'highlights') { %> class="active"<% } %>>
+                <a href="#<%= id %>" class="js-track" role="tab" data-toggle="tab" data-track-category="My Portfolio" data-track-label="Tab - <%= cat.name %>">
+                  <%= cat.name %>
+                </a>
+              </li>
               <% }); %>
             </ul>
           </div>
@@ -43,7 +47,7 @@ Template - My Portfolio
                   <% if(i && (i % 4 === 0)) {  %></div><div class="row project-row"><% } %>
                   <div class="col-md-3 col-sm-6 project-column">
 
-                    <div class="project-list-item polaroid js-modal-show js-modal-id" data-modal="<%= project.id %>">
+                    <div class="project-list-item polaroid js-modal-show js-modal-id js-track" data-modal="<%= project.id %>" data-track-category="My Portfolio - Project Highlights" data-track-label="<%= project.name %>">
                       <img class="screenshot" src="images/projects/<%= project.id %>/thumb.jpg" width="220" height="128" alt="<%= project.name %>"/>
                       <h3 class="project-name"><%= project.name %></h3>
                       <span class="link secondary-caption"><%= project.url %></span>
@@ -81,7 +85,7 @@ Template - My Portfolio
                   -->
                   <div class="col-md-7 col-xs-12">
                     <% if(project.screenshots.desktop > 0 || project.screenshots.tablet > 0 || project.screenshots.phone > 0) { %>
-                    <div class="screenshot-thumb screenshot-thumb-clickable js-modal-show">
+                    <div class="screenshot-thumb screenshot-thumb-clickable js-modal-show js-track" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="Screenshot Thumb">
                       <span class="click-icon sprite sprite-click-screenshot"></span>
                       <span class="click-icon-hover sprite sprite-click-screenshot-hover"></span>
                     <% } else { %>
@@ -93,7 +97,7 @@ Template - My Portfolio
                       <h3 class="project-name"><%= project.name %></h3>
                       <span class="date"><%= project.date %></span>
                       <p class="link">
-                        <a href="http://<%= project.url %>" target="_blank">
+                        <a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="URL">
                           <%= project.url %>
                         </a>
                       </p>
@@ -102,7 +106,7 @@ Template - My Portfolio
                       <%= project.description %>
                     </p>
                     <% if(project.codeSampleURL !== null) { %>
-                    <a class="btn btn-icon" href="<%= project.codeSampleURL %>" target="_blank">
+                    <a class="btn btn-icon js-track" href="<%= project.codeSampleURL %>" target="_blank" data-track-category="My Portfolio - Project Listing (<%= project.name %>)" data-track-label="Review Code">
                       <i class="sprite sprite-repository-button"></i>
                       <span>Review code ></span>
                     </a>
@@ -149,7 +153,9 @@ Template - My Portfolio
             <div class="js-modal-content-header">
               <div class="project-modal-header">
                 <h3><%= project.name %></h3>
-                <span class="link"><a href="http://<%= project.url %>" target="_blank"><%= project.url %></a></span>
+                <span class="link"><a href="http://<%= project.url %>" target="_blank" class="js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="URL">
+                  <%= project.url %></a>
+                </span>
                 <div class="js-project-details">
                   <p class="description"><%= project.description %> <span class="date secondary-caption"><%= project.date %></span></p>
                   <p class="technology"><strong>Technology</strong>:&nbsp;
@@ -176,7 +182,7 @@ Template - My Portfolio
                     <ul class="nav nav-tabs js-carousel-tabs">
                       <% if(project.screenshots.desktop > 0) { %>
                       <li class="active tab-icon tab-icon-desktop">
-                        <a href="#screenshots-desktop" class="js-tablink">
+                        <a href="#screenshots-desktop" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Desktop">
                           <i class="icon sprite sprite-device-desktop"></i>
                           <span>Desktop</span>
                         </a>
@@ -184,7 +190,7 @@ Template - My Portfolio
                       <% } %>
                       <% if(project.screenshots.tablet > 0) { %>
                       <li class="tab-icon tab-icon-tablet">
-                        <a href="#screenshots-tablet" class="js-tablink">
+                        <a href="#screenshots-tablet" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Tablet">
                           <i class="icon sprite sprite-device-tablet"></i>
                           <span>Tablet</span>
                         </a>
@@ -192,7 +198,7 @@ Template - My Portfolio
                       <% } %>
                       <% if(project.screenshots.phone > 0) { %>
                       <li class="tab-icon tab-icon-phone">
-                        <a href="#screenshots-phone" class="js-tablink">
+                        <a href="#screenshots-phone" class="js-tablink js-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="Tab - Phone">
                           <i class="icon sprite sprite-device-phone"></i>
                           <span>Phone</span>
                         </a>
@@ -209,9 +215,9 @@ Template - My Portfolio
                         <a class="previous js-carousel-previous" href="#">< Previous<span class="hidden-xs"> Slide</span></a>
                         <a class="next js-carousel-next" href="#">Next <span class="hidden-xs">Slide </span>></a>
                       </div>
-                      <div class="owl-carousel owl-carousel-centred js-carousel">
+                      <div class="owl-carousel owl-carousel-centred js-carousel js-carousel-track" data-track-category="My Portfolio - Project Modal (<%= project.name %>)" data-track-label="<%= type %>, slide #">
                         <% for(var i = 0; i < project.screenshots[type]; i++) { %>
-                        <div class="item">
+                        <div class="item js-carousel-item">
                           <% if(type === "desktop") { %>
                           <img class="lazyOwl" data-src="images/projects/<%= project.id %>/<%= i+1 %>.jpg"/>
                           <% } else { %>

@@ -48,6 +48,7 @@ define([
 
             this.setMenuActiveItem();
             this.scrollToTop();
+            this.setEventTrackingClicks();
         },
 
         render: function() {
@@ -137,6 +138,9 @@ define([
                 self.closeModal();
             });
 
+            // Set event tracking click handlers for new modal content
+            this.setEventTrackingClicks(true);
+            
             // Run callback if specified
             if(typeof onComplete !== 'undefined') {
                 onComplete();
@@ -197,6 +201,46 @@ define([
 
         scrollToTop: function() {
             window.scrollTo(0, 0);
+        },
+
+        setEventTrackingClicks: function(modal) {
+            // /* global ga */
+            var selector = '.js-track';
+            if(modal) {
+                selector = '.js-modal ' + selector;
+            }
+            $(selector).click(function() {
+                var category = $(this).data('track-category');
+                var label = $(this).data('track-label');
+                if(typeof category === 'undefined' || typeof label === 'undefined') {
+                    return;
+                }
+                console.log(category + ' | ' + label);
+                // ga('send', 'event', category, 'click', label);
+            });
+        },
+        trackCarouselChange: function(modal) {
+            var selector = '.js-carousel-track';
+            if(modal) {
+                if($('.js-carousel-tabs').length > 0) {
+                    selector = '.js-modal .js-tab.active ' + selector;
+                } else {
+                    selector = '.js-modal ' + selector;
+                }
+            }
+            var owl = $(selector).data('owlCarousel');
+            var slideNumber = owl.currentItem;
+
+            var category = $(selector).data('track-category');
+            var label = $(selector).data('track-label');
+            var slideLabel = $(selector).find('.js-carousel-item').eq(slideNumber).data('track-label');
+            if(typeof slideLabel !== 'undefined') {
+                label = label.replace('#', slideLabel);
+            } else {
+                label = label.replace('#', parseInt(slideNumber)+1);
+            }
+            console.log(category + ' | ' + label);
+            // ga('send', 'event', category, 'click', label);
         }
 
     });

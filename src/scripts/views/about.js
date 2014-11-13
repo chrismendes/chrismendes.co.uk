@@ -27,9 +27,14 @@ define([
                 singleItem: true,
                 autoWidth: true,
                 pagination: false,
-                afterMove: this.setSlideIndicatorActiveState
+                afterMove: _.bind(this.onCarouselChange, { view: this })
             });
             this.setCarouselNavClickEvents();
+        },
+
+        onCarouselChange: function() {
+            this.view.setSlideIndicatorActiveState();
+            this.view.trackCarouselChange();
         },
 
         setCarouselNavClickEvents: function() {
