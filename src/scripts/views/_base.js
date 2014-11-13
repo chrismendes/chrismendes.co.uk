@@ -204,7 +204,7 @@ define([
         },
 
         setEventTrackingClicks: function(modal) {
-            // /* global ga */
+            /* global ga */
             var selector = '.js-track';
             if(modal) {
                 selector = '.js-modal ' + selector;
@@ -215,11 +215,12 @@ define([
                 if(typeof category === 'undefined' || typeof label === 'undefined') {
                     return;
                 }
-                console.log(category + ' | ' + label);
-                // ga('send', 'event', category, 'click', label);
+
+                ga('send', 'event', category, 'click', label);
             });
         },
         trackCarouselChange: function(modal) {
+            /* global ga */
             var selector = '.js-carousel-track';
             if(modal) {
                 if($('.js-carousel-tabs').length > 0) {
@@ -239,8 +240,8 @@ define([
             } else {
                 label = label.replace('#', parseInt(slideNumber)+1);
             }
-            console.log(category + ' | ' + label);
-            // ga('send', 'event', category, 'click', label);
+
+            ga('send', 'event', category, 'click', label);
         }
 
     });
