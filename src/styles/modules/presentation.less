@@ -217,18 +217,29 @@
         }
     }
     .slide-thanks {
-        img {
+        .photos {
             margin: 0px auto;
-            display: block;
+            width: 534px;
+            img {
+                height: 250px;
+                margin-top: 15px;
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
         }
     }
 
 }
 
 .lt-ie10 {
-    // Picture of Merlin is full page width on IE9 without fix
-    .carousel-presentation .slide-thanks img {
-        width: 275px;
-        height: 205px;
+    // Pictures of Merlin is full page width on IE9 without fix
+    .carousel-presentation .slide-thanks .photos img {
+        width: 333px;
+        height: 250px;
+        display: inline;
+        &:first-child {
+            width: 187px;
+        }
     }
 }
