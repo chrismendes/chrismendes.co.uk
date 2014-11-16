@@ -17,7 +17,7 @@ define([
         name:           'Home',
         template:       _.template(html),
         background:     'blue',
-        theme:          'blue',
+        theme:          'red',
 
         events: {
             'mouseenter .box':       'onBoxHover',
