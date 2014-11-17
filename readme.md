@@ -13,7 +13,7 @@ A fully responsive website accessible across desktops, tablets, and mobile phone
 * HTML5, CSS3, LESS
 * Twitter Bootstrap
 * JavaScript, jQuery, JSON
-* Backbone.js, Require.js
+* Backbone.js, Underscore.js, Require.js
 * Grunt, Bower
 
 
