@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                     cwd:    '<%= config.dev.root %>',
                     dest:   '<%= config.dist.root %>',
                     src: [
-                        '*.{ico,png,txt}',
+                        '*.{ico,png,jpg,txt}',
                         '.htaccess',
                         'sitemap.xml',
                         'images/*.{png,jpg,gif}',
