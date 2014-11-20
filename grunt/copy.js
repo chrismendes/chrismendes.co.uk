@@ -23,6 +23,7 @@ module.exports = function(grunt) {
                         'images/decor/*',
                         'images/projects/**/*',
                         'images/photos/*',
+                        'docs/*',
                         '*.html',
                         'fonts/{,*/}*.*',
                         'locales/*'
