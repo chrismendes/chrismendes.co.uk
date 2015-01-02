@@ -41,7 +41,7 @@ define([
         prepareData: function(collection) {
             /* jshint maxlen: 200 */
             var categories = {
-                highlights:     { name: 'Project Highlights',   filter: { highlight:   true     }                    },
+                highlights:     { name: 'Project Highlights',   filter: { highlight:   true     }, order: 'highlightPosition' },
                 big:            { name: 'Big Business',         filter: { category:    'big'    }, clientLogos: true },
                 small:          { name: 'Small Business',       filter: { category:    'small'  }                    },
                 other:          { name: 'Other Projects',       filter: { category:    'other'  }                    },
@@ -55,6 +55,13 @@ define([
                 _.each(projects, function(proj, key) {
                     projects[key] = proj.attributes;
                 });
+
+                if(typeof config.order !== 'undefined') { // Set order
+                    projects = _.sortBy(projects, function(project) {
+                        return project[config.order];
+                    });
+                }
+
                 categoryData[key] = { name: config.name, projects: projects, clientLogos: config.clientLogos };
             });
 
