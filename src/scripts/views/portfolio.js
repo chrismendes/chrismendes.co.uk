@@ -42,16 +42,16 @@ define([
             /* jshint maxlen: 200 */
             var categories = {
                 highlights:     { name: 'Project Highlights',   filter: { highlight:   true     }, order: 'highlightPosition' },
-                big:            { name: 'Big Business',         filter: { category:    'big'    }, clientLogos: true },
-                small:          { name: 'Small Business',       filter: { category:    'small'  }                    },
-                other:          { name: 'Other Projects',       filter: { category:    'other'  }                    },
-                codeSamples:    { name: 'Code Samples',         filter: { codeSample:  true     }                    }
+                big:            { name: 'Big Business',         filter: { category:    'big'    }, order: 'categoryPosition', clientLogos: true },
+                small:          { name: 'Small Business',       filter: { category:    'small'  }, order: 'categoryPosition' },
+                other:          { name: 'Other Projects',       filter: { category:    'other'  }, order: 'categoryPosition' },
+                codeSamples:    { name: 'Code Samples',         filter: { codeSample:  true     }, order: 'categoryPosition' }
             };
             var categoryData = {};
 
             // Convert backbone models to object literals
             _.each(categories, function(config, key) {
-                var projects = collection.where(config.filter);
+                var projects = collection.where(_.extend(config.filter, { active: true }));
                 _.each(projects, function(proj, key) {
                     projects[key] = proj.attributes;
                 });

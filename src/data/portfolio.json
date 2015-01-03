@@ -3,19 +3,21 @@
         "name":                   "Barclaycard bPay",
         "url":                    null,
         "offlineMessage":         "To be launched shortly",
-        "description":            "Launch B2B website for Barclaycard bPay product. Front-end code was delivered to client for CMS integration.",
+        "description":            "Launch B2B website for Barclaycard bPay product. Fully responsive. Front-end code was delivered to client for CMS integration.",
         "date":                   "December 2014 - January 2015",
         "skills":                 [ "HTML, CSS", "JavaScript, jQuery", "Responsive development" ],
         "employer":               "AKQA",
         "responsibility":         "Front-end (Co-developer)",
         "category":               "big",
+        "categoryPosition":       3,
         "highlight":              true,
         "highlightPosition":      1,
         "codeSample":             false,
         "codeSampleURL":          null,
         "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
         "id":                     "barclaycard",
-        "clientId":               "barclaycard"
+        "clientId":               "barclaycard",
+        "active":                 true
     },
     {
         "name":                   "Capablue",
@@ -27,13 +29,15 @@
         "employer":               "Capablue",
         "responsibility":         "Front-end (Lead developer)",
         "category":               null,
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
         "codeSampleURL":          null,
         "screenshots":            { "desktop": 3, "tablet": 0, "phone": 5 },
         "id":                     "capablue",
-        "clientId":               "capablue"
+        "clientId":               "capablue",
+        "active":                 true
     },
     {
         "name":                   "Success Factors",
@@ -45,42 +49,47 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       10,
         "highlight":              true,
         "highlightPosition":      4,
         "codeSample":             false,
         "codeSampleURL":          null,
         "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
         "id":                     "successfactors",
-        "clientId":               "successfactors"
+        "clientId":               "successfactors",
+        "active":                 true
     },
     {
         "name":                   "Capablue TV Everywhere",
         "url":                    null,
         "offlineMessage":         "Not Published (Internal Prototype)",
-        "description":            "A white-label build for a multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer). Features a API for programme data, a PHP broker application, and a fully responsive front-end.",
+        "description":            "A white-label build for a multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer). Features an API for programme data, a PHP broker application, and a fully responsive front-end.",
         "date":                   "May - July 2014",
         "skills":                 [ "HTML5, CSS3, Foundation, Handlebars", "JavaScript, jQuery, Backbone.js, Require.js", "Responsive development", "PHP, JSON" ],
         "employer":               null,
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               null,
+        "categoryPosition":       9,
         "highlight":              true,
         "highlightPosition":      7,
         "codeSample":             false,
         "codeSampleURL":          null,
         "screenshots":            { "desktop": 3, "tablet": 0, "phone": 3 },
         "id":                     "capablue-tve",
-        "clientId":               "capablue"
+        "clientId":               "capablue",
+        "active":                 true
     },
     {
         "name":                   "SAP Innovation United",
         "url":                    "www.sapinnovationunited.com",
         "offlineMessage":         null,
-        "description":            "Web-based football management game with SAP branding and product positioning (sinced renamed as 'SAP IT &amp; Me United'). I designed and built the match engine that simulates based on player attributes what happens during each match and the end results. Responsible for all back end work.",
+        "description":            "Web-based football management game with SAP branding and product positioning. I designed and built the match engine that simulates what happens during each match and the end result based on player attributes. Responsible for all back-end work.",
         "date":                   "July - September 2013",
         "skills":                 [ "PHP, CodeIgniter, MySQL" ],
         "employer":               "DNX Marketing",
         "responsibility":         "Back-end (Sole-developer)",
         "category":               "big",
+        "categoryPosition":       8,
         "highlight":              true,
         "highlightPosition":      6,
         "codeSample":             false,
@@ -88,7 +97,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 8, "tablet": 0, "phone": 0 },
         "id":                     "sap-football",
-        "clientId":               "sap"
+        "clientId":               "sap",
+        "active":                 true
     },
     {
         "name":                   "Cisco Data Centre Hub",
@@ -100,6 +110,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       4,
         "highlight":              true,
         "highlightPosition":      2,
         "codeSample":             false,
@@ -107,7 +118,8 @@
         "techCategory":            false,
         "screenshots":            { "desktop": 5, "tablet": 7, "phone": 7 },
         "id":                     "cisco",
-        "clientId":               "cisco"
+        "clientId":               "cisco",
+        "active":                 true
     },
     {
         "name":                   "SAP Didn't Expect That",
@@ -119,14 +131,16 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       6,
         "highlight":              true,
-        "highlightPosition":      5,
+        "highlightPosition":      6,
         "codeSample":             false,
         "codeSampleURL":          null,
         "techCategory":            false,
         "screenshots":            { "desktop": 5, "tablet": 5, "phone": 5 },
         "id":                     "sap-didntexpect",
-        "clientId":               "sap"
+        "clientId":               "sap",
+        "active":                 true
     },
     {
         "name":                   "Autodesk Manufacturing",
@@ -138,6 +152,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Co-developer)",
         "category":               "big",
+        "categoryPosition":       1,
         "highlight":              true,
         "highlightPosition":      3,
         "codeSample":             false,
@@ -145,7 +160,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 5, "tablet": 4, "phone": 7 },
         "id":                     "autodesk-manufacturing",
-        "clientId":               "autodesk"
+        "clientId":               "autodesk",
+        "active":                 true
     },
     {
         "name":                   "SAP Crystal Solutions",
@@ -157,6 +173,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       5,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -164,7 +181,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 },
         "id":                     "sap-crystalsolutions",
-        "clientId":               "sap"
+        "clientId":               "sap",
+        "active":                 true
     },
     {
         "name":                   "SAP Lumira",
@@ -176,6 +194,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -183,7 +202,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 4, "phone": 3 },
         "id":                     "sap-lumira",
-        "clientId":               "sap"
+        "clientId":               "sap",
+        "active":                 true
     },
     {
         "name":                   "Virgin Pure",
@@ -195,6 +215,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Co-developer)",
         "category":               "big",
+        "categoryPosition":       11,
         "highlight":              true,
         "highlightPosition":      8,
         "codeSample":             false,
@@ -202,18 +223,20 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
         "id":                     "virginpure",
-        "clientId":               "virginpure"
+        "clientId":               "virginpure",
+        "active":                 true
     },
     {
         "name":                   "Autodesk Build Today",
         "url":                    null,
         "offlineMessage":         "www.autodesk-build-today.com (Since deactivated)",
-        "description":            "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive. Since deactivated.",
+        "description":            "Microsite with an interactive questionnaire at its core, posing questions to the user to determine most suitable Autodesk CAD product. Responsible for front-end and back-end. Responsive. Since deactivated.",
         "date":                   "September - October 2013",
         "skills":                 [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
         "employer":               "DNX Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       2,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -221,7 +244,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
         "id":                     "autodesk-buildtoday",
-        "clientId":               "autodesk"
+        "clientId":               "autodesk",
+        "active":                 true
     },
     {
         "name":                   "SAP Get Connected",
@@ -233,6 +257,7 @@
         "employer":               "DNX Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "big",
+        "categoryPosition":       7,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -240,7 +265,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
         "id":                     "sap-analytics",
-        "clientId":               "sap"
+        "clientId":               "sap",
+        "active":                 true
     },
     {
         "name":                   "Coconut Hair",
@@ -252,6 +278,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       2,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -259,7 +286,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
         "id":                     "coconuthair",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "The Personal Agent",
@@ -271,6 +299,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       1,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -278,7 +307,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "personalagent",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Equate Clothing",
@@ -290,6 +320,7 @@
         "employer":               null,
         "responsibility":         "Front-end and design (Sole contributor)",
         "category":               "small",
+        "categoryPosition":       3,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -297,7 +328,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 5, "tablet": 5, "phone": 7 },
         "id":                     "equate",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Oracle PR",
@@ -309,6 +341,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -316,7 +349,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "oraclepr",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Lime Showrooms",
@@ -328,6 +362,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -335,7 +370,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "limeshowrooms",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Life Works Community",
@@ -347,6 +383,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -354,7 +391,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "lifeworks",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "PoD Volunteer",
@@ -366,6 +404,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -373,7 +412,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "podvolunteer",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Strengths Partnership",
@@ -385,6 +425,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -392,7 +433,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
         "id":                     "strengthspartnership",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Why Bother",
@@ -404,6 +446,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -411,7 +454,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "whybother",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "NewField IT",
@@ -423,6 +467,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front/Back-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -430,7 +475,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "newfieldit",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Epsom Dental Care",
@@ -442,6 +488,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -449,7 +496,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "epsomdental",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "A Sash Window Wizard",
@@ -461,6 +509,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -468,7 +517,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "asashwindow",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Elizabeth Stone",
@@ -480,6 +530,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -487,7 +538,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
         "id":                     "elizabethstone",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Surrey Fire Systems",
@@ -499,6 +551,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -506,7 +559,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "surreyfire",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Botley Byrne",
@@ -518,6 +572,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -525,7 +580,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "botleybyrne",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Secutel",
@@ -537,6 +593,7 @@
         "employer":               "Fingo Marketing",
         "responsibility":         "Front-end (Sole developer)",
         "category":               "small",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -544,7 +601,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
         "id":                     "secutel",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "Monopoly",
@@ -556,6 +614,7 @@
         "employer":               null,
         "responsibility":         "All (Sole developer)",
         "category":               "other",
+        "categoryPosition":       9,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             false,
@@ -563,7 +622,8 @@
         "techCategory":           false,
         "screenshots":            { "desktop": 9, "tablet": 0, "phone": 0 },
         "id":                     "monopoly",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
     },
     {
         "name":                   "My Website",
@@ -574,13 +634,35 @@
         "skills":                 [ "HTML5, CSS3, LESS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js, Underscore.js, Require.js", "Grunt" ],
         "employer":               null,
         "responsibility":         "All (Sole developer)",
-        "category":               "other",
+        "category":               null,
+        "categoryPosition":       2,
         "highlight":              false,
         "highlightPosition":      null,
         "codeSample":             true,
         "codeSampleURL":          "https://github.com/chrismendes/chrismendes.london",
         "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
         "id":                     "mysite",
-        "clientId":               null
+        "clientId":               null,
+        "active":                 true
+    },
+    {
+        "name":                   "Shopping Basket Exercise",
+        "url":                    "chrismendes.london/basket",
+        "offlineMessage":         null,
+        "description":            "Code test for previous job application. Task was to create shopping basket page as per functional spec and PSD design. No 3rd party frameworks/libraries beyond jQuery and Modernizr permitted. Emphasis on correct use of HTML, CSS, and object-oriented JavaScript.",
+        "date":                   "",
+        "skills":                 [ "HTML, CSS, Sass", "JavaScript, jQuery", "Grunt" ],
+        "employer":               null,
+        "responsibility":         "All (Sole developer)",
+        "category":               null,
+        "categoryPosition":       1,
+        "highlight":              false,
+        "highlightPosition":      null,
+        "codeSample":             true,
+        "codeSampleURL":          "https://github.com/chrismendes/shopping-basket",
+        "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
+        "id":                     "basket",
+        "clientId":               null,
+        "active":                 true
     }
 ]
