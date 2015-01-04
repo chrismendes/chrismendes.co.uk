@@ -17,7 +17,7 @@
         "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
         "id":                     "barclaycard",
         "clientId":               "barclaycard",
-        "active":                 true
+        "active":                 false
     },
     {
         "name":                   "Capablue",
@@ -608,15 +608,15 @@
         "name":                   "Monopoly",
         "url":                    "chrismendes.london/monopoly",
         "offlineMessage":         null,
-        "description":            "A replica of the well known board game built with Flash. User plays against AI opponents. My undergraduate final year project at university.",
+        "description":            "A replica of the well known board game built with Flash. User plays against AI opponents that choose to buy or pass on properties as well as respond to player proposed deals for properties or cash.",
         "date":                   "June - August 2008",
         "skills":                 [ "Adobe Flash", "ActionScript 2.0" ],
         "employer":               null,
         "responsibility":         "All (Sole developer)",
         "category":               "other",
         "categoryPosition":       9,
-        "highlight":              false,
-        "highlightPosition":      null,
+        "highlight":              true,
+        "highlightPosition":      8,
         "codeSample":             false,
         "codeSampleURL":          null,
         "techCategory":           false,
@@ -663,6 +663,6 @@
         "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
         "id":                     "basket",
         "clientId":               null,
-        "active":                 true
+        "active":                 false
     }
 ]
