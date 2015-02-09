@@ -17,7 +17,7 @@
         "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
         "id":                     "barclaycard",
         "clientId":               "barclaycard",
-        "active":                 false
+        "active":                 true
     },
     {
         "name":                   "Capablue",
@@ -132,8 +132,8 @@
         "responsibility":         "Front-end (Sole developer)",
         "category":               "big",
         "categoryPosition":       7,
-        "highlight":              true,
-        "highlightPosition":      6,
+        "highlight":              false,
+        "highlightPosition":      null,
         "codeSample":             false,
         "codeSampleURL":          null,
         "techCategory":            false,
