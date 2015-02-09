@@ -167,9 +167,9 @@ Template - My Portfolio
                 <% } else if(project.offlineMessage !== null) { %>
                 <span class="link offline-message"><%= project.offlineMessage %></span>
                 <% } %>
-                </span>
+                <span class="date secondary-caption"><%= project.date %></span>
                 <div class="js-project-details">
-                  <p class="description"><%= project.description %> <span class="date secondary-caption"><%= project.date %></span></p>
+                  <p class="description"><%= project.description %></p>
                   <p class="technology"><strong>Technology</strong>:&nbsp;
                   <% _.each(project.skills, function(skill, index) { %>
                     <% if(index > 0) { %>, <% } %><%= skill %>
