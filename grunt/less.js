@@ -10,7 +10,8 @@ module.exports = function(grunt) {
         default: {
             options: {
                 paths: ['<%= config.dev.styles %>'],
-                yuicompress: true
+                yuicompress: true,
+                sourceMap: true
             },
             files: {
                 '<%= config.dev.styles %>/app.css': '<%= config.dev.styles %>/app.less'
