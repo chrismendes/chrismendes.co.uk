@@ -21,10 +21,10 @@ Template - Skills & Expertise
                 </a></li>
                 <li>
                   <a href="#skills" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise" data-track-label="Tab - Technical Skills">
-                    Technical Skills
+                    Technology Checklist
                   </a>
                   <ul class="subnav-mobile">
-                    <li class="active"><a href="#skills-frontend" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Front-end">
+                    <li class="active"><a href="#skills-libraries" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Front-end">
                       Front-end Development
                     </a></li>
                     <li><a href="#skills-backend" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Back-end">
@@ -52,13 +52,7 @@ Template - Skills & Expertise
               <!--
               Basic Services
               -->
-              <div class="tab-pane active" id="overview">
-                <div class="row">
-                  <div class="col-md-9">
-                    <p class="large">My skill set and expertise evolve around creating web applications from scratch and to a high standard.</p>
-                    <p>Although primarilly a <strong>Front-end Developer</strong>, my experience has also involved significant back-end development too.</p>
-                  </div>
-                </div>
+              <div class="tab-pane _active" id="overview">
                 <div class="side-by-side-content">
                   <div class="row">
                     <div class="side-by-side-content-column col-md-5 col-md-offset-1">
@@ -128,22 +122,25 @@ Template - Skills & Expertise
               <!--
               Technical Skills
               -->
-              <div class="tab-pane" id="skills">
+              <div class="tab-pane active" id="skills">
 
                 <div class="col-md-3 hidden-xs">
                   <div class="category-column category-column-whitebg">
                     <ul class="nav nav-tabs" role="tablist">
-                      <li class="category-column-box active"><a href="#skills-frontend" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Front-end">
-                        Front-end Development
+                      <li class="category-column-box active"><a href="#skills-basics" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - The Basics" data-track-label="Tab - The Basics">
+                        The Basics
+                      </a></li>
+                      <li class="category-column-box"><a href="#skills-libraries" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Front-end">
+                        Libraries &amp; Frameworks
+                      </a></li>
+                      <li class="category-column-box"><a href="#skills-testing" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Testing">
+                        Testing
+                      </a></li>
+                      <li class="category-column-box"><a href="#skills-workflow" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Workflow">
+                        Developer Workflow
                       </a></li>
                       <li class="category-column-box"><a href="#skills-backend" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Back-end">
                         Back-end Development
-                      </a></li>
-                      <!-- <li class="category-column-box"><a href="#skills-testing" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Testing">
-                        Testing</
-                      a></li> -->
-                      <li class="category-column-box"><a href="#skills-workflow" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Workflow">
-                        Workflow
                       </a></li>
                     </ul>
                   </div>
@@ -154,10 +151,10 @@ Template - Skills & Expertise
                   <div class="tab-content">
 
                     <!--
-                    Body - Front-end development
+                    Body - The Basics
                     -->
-                    <div class="tab-pane tech-list-item active" id="skills-frontend">
-                      <h3>Front-end Development</h3>
+                    <div class="tab-pane tech-list-item active" id="skills-basics">
+                      <h3>The Basics</h3>
 
                       <div class="l-content-rows">
                         <!--
@@ -168,7 +165,7 @@ Template - Skills & Expertise
                             <span class="sprite sprite-tech-html"></span>
                           </div>
                           <div class="col-md-10">
-                            <h4>HTML5 / 4</h4>
+                            <h4>HTML5</h4>
                             <p>
                               First encountered HTML at an early age, worked with it throughout career.
                               Strict on keeping the markup void of implied styling in favour of maximum semantic meaning.
@@ -184,7 +181,7 @@ Template - Skills & Expertise
                             <span class="sprite sprite-tech-css"></span>
                           </div>
                           <div class="col-md-10">
-                            <h4>CSS3 / 2</h4>
+                            <h4>CSS3</h4>
                             <p>
                               Prefer to use the SMACSS model where possible for good modularity and scalability.
                               Experienced at troubleshooting cross-browser presentation issues.
@@ -205,19 +202,6 @@ Template - Skills & Expertise
                           </div>
                         </div>
                         <!--
-                        Foundation / Twitter Bootstrap
-                        -->
-                        <div class="row">
-                          <div class="col-md-2">
-                            <span class="sprite sprite-tech-foundation-bootstrap"></span>
-                          </div>
-                          <div class="col-md-10">
-                            <h4>Foundation / Twitter Bootstrap</h4>
-                            <p>Adept with the grid scaffolding systems of both frameworks to bring about a responsive front-end.</p>
-                            <p>Also experienced with the various CSS/JS components provided, such as Bootstrap's carousel, accordion, tabs, etc, as well as Foundation's interchange function for responsive images.</p>
-                          </div>
-                        </div>
-                        <!--
                         JavaScript
                         -->
                         <div class="row">
@@ -228,6 +212,31 @@ Template - Skills & Expertise
                             <h4>JavaScript</h4>
                             <p>Compentent object-oriented JavaScript developer - functions, objects, classes, prototype, etc.</p>
                             <p>Have experience with a wide range of projects with different levels of JavaScript involvement, from web pages requiring mere form validation to large complex webapps driven 90% by JavaScript.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!--
+                    Body - Libraries / Frameworks
+                    -->
+                    <div class="tab-pane tech-list-item" id="skills-libraries">
+                      <h3>Libraries &amp; Frameworks</h3>
+
+                      <div class="l-content-rows">
+
+                        <!--
+                        Foundation / Twitter Bootstrap
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-foundation-bootstrap"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>Foundation / Twitter Bootstrap</h4>
+                            <p>Adept with the grid scaffolding systems of both frameworks to bring about a responsive front-end.</p>
+                            <p>Also experienced with the various CSS/JS components provided, such as Bootstrap's carousel, accordion, tabs, etc, as well as Foundation's interchange function for responsive images.</p>
                           </div>
                         </div>
                         <!--
@@ -285,6 +294,8 @@ Template - Skills & Expertise
                             <p>A few recent examples: Chosen.js, Moment.js, Chart.js, Progress.js, Owl Carousel, and JWPlayer.</p>
                           </div>
                         </div>
+
+
                       </div>
                     </div>
 
@@ -367,6 +378,69 @@ Template - Skills & Expertise
                     -->
                     <div class="tab-pane tech-list-item" id="skills-testing">
                       <h3>Testing</h3>
+
+                      <div class="l-content-rows">
+                        <!--
+                        Jasmine
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-javascript"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>Jasmine</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                        <!--
+                        Sinon.JS
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-javascript"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>Sinon.JS</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                        <!--
+                        Mocha
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-javascript"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>Mocha</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                        <!--
+                        Chai
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-javascript"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>Chai</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                        <!--
+                        PhantomJS
+                        -->
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span class="sprite sprite-tech-javascript"></span>
+                          </div>
+                          <div class="col-md-10">
+                            <h4>PhantomJS</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <!--
