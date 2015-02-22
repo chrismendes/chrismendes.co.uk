@@ -1,32 +1,38 @@
 .icon-grid {
     width: 100%;
 
-    .icon-grid-column {
-        width: 50%;
+    .icon-grid-row {
+        width: 100%;
         float: left;
 
         @media screen and (min-width: 500px) and (max-width: @screen-sm-max) { // Phone Landscape/Tablet
-            width: 25%;
+            // width: 25%;
         }
+    }
+
+    .icon-grid-row .icon-grid-item:first-child {
+        margin-left: 0;
     }
 
     .icon-grid-item {
         background: #efefef;
         margin: 1px;
         padding: 10px;
+        width: 108px;
         height: 95px;
+        float: left;
         cursor: pointer;
         text-align: center;
 
         .title {
             clear: both;
             display: block;
-            font-size: 13px;
+            font-size: 11px;
             @media screen and (min-width: @screen-md-max) { // Large desktop
-                font-size: 14px;
+                // font-size: 14px;
             }
             @media screen and (min-width: @screen-md-min) and (max-width: @screen-lg-min) { // Medium desktop
-                font-size: 12px;
+                // font-size: 12px;
             }
         }
         .icon {
@@ -52,13 +58,19 @@
         }
     }
 
+    .icon-row-label {
+        margin: 15px 0 5px 0;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+
     &.icon-grid-single-row {
-        .icon-grid-column {
-            width: 100%;
-        }
         .icon-grid-item {
             float: left;
             height: auto;
+            width: auto;
         }
     }
 }

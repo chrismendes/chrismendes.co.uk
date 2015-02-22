@@ -59,6 +59,21 @@ module.exports = function(grunt) {
                                 }
                             }
         },
+        topics: {
+            src:            [
+                            '<%= config.dev.images %>/topics/*.jpg',
+                            '<%= config.dev.images %>/topics/*.png',
+                            ],
+            destImg:        '<%= config.dev.images %>/spritesheet-topics.png',
+            destCSS:        '<%= config.dev.styles %>/core/sprites/topics.less',
+            cssFormat:      'css',
+            imgPath:        '../images/spritesheet-topics.png',
+            cssOpts:        {
+                                cssClass: function (item) {
+                                    return '.sprite-' + item.name;
+                                }
+                            }
+        },
         general: {
             src:            [
                             '<%= config.dev.images %>/skills/*.png',
