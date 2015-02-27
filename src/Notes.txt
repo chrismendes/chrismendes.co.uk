@@ -1,21 +1,28 @@
 // ---
-// TECHNICAL KNOWLEDGE
+// OVERVIEW
 // ---
 
--- General --
+Developer:
+ * Building web applications from scratch with Photoshop designs
+ * Implementing responsive web development to cater all devices
+ * Contributing object-oriented, modular, scalable code for longevity
+ * Undertaking unit testing and wider UI testing
 
-* Building web applications from scratch
-* Responsive web development
-* Web performance and optimisation
-* Object-oriented, modular, scalable code
+ Engineer:
+  * Assisting with requirements gathering and solution architecture
+  * Ensuring good web development standards across the board
+  * Supporting and mentoring more junior developers
+  * Advising on web performance targets and solutions
 
 
--- Specific --
+// ---
+// TECHNICAL SKILLS
+// ---
 
 HTML/CSS:
  * SMACSS
  * Browser support (progressive enhancement)
- * Responsive development strategies
+ * Responsive development
 
 JavaScript:
  * Object-oriented JS
@@ -23,7 +30,7 @@ JavaScript:
  * Design principles (DRY, YAGNI)
 
 Workflow:
-* Linux Command Line
+* Chrome DevTools
 * Git repositories and team workflow
 * Workflow automation
 * JIRA / Confluence
