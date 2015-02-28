@@ -54,7 +54,7 @@ define([
             selected.toggleClass('is-active');
         },
         changeContent: function(tab) {
-            $('.js-workflow-tab').hide();
+            $('.js-topic-tab').hide();
             $('#'+tab).show();
         },
 
