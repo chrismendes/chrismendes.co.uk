@@ -6,9 +6,13 @@ define([
     'underscore',
     'backbone',
     'views/_base',
-    'text!../../templates/skills.html',
+    'text!../../templates/skills-expertise.html',
+    'text!../../templates/skills-expertise/overview.html',
+    'text!../../templates/skills-expertise/tech.html',
+    'text!../../templates/skills-expertise/knowledge.html',
+    'text!../../templates/skills-expertise/learning.html',
     'bootstraptab'
-], function($, _, Backbone, BaseView, html) {
+], function($, _, Backbone, BaseView, htmlRoot, htmlOverview, htmlTech, htmlKnowledge, htmlLearning) {
 
     'use strict';
 
@@ -16,7 +20,7 @@ define([
 
         id:             'skills',
         name:           'Skills & Expertise',
-        template:       _.template(html),
+        template:       _.template(htmlRoot),
         background:     'gold',
         theme:          'red',
 
@@ -24,16 +28,23 @@ define([
             'click .js-icon-select':    'onWorkflowBoxClick'
         },
 
+        initialize: function() {
+            this.data = {
+                tabOverview:    htmlOverview,
+                tabTech:        htmlTech,
+                tabKnowledge:   htmlKnowledge,
+                tabLearning:    htmlLearning
+            };
+        },
+
         onWorkflowBoxClick: function(e) {
             var selected = this.identifyClickedBox(e);
             var tab = selected.attr('data-tab');
 
-            if($('.js-middle-content-column').css('display') !== 'none') {
-                // Desktop - populate middle column
+            if($('.js-middle-content-column').css('display') !== 'none') { // Desktop - populate middle column
                 this.setActive(selected);
                 this.changeContent(tab);
-            } else {
-                // Phone - trigger popup
+            } else { // Phone - trigger popup
                 this.showModal(tab);
             }
         },

@@ -1,0 +1,88 @@
+<!--
+Template - Skills & Expertise
+-->
+<div class="page-container is-hidden js-fadein">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <div class="tabbed-content">
+
+        <div class="content-canvas theme-border decor-skills">
+          <h2>Skills &amp; Expertise</h2>
+
+            <!--
+            Tabs
+            -->
+            <div class="tabbed-content-tabs">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="_active"><a href="#overview" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise" data-track-label="Tab - Overview">
+                  Overview
+                </a></li>
+                <li>
+                  <a href="#skills" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise" data-track-label="Tab - Technical Skills">
+                    Technology Checklist
+                  </a>
+                  <ul class="subnav-mobile">
+                    <li class="active"><a href="#skills-libraries" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Front-end">
+                      Front-end Development
+                    </a></li>
+                    <li><a href="#skills-backend" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Back-end">
+                      Back-end Development
+                    </a></li>
+                    <!-- <li><a href="#skills-testing" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Testing">
+                      Testing</a>
+                    </li> -->
+                    <li><a href="#skills-workflow" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise - Technical Skills" data-track-label="Tab - Workflow">
+                      Workflow
+                    </a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="#workflow" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise" data-track-label="Tab - Development Knowledge">
+                  Development Knowledge
+                </a></li>
+                <li><a href="#learning" class="js-track" role="tab" data-toggle="tab" data-track-category="Skills/Expertise" data-track-label="Tab - Currently Learning">
+                  Currently Learning
+                </a></li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+            
+              <!--
+              Overview
+              -->
+              <div class="tab-pane _active" id="overview">
+                <%= tabOverview %>
+              </div>
+
+              <!--
+              Technical Skills
+              -->
+              <div class="tab-pane" id="skills">
+                <%= tabTech %>
+              </div>
+
+              <!--
+              Development Knowledge
+              -->
+              <div class="tab-pane active" id="workflow">
+                <%= tabKnowledge %>
+              </div>
+
+              <!--
+              Currently Learning
+              -->
+              <div class="tab-pane" id="learning">
+                <%= tabLearning %>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
