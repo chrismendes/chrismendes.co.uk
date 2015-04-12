@@ -10,7 +10,7 @@ Developer:
 
  Engineer:
   * Assisting with requirements gathering and solution architecture
-  * Ensuring good web development standards and best peactices across the board
+  * Ensuring good web development standards and best practices across the board
   * Supporting and mentoring more junior developers
   * Advising on web performance targets and solutions
 
