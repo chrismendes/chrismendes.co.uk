@@ -28,14 +28,6 @@
             line-height: 130%;
             margin: 0px;
         }
-        ul, li {
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
-        }
-        li {
-            padding: 6px 0px 0px 0px;
-        }
         p {
             margin: 0px;
         }
@@ -54,12 +46,27 @@
         &.subnav-item-separated {
             margin-top: 20px;
         }
+
+        ul, ul > li {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        ul > li {
+            padding: 5px 0px 10px 10px;
+        }
+        ul > li > a {
+            font-weight: normal;
+            text-decoration: none;
+        }
+        ul > li.active > a {
+            font-weight: bold;
+        }
     }
 
     ul {
         border-bottom: 0px;
     }
-
 
     @media screen and (max-width: @screen-sm-max) { // Tablet + Phone
         margin-bottom: 15px;
