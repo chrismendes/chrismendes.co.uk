@@ -1,8 +1,6 @@
 # chrismendes.london
 
-
 > Personal website for web development contracting purposes. Consists of my CV, portfolio, and other useful information for the benefit of employers and recruitment agents.
-
 
 ## Overview
 
@@ -12,47 +10,9 @@ A fully responsive website accessible across desktops, tablets, and mobile phone
 
 * HTML5, CSS3, LESS
 * Twitter Bootstrap
-* JavaScript, jQuery, JSON
+* JavaScript, jQuery
 * Backbone.js, Underscore.js, Require.js
 * Grunt, Bower
-
-
-
-## Build/Run Locally
-
-Having checked out the project, follow the steps below:
-
-1) Install Grunt dependencies via NPM (will create the 'node_modules' directory):
-
-```sh
-$ npm install
-```
-
-2) Install app dependencies via Bower (will create the 'src/libraries' directory):
-
-```sh
-$ bower install
-```
-
-3) Run local Node.js server and open app in browser via Grunt:
-
-```sh
-# Development version ('src' directory)
-$ grunt serve
-
-# Production version ('dist' directory)
-$ grunt serve:dist
-
-# Build to 'dist' only
-$ grunt build
-```
-
-## Future Improvements
-
-* Make site crawlable by search engines (currently not)
-* Create separate branch with alternative technology stack:
-    * i.e. AngularJS, Foundation, Sass
-
 
 ## License
 
