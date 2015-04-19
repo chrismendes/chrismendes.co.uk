@@ -44,8 +44,7 @@ define([
                 highlights:     { name: 'Project Highlights',   filter: { highlight:   true     }, order: 'highlightPosition' },
                 big:            { name: 'Big Business',         filter: { category:    'big'    }, order: 'categoryPosition', clientLogos: true },
                 small:          { name: 'Small Business',       filter: { category:    'small'  }, order: 'categoryPosition' },
-                other:          { name: 'Other Projects',       filter: { category:    'other'  }, order: 'categoryPosition' },
-                codeSamples:    { name: 'Code Samples',         filter: { codeSample:  true     }, order: 'categoryPosition' }
+                other:          { name: 'Other Projects',       filter: { category:    'other'  }, order: 'categoryPosition' }
             };
             var categoryData = {};
 

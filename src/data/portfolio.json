@@ -41,8 +41,8 @@
     },
     {
         "name":                   "Success Factors",
-        "url":                    "www.startanywherewithsuccessfactors.com",
-        "offlineMessage":         null,
+        "url":                    null,
+        "offlineMessage":         "www.startanywherewithsuccessfactors.com (Since deactivated)",
         "description":            "Interactive questionnaire for HR professionals to obtain helpful information tailored to their needs based on the answers given. User journey data dispatched to Marketo CRM.",
         "date":                   "February - March 2014",
         "skills":                 [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js" ],
@@ -81,9 +81,9 @@
     },
     {
         "name":                   "SAP Innovation United",
-        "url":                    "www.sapinnovationunited.com",
+        "url":                    "www.itandmeunited.com",
         "offlineMessage":         null,
-        "description":            "Web-based football management game with SAP branding and product positioning. As a highlight achievement I designed and built the match engine that simulates what happens during each match and the end result based on player attributes and team tactics. Solely responsible for all back-end development, jointly responsible with co-developer for front-end.",
+        "description":            "Now under a different name, this project produced a web-based football management game with SAP branding and product positioning. As a highlight achievement I designed and built the match engine that simulates what happens during each match and the end result based on player attributes and team tactics. Solely responsible for all back-end development, jointly responsible with co-developer for front-end.",
         "date":                   "July - September 2013",
         "skills":                 [ "PHP, CodeIgniter, MySQL", "HTML, CSS, Twitter Bootstrap" ],
         "employer":               "DNX Marketing",
