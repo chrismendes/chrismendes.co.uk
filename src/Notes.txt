@@ -1,5 +1,14 @@
 // ---
-// OVERVIEW
+// PAGE DECOR
+// ---
+ * Portfolio -> change to presentation board with browser/cursor in middle
+ * CV -> change to printer
+ * Code Samples -> set to laptop with type cursor
+
+
+
+// ---
+// SKILLS/EXPERTISE OVERVIEW
 // ---
 
 Developer:
@@ -55,3 +64,29 @@ Integration:
 * Google analytics tracking
 * Social network content sharing
 * Building for CMS systems
+
+
+
+// ---
+// PERSONAL TRAITS
+// ---
+
+-- Communication --
+
+* Verbally articulate
+* Confident speaker/presenter
+* Good writing skills
+* Keen on documentation
+
+-- Organisation --
+
+* Good task management skills
+
+-- Leadership --
+
+* 
+
+-- Work ethics --
+
+* Hard working
+* Keen to help others
