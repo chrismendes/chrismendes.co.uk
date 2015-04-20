@@ -9,7 +9,8 @@ define([
     'views/recruitment',
     'views/feedback',
     'views/about',
-], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, FeedbackView, AboutView) {
+    'views/code-samples'
+], function(HomeView, CvView, PortfolioView, SkillsView, RecruitmentView, FeedbackView, AboutView, CodeSamplesView) {
 
     'use strict';
 
@@ -68,7 +69,13 @@ define([
         showAboutMe: function() {
             var about = new AboutView();
             this.showView(about);
-        }
+        },
+
+        // Code Samples Page
+        showCodeSamples: function() {
+            var samples = new CodeSamplesView();
+            this.showView(samples);
+        },
 
     };
 

@@ -17,7 +17,8 @@ define([
             'skills':           'showSkills',
             'recruitment':      'showRecruitment',
             'feedback':         'showFeedback',
-            'about':            'showAboutMe'
+            'about':            'showAboutMe',
+            'code-samples':     'showCodeSamples'
         },
 
         initialize: function() {
@@ -53,6 +54,10 @@ define([
         // About Me Page
         showAboutMe: function() {
             App.showAboutMe();
+        },
+        // Code Samples Page
+        showCodeSamples: function() {
+            App.showCodeSamples();
         }
         
     });

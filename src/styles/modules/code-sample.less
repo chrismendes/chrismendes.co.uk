@@ -1,0 +1,102 @@
+.codesample--logo {
+    width: 10%;
+    float: left;
+    padding-top: 15px;
+}
+.codesample--logo .sprite {
+    margin: 0 auto;
+}
+
+.codesample--description {
+    width: 50%;
+    float: left;
+    padding: 0 30px 0 20px;
+}
+.codesample--description--tech {
+    margin-top: 15px;
+}
+.codesample--description--tech span {
+    background-color: #c0c0c0;
+    padding: 6px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+.codesample--actions {
+    width: 18%;
+    float: left;
+    padding: 53px 40px 0 0;
+}
+.codesample--actions a {
+    width: 100%;
+}
+.codesample--actions a:first-child {
+    margin-bottom: 15px;
+}
+.codesample--actions a.btn-orange { // (TODO: Refactor global button css)
+    background-color: #f0ad4e !important;
+    border-color: #eea236 !important;
+}
+.codesample--actions a.btn-blue { // (TODO: Refactor global button css)
+    background-color: #428bca !important;
+    border-color: #357ebd !important;
+}
+
+.codesample--screenshot {
+    width: 22%;
+    float: left;
+    padding: 15px 10px 0 0;
+}
+.codesample--screenshot img {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 6px 0px #c0c0c0;
+}
+
+
+@media screen and (max-width: @screen-md-max) { // Small Desktop
+    .codesample--description {
+        width: 46%;
+    }
+    .codesample--actions {
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: @screen-sm-max) { // Tablet
+    .codesample--logo {
+        width: 15%;
+    }
+    .codesample--description {
+        width: 85%;
+    }
+    .codesample--actions {
+        width: 35%;
+        margin-left: 15%;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .codesample--screenshot {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: @screen-xs-max) { // Phone
+    .codesample--logo {
+        display: none;
+    }
+    .codesample--description {
+        width: 100%;
+    }
+    .codesample--actions {
+        margin-left: 0;
+        padding-right: 0;
+        width: 170px;
+    }
+    .codesample--screenshot {
+        width: auto;
+        padding-left: 20px;
+    }
+}
