@@ -292,13 +292,17 @@
         }
         &.box-portfolio {
             .decor('portfolio');
-            background-position: 350% 8%;
+            background-position: 95px -10px;
             .icons {
                 .sprite(@boxicons-portfolio);
                 @media screen and (max-width: @screen-md-max) {
                     .sprite(@boxicons-portfolio-small);
                 }
             }
+        }
+        &.box-codesamples {
+            .decor('codesamples');
+            background-position: 160px -22px;
         }
         &.box-recruitment {
             .decor('recruitment');

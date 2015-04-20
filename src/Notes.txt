@@ -24,48 +24,6 @@ Developer:
   * Advising on web performance targets and solutions
 
 
-// ---
-// TECHNICAL SKILLS
-// ---
-
-HTML/CSS:
- * SMACSS
- * Browser support (progressive enhancement)
- * Responsive development
-
-JavaScript:
- * Object-oriented JS
- * Design patterns
- * Design principles (DRY, YAGNI)
-
-Workflow:
-* Chrome DevTools
-* Git repositories and team workflow
-* Workflow automation
-* JIRA / Confluence
-
-Performance:
-* Base level: Minification, concatenation, sprites
-* Advanced: Above-the-fold/Critical path, HTTP/TCP (slow-start), cache via LocalStorage
-* Analysis tools (insights, webpagetest, yslow)
-
-Testing:
-* Virtual machines
-* Debugging mobile devices
-* Automation via headless browsers
-
-Media:
- * Image formats and properties
- * Video formats and playback
- * Live streaming video
-
-Integration:
-* Search engine friendly development
-* Google analytics tracking
-* Social network content sharing
-* Building for CMS systems
-
-
 
 // ---
 // PERSONAL TRAITS
