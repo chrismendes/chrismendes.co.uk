@@ -29,12 +29,11 @@ module.exports = function(grunt) {
                         'locales/*'
                     ]
                 },
-                // Monopoly project
+                // Sample apps
                 {
-                    src:        [ 'misc/monopoly/*.*' ],
-                    dest:       '<%= config.dist.root %>/monopoly/',
-                    expand:     true,
-                    flatten:    true
+                    src:        [ 'apps/**/*' ],
+                    dest:       '<%= config.dist.root %>/',
+                    expand:     true
                 }
             ]
         }
