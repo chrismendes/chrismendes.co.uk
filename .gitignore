@@ -1,9 +1,6 @@
-node_modules
 .tmp
 .sass-cache
-libraries
-test/libraries
-sources
 src/styles/*.css
-misc
-TODO.txt
+src/libraries
+dist
+node_modules
