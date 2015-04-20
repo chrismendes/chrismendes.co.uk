@@ -12,7 +12,7 @@ define([
 
     var CodeSamplesView = BaseView.extend({
 
-        id:             'codeSamples',
+        id:             'codesamples',
         name:           'Code Samples',
         template:       _.template(html),
         background:     'green',
