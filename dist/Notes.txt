@@ -1,0 +1,92 @@
+// ---
+// PAGE DECOR
+// ---
+ * Portfolio -> change to presentation board with browser/cursor in middle
+ * CV -> change to printer
+ * Code Samples -> set to laptop with type cursor
+
+
+
+// ---
+// SKILLS/EXPERTISE OVERVIEW
+// ---
+
+Developer:
+ * Building web applications from scratch with Photoshop designs
+ * Implementing responsive web development to cater all devices
+ * Contributing object-oriented, modular, scalable code for longevity
+ * Undertaking unit testing and wider UI testing
+
+ Engineer:
+  * Assisting with requirements gathering and solution architecture
+  * Ensuring good web development standards and best practices across the board
+  * Supporting and mentoring more junior developers
+  * Advising on web performance targets and solutions
+
+
+// ---
+// TECHNICAL SKILLS
+// ---
+
+HTML/CSS:
+ * SMACSS
+ * Browser support (progressive enhancement)
+ * Responsive development
+
+JavaScript:
+ * Object-oriented JS
+ * Design patterns
+ * Design principles (DRY, YAGNI)
+
+Workflow:
+* Chrome DevTools
+* Git repositories and team workflow
+* Workflow automation
+* JIRA / Confluence
+
+Performance:
+* Base level: Minification, concatenation, sprites
+* Advanced: Above-the-fold/Critical path, HTTP/TCP (slow-start), cache via LocalStorage
+* Analysis tools (insights, webpagetest, yslow)
+
+Testing:
+* Virtual machines
+* Debugging mobile devices
+* Automation via headless browsers
+
+Media:
+ * Image formats and properties
+ * Video formats and playback
+ * Live streaming video
+
+Integration:
+* Search engine friendly development
+* Google analytics tracking
+* Social network content sharing
+* Building for CMS systems
+
+
+
+// ---
+// PERSONAL TRAITS
+// ---
+
+-- Communication --
+
+* Verbally articulate
+* Confident speaker/presenter
+* Good writing skills
+* Keen on documentation
+
+-- Organisation --
+
+* Good task management skills
+
+-- Leadership --
+
+* 
+
+-- Work ethics --
+
+* Hard working
+* Keen to help others

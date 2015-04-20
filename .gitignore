@@ -2,5 +2,4 @@
 .sass-cache
 src/styles/*.css
 src/libraries
-dist
 node_modules
