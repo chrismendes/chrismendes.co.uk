@@ -1,0 +1,82 @@
+html {
+  // height: 100%;
+}
+html, body {
+  // min-height: 100%;
+}
+body {
+  font-family: Arial;
+  font-size: 0.8em;
+
+  padding: 10px;
+
+  background: #3ca8e0;
+  background: linear-gradient(to right, #0d85d1, #61c4eb);
+
+  @media (min-width: $breakpoint-fontsizechange) {
+    font-size: 1em;
+    background: linear-gradient(to right, #0d85d1, #61c4eb, #0d85d1);
+  }
+
+  @media (min-width: $breakpoint-container) {
+    padding: 0;
+  }
+}
+
+
+// ---
+// Typeface
+// ---
+h1 {
+  font-family: Lato, Arial;
+  margin: 0;
+  // font-size: 2em;
+  font-size: 2.8em;
+  font-weight: normal;
+}
+
+
+h2 {
+    font-family: Lato, Arial;
+    // font-size: 46px;
+    // margin: 7px 0px 40px 0px;
+}
+h3 {
+    font-family: oswaldbook;
+    // font-size: 22px;
+    // line-height: 28px;
+    // margin-top: 15px;
+}
+h4 {
+    font-weight: bold;
+    // font-size: 17px;
+    // margin-top: 0px;
+}
+h5 {
+    font-weight: bold;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+a:hover {
+  color: $orange;
+}
+
+
+// ---
+// Miscellaneous
+// ---
+// Apply a natural box layout model to all elements (http://www.paulirish.com/2012/box-sizing-border-box-ftw)
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// IE10 mobile viewport (ignores viewport metatag)
+@-ms-viewport{
+    width: device-width;
+    zoom: 1.0;
+}

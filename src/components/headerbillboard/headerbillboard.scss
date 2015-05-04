@@ -1,0 +1,42 @@
+.headerbillboard--name {
+  color: #fff;
+  font-size: 3em;
+  font-family: LatoBold, Helvetica Neue, Arial;
+  text-shadow: 2px 2px #777;
+
+  margin-bottom: 5px;
+
+  @media (min-width: 600px) {
+    font-size: 3.7em;
+    margin-right: 15px;
+  }
+}
+
+.headerbillboard--jobtitle {
+  color: #666;
+  font-size: 1.4em;
+  margin-top: 6px;
+
+  display: inline-block;
+
+  @media (min-width: 600px) {
+    font-size: 2em;
+  }
+}
+
+.headerbillboard--strapline {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: Helvetica Neue, Arial;
+  font-weight: 200;
+
+  margin-top: 6px;
+  margin-left: 4px;
+  clear: both;
+
+  display: none;
+
+  @media (min-width: 600px) {
+    display: inline-block;
+  }
+}

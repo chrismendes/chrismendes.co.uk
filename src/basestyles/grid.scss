@@ -1,0 +1,10 @@
+$breakpoint-container: 1140px;
+$breakpoint-fontsizechange: 700px;
+
+$susy: (
+  columns:    12,
+  gutters:    (1/4),
+  math:       fluid,
+  container:  $breakpoint-container,
+  box-sizing: border-box
+);
