@@ -8,6 +8,7 @@ var config = {
 config.src = {
   components:   config.srcDir + '/components', // (JS + UI CSS)
   basestyles:   config.srcDir + '/basestyles',
+  layoutstyles: config.srcDir + '/layouts',
   templates:    config.srcDir + '/pages',
   partials:     config.srcDir + '/partials',
   images:       config.srcDir + '/assets/images',
