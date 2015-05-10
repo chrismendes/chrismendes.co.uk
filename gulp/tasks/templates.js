@@ -1,6 +1,6 @@
 var gulp          = require('gulp');
 var config        = require('../config');
-var mustache      = require('gulp-mustache');
+var handlebars    = require('gulp-compile-handlebars');
 var rename        = require('gulp-rename');
 var fs            = require('fs');
 var del           = require('del');
@@ -18,21 +18,13 @@ gulp.task('templates', function() {
   del.sync(config.buildDir + '/*.html');
 
   // End-product HTML pages defined
+  // (TODO: Withdraw config and add automatic search fs)
   var pages = [
     { name: 'index',            template: config.src.templates + '/index/index.html' },
     { name: 'skills-expertise', template: config.src.templates + '/skills-expertise/skills-expertise.html', data: config.src.templates + '/skills-expertise/skills-expertise.json' },
-    { name: 'portfolio',        template: config.src.templates + '/portfolio/portfolio.html',               data: config.src.templates + '/portfolio/portfolio.json' }
+    { name: 'portfolio',        template: config.src.templates + '/portfolio/portfolio.html',               data: config.src.templates + '/portfolio/portfolio.json' },
+    { name: 'cv',               template: config.src.templates + '/cv/cv.html',                             data: config.src.templates + '/cv/cv.json' }
   ];
-
-  // Retrieve partial template HTML (e.g. header/footer)
-  var partials = [
-    { name: 'header', template: config.src.partials + '/header.html' },
-    { name: 'nav',    template: config.src.partials + '/nav.html' }
-  ];
-  var partialHTML = {};
-  for(var i = 0; i < partials.length; i++) {
-    partialHTML[partials[i].name] = fs.readFileSync(partials[i].template, 'utf-8');
-  }
 
   // Compile HTML for each page template
   var masterTemplate = config.srcDir + '/main.html';
@@ -51,13 +43,21 @@ gulp.task('templates', function() {
       }
     }
 
+    // Handlebars options
+    var options = {
+      partials: {
+        pagebody: pages[i].template
+      },
+      batch: [config.src.partials]
+    };
+
     // Add page template compilation to queue
     var stream = gulp.src(masterTemplate)
-      .pipe(mustache(pages[i].data, {}, {
-        pagebody: pages[i].template,
-        header: partialHTML.header,
-        nav: partialHTML.nav
-      }))
+      .pipe(handlebars(pages[i].data, options))
+      .on('error', function() {
+        this.emit('end');
+      })
+
       .pipe(rename({
         basename: pages[i].name
       }))
