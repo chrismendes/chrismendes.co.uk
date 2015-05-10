@@ -1,18 +1,16 @@
-.tabsprimary,
-.tabsprimary > li > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-
+.tabs-primary,
+.tabs-primary > li > ul {
   float: left;
   width: 100%;
 }
 
-.tabsprimary {
+.tabs-primary {
   border: 1px solid #c0c0c0;
+
+  margin-bottom: 25px;
 }
 
-.tabsprimary li a {
+.tabs-primary li a {
   font-family: Arial;
   font-size: 1.1em;
 
@@ -20,14 +18,13 @@
   height: 40px;
   padding: 10px 15px;
   float: left;
-  display: block;
 
   @media (min-width: $breakpoint-fontsizechange) {
     font-size: 0.9em;
   }
 }
 
-.tabsprimary > li.is-active > a {
+.tabs-primary > li.is-active > a {
   color: #666666;
   font-weight: bold;
 
@@ -36,16 +33,16 @@
 
 
 @media (min-width: 700px) {
-  .tabsprimary {
+  .tabs-primary {
     border: 0;
     border-bottom: 1px solid #c0c0c0;
   }
 
-  .tabsprimary > li {
+  .tabs-primary > li {
     float: left;
   }
 
-  .tabsprimary > li.is-active > a {
+  .tabs-primary > li.is-active > a {
     font-weight: normal;
 
     border: 1px solid #c0c0c0;
@@ -59,7 +56,7 @@
 // ---
 // Nested Nav
 // ---
-.tabsprimary > li > ul {
+.tabs-primary > li > ul {
   padding-left: 20px;
   background: #f7f7f7;
 
@@ -68,11 +65,11 @@
   }
 }
 
-.tabsprimary > li > ul > li {
+.tabs-primary > li > ul > li {
   float: left;
   width: 100%;
   border-bottom: 1px solid #efefef;
 }
-.tabsprimary > li > ul > li:first-child {
+.tabs-primary > li > ul > li:first-child {
   border-top: 1px solid #efefef;
 }

@@ -1,26 +1,27 @@
 .headerbillboard--name {
   color: #fff;
-  font-size: 3em;
+  font-size: 3.4em;
   font-family: LatoBold, Helvetica Neue, Arial;
+  line-height: 1em;
   text-shadow: 2px 2px #777;
 
   margin-bottom: 5px;
 
-  @media (min-width: 600px) {
-    font-size: 3.7em;
+  @media (min-width: 530px) {
+    font-size: 4.2em;
     margin-right: 15px;
   }
 }
 
 .headerbillboard--jobtitle {
   color: #666;
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-top: 6px;
 
   display: inline-block;
 
-  @media (min-width: 600px) {
-    font-size: 2em;
+  @media (min-width: 530px) {
+    font-size: 2.2em;
   }
 }
 

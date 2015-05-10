@@ -45,5 +45,45 @@
 
 
 .layout-pageheader {
-  margin-bottom: 30px;
+  width: 100%;
+  float: left;
+
+  @media (min-width: 900px) {
+    width: 70%;
+  }
+}
+
+.layout-pagesection {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+
+.layout-contentsidebyside {
+  @include span(full);
+
+  @media (min-width: 600px) {
+    width: 35%;
+
+    & + .layout-contentsidebyside {
+      margin-left: 5%;
+    }
+  }
+}
+
+.layout-subnav {
+  @include span(full);
+
+  @media (min-width: 500px) {
+    @include span(3);
+  }
+}
+
+.layout-subnavcontent {
+  @include span(full);
+
+  @media (min-width: 500px) {
+    @include span(9 last);
+  }
 }

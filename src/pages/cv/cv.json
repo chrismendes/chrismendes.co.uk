@@ -1,0 +1,49 @@
+{
+  "skills": [
+    "HTML5, CSS3, Sass/LESS, JavaScript",
+    "AngularJS, Backbone.js, jQuery, Require.js",
+    "Foundation, Twitter Bootstrap, Susy",
+    "Git, Grunt, Bower"
+  ],
+  "expertise": [
+    "Building web applications from scratch",
+    "Responsive web development",
+    "Object-oriented, modular, scalable code",
+    "Web performance and optimisation"
+  ],
+  "jobs-contract": [
+    {
+      "company": "Surfdome",
+      "companyURL": "www.surfdome.com",
+      "companyDescription": "Retail and consumer merchandise - \"With over 600 brands and free delivery options we've got you covered on the beach, mountain and the street.\"",
+      "year": "2015",
+      "startend": "May 2015 - Present",
+      "jobtitle": "Contract Senior Front-end Developer",
+      "overview": [
+        "Recruited to assist in the formation and execution of the technical management team's plan to advance the front-end technology behind the Surfdome.com ecommerce website.",
+        "Also responsible for upgrading the existing code base to a more modular and scalable state so as to become more flexible to business change, to improve and supervise existing code standards and workflow practices, and to help the development team to grow on this basis going forward.",
+        "Surfdome is a company with exciting new ideas as to how to facilitate the ecommerce experience for their consumers, paired with a desire to adopt new cutting-edge technical solutions, it is a time of exciting progressive change at Surfdome."
+      ]
+    },
+    {
+      "company": "AKQA",
+      "companyURL": "www.akqa.com",
+      "companyDescription": "Worldwide digital agency. Clients include Nike, Microsoft, Volkswagen, Heineken, Barclays, Barclaycard, Mini, Audi, and many more.",
+      "year": "2014 / 2015",
+      "startend": "December 2014 - February 2015",
+      "jobtitle": "Contract Front-end Developer",
+      "overview": [
+        "AKQA, one of the world's largest and most successful digital agencies, were set to deliver a new website for one of their UK clients - Barclaycard - to help launch a new consumer product.",
+        "Hired as part of a two man development team to build the front-end of the new site, together we worked within a wider team of AKQA creative designers, UX designers, copywriters, QA testers, project manager and a technical delivery manager."
+      ],
+      "skillsused": [
+        "HTML5, CSS3, LESS, Twitter Bootstrap",
+        "JavaScript, jQuery",
+        "Responsive Development"
+      ]
+    }
+  ],
+  "jobs-permanent": [
+
+  ]
+}
