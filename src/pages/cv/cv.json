@@ -84,6 +84,55 @@
           "Supporting other developers with technical input and general guidance",
           "Running team meetings once every week, submitting meeting agendas, facilitating discussion and agreement, recording and sharing minutes, pursuing action"
         ]
+      },
+      {
+        "company": "Fingo Marketing",
+        "companyURL": "www.fingo.co.uk",
+        "companyDescription": "Marketing agency producing mostly company sites for small and medium sized businesses.",
+        "year": "2010 - 2012",
+        "startend": "March 2010 - March 2012",
+        "jobtitle": "Web Developer",
+        "overview": [
+          "My role at this marketing agency primarily was to build new websites based on the visual designs produced by the creative team.",
+          "As the leading developer I worked to one extent or another on the majority of all projects collaborating closely with the company directors, web designers, and the project manager from kick-off to completion."
+        ],
+        "responsibilities": [
+          "Creating fresh new websites ranging from static brochure sites, to CMS driven sites and more bespoke sites",
+          "Providing technical input to support project requirements gathering and internal processes",
+          "Liaising with clients in relation to ongoing maintenance for previously developed websites"
+        ]
+      },
+      {
+        "company": "Music Talents",
+        "companyDescription": "A small music school based in Enfield, north London that also has an ecommerce operation selling musical instruments online.",
+        "noLogo": true,
+        "year": "2006 - 2008",
+        "startend": "September 2006 - June 2008",
+        "jobtitle": "Web Developer",
+        "overview": [
+          "I was responsible for developing, maintaining, and advancing the company's efforts to sell its products on the Internet via its various ecommerce websites. This involved working with a range of technologies such as HTML, CSS, ASP, PHP, MySQL, MS SQL, and WordPress."
+        ],
+        "responsibilities": [
+          "Expanding main ecommerce website developing new functionality and implementing change as described by the business manager and company director",
+          "Supporting development towards new websites selling the company products"
+        ]
+      },
+      {
+        "company": "Sounds Musical",
+        "companyDescription": "This ecommerce startup was a very ambitious and rapidly growing online retailer that sold top brand musical instruments such as Yamaha, Casio, and Roland.",
+        "year": "2005 - 2006",
+        "startend": "February 2005 - September 2006",
+        "jobtitle": "Junior Web Developer",
+        "overview": [
+          "Within the IT department of this ecommerce company, my job was to conduct wide-ranging maintenance and testing on the company's ecommerce website."
+        ],
+        "responsibilities": [
+          "Implementing front-end additions/amends for the main ecommerce website (HTML, CSS, ASP)",
+          "Working through reported issues/errors/bugs with the site - fix, test and confirm as resolved",
+          "Routine testing and documenting of discovered issues/errors/bugs",
+          "Expanding main ecommerce website developing new functionality and implementing change as described by the business manager and company director",
+          "Supporting development towards new websites selling the company products"
+        ]
       }
     ]
   }

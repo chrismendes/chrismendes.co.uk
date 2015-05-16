@@ -77,7 +77,8 @@ Jobs
 
         <div class="layout-general-topright">
           <div class="businesscard">
-            <a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>
+            {{#if noLogo}}<p class="businesscard--name">{{company}}</p>{{/if}}
+            {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
             <p class="businesscard--description">{{{companyDescription}}}</p>
           </div>
         </div>
