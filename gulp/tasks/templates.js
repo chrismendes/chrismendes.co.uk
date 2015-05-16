@@ -51,7 +51,7 @@ gulp.task('templates', function() {
       batch: [config.src.partials],
       helpers: {
         urlFriendly: function(str) {
-          return str.toLowerCase().replace(' ', '-');
+          return str.toLowerCase().replace(' ', '');
         }
       }
     };

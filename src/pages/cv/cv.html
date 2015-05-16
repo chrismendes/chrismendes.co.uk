@@ -59,25 +59,27 @@ Jobs
     <li><a href="#/tab/permanent">Permanent <span>(2005 - 2014)</span></a></li>
   </ul>
 
-  <div id="tab-contract" class="tabs--content is-active">
-
+  {{#each jobs}}
+  <div id="tab-{{@key}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
     <div class="layout-subnav">
       <ul class="tabs tabs-secondary">
-        {{#jobs-contract}}
+        {{#each .}}
         <li {{#unless @index}}class="is-active"{{/unless}}>
-          <a href="#/tab/contractjob/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
+          <a href="#/tab/job{{@key}}/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
         </li>
-        {{/jobs-contract}}
+        {{/each}}
       </ul>
     </div>
 
     <div class="layout-subnavcontent">
-      {{#jobs-contract}}
-      <div id="tabnested-contractjob-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
+      {{#each .}}
+      <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
 
-        <div class="businesscard">
-          <a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>
-          <p class="businesscard--description">{{companyDescription}}</p>
+        <div class="layout-general-topright">
+          <div class="businesscard">
+            <a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>
+            <p class="businesscard--description">{{{companyDescription}}}</p>
+          </div>
         </div>
 
         <p><strong>Job Title</strong>: {{jobtitle}}</p>
@@ -85,8 +87,17 @@ Jobs
 
         <p><strong>Overview</strong></p>
         {{#overview}}
-          <p>{{.}}</p>
+          <p>{{{.}}}</p>
         {{/overview}}
+
+        {{#if responsibilities}}
+        <p><strong>Responsibilities</strong></p>
+        {{/if}}
+        <ul>
+          {{#responsibilities}}
+          <li>{{.}}</li>
+          {{/responsibilities}}
+        </ul>
 
         {{#if skillsused}}
         <p><strong>Key Skills/Expertise Utilised</strong></p>
@@ -97,9 +108,10 @@ Jobs
           {{/skillsused}}
         </ul>
       </div>
-      {{/jobs-contract}}
+      {{/each}}
     </div>
 
   </div>
+  {{/each}}
 
 </div>

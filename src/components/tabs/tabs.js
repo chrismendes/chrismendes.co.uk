@@ -46,7 +46,8 @@ var component = {
       $(selectors.tabContent).removeClass(activeClass);
       $(selectors.tabPrefix + tab).addClass(activeClass);
     } else {
-      $(selectors.tabContentNested).removeClass(activeClass);
+      var tabContentNested = selectors.tabContentNested.replace('"]', nestedTabGroup + '"]');
+      $(tabContentNested).removeClass(activeClass);
       $(selectors.tabPrefixNested + tab).addClass(activeClass);
     }
 

@@ -1,3 +1,3 @@
 'use strict';
 
-require('../../components/tabs/tabs.js'); // (This does)
+require('../../components/tabs/tabs.js');
