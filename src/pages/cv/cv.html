@@ -65,7 +65,7 @@ Jobs
       <ul class="tabs tabs-secondary">
         {{#jobs-contract}}
         <li {{#unless @index}}class="is-active"{{/unless}}>
-          <a href="#">{{company}} <span>{{year}}</span></a>
+          <a href="#/tab/contractjob/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
         </li>
         {{/jobs-contract}}
       </ul>
@@ -73,7 +73,13 @@ Jobs
 
     <div class="layout-subnavcontent">
       {{#jobs-contract}}
-      <div id="tab-contractjob-{{@index}}" class="tabs--content js-tabgroup-contract {{#unless @index}}is-active{{/unless}}">
+      <div id="tabnested-contractjob-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
+
+        <div class="businesscard">
+          <a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>
+          <p class="businesscard--description">{{companyDescription}}</p>
+        </div>
+
         <p><strong>Job Title</strong>: {{jobtitle}}</p>
         <p><strong>Date</strong>: {{startend}}</p>
 

@@ -48,7 +48,12 @@ gulp.task('templates', function() {
       partials: {
         pagebody: pages[i].template
       },
-      batch: [config.src.partials]
+      batch: [config.src.partials],
+      helpers: {
+        urlFriendly: function(str) {
+          return str.toLowerCase().replace(' ', '-');
+        }
+      }
     };
 
     // Add page template compilation to queue
