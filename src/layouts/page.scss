@@ -41,15 +41,31 @@
 }
 
 
-.layout-contentsidebyside {
+.layout-sidebyside {
   @include span(full);
 
   @media (min-width: 600px) {
     width: 35%;
 
-    & + .layout-contentsidebyside {
+    & + .layout-sidebyside {
       margin-left: 5%;
     }
   }
 }
 
+.layout-sidebysidedivided {
+  @include span(6);
+
+  @media (min-width: 600px) {
+
+  }
+}
+.layout-sidebysidedivided + .layout-sidebysidedivided {
+  @include span(6 last);
+  padding-left: 20px;
+
+  border-left: 2px solid #efefef;
+}
+.layout-sidebysidedivided > h4 {
+  text-align: center;
+}

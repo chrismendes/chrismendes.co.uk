@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+.tabs > li {
+  margin-bottom: 0;
+}
+
 .tabs > li > a {
   display: block;
 }
