@@ -2,8 +2,8 @@
   "skills": [
     "HTML5, CSS3, Sass/LESS, JavaScript",
     "AngularJS, Backbone.js, jQuery, Require.js",
-    "Foundation, Twitter Bootstrap, Susy",
-    "Git, Grunt, Bower"
+    "Twitter Bootstrap, Foundation, Susy",
+    "Git, Gulp, Grunt, NPM, Bower"
   ],
   "expertise": [
     "Building web applications from scratch",
@@ -19,11 +19,17 @@
         "companyDescription": "Retail and consumer merchandise - \"With over 600 brands and free delivery options we've got you covered on the beach, mountain and the street.\"",
         "year": "2015",
         "startend": "May 2015 - Present",
-        "jobtitle": "Contract Senior Front-end Developer",
+        "jobtitle": "Senior Front-end Developer",
         "overview": [
           "Recruited to assist in the formation and execution of the technical management team's plan to advance the front-end technology behind the Surfdome.com ecommerce website.",
-          "Also responsible for upgrading the existing code base to a more modular and scalable state so as to become more flexible to business change, to improve and supervise existing code standards and workflow practices, and to help the development team to grow on this basis going forward.",
-          "Surfdome is a company with exciting new ideas as to how to facilitate the ecommerce experience for their consumers, paired with a desire to adopt new cutting-edge technical solutions, it is a time of exciting progressive change at Surfdome."
+          "Specifically responsible for re-writing the existing code base to a more modular and scalable state with modern libraries and well designed architecture, to improve and supervise existing code standards and workflow practices, and to help the development team to grow on this basis going forward."
+        ],
+        "responsibilities": [
+          "Designing and recommending a completely new front-end strategy and code architecture for the given functional and non-functional requirements",
+          "Prototyping with modern libraries such as Twitter's Flight.js to create mini-apps replicating legacy site functionality for proof of concept purposes",
+          "Introducing new front-end developer workflow and asset management procedures, substituting zero front-end automation and server-side Rails asset pipeline with Node.js and Gulp",
+          "Establishing previously absent formal code style guidelines, as well as the practical means to enforce them, and authoring long-term developer team documentation",
+          "Assist with the hiring process and co-conduct interviews to objectively identify the suitability or not of a given candidate"
         ]
       },
       {
@@ -32,7 +38,7 @@
         "companyDescription": "Worldwide digital agency. Clients include Nike, Microsoft, Volkswagen, Heineken, Barclays, Barclaycard, Mini, Audi, and many more.",
         "year": "2014 / 2015",
         "startend": "December 2014 - February 2015",
-        "jobtitle": "Contract Front-end Developer",
+        "jobtitle": "Front-end Developer",
         "overview": [
           "AKQA, one of the world's largest and most successful digital agencies, were set to deliver a new website for one of their UK clients - Barclaycard - to help launch a new consumer product.",
           "Hired as part of a two man development team to build the front-end of the new site, together we worked within a wider team of AKQA creative designers, UX designers, copywriters, QA testers, project manager and a technical delivery manager."
@@ -49,7 +55,7 @@
         "companyDescription": "Broadcast media company. \"A leading provider of Smart Solutions for Connected Broadcasters and Operators - Backed by Arqiva.\"",
         "year": "2014",
         "startend": "May 2014 - October 2014",
-        "jobtitle": "Contract Front-end Developer",
+        "jobtitle": "Front-end Developer",
         "overview": [
           "At this highly innovative company - owned by <a href=\"http://www.arqiva.com\" target=\"_blank\">Arqiva</a>, a leading communications infrastructure company - I was drafted in to develop a white-label product for a new multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer).",
           "The end product of this project can be seen on the <a href=\"/portfolio\">Portfolio</a> page under the entry entitled \"Capablue TV Everywhere\".",
@@ -70,7 +76,7 @@
         "companyDescription": "Award winning B2B marketing agency. Some of their clients include Cisco, Autodesk, Vodafone, MasterCard, and Sky. Recently merged with <a href=\"http://ogilvy.co.uk/agencies/ogilvy-one\" target=\"_blank\">OgilvyOne</a> and now known as OgilvyOne dnx</a>.",
         "year": "2014",
         "startend": "May 2014 - October 2014",
-        "jobtitle": "Contract Front-end Developer",
+        "jobtitle": "Web Developer",
         "overview": [
           "Working at this multi award winning agency (B2B Agency of the Year 2012 & 2013) - since acquired by <a href=\"http://www.ogilvy.co.uk\" target=\"_blank\">Ogilvy & Mather</a> - my job was to collaborate with project teams that consist of account managers, designers, copywriters, and project managers, and build the agreed creative solution within the set time-frame and budget.",
           "This predominantly involved building responsive websites with varying and wide-ranging client-side and server-side requirements, but also although less often, HTML emails, animated banners, and games."
