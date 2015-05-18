@@ -42,3 +42,28 @@
     padding: 40px;
   }
 }
+
+
+.layout-pageheader {
+  @include span(full);
+
+  @media (min-width: 900px) {
+    width: 70%;
+  }
+}
+
+
+.layout-subnav {
+  @include span(full);
+
+  @media (min-width: 500px) {
+    @include span(3);
+  }
+}
+.layout-subnavcontent {
+  @include span(full);
+
+  @media (min-width: 500px) {
+    @include span(9 last);
+  }
+}
