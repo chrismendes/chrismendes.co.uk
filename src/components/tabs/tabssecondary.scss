@@ -19,10 +19,15 @@
 }
 
 .tabs-secondary > li > a > span {
-  display: inline-block;
-  width: 100%;
+  display: inline;
+  
+  @media (min-width: 500px) {
+    width: 100%;
+    display: inline-block;
+  }
 
   @media (min-width: 700px) {
+    width: auto;
     display: inline;
   }
 }
