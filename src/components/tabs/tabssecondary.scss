@@ -1,3 +1,12 @@
+.tabs-secondary {
+  display: none;
+
+  @media (min-width: 500px) {
+    display: block;
+  }    
+}
+
+
 .tabs-secondary > li > a {
   color: #000;
   font-weight: bold;

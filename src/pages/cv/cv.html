@@ -75,6 +75,8 @@ Jobs
 
     <div class="layout-subnavcontent">
       {{#each .}}
+      <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab">{{company}} <span class="tabs--collapsetabtooltip">Click to open</span></a>
+
       <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
 
         <div class="layout-secondarycontent-topright">

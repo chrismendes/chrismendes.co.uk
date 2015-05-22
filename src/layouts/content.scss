@@ -30,8 +30,6 @@
   @include span(full);
 
   margin-top: 20px;
-  padding-top: 15px;
-  border-top: 2px solid #efefef;
 
   @media (min-width: 450px) {
     @include span(6 last);
@@ -71,8 +69,14 @@
 
   @media (min-width: 700px) {
     display: block;
+    width: 200px;
+
 
     float: right;
     margin: 0 0 20px 20px;
+  }
+
+  @media (min-width: 900px) {
+    width: 270px;
   }
 }
