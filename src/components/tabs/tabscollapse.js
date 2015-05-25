@@ -10,11 +10,9 @@ var $ = require('jquery');
 // Component
 // ---
 var selectors = {
-  collapse:           'a[href^="#/collapse/"]',
-  tabContent:         '[id^="tabnested-"]'
+  collapse: 'a[href^="#/collapse/"]'
 };
 var activeClass = 'is-active';
-
 
 var component = {
 
@@ -25,15 +23,9 @@ var component = {
     var segments = tab.split('/');
 
     var $tabShow = $('#'+segments[1]);
-    var currentlyActive = $tabShow.hasClass(activeClass);
 
-    $(selectors.collapse).removeClass(activeClass);
-    $(selectors.tabContent).removeClass(activeClass);
-
-    if(currentlyActive === false) {
-      $(this).addClass(activeClass);
-      $tabShow.addClass(activeClass);
-    }
+    $(this).toggleClass(activeClass);
+    $tabShow.toggleClass(activeClass);
   },
 
   initialise: function() {

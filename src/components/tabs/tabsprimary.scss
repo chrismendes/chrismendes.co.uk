@@ -25,7 +25,7 @@
 }
 
 .tabs-primary > li.is-active > a {
-  color: #666666;
+  color: #000;
 
   border-left: 3px solid $red;
   background: #f9f8f9;
@@ -43,6 +43,7 @@
   }
 
   .tabs-primary > li.is-active > a {
+    color: #666;
     font-weight: bold;
 
     border: 1px solid #c0c0c0;

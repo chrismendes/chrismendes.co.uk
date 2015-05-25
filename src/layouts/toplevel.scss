@@ -55,7 +55,6 @@
 
 .layout-subnav {
   @include span(full);
-  margin-bottom: 15px;
 
   @media (min-width: 500px) {
     @include span(3);
