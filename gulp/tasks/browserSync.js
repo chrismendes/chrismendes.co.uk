@@ -1,14 +1,20 @@
-var browserSync = require('browser-sync');
+var path         = require('path');
+var baseURL      = path.resolve(__dirname, '../../');
+var config       = require(baseURL + '/app.config.js');
+
 var gulp        = require('gulp');
-var config      = require('../config');
+var browserSync = require('browser-sync');
 
 var taskOptions = {
   server: {
-    // Serve up our build folder
-    baseDir: config.buildDir
+    baseDir: config.directories.build.html,
+    routes: {
+      // '/styles':   config.directories.src.styles,
+      // '/scripts':  config.directories.src.scripts
+    }
   }
 };
 
-gulp.task('browserSync', function() {
+gulp.task('browser-sync', function() {
   browserSync(taskOptions);
 });
