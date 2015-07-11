@@ -1,202 +1,233 @@
-<div class="layout-pageheader">
-  <h1>My CV</h1>
+<!doctype html>
+<html>
+  <head>
+    <title>Chris Mendes | Freelance Front-end Web Developer</title>
+    <meta name="description" content="8 years commercial experience. Based in south London within close proximity to wider London and Surrey."/>
+    {{> sharedmeta}}
+  </head>
+  <body>
 
-  <div class="keyvaluepairs">
-    <span class="keyvaluepairs--key">Residence</span>
-    <span class="keyvaluepairs--value">Croydon, London</span>
-    <span class="keyvaluepairs--key">Email</span>
-    <span class="keyvaluepairs--value"><a href="mailto:inbox@chrismendes.co.uk">inbox@chrismendes.co.uk</a></span>
-    <span class="keyvaluepairs--key">Nationality</span>
-    <span class="keyvaluepairs--value">British</span>
-    <span class="keyvaluepairs--key">Looking For</span>
-    <span class="keyvaluepairs--value"><u>Contract / Freelance</u> roles only.</span>
-  </div>
+    <div class="layout-container">
 
-  <p>Experienced Front-end Web Developer with over 8 years commercial experience.</p>
+      <div class="layout-siteheader">
+        {{> header}}
+      </div>
 
-</div>
+      <div class="layout-navigation">
+        {{> nav}}
+      </div>
 
+      <div class="layout-page">
 
-<!--
-Technical Skill Set
--->
-<div class="layout-pagesection">
+        <div class="layout-pageheader">
+          <h1>My CV</h1>
 
-  <h2>Technical Skill Set</h2>
-  <p>See <a href="#">Skills &amp; Expertise</a> for more details.</p>
-
-  <div class="layout-sidebyside">
-
-    <h3>Key Skills</h3>
-    <ul>
-      {{#skills}}
-        <li>{{.}}</li>
-      {{/skills}}
-    </ul>
-
-  </div>
-  <div class="layout-sidebyside">
-    
-    <h3>Key Expertise</h3>
-    <ul>
-      {{#expertise}}
-        <li>{{.}}</li>
-      {{/expertise}}
-    </ul>
-
-  </div>
-
-</div>
-
-
-<!--
-Jobs
--->
-<div class="layout-pagesection">
-
-  <h2>Employment</h2>
-
-  <ul class="tabs tabs-primary">
-    <li class="is-active"><a href="#/tab/contract">Contract <span>(2014 - Present)</span></a></li>
-    <li><a href="#/tab/permanent">Permanent <span>(2005 - 2014)</span></a></li>
-  </ul>
-
-  {{#each jobs}}
-  <div id="tab-{{@key}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
-    <div class="layout-subnav">
-      <ul class="tabs tabs-secondary">
-        {{#each .}}
-        <li {{#unless @index}}class="is-active"{{/unless}}>
-          <a href="#/tab/job{{@key}}/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
-
-    <div class="layout-subnavcontent">
-      {{#each .}}
-      <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab {{#unless @index}}is-active{{/unless}}">
-        <span class="tabs-collapsetabtitle">{{company}}</span>
-        <span class="tabs--collapsetabtooltip-open">Click to open</span>
-        <span class="tabs--collapsetabtooltip-close">Click to close</span>
-      </a>
-
-      <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
-
-        <div class="layout-secondarycontent-topright">
-          <div class="businesscard">
-            {{#if noLogo}}<p class="businesscard--name">{{company}}</p>{{/if}}
-            {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
-            <p class="businesscard--description">{{{companyDescription}}}</p>
+          <div class="keyvaluepairs">
+            <span class="keyvaluepairs--key">Residence</span>
+            <span class="keyvaluepairs--value">Croydon, London</span>
+            <span class="keyvaluepairs--key">Email</span>
+            <span class="keyvaluepairs--value"><a href="mailto:inbox@chrismendes.co.uk">inbox@chrismendes.co.uk</a></span>
+            <span class="keyvaluepairs--key">Nationality</span>
+            <span class="keyvaluepairs--value">British</span>
+            <span class="keyvaluepairs--key">Looking For</span>
+            <span class="keyvaluepairs--value"><u>Contract / Freelance</u> roles only.</span>
           </div>
+
+          <p>Experienced Front-end Web Developer with over 8 years commercial experience.</p>
+
         </div>
 
-        <p><strong>Job Title</strong>: {{jobtitle}}</p>
-        <p><strong>Date</strong>: {{startend}}</p>
 
-        <p><strong>Overview</strong></p>
-        {{#overview}}
-          <p>{{{.}}}</p>
-        {{/overview}}
+        <!--
+        Technical Skill Set
+        -->
+        <div class="layout-pagesection">
 
-        {{#if responsibilities}}
-        <p><strong>Responsibilities</strong></p>
-        {{/if}}
-        <ul>
-          {{#responsibilities}}
-          <li>{{.}}</li>
-          {{/responsibilities}}
-        </ul>
+          <h2>Technical Skill Set</h2>
+          <p>See <a href="#">Skills &amp; Expertise</a> for more details.</p>
 
-        {{#if skillsused}}
-        <p><strong>Key Skills/Expertise Utilised</strong></p>
-        {{/if}}
-        <ul>
-          {{#skillsused}}
-          <li>{{.}}</li>
-          {{/skillsused}}
-        </ul>
+          <div class="layout-sidebyside">
+
+            <h3>Key Skills</h3>
+            <ul>
+              {{#skills}}
+                <li>{{.}}</li>
+              {{/skills}}
+            </ul>
+
+          </div>
+          <div class="layout-sidebyside">
+            
+            <h3>Key Expertise</h3>
+            <ul>
+              {{#expertise}}
+                <li>{{.}}</li>
+              {{/expertise}}
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!--
+        Jobs
+        -->
+        <div class="layout-pagesection">
+
+          <h2>Employment</h2>
+
+          <ul class="tabs tabs-primary">
+            <li class="is-active"><a href="#/tab/contract">Contract <span>(2014 - Present)</span></a></li>
+            <li><a href="#/tab/permanent">Permanent <span>(2005 - 2014)</span></a></li>
+          </ul>
+
+          {{#each jobs}}
+          <div id="tab-{{@key}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
+            <div class="layout-subnav">
+              <ul class="tabs tabs-secondary">
+                {{#each .}}
+                <li {{#unless @index}}class="is-active"{{/unless}}>
+                  <a href="#/tab/job{{@key}}/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+
+            <div class="layout-subnavcontent">
+              {{#each .}}
+              <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab {{#unless @index}}is-active{{/unless}}">
+                <span class="tabs-collapsetabtitle">{{company}}</span>
+                <span class="tabs--collapsetabtooltip-open">Click to open</span>
+                <span class="tabs--collapsetabtooltip-close">Click to close</span>
+              </a>
+
+              <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
+
+                <div class="layout-secondarycontent-topright">
+                  <div class="businesscard">
+                    {{#if noLogo}}<p class="businesscard--name">{{company}}</p>{{/if}}
+                    {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
+                    <p class="businesscard--description">{{{companyDescription}}}</p>
+                  </div>
+                </div>
+
+                <p><strong>Job Title</strong>: {{jobtitle}}</p>
+                <p><strong>Date</strong>: {{startend}}</p>
+
+                <p><strong>Overview</strong></p>
+                {{#overview}}
+                  <p>{{{.}}}</p>
+                {{/overview}}
+
+                {{#if responsibilities}}
+                <p><strong>Responsibilities</strong></p>
+                {{/if}}
+                <ul>
+                  {{#responsibilities}}
+                  <li>{{.}}</li>
+                  {{/responsibilities}}
+                </ul>
+
+                {{#if skillsused}}
+                <p><strong>Key Skills/Expertise Utilised</strong></p>
+                {{/if}}
+                <ul>
+                  {{#skillsused}}
+                  <li>{{.}}</li>
+                  {{/skillsused}}
+                </ul>
+              </div>
+              {{/each}}
+            </div>
+
+          </div>
+          {{/each}}
+
+        </div>
+
+
+        <!--
+        Education
+        -->
+        <div class="layout-pagesection">
+
+          <h2>Education</h2>
+
+          <!--
+          Undergradute
+          -->
+          <div class="layout-sidebysidedivided">
+            <h4>BSc (Hons) Computer Visualisation & Games (2:1)</h4>
+
+            <div class="layout-halfandhalf">
+              <ul>
+                <li>Basics of Computer Science</li>
+                <li>Object-Oriented Programming</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Database Systems</li>
+                <li>Developing for the Web</li>
+              </ul>
+            </div>
+            <div class="layout-halfandhalf">
+              <ul>
+                <li>Software User Experience Design</li>
+                <li>2D Computer Graphics</li>
+                <li>3D Animation</li>
+                <li>Game Applications</li>
+                <li>Multiplayer Game Development</li>
+              </ul>
+            </div>
+          </div>
+
+          <!--
+          Postgraduate
+          -->
+          <div class="layout-sidebysidedivided">
+            <h4>Postgraduate Diploma (PgD) Advanced Software Engineering</h4>
+
+            <div class="layout-halfandhalf">
+              <ul>
+                <li>Software Engineering for the Internet</li>
+                <li>Software Architecture & Design</li>
+                <li>The Internet Infrastructure</li>
+                <li>Software Measurement & Testing</li>
+              </ul>
+            </div>
+            <div class="layout-halfandhalf">
+              <ul>
+                <li>Distributed Computing</li>
+                <li>Access Control Strategy</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--
+        Interests / Achievements
+        -->
+        <div class="layout-pagesection">
+
+          <h2>Interests &amp; Achievements</h2>
+          <ul>
+            <li>Enjoyed a career as a reservist in the Territorial Army for six years (now Army Reserve), joining the infantry and later the Royal Corps of Signals</li>
+            <li>Attained the rank of Lance Corporal and became an army Physical Training Instructor responsible for the fitness of forty reservists</li>
+            <li>Qualified as a FA Level 1 Football Coach as a result of a course with the Surrey FA</li>
+            <li>Currently running a 5-a-side football team every Wednesday for the benefit of several players</li>
+            <li>Also working on the development of my own product, in the form of a mobile app, that I will eventually form a business around when ready</li>
+          </ul>
+
+        </div>
+
       </div>
-      {{/each}}
+
     </div>
 
-  </div>
-  {{/each}}
 
-</div>
+    <script type="text/javascript" src="js/app.js"></script>
 
-
-<!--
-Education
--->
-<div class="layout-pagesection">
-
-  <h2>Education</h2>
-
-  <!--
-  Undergradute
-  -->
-  <div class="layout-sidebysidedivided">
-    <h4>BSc (Hons) Computer Visualisation & Games (2:1)</h4>
-
-    <div class="layout-halfandhalf">
-      <ul>
-        <li>Basics of Computer Science</li>
-        <li>Object-Oriented Programming</li>
-        <li>Data Structures & Algorithms</li>
-        <li>Database Systems</li>
-        <li>Developing for the Web</li>
-      </ul>
-    </div>
-    <div class="layout-halfandhalf">
-      <ul>
-        <li>Software User Experience Design</li>
-        <li>2D Computer Graphics</li>
-        <li>3D Animation</li>
-        <li>Game Applications</li>
-        <li>Multiplayer Game Development</li>
-      </ul>
-    </div>
-  </div>
-
-  <!--
-  Postgraduate
-  -->
-  <div class="layout-sidebysidedivided">
-    <h4>Postgraduate Diploma (PgD) Advanced Software Engineering</h4>
-
-    <div class="layout-halfandhalf">
-      <ul>
-        <li>Software Engineering for the Internet</li>
-        <li>Software Architecture & Design</li>
-        <li>The Internet Infrastructure</li>
-        <li>Software Measurement & Testing</li>
-      </ul>
-    </div>
-    <div class="layout-halfandhalf">
-      <ul>
-        <li>Distributed Computing</li>
-        <li>Access Control Strategy</li>
-        <li>Artificial Intelligence</li>
-      </ul>
-    </div>
-  </div>
-
-</div>
-
-
-<!--
-Interests / Achievements
--->
-<div class="layout-pagesection">
-
-  <h2>Interests &amp; Achievements</h2>
-  <ul>
-    <li>Enjoyed a career as a reservist in the Territorial Army for six years (now Army Reserve), joining the infantry and later the Royal Corps of Signals</li>
-    <li>Attained the rank of Lance Corporal and became an army Physical Training Instructor responsible for the fitness of forty reservists</li>
-    <li>Qualified as a FA Level 1 Football Coach as a result of a course with the Surrey FA</li>
-    <li>Currently running a 5-a-side football team every Wednesday for the benefit of several players</li>
-    <li>Also working on the development of my own product, in the form of a mobile app, that I will eventually form a business around when ready</li>
-  </ul>
-
-</div>
+  </body>
+</html>

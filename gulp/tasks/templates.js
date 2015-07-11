@@ -3,73 +3,84 @@ var baseURL      = path.resolve(__dirname, '../../');
 var config       = require(baseURL + '/app.config.js');
 
 var gulp         = require('gulp');
-var hogan        = require('gulp-hogan-compile');
+var debug        = require('gulp-debug');
+var handlebars   = require('gulp-compile-handlebars');
+var rename       = require('gulp-rename');
+var fs           = require('fs');
+var del          = require('del');
+var merge        = require('merge-stream');
 var browserSync  = require('browser-sync');
 
-// ---
-// Compile to Client (for development)
-// ---
-gulp.task('templates:tmp', ['templates-partials:tmp', 'templates-pages:tmp']);
+// Overview:
+//    1) For each page template, create duplicate of "master" template
+//    2) Use HTML contents of page template for master partial placeholder "pagebody"
+//    3) Rename accordingly (master.html -> page.html)
 
-gulp.task('templates-partials:tmp', function() {
-  return compilePartials(config.directories.build.templates, 'templates-partials.js');
-});
-gulp.task('templates-pages:tmp', function() {
-  return compilePages(config.directories.build.templates, 'templates-pages.js');
-});
+gulp.task('templates', function() {
 
+  // Delete previously compiled template files
+  del.sync(config.directories.build.html + '/*.html');
 
-// ---
-// Compile to Server (Shared)
-// ---
-gulp.task('templates:shared', ['templates-partials:shared', 'templates-pages:shared']);
+  // End-product HTML pages defined
+  // (TODO: Withdraw config and add automatic search fs)
+  var pages = [
+    { name: 'index',            template: config.directories.src.pages + '/index/index.html' },
+    { name: 'skills-expertise', template: config.directories.src.pages + '/skills-expertise/skills-expertise.html', data: config.directories.src.pages + '/skills-expertise/skills-expertise.json' },
+    { name: 'portfolio',        template: config.directories.src.pages + '/portfolio/portfolio.html',               data: config.directories.src.pages + '/portfolio/portfolio.json' },
+    { name: 'cv',               template: config.directories.src.pages + '/cv/cv.html',                             data: config.directories.src.pages + '/cv/cv.json' }
+  ];
 
-gulp.task('templates-partials:shared', function() {
-  return compilePartials(config.directories.shared.serverTemplates, 'templates-partials.js');
-});
-gulp.task('templates-pages:shared', function() {
-  return compilePages(config.directories.shared.serverTemplates, 'templates-pages.js');
-});
+  // Compile HTML for each page template
+  var masterTemplate = config.directories.src.base + '/main.html';
+  var finalStream = null;
 
+  for(var i = 0; i < pages.length; i++) { // For every defined page template
 
-// ---
-// Template Compilation
-// ---
-function compilePartials(targetDir, targetFilename, callback) {
-  if(!targetDir || !targetFilename) {
-    return;
+    // Retrieve template HTML
+    pages[i].template = fs.readFileSync(pages[i].template, 'utf-8');
+
+    // Retrieve template JSON data
+    if(typeof pages[i].data !== 'undefined') {
+      var data = fs.readFileSync(pages[i].data, 'utf-8');
+      if(data.length) {
+        pages[i].data = JSON.parse(data);
+      }
+    }
+
+    // Handlebars options
+    var options = {
+      partials: {
+        pagebody: pages[i].template
+      },
+      batch: [config.directories.src.partials],
+      helpers: {
+        urlFriendly: function(str) {
+          return str.toLowerCase().replace(' ', '');
+        }
+      }
+    };
+
+    // Add page template compilation to queue
+    var stream = gulp.src(masterTemplate)
+      .pipe(handlebars(pages[i].data, options))
+      .on('error', function() {
+        this.emit('end');
+      })
+
+      .pipe(rename({
+        basename: pages[i].name
+      }))
+      .pipe(debug({title: 'debug/html:'}))
+      .pipe(gulp.dest(config.directories.build.html))
+      .pipe(browserSync.reload({ stream: true }));
+
+    if(finalStream === null) {
+      finalStream = stream;
+    } else {
+      finalStream = merge(finalStream, stream);
+    }
   }
 
-  var task = gulp.src(config.directories.src.templatePartials + '/**/*.html')
-    .pipe(hogan(targetFilename, {
-      wrapper: 'commonjs',
-      templateName: function(file) {
-        return path.basename(file.path, '.html');
-      }
-    }))
-    .pipe(gulp.dest(targetDir));
+  return finalStream;
 
-    if(callback) {
-      task.pipe(callback);
-    }
-    return task;
-}
-
-function compilePages(targetDir, targetFilename, callback) {
-  if(!targetDir || !targetFilename) {
-    return;
-  }
-  var task = gulp.src(config.directories.src.templatePages + '/**/*.html')
-    .pipe(hogan(targetFilename, {
-      wrapper: 'commonjs',
-      templateName: function(file) {
-        return path.basename(file.path, '.html');
-      }
-    }))
-    .pipe(gulp.dest(targetDir));
-
-    if(callback) {
-      task.pipe(callback);
-    }
-    return task;
-}
+});

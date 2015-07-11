@@ -1,47 +1,42 @@
 var path     = require('path');
 var basePath = path.resolve('.');
 
+
 // ---
 // Global Vars
 // ---
 var globals = {
-  MOCKS_ENABLED: false
+
 };
+
 
 // ---
 // Directory Shortcuts
 // ---
-var directories = {
-  srcDir:       '',
+var folders = {
+  srcDir:       '/src',
   buildDir:     '/.build',
-  tempDir:      '/.tmp',
-  sharedDir:    path.resolve(basePath + '/../shared')
+  tempDir:      '/.tmp'
 };
+
+var directories = {};
 
 // App Source Files
 directories.src = {
-  styles:             basePath + directories.srcDir + '/styles',
-  scripts:            basePath + directories.srcDir + '/scripts',
-  components:         basePath + directories.srcDir + '/scripts/components',
-  pages:              basePath + directories.srcDir + '/scripts/pages',
-  templates:          basePath + directories.srcDir + '/templates',
-  templatePages:      basePath + directories.srcDir + '/templates/pages',
-  templatePartials:   basePath + directories.srcDir + '/templates/partials',
-  mocks:              basePath + directories.srcDir + '/mocks'
+  base:               basePath + folders.srcDir,
+  components:         basePath + folders.srcDir + '/components',
+  layouts:            basePath + folders.srcDir + '/layouts',
+  pages:              basePath + folders.srcDir + '/pages',
+  partials:           basePath + folders.srcDir + '/partials'
 };
 
 // Fit for Browser (Sass -> CSS, compiled templates, etc.)
 directories.build = {
-  html:               basePath + directories.buildDir,
-  styles:             basePath + directories.buildDir + '/css',
-  scripts:            basePath + directories.buildDir + '/js',
-  fonts:              basePath + directories.buildDir + '/fonts',
-  templates:          basePath + directories.tempDir + '/templates'
-};
-
-// Client-Node Shared Assets
-directories.shared = {
-  serverTemplates:    directories.sharedDir + '/templates'
+  html:               basePath + folders.buildDir,
+  styles:             basePath + folders.buildDir + '/css',
+  scripts:            basePath + folders.buildDir + '/js',
+  fonts:              basePath + folders.buildDir + '/fonts',
+  templates:          basePath + folders.tempDir + '/.handlebars'
 };
 
 

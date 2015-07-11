@@ -26,8 +26,8 @@ function hoganToHTMLRemoteData(options) {
   return through.obj(function(file, encoding, callback) {
 
     // Ensure source files refer to raw template files.
-    if(['.html', '.mustache'].indexOf(path.extname(file.path)) === -1) {
-      throw new gutil.PluginError(PLUGIN_NAME, 'Source files must reflect raw template files (.html or .mustache).');
+    if(file.isDirectory() || ['.html', '.mustache'].indexOf(path.extname(file.path)) === -1) {
+      return callback();
     }
 
     // Ensure pre-compiled templates files were provided.

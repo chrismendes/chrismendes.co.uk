@@ -1,7 +1,37 @@
-<h1>My Portfolio</h1>
+<!doctype html>
+<html>
+  <head>
+    <title>Chris Mendes | Freelance Front-end Web Developer</title>
+    <meta name="description" content="8 years commercial experience. Based in south London within close proximity to wider London and Surrey."/>
+    {{> sharedmeta}}
+  </head>
+  <body>
 
-{{#projects}}
-  <p>{{name}}</p>
-  <p>{{description}}</p>
-  <hr/>
-{{/projects}}
+    <div class="layout-container">
+
+      <div class="layout-siteheader">
+        {{> header}}
+      </div>
+
+      <div class="layout-navigation">
+        {{> nav}}
+      </div>
+
+      <div class="layout-page">
+
+        <div class="layout-pageheader">
+          <h1>My Portfolio</h1>
+        </div>
+
+        {{#projects}}
+          <p>{{name}}</p>
+          <p>{{description}}</p>
+          <hr/>
+        {{/projects}}
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

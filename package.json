@@ -1,17 +1,18 @@
 {
-  "name": "surfdome-frontend-prototype",
-  "description": "This project is the workspace for the rapid prototyping effort towards the new front-end. Primarily revolving around the use of Flight.js and the new component-based architecture, the project also utilises Twitter Bootstrap for simple quick to build UIs.",
-  "author": "Chris Mendes <surfdome@chrismendes.co.uk>",
+  "name": "chrismendes.london",
+  "description": "Professional website for Chris Mendes, London based Contract Front-end Web Developer.",
+  "author": "Chris Mendes <inbox@chrismendes.co.uk>",
   "devDependencies": {
     "browser-sync": "~2.7.10",
     "del": "~1.1.1",
-    "glob": "~5.0.5",
+    "glob": "^5.0.13",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-changed": "^1.1.1",
     "gulp-compass": "~2.0.4",
+    "gulp-compile-handlebars": "~0.4.4",
+    "gulp-debug": "^2.0.1",
     "gulp-filesize": "0.0.6",
-    "gulp-hogan-compile": "^0.4.1",
     "gulp-iconfont": "^1.0.0",
     "gulp-imagemin": "^2.2.1",
     "gulp-minify-css": "~0.5.1",
@@ -22,10 +23,9 @@
     "gulp-swig": "^0.7.4",
     "gulp-uglify": "^1.1.0",
     "gulp-util": "^3.0.4",
-    "jquery-mockjax": "^1.6.2",
+    "handlebars": "^3.0.0",
     "json-loader": "^0.5.2",
     "merge-stream": "^0.1.7",
-    "nock": "^2.5.0",
     "node-libs-browser": "^0.5.2",
     "pretty-hrtime": "~1.0.0",
     "request": "^2.57.0",
@@ -40,12 +40,8 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "bootstrap-sass": "^3.3.4",
-    "flightjs": "^1.5.0",
-    "hogan": "^1.0.2",
     "jquery": "^2.1.4",
     "lodash": "^3.9.3",
-    "mustache": "^2.1.0",
     "susy": "^2.2.5"
   }
 }
