@@ -1,0 +1,18 @@
+.layout-bluebar {
+  width: 100%;
+  background: linear-gradient(to bottom, #3172c6 0%,#1e5799 100%);
+}
+
+.layout-header-secondary {
+  @include container;
+  height: 40px;
+}
+
+.layout-header-primary {
+  @include container;
+}
+
+
+.layout-billboard {
+
+}

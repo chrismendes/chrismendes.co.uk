@@ -7,29 +7,21 @@
 // ---
 // App Core
 // ---
-@import 'basestyles/normalize';
-@import 'basestyles/grid';
-@import 'basestyles/fonts';
-@import 'basestyles/colours';
-@import 'basestyles/base';
-@import 'basestyles/glyphicons';
+@import 'core/normalize';
+@import 'core/grid';
+@import 'core/fonts';
+@import 'core/colours';
+@import 'core/base';
+@import 'core/glyphicons';
 
 
 // ---
 // Layouts
 // ---
-@import 'layouts/toplevel';
-@import 'layouts/content';
+@import 'layouts/shared';
 
 
 // ---
 // Modules/Components
 // ---
-@import 'components/headerbillboard/headerbillboard';
-@import 'components/navbar/navbar';
-@import 'components/tabs/tabs';
-@import 'components/tabs/tabsprimary';
-@import 'components/tabs/tabssecondary';
-@import 'components/tabs/tabscollapse';
-@import 'components/keyvaluepairs/keyvaluepairs';
-@import 'components/businesscard/businesscard';
+@import 'components/navigation/primarynav';

@@ -1,0 +1,27 @@
+.primarynav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.primarynav > li {
+  margin: 0;
+  float: left;
+}
+
+.primarynav > li > a {
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+  padding: 18px 10px;
+  display: inline-block;
+}
+
+.primarynav > li > a:hover {
+  background: #333;
+}

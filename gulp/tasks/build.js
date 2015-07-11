@@ -6,6 +6,7 @@ gulp.task('build', function() {
   // (Tasks inside array are run in parallel, outside in sequence.)
   runSequence(
     [
+      'copy:fonts',
       'sass',
       'webpack'
     ]

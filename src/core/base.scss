@@ -2,20 +2,6 @@ body {
   font-family: Arial;
   font-size: 0.8em;
   line-height: 18px;
-
-  padding: 10px;
-
-  background: #3ca8e0;
-  background: linear-gradient(to right, #0d85d1, #61c4eb);
-
-  @media (min-width: $breakpoint-fontsizechange) {
-    font-size: 0.9em;
-    background: linear-gradient(to right, #0d85d1, #61c4eb, #0d85d1);
-  }
-
-  @media (min-width: $breakpoint-container) {
-    padding: 0;
-  }
 }
 
 
@@ -28,18 +14,12 @@ h1 {
   font-size: 2.8em;
   font-weight: normal;
   line-height: 1em;
-
-  @media (min-width: $breakpoint-fontsizechange) {
-    font-size: 3.2em;
-  }
 }
 h2 {
-    font-family: Oswald, Arial;
-    margin: 10px 0 20px 0;
+
 }
 h3 {
-    font-weight: bold;
-    margin: 10px 0 0 0;
+
 }
 p {
   margin-top: 0;
@@ -57,11 +37,10 @@ li {
 // Links
 // ---
 a {
-  color: $red;
-  text-decoration: none;
+
 }
 a:hover {
-  color: $orange;
+
 }
 
 
