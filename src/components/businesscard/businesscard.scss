@@ -1,0 +1,25 @@
+.businesscard {
+display: none;
+  padding: 18px 10px;;
+
+  text-align: center;
+  
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 6px 0 #333;
+}
+
+.businesscard--name,
+.businesscard--jobtitle {
+  // color: #fff;
+
+  width: 100%;
+  display: inline-block;
+}
+
+.businesscard--name {
+  font-size: 1.8em;
+}
+
+.businesscard--jobtitle {
+  margin-top: 4px;
+}

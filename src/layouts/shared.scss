@@ -1,18 +1,27 @@
-.layout-bluebar {
+.layout-header {
+  background: #fff;
+
+  float: left;
   width: 100%;
+}
+  .layout-header > header {
+    @include container;
+  }
+
+.layout-bluebar {
+  @include break;
   background: linear-gradient(to bottom, #3172c6 0%,#1e5799 100%);
 }
 
-.layout-header-secondary {
-  @include container;
-  height: 40px;
-}
-
-.layout-header-primary {
-  @include container;
-}
-
-
 .layout-billboard {
 
+}
+
+.layout-page {
+  @include container;
+  padding: 60px 40px 40px 40px;
+min-height: 600px;
+
+  background: #fff;
+  box-shadow: 0 0 50px -2px rgba(0, 0, 0, 0.2);
 }

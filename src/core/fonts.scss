@@ -1,4 +1,20 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Oswald:400,300|Roboto+Condensed:400,300|Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+
+// ---
+// Bank Gothic
+// ---
+@font-face {
+    font-family: 'BankGothic';
+    src: url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.eot');
+    src: url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.woff2') format('woff2'),
+         url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.woff') format('woff'),
+         url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.ttf') format('truetype'),
+         url('../fonts/bankgothic/bankgothic_md_bt_medium-webfont.svg#BankGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 /* -----------------
