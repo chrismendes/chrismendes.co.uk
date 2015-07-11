@@ -1,8 +1,8 @@
 var webpack    = require('webpack');
 var config     = require('./app.config.js');
 
-var path = require('path');
-var glob = require("glob")
+var path       = require('path');
+var glob       = require("glob")
 
  
 var pageJS = glob.sync(config.directories.src.pages + '/**/*.js');
