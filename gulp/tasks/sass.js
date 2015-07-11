@@ -13,6 +13,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('sass', function () {
   return gulp.src(config.directories.src.root + '/app.scss')
     .pipe(sass())
+    .on('error', handleErrors)
     .pipe(autoprefixer({ browsers: ['last 2 version'] }))
     .pipe(debug({title: 'debug/sass:'}))
     .pipe(gulp.dest(config.directories.build.styles))
