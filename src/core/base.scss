@@ -26,12 +26,6 @@ h1 {
     content: '//';
     font-size: 1em;
   }
-  &:after {
-    // content: '>';
-    color: #dfdfdf;
-    font-size: 1.2em;
-    margin-left: 12px;
-  }
 }
 h2 {
   font-family: Oswald;
@@ -65,10 +59,11 @@ li {
 // Links
 // ---
 a {
-
+  color: lighten($blue, 10%);
+  text-decoration: none;
 }
 a:hover {
-
+  color: lighten($blue, 30%);
 }
 
 

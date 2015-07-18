@@ -1,21 +1,27 @@
 .siteheader {
-  padding: 26px 0;
+  padding: 24px 0;
 }
 .siteheader--name {
-  color: #666;
+  color: #c0c0c0;
   font-family: 'BankGothic';
   font-size: 3.4em;
   line-height: 1em;
   text-transform: uppercase;
 
+  margin-left: -4px;
   display: inline-block;
 }
 
 .siteheader--jobtitle {
-  color: #777;
-  font-size: 1.6em;
+  color: #c0c0c0;
+  font-size: 1.5em;
   font-family: Verdana;
+// font-family: Arial;
 
-  margin-left: 14px;
+  margin: 8px 0;
+  width: 100%;
   display: inline-block;
+
+width: auto;
+margin-left: 12px;
 }
