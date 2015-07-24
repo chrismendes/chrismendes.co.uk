@@ -13,7 +13,9 @@
 }
 
 .primarynav > li > a {
-  color: #fff;
+  // color: #fff;
+  color: #888;
+
   font-size: 1.3em;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
   font-weight: 300;
@@ -26,7 +28,8 @@
 }
 
 .primarynav > li > a:hover {
-  background: #333;
+  color: #333;
+  background: #efefef;
 }
 
 
