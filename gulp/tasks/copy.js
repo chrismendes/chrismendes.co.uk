@@ -11,3 +11,10 @@ gulp.task('copy:fonts', function() {
     .pipe(gulp.dest(config.directories.build.fonts));
 
 });
+
+gulp.task('copy:images', function() {
+
+  gulp.src(config.directories.src.images + '/**/*')
+    .pipe(gulp.dest(config.directories.build.images));
+
+});
