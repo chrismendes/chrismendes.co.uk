@@ -28,8 +28,14 @@
 }
 
 .primarynav > li > a:hover {
-  color: #333;
+  color: #000;
+}
+
+.primarynav > li.is-active {
   background: #efefef;
+}
+.primarynav > li.is-active > a {
+  color: #888;
 }
 
 
