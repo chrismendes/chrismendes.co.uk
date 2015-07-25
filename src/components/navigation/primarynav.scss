@@ -13,7 +13,6 @@
 }
 
 .primarynav > li > a {
-  // color: #fff;
   color: #888;
 
   font-size: 1.3em;
@@ -27,8 +26,11 @@
   display: inline-block;
 }
 
+.primarynav > li:hover {
+  background: linear-gradient(to bottom, #666 0%, #999 100%);
+}
 .primarynav > li > a:hover {
-  color: #000;
+  color: #fff;
 }
 
 .primarynav > li.is-active {
@@ -36,9 +38,4 @@
 }
 .primarynav > li.is-active > a {
   color: #888;
-}
-
-
-.layout-header-primary > .primarynav {
-  float: right;
 }

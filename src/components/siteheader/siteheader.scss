@@ -1,28 +1,25 @@
 .siteheader {
   padding: 24px 0;
-
-  // color: #c0c0c0;
+  text-align: center;
 }
-.siteheader--name {
-  font-family: 'BankGothic';
-  font-size: 3.1em;
-  line-height: 1em;
-  text-transform: uppercase;
 
-  margin-left: 9px;
+.siteheader--name {
+  color: #777;
+  font-size: 3.1em;
+  font-family: 'BankGothic';
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  line-height: 1em;
+
   display: inline-block;
 }
 
 .siteheader--jobtitle {
-  color: #888;
-  font-size: 1.5em;
+  color: #999;
+  font-size: 1.37em;
   font-family: Verdana, Arial, sans;
 
-  margin: 8px 0;
+  margin: 8px 0 8px 2px;
   width: 100%;
   display: inline-block;
-
-// width: auto;
-margin-left: 12px;
 }
-
