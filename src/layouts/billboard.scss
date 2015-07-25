@@ -1,6 +1,10 @@
 .layout-billboard {
   height: 340px;
   background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 100%);
+
+background-image: url('../images/billboard/billboard-home.jpg');
+background-position: 0 -240px;
+background-repeat: no-repeat;
 }
 
 .layout-billboardcontent {
@@ -10,13 +14,10 @@
   padding: 20px 0;
 }
 
-.layout-billboardleft {
-  @include span(7);
-}
-
 .layout-billboardright {
   @include span(5 last);
   height: 100%;
 
   background: #666;
+  background: rgba(0, 0, 0, 0.4);
 }
