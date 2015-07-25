@@ -6,6 +6,8 @@
 .layout-billboardcontent {
   @include container;
   height: 100%;
+
+  padding: 20px 0;
 }
 
 .layout-billboardleft {
@@ -16,5 +18,5 @@
   @include span(5 last);
   height: 100%;
 
-  background: #c0c0c0;
+  background: #666;
 }
