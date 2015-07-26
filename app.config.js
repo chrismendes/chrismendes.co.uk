@@ -26,7 +26,7 @@ directories.src = {
   root:               basePath + folders.srcDir,
   components:         basePath + folders.srcDir + '/components',
   layouts:            basePath + folders.srcDir + '/layouts',
-  basestyles:         basePath + folders.srcDir + '/core',
+  basestyles:         basePath + folders.srcDir + '/basestyles',
   pages:              basePath + folders.srcDir + '/pages',
   partials:           basePath + folders.srcDir + '/partials',
   fonts:              basePath + folders.srcDir + '/assets/fonts',
