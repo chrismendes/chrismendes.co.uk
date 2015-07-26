@@ -1,23 +1,25 @@
 .layout-billboard {
   height: 340px;
   background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 100%);
-
-background-image: url('../images/billboard/billboard-home.jpg');
-background-position: 0 -240px;
-background-repeat: no-repeat;
 }
 
 .layout-billboardcontent {
   @include container;
   height: 100%;
+}
 
-  padding: 20px 0;
+.layout-billboardleft {
+  width: 59%;
+  height: 100%;
+  float: left;
+
+  background-image: url('../images/billboard/billboard-home-small.jpg');
+  background-position: 0 -20px;
+  background-repeat: no-repeat;
 }
 
 .layout-billboardright {
-  @include span(5 last);
+  width: 41%;
   height: 100%;
-
-  background: #666;
-  background: rgba(0, 0, 0, 0.4);
+  float: right;
 }
