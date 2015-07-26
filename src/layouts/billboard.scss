@@ -1,6 +1,7 @@
 .layout-billboard {
   height: 340px;
   background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 100%);
+  border-bottom: 4px solid #CECECE;
 }
 
 .layout-billboardcontent {
@@ -16,6 +17,7 @@
   background-image: url('../images/billboard/billboard-home-small.jpg');
   background-position: 0 -20px;
   background-repeat: no-repeat;
+
 }
 
 .layout-billboardright {

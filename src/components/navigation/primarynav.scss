@@ -27,15 +27,15 @@
 }
 
 .primarynav > li:hover {
-  background: linear-gradient(to bottom, #666 0%, #999 100%);
+  background: #efefef;
 }
 .primarynav > li > a:hover {
-  color: #fff;
+  color: #666;
 }
 
 .primarynav > li.is-active {
-  background: #efefef;
+  background: #dfdfdf;
 }
 .primarynav > li.is-active > a {
-  color: #888;
+  color: #666;
 }
