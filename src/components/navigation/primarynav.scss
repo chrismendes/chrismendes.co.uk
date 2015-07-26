@@ -27,14 +27,16 @@
 }
 
 .primarynav > li:hover {
-  background: #efefef;
+  background: #999;
+  background: linear-gradient(to bottom, #999 0%, #777 100%);
 }
 .primarynav > li > a:hover {
-  color: #666;
+  color: #fff;
 }
 
 .primarynav > li.is-active {
   background: #dfdfdf;
+  background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 100%);
 }
 .primarynav > li.is-active > a {
   color: #666;
