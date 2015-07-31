@@ -26,9 +26,12 @@ gulp.task('templates', function() {
     templateData = _.merge(templateData, data);
   });
 
+  var partialDirs = glob.sync(config.directories.src.pages + '/**/partials');
+      partialDirs.push(config.directories.src.partials);
+
   // Handlebars options
   var options = {
-    batch: [config.directories.src.partials],
+    batch: partialDirs,
     helpers: {
       urlFriendly: function(str) {
         return str.toLowerCase().replace(' ', '');
