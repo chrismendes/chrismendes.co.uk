@@ -7,29 +7,61 @@
   </head>
   <body>
 
-    <div class="layout-container">
+    <div class="layout-header">
+      <header class="siteheader">
+        <span class="siteheader--name">Chris Mendes</span>
+        <span class="siteheader--jobtitle">Freelance Front-end Web Developer</span>
+      </header>
+    </div>
 
-      <div class="layout-siteheader">
-        {{> header}}
-      </div>
 
-      <div class="layout-navigation">
-        {{> nav}}
-      </div>
+    <div class="layout-navbar">
+      <ul class="primarynav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/skills-expertise.html">Skills & Expertise</a></li>
+        <li><a href="/cv.html">CV</a></li>
+        <li class="is-active"><a href="/portfolio.html">Portfolio</a></li>
+        <li><a href="/code-samples.html">Code Samples</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About Me</a></li>
+      </ul>
+    </div>
 
-      <div class="layout-page">
 
-        <div class="layout-pageheader">
-          <h1>My Portfolio</h1>
+    <div class="layout-billboard">
+      <div class="layout-billboardcontent">
+
+        <div class="layout-billboardleft">
+          <div class="billboardposterimage billboardposterimage-home"></div>
         </div>
 
-        {{#projects}}
-          <p>{{name}}</p>
-          <p>{{description}}</p>
-          <hr/>
-        {{/projects}}
+        <div class="layout-billboardright">
+
+          <div class="billboardpostertext">
+            <span class="billboardpostertext--headline">Extensive greenfield project experience</span>
+            <ul>
+              <li>Clients have included Barclaycard, Cisco, Autodesk, and SAP</li>
+              <li>Projects include microsites, corporate sites, ecommerce shops, and games</li>
+              <li>Remit has often spanned both client-side and server-side development</li>
+              <li>Currently 31 projects in my portfolio available for review below</li>
+            </ul>
+          </div>
+
+        </div>
 
       </div>
+    </div>
+
+
+    <div class="layout-page">
+
+      <h1>Portfolio</h1>
+
+      {{#projects}}
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+        <hr/>
+      {{/projects}}
 
     </div>
 
