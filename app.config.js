@@ -24,13 +24,13 @@ var directories = {};
 // App Source Files
 directories.src = {
   root:               basePath + folders.srcDir,
-  components:         basePath + folders.srcDir + '/components',
-  layouts:            basePath + folders.srcDir + '/layouts',
-  basestyles:         basePath + folders.srcDir + '/basestyles',
   pages:              basePath + folders.srcDir + '/pages',
-  partials:           basePath + folders.srcDir + '/partials',
-  fonts:              basePath + folders.srcDir + '/assets/fonts',
-  images:             basePath + folders.srcDir + '/assets/images'
+  components:         basePath + folders.srcDir + '/components',
+  basestyles:         basePath + folders.srcDir + '/global/basestyles',
+  layouts:            basePath + folders.srcDir + '/global/layouts',
+  partials:           basePath + folders.srcDir + '/global/partials',
+  fonts:              basePath + folders.srcDir + '/global/fonts',
+  images:             basePath + folders.srcDir + '/global/images'
 };
 
 // Fit for Browser (Sass -> CSS, compiled templates, etc.)

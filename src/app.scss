@@ -7,19 +7,19 @@
 // ---
 // App Core
 // ---
-@import 'basestyles/normalize';
-@import 'basestyles/grid';
-@import 'basestyles/fonts';
-@import 'basestyles/colours';
-@import 'basestyles/base';
-@import 'basestyles/glyphicons';
+@import 'global/basestyles/normalize';
+@import 'global/basestyles/grid';
+@import 'global/basestyles/fonts';
+@import 'global/basestyles/colours';
+@import 'global/basestyles/base';
+@import 'global/basestyles/glyphicons';
 
 
 // ---
 // Layouts
 // ---
-@import 'layouts/shared';
-@import 'layouts/billboard';
+@import 'global/layouts/shared';
+@import 'global/layouts/billboard';
 
 
 // ---

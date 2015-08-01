@@ -14,7 +14,13 @@ gulp.task('copy:fonts', function() {
 
 gulp.task('copy:images', function() {
 
-  gulp.src(config.directories.src.images + '/**/*')
+  var targetDirs = [
+    config.directories.src.images     + '/**/*',
+    config.directories.src.components + '/**/images/**',
+    config.directories.src.pages      + '/**/images/**'
+  ];
+
+  gulp.src(targetDirs)
     .pipe(gulp.dest(config.directories.build.images));
 
 });
