@@ -7,8 +7,8 @@ gulp.task('build', function() {
   runSequence(
     [
       'templates',
-      'copy:images',
-      'copy:fonts',
+      'images',
+      'fonts',
       'sass',
       'webpack'
     ]
