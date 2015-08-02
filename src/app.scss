@@ -20,6 +20,7 @@
 // ---
 @import 'global/layouts/main';
 @import 'global/layouts/billboard';
+@import 'global/layouts/content';
 
 
 // ---
@@ -28,3 +29,5 @@
 @import 'components/siteheader/siteheader';
 @import 'components/navigation/primarynav';
 @import 'components/billboardposter/billboardposter';
+
+@import 'components/tabs/tabs';
