@@ -1,0 +1,25 @@
+.businesscard {
+  box-shadow: 0 0 4px #999;
+  padding: 15px;
+}
+
+.businesscard--name {
+  font-size: 1.4em;
+}
+
+.businesscard--logo {
+  margin: 0 auto 12px auto;
+  display: block;
+}
+
+.businesscard--link {
+  text-align: center;
+
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.businesscard--description {
+  font-size: 0.8em;
+}

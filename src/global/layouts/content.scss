@@ -5,3 +5,9 @@
 .layout-subnavcontent {
   @include span(9 last);
 }
+
+.layout-secondarycontent-topright {
+  float: right;
+  width: 300px;
+  margin: 0 0 20px 20px;
+}

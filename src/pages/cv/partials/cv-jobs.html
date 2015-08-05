@@ -19,19 +19,26 @@
 
   <div class="layout-subnavcontent">
     {{#each .}}
+
+    <!--
     <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab {{#unless @index}}is-active{{/unless}}">
       <span class="tabs-collapsetabtitle">{{company}}</span>
       <span class="tabs--collapsetabtooltip-open">Click to open</span>
       <span class="tabs--collapsetabtooltip-close">Click to close</span>
     </a>
+    -->
 
     <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
 
       <div class="layout-secondarycontent-topright">
         <div class="businesscard">
-          {{#if noLogo}}<p class="businesscard--name">{{company}}</p>{{/if}}
+          {{#if noLogo}}
+            <span class="businesscard--name">{{company}}</span>
+          {{else}}
+            <img class="businesscard--logo" src="images/logos/companies/company-{{urlFriendly company}}.jpg"/>
+          {{/if}}
           {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
-          <p class="businesscard--description">{{{companyDescription}}}</p>
+          <span class="businesscard--description">{{{companyDescription}}}</span>
         </div>
       </div>
 
