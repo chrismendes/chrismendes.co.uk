@@ -28,7 +28,7 @@
 @media (min-width: 700px) {
   .tabs-primary {
     border: 0;
-    border-bottom: 1px solid #d0d0d0;
+    border-bottom: 1px solid #dfdfdf;
   }
 
   .tabs-primary > li {
@@ -38,8 +38,8 @@
   .tabs-primary > li.is-active > a {
     color: #666;
 
-    border: 1px solid #d0d0d0;
-    border-bottom: 1px solid #999;
+    border: 1px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
     background: none;
   }
 }
