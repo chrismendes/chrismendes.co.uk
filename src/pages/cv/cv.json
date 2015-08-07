@@ -1,16 +1,4 @@
 {
-  "skills": [
-    "HTML5, CSS3, Sass/LESS, JavaScript",
-    "AngularJS, Backbone.js, jQuery, Require.js",
-    "Twitter Bootstrap, Foundation, Susy",
-    "Git, Gulp, Grunt, NPM, Bower"
-  ],
-  "expertise": [
-    "Building web applications from scratch",
-    "Responsive web development",
-    "Object-oriented, modular, scalable code",
-    "Web performance and optimisation"
-  ],
   "jobs": {
     "contract": [
       {
