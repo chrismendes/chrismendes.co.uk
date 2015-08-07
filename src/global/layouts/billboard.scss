@@ -5,7 +5,8 @@
 }
 
 .layout-billboardcontent {
-  @include container;
+  @extend .container;
+
   height: 100%;
   overflow: hidden;
 }

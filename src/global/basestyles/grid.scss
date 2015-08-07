@@ -5,3 +5,15 @@ $susy: (
   container:  75%,
   box-sizing: border-box
 );
+
+.container {
+  @include container;
+
+  @media (max-width: 1400px) {
+    @include container(90%);
+  }
+
+  @media (max-width: 1000px) {
+    @include container(100%);
+  }
+}
