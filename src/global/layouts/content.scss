@@ -6,6 +6,43 @@
   @include span(9 last);
 }
 
+
+// ---
+// Side by Side Content
+// ---
+.layout-sidebyside {
+  @include span(6);
+}
+.layout-sidebyside + .layout-sidebyside {
+  @include span(6 last);
+}
+
+.layout-sidebyside-divider {
+  border-right: 1px solid #efefef;
+}
+.layout-sidebyside-divider + .layout-sidebyside-divider {
+  border-right: 0;
+}
+
+.layout-centered {
+  text-align: center;
+}
+.layout-centered ul {
+  text-align: left;
+}
+
+.layout-sidebyside-narrow {
+  @include span(4);
+}
+
+.layout-sidebyside-narrow + .layout-sidebyside-narrow + .layout-sidebyside-narrow {
+  @include span(4 last); 
+}
+
+
+// ---
+// Secondary Content
+// ---
 .layout-secondarycontent-topright {
   float: right;
   width: 300px;

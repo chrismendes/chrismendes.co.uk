@@ -15,12 +15,3 @@
 
   box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.2);
 }
-
-
-.layout-sidebyside-narrow {
-  @include span(4);
-}
-
-.layout-sidebyside-narrow + .layout-sidebyside-narrow + .layout-sidebyside-narrow {
-  @include span(4 last); 
-}
