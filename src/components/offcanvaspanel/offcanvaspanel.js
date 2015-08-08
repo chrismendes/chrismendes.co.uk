@@ -48,8 +48,7 @@ var component = {
 
     $(document).delegate(selectors.openButton,  'click', component.openPanel);
     $(document).delegate(selectors.closeButton, 'click', component.closePanel);
-
-    $(document).delegate(selectors.panel, 'click', component.closeViaBackgroundClick);
+    $(document).delegate(selectors.panel,       'click', component.closeViaBackgroundClick);
   }
 
 };
