@@ -18,20 +18,19 @@ var selectors = {
 
 var $ui = {};
 
-var activeClass = 'is-active';
-var openClass   = 'is-open';
-
 
 var component = {
 
   openPanel: function() {
-    $ui.pageMask.addClass(activeClass);
-    $ui.panel.addClass(openClass);
+    $ui.pageMask.addClass('is-active');
+    $ui.panel.addClass('is-open');
+    $ui.body.addClass('is-locked');
   },
 
   closePanel: function() {
-    $ui.pageMask.removeClass(activeClass);
-    $ui.panel.removeClass(openClass);
+    $ui.pageMask.removeClass('is-active');
+    $ui.panel.removeClass('is-open');
+    $ui.body.removeClass('is-locked');
   },
 
   closeViaBackgroundClick: function(event) {
@@ -42,9 +41,10 @@ var component = {
   },
 
   initialise: function() {
-    $ui.panel = $(selectors.panel);
-    $ui.openButton = $(selectors.openButton);
-    $ui.pageMask = $(selectors.pageMask);
+    $ui.panel       = $(selectors.panel);
+    $ui.openButton  = $(selectors.openButton);
+    $ui.pageMask    = $(selectors.pageMask);
+    $ui.body        = $('body');
 
     $(document).delegate(selectors.openButton,  'click', component.openPanel);
     $(document).delegate(selectors.closeButton, 'click', component.closePanel);
