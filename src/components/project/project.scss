@@ -8,16 +8,44 @@
 }
 
 .project--logo {
-  @include span(3);
+  @include span(2);
+}
+
+.project--details {
+  @include span(4);
+}
+
+.project--screenshots {
+  @include span(5 last);
+}
+.project--screenshots > img {
+  @include span(4 of 12);
+}
+.project--screenshots > img:last-child {
+  @include last;
 }
 
 
 .project--name {
-  width: auto;
   padding: 0;
   margin: 0;
   background: none;
-  display: inline;
 
-  
+  margin-bottom: 12px;
+}
+
+.project--link {
+  width: 100%;
+  margin: 0 0 8px 0;
+  display: inline-block;
+}
+
+.project--summary,
+.project--opengallery {
+  clear: both;
+  display: inline-block;
+}
+
+.project--opengallery {
+  margin-top: 16px;
 }

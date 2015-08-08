@@ -625,46 +625,6 @@
       "id":                     "monopoly",
       "clientID":               null,
       "active":                 true
-    },
-    {
-      "name":                   "My Website",
-      "url":                    "chrismendes.london",
-      "offlineMessage":         null,
-      "description":            "Fully responsive portfolio site built predominantly with Backbone.js and Twitter Bootstrap.",
-      "date":                   "May - November 2014",
-      "skills":                 [ "HTML5, CSS3, LESS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js, Underscore.js, Require.js", "Grunt" ],
-      "employer":               null,
-      "responsibility":         "All (Sole developer)",
-      "category":               null,
-      "categoryPosition":       2,
-      "highlight":              false,
-      "highlightPosition":      null,
-      "codeSample":             true,
-      "codeSampleURL":          "https://github.com/chrismendes/chrismendes.london",
-      "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
-      "id":                     "mysite",
-      "clientID":               null,
-      "active":                 true
-    },
-    {
-      "name":                   "Shopping Basket Exercise",
-      "url":                    "chrismendes.london/basket",
-      "offlineMessage":         null,
-      "description":            "Code test for previous job application. Task was to create shopping basket page as per functional spec and PSD design. No 3rd party frameworks/libraries beyond jQuery and Modernizr permitted. Emphasis on correct use of HTML, CSS, and object-oriented JavaScript.",
-      "date":                   "",
-      "skills":                 [ "HTML, CSS, Sass", "JavaScript, jQuery", "Grunt" ],
-      "employer":               null,
-      "responsibility":         "All (Sole developer)",
-      "category":               null,
-      "categoryPosition":       1,
-      "highlight":              false,
-      "highlightPosition":      null,
-      "codeSample":             true,
-      "codeSampleURL":          "https://github.com/chrismendes/shopping-basket",
-      "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
-      "id":                     "basket",
-      "clientID":               null,
-      "active":                 false
     }
   ]
 }

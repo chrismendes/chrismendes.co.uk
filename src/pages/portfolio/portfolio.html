@@ -57,15 +57,19 @@
       {{#projects}}
 
         <div class="project">
-          <span class="project--logo"><img src="images/portfolio/{{id}}/1.jpg"/ width="220"></span>
+          <span class="project--logo"><img src="images/logos/company-{{clientID}}.jpg"/></span>
           <span class="project--details">
             <h2 class="project--name">{{name}}</h2>
             <span class="project--date"></span>
             <a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>
-            <span class="project--description">{{description}}</span>
+            <span class="project--summary">{{description}}</span>
+            <button class="project--opengallery button">Open Screenshot Gallery</button>
           </span>
-          <span class="project--screenshot"><img src="images/portfolio/{{id}}/1.jpg"/ width="220"></span>
-          <span class="project--summary"></span>
+          <span class="project--screenshots">
+            <img src="images/portfolio/{{id}}/1.jpg"/ width="220"/>
+            <img src="images/portfolio/{{id}}/2.jpg"/ width="220"/>
+            <img src="images/portfolio/{{id}}/3.jpg"/ width="220"/>
+          </span>
         </div>
 
       {{/projects}}
