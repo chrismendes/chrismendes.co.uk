@@ -22,6 +22,9 @@ var $ui = {};
 var component = {
 
   openPanel: function() {
+    var $panelContent = $(this).parent().siblings('.js-offcanvaspanel-content');
+    $(document).trigger('offCanvasPanelOpen', [ $panelContent ]);
+
     $ui.pageMask.addClass('is-active');
     $ui.panel.addClass('is-open');
     $ui.body.addClass('is-locked');

@@ -1,0 +1,19 @@
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery > ul > li {
+  text-align: center;
+  width: 100%;
+}
+
+.gallery > ul > li > img {
+  width: 100%;
+}

@@ -59,7 +59,9 @@
       {{#projects}}
 
       <div class="project">
+
         <span class="project--logo"><img src="images/logos/company-{{clientID}}.jpg"/></span>
+
         <span class="project--details">
           <h2 class="project--name">{{name}}</h2>
           <span class="project--date"></span>
@@ -67,11 +69,37 @@
           <span class="project--summary">{{description}}</span>
           <button class="project--opengallery button js-open-offcanvaspanel">Open Screenshot Gallery</button>
         </span>
+
         <span class="project--screenshots">
           <img src="images/portfolio/{{id}}/1.jpg" width="220"/>
           <img src="images/portfolio/{{id}}/2.jpg" width="220"/>
           <img src="images/portfolio/{{id}}/3.jpg" width="220"/>
         </span>
+
+        <div class="project--galleryimages js-offcanvaspanel-content">
+          <div class="js-gallery-desktop">
+            <ul>
+              <li><img src="images/portfolio/{{id}}/1.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/2.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/3.jpg"/></li>
+            </ul>
+          </div>
+          <!-- <div class="js-gallery-tablet">
+            <ul>
+              <li><img src="images/portfolio/{{id}}/tablet/1.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/tablet/2.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/tablet/3.jpg"/></li>
+            </ul>
+          </div>
+          <div class="js-gallery-phone">
+            <ul>
+              <li><img src="images/portfolio/{{id}}/phone/1.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/phone/2.jpg"/></li>
+              <li><img src="images/portfolio/{{id}}/phone/3.jpg"/></li>
+            </ul>
+          </div> -->
+        </div>
+
       </div>
 
       {{/projects}}
@@ -79,7 +107,7 @@
       <div class="layout-offcanvaspanel js-offcanvaspanel">
         <div class="layout-offcanvaspanel--inner">
 
-          <button class="button js-close-offcanvaspanel">Close</button>
+          <!-- <button class="button js-close-offcanvaspanel">Close</button> -->
 
           <h2>Barclaycard bPay <a href="#">www.bpay.co.uk</a></h2>
           <ul class="tabs tabs-primary">
@@ -87,7 +115,18 @@
             <li><a href="#/tab/tablet">Tablet</a></li>
             <li><a href="#/tab/phone">Phone</a></li>
           </ul>
-          <!-- <img src="images/portfolio/barclaycard/1.jpg"/> -->
+
+          <button class="button js-gallery-previous">&laquo; Previous</button>
+          <button class="button js-gallery-next">Next &raquo;</button>
+
+          <div class="js-offcanvaspanel-loadedcontent">
+            <div class="gallery js-gallery js-gallery-desktop"></div>
+            <!-- <ul class="js-gallery-tablet">
+            </ul>
+
+            <ul class="js-gallery-phone">
+            </ul> -->
+          </div>
 
         </div>
       </div>

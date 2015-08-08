@@ -75,9 +75,15 @@
   box-shadow: 0 0 8px #efefef;
 
   cursor: auto;
+
+  overflow-y: auto;
 }
 
 .layout-offcanvaspanel.is-open {
   transform: translateX(0%);
   cursor: pointer;
+}
+
+.layout-offcanvaspanel--inner > h2 {
+  margin-top: 0;
 }
