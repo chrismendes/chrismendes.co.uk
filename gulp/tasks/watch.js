@@ -17,5 +17,5 @@ gulp.task('watch', ['browser-sync'], function() {
   gulp.watch(config.directories.src.layouts + '/**/*.scss',     ['sass']);
   gulp.watch(config.directories.src.basestyles + '/**/*.scss',  ['sass']);
 
-  gulp.watch(config.directories.src.images + '/**/*',           ['copy:images']);
+  gulp.watch(config.directories.src.images + '/**/*',           ['images']);
 });

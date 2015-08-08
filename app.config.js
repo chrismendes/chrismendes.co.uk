@@ -26,11 +26,11 @@ directories.src = {
   root:               basePath + folders.srcDir,
   pages:              basePath + folders.srcDir + '/pages',
   components:         basePath + folders.srcDir + '/components',
-  basestyles:         basePath + folders.srcDir + '/global/basestyles',
-  layouts:            basePath + folders.srcDir + '/global/layouts',
-  partials:           basePath + folders.srcDir + '/global/partials',
-  fonts:              basePath + folders.srcDir + '/global/fonts',
-  images:             basePath + folders.srcDir + '/global/images'
+  basestyles:         basePath + folders.srcDir + '/shared/basestyles',
+  layouts:            basePath + folders.srcDir + '/shared/layouts',
+  partials:           basePath + folders.srcDir + '/shared/partials',
+  fonts:              basePath + folders.srcDir + '/shared/fonts',
+  images:             basePath + folders.srcDir + '/shared/images'
 };
 
 // Fit for Browser (Sass -> CSS, compiled templates, etc.)

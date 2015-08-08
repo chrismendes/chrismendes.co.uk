@@ -7,20 +7,20 @@
 // ---
 // App Core
 // ---
-@import 'global/basestyles/normalize';
-@import 'global/basestyles/grid';
-@import 'global/basestyles/fonts';
-@import 'global/basestyles/colours';
-@import 'global/basestyles/base';
-@import 'global/basestyles/glyphicons';
+@import 'shared/basestyles/normalize';
+@import 'shared/basestyles/grid';
+@import 'shared/basestyles/fonts';
+@import 'shared/basestyles/colours';
+@import 'shared/basestyles/base';
+@import 'shared/basestyles/glyphicons';
 
 
 // ---
 // Layouts
 // ---
-@import 'global/layouts/main';
-@import 'global/layouts/billboard';
-@import 'global/layouts/content';
+@import 'shared/layouts/main';
+@import 'shared/layouts/billboard';
+@import 'shared/layouts/content';
 
 
 // ---
@@ -34,3 +34,5 @@
 @import 'components/tabs/tabs';
 @import 'components/centredlist/centredlist';
 @import 'components/label/label';
+
+@import 'components/project/project';

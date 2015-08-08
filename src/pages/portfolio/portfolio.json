@@ -2,8 +2,8 @@
   "projects": [
     {
       "name":                   "Barclaycard bPay",
-      "url":                    null,
-      "offlineMessage":         "To be launched shortly",
+      "url":                    "www.bpay.co.uk",
+      "offlineMessage":         null,
       "description":            "Revamp of existing website showcasing Barclaycard's innovative product called bPay. Screenshots attached are of the existing site currently at www.bpayband.co.uk. Will update when permitted. Front-end code delivered to client for CMS integration.",
       "date":                   "December 2014 - February 2015",
       "skills":                 [ "HTML5, CSS3, LESS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development" ],
@@ -17,7 +17,7 @@
       "codeSampleURL":          null,
       "screenshots":            { "desktop": 2, "tablet": 0, "phone": 0 },
       "id":                     "barclaycard",
-      "clientId":               "barclaycard",
+      "clientID":               "barclaycard",
       "active":                 true
     },
     {
@@ -37,7 +37,7 @@
       "codeSampleURL":          null,
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 5 },
       "id":                     "capablue",
-      "clientId":               "capablue",
+      "clientID":               "capablue",
       "active":                 true
     },
     {
@@ -57,7 +57,7 @@
       "codeSampleURL":          null,
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
       "id":                     "successfactors",
-      "clientId":               "successfactors",
+      "clientID":               "successfactors",
       "active":                 true
     },
     {
@@ -77,7 +77,7 @@
       "codeSampleURL":          null,
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 3 },
       "id":                     "capablue-tve",
-      "clientId":               "capablue",
+      "clientID":               "capablue",
       "active":                 true
     },
     {
@@ -98,7 +98,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 8, "tablet": 0, "phone": 0 },
       "id":                     "sap-football",
-      "clientId":               "sap",
+      "clientID":               "sap",
       "active":                 true
     },
     {
@@ -119,7 +119,7 @@
       "techCategory":            false,
       "screenshots":            { "desktop": 5, "tablet": 7, "phone": 7 },
       "id":                     "cisco",
-      "clientId":               "cisco",
+      "clientID":               "cisco",
       "active":                 true
     },
     {
@@ -140,7 +140,7 @@
       "techCategory":            false,
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 5 },
       "id":                     "sap-didntexpect",
-      "clientId":               "sap",
+      "clientID":               "sap",
       "active":                 true
     },
     {
@@ -161,7 +161,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 5, "tablet": 4, "phone": 7 },
       "id":                     "autodesk-manufacturing",
-      "clientId":               "autodesk",
+      "clientID":               "autodesk",
       "active":                 true
     },
     {
@@ -182,7 +182,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 },
       "id":                     "sap-crystalsolutions",
-      "clientId":               "sap",
+      "clientID":               "sap",
       "active":                 true
     },
     {
@@ -203,7 +203,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 4, "phone": 3 },
       "id":                     "sap-lumira",
-      "clientId":               "sap",
+      "clientID":               "sap",
       "active":                 true
     },
     {
@@ -224,7 +224,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
       "id":                     "virginpure",
-      "clientId":               "virginpure",
+      "clientID":               "virginpure",
       "active":                 true
     },
     {
@@ -245,7 +245,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 },
       "id":                     "autodesk-buildtoday",
-      "clientId":               "autodesk",
+      "clientID":               "autodesk",
       "active":                 true
     },
     {
@@ -266,7 +266,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
       "id":                     "sap-analytics",
-      "clientId":               "sap",
+      "clientID":               "sap",
       "active":                 true
     },
     {
@@ -287,7 +287,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
       "id":                     "coconuthair",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -308,7 +308,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "personalagent",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -329,7 +329,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 7 },
       "id":                     "equate",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -350,7 +350,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "oraclepr",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -371,7 +371,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "limeshowrooms",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -392,7 +392,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "lifeworks",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -413,7 +413,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "podvolunteer",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -434,7 +434,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 },
       "id":                     "strengthspartnership",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -455,7 +455,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "whybother",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -476,7 +476,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "newfieldit",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -497,7 +497,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "epsomdental",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -518,7 +518,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "asashwindow",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -539,7 +539,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 },
       "id":                     "elizabethstone",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -560,7 +560,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "surreyfire",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -581,7 +581,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "botleybyrne",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -602,7 +602,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 },
       "id":                     "secutel",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -623,7 +623,7 @@
       "techCategory":           false,
       "screenshots":            { "desktop": 9, "tablet": 0, "phone": 0 },
       "id":                     "monopoly",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -643,7 +643,7 @@
       "codeSampleURL":          "https://github.com/chrismendes/chrismendes.london",
       "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
       "id":                     "mysite",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 true
     },
     {
@@ -663,7 +663,7 @@
       "codeSampleURL":          "https://github.com/chrismendes/shopping-basket",
       "screenshots":            { "desktop": 0, "tablet": 0, "phone": 0 },
       "id":                     "basket",
-      "clientId":               null,
+      "clientID":               null,
       "active":                 false
     }
   ]

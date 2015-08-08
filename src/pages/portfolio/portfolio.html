@@ -55,9 +55,19 @@
       <h1>Portfolio</h1>
 
       {{#projects}}
-        <p>{{name}}</p>
-        <p>{{description}}</p>
-        <hr/>
+
+        <div class="project">
+          <span class="project--logo"><img src="images/portfolio/{{id}}/1.jpg"/ width="220"></span>
+          <span class="project--details">
+            <h2 class="project--name">{{name}}</h2>
+            <span class="project--date"></span>
+            <a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>
+            <span class="project--description">{{description}}</span>
+          </span>
+          <span class="project--screenshot"><img src="images/portfolio/{{id}}/1.jpg"/ width="220"></span>
+          <span class="project--summary"></span>
+        </div>
+
       {{/projects}}
 
     </div>

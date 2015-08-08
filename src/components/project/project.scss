@@ -1,0 +1,23 @@
+.project {
+  @include span(full);
+
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #efefef;
+}
+
+.project--logo {
+  @include span(3);
+}
+
+
+.project--name {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  background: none;
+  display: inline;
+
+  
+}
