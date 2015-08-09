@@ -55,23 +55,39 @@
       <h1>Skills &amp; Expertise</h1>
 
       <ul class="tabs tabs-primary">
-        <li class="is-active">
-          <a href="#/tab/technology">Technology Checklist</a>
-          <ul>
-            <li><a href="#">The Basics</a></li>
-            <li><a href="#">JS Libraries / Frameworks</a></li>
-            <li><a href="#">UI Frameworks / Grid Systems</a></li>
-            <li><a href="#">Developer Workflow</a></li>
-            <li><a href="#">Testing</a></li>
-            <li><a href="#">Server-side Development</a></li>
-          </ul>
-        </li>
+        <li class="is-active"><a href="#/tab/technology">Technology Checklist</a></li>
         <li><a href="#/tab/knowledge">Development Knowledge</a></li>
         <li><a href="#/tab/learning">Currently Learning</a></li>
       </ul>
 
       <div id="tab-technology" class="tabs--content is-active">
-        <p>Technology</p>
+
+        <div class="layout-subnav">
+
+          <ul class="tabs tabs-secondary">
+            <li class="is-active"><a href="#/tab/">The Basics</a></li>
+            <li><a href="#/tab/">JS Libraries / Frameworks</a></li>
+            <li><a href="#/tab/">UI Frameworks / Grid Systems</a></li>
+            <li><a href="#/tab/">Templating</a></li>
+            <li><a href="#/tab/">Developer Workflow</a></li>
+            <li><a href="#/tab/">Testing</a></li>
+            <li><a href="#/tab/">Server-Side Development</a></li>
+            <li><a href="#/tab/">Miscellaneous</a></li>
+          </ul>
+
+        </div>
+
+        <div class="layout-subnavcontent">
+
+          <div id="tabnested-technology" class="tabs--content is-active">
+            <div class="skill">
+              <span class="skill--logo"></span>
+              <span class="skill--description">This is a test.</span>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <div id="tab-knowledge" class="tabs--content">

@@ -1,0 +1,11 @@
+.skill {
+  @include span(full);
+}
+
+.skill--logo {
+  @include span(3)
+}
+
+.skill-description {
+  @include span(9);
+}
