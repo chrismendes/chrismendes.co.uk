@@ -20,6 +20,7 @@
 }
 .project--screenshots > img {
   @include span(4 of 12);
+  cursor: pointer;
 }
 .project--screenshots > img:last-child {
   @include last;
@@ -35,7 +36,6 @@
 }
 
 .project--link {
-  width: 100%;
   margin: 0 0 8px 0;
   display: inline-block;
 }
