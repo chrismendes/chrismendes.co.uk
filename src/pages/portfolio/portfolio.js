@@ -14,10 +14,11 @@ $(document).on('offCanvasPanelOpen', function(event, data) {
   $imageSets.each(function() {
     var $set = $(this);
     var selector = '.' + $set.attr('class');
-    $target.children(selector).html($set.children());
 
-    gallery.initialise($target.children(selector));
+    $target = $target.children(selector);
+    $target.html($set.children().clone());
 
+    gallery.initialise($target);
   });
 
 });
