@@ -77,21 +77,21 @@
         </span>
 
         <div class="project--galleryimages js-offcanvaspanel-content" data-name="{{name}}" data-url="{{url}}">
-          <div class="js-gallery-desktop">
+          <div class="js-gallery-desktop" data-screenshots="{{screenshots.desktop}}">
             <ul>
               {{#loop screenshots.desktop}}
               <li><img src="images/portfolio/{{../id}}/{{ . }}.jpg"/></li>
               {{/loop}}
             </ul>
           </div>
-          <!-- <div class="js-gallery-tablet">
+          <!-- <div class="js-gallery-tablet" data-screenshots="{{screenshots.tablet}}">
             <ul>
               <li><img src="images/portfolio/{{id}}/tablet/1.jpg"/></li>
               <li><img src="images/portfolio/{{id}}/tablet/2.jpg"/></li>
               <li><img src="images/portfolio/{{id}}/tablet/3.jpg"/></li>
             </ul>
           </div>
-          <div class="js-gallery-phone">
+          <div class="js-gallery-phone" data-screenshots="{{screenshots.phone}}">
             <ul>
               <li><img src="images/portfolio/{{id}}/phone/1.jpg"/></li>
               <li><img src="images/portfolio/{{id}}/phone/2.jpg"/></li>
@@ -117,10 +117,8 @@
             <li class="tabs-primary--reservedspace">
               <div class="pagination js-pagination">
                 <button class="button js-gallery-previous">&laquo; Previous</button>
-                <ul>
-                  <li><span>1</span></li>
-                  <li><span>2</span></li>
-                  <li><span>3</span></li>
+                <ul class="js-gallery-pagination">
+                  <li><span class="js-gallery-pageno"></span></li>
                 </ul>
                 <button class="button js-gallery-next">Next &raquo;</button>
               </div>
