@@ -24,6 +24,10 @@
   background: #f9f8f9;
 }
 
+.tabs-primary > li.tabs-primary--reservedspace {
+  float: right;
+}
+
 
 @media (min-width: 700px) {
   .tabs-primary {
