@@ -22,8 +22,7 @@ var component = {
       btnNext:  '.js-gallery-next',
       btnPrev:  '.js-gallery-previous',
       btnGo:    pagination,
-      visible:  1,
-      circular: false
+      visible:  1
     });
   },
 
