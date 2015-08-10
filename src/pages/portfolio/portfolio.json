@@ -15,7 +15,7 @@
       "highlightPosition":      1,
       "codeSample":             false,
       "codeSampleURL":          null,
-      "screenshots":            { "desktop": 2, "tablet": 0, "phone": 0 },
+      "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 },
       "id":                     "barclaycard",
       "clientID":               "barclaycard",
       "active":                 true
