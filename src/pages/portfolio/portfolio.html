@@ -79,9 +79,9 @@
         <div class="project--galleryimages js-offcanvaspanel-content" data-name="{{name}}" data-url="{{url}}">
           <div class="js-gallery-desktop">
             <ul>
-              <li><img src="images/portfolio/{{id}}/1.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/2.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/3.jpg"/></li>
+              {{#loop screenshots.desktop}}
+              <li><img src="images/portfolio/{{../id}}/{{ . }}.jpg"/></li>
+              {{/loop}}
             </ul>
           </div>
           <!-- <div class="js-gallery-tablet">

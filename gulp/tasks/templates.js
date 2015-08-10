@@ -35,6 +35,13 @@ gulp.task('templates', function() {
     helpers: {
       urlFriendly: function(str) {
         return str.toLowerCase().replace(' ', '');
+      },
+      loop: function(n, block) {
+        var result = '';
+        for(var i = 0; i < n; ++i) {
+          result += block.fn(i+1);
+        }
+        return result;
       }
     }
   };
