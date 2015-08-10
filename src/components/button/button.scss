@@ -4,11 +4,16 @@
   letter-spacing: 0px;
   text-align: center;
 
-  padding: 6px 10px;
+  padding: 6px 14px;
 
-  background: -webkit-linear-gradient(top, #FAFAFA 0%, #DEDEDE 100%);
+  background: linear-gradient(to bottom, #FAFAFA 0%, #DEDEDE 100%);
   box-shadow: 0px 0px 1px 0px #666;
   border: 0;
   border-radius: 4px;
   outline: none;
+}
+
+.button:hover {
+  // color: #fff;
+  background: linear-gradient(to bottom, #fff 0%, #f1f1f1 100%);
 }
