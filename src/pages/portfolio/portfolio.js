@@ -6,10 +6,17 @@ var gallery = require('gallery/gallery');
 // ---
 // Populate Off-Canvas Panel w/Gallery
 // ---
-$(document).on('offCanvasPanelOpen', function(event, data) {
+$(document).on('offCanvasPanelOpen', function(event, $data) {
 
-  var $imageSets = data.children();
+  var $imageSets = $data.children();
   var $target = $('.js-offcanvaspanel-loadedcontent');
+
+  var projectName = $data.attr('data-name');
+  var projectURL = $data.attr('data-url');
+
+  $('.js-projectname').html(projectName);
+  $('.js-projecturl').html(projectURL);
+  $('.js-projecturl').attr('href', 'http://' + projectURL);
 
   $imageSets.each(function() {
     var $set = $(this);

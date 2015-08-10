@@ -76,7 +76,7 @@
           <img src="images/portfolio/{{id}}/3.jpg" width="220" class="js-open-offcanvaspanel"/>
         </span>
 
-        <div class="project--galleryimages js-offcanvaspanel-content">
+        <div class="project--galleryimages js-offcanvaspanel-content" data-name="{{name}}" data-url="{{url}}">
           <div class="js-gallery-desktop">
             <ul>
               <li><img src="images/portfolio/{{id}}/1.jpg"/></li>
@@ -109,7 +109,7 @@
 
           <!-- <button class="button js-close-offcanvaspanel">Close</button> -->
 
-          <h2>Barclaycard bPay <a href="#">www.bpay.co.uk</a></h2>
+          <h2><span class="js-projectname"></span> <a href="#" target="_blank" class="js-projecturl"></a></h2>
           <ul class="tabs tabs-primary">
             <li class="is-active"><a href="#/tab/desktop">Desktop</a></li>
             <li><a href="#/tab/tablet">Tablet</a></li>
