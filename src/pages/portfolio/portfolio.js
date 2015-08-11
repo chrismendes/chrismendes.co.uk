@@ -21,18 +21,14 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
   $imageSets.each(function() {
     var $set = $(this);
     var selector = '.' + $set.attr('class');
-    var screenshotCount = $data.attr('data-screenshots');
 
-    var pageControl = $('.js-gallery-pagination > li:first-child').clone();
-    $('.js-gallery-pagination').html('');
-    for(var i = 0; i < screenshotCount; i++) {
-
-    }
+    var screenshotCount = $set.attr('data-screenshots');
+    $('.js-screenshotcount').html(screenshotCount);
 
     $target = $target.children(selector);
     $target.html($set.children().clone());
 
-    gallery.initialise($target);
+    gallery.initialise($target, screenshotCount);
   });
 
 });
@@ -42,5 +38,6 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
 // Clear Off-Canvas Panel
 // ---
 $(document).on('offCanvasPanelClose', function(event, data) {
-  
+console.log('offCanvasPanelClose');
+  gallery.tearDown();
 });

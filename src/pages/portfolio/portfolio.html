@@ -80,7 +80,7 @@
           <div class="js-gallery-desktop" data-screenshots="{{screenshots.desktop}}">
             <ul>
               {{#loop screenshots.desktop}}
-              <li><img src="images/portfolio/{{../id}}/{{ . }}.jpg"/></li>
+              <li><img src="images/portfolio/{{../id}}/{{.}}.jpg"/></li>
               {{/loop}}
             </ul>
           </div>
@@ -107,21 +107,15 @@
       <div class="layout-offcanvaspanel js-offcanvaspanel">
         <div class="layout-offcanvaspanel--inner">
 
-          <!-- <button class="button js-close-offcanvaspanel">Close</button> -->
-
           <h2><span class="js-projectname"></span> <a href="#" target="_blank" class="js-projecturl"></a></h2>
           <ul class="tabs tabs-primary">
             <li class="is-active"><a href="#/tab/desktop">Desktop</a></li>
             <li><a href="#/tab/tablet">Tablet</a></li>
             <li><a href="#/tab/phone">Phone</a></li>
             <li class="tabs-primary--reservedspace">
-              <div class="pagination js-pagination">
-                <button class="button js-gallery-previous">&laquo; Previous</button>
-                <ul class="js-gallery-pagination">
-                  <li><span class="js-gallery-pageno"></span></li>
-                </ul>
-                <button class="button js-gallery-next">Next &raquo;</button>
-              </div>
+              <button class="button js-gallery-previous">&laquo; Previous</button>
+              <span class="pagination"><span class="js-currentslide">1</span> / <span class="js-screenshotcount"></span></span>
+              <button class="button js-gallery-next">Next &raquo;</button>
             </li>
           </ul>
 

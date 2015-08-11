@@ -10,31 +10,53 @@ require('jcarousellite/jcarousellite');
 // Component
 // ---
 var selectors = {
-  pagination: '.js-pagination > ul > li'
+  next:       '.js-gallery-next',
+  previous:   '.js-gallery-previous'
 };
 
 var component = {
 
-  initialise: function($target) {
-    var pagination = component.getPaginationButtons();
+  currentSlide: null,
+  totalSlides:  null,
 
+  initialise: function($target, slides) {
     $target.jCarouselLite({
-      btnNext:  '.js-gallery-next',
-      btnPrev:  '.js-gallery-previous',
-      btnGo:    pagination,
+      btnNext:  selectors.next,
+      btnPrev:  selectors.previous,
       visible:  1
     });
+
+    component.currentSlide = 1;
+    component.totalSlides = slides;
+    $('.js-currentslide').html(component.currentSlide);
+    $('.js-screenshotcount').html(component.totalSlides);
+
+    $(selectors.next).click(component.updatePagination);
+    $(selectors.previous).click(component.updatePagination);
   },
 
-  getPaginationButtons: function() {
-    var buttons = [];
-    var count = $(selectors.pagination).length;
-    for(var i = 0; i < count; i++) {
-      var suffix = ':nth-child(' + (i+1) + ')';
-      buttons.push(selectors.pagination + suffix);
+  updatePagination: function(e) {
+    var nextClass = selectors.next.substr(1);
+    if($(e.target).hasClass(nextClass) === true) {
+      if(component.currentSlide < component.totalSlides) {
+        component.currentSlide += 1;
+      } else {
+        component.currentSlide = 1;
+      }
+    } else {
+      if(component.currentSlide > 1) {
+        component.currentSlide -= 1;
+      } else {
+        component.currentSlide = component.totalSlides;
+      }
     }
 
-    return buttons;
+    $('.js-currentslide').html(component.currentSlide);
+  },
+
+  tearDown: function() {
+    $(selectors.next).unbind('click');
+    $(selectors.previous).unbind('click');
   }
 
 };

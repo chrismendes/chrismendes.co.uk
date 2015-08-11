@@ -31,6 +31,7 @@ var component = {
   },
 
   closePanel: function() {
+    $(document).trigger('offCanvasPanelClose');
     $ui.pageMask.removeClass('is-active');
     $ui.panel.removeClass('is-open');
     $ui.body.removeClass('is-locked');
