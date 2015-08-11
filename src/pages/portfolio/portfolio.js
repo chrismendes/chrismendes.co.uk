@@ -7,9 +7,8 @@ var gallery = require('gallery/gallery');
 // Populate Off-Canvas Panel w/Gallery
 // ---
 $(document).on('offCanvasPanelOpen', function(event, $data) {
-
   var $imageSets = $data.children();
-  var $target = $('.js-offcanvaspanel-loadedcontent');
+  var $galleryArea = $('.js-offcanvaspanel-loadedcontent');
 
   var projectName = $data.attr('data-name');
   var projectURL  = $data.attr('data-url');
@@ -25,7 +24,7 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
     var screenshotCount = $set.attr('data-screenshots');
     $('.js-screenshotcount').html(screenshotCount);
 
-    $target = $target.children(selector);
+    $target = $galleryArea.find(selector);
     $target.html($set.children().clone());
 
     gallery.initialise($target, screenshotCount);
@@ -38,6 +37,5 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
 // Clear Off-Canvas Panel
 // ---
 $(document).on('offCanvasPanelClose', function(event, data) {
-console.log('offCanvasPanelClose');
   gallery.tearDown();
 });

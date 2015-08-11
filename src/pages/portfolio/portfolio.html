@@ -84,20 +84,20 @@
               {{/loop}}
             </ul>
           </div>
-          <!-- <div class="js-gallery-tablet" data-screenshots="{{screenshots.tablet}}">
+          <div class="js-gallery-tablet" data-screenshots="{{screenshots.tablet}}">
             <ul>
-              <li><img src="images/portfolio/{{id}}/tablet/1.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/tablet/2.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/tablet/3.jpg"/></li>
+              {{#loop screenshots.tablet}}
+              <li><img src="images/portfolio/{{../id}}/tablet/{{.}}.jpg"/></li>
+              {{/loop}}
             </ul>
           </div>
           <div class="js-gallery-phone" data-screenshots="{{screenshots.phone}}">
             <ul>
-              <li><img src="images/portfolio/{{id}}/phone/1.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/phone/2.jpg"/></li>
-              <li><img src="images/portfolio/{{id}}/phone/3.jpg"/></li>
+              {{#loop screenshots.phone}}
+              <li><img src="images/portfolio/{{../id}}/phone/{{.}}.jpg"/></li>
+              {{/loop}}
             </ul>
-          </div> -->
+          </div>
         </div>
 
       </div>
@@ -120,12 +120,15 @@
           </ul>
 
           <div class="js-offcanvaspanel-loadedcontent">
-            <div class="gallery js-gallery js-gallery-desktop"></div>
-            <!-- <ul class="js-gallery-tablet">
-            </ul>
-
-            <ul class="js-gallery-phone">
-            </ul> -->
+            <div id="tab-desktop" class="tabs--content is-active">
+              <div class="gallery js-gallery js-gallery-desktop"></div>
+            </div>
+            <div id="tab-tablet" class="tabs--content is-active">
+              <div class="gallery js-gallery js-gallery-tablet"></div>
+            </div>
+            <div id="tab-phone" class="tabs--content is-active">
+              <div class="gallery js-gallery js-gallery-phone"></div>
+            </div>
           </div>
 
         </div>
