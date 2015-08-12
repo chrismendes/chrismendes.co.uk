@@ -27,7 +27,12 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
     $target = $galleryArea.find(selector);
     $target.html($set.children().clone());
 
-    gallery.initialise($target, screenshotCount);
+    gallery.initialise($target, screenshotCount, {
+      btnNext:          selector + '-next',
+      btnPrevious:      selector + '-previous',
+      currentSlide:     selector + '-currentslide',
+      screenshotCount:  selector + '-screenshotcount'
+    });
   });
 
 });

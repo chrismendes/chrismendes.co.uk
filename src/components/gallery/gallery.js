@@ -9,9 +9,11 @@ require('jcarousellite/jcarousellite');
 // ---
 // Component
 // ---
-var selectors = {
-  next:       '.js-gallery-next',
-  previous:   '.js-gallery-previous'
+var defaults = {
+  btnNext:          '.js-gallery-next',
+  btnPrevious:      '.js-gallery-previous',
+  currentSlide:     '.js-gallery-currentslide',
+  screenshotCount:  '.js-gallery-screenshotcount'
 };
 
 var component = {
@@ -19,24 +21,28 @@ var component = {
   currentSlide: null,
   totalSlides:  null,
 
-  initialise: function($target, slides) {
+  initialise: function($target, slides, config) {
+    config = $.extend(defaults, config);
+
     $target.jCarouselLite({
-      btnNext:  selectors.next,
-      btnPrev:  selectors.previous,
+      btnNext:  config.next,
+      btnPrev:  config.previous,
       visible:  1
     });
 
     component.currentSlide = 1;
-    component.totalSlides = slides;
-    $('.js-currentslide').html(component.currentSlide);
-    $('.js-screenshotcount').html(component.totalSlides);
+    component.totalSlides  = slides;
 
-    $(selectors.next).click(component.updatePagination);
-    $(selectors.previous).click(component.updatePagination);
+    $(config.currentSlide).html(component.currentSlide);
+    $(config.screenshotCount).html(component.totalSlides);
+
+    $(config.btnNext).click(component.updatePagination);
+    $(config.btnPrevious).click(component.updatePagination);
   },
 
   updatePagination: function(e) {
     var nextClass = selectors.next.substr(1);
+
     if($(e.target).hasClass(nextClass) === true) {
       if(component.currentSlide < component.totalSlides) {
         component.currentSlide += 1;
