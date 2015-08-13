@@ -4,12 +4,6 @@
       "group": "The Basics",
       "entries": [
         {
-          "name": "",
-          "summary": [
-
-          ]
-        },
-        {
           "name": "HTML5",
           "summary": [
             "First encountered HTML at an early age, worked with it throughout career. Strict on keeping the markup void of implied styling in favour of maximum semantic meaning.",
@@ -87,6 +81,36 @@
             "More recently preferring Lodash, I sometimes call upon a utility library such as these for general array and object manipulation tasks."
           ]
         }
+      ]
+    },
+    {
+      "group": "UI Frameworks / Grid Systems",
+      "entries": [
+      ]
+    },
+    {
+      "group": "Templating",
+      "entries": [
+      ]
+    },
+    {
+      "group": "Developer Workflow",
+      "entries": [
+      ]
+    },
+    {
+      "group": "Testing",
+      "entries": [
+      ]
+    },
+    {
+      "group": "Server-Side Development",
+      "entries": [
+      ]
+    },
+    {
+      "group": "Miscellaneous",
+      "entries": [
       ]
     }
   ]
