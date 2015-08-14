@@ -37,6 +37,11 @@ h2 {
   width: 100%;
   display: inline-block;
 }
+
+h1 + h2 {
+  margin-top: 0;
+}
+
 h2 > a {
   color: #888;
   font-family: Verdana, Arial;
@@ -74,6 +79,27 @@ a {
 }
 a:hover {
   color: lighten($blue, 30%);
+}
+
+
+// ---
+// Table
+// ---
+table {
+  border: 1px solid #c0c0c0;
+  margin-bottom: 20px;
+}
+tr:first-child {
+  background: #efefef;
+}
+th,
+td {
+  padding: 8px 24px;
+  text-align: left;
+}
+th:first-child,
+td:first-child {
+  padding-left: 8px;
 }
 
 
