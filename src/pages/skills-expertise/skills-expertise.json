@@ -8,27 +8,31 @@
           "summary": [
             "First encountered HTML at an early age, worked with it throughout career. Strict on keeping the markup void of implied styling in favour of maximum semantic meaning.",
             "Familiar with HTML5 - new elements, new input types, HTML5 video for example."
-          ]
+          ],
+          "experience": "Excellent. Utilised in every project."
         },
         {
           "name": "CSS3",
           "summary": [
             "Prefer to use the SMACSS model where possible for good modularity and scalability. Experienced at troubleshooting cross-browser presentation issues.",
             "Proficient with media queries and CSS3 animation."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Sass / LESS",
           "summary": [
             "Equally capable with both, have used both commercially. Happy with nested styles and inheritance, writing variables, mixins, functions, etc."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "JavaScript",
           "summary": [
             "Compentent object-oriented JavaScript developer - functions, objects, classes, prototype, etc.",
             "Have experience with a wide range of projects with different levels of JavaScript involvement, from web pages requiring mere form validation to large complex webapps driven 90% by JavaScript."
-          ]
+          ],
+          "experience": ""
         }
       ]
     },
@@ -40,46 +44,53 @@
           "summary": [
             "Strong knowledge of AngularJS fundamentals and best practices - controllers, directives, services, routing, isolate scope, etc.",
             "I have a non-trivial sample application for inspection that can be found on the Code Samples page."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Backbone.js",
           "summary": [
             "Excellent understanding and familiarity with the framework - views, models, collections, routers, etc.",
             "I have a handful of projects available for review on the Portfolio page that have been built with Backbone.js."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "jQuery",
           "summary": [
             "Long-standing famliarity. Used to one extent or another on virtually every project.",
             "Have also experimented with jQuery UI on past projects."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Require.js",
           "summary": [
             "Good project experience of using library for modular and optmial architecture.",
             "Familiar with the r.js optimiser, and AMD substitute almond.js, for building require.js apps for production environments."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Handlebars",
           "summary": [
             "Fair experience with templating library and have used commercially. Familiar with general syntax and creating custom helper functions."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Modernizr",
           "summary": [
             "Have deployed many times when extensive feature detection has been necessary on a project. Have often detected features and implemented change via both CSS and JavaScript."
-          ]
+          ],
+          "experience": ""
         },
         {
           "name": "Underscore.js / Lodash",
           "summary": [
             "More recently preferring Lodash, I sometimes call upon a utility library such as these for general array and object manipulation tasks."
-          ]
+          ],
+          "experience": ""
         }
       ]
     },

@@ -2,7 +2,9 @@
 
 <ul class="tabs tabs-secondary">
   {{#skills}}
-  <li{{#if @index}} class="is-active"{{/if}}><a href="#/tab/">{{group}}</a></li>
+  <li{{#unless @index}} class="is-active"{{/unless}}>
+    <a href="#/tab/technology/{{urlFriendly group}}">{{group}}</a>
+  </li>
   {{/skills}}
 </ul>
 
@@ -11,7 +13,7 @@
 <div class="layout-subnavcontent">
 
 {{#skills}}
-<div id="tabnested-technology" class="tabs--content is-active">
+<div id="tabnested-technology-{{urlFriendly group}}" class="tabs--content{{#unless @index}} is-active{{/unless}}">
   {{#entries}}
   <div class="skill">
     <span class="skill--logo"><img src="images/skills-expertise/skill-{{urlFriendly name}}.jpg"/></span>
@@ -19,6 +21,7 @@
       {{#summary}}
       <p>{{.}}</p>
       {{/summary}}
+      <p><strong>Experience</strong>: {{experience}}</p>
     </div>
   </div>
   {{/entries}}
