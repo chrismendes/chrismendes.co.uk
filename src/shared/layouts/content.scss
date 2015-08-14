@@ -51,6 +51,15 @@
 
 
 // ---
+// Pre-defined Grids
+// ---
+.layout-grid > div {
+  @include gallery(6 of 12);
+  margin-bottom: 40px;
+}
+
+
+// ---
 // Off-Canvas Panel
 // ---
 .layout-offcanvaspanel {

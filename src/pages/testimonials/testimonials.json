@@ -1,0 +1,82 @@
+{
+  "testimonials": [
+    {
+      "personName": "Pete Thompson",
+      "personPosition": "Solutions Architect at Capablue",
+      "date": "14th October 2014",
+      "feedback": [
+        "\"I worked with Chris for a period of four months on the implementation of a live video streaming application and the Capablue corporate website. The projects required a comprehensive understanding of modern JavaScript development and responsive web design.",
+        "Chris was the principal developer on both projects and demonstrated that he can work independently and be trusted to deliver consistently high-quality work. He also demonstrated his ability to manage the work of others and mentor more junior members of the team.",
+        "Chris is an excellent frontend developer with an astonishing attention to detail who frequently goes above and beyond what is required. He is a pleasure to work with, and I would not hesitate to recommend him.\""
+      ]
+    },
+    {
+      "personName": "Andy Roberts",
+      "personPosition": "Project Manager at Capablue",
+      "date": "14th July 2014",
+      "feedback": [
+        "\"I managed Chris for 2 months on an Agile project to create a TV Everywhere video player.",
+        "Chris worked tirelessly to deliver this to a tight deadline using his strong java script knowledge and experience in creating adaptive websites.",
+        "He was a key team player over this period and significantly contributed to making the project a success. I have no hesitation in recommending him.\""
+      ]
+    },
+    {
+      "personName": "Dan Ashby",
+      "personPosition": "Head of Development at DNX",
+      "date": "20th November 2014",
+      "feedback": [
+        "\"Chris worked in my team at DNX for 3 years and produced some very good work in that time.",
+        "He is an extremely committed worker always willing to go the extra mile to ensure deadlines are met and projects were completed on time and to an exacting standard.",
+        "Chris likes to keep up to date with developments and new technologies in the digital area, has a wide array of knowledge and it is very meticulous and creative in his work.\""
+      ]
+    },
+    {
+      "personName": "Laurence Jones",
+      "personPosition": "Project Manager at DNX",
+      "date": "16th June 2014",
+      "feedback": [
+        "\"I worked with Chris at DNX for a six month period. I found Chris to be a dedicated and committed programmer. He is not just interested in the job at hand. Chris has a genuine interest in examining frameworks, processes and industry innovations that can positively contribute to project work.",
+        "Chris is a natural lead programmer - he brings a high level of digital insight to the scoping and planning process and is conscientious enough to give up his own time to troubleshoot project bugs and guarantee delivery when necessary.",
+        "In summary, Chris is a highly capable and insightful developer and I have no hesitation in highly recommending him.\""
+      ]
+    },
+    {
+      "personName": "Cathy Bishop",
+      "personPosition": "Account Director at DNX",
+      "date": "13th June 2014",
+      "feedback": [
+        "\"I worked with Chris on a number of projects at DNX and found him a real pleasure to work with.",
+        "He patiently explained the more technical dev issues, produced great work and was always happy to go the extra mile.",
+        "Snap him up, he's worth his weight in gold!\""
+      ]
+    },
+    {
+      "personName": "Tom Hartnett",
+      "personPosition": "Web Developer at DNX",
+      "date": "10th June 2014",
+      "feedback": [
+        "\"Chris is a technically skilled web developer working comfortably in both the back and front end disciplines.",
+        "He's eager to explore the use of new technologies but has a superb grounding in the essentials.\""
+      ]
+    },
+    {
+      "personName": "Dominic Young",
+      "personPosition": "Senior Account Manager at DNX",
+      "date": "11th June 2014",
+      "feedback": [
+        "\"I have worked with Chris on various projects whilst he was at DNX. He is an established web developer that knows his stuff!",
+        "He is always keen to get stuck in and offers valuable input.\""
+      ]
+    },
+    {
+      "personName": "Kelly Hughes",
+      "personPosition": "Account Manager at DNX",
+      "date": "14th July 2014",
+      "feedback": [
+        "\"Chris worked on many of my projects which all varied in nature and complexity.",
+        "He has a good understanding of front and back end development and is confident to make technical recommendations to improve a project.",
+        "Always thorough and with good attention to detail, Chris always delivered work on time and to an excellent standard. He'd be an asset to any team.\""
+      ]
+    }
+  ]
+}

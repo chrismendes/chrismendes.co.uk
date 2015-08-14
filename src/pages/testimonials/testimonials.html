@@ -14,12 +14,12 @@
 
     <div class="layout-navbar">
       <ul class="primarynav">
-        <li class="is-active"><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="/skills-expertise.html">Skills & Expertise</a></li>
         <li><a href="/cv.html">CV</a></li>
         <li><a href="/portfolio.html">Portfolio</a></li>
         <li><a href="/code-samples.html">Code Samples</a></li>
-        <li><a href="/testimonials.html">Testimonials</a></li>
+        <li class="is-active"><a href="/testimonials.html">Testimonials</a></li>
         <li><a href="#">Recruitment</a></li>
       </ul>
     </div>
@@ -35,12 +35,12 @@
         <div class="layout-billboardright">
 
           <div class="billboardpostertext">
-            <span class="billboardpostertext--headline">Experienced front-end developer and technical architect</span>
+            <span class="billboardpostertext--headline">Lorem ipsum de color</span>
             <ul>
-              <li>9 years building successful commercial web applications</li>
-              <li>Lead Developer experience setting standards and coaching others</li>
-              <li>Highly organised, hard working, and driven to serve business needs</li>
-              <li>Strong analytical thinker and articulate communicator</li>
+              <li>Lorem ipsum de color</li>
+              <li>Lorem ipsum de color</li>
+              <li>Lorem ipsum de color</li>
+              <li>Lorem ipsum de color</li>
             </ul>
           </div>
 
@@ -52,9 +52,26 @@
 
     <div class="layout-page">
 
+      <h1>Testimonials</h1>
 
+      <div class="layout-grid">
+        {{#testimonials}}
+        <div class="testimonial">
+          <img class="testimonial--personimage" src="images/testimonials/person-{{urlFriendly personName}}.jpg"/>
+          <h2 class="testimonial--personname">{{personPosition}}</h2>
+          <h3 class="testimonial--personposition">{{personName}}</h3>
+          {{#feedback}}
+          <p>{{.}}</p>
+          {{/feedback}}
+        </div>
+        {{/testimonials}}
+      </div>
 
     </div>
+
+
+    <script type="text/javascript" src="js/shared.js"></script>
+    <script type="text/javascript" src="js/cv.js"></script>
 
   </body>
 </html>
