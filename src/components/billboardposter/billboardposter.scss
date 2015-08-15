@@ -22,10 +22,6 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
-
-// ---
-// Billboard Images
-// ---
 .billboardposterimage {
   float: left;
   width: 100%;
@@ -34,7 +30,15 @@
   background-repeat: no-repeat;
 }
 
+
+// ---
+// Billboard Images
+// ---
 .billboardposterimage-home {
   background-image: url('../images/billboardposter/billboard-home-small.jpg');
   background-position: 0 -20px;
+}
+
+.billboardposterimage-recruitment {
+  background-image: url('../images/billboardposter/billboard-recruitment-small.jpg');
 }
