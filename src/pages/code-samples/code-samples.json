@@ -2,9 +2,12 @@
   "applications": [
     {
       "name": "This Website",
-      "description": "Professional website for business marketing purposes.",
+      "description": [
+        "Modular CSS implemented via the SMACSS pattern. Page scaffolding implemented via the Sass powered grid system Susy.",
+        "Also features a modern component-oriented project setup and an elaborate Gulp workflow deployment to generate a \"browser ready\" app state."
+      ],
       "tech": [
-        "HTML5", "CSS3", "JavaScript", "jQuery", "Handlebars"
+        "HTML5, CSS3", "Sass, Susy", "JavaScript, jQuery", "Handlebars", "Gulp, Webpack"
       ],
       "links": {
 
@@ -14,10 +17,15 @@
       "name": "Football Dream Team",
       "description": [
         "Pick your Premier League football dream team amongst an array of players and submit to the database to compare with teams submitted by other users.",
-        "This project built completely from scratch was a major part of my AngularJS learning process and I was keen to implement both framework fundamentals as well as established best practices."
+        "This project was a major part of my AngularJS learning process and I was keen to implement both framework fundamentals as well as established best practices."
       ],
       "tech": [
-        "AngularJS", "jQuery", "Firebase", "Sass", "SMACSS", "Susy", "Media Queries"
+        "AngularJS",
+        "HTML5, CSS3",
+        "Sass, Susy",
+        "JavaScript, jQuery",
+        "Firebase",
+        "Grunt"
       ],
       "links": {
         "openapp": "http://dreamteam.chrismendes.london",
@@ -25,27 +33,37 @@
       }
     },
     {
-      "name": "Rock Paper Scissors Game",
-      "description": "",
-      "tech": [
-
-      ],
-      "links": {
-
-      }
-    },
-    {
       "name": "Shopping Basket",
       "description": [
-        "A previous code test for an interview, the task was to implement the required shopping basket functionality and match a PSD design without the use of any framework or grid system.",
-        "My solution consisted of an MVC pattern with vanilla JavaScript, jQuery for DOM manipulation, and Handlebars for templating."
+        "A code test for an interview, the task was to implement the specified shopping basket functionality as well as a responsive presentation layer.",
+        "Solution consisted of an MVC pattern with vanilla JavaScript, jQuery, and Handlebars."
       ],
       "tech": [
-        "JavaScript", "jQuery", "Handlebars", "Media Queries"
+        "HTML5, CSS3",
+        "JavaScript, jQuery",
+        "Handlebars",
+        "Media Queries",
+        "Grunt"
       ],
       "links": {
         "openapp": "http://shoppingbasket.chrismendes.london",
         "github": "https://github.com/chrismendes/sampleapp-shoppingbasket"
+      }
+    },
+    {
+      "name": "Rock Paper Scissors",
+      "description": [
+        "A code test for an interview, the task was to implement this classic game in vanilla JavaScript. Play against the computer or spectate a computer vs computer game.",
+        "Source JavaScript code features a very simple controller and a model. Presentation styling implemented via the SMACSS pattern."
+      ],
+      "tech": [
+        "HTML5, CSS3",
+        "Sass, Susy",
+        "JavaScript, jQuery",
+        "Grunt"
+      ],
+      "links": {
+
       }
     }
   ]
