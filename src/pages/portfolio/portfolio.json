@@ -6,8 +6,8 @@
       "url":                    "www.bpay.co.uk",
       "offlineMessage":         null,
       "date":                   "December 2014 - February 2015",
-      "description":            "Revamp of existing website showcasing Barclaycard's innovative product called bPay. Screenshots attached are of the existing site currently at www.bpayband.co.uk. Will update when permitted. Front-end code delivered to client for CMS integration.",
-      "tech":                   [ "HTML5, CSS3, LESS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development" ],
+      "description":            "Brochure site showcasing Barclaycard's contactless payment product called bPay.",
+      "tech":                   "HTML5, CSS3, LESS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development",
       "responsibility":         "Front-end (Co-developer)",
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 }
     },
@@ -17,8 +17,8 @@
       "url":                    "www.capablue.com",
       "offlineMessage":         null,
       "date":                   "August - October 2014",
-      "description":            "Corporate website for this media broadcast company. Fully responsive site built predominantly with Backbone and Foundation. Highly optimised through a comprehensive build process via Grunt.",
-      "tech":                   [ "HTML, CSS, Foundation", "JavaScript, Backbone.js", "Responsive development" ],
+      "description":            "Corporate website for this media broadcast company. Fully responsive site built predominantly with Backbone.js and Foundation.",
+      "tech":                   "HTML, CSS, Foundation, JavaScript, Backbone.js, Responsive Development",
       "responsibility":         "Front-end (Lead developer)",
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 5 }
     },
@@ -28,8 +28,8 @@
       "url":                    null,
       "offlineMessage":         "www.startanywherewithsuccessfactors.com (Since deactivated)",
       "date":                   "February - March 2014",
-      "description":            "Interactive questionnaire for HR professionals to obtain helpful information tailored to their needs based on the answers given. User journey data dispatched to Marketo CRM.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery, Backbone.js" ],
+      "description":            "Interactive questionnaire for HR professionals to obtain helpful information tailored to their needs based on the answers given. User journey data dispatched to Marketo CRM via Segment.io.",
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Backbone.js",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 }
     },
@@ -40,7 +40,7 @@
       "offlineMessage":         "Development Prototype",
       "date":                   "May - July 2014",
       "description":            "A white-label build for a multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer). Features an API for programme data, a PHP broker application, and a fully responsive front-end.",
-      "tech":                   [ "HTML5, CSS3, Foundation, Handlebars", "JavaScript, jQuery, Backbone.js, Require.js", "Responsive development", "PHP, JSON" ],
+      "tech":                   "HTML5, CSS3, Foundation, Handlebars, JavaScript, jQuery, Backbone.js, Require.js, Responsive Development, PHP, JSON",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 3 }
     },
@@ -51,7 +51,7 @@
       "offlineMessage":         null,
       "date":                   "July - September 2013",
       "description":            "Now under a different name, this project produced a web-based football management game with SAP branding and product positioning. As a highlight achievement I designed and built the match engine that simulates what happens during each match and the end result based on player attributes and team tactics. Solely responsible for all back-end development, jointly responsible with co-developer for front-end.",
-      "tech":                   [ "PHP, CodeIgniter, MySQL", "HTML, CSS, Twitter Bootstrap" ],
+      "tech":                   "PHP, CodeIgniter, MySQL, HTML, CSS, Twitter Bootstrap",
       "responsibility":         "Front/Back-end (Lead developer)",
       "screenshots":            { "desktop": 8, "tablet": 0, "phone": 0 }
     },
@@ -62,7 +62,7 @@
       "offlineMessage":         null,
       "date":                   "January - March 2013",
       "description":            "Informative microsite promoting Cisco server infrastructure for business. Responsible for front-end and back-end. Multi-language. Responsive.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, Responsive Development, PHP, CodeIgniter, MySQL",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 7, "phone": 7 }
     },
@@ -73,7 +73,7 @@
       "offlineMessage":         null,
       "date":                   "January 2014",
       "description":            "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "Responsive development" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, Responsive Development",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 5 }
     },
@@ -84,7 +84,7 @@
       "offlineMessage":         null,
       "date":                   "May - July 2013",
       "description":            "Microsite presenting case studies for suite of CAD products, as well as a questionnaire to help map products to user requirements. Responsible for front-end and back-end. Responsive.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development, PHP, CodeIgniter, MySQL",
       "responsibility":         "Front/Back-end (Co-developer)",
       "screenshots":            { "desktop": 5, "tablet": 4, "phone": 7 }
     },
@@ -95,7 +95,7 @@
       "offlineMessage":         null,
       "date":                   "April - May 2012",
       "description":            "Microsite providing a questionnaire to determine SAP product s for given business requirements. Responsible for front-end and back-end. Responsive.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development, PHP, CodeIgniter, MySQL",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 }
     },
@@ -106,7 +106,7 @@
       "offlineMessage":         null,
       "date":                   "November 2013",
       "description":            "Small website feauring a free spreadsheet data analysis tool by SAP. Responsive site. Responsible for all development.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 4, "phone": 3 }
     },
@@ -117,7 +117,7 @@
       "offlineMessage":         "www.virginpure.com (Since re-designed)",
       "date":                   "June - November 2012",
       "description":            "Formally Strauss Water, Virgin Pure sells dispenser machines that provide purified water. Drupal CMS. Responsible for front-end and back-end. Since re-designed.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, Drupal, MySQL" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development, PHP, Drupal, MySQL",
       "responsibility":         "Front/Back-end (Co-developer)",
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 }
     },
@@ -128,7 +128,7 @@
       "offlineMessage":         "www.autodesk-build-today.com (Since deactivated)",
       "date":                   "September - October 2013",
       "description":            "Microsite with an interactive questionnaire at its core, posing questions to the user to determine most suitable Autodesk CAD product. Responsible for front-end and back-end. Responsive. Since deactivated.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development, PHP, CodeIgniter, MySQL",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -139,7 +139,7 @@
       "offlineMessage":         "www.sap50analyticstips.com (Since deactivated)",
       "date":                   "December 2013",
       "description":            "Microsite promoting the work that SAP are doing in Africa to support growing businesses. Responsible for front-end. Responsive. Since deactivated.",
-      "tech":                   [ "HTML, CSS", "JavaScript, Treesaver.js", "PHP, CodeIgniter, MySQL" ],
+      "tech":                   "HTML, CSS, JavaScript, Treesaver.js, PHP, CodeIgniter, MySQL",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 }
     },
@@ -150,7 +150,7 @@
       "offlineMessage":         null,
       "date":                   "February 2012",
       "description":            "High-end hair salon based in Surrey. Site is a single page experience with navigation scrolling the user up/down and left/right. Also includes embedded WordPress blog via AJAX.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, WordPress",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 }
     },
@@ -161,7 +161,7 @@
       "offlineMessage":         null,
       "date":                   "November - December 2011",
       "description":            "Estate agents based in Epsom, Surrey. Site is responsive. Implements a third party API as the source for the property data. Features PHP/MySQL driven property search and user wishlist functionality.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, MySQL" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, MySQL",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -172,7 +172,7 @@
       "offlineMessage":         null,
       "date":                   "October 2013",
       "description":            "Product showcase and ecommerce website for business startup selling its own line of stylish streetwear.",
-      "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "Big Cartel CMS" ],
+      "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Responsive Development, Big Cartel CMS",
       "responsibility":         "Front-end and design (Sole contributor)",
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 7 }
     },
@@ -183,7 +183,7 @@
       "offlineMessage":         null,
       "date":                   "September 2011",
       "description":            "Straight forward company website for a public relations company. WordPress site. All pages updated via WordPress as well as the traditional blog section under 'News & Views'.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, WordPress",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -194,7 +194,7 @@
       "offlineMessage":         null,
       "date":                   "June 2010",
       "description":            "Interior design company based in Surbiton, Surrey. Simple site with a heavy use of carousels to showcase their design work.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -205,7 +205,7 @@
       "offlineMessage":         null,
       "date":                   "October - December 2010",
       "description":            "Rehabilitation clinic based in Surrey. Joomla CMS driven site with a large sitemap, a lot of written content, and a large collection of embeded videos.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, Joomla" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, Joomla",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -216,7 +216,7 @@
       "offlineMessage":         null,
       "date":                   "September - October 2010",
       "description":            "Overseas volunteering charity. Joomla CMS driven site with a large collection of pages.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, Joomla" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, Joomla",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -227,7 +227,7 @@
       "offlineMessage":         null,
       "date":                   "July 2010",
       "description":            "Management training consultancy based in London. Site-wide WordPress implementation. Features a number of embedded YouTube videos.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, WordPress",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 }
     },
@@ -238,7 +238,7 @@
       "offlineMessage":         "www.why-bother.co.uk (Since re-designed)",
       "date":                   "May 2010",
       "description":            "Domestic and office cleaning company based in Sussex. Simple traditional company site featuring a WordPress blog.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, WordPress",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -249,7 +249,7 @@
       "offlineMessage":         null,
       "date":                   "February 2011",
       "description":            "Business IT consultancy based in Twickenham. Straight-forward front-end implementing a very formal design, with a WordPress back-end for the blog section.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery", "PHP, WordPress" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery, PHP, WordPress",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -260,7 +260,7 @@
       "offlineMessage":         null,
       "date":                   "October 2011",
       "description":            "Private dental clinic based in Epsom, Surrey. No thrills company website with a clinical look.",
-      "tech":                   [ "HTML, CSS" ],
+      "tech":                   "HTML, CSS",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -271,7 +271,7 @@
       "offlineMessage":         null,
       "date":                   "December 2010",
       "description":            "Window service company based in Chessington, Surrey. Small, simple company website.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -282,7 +282,7 @@
       "offlineMessage":         null,
       "date":                   "June 2011",
       "description":            "Start-up recruitment agency based in Epsom, Surrey. Basic company website on a small budget.",
-      "tech":                   [ "HTML, CSS" ],
+      "tech":                   "HTML, CSS",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 3, "tablet": 0, "phone": 0 }
     },
@@ -293,7 +293,7 @@
       "offlineMessage":         "www.surreyfiresystems.co.uk (Since re-designed)",
       "date":                   "January 2011",
       "description":            "Fire alarm company based in Horley, Surrey. Typical company website describing products and services. Since re-designed.",
-      "tech":                   [ "HTML, CSS" ],
+      "tech":                   "HTML, CSS",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -304,7 +304,7 @@
       "offlineMessage":         null,
       "date":                   "February 2011",
       "description":            "Chartered surveyors based in London. Very small, simple website featuring a jQuery powered picture carousel.",
-      "tech":                   [ "HTML, CSS", "JavaScript, jQuery" ],
+      "tech":                   "HTML, CSS, JavaScript, jQuery",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -315,7 +315,7 @@
       "offlineMessage":         "www.secutel.co.uk (Since deactivated)",
       "date":                   "August 2010",
       "description":            "IT security company based in Leatherhead, Surrey. Basic no thrills company site clearly describing the company's services.",
-      "tech":                   [ "HTML, CSS" ],
+      "tech":                   "HTML, CSS",
       "responsibility":         "Front-end (Sole developer)",
       "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
@@ -326,7 +326,7 @@
       "offlineMessage":         null,
       "date":                   "June - August 2008",
       "description":            "A replica of the well known board game built with Flash. User plays against AI opponents that choose to buy or pass on properties as well as respond to player proposed deals for properties or cash.",
-      "tech":                   [ "Adobe Flash", "ActionScript 2.0" ],
+      "tech":                   "Adobe Flash, ActionScript 2.0",
       "responsibility":         "All (Sole developer)",
       "screenshots":            { "desktop": 9, "tablet": 0, "phone": 0 }
     }

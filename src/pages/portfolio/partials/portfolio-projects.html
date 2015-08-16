@@ -8,7 +8,9 @@
     <h2 class="project--name">{{name}}</h2>
     <span class="project--date"></span>
     <a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>
-    <span class="project--summary">{{description}}</span>
+    <p class="project--summary">{{description}}</p>
+    <p>Responsibility: {{responsibility}}</p>
+    <p>Technology: {{tech}}</p>
     <button class="project--opengallery button js-open-offcanvaspanel">Open Screenshot Gallery</button>
   </span>
 
@@ -17,6 +19,7 @@
     <img src="images/portfolio/{{urlFriendly name}}/2.jpg" width="220" class="js-open-offcanvaspanel"/>
     <img src="images/portfolio/{{urlFriendly name}}/3.jpg" width="220" class="js-open-offcanvaspanel"/>
   </span>
+
 
   <div class="project--galleryimages js-offcanvaspanel-content" data-name="{{name}}" data-url="{{url}}">
     <div class="js-gallery-desktop" data-screenshots="{{screenshots.desktop}}">
