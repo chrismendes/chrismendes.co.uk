@@ -5,6 +5,8 @@
 
 .codesample--logo {
   @include span(2 of 12);
+  text-align: center;
+  padding-top: 10px;
 }
 
 
@@ -18,12 +20,12 @@
 }
 
 .codesample--name {
-  // with: auto;
   margin-top: 0;
 }
 
 .codesample--tech {
   @include span(2 of 12);
+  padding-left: 80px;
 }
 
 .codesample--screenshot {
