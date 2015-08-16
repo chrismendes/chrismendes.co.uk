@@ -9,6 +9,7 @@
 
 .project--logo {
   @include span(2);
+  min-height: 1px; // Ensure column integrity when contents empty.
 }
 
 .project--details {
