@@ -56,95 +56,10 @@
 
       <h1>Portfolio</h1>
 
-      {{#projects}}
-
-      <div class="project">
-
-        <span class="project--logo">{{#if company}}<img src="images/logos/company-{{urlFriendly company}}.jpg"/>{{/if}}</span>
-
-        <span class="project--details">
-          <h2 class="project--name">{{name}}</h2>
-          <span class="project--date"></span>
-          <a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>
-          <span class="project--summary">{{description}}</span>
-          <button class="project--opengallery button js-open-offcanvaspanel">Open Screenshot Gallery</button>
-        </span>
-
-        <span class="project--screenshots">
-          <img src="images/portfolio/{{urlFriendly name}}/1.jpg" width="220" class="js-open-offcanvaspanel"/>
-          <img src="images/portfolio/{{urlFriendly name}}/2.jpg" width="220" class="js-open-offcanvaspanel"/>
-          <img src="images/portfolio/{{urlFriendly name}}/3.jpg" width="220" class="js-open-offcanvaspanel"/>
-        </span>
-
-        <div class="project--galleryimages js-offcanvaspanel-content" data-name="{{name}}" data-url="{{url}}">
-          <div class="js-gallery-desktop" data-screenshots="{{screenshots.desktop}}">
-            <ul>
-              {{#loop screenshots.desktop}}
-              <li><img src="images/portfolio/{{urlFriendly ../name}}/{{.}}.jpg"/></li>
-              {{/loop}}
-            </ul>
-          </div>
-          <div class="js-gallery-tablet" data-screenshots="{{screenshots.tablet}}">
-            <ul>
-              {{#loop screenshots.tablet}}
-              <li><img src="images/portfolio/{{urlFriendly ../name}}/tablet/{{.}}.jpg"/></li>
-              {{/loop}}
-            </ul>
-          </div>
-          <div class="js-gallery-phone" data-screenshots="{{screenshots.phone}}">
-            <ul>
-              {{#loop screenshots.phone}}
-              <li><img src="images/portfolio/{{urlFriendly ../name}}/phone/{{.}}.jpg"/></li>
-              {{/loop}}
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      {{/projects}}
+      {{> portfolio-projects}}
 
       <div class="layout-offcanvaspanel js-offcanvaspanel">
-        <div class="layout-offcanvaspanel--inner">
-
-          <h2><span class="js-projectname"></span> <a href="#" target="_blank" class="js-projecturl"></a></h2>
-          <ul class="tabs tabs-primary">
-            <li class="is-active"><a href="#/tab/desktop">Desktop</a></li>
-            <li><a href="#/tab/tablet">Tablet</a></li>
-            <li><a href="#/tab/phone">Phone</a></li>
-          </ul>
-
-          <div class="js-offcanvaspanel-loadedcontent">
-
-            <div id="tab-desktop" class="tabs--content is-active">
-              <div class="tabs-primary--contentmeta">
-                <button class="button js-gallery-desktop-previous">&laquo; Previous</button>
-                <span class="pagination"><span class="js-gallery-desktop-currentslide">1</span> / <span class="js-gallery-desktop-screenshotcount"></span></span>
-                <button class="button js-gallery-desktop-next">Next &raquo;</button>
-              </div>
-              <div class="gallery js-gallery js-gallery-desktop"></div>
-            </div>
-
-            <div id="tab-tablet" class="tabs--content is-active">
-              <div class="tabs-primary--contentmeta">
-                <button class="button js-gallery-tablet-previous">&laquo; Previous</button>
-                <span class="pagination"><span class="js-gallery-tablet-currentslide">1</span> / <span class="js-gallery-tablet-screenshotcount"></span></span>
-                <button class="button js-gallery-tablet-next">Next &raquo;</button>
-              </div>
-              <div class="gallery js-gallery js-gallery-tablet"></div>
-            </div>
-
-            <div id="tab-phone" class="tabs--content is-active">
-              <div class="tabs-primary--contentmeta">
-                <button class="button js-gallery-phone-previous">&laquo; Previous</button>
-                <span class="pagination"><span class="js-gallery-phone-currentslide">1</span> / <span class="js-gallery-phone-screenshotcount"></span></span>
-                <button class="button js-gallery-phone-next">Next &raquo;</button>
-              </div>
-              <div class="gallery js-gallery js-gallery-phone"></div>
-            </div>
-          </div>
-
-        </div>
+        {{> portfolio-screenshotgallery}}
       </div>
 
     </div>
