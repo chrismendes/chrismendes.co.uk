@@ -14,9 +14,9 @@ gulp.task('webpack-compile', function(callback) {
     if(error) {
       throw new gutil.PluginError('webpack', error);
     }
-    gutil.log('[webpack]', stats.toString({
-      colors: true
-    }));
+    // gutil.log('[webpack]', stats.toString({
+    //   colors: true
+    // }));
     return callback();
   });
 });
