@@ -130,7 +130,7 @@
       "description":            "Microsite with an interactive questionnaire at its core, posing questions to the user to determine most suitable Autodesk CAD product. Responsible for front-end and back-end. Responsive. Since deactivated.",
       "tech":                   [ "HTML, CSS, Twitter Bootstrap", "JavaScript, jQuery", "Responsive development", "PHP, CodeIgniter, MySQL" ],
       "responsibility":         "Front/Back-end (Sole developer)",
-      "screenshots":            { "desktop": 1, "tablet": 0, "phone": 0 }
+      "screenshots":            { "desktop": 4, "tablet": 0, "phone": 0 }
     },
     {
       "name":                   "SAP Get Connected",
