@@ -1,0 +1,52 @@
+{
+  "applications": [
+    {
+      "name": "This Website",
+      "description": "Professional website for business marketing purposes.",
+      "tech": [
+        "HTML5", "CSS3", "JavaScript", "jQuery", "Handlebars"
+      ],
+      "links": {
+
+      }
+    },
+    {
+      "name": "Football Dream Team",
+      "description": [
+        "Pick your Premier League football dream team amongst an array of players and submit to the database to compare with teams submitted by other users.",
+        "This project built completely from scratch was a major part of my AngularJS learning process and I was keen to implement both framework fundamentals as well as established best practices."
+      ],
+      "tech": [
+        "AngularJS", "jQuery", "Firebase", "Sass", "SMACSS", "Susy", "Media Queries"
+      ],
+      "links": {
+        "openapp": "http://dreamteam.chrismendes.london",
+        "github": "https://github.com/chrismendes/sampleapp-dreamteam"
+      }
+    },
+    {
+      "name": "Rock Paper Scissors Game",
+      "description": "",
+      "tech": [
+
+      ],
+      "links": {
+
+      }
+    },
+    {
+      "name": "Shopping Basket",
+      "description": [
+        "A previous code test for an interview, the task was to implement the required shopping basket functionality and match a PSD design without the use of any framework or grid system.",
+        "My solution consisted of an MVC pattern with vanilla JavaScript, jQuery for DOM manipulation, and Handlebars for templating."
+      ],
+      "tech": [
+        "JavaScript", "jQuery", "Handlebars", "Media Queries"
+      ],
+      "links": {
+        "openapp": "http://shoppingbasket.chrismendes.london",
+        "github": "https://github.com/chrismendes/sampleapp-shoppingbasket"
+      }
+    }
+  ]
+}

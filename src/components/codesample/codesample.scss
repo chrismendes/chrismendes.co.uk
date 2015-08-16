@@ -1,0 +1,35 @@
+.codesample {
+  @include span(full);
+  margin-bottom: 40px;
+}
+
+.codesample--logo {
+  @include span(2 of 12);
+}
+
+
+.codesample--summary {
+  @include span(5 of 12)
+}
+
+.codesample--useractions {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.codesample--name {
+  // with: auto;
+  margin-top: 0;
+}
+
+.codesample--tech {
+  @include span(2 of 12);
+}
+
+.codesample--screenshot {
+  @include span(3 of 12 last);
+}
+
+.codesample--screenshot > img {
+  float: right;
+}

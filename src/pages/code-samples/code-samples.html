@@ -52,7 +52,29 @@
 
     <div class="layout-page">
 
+      <h1>Code Samples</h1>
 
+      {{#applications}}
+      <div class="codesample">
+        <h2 class="codesample--name">{{name}}</h2>
+        <span class="codesample--logo">Logo</span>
+        <span class="codesample--summary">
+          {{#description}}
+          <p>{{.}}</p>
+          {{/description}}
+          <span class="codesample--useractions">
+            <a href="#" class="button">Open App</a>
+            <a href="#" class="button">Review Code</a>
+          </span>
+        </span>
+        <ul class="codesample--tech">
+          {{#tech}}
+          <li>{{.}}</li>
+          {{/tech}}
+        </ul>
+        <span class="codesample--screenshot"><img src="images/code-samples/codesample-{{urlFriendly name}}.jpg"/></span>
+      </div>
+      {{/applications}}
 
     </div>
 

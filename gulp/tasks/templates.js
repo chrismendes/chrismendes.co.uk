@@ -34,7 +34,7 @@ gulp.task('templates', function() {
     batch: partialDirs,
     helpers: {
       urlFriendly: function(str) {
-        var friendly = str.toLowerCase().replace('/', '-').replace('.', '').replace(/ /g, '');
+        var friendly = str.toLowerCase().replace('/', '-').replace('.', '').replace(/\W+/g, '');
         return friendly;
       },
       loop: function(n, block) {
