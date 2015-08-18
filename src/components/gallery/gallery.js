@@ -10,65 +10,90 @@ require('jcarousellite/jcarousellite');
 // Component
 // ---
 var defaults = {
+  container:        '.js-gallery',
   btnNext:          '.js-gallery-next',
   btnPrevious:      '.js-gallery-previous',
   currentSlide:     '.js-gallery-currentslide',
   screenshotCount:  '.js-gallery-screenshotcount'
 };
+var $ui = {};
 
-var component = {
 
-  currentSlide: null,
-  totalSlides:  null,
+function initialise($target, totalSlides, config) {
+  config = $.extend(defaults, config);
 
-  initialise: function($target, slides, config) {
-    config = $.extend(defaults, config);
+  $ui.container       = $(config.container);
+  $ui.currentSlide    = $(config.container + ' ' + config.currentSlide);
+  $ui.screenshotCount = $(config.container + ' ' + config.screenshotCount);
+  $ui.btnNext         = $(config.container + ' ' + config.btnNext);
+  $ui.btnPrevious     = $(config.container + ' ' + config.btnPrevious);
 
-    $target.jCarouselLite({
-      btnNext:  config.next,
-      btnPrev:  config.previous,
-      visible:  1
-    });
+  $target.jCarouselLite({
+    btnNext:  $ui.btnNext,
+    btnPrev:  $ui.btnPrevious,
+    visible:  1
+  });
 
-    component.currentSlide = 1;
-    component.totalSlides  = slides;
+  var currentSlide = 1;
+  $ui.container.attr('data-slide', currentSlide);
+  $ui.currentSlide.html(currentSlide);
+  $ui.screenshotCount.html(totalSlides);
 
-    $(config.currentSlide).html(component.currentSlide);
-    $(config.screenshotCount).html(component.totalSlides);
+  $ui.btnNext.click({
+    $container:     $ui.container,
+    $currentSlide:  $ui.currentSlide,
+    direction:      'next',
+    totalSlides:    totalSlides
+  }, updatePagination);
 
-    $(config.btnNext).click(component.updatePagination);
-    $(config.btnPrevious).click(component.updatePagination);
-  },
+  $ui.btnPrevious.click({
+    $container:     $ui.container,
+    $currentSlide:  $ui.currentSlide,
+    direction:      'previous',
+    totalSlides:    totalSlides
+  }, updatePagination);
+};
 
-  updatePagination: function(e) {
-    var nextClass = selectors.next.substr(1);
 
-    if($(e.target).hasClass(nextClass) === true) {
-      if(component.currentSlide < component.totalSlides) {
-        component.currentSlide += 1;
-      } else {
-        component.currentSlide = 1;
-      }
+function updatePagination(e) {
+  var totalSlides = e.data.totalSlides;
+  var direction = e.data.direction;
+
+  var $container = e.data.$container;
+  var $currentSlide = e.data.$currentSlide;
+  var currentSlide = parseInt($container.attr('data-slide'));
+
+  if(direction === 'next') {
+    if(currentSlide < totalSlides) {
+      currentSlide += 1;
     } else {
-      if(component.currentSlide > 1) {
-        component.currentSlide -= 1;
-      } else {
-        component.currentSlide = component.totalSlides;
-      }
+      currentSlide = 1;
     }
-
-    $('.js-currentslide').html(component.currentSlide);
-  },
-
-  tearDown: function() {
-    $(selectors.next).unbind('click');
-    $(selectors.previous).unbind('click');
+  } else {
+    if(currentSlide > 1) {
+      currentSlide -= 1;
+    } else {
+      currentSlide = totalSlides;
+    }
   }
 
+  $currentSlide.html(currentSlide);
+  $container.attr('data-slide', currentSlide);
 };
+
+
+function tearDown() {
+  $ui.btnNext.unbind('click');
+  $ui.btnPrevious.unbind('click');
+}
 
 
 // ---
 // Export
 // ---
-module.exports = component;
+var publicAPI = {
+  initialise: initialise,
+  tearDown:   tearDown
+};
+
+module.exports = publicAPI;

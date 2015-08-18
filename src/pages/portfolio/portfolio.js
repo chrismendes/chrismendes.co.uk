@@ -2,7 +2,6 @@ require('offcanvaspanel/offcanvaspanel');
 require('tabs/tabs');
 var gallery = require('gallery/gallery');
 
-
 // ---
 // Populate Off-Canvas Panel w/Gallery
 // ---
@@ -19,6 +18,8 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
 
   $imageSets.each(function() {
     var $set = $(this);
+    var id = $set.attr('data-galleryid');
+    var container = '#tab-' + id;
     var selector = '.' + $set.attr('class');
 
     var screenshotCount = $set.attr('data-screenshots');
@@ -28,6 +29,7 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
     $target.html($set.children().clone());
 
     gallery.initialise($target, screenshotCount, {
+      container:        container,
       btnNext:          selector + '-next',
       btnPrevious:      selector + '-previous',
       currentSlide:     selector + '-currentslide',
