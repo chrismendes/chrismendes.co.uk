@@ -1,7 +1,7 @@
 var path         = require('path');
 var baseURL      = path.resolve(__dirname, '../../');
 
-var config       = require(baseURL + '/app.config.js');
+var config       = require(baseURL + '/config.app.js');
 var gulp         = require('gulp');
 
 

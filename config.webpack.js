@@ -1,5 +1,5 @@
 var webpack    = require('webpack');
-var config     = require('./app.config.js');
+var config     = require('./config.app.js');
 
 var path       = require('path');
 var glob       = require("glob")

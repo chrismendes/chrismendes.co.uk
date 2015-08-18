@@ -1,7 +1,7 @@
 var gulp              = require('gulp');
 var gutil             = require('gulp-util');
 var webpack           = require('webpack');
-var webpackConfig     = require('../../webpack.config.js');
+var webpackConfig     = require('../../config.webpack.js');
 var browserSync       = require('browser-sync');
 
 gulp.task('webpack', ['webpack-compile'], function(callback) {
