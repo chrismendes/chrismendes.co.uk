@@ -11,7 +11,7 @@
         "HTML5, CSS3", "Sass, Susy", "JavaScript, jQuery", "Handlebars", "Gulp, Webpack"
       ],
       "links": {
-
+        "reviewcode": "https://github.com/chrismendes/chrismendes.london"
       }
     },
     {
@@ -31,7 +31,7 @@
       ],
       "links": {
         "openapp": "http://dreamteam.chrismendes.london",
-        "github": "https://github.com/chrismendes/sampleapp-dreamteam"
+        "reviewcode": "https://github.com/chrismendes/sampleapp-dreamteam"
       }
     },
     {
@@ -50,7 +50,7 @@
       ],
       "links": {
         "openapp": "http://shoppingbasket.chrismendes.london",
-        "github": "https://github.com/chrismendes/sampleapp-shoppingbasket"
+        "reviewcode": "https://github.com/chrismendes/sampleapp-shoppingbasket"
       }
     },
     {
@@ -67,7 +67,8 @@
         "Grunt"
       ],
       "links": {
-
+        "openapp": "http://rockpaperscissors.chrismendes.london",
+        "reviewcode": "https://github.com/chrismendes/sampleapp-rockpaperscissors"
       }
     }
   ]

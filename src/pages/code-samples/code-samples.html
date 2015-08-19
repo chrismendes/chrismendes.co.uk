@@ -63,8 +63,8 @@
           <p>{{.}}</p>
           {{/description}}
           <span class="codesample--useractions">
-            {{#if @index}}<a href="#" class="button">Open App</a>{{/if}}
-            <a href="#" class="button">Review Code</a>
+            {{#if links.openapp}}<a href="{{links.openapp}}" target="_blank" class="button">Open App</a>{{/if}}
+            {{#if links.reviewcode}}<a href="{{links.reviewcode}}" target="_blank" class="button">Review Code</a>{{/if}}
           </span>
         </span>
         <ul class="codesample--tech">
