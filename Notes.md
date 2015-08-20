@@ -15,7 +15,7 @@ SKILLS / EXPERTISE
 * Node.js, MongoDB
 
 * Responsive Web Development
-* Web Performance
+* Optimisation and Web Performance
 * Agile Scrum Master
 
 * CTA: Review Skills & Expertise >
