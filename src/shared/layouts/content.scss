@@ -24,19 +24,23 @@
   border-right: 0;
 }
 
-.layout-centered {
-  text-align: center;
-}
-.layout-centered ul {
-  text-align: left;
-}
-
 .layout-sidebyside-narrow {
   @include span(4);
 }
 
 .layout-sidebyside-narrow + .layout-sidebyside-narrow + .layout-sidebyside-narrow {
   @include span(4 last); 
+}
+
+
+// ---
+// Centered Content
+// ---
+.layout-centered {
+  text-align: center;
+}
+.layout-centered ul {
+  text-align: left;
 }
 
 
