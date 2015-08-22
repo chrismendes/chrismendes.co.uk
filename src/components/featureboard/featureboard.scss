@@ -1,0 +1,45 @@
+.featureboard {
+  @include span(full);
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+.featureboard--heading {
+  margin: 0 0 10px 0;
+  font-size: 2em;
+  background: none;
+}
+.layout-pages-special > .featureboard > .featureboard--heading {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 40px;
+}
+.layout-pages-special > .featureboard:first-child > .featureboard--heading {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.featureboard--description {
+  font-size: 1.2em;
+  margin: 0 0 60px 0;
+}
+
+.featureboard--canvashalf {
+  @include span(full);
+  margin-bottom: 30px;
+}
+
+.featureboard--calltoaction {
+  @include span(full);
+  margin-top: 10px;
+}
+
+.featureboard--features {
+  margin: 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.featureboard--features > li {
+  @include gallery(4 of 12);
+}

@@ -24,3 +24,7 @@
   padding-left: 0;
   padding-right: 0;
 }
+
+.layout-pages-special:nth-child(odd) {
+  background: #fff;
+}

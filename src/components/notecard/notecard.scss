@@ -1,0 +1,33 @@
+.notecard {
+  min-height: 172px;
+  padding: 15px;
+}
+
+.notecard--image {
+  min-height: 100px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.notecard--title,
+.notecard--caption,
+.notecard--description {
+  display: inline-block;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.notecard--title {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+
+.notecard--caption {
+  color: #999;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.notecard--description {
+  color: #777;
+}
