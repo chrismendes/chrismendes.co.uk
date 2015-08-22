@@ -6,7 +6,7 @@
 }
 
 .poster--heading {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   font-size: 2em;
   background: none;
 }
@@ -17,6 +17,11 @@
 .layout-pages-special > .poster:first-child > .poster--heading {
   border-top: 0;
   padding-top: 0;
+}
+
+.poster--description {
+  font-size: 1.2em;
+  margin: 0 0 60px 0;
 }
 
 .poster--canvashalf {
@@ -39,7 +44,7 @@
   @include gallery(4 of 12);
   min-height: 172px;
 
-  // background: #f9f9f9;
+  background: #fff;
   // border: 1px solid #efefef;
   box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.2);
   padding: 15px;
