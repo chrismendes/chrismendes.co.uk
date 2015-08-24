@@ -27,7 +27,7 @@ function initialise($target, totalSlides, config) {
   $ui.screenshotCount = $(config.container + ' ' + config.screenshotCount);
   $ui.btnNext         = $(config.container + ' ' + config.btnNext);
   $ui.btnPrevious     = $(config.container + ' ' + config.btnPrevious);
-console.info($ui.btnNext);
+
   $target.jCarouselLite({
     btnNext:  $ui.btnNext,
     btnPrev:  $ui.btnPrevious,

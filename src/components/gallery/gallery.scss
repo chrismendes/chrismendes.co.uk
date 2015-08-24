@@ -20,8 +20,16 @@
 }
 
 
-.gallery-withframe {
-
+.gallery--previous,
+.gallery--next {
+  position: absolute;
+  z-index: 9;
+}
+.gallery--previous {
+  left: 0;
+}
+.gallery--next {
+  right: 0;
 }
 
 .gallery--deviceframe {
