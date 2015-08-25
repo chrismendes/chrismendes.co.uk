@@ -19,8 +19,9 @@
 // Layouts
 // ---
 @import 'shared/layouts/main';
-@import 'shared/layouts/billboard';
+@import 'shared/layouts/general';
 @import 'shared/layouts/content';
+@import 'shared/layouts/billboard';
 
 
 // ---
@@ -34,6 +35,8 @@
 @import 'components/notecard/notecard';
 
 @import 'components/button/button';
+@import 'components/button/button-special';
+@import 'components/button/button-icononly';
 @import 'components/tabs/tabs';
 @import 'components/centredlist/centredlist';
 @import 'components/label/label';
