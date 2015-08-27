@@ -16,18 +16,18 @@
 
 
 // ---
-// Image Spritesheets
-// ---
-@import 'pages/index/images/spritesheets/spritesheet.scss';
-
-
-// ---
 // Layouts
 // ---
 @import 'shared/layouts/main';
 @import 'shared/layouts/general';
 @import 'shared/layouts/content';
 @import 'shared/layouts/billboard';
+
+
+// ---
+// Spritesheets
+// ---
+@import 'pages/index/images/spritesheets/spritesheet';
 
 
 // ---
@@ -46,6 +46,7 @@
 @import 'components/tabs/tabs';
 @import 'components/centredlist/centredlist';
 @import 'components/label/label';
+@import 'components/sprite/sprite';
 
 @import 'components/project/project';
 @import 'components/gallery/gallery';

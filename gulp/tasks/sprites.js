@@ -17,7 +17,7 @@ gulp.task('sprites:home:skills', function() {
     .pipe(sprite({
       name:       'spritesheet',
       style:      'spritesheet.scss',
-      cssPath:    '../images/index/spritesheets',
+      cssPath:    '../images/index/spritesheets/spritesheet',
       processor:  'scss'
     }))
     .pipe(gulpif(

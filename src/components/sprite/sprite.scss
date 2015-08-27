@@ -1,0 +1,43 @@
+.sprite {
+  @extend .icon;
+}
+
+// ---
+// Home Page (Skills/Expertise)
+// ---
+.sprite-skillgreenfield {
+  @include sprite($skill-greenfield);
+}
+.sprite-skillresponsive {
+  @include sprite($skill-responsive);
+}
+.sprite-skillperformance {
+  @include sprite($skill-performance);
+}
+.sprite-skillfundamentals {
+  @include sprite($skill-fundamentals);
+}
+.sprite-skillframeworks {
+  @include sprite($skill-frameworks);
+}
+.sprite-skillserverside {
+  @include sprite($skill-serverside);
+}
+.sprite-skillgreenfield-colour {
+  @include sprite($skill-greenfield-colour);
+}
+.sprite-skillresponsive-colour {
+  @include sprite($skill-responsive-colour);
+}
+.sprite-skillperformance-colour {
+  @include sprite($skill-performance-colour);
+}
+.sprite-skillfundamentals-colour {
+  @include sprite($skill-fundamentals-colour);
+}
+.sprite-skillframeworks-colour {
+  @include sprite($skill-frameworks-colour);
+}
+.sprite-skillserverside-colour {
+  @include sprite($skill-serverside-colour);
+}
