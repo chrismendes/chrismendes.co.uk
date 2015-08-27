@@ -6,8 +6,9 @@ var gulp         = require('gulp');
 var flatten      = require(baseURL + '/gulp/plugins/gulp-flatten-custom');
 
 
-gulp.task('images', ['images:global', 'images:components', 'images:pages']);
+gulp.task('images', ['sprites', 'images:global', 'images:components', 'images:pages']);
 
+// (TODO: Exclude spritesheet .scss files in page /images directories.)
 
 gulp.task('images:global', function() {
   var target = config.directories.src.images + '/**/*';

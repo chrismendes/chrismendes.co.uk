@@ -15,6 +15,7 @@
     "gulp-filesize": "0.0.6",
     "gulp-flatten": "^0.1.0",
     "gulp-iconfont": "^1.0.0",
+    "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.2.1",
     "gulp-minify-css": "~0.5.1",
     "gulp-notify": "^2.2.0",
@@ -41,8 +42,10 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
+    "css-sprite": "^0.9.9",
     "jcarousellite": "^1.9.2",
     "jquery": "^2.1.4",
+    "jquery.isinview": "^1.0.3",
     "lodash": "^3.9.3",
     "susy": "^2.2.5"
   }
