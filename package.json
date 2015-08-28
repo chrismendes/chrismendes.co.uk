@@ -28,6 +28,7 @@
     "handlebars": "^3.0.0",
     "json-loader": "^0.5.2",
     "merge-stream": "^0.1.7",
+    "napa": "^1.2.0",
     "node-libs-browser": "^0.5.2",
     "pretty-hrtime": "~1.0.0",
     "request": "^2.57.0",
@@ -48,5 +49,11 @@
     "jquery.isinview": "^1.0.3",
     "lodash": "^3.9.3",
     "susy": "^2.2.5"
+  },
+"scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "jquery.inview": "protonet/jquery.inview"
   }
 }
