@@ -27,7 +27,7 @@ directories.src = {
   pages:              basePath + folders.srcDir + '/pages',
   components:         basePath + folders.srcDir + '/components',
   basestyles:         basePath + folders.srcDir + '/shared/basestyles',
-  layouts:            basePath + folders.srcDir + '/shared/layouts',
+  layouts:            basePath + folders.srcDir + '/layouts',
   partials:           basePath + folders.srcDir + '/shared/partials',
   fonts:              basePath + folders.srcDir + '/shared/fonts',
   images:             basePath + folders.srcDir + '/shared/images'

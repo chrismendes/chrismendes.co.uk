@@ -23,6 +23,7 @@
 @import 'layouts/general';
 @import 'layouts/billboard';
 @import 'layouts/offcanvaspanel';
+@import 'layouts/slide';
 
 
 // ---
@@ -38,13 +39,13 @@
 @import 'components/navigation/primarynav';
 @import 'components/billboardposter/billboardposter';
 @import 'components/businesscard/businesscard';
-@import 'components/featureboard/featureboard';
-@import 'components/notecard/notecard';
+@import 'components/features/features';
 
 @import 'components/button/button';
 @import 'components/button/button-special';
 @import 'components/button/button-large';
 @import 'components/button/button-icononly';
+@import 'components/large/large';
 @import 'components/tabs/tabs';
 @import 'components/centredlist/centredlist';
 @import 'components/label/label';

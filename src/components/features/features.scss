@@ -1,0 +1,66 @@
+.features {
+  margin: 0 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.features > li {
+  @include gallery(4 of 12);
+  min-height: 172px;
+  padding: 15px;
+
+  @media(max-width: 600px) {
+    @include gallery(12 of 12);
+    width: 100%;
+    clear: both !important;
+  }
+}
+
+// ---
+// Feature Elements
+// ---
+.features--title,
+.features--caption,
+.features--description {
+  display: inline-block;
+  width: 100%;
+  margin: 4px 0;
+}
+
+.features--title {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+
+.features--caption {
+  color: #999;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.features--description {
+  color: #777;
+}
+
+
+.features--image {
+  min-height: 100px;
+  margin: 0 auto 12px auto;
+  display: inline-block;
+}
+
+.features--image-overlay {
+  position: relative;
+}
+.features--image-overlay > span ~ span {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.features--image-overlay > span ~ span.is-revealed {
+  opacity: 1;
+}
