@@ -1,0 +1,7 @@
+.layout-subnav {
+  @include span(3);
+}
+
+.layout-subnavcontent {
+  @include span(9 last);
+}

@@ -2,9 +2,13 @@
   color: #999;
   font-size: 4em;
 
-  background: none;
-  border: 0;
-  outline: none;
-
   padding: 10px;
+
+  background: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.button-icononly:hover {
+  background: none;
 }

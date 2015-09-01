@@ -1,12 +1,3 @@
-.layout-subnav {
-  @include span(3);
-}
-
-.layout-subnavcontent {
-  @include span(9 last);
-}
-
-
 // ---
 // Side by Side Content
 // ---
@@ -60,43 +51,4 @@
 .layout-grid > div {
   @include gallery(6 of 12);
   margin-bottom: 40px;
-}
-
-
-// ---
-// Off-Canvas Panel
-// ---
-.layout-offcanvaspanel {
-  width: 100%;
-  height: 100%;
-  padding-left: 50%;
-
-  position: fixed;
-  right: 0;
-  top: 0;
-  transform: translateX(100%);
-  transition: transform 0.6s ease-in-out;
-
-  z-index: 1;
-}
-.layout-offcanvaspanel--inner {
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-
-  background: #fff;
-  box-shadow: 0 0 8px #efefef;
-
-  cursor: auto;
-
-  overflow-y: auto;
-}
-
-.layout-offcanvaspanel.is-open {
-  transform: translateX(0%);
-  cursor: pointer;
-}
-
-.layout-offcanvaspanel--inner > h2 {
-  margin-top: 0;
 }

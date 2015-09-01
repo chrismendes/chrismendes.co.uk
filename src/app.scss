@@ -18,10 +18,11 @@
 // ---
 // Layouts
 // ---
-@import 'shared/layouts/main';
-@import 'shared/layouts/general';
-@import 'shared/layouts/content';
-@import 'shared/layouts/billboard';
+@import 'layouts/main';
+@import 'layouts/subnav';
+@import 'layouts/general';
+@import 'layouts/billboard';
+@import 'layouts/offcanvaspanel';
 
 
 // ---
@@ -42,6 +43,7 @@
 
 @import 'components/button/button';
 @import 'components/button/button-special';
+@import 'components/button/button-large';
 @import 'components/button/button-icononly';
 @import 'components/tabs/tabs';
 @import 'components/centredlist/centredlist';
