@@ -21,6 +21,7 @@
 
 .featureboard--description {
   font-size: 1.2em;
+  line-height: 1.4em;
   margin: 0 0 60px 0;
 }
 
@@ -42,4 +43,10 @@
 
 .featureboard--features > li {
   @include gallery(4 of 12);
+
+  @media(max-width: 600px) {
+    @include gallery(12 of 12);
+    width: 100%;
+    clear: both !important;
+  }
 }

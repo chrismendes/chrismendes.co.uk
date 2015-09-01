@@ -5,6 +5,10 @@
 .billboardpostertext--headline {
   font-size: 2.2em;
   line-height: 1.6em;
+
+  @media(max-width: 1000px) {
+    font-size: 2em;
+  }
 }
 
 .billboardpostertext > ul {
@@ -15,6 +19,17 @@
 
 .billboardpostertext > ul > li {
   padding: 7px 10px;
+
+  @media(max-width: 1000px) {
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+  @media(max-width: 700px) {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
 }
 
 .billboardpostertext > ul > li:nth-child(odd) {

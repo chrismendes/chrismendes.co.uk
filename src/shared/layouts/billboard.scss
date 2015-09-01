@@ -22,3 +22,35 @@
   height: 100%;
   float: right;
 }
+
+
+@media(max-width: 1400px) {
+  .layout-billboardleft {
+    width: 50%;
+  }
+  .layout-billboardright {
+    width: 50%;
+  }
+}
+
+@media(max-width: 900px) {
+  .layout-billboardleft {
+    width: 40%;
+  }
+  .layout-billboardright {
+    width: 60%;
+  }
+}
+
+@media(max-width: 600px) {
+  .layout-billboardleft,
+  .layout-billboardright {
+    width: 100%;
+  }
+  .layout-billboardright {
+    height: 300px;
+  }
+  .layout-billboardcontent {
+    overflow: visible;
+  }
+}

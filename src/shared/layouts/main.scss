@@ -12,6 +12,7 @@
 .layout-page {
   @extend .container;
   padding: 60px 50px 40px 50px;
+  width: 100%;
 
   box-shadow: 0 10px 50px -2px rgba(0, 0, 0, 0.2);
 
@@ -19,12 +20,17 @@
   overflow-x: hidden;
 }
 
-.layout-pages-special {
+.layout-page-special {
   background: #f7f7f7;
   padding-left: 0;
   padding-right: 0;
+
+  @media(max-width: 600px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.layout-pages-special:nth-child(odd) {
+.layout-page-special:nth-child(odd) {
   background: #fff;
 }
