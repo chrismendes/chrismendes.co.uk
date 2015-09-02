@@ -1,22 +1,20 @@
-.poster {
-
-}
-
 .poster--image {
   max-width: 100%;
 }
 
 .poster--title {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .poster--link {
   font-size: 1.1em;
-
-  margin-top: 10px;
   display: inline-block;
 }
 
 .poster--description {
+  text-align: left;
 
+  width: 100%;
+  display: inline-block;
+  margin-top: 22px;
 }

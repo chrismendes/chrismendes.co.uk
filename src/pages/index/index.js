@@ -22,3 +22,10 @@ var totalSlides = 2;
 gallery.initialise($galleryArea, totalSlides, {
   container: '.js-gallery-container'
 });
+
+
+// ---
+// Past Projects Posters
+// ---
+var posterScreen = require('poster/posterscreen');
+posterScreen.initialise();

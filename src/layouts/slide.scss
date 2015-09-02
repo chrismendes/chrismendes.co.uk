@@ -15,15 +15,6 @@
   background: none;
 }
 
-// .layout-pages-special > .featureboard > .featureboard--heading {
-//   border-top: 1px solid #dfdfdf;
-//   padding-top: 40px;
-// }
-// .layout-pages-special > .featureboard:first-child > .featureboard--heading {
-//   border-top: 0;
-//   padding-top: 0;
-// }
-
 
 .layout-slide--body {
   @include span(full);
@@ -31,12 +22,12 @@
 }
 
 .layout-slide--bodyleft {
-  @include span(8 of 12);
-  padding-left: 40px;
+  @include span(4 of 12);
+  padding: 50px 0 0 40px;
 }
 .layout-slide--bodyright {
-  @include span(4 of 12 last);
-  padding: 40px 60px 40px 10px;
+  @include span(8 of 12 last);
+  padding: 0 40px 40px 10px;
 }
 
 
