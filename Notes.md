@@ -40,8 +40,16 @@ CTA: Open Portfolio >
 
 CODE QUALITY
 
-* Strong object-oriented and component-oriented programmer
-* Passionate about module, scalable code fit for the long-term
-* 4 GitHub projects made available for code inspection purposes
+* Passionate about modular and scalable code fit for the long-term
+  - With strong experience applying JavaScript and CSS in the real-world,
+    I have the relevant awareness and techniques to produce code that is
+    easily extendible, resuable, and easy to read.
+  [Pictures: MVC Diagram, SMACSS]
 
-CTA: Inspect Code Samples >
+* 
+
+* 4 GitHub projects made available for code inspection purposes
+  - 
+  [Pictures: GitHub, HTML/CSS/JS]
+
+CTA: Inspect Sample Code >
