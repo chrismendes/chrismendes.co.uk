@@ -53,7 +53,10 @@
 .features--image-overlay {
   position: relative;
 }
-.features--image-overlay > span ~ span {
+.features--image-overlay > .sprite {
+  display: block;
+}
+.features--image-overlay > .sprite ~ .sprite {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -62,6 +65,6 @@
   transition: opacity 1s;
 }
 
-.features--image-overlay > span ~ span.is-revealed {
+.features--image-overlay > .sprite ~ .sprite.is-revealed {
   opacity: 1;
 }

@@ -1,7 +1,3 @@
-.sprite {
-  @extend .icon;
-}
-
 // ---
 // Home Page (Skills/Expertise)
 // ---
@@ -40,4 +36,10 @@
 }
 .sprite-skillserverside-colour {
   @include sprite($skill-serverside-colour);
+}
+
+
+.sprite {
+  @extend .icon;
+  display: inline-block;
 }

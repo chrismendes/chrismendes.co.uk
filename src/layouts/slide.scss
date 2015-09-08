@@ -1,5 +1,6 @@
 .layout-slide {
   @include span(full);
+  padding: 0 70px;
   margin-bottom: 50px;
 
   text-align: center;
@@ -19,16 +20,38 @@
 .layout-slide--body {
   @include span(full);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .layout-slide--bodyleft {
   @include span(4 of 12);
-  padding: 50px 0 0 40px;
 }
 .layout-slide--bodyright {
   @include span(8 of 12 last);
-  padding: 0 40px 40px 10px;
 }
+
+
+.layout-slide--bodyarticle {
+  @include span(full);
+  margin-bottom: 40px;
+
+  text-align: left;
+}
+.layout-slide--bodyarticle > .sprite,
+.layout-slide--bodyarticle > img {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.layout-slide--bodyarticle:nth-child(odd) {
+  text-align: right;
+}
+.layout-slide--bodyarticle:nth-child(odd) > .sprite,
+.layout-slide--bodyarticle:nth-child(odd) > img {
+  float: left;
+  margin: 20px 20px 0 0;
+}
+
 
 
 .layout-slide--footer {
