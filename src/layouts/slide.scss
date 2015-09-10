@@ -7,6 +7,9 @@
 }
 
 
+// ---
+// Slide Heading
+// ---
 .layout-slide--heading {
   margin-bottom: 50px;
 }
@@ -17,12 +20,17 @@
 }
 
 
+// ---
+// Slide Body
+// ---
 .layout-slide--body {
   @include span(full);
   margin-bottom: 30px;
   text-align: center;
 }
 
+
+// 2 Column Split
 .layout-slide--bodyleft {
   @include span(4 of 12);
 }
@@ -31,16 +39,18 @@
 }
 
 
+// Row Split, "Zig-Zag" Image Alignment
 .layout-slide--bodyarticle {
   @include span(full);
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 
   text-align: left;
 }
+
 .layout-slide--bodyarticle > .sprite,
 .layout-slide--bodyarticle > img {
   float: right;
-  margin: 0 0 20px 20px;
+  margin: -60px 0 30px 30px;
 }
 
 .layout-slide--bodyarticle:nth-child(odd) {
@@ -49,11 +59,18 @@
 .layout-slide--bodyarticle:nth-child(odd) > .sprite,
 .layout-slide--bodyarticle:nth-child(odd) > img {
   float: left;
-  margin: 20px 20px 0 0;
+  margin: -60px 30px 30px 0;
+}
+
+.layout-slide--bodyarticle > .emphasis {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 
-
+// ---
+// Slide Footer
+// ---
 .layout-slide--footer {
   @include span(full);
   margin-top: 10px;
