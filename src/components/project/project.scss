@@ -26,6 +26,9 @@
 .project--screenshots > img:last-child {
   @include last;
 }
+.project--screenshots:hover > img {
+  opacity: 0.9;
+}
 
 
 .project--name {
