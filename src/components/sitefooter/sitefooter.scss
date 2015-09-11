@@ -1,0 +1,34 @@
+.sitefooter {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.sitefooter--links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  float: left;
+}
+
+.sitefooter--links > li {
+  float: left;
+}
+.sitefooter--links > li > a {
+  padding: 6px;
+  display: inline-block;
+
+  color: #777;
+}
+.sitefooter--links > li:first-child > a {
+  padding-left: 0;
+}
+.sitefooter--links > li > a:hover {
+  color: #555;
+}
+
+.sitefooter--copyright {
+  float: right;
+
+  margin-top: 10px;
+}

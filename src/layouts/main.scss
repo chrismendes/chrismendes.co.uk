@@ -34,3 +34,8 @@
 .layout-page-special:nth-child(odd) {
   background: #fff;
 }
+
+.layout-footer {
+  @extend .container;
+  padding: 20px 0;
+}
