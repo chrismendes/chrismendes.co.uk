@@ -29,6 +29,10 @@
     display: block;
   }
 
+  .tabs--content > h2:first-child {
+    margin-top: 0;
+  }
+
 
 @import 'tabsprimary';
 @import 'tabssecondary';
