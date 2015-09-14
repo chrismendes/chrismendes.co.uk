@@ -18,6 +18,10 @@
 
   position: relative;
   overflow-x: hidden;
+
+  @media(max-width: 600px) {
+    padding-top: 30px;
+  }
 }
 
 .layout-page-special {

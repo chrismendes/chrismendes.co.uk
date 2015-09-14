@@ -2,6 +2,11 @@
   margin: 0 40px;
   padding: 0;
   list-style: none;
+
+  @media(max-width: 800px) {
+    margin: 0;
+    // text-align: left;
+  }
 }
 
 .features > li {
@@ -9,7 +14,7 @@
   min-height: 172px;
   padding: 15px;
 
-  @media(max-width: 600px) {
+  @media(max-width: 800px) {
     @include gallery(12 of 12);
     width: 100%;
     clear: both !important;
@@ -20,6 +25,24 @@
 // ---
 // Feature Elements
 // ---
+.features--titledescription {
+  @media(max-width: 800px) {
+    float: right;
+    width: 75%;
+    margin-left: 5%;
+
+    text-align: left;
+  }
+
+  @media(max-width: 600px) {
+    float: none;
+    width: auto;
+    margin: 0;
+
+    text-align: center;
+  }
+}
+
 .features--title,
 .features--caption,
 .features--description {
@@ -47,10 +70,21 @@
   min-height: 100px;
   margin: 0 auto 12px auto;
   display: inline-block;
+
+  @media(max-width: 800px) {
+    float: left;
+    width: 20%;
+  }
+
+  @media(max-width: 600px) {
+    float: none;
+    width: auto;
+  }
 }
 
 .features--image-overlay {
   position: relative;
+  overflow: hidden;
 }
 .features--image-overlay > .sprite {
   display: block;

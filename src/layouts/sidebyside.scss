@@ -22,33 +22,3 @@
 .layout-sidebyside-narrow + .layout-sidebyside-narrow + .layout-sidebyside-narrow {
   @include span(4 last); 
 }
-
-
-// ---
-// Centered Content
-// ---
-.layout-centered {
-  text-align: center;
-}
-.layout-centered ul {
-  text-align: left;
-}
-
-
-// ---
-// Secondary Content
-// ---
-.layout-secondarycontent-topright {
-  float: right;
-  width: 300px;
-  margin: 0 0 20px 20px;
-}
-
-
-// ---
-// Pre-defined Grids
-// ---
-.layout-grid > div {
-  @include gallery(6 of 12);
-  margin-bottom: 40px;
-}
