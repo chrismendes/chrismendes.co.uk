@@ -37,9 +37,17 @@
 // 2 Column Split
 .layout-slide--bodyleft {
   @include span(4 of 12);
+
+  @media(max-width: 1000px) {
+    @include span(full);
+  }
 }
 .layout-slide--bodyright {
   @include span(8 of 12 last);
+
+  @media(max-width: 1000px) {
+    @include span(full);
+  }
 }
 
 
@@ -51,19 +59,46 @@
   text-align: left;
 }
 
+.layout-slide--bodyarticle {
+  @media(max-width: 800px) {
+    text-align: center;
+  }
+}
+.layout-slide--bodyarticle > h3 {
+  @media(max-width: 800px) {
+    margin-top: 40px;
+  }
+}
+
 .layout-slide--bodyarticle > .sprite,
 .layout-slide--bodyarticle > img {
   float: right;
-  margin: -60px 0 30px 30px;
+  margin: -35px 0 30px 30px;
+
+  @media(max-width: 800px) {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .layout-slide--bodyarticle:nth-child(odd) {
   text-align: right;
+
+  @media(max-width: 800px) {
+    text-align: center;
+  }
 }
 .layout-slide--bodyarticle:nth-child(odd) > .sprite,
 .layout-slide--bodyarticle:nth-child(odd) > img {
   float: left;
-  margin: -60px 30px 30px 0;
+  margin: -35px 30px 30px 0;
+
+  @media(max-width: 800px) {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .layout-slide--bodyarticle > .emphasis {
