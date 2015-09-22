@@ -3,9 +3,18 @@
 // ---
 .layout-sidebyside {
   @include span(6);
+
+  @media(max-width: 800px) {
+    @include span(full);
+  }
 }
 .layout-sidebyside + .layout-sidebyside {
   @include span(6 last);
+
+  @media(max-width: 800px) {
+    @include span(full);
+    margin-top: 30px;
+  }
 }
 
 .layout-sidebyside-divider {

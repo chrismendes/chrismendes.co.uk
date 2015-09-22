@@ -46,7 +46,6 @@
     "css-sprite": "^0.9.9",
     "jcarousellite": "^1.9.2",
     "jquery": "^2.1.4",
-    "jquery.isinview": "^1.0.3",
     "lodash": "^3.9.3",
     "susy": "^2.2.5"
   },

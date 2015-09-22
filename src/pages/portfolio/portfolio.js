@@ -2,6 +2,9 @@ require('offcanvaspanel/offcanvaspanel');
 require('tabs/tabs');
 var gallery = require('gallery/gallery');
 
+require('inviewloader/inviewloader');
+
+
 // ---
 // Populate Off-Canvas Panel w/Gallery
 // ---
