@@ -6,6 +6,13 @@
   font-size: 2.2em;
   line-height: 1.6em;
 
+  margin-bottom: 10px;
+  display: inline-block;
+
+  @media(max-width: 1400px) {
+    margin-bottom: 0;
+  }
+
   @media(max-width: 1000px) {
     font-size: 2em;
   }
@@ -18,7 +25,11 @@
 }
 
 .billboardpostertext > ul > li {
-  padding: 7px 10px;
+  padding: 10px 12px;
+
+  @media(max-width: 1400px) {
+    padding: 7px 10px;
+  }
 
   @media(max-width: 1000px) {
     &:nth-child(4) {
@@ -50,10 +61,13 @@
 // Billboard Images
 // ---
 .billboardposterimage-home {
-  background-image: url('../images/billboardposter/billboard-home-small.jpg');
-  background-position: 0 -20px;
+  background-image: url('../images/billboardposter/billboard-home.jpg');
 }
 
-.billboardposterimage-recruitment {
-  background-image: url('../images/billboardposter/billboard-recruitment-small.jpg');
+.billboardposterimage-cv {
+  background-image: url('../images/billboardposter/billboard-cv.jpg');
+}
+
+.billboardposterimage-availability {
+  background-image: url('../images/billboardposter/billboard-availability.jpg');
 }

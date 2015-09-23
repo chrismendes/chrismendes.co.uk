@@ -1,5 +1,5 @@
 .layout-billboard {
-  height: 340px;
+  height: 400px;
   background: linear-gradient(to bottom, #efefef 0%, #dfdfdf 100%);
   border-bottom: 4px solid #CECECE;
 }
@@ -12,15 +12,17 @@
 }
 
 .layout-billboardleft {
-  width: 59%;
+  width: 55%;
   height: 100%;
   float: left;
 }
 
 .layout-billboardright {
-  width: 41%;
+  width: 45%;
   height: 100%;
   float: right;
+
+  padding-top: 10px;
 }
 
 
