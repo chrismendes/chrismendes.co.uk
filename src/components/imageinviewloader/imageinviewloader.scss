@@ -1,0 +1,11 @@
+.imageinviewloader--content {
+  display: none;
+}
+
+.imageinviewloader.is-loaded > .imageinviewloader--loading {
+  display: none;
+}
+
+.imageinviewloader.is-loaded > .imageinviewloader--content {
+  display: block;
+}
