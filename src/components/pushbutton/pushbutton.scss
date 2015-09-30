@@ -1,0 +1,22 @@
+.pushbutton {
+  background: #efefef;
+
+  width: 108px;
+  height: 95px;
+  padding: 10px;
+
+  float: left;
+
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.pushbutton--title {
+  font-size: 0.9em;
+}
+
+
+.layout-subnav-extended > .pushbutton {
+  margin: 2px;
+}

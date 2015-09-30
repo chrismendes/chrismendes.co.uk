@@ -5,3 +5,12 @@
 .layout-subnavcontent {
   @include span(9 last);
 }
+
+
+.layout-subnav-extended {
+  @include span(4);
+}
+
+.layout-subnavcontent-extended {
+  @include span(8 last);
+}

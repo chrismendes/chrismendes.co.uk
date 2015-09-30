@@ -30,21 +30,21 @@
     <div class="js-gallery-desktop" data-galleryid="desktop" data-screenshots="{{screenshots.desktop}}">
       <ul>
         {{#loop screenshots.desktop}}
-        <li><img src="images/portfolio/{{urlFriendly ../name}}/{{.}}.jpg"/></li>
+        <li><img data-src="images/portfolio/{{urlFriendly ../name}}/{{.}}.jpg"/></li>
         {{/loop}}
       </ul>
     </div>
     <div class="js-gallery-tablet" data-galleryid="tablet" data-screenshots="{{screenshots.tablet}}">
       <ul>
         {{#loop screenshots.tablet}}
-        <li><img src="images/portfolio/{{urlFriendly ../name}}/tablet/{{.}}.jpg"/></li>
+        <li><img data-src="images/portfolio/{{urlFriendly ../name}}/tablet/{{.}}.jpg"/></li>
         {{/loop}}
       </ul>
     </div>
     <div class="js-gallery-phone" data-galleryid="phone" data-screenshots="{{screenshots.phone}}">
       <ul>
         {{#loop screenshots.phone}}
-        <li><img src="images/portfolio/{{urlFriendly ../name}}/phone/{{.}}.jpg"/></li>
+        <li><img data-src="images/portfolio/{{urlFriendly ../name}}/phone/{{.}}.jpg"/></li>
         {{/loop}}
       </ul>
     </div>

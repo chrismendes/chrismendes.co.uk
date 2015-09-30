@@ -1,32 +1,32 @@
 <div class="layout-subnav">
 
-<ul class="tabs tabs-secondary">
-  {{#skills}}
-  <li{{#unless @index}} class="is-active"{{/unless}}>
-    <a href="#/tab/technology/{{urlFriendly group}}">{{group}}</a>
-  </li>
-  {{/skills}}
-</ul>
+  <ul class="tabs tabs-secondary">
+    {{#skills}}
+    <li{{#unless @index}} class="is-active"{{/unless}}>
+      <a href="#/tab/technology/{{urlFriendly group}}">{{group}}</a>
+    </li>
+    {{/skills}}
+  </ul>
 
 </div>
 
 <div class="layout-subnavcontent">
 
-{{#skills}}
-<div id="tabnested-technology-{{urlFriendly group}}" class="tabs--content{{#unless @index}} is-active{{/unless}}">
-  {{#entries}}
-  <div class="skill">
-    <span class="skill--logo"><img src="images/skills-expertise/skill-{{urlFriendly name}}.jpg"/></span>
-    <div class="skill--description">
-      <h4 class="skill--name">{{name}}</h4>
-      {{#summary}}
-      <p>{{.}}</p>
-      {{/summary}}
-      <p>Experience: {{experience}}</p>
+  {{#skills}}
+  <div id="tabnested-technology-{{urlFriendly group}}" class="tabs--content{{#unless @index}} is-active{{/unless}}">
+    {{#entries}}
+    <div class="skill">
+      <span class="skill--logo"><img src="images/skills-expertise/skill-{{urlFriendly name}}.jpg"/></span>
+      <div class="skill--description">
+        <h4 class="skill--name">{{name}}</h4>
+        {{#summary}}
+        <p>{{.}}</p>
+        {{/summary}}
+        <p>Experience: {{experience}}</p>
+      </div>
     </div>
+    {{/entries}}
   </div>
-  {{/entries}}
-</div>
-{{/skills}}
+  {{/skills}}
 
 </div>

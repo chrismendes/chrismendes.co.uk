@@ -19,11 +19,16 @@ $(document).on('offCanvasPanelOpen', function(event, $data) {
   $('.js-projecturl').html(projectURL);
   $('.js-projecturl').attr('href', 'http://' + projectURL);
 
-  $imageSets.each(function() {
+  $imageSets.each(function(index, element) {
     var $set = $(this);
     var id = $set.attr('data-galleryid');
     var container = '#tab-' + id;
     var selector = '.' + $set.attr('class');
+
+    var $images = $(element).find('img');
+    $images.each(function(index, $image) {
+      $image.attr('src', $image.attr('dat-src'));
+    });
 
     var screenshotCount = $set.attr('data-screenshots');
     $('.js-screenshotcount').html(screenshotCount);
