@@ -1,0 +1,82 @@
+.sprite-knowledge {
+  background-image: url('../images/skills-expertise/knowledge/spritesheet.png');
+}
+
+.sprite-knowledge-javascript {
+  background-position: -4px -4px;
+  width: 45px;
+  height: 45px;
+}
+
+.sprite-knowledge-patterns {
+  background-position: -4px -57px;
+  width: 50px;
+  height: 45px;
+}
+
+.sprite-knowledge-browsers {
+  background-position: -4px -110px;
+  width: 44px;
+  height: 45px;
+}
+
+.sprite-knowledge-rwd {
+  background-position: -4px -163px;
+  width: 64px;
+  height: 45px;
+}
+
+.sprite-knowledge-scriptloaders {
+  background-position: -4px -216px;
+  width: 39px;
+  height: 45px;
+}
+
+.sprite-knowledge-smacss {
+  background-position: -4px -269px;
+  width: 50px;
+  height: 45px;
+}
+
+.sprite-knowledge-smacss-large {
+  background-position: -4px -322px;
+  width: 100px;
+  height: 89px;
+}
+
+.sprite-knowledge-rwd-large {
+  background-position: -4px -419px;
+  width: 143px;
+  height: 100px;
+}
+
+.sprite-knowledge-scriptloaders-large {
+  background-position: -4px -527px;
+  width: 91px;
+  height: 100px;
+}
+
+.sprite-knowledge-javascript-large {
+  background-position: -4px -635px;
+  width: 100px;
+  height: 100px;
+}
+
+.sprite-knowledge-browsers-large {
+  background-position: -4px -743px;
+  width: 99px;
+  height: 100px;
+}
+
+.sprite-knowledge-patterns-large {
+  background-position: -4px -851px;
+  width: 112px;
+  height: 100px;
+}
+
+.sprite-knowledge-spritesheet {
+  background-position: -4px -959px;
+  width: 247px;
+  height: 12511px;
+}
+

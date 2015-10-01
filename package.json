@@ -11,6 +11,7 @@
     "gulp-changed": "^1.1.1",
     "gulp-compass": "~2.0.4",
     "gulp-compile-handlebars": "~0.4.4",
+    "gulp-cssimport": "^2.1.1",
     "gulp-debug": "^2.0.1",
     "gulp-filesize": "0.0.6",
     "gulp-flatten": "^0.1.0",
@@ -49,7 +50,7 @@
     "lodash": "^3.9.3",
     "susy": "^2.2.5"
   },
-"scripts": {
+  "scripts": {
     "install": "napa"
   },
   "napa": {
