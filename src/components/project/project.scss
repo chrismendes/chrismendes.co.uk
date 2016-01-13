@@ -12,6 +12,10 @@
   min-height: 1px; // Ensure column integrity when contents empty.
 }
 
+.project--logo > img {
+  max-width: 150px;
+}
+
 .project--details {
   @include span(4);
 }

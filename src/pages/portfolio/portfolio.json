@@ -12,6 +12,17 @@
       "screenshots":            { "desktop": 5, "tablet": 5, "phone": 6 }
     },
     {
+      "name":                   "Magicseaweed.com",
+      "company":                "Surfdome",
+      "url":                    "store.magicseaweed.com",
+      "offlineMessage":         null,
+      "date":                   "May 2015 - December 2015",
+      "description":            "Ecommerce site selling a range of outdoor adventure gear for Surfdome.com's sister company Magicseaweed.",
+      "tech":                   "HTML5, CSS3, Sass, Susy, JavaScript, jQuery, Flight.js, Responsive Development, Node.js, Express",
+      "responsibility":         "Front-end (Lead Developer and Project Manager)",
+      "screenshots":            { "desktop": 7, "tablet": 7, "phone": 7 }
+    },
+    {
       "name":                   "Capablue",
       "company":                "Capablue",
       "url":                    "www.capablue.com",
