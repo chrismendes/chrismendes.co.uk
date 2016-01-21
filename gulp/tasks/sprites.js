@@ -7,26 +7,27 @@ var gulpif       = require('gulp-if');
 var sprite       = require('css-sprite').stream;
 
 
-gulp.task('sprites', ['sprites:home:skills', 'sprites:skills/expertise:knowledge']);
+gulp.task('sprites', ['sprites:home-expertise', 'sprites:skills:knowledge']);
 
 
 // ---
 // Home Page
 // ---
-gulp.task('sprites:home:skills', function() {
+gulp.task('sprites:home-expertise', function() {
 
-  var target = config.directories.src.pages + '/index/images/skills/*.png';
-  gulp.src(target)
+  var target = config.directories.src.pages + '/index/images/expertise/*.png';
+  return gulp.src(target)
     .pipe(sprite({
       name:       'spritesheet',
-      style:      'spritesheet.scss',
-      cssPath:    '../images/index/spritesheets/spritesheet',
-      processor:  'scss'
+      style:      'spritesheet.css',
+      cssPath:    '../images/index/expertise/',
+      processor:  'css',
+      prefix:     'sprite-expertise'
     }))
     .pipe(gulpif(
       '*.png',
-      gulp.dest(config.directories.src.pages + '/index/images/spritesheets/'),
-      gulp.dest(config.directories.src.pages + '/index/images/spritesheets/'))
+      gulp.dest(config.directories.src.pages + '/index/images/expertise/'),
+      gulp.dest(config.directories.src.pages + '/index/images/expertise/'))
     );
 });
 
@@ -34,10 +35,10 @@ gulp.task('sprites:home:skills', function() {
 // ---
 // Skills/Expertise: Dev Knowledge
 // ---
-gulp.task('sprites:skills/expertise:knowledge', function() {
+gulp.task('sprites:skills:knowledge', function() {
 
   var target = config.directories.src.pages + '/skills-expertise/images/knowledge/*.png';
-  gulp.src(target)
+  return gulp.src(target)
     .pipe(sprite({
       name:       'spritesheet',
       style:      'spritesheet.css',
