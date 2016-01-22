@@ -1,6 +1,16 @@
 {
   "testimonials": [
     {
+      "personName": "Joe Simms",
+      "personPosition": "Technical Director at Surfdome.com",
+      "date": "22nd January 2016",
+      "feedback": [
+        "\"Chris was a great guy to work with. He worked closely with us in building the foundations of a robust front end stack using strongly opinionated conventions and best practices.",
+        "His effort will enable us to innovate the UX at a sustainable pace moving forward and we are sincerely grateful for all the work he has done here. As well [as] leading the development effort he also managed the entire project from planning through to deployment of this stack onto one of our production stores.",
+        "I cannot recommend him highly enough and he would be a great asset to any business looking for a mature and professional contractor\""
+      ]
+    },
+    {
       "personName": "Pete Thompson",
       "personPosition": "Solutions Architect at Capablue",
       "date": "14th October 2014",
