@@ -14,18 +14,17 @@
 
   {{#skills}}
   <div id="tabnested-technology-{{urlFriendly group}}" class="tabs--content{{#unless @index}} is-active{{/unless}}">
-    {{#entries}}
+    {{#lineitems}}
     <div class="skill">
-      <span class="skill--logo"><img src="images/skills-expertise/skill-{{urlFriendly name}}.jpg"/></span>
+      <span class="skill--logo"><img src="images/skills-expertise/tech/skill-{{urlFriendly name}}.jpg"/></span>
       <div class="skill--description">
         <h4 class="skill--name">{{name}}</h4>
         {{#summary}}
         <p>{{.}}</p>
         {{/summary}}
-        <p>Experience: {{experience}}</p>
       </div>
     </div>
-    {{/entries}}
+    {{/lineitems}}
   </div>
   {{/skills}}
 
