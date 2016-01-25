@@ -35,6 +35,24 @@
       }
     },
     {
+      "name": "Rock Paper Scissors",
+      "logo": "JavaScript",
+      "description": [
+        "Play against the computer or spectate a computer vs computer game.",
+        "Source JavaScript features a very simple controller and model, while the presentation layer has been implemented via the SMACSS CSS pattern."
+      ],
+      "tech": [
+        "HTML5, CSS3",
+        "Sass, Susy",
+        "JavaScript, jQuery",
+        "Grunt"
+      ],
+      "links": {
+        "openapp": "http://rockpaperscissors.chrismendes.london",
+        "reviewcode": "https://github.com/chrismendes/sampleapp-rockpaperscissors"
+      }
+    },
+    {
       "name": "Shopping Basket",
       "logo": "JavaScript",
       "description": [
@@ -51,24 +69,6 @@
       "links": {
         "openapp": "http://shoppingbasket.chrismendes.london",
         "reviewcode": "https://github.com/chrismendes/sampleapp-shoppingbasket"
-      }
-    },
-    {
-      "name": "Rock Paper Scissors",
-      "logo": "JavaScript",
-      "description": [
-        "Play against the computer or spectate a computer vs computer game.",
-        "Source JavaScript features a very simple controller and model, while the presentation layer has been implemented via the SMACSS CSS pattern."
-      ],
-      "tech": [
-        "HTML5, CSS3",
-        "Sass, Susy",
-        "JavaScript, jQuery",
-        "Grunt"
-      ],
-      "links": {
-        "openapp": "http://rockpaperscissors.chrismendes.london",
-        "reviewcode": "https://github.com/chrismendes/sampleapp-rockpaperscissors"
       }
     }
   ]
