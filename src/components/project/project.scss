@@ -23,15 +23,12 @@
 .project--screenshots {
   @include span(5 last);
 }
-.project--screenshots > img {
-  @include span(4 of 12);
-  cursor: pointer;
+.project--screenshots img {
+  max-width: 146px;
+  // cursor: pointer;
 }
-.project--screenshots > img:last-child {
-  @include last;
-}
-.project--screenshots:hover > img {
-  opacity: 0.9;
+.project--screenshots:hover img {
+  // opacity: 0.9;
 }
 
 
