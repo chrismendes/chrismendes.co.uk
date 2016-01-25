@@ -23,6 +23,17 @@
       "screenshots":            { "desktop": 7, "tablet": 7, "phone": 7 }
     },
     {
+      "name":                   "Capablue TV Everywhere",
+      "company":                "Capablue",
+      "url":                    null,
+      "offlineMessage":         "Development Prototype",
+      "date":                   "May - July 2014",
+      "description":            "A white-label build for a multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer). Features an API for programme data, a PHP broker application, and a fully responsive front-end.",
+      "tech":                   "HTML5, CSS3, Foundation, Handlebars, JavaScript, jQuery, Backbone.js, Require.js, Responsive Development, PHP, JSON",
+      "responsibility":         "Front/Back-end (Sole developer)",
+      "screenshots":            { "desktop": 3, "tablet": 0, "phone": 3 }
+    },
+    {
       "name":                   "Capablue",
       "company":                "Capablue",
       "url":                    "www.capablue.com",
@@ -43,17 +54,6 @@
       "tech":                   "HTML, CSS, Twitter Bootstrap, JavaScript, jQuery, Backbone.js",
       "responsibility":         "Front/Back-end (Sole developer)",
       "screenshots":            { "desktop": 5, "tablet": 0, "phone": 0 }
-    },
-    {
-      "name":                   "Capablue TV Everywhere",
-      "company":                "Capablue",
-      "url":                    null,
-      "offlineMessage":         "Development Prototype",
-      "date":                   "May - July 2014",
-      "description":            "A white-label build for a multi-channel live TV streaming web application accessible on desktops, tablets, and mobile devices (similar concept to BBC iPlayer). Features an API for programme data, a PHP broker application, and a fully responsive front-end.",
-      "tech":                   "HTML5, CSS3, Foundation, Handlebars, JavaScript, jQuery, Backbone.js, Require.js, Responsive Development, PHP, JSON",
-      "responsibility":         "Front/Back-end (Sole developer)",
-      "screenshots":            { "desktop": 3, "tablet": 0, "phone": 3 }
     },
     {
       "name":                   "SAP Innovation United",
