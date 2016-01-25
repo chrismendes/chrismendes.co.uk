@@ -24,7 +24,8 @@
   @include span(5 last);
 }
 .project--screenshots img {
-  max-width: 146px;
+  max-width: 165px;
+  height: auto;
   // cursor: pointer;
 }
 .project--screenshots:hover img {
