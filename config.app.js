@@ -35,6 +35,7 @@ directories.src = {
 
 // Fit for Browser (Sass -> CSS, compiled templates, etc.)
 directories.build = {
+  root:               basePath + folders.buildDir,
   html:               basePath + folders.buildDir,
   styles:             basePath + folders.buildDir + '/css',
   scripts:            basePath + folders.buildDir + '/js',
