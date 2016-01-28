@@ -7,7 +7,7 @@ var handlebars   = require('gulp-compile-handlebars');
 var flatten      = require('gulp-flatten');
 var fs           = require('fs');
 var del          = require('del');
-var glob         = require("glob")
+var glob         = require('glob');
 var _            = require('lodash');
 var browserSync  = require('browser-sync');
 
