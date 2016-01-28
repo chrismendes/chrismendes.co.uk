@@ -47,7 +47,7 @@ gulp.task('templates', function() {
     }
   };
 
-  return gulp.src(config.directories.src.pages + '/**/*.html')
+  return gulp.src(config.directories.src.pages + '/*/*.html')
     .pipe(handlebars(templateData, options))
     .pipe(flatten())
     .pipe(gulp.dest(config.directories.build.html))
