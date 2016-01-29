@@ -1,75 +1,65 @@
 <h2>Employment</h2>
 
-<ul class="tabs tabs-primary">
-  <li class="is-active"><a href="#/tab/contract">Contract <span>(2014 - Present)</span></a></li>
-  <li><a href="#/tab/permanent">Permanent <span>(2005 - 2014)</span></a></li>
-</ul>
+<div class="layout-subnav">
+  <ul class="tabs tabs-secondary">
+    {{#each jobs}}
+    <li {{#unless @index}}class="is-active"{{/unless}}>
+      <a href="#/tab/job{{@key}}/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
+    </li>
+    {{/each}}
+  </ul>
+</div>
 
-{{#each jobs}}
-<div id="tab-{{@key}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
-  <div class="layout-subnav">
-    <ul class="tabs tabs-secondary">
-      {{#each .}}
-      <li {{#unless @index}}class="is-active"{{/unless}}>
-        <a href="#/tab/job{{@key}}/{{urlFriendly company}}">{{company}} <span>{{year}}</span></a>
-      </li>
-      {{/each}}
+<div class="layout-subnavcontent">
+  {{#each jobs}}
+
+  <!--
+  <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab {{#unless @index}}is-active{{/unless}}">
+    <span class="tabs-collapsetabtitle">{{company}}</span>
+    <span class="tabs--collapsetabtooltip-open">Click to open</span>
+    <span class="tabs--collapsetabtooltip-close">Click to close</span>
+  </a>
+  -->
+
+  <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
+
+    <div class="layout-secondarycontent-topright">
+      <div class="businesscard">
+        {{#if noLogo}}
+          <span class="businesscard--name">{{company}}</span>
+        {{else}}
+          <img class="businesscard--logo" src="images/logos/company-{{urlFriendly company}}.jpg"/>
+        {{/if}}
+        {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
+        <span class="businesscard--description">{{{companyDescription}}}</span>
+      </div>
+    </div>
+
+    <p><span class="label label-short"><strong>Job Title</strong></span> {{jobtitle}}</p>
+    <p><span class="label label-short"><strong>Date</strong></span> {{startend}}</p>
+
+    <p><strong>Overview</strong></p>
+    {{#overview}}
+      <p>{{{.}}}</p>
+    {{/overview}}
+
+    {{#if responsibilities}}
+    <p><strong>Responsibilities</strong></p>
+    {{/if}}
+    <ul>
+      {{#responsibilities}}
+      <li>{{.}}</li>
+      {{/responsibilities}}
+    </ul>
+
+    {{#if skillsused}}
+    <p><strong>Key Skills/Expertise Utilised</strong></p>
+    {{/if}}
+    <ul>
+      {{#skillsused}}
+      <li>{{.}}</li>
+      {{/skillsused}}
     </ul>
   </div>
-
-  <div class="layout-subnavcontent">
-    {{#each .}}
-
-    <!--
-    <a href="#/collapse/tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--collapsetab {{#unless @index}}is-active{{/unless}}">
-      <span class="tabs-collapsetabtitle">{{company}}</span>
-      <span class="tabs--collapsetabtooltip-open">Click to open</span>
-      <span class="tabs--collapsetabtooltip-close">Click to close</span>
-    </a>
-    -->
-
-    <div id="tabnested-job{{@key}}-{{urlFriendly company}}" class="tabs--content {{#unless @index}}is-active{{/unless}}">
-
-      <div class="layout-secondarycontent-topright">
-        <div class="businesscard">
-          {{#if noLogo}}
-            <span class="businesscard--name">{{company}}</span>
-          {{else}}
-            <img class="businesscard--logo" src="images/logos/company-{{urlFriendly company}}.jpg"/>
-          {{/if}}
-          {{#if companyURL}}<a class="businesscard--link" href="http://{{companyURL}}" target="_blank">{{companyURL}}</a>{{/if}}
-          <span class="businesscard--description">{{{companyDescription}}}</span>
-        </div>
-      </div>
-
-      <p><span class="label label-short"><strong>Job Title</strong></span> {{jobtitle}}</p>
-      <p><span class="label label-short"><strong>Date</strong></span> {{startend}}</p>
-
-      <p><strong>Overview</strong></p>
-      {{#overview}}
-        <p>{{{.}}}</p>
-      {{/overview}}
-
-      {{#if responsibilities}}
-      <p><strong>Responsibilities</strong></p>
-      {{/if}}
-      <ul>
-        {{#responsibilities}}
-        <li>{{.}}</li>
-        {{/responsibilities}}
-      </ul>
-
-      {{#if skillsused}}
-      <p><strong>Key Skills/Expertise Utilised</strong></p>
-      {{/if}}
-      <ul>
-        {{#skillsused}}
-        <li>{{.}}</li>
-        {{/skillsused}}
-      </ul>
-    </div>
-    {{/each}}
-  </div>
-
+  {{/each}}
 </div>
-{{/each}}
