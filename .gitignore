@@ -1,6 +1,6 @@
 node_modules
 .build/*
 !.build/divshot.json
-.divshot-cache
+firebase-debug.log
 spritesheet.css
 spritesheet.png
