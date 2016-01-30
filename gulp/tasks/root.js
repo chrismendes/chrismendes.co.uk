@@ -6,7 +6,8 @@ var gulp         = require('gulp');
 
 
 var include = [
-  baseURL + '/.htaccess'
+  baseURL + '/.htaccess',
+  baseURL + '/sitemap.xml'
 ];
 
 gulp.task('root', function() {
