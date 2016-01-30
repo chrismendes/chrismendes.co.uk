@@ -10,7 +10,8 @@ gulp.task('build', function() {
       'images',
       'fonts',
       'sass',
-      'webpack'
+      'webpack',
+      'root'
     ]
   );
 
