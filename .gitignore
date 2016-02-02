@@ -2,5 +2,5 @@ node_modules
 .build/*
 !.build/divshot.json
 firebase-debug.log
-spritesheet.css
+spritesheet.scss
 spritesheet.png

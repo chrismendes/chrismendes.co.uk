@@ -19,7 +19,7 @@ gulp.task('sprites:home-expertise', function() {
   return gulp.src(target)
     .pipe(sprite({
       name:       'spritesheet',
-      style:      'spritesheet.css',
+      style:      'spritesheet.scss',
       cssPath:    '../images/index/expertise/',
       processor:  'css',
       prefix:     'sprite-expertise'
@@ -41,7 +41,7 @@ gulp.task('sprites:skills:knowledge', function() {
   return gulp.src(target)
     .pipe(sprite({
       name:       'spritesheet',
-      style:      'spritesheet.css',
+      style:      'spritesheet.scss',
       cssPath:    '../images/skills-expertise/knowledge/',
       processor:  'css',
       prefix:     'sprite-knowledge'
