@@ -4,17 +4,18 @@ var config       = require(baseURL + '/config.app.js');
 
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
-
-var taskOptions = {
-  server: {
-    baseDir: config.directories.build.html,
-    routes: {
-      // '/styles':   config.directories.src.styles,
-      // '/scripts':  config.directories.src.scripts
-    }
-  }
-};
+var modRewrite  = require('connect-modrewrite');
 
 gulp.task('browser-sync', function() {
-  browserSync(taskOptions);
+  browserSync({
+    server: {
+      baseDir: config.directories.build.html,
+      middleware: [ // App mirrors production env without extensions in URL, so add necessary routing for development
+        modRewrite([
+          '^/$ /index.html [L]',
+          '^([^.]+)$ /$1.html [L]',
+        ])
+      ]
+    }
+  });
 });
