@@ -15,8 +15,10 @@ gulp.task('sprites', ['sprites:home-expertise', 'sprites:skills:knowledge']);
 // ---
 gulp.task('sprites:home-expertise', function() {
 
-  var target = config.directories.src.pages + '/index/images/expertise/*.png';
-  return gulp.src(target)
+  var basePath = config.directories.src.pages + '/index/images/expertise/';
+  var target = basePath + '*.png';
+
+  return gulp.src([target, '!' + basePath + 'spritesheet.png'])
     .pipe(sprite({
       name:       'spritesheet',
       style:      'spritesheet.scss',
