@@ -42,4 +42,8 @@
 .layout-footer {
   @extend .container;
   padding: 20px 0;
+
+  @media (max-width: 1000px) {
+    padding: 20px 50px;
+  }
 }

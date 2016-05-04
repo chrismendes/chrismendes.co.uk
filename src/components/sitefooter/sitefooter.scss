@@ -9,6 +9,15 @@
   list-style: none;
 
   float: left;
+  line-height: 100%;
+  margin-top: 8px;
+
+  @media (max-width: 1000px) {
+    @include span(6 of 12);
+  }
+  @media (max-width: 650px) {
+    @include span(full);
+  }
 }
 
 .sitefooter--links > li {
@@ -22,6 +31,10 @@
 }
 .sitefooter--links > li:first-child > a {
   padding-left: 0;
+
+  @media (max-width: 1000px) {
+    padding-left: 6px;
+  }
 }
 .sitefooter--links > li > a:hover {
   color: #777;
@@ -29,6 +42,16 @@
 
 .sitefooter--copyright {
   float: right;
-
   margin-top: 10px;
+
+  line-height: 200%;
+  text-align: right;
+
+  @media (max-width: 1000px) {
+    @include span(6 of 12 last);
+  }
+  @media (max-width: 650px) {
+    @include span(full);
+    text-align: left;
+  }
 }
