@@ -7,11 +7,34 @@
   @include span(2 of 12);
   text-align: center;
   padding-top: 10px;
+
+  @media (max-width: 600px) {
+    @include span(full);
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+.codesample--logo > img {
+  max-width: 100%;
 }
 
 
 .codesample--summary {
-  @include span(5 of 12)
+  @include span(5 of 12);
+
+  @media (max-width: 1500px) {
+    @include span(4 of 12);
+  }
+  @media (max-width: 1100px) {
+    @include span(4 of 12);
+  }
+  @media (max-width: 800px) {
+    @include span(6 of 12);
+  }
+  @media (max-width: 600px) {
+    @include span(full);
+    margin-bottom: 20px;
+  }
 }
 
 .codesample--useractions {
@@ -26,12 +49,35 @@
 .codesample--tech {
   @include span(2 of 12);
   padding-left: 80px;
+
+  @media (max-width: 1500px) {
+    @include span(3 of 12);
+  }
+  @media (max-width: 1100px) {
+    padding-left: 40px;
+  }
+  @media (max-width: 800px) {
+    @include span(4 of 12 last);
+  }
+  @media (max-width: 600px) {
+    @include span(6 of 12);
+  }
 }
 
 .codesample--screenshot {
   @include span(3 of 12 last);
+
+  @media (max-width: 600px) {
+    @include span(6 of 12 last);
+    // text-align: center;
+  }
 }
 
 .codesample--screenshot > img {
   float: right;
+  max-width: 100%;
+
+  @media (max-width: 600px) {
+    float: none;
+  }
 }
