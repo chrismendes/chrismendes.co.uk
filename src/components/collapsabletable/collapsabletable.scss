@@ -1,0 +1,26 @@
+@media (max-width: 670px) {
+  .collapsabletable {
+    border: 0;
+  }
+
+  .collapsabletable--head {
+    display: none;
+  }
+
+  .collapsabletable > tbody > tr {
+    border-top: 1px solid #efefef;
+    padding: 20px 0;
+    float: left;
+    width: 100%;
+  }
+  .collapsabletable > tbody > tr.collapsabletable--head + tr {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .collapsabletable > tbody > tr > td {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+  }
+}
