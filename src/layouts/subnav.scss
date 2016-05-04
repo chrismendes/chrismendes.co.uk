@@ -1,9 +1,18 @@
 .layout-subnav {
   @include span(3);
+
+  @media (max-width: 700px) {
+    @include span(full);
+    margin-bottom: 30px;
+  }
 }
 
 .layout-subnavcontent {
   @include span(9 last);
+
+  @media (max-width: 700px) {
+    @include span(full);
+  }
 }
 
 

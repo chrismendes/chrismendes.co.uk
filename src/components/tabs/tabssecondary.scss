@@ -1,12 +1,3 @@
-.tabs-secondary {
-  display: none;
-
-  @media (min-width: 500px) {
-    display: block;
-  }    
-}
-
-
 .tabs-secondary > li > a {
   @extend h3;
   color: #555;
@@ -36,14 +27,4 @@
 .tabs-secondary > li > a > span {
   display: inline;
   margin-left: 3px;
-  
-  @media (min-width: 500px) {
-    width: 100%;
-    display: inline-block;
-  }
-
-  @media (min-width: 700px) {
-    width: auto;
-    display: inline;
-  }
 }
