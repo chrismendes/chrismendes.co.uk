@@ -95,6 +95,10 @@
   display: inline-block;
 }
 
+.project--message {
+  color: $red;
+}
+
 .project--summary,
 .project--opengallery {
   clear: both;

@@ -7,7 +7,8 @@
   <span class="project--details">
     <h2 class="project--name">{{name}}</h2>
     <span class="project--date"></span>
-    <a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>
+    {{#if url}}<a class="project--link" href="http://{{url}}" target="_blank">{{url}}</a>{{/if}}
+    {{#if offlineMessage}}<p class="project--message">{{offlineMessage}}</p>{{/if}}
     <p class="project--summary">{{description}}</p>
     <p>Responsibility: {{responsibility}}</p>
     <p>Technology: {{tech}}</p>
