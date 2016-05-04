@@ -1,3 +1,7 @@
+.testimonial--persontitle {
+  margin-top: 15px;
+}
+
 .testimonial--personimage {
   @include span(4 of 12);
   padding: 0 20px 20px 0;
@@ -10,8 +14,4 @@
     margin-bottom: 15px;
     padding: 0;
   }
-}
-
-.testimonial--personname {
-  margin-top: 0;
 }
