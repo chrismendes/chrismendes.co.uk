@@ -26,8 +26,16 @@
 
 .layout-sidebyside-narrow {
   @include span(4);
+
+  @media (max-width: 700px) {
+    @include span(full);
+  }
 }
 
 .layout-sidebyside-narrow + .layout-sidebyside-narrow + .layout-sidebyside-narrow {
   @include span(4 last); 
+
+  @media (max-width: 700px) {
+    @include span(full);
+  }
 }
