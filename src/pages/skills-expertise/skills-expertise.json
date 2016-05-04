@@ -60,7 +60,7 @@
         },
         {
           "name": "Foundation",
-          "summary": "",
+          "summary": "Familiar with many aspects of the CSS framework including the core grid system as well as other areas such as the framework's responsive images solution known as 'interchange'.",
           "experience": "Equally familiar with the accompanying grid system for scaffolding purposes, which prior to Bootstrap 3.0 was the more flexible system. Also experienced with Foundation's interchange function as a responsive images solution."
         },
         {
@@ -74,11 +74,11 @@
       "lineitems": [
         {
           "name": "Handlebars",
-          "summary": "Fair experience with templating library and have used commercially. Familiar with general syntax and creating custom helper functions."
+          "summary": "Good experience with templating library and have used commercially. Familiar with general syntax and creating custom helper functions."
         },
         {
           "name": "Mustache",
-          "summary": ""
+          "summary": "Strong experience with templating library and have used commercially. Aware of limited nature of solution and the circumstances within which Mustache would be a good choice and not."
         }
       ]
     },
@@ -87,7 +87,7 @@
       "lineitems": [
         {
           "name": "Webpack",
-          "summary": ""
+          "summary": "One of my favourite tools, I am familiar with how to structure and build a project with Webpack and the benefits that it provides in relation to code structure and web performance for example."
         },
         {
           "name": "Require.js",
@@ -95,7 +95,7 @@
         },
         {
           "name": "Browserify",
-          "summary": ""
+          "summary": "Brief experience as I have chosen Webpack as my personal preference when experimenting with the two, but have a firm understanding as to how to deploy Browserify in a project and the benefits that it provides."
         }
       ]
     },
@@ -108,7 +108,7 @@
         },
         {
           "name": "Gulp",
-          "summary": ""
+          "summary": "My task runner of choice, I have an excellent level of familiarity with Gulp and use it with all new projects when permitted. Have commercial experience setting up a highly tailored workflow environment using Gulp that included writing my own Gulp plugin."
         },
         {
           "name": "Grunt",
