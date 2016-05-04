@@ -14,10 +14,18 @@
 .skill--logo {
   @include span(3);
   text-align: center;
+
+  @media (max-width: 550px) {
+    @include span(full);
+  }
 }
 
 .skill--description {
   @include span(9 last);
+
+  @media (max-width: 550px) {
+    @include span(full);
+  }
 }
 
 .skill--name {
