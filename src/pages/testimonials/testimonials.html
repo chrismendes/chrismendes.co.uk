@@ -58,9 +58,9 @@
       <div class="layout-grid">
         {{#testimonials}}
         <div class="testimonial">
+          <h2 class="testimonial--persontitle">{{personPosition}}</h2>
           <img class="testimonial--personimage" src="images/testimonials/person-{{urlFriendly personName}}.jpg"/>
-          <h2 class="testimonial--personname">{{personPosition}}</h2>
-          <h3 class="testimonial--personposition">{{personName}}</h3>
+          <h3 class="testimonial--personname">{{personName}}</h3>
           {{#feedback}}
           <p>{{.}}</p>
           {{/feedback}}
