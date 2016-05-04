@@ -10,22 +10,75 @@
 .project--logo {
   @include span(2);
   min-height: 1px; // Ensure column integrity when contents empty.
+
+  @media (max-width: 600px) {
+    @include span(full);
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .project--logo > img {
   max-width: 150px;
+
+  @media (max-width: 1250px) {
+    max-width: 100%;
+  }
 }
 
 .project--details {
   @include span(4);
+
+  @media (max-width: 900px) {
+    @include span(7);
+  }
+  @media (max-width: 600px) {
+    @include span(full);
+  }
 }
 
 .project--screenshots {
   @include span(5 last);
+
+  @media (max-width: 900px) {
+    @include span(3 last);
+  }
+
+  @media (max-width: 600px) {
+    @include span(full);
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 .project--screenshots img {
-  max-width: 165px;
+  max-width: 32%;
   height: auto;
+
+  @media (max-width: 1450px) {
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  @media (max-width: 900px) {
+    clear: both;
+    float: right;
+    margin: 0 0 10px 0;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    clear: none;
+    float: none;
+    margin: 0;
+    max-width: 32%;
+
+    &:last-child {
+      display: inline;
+    }
+  }
 }
 
 
