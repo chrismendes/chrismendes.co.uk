@@ -333,7 +333,7 @@
     {
       "name":                   "Monopoly",
       "company":                null,
-      "url":                    "chrismendes.london/apps/monopoly",
+      "url":                    "monopoly.chrismendes.london",
       "offlineMessage":         null,
       "date":                   "June - August 2008",
       "description":            "A replica of the well known board game built with Flash. User plays against AI opponents that choose to buy or pass on properties as well as respond to player proposed deals for properties or cash.",
