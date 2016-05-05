@@ -41,7 +41,8 @@ directories.build = {
   scripts:            basePath + folders.buildDir + '/js',
   fonts:              basePath + folders.buildDir + '/fonts',
   images:             basePath + folders.buildDir + '/images',
-  templates:          basePath + folders.tempDir + '/.handlebars'
+  templates:          basePath + folders.tempDir + '/.handlebars',
+  apps:               basePath + folders.buildDir + '/apps'
 };
 
 
