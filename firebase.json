@@ -1,11 +1,9 @@
 {
-  "firebase": "shining-torch-6011",
-  "public": ".build",
-  "ignore": [
-    "firebase.json",
-    "**/.*",
-    "**/node_modules/**"
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": ".build",
+    "cleanUrls": true
+  }
 }
