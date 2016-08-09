@@ -9,6 +9,7 @@ gulp.task('build', function() {
       'templates',
       'images',
       'fonts',
+      'downloads',
       'sass',
       'webpack',
       'root'

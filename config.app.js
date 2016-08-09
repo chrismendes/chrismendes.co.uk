@@ -30,7 +30,8 @@ directories.src = {
   layouts:            basePath + folders.srcDir + '/layouts',
   partials:           basePath + folders.srcDir + '/shared/partials',
   fonts:              basePath + folders.srcDir + '/shared/fonts',
-  images:             basePath + folders.srcDir + '/shared/images'
+  images:             basePath + folders.srcDir + '/shared/images',
+  downloads:          basePath + folders.srcDir + '/downloads'
 };
 
 // Fit for Browser (Sass -> CSS, compiled templates, etc.)
@@ -42,6 +43,7 @@ directories.build = {
   fonts:              basePath + folders.buildDir + '/fonts',
   images:             basePath + folders.buildDir + '/images',
   templates:          basePath + folders.tempDir + '/.handlebars',
+  downloads:          basePath + folders.buildDir + '/downloads',
   apps:               basePath + folders.buildDir + '/apps'
 };
 
