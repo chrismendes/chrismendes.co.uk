@@ -1,6 +1,6 @@
 # chrismendes.london
 
-> Professional website for web development contracting purposes. Consists of my CV, portfolio, code samples, and other useful information for the benefit of employers and recruitment agents.
+> Now archived website for web development contracting purposes - CV, portfolio, code samples, etc. Current portfolio site is accessible at chrismendes.uk.
 
 ## Overview
 
